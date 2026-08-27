@@ -8,14 +8,22 @@ export function evaluateRequirement(requirement: Requirement, state: Requirement
   if (actual === undefined || !requirement.operator) return undefined;
   const expected = requirement.value;
   switch (requirement.operator) {
-    case '>': return typeof actual === 'number' && typeof expected === 'number' && actual > expected;
-    case '>=': return typeof actual === 'number' && typeof expected === 'number' && actual >= expected;
-    case '<': return typeof actual === 'number' && typeof expected === 'number' && actual < expected;
-    case '<=': return typeof actual === 'number' && typeof expected === 'number' && actual <= expected;
-    case '=': return actual === expected;
-    case '!=': return actual !== expected;
-    case 'in': return Array.isArray(expected) && !Array.isArray(actual) && expected.includes(String(actual));
-    case 'active': return Array.isArray(actual) ? actual.includes(String(expected)) : actual === expected || actual === true;
-    case 'inactive': return Array.isArray(actual) ? !actual.includes(String(expected)) : actual !== expected && actual !== true;
+    case '>': return typeof actual === 'number' && typeof expected === 'number' ? actual > expected : undefined;
+    case '>=': return typeof actual === 'number' && typeof expected === 'number' ? actual >= expected : undefined;
+    case '<': return typeof actual === 'number' && typeof expected === 'number' ? actual < expected : undefined;
+    case '<=': return typeof actual === 'number' && typeof expected === 'number' ? actual <= expected : undefined;
+    case '=':
+    case '!=': {
+      if (Array.isArray(actual) || Array.isArray(expected) || expected === undefined || typeof actual !== typeof expected) return undefined;
+      return requirement.operator === '=' ? actual === expected : actual !== expected;
+    }
+    case 'in': return Array.isArray(expected) && expected.every((item) => typeof item === 'string') && typeof actual === 'string'
+      ? expected.includes(actual) : undefined;
+    case 'active':
+    case 'inactive': {
+      if (typeof expected !== 'string' || !Array.isArray(actual) || !actual.every((item) => typeof item === 'string')) return undefined;
+      const active = actual.includes(expected);
+      return requirement.operator === 'active' ? active : !active;
+    }
   }
 }

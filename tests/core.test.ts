@@ -1,11 +1,17 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
 import type { WispDataset } from '../src/domain/types';
+import { wispDataUrl } from '../src/data/wispRepository';
 import { buildCandidatePool } from '../src/filter/candidates';
 import { calculateEqualWeight, calculateStageFive, probabilityForWisp } from '../src/probability/equalWeight';
+import { evaluateRequirement } from '../src/rules/requirements';
 
 const dataset = JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8')) as WispDataset;
 const wisps = dataset.records;
+
+test('数据 URL 遵循 Vite BASE_URL 子路径', () => {
+  expect(wispDataUrl('/tft-s18-wisp-finder/')).toBe('/tft-s18-wisp-finder/data/wisps.json');
+});
 
 describe('阶段和候选池', () => {
   test('Petrify Shields 支持不连续窗口', () => {
@@ -28,6 +34,21 @@ describe('阶段和候选池', () => {
     const result = buildCandidatePool(wisps, { categories: ['combat'], prismaticOnly: true, excludedIds: new Set(['downpour']) });
     expect(result.map((w) => w.id)).toEqual(['ultra_ascension']);
     expect(buildCandidatePool(wisps, { requirementState: { gold: 12 } }).some((w) => w.id === 'verdant_vitality')).toBe(false);
+  });
+  test('运行时无法判断的 Requirement 不会静默排除候选', () => {
+    const unknown = { ...wisps[0]!, requirements: [{ type: 'gold', operator: '>=' as const, textZh: '损坏的运行时数据', machineEvaluable: true }] };
+    expect(evaluateRequirement(unknown.requirements[0]!, { gold: 10 })).toBeUndefined();
+    expect(buildCandidatePool([unknown], { requirementState: { gold: 10 } })).toEqual([unknown]);
+  });
+  test('参考仙灵只使用从当前回合开始的剩余窗口', () => {
+    const referenceRanges = [
+      { start: { stage: 2, round: 1 }, end: { stage: 2, round: 7 } },
+      { start: { stage: 3, round: 5 }, end: { stage: 4, round: 7 } },
+    ];
+    const overlapping = { ...wisps[0]!, id: 'overlapping', stageRanges: [{ start: { stage: 4, round: 2 }, end: { stage: 4, round: 5 } }] };
+    const pastOnly = { ...wisps[0]!, id: 'past', stageRanges: [{ start: { stage: 2, round: 2 }, end: { stage: 2, round: 5 } }] };
+    const result = buildCandidatePool([overlapping, pastOnly], { referenceRanges, referenceFrom: { stage: 4, round: 3 } });
+    expect(result.map((wisp) => wisp.id)).toEqual(['overlapping']);
   });
 });
 
