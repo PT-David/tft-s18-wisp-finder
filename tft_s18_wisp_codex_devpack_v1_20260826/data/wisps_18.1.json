@@ -1,0 +1,172 @@
+{
+  "patch": "18.1",
+  "datasetStatus": "partial_verified_seed_for_development_and_regression_tests",
+  "warning": "This is intentionally not the full Wisp corpus. Do not ship it as the complete production dataset. Generate the full normalized dataset through DATA_INGESTION.md, then run validation.",
+  "verifiedAt": "2026-08-26",
+  "records": [
+    {
+      "id": "mitosis",
+      "riotId": null,
+      "nameZh": "有丝分裂（中文名待 DataTFT 最终核对）",
+      "nameEn": "Mitosis",
+      "category": "champion",
+      "cost": 1,
+      "stageRanges": [{"start":{"stage":2,"round":1},"end":{"stage":2,"round":7}}],
+      "effects": {"normal":"获得一个小型英雄复制器。","blossom":null,"prismatic":null},
+      "requirements": [],
+      "oncePerGame": false,
+      "reofferCooldownShops": null,
+      "searchConcepts": [],
+      "synonyms": [],
+      "sources": {
+        "cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},
+        "stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},
+        "effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}
+      },
+      "patch":"18.1"
+    },
+    {
+      "id":"field_of_mice",
+      "riotId":null,
+      "nameZh":"Field of Mice（中文名待 DataTFT 核对）",
+      "nameEn":"Field of Mice",
+      "category":"champion",
+      "cost":8,
+      "stageRanges":[{"start":{"stage":3,"round":1},"end":{"stage":4,"round":1}}],
+      "effects":{
+        "normal":"按上回合登场的不同 1 费英雄数量，获得对应数量的小型英雄复制器。",
+        "blossom":"在普通奖励基础上，每种满足条件的不同 1 费英雄还额外带来金币收益。",
+        "prismatic":null
+      },
+      "requirements":[{"type":"last_combat_unique_1_costs","operator":">=","value":5,"textZh":"上回合至少登场 5 个 1 费英雄","machineEvaluable":false}],
+      "oncePerGame":false,
+      "reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"requirements":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"hero_of_prophecy",
+      "riotId":null,
+      "nameZh":"Hero of Prophecy（中文名待 DataTFT 核对）",
+      "nameEn":"Hero Of Prophecy",
+      "category":"champion",
+      "cost":35,
+      "stageRanges":[{"start":{"stage":6,"round":1},"end":{"stage":10,"round":1}}],
+      "effects":{"normal":"获得一个 5 费英雄，并在之后每回合再次获得同一名英雄。","blossom":null,"prismatic":null},
+      "requirements":[
+        {"type":"gold","operator":">=","value":35,"textZh":"至少拥有 35 金币","machineEvaluable":true},
+        {"type":"player_health","operator":">=","value":50,"textZh":"玩家生命值至少为 50","machineEvaluable":true},
+        {"type":"level","operator":">=","value":10,"textZh":"等级至少为 10","machineEvaluable":true}
+      ],
+      "oncePerGame":true,
+      "reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"requirements":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"petrify_shields",
+      "riotId":null,
+      "nameZh":"Petrify Shields（中文名待 DataTFT 核对）",
+      "nameEn":"Petrify Shields",
+      "category":"combat",
+      "cost":2,
+      "stageRanges":[
+        {"start":{"stage":4,"round":2},"end":{"stage":4,"round":7}},
+        {"start":{"stage":6,"round":1},"end":{"stage":10,"round":1}}
+      ],
+      "effects":{"normal":"使敌人减速，并在一段时间内降低其护盾效果。","blossom":"保持减速，同时进一步提高护盾削减幅度。","prismatic":null},
+      "requirements":[],"oncePerGame":false,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"prolific_power",
+      "riotId":null,
+      "nameZh":"Prolific Power（中文名待 DataTFT 核对）",
+      "nameEn":"Prolific Power",
+      "category":"combat",
+      "cost":0,
+      "stageRanges":[{"start":{"stage":4,"round":2},"end":{"stage":10,"round":1}}],
+      "effects":{"normal":"本回合全队获得 4% 攻击力和法术强度。","blossom":"强化为 6% 攻击力和法术强度。","prismatic":null},
+      "requirements":[],"oncePerGame":false,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"verdant_vitality",
+      "riotId":null,
+      "nameZh":"Verdant Vitality（中文名待 DataTFT 核对）",
+      "nameEn":"Verdant Vitality",
+      "category":"combat",
+      "cost":0,
+      "stageRanges":[{"start":{"stage":4,"round":2},"end":{"stage":10,"round":1}}],
+      "effects":{"normal":"全队获得 50 生命值。","blossom":"全队获得 75 生命值。","prismatic":null},
+      "requirements":[{"type":"gold","operator":"<","value":10,"textZh":"金币少于 10","machineEvaluable":true}],
+      "oncePerGame":false,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"requirements":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"ultra_ascension",
+      "riotId":null,
+      "nameZh":"Ultra Ascension（中文名待 DataTFT 核对）",
+      "nameEn":"Ultra Ascension",
+      "category":"combat",
+      "cost":1,
+      "stageRanges":[{"start":{"stage":3,"round":1},"end":{"stage":4,"round":1}}],
+      "effects":{"normal":"战斗 25 秒后，全队获得 300% 伤害增幅。","blossom":"触发时间提前到 23 秒。","prismatic":"触发时间大幅提前到 12 秒。"},
+      "requirements":[],"oncePerGame":false,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"downpour",
+      "riotId":null,
+      "nameZh":"Downpour（中文名待 DataTFT 核对）",
+      "nameEn":"Downpour",
+      "category":"combat",
+      "cost":3,
+      "stageRanges":[{"start":{"stage":5,"round":1},"end":{"stage":10,"round":1}}],
+      "effects":{"normal":"全队获得 2 点法力回复。","blossom":"提升为 3 点法力回复。","prismatic":"提升为 15 点法力回复。"},
+      "requirements":[],"oncePerGame":false,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"lucky_7",
+      "riotId":null,
+      "nameZh":"Lucky 7（中文名待 DataTFT 核对）",
+      "nameEn":"Lucky 7",
+      "category":"shop",
+      "cost":7,
+      "stageRanges":[{"start":{"stage":6,"round":1},"end":{"stage":10,"round":1}}],
+      "effects":{"normal":"获得 7 次商店刷新。","blossom":"获得 10 次商店刷新。","prismatic":"获得 777 次商店刷新。"},
+      "requirements":[],"oncePerGame":false,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    },
+    {
+      "id":"blood_ritual",
+      "riotId":null,
+      "nameZh":"Blood Ritual（中文名待 DataTFT 核对）",
+      "nameEn":"Blood Ritual",
+      "category":"misc",
+      "cost":6,
+      "stageRanges":[{"start":{"stage":4,"round":2},"end":{"stage":4,"round":7}}],
+      "effects":{"normal":"失去 10 点玩家生命，获得一个英雄复制器。","blossom":"生命代价降低为 8 点，仍获得英雄复制器。","prismatic":null},
+      "requirements":[{"type":"player_health","operator":">=","value":10,"textZh":"至少有 10 点玩家生命","machineEvaluable":true}],
+      "oncePerGame":true,"reofferCooldownShops":null,
+      "searchConcepts":[],"synonyms":[],
+      "sources":{"cost":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"stageRanges":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"effects":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"},"requirements":{"sourceId":"lolchess_wisps_18","verifiedAt":"2026-08-26","confidence":"verified_third_party"}},
+      "patch":"18.1"
+    }
+  ]
+}

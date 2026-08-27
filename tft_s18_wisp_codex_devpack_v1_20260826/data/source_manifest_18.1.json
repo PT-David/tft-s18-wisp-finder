@@ -1,0 +1,47 @@
+{
+  "patch": "18.1",
+  "verifiedAt": "2026-08-26T22:00:00+08:00",
+  "sources": [
+    {
+      "id": "riot_patch_18_1",
+      "tier": "A",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "useFor": ["patch_status", "official_wisp_rules", "official_categories", "stage5_combat_rule"]
+    },
+    {
+      "id": "riot_enchanted_wilds_overview",
+      "tier": "A",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/enchanted-wilds-overview/",
+      "useFor": ["wisp_mechanic", "blossom_breakpoints"]
+    },
+    {
+      "id": "communitydragon_latest",
+      "tier": "B",
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/",
+      "observedSnapshot": "2026-08-16",
+      "warning": "Snapshot predates 18.1 live; do not treat balance numbers as final without cross-check."
+    },
+    {
+      "id": "communitydragon_pbe",
+      "tier": "B",
+      "url": "https://raw.communitydragon.org/pbe/cdragon/tft/",
+      "observedSnapshot": "2026-08-22",
+      "warning": "PBE snapshot; useful for IDs/assets but not final live values without cross-check."
+    },
+    {
+      "id": "lolchess_wisps_18",
+      "tier": "C",
+      "url": "https://lolchess.gg/rewards/set18/wisps",
+      "observedUpdated": "2026-08-26",
+      "useFor": ["cost", "stage_ranges", "effects", "blossom", "prismatic", "requirements", "once_per_game"],
+      "confidence": "verified_third_party"
+    },
+    {
+      "id": "datatft_database",
+      "tier": "D",
+      "url": "https://www.datatft.com/database#charm",
+      "useFor": ["name_zh", "effect_zh_style"],
+      "warning": "Chinese display reference only; do not let translation layer override higher-tier numeric fields."
+    }
+  ]
+}

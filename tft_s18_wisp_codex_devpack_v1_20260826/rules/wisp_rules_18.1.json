@@ -1,0 +1,34 @@
+{
+  "patch": "18.1",
+  "official": {
+    "categories": ["champion", "combat", "misc", "shop", "gold_xp", "risky", "item"],
+    "wispShopInterval": 2,
+    "defaultPurchasesPerRound": 1,
+    "rightmostShopSlot": true,
+    "planningPhaseOnly": true,
+    "lateGameCombatGuarantee": {
+      "startStage": 5,
+      "everyNthWisp": 2,
+      "interpretation": "Every second Wisp slot is guaranteed Combat; ordinary slots are not forced non-Combat."
+    },
+    "blossom": {
+      "3": "upgraded_wisps",
+      "5": "wisp_every_shop",
+      "7": "gain_gold_after_purchase",
+      "9": "two_purchases_per_round",
+      "11": "prismatic_wisps"
+    }
+  },
+  "observedNotOfficial": {
+    "defaultReofferCooldownShops": 5,
+    "itemWispReofferCooldownShops": 20,
+    "playerHealWispReofferCooldownShops": 10,
+    "affordabilityRestriction": "supported_by_observation_not_officially_fully_specified"
+  },
+  "probabilityModel": {
+    "v1": "equal_weight_among_currently_eligible_wisps",
+    "isClaimedRealGameProbability": false,
+    "autoTracksRecentShopCooldowns": false,
+    "manualExclusionSupported": true
+  }
+}
