@@ -9,22 +9,20 @@ export const EFFECT_LABELS: Record<EffectMode, string> = { normal: '普通', blo
 
 export interface WispCardViewModel {
   id: string; nameZh: string; nameEn: string; category: Wisp['category']; categoryLabel: string; cost: number;
-  stageText: string; summary: string; summaryMode: EffectMode; requirements: string[]; hasBlossom: boolean; hasPrismatic: boolean;
-  normal: string; blossom?: string; prismatic?: string; oncePerGame: boolean; cooldown?: number; sources: FieldSource[]; patch: string;
+  stageText: string; requirements: string[]; hasBlossom: boolean; hasPrismatic: boolean;
+  normal: string; blossom?: string; prismatic?: string; oncePerGame: boolean; cooldown?: number; sources: FieldSource[];
 }
 
 export const formatStageRanges = (wisp: Wisp): string => wisp.stageRanges
   .map(({ start, end }) => `${start.stage}-${start.round} ～ ${end.stage}-${end.round}`).join(' · ');
 
-export function toCardViewModel(wisp: Wisp, requestedMode: EffectMode): WispCardViewModel {
-  const selected = wisp.effects[requestedMode];
-  const summaryMode = selected ? requestedMode : 'normal';
+export function toCardViewModel(wisp: Wisp): WispCardViewModel {
   return {
     id: wisp.id, nameZh: wisp.nameZh, nameEn: wisp.nameEn, category: wisp.category, categoryLabel: CATEGORY_LABELS[wisp.category], cost: wisp.cost,
-    stageText: formatStageRanges(wisp), summary: selected || wisp.effects.normal, summaryMode,
+    stageText: formatStageRanges(wisp),
     requirements: wisp.requirements.map((item) => item.textZh), hasBlossom: Boolean(wisp.effects.blossom), hasPrismatic: Boolean(wisp.effects.prismatic),
     normal: wisp.effects.normal, blossom: wisp.effects.blossom || undefined, prismatic: wisp.effects.prismatic || undefined,
-    oncePerGame: wisp.oncePerGame, cooldown: wisp.reofferCooldownShops ?? undefined, sources: Object.values(wisp.sources), patch: wisp.patch,
+    oncePerGame: wisp.oncePerGame, cooldown: wisp.reofferCooldownShops ?? undefined, sources: Object.values(wisp.sources),
   };
 }
 

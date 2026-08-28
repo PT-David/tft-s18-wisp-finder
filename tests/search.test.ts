@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
 import type { Wisp, WispDataset } from '../src/domain/types';
 import { runQuery } from '../src/query/queryModel';
-import { normalizeSearchText, searchWisps, tokenizeQuery } from '../src/search/searchEngine';
+import { buildQueryClauses, normalizeSearchText, searchWisps, tokenizeQuery } from '../src/search/searchEngine';
 
 const seed = (JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8')) as WispDataset).records[0]!;
 const fixture = (id: string, changes: Partial<Wisp>): Wisp => ({ ...seed, id, nameZh: id, nameEn: id, effects: { normal: '普通效果' }, requirements: [], searchConcepts: [], synonyms: [], ...changes });
@@ -34,6 +34,19 @@ describe('搜索引擎', () => {
   test('query expansion 让“血量”命中“生命值”', () => {
     const health = fixture('health', { effects: { normal: '获得 100 生命值' } });
     expect(searchWisps([health], '血量')[0]?.wisp.id).toBe('health');
+  });
+
+  test('中文、单词和多词英文同义词形成一个通用 phrase clause', () => {
+    const duplicator = fixture('duplicator', { effects: { normal: '获得英雄复制器' } });
+    expect(searchWisps([duplicator], '妮蔻')).toHaveLength(1);
+    expect(searchWisps([duplicator], 'Champion Duplicator')).toHaveLength(1);
+    expect(buildQueryClauses('Champion Duplicator')).toEqual([expect.objectContaining({ source: 'champion duplicator' })]);
+  });
+
+  test('multi-token AND 可与 phrase synonym 同时使用', () => {
+    const both = fixture('both', { effects: { normal: '己方阵亡时获得英雄复制器' } });
+    const copyOnly = fixture('copy-only', { effects: { normal: '获得英雄复制器' } });
+    expect(searchWisps([copyOnly, both], 'Champion Duplicator 阵亡').map(({ wisp }) => wisp.id)).toEqual(['both']);
   });
 
   test('字段优先级：名称完全匹配 > 名称前缀 > 正文 > 条件 > 同义词 > 概念', () => {
