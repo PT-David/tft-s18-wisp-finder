@@ -185,3 +185,23 @@ test('patch 切换隔离卡片缓存、reference 与 excluded', async ({ page })
   await expect(page.locator('#excludedRegion')).toBeHidden();
   await expect(page.locator('[data-stat="n"]').first()).toHaveText('1');
 });
+
+test('直接切换 patch 时同 ID 只保留一张新版本卡片', async ({ page }) => {
+  const source = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: Array<Record<string, unknown>> };
+  const base = source.records[0]!;
+  const fixture = {
+    ...source,
+    records: [
+      { ...base, id: 'shared-direct', patch: '18.1', effects: { normal: '直接切换旧效果' } },
+      { ...base, id: 'shared-direct', patch: '18.2', effects: { normal: '直接切换新效果' } },
+    ],
+  };
+  await page.route('**/data/wisps.json', (route) => route.fulfill({ json: fixture }));
+  await page.reload();
+  await expect(page.locator('[data-wisp-id="shared-direct"]')).toHaveCount(1);
+  await expect(page.locator('.normal-effect')).toContainText('直接切换旧效果');
+  await page.locator('#patch').selectOption('18.2');
+  await expect(page.locator('[data-wisp-id="shared-direct"]')).toHaveCount(1);
+  await expect(page.locator('.normal-effect')).toContainText('直接切换新效果');
+  await expect(page.locator('.normal-effect')).not.toContainText('直接切换旧效果');
+});

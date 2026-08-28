@@ -57,6 +57,7 @@ function createCard(wisp: Wisp): HTMLElement {
   const node = document.createElement('article');
   node.className = `card category-border-${vm.category}`;
   node.dataset.wispId = vm.id;
+  node.dataset.cardKey = `${wisp.patch}:${wisp.id}`;
   node.innerHTML = `<div class="card-top"><span class="category-pill category-${vm.category}">${vm.categoryLabel}</span><span class="cost">◈ ${vm.cost}</span></div>
     <h3>${esc(vm.nameZh)}</h3><p class="name-en">${esc(vm.nameEn)}</p><p class="stages">◷ ${vm.stageText}</p>
     <div class="effect normal-effect"><b>普通</b><span>${esc(vm.normal)}</span></div>
@@ -93,7 +94,7 @@ function updateResults(): void {
     const cacheKey = `${wisp.patch}:${wisp.id}`;
     let node = cardNodes.get(cacheKey);
     if (!node) { node = createCard(wisp); cardNodes.set(cacheKey, node); }
-    visible.add(wisp.id);
+    visible.add(cacheKey);
     const probability = node.querySelector<HTMLElement>('[data-card-prob]')!;
     const slot = state.slot === 'uncertain' ? 'ordinary' : state.slot;
     probability.textContent = percent(probabilityForWisp(wisp, query.candidatePool, slot));
@@ -101,8 +102,8 @@ function updateResults(): void {
     cards.append(node);
   }
   for (const child of [...cards.children]) {
-    const id = (child as HTMLElement).dataset.wispId;
-    if (id && !visible.has(id)) child.remove();
+    const cardKey = (child as HTMLElement).dataset.cardKey;
+    if (cardKey && !visible.has(cardKey)) child.remove();
   }
   byId('empty').hidden = query.displayedResults.length > 0;
   byId('resultCount').textContent = `${query.displayedResults.length} 个结果`;

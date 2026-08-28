@@ -54,7 +54,7 @@ export function criteriaFromUI(state: QueryUIState, wisps: readonly Wisp[]): Can
     prismaticOnly: state.prismaticOnly,
     excludedIds: state.excluded,
     referenceRanges: reference?.stageRanges,
-    referenceFrom: exact || parseStagePoint(state.rangeStart),
+    referenceFrom: exact,
     minCost: finiteOptionalNumber(state.minCost),
     maxCost: finiteOptionalNumber(state.maxCost),
   };

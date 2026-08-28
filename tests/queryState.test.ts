@@ -30,4 +30,9 @@ describe('UI 状态显式转换', () => {
     const criteria = criteriaFromUI(state({ referenceId: reference.id, patch: '18.2' }), [reference, crossPatch]);
     expect(criteria.referenceRanges).toBe(crossPatch.stageRanges);
   });
+  test('referenceFrom 只由精确回合定义，rangeStart 不冒充当前回合', () => {
+    const reference = wisps[0]!;
+    expect(criteriaFromUI(state({ referenceId: reference.id, rangeStart: '4-2', rangeEnd: '4-7' }), wisps).referenceFrom).toBeUndefined();
+    expect(criteriaFromUI(state({ referenceId: reference.id, exactStage: '4-3' }), wisps).referenceFrom).toEqual({ stage: 4, round: 3 });
+  });
 });
