@@ -6,6 +6,7 @@ export interface CandidateCriteria {
   stage?: StagePoint; stageRange?: StageRange; currentGold?: number; affordableOnly?: boolean;
   categories?: readonly WispCategory[]; prismaticOnly?: boolean; requirementState?: RequirementState;
   referenceRanges?: readonly StageRange[]; referenceFrom?: StagePoint; excludedIds?: ReadonlySet<string>;
+  minCost?: number; maxCost?: number;
 }
 
 export const isAffordable = (wisp: Wisp, gold: number): boolean => gold >= (wisp.minimumAffordableGold ?? wisp.cost);
@@ -21,6 +22,8 @@ export function buildCandidatePool(wisps: readonly Wisp[], criteria: CandidateCr
     if (criteria.currentGold !== undefined && criteria.affordableOnly !== false && !isAffordable(wisp, criteria.currentGold)) return false;
     if (criteria.categories?.length && !criteria.categories.includes(wisp.category)) return false;
     if (criteria.prismaticOnly && !wisp.effects.prismatic) return false;
+    if (criteria.minCost !== undefined && wisp.cost < criteria.minCost) return false;
+    if (criteria.maxCost !== undefined && wisp.cost > criteria.maxCost) return false;
     if (requirementState && wisp.requirements.some((requirement) => evaluateRequirement(requirement, requirementState) === false)) return false;
     if (criteria.referenceRanges) {
       const windows = criteria.referenceFrom ? remainingRanges(criteria.referenceRanges, criteria.referenceFrom) : criteria.referenceRanges;
