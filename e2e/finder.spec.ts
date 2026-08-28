@@ -36,6 +36,16 @@ test('逐字输入、caret 编辑与连续 Backspace 保持原生行为', async 
   await expect(search).toHaveValue('');
 });
 
+test('非法 4-8 不进入候选条件，改回 4-7 后恢复过滤', async ({ page }) => {
+  const initial = await page.locator('.card').count();
+  await page.locator('#exactStage').fill('4-8');
+  await expect(page.locator('#formError')).toContainText('精确回合无效');
+  await expect(page.locator('.card')).toHaveCount(initial);
+  await page.locator('#exactStage').fill('4-7');
+  await expect(page.locator('#formError')).toBeEmpty();
+  await expect(page.locator('.card')).not.toHaveCount(initial);
+});
+
 test('composition 生命周期不会替换搜索节点，Unicode 查询可正常执行', async ({ page }) => {
   const search = page.locator('#query');
   const stable = await search.evaluateHandle((node) => node);

@@ -5,6 +5,8 @@
     "datatft": 169,
     "communitydragonEnVariants": 345,
     "communitydragonZhVariants": 345,
+    "opggHumanObserved": 200,
+    "opggExtracted": 0,
     "lolchess": 0
   },
   "unionByAcceptedSkeleton": 181,
@@ -31,12 +33,13 @@
     "7": 0,
     "8": 0
   },
-  "withBlossom": 169,
+  "withBlossom": 130,
   "withPrismatic": 20,
   "withRequirements": 56,
-  "oncePerGame": 0,
+  "oncePerGameConfirmedTrue": 0,
+  "oncePerGameUnknown": 169,
   "withReofferCooldownShops": 0,
   "criticalFieldsMissing": 17,
-  "unresolvedCriticalConflicts": 1,
+  "unresolvedCriticalConflicts": 6,
   "unmatchedCount": 29
 }

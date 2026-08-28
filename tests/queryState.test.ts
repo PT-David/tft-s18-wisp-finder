@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
 import type { WispDataset } from '../src/domain/types';
 import { buildCandidatePool } from '../src/filter/candidates';
-import { criteriaFromUI, finiteOptionalNumber, parseStagePoint, validationMessage, type QueryUIState } from '../src/ui/queryState';
+import { criteriaFromUI, finiteOptionalNumber, parsePlayableRound, parseStagePoint, validationMessage, type QueryUIState } from '../src/ui/queryState';
 
 const wisps = (JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8')) as WispDataset).records;
 const state = (changes: Partial<QueryUIState> = {}): QueryUIState => ({
@@ -14,6 +14,14 @@ describe('UI 状态显式转换', () => {
   test('affordableOnly 保持 boolean，3 金可切换 Field of Mice', () => {
     expect(buildCandidatePool(wisps, criteriaFromUI(state({ gold: '3', affordableOnly: true }), wisps)).some(({ id }) => id === 'field_of_mice')).toBe(false);
     expect(buildCandidatePool(wisps, criteriaFromUI(state({ gold: '3', affordableOnly: false }), wisps)).some(({ id }) => id === 'field_of_mice')).toBe(true);
+  });
+
+  test('用户回合只接受 Set 18 可玩的 1～7 回合位置', () => {
+    expect(parsePlayableRound('4-7')).toEqual({ stage: 4, round: 7 });
+    for (const value of ['4-8', '4-99', '0-1', '-1-2', 'bad']) expect(parsePlayableRound(value)).toBeUndefined();
+    const invalid = state({ exactStage: '4-8' });
+    expect(criteriaFromUI(invalid, wisps).stage).toBeUndefined();
+    expect(validationMessage(invalid)).toContain('精确回合无效');
   });
   test('无效阶段与非有限数字不会进入 criteria', () => {
     expect(parseStagePoint('4-x')).toBeUndefined();

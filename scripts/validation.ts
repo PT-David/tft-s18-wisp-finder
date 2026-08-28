@@ -9,6 +9,8 @@ const finiteNonNegative = (value: unknown): value is number => typeof value === 
 const stringArray = (value: unknown): value is string[] => Array.isArray(value) && value.every((item) => typeof item === 'string');
 const comparableValue = (value: unknown): value is string | number | boolean =>
   typeof value === 'string' || typeof value === 'boolean' || (typeof value === 'number' && Number.isFinite(value));
+const knowledge = (value: unknown): value is Record<string, unknown> => object(value) &&
+  (value.status === 'unknown' || (value.status === 'confirmed' && Object.hasOwn(value, 'value')));
 
 function validateRequirement(requirement: unknown, path: string): string[] {
   if (!object(requirement)) return [`${path}: 必须是对象`];
@@ -68,8 +70,10 @@ export function validateDataset(input: unknown): string[] {
     }
     if (!Array.isArray(record.requirements)) errors.push(`${path}.requirements: 必须是数组`);
     else record.requirements.forEach((requirement, ri) => errors.push(...validateRequirement(requirement, `${path}.requirements[${ri}]`)));
-    if (typeof record.oncePerGame !== 'boolean') errors.push(`${path}.oncePerGame: 必须是布尔值`);
-    if (record.reofferCooldownShops !== undefined && record.reofferCooldownShops !== null && (!Number.isInteger(record.reofferCooldownShops) || (record.reofferCooldownShops as number) < 0)) errors.push(`${path}.reofferCooldownShops: 必须为 null 或非负整数`);
+    if (typeof record.oncePerGame !== 'boolean' && !(knowledge(record.oncePerGame) && (record.oncePerGame.status === 'unknown' || typeof record.oncePerGame.value === 'boolean'))) errors.push(`${path}.oncePerGame: 必须是布尔值或合法 knowledge state`);
+    const cooldown = knowledge(record.reofferCooldownShops) ? record.reofferCooldownShops.value : record.reofferCooldownShops;
+    if (record.reofferCooldownShops !== undefined && !knowledge(record.reofferCooldownShops) && record.reofferCooldownShops !== null && (!Number.isInteger(record.reofferCooldownShops) || (record.reofferCooldownShops as number) < 0)) errors.push(`${path}.reofferCooldownShops: 必须为 null、非负整数或 knowledge state`);
+    if (knowledge(record.reofferCooldownShops) && record.reofferCooldownShops.status === 'confirmed' && cooldown !== null && (!Number.isInteger(cooldown) || (cooldown as number) < 0)) errors.push(`${path}.reofferCooldownShops.value: 必须为 null 或非负整数`);
     for (const field of ['searchConcepts', 'synonyms'] as const) if (!stringArray(record[field])) errors.push(`${path}.${field}: 必须是 string[]`);
     if (record.patch !== '18.1') errors.push(`${path}.patch: 必须为 18.1`);
     const sourceFields = [...requiredSourceFields, ...(Array.isArray(record.requirements) && record.requirements.length ? ['requirements'] as const : [])];

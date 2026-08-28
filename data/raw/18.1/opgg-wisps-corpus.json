@@ -1,0 +1,23 @@
+{
+  "sourceId": "opgg_set18_wisps_20260828",
+  "url": "https://op.gg/tft/set/18/wisps",
+  "retrievedAt": "2026-08-28T18:13:55Z",
+  "fetchStatus": "blocked_by_source_protection",
+  "httpStatus": 403,
+  "pageUpdatedAt": null,
+  "records": [],
+  "humanReviewObservation": {
+    "observedAt": "2026-08-28",
+    "recordCount": 200,
+    "categoryCounts": {
+      "champion": 16,
+      "combat": 94,
+      "shop": 19,
+      "gold_xp": 14,
+      "risky": 21,
+      "item": 6,
+      "misc": 30
+    }
+  },
+  "warning": "The execution environment received HTTP 403. Aggregate counts were supplied by human review; no record-level OP.GG rows are claimed or fabricated. A browser-exported minimal snapshot is required for item-by-item reconciliation."
+}

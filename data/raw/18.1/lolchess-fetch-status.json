@@ -1,0 +1,15 @@
+{
+  "sourceId": "lolchess_wisps_18_1_20260828_attempt",
+  "url": "https://lolchess.gg/rewards/set18/wisps",
+  "retrievedAt": "2026-08-28T16:49:16Z",
+  "fetchStatus": "blocked_by_source_protection",
+  "httpStatus": 202,
+  "challenge": "AWS WAF",
+  "records": [],
+  "humanReviewObservation": {
+    "observedAt": "2026-08-28",
+    "prismaticBlossomsOnlyCount": 11,
+    "mitosisHasBlossomSection": false
+  },
+  "warning": "The public page is browser-accessible; only this cloud fetch path was blocked. This is not an unavailable-source claim and is not a valid field snapshot."
+}

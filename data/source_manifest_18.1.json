@@ -10,7 +10,12 @@
       "upstreamModifiedAt": null,
       "sha256": "d65b555ed03a04a08bb508131e3cbe602bc63fd4a34812f31c34429e3fcd93cc",
       "locale": "en_us",
-      "useFor": ["patch_status", "official_wisp_rules", "official_categories", "stage5_combat_rule"],
+      "useFor": [
+        "patch_status",
+        "official_wisp_rules",
+        "official_categories",
+        "stage5_combat_rule"
+      ],
       "confidence": "official"
     },
     {
@@ -21,7 +26,10 @@
       "upstreamModifiedAt": null,
       "sha256": "9b2add9d5e4b50bdc0fed9e66132eef0c1548f5706d4f539b724d7d023901532",
       "locale": "en_us",
-      "useFor": ["wisp_mechanic", "blossom_breakpoints"],
+      "useFor": [
+        "wisp_mechanic",
+        "blossom_breakpoints"
+      ],
       "confidence": "official"
     },
     {
@@ -33,7 +41,11 @@
       "sha256": "7331be101d2399145c31336b688b95dd7715d51f94851401d5b5b2d8ed2466ec",
       "extractedSha256": "03baa3b886b987cc255d0c8792de4ec947b96406a23bd5c0b760bdbd675fdafe",
       "locale": "en_us",
-      "useFor": ["riotId", "nameEn", "effect_cross_check"],
+      "useFor": [
+        "riotId",
+        "nameEn",
+        "effect_cross_check"
+      ],
       "confidence": "client_data"
     },
     {
@@ -45,7 +57,11 @@
       "sha256": "00f1d78527c9b8302d3d067d665bc40dc3389bff7429f25c9e42aa4ef751b7e8",
       "extractedSha256": "a9ea1e0689af417ecb33595e1ae715bf68a4ad1d33211ee3ffb1974b79b809ec",
       "locale": "zh_cn",
-      "useFor": ["nameZh", "localized_effect_cross_check", "cross_source_join"],
+      "useFor": [
+        "nameZh",
+        "localized_effect_cross_check",
+        "cross_source_join"
+      ],
       "confidence": "client_data"
     },
     {
@@ -55,9 +71,14 @@
       "retrievedAt": "2026-08-28T16:49:16Z",
       "pageUpdatedAt": null,
       "sha256": null,
-      "useFor": ["intended_structured_skeleton", "field_cross_check"],
+      "useFor": [
+        "intended_structured_skeleton",
+        "field_cross_check"
+      ],
       "confidence": "unverified",
-      "warning": "HTTP 202 AWS WAF challenge returned an empty body; no snapshot was accepted and productionReady remains false."
+      "warning": "Public page is browser-accessible; this cloud fetch path received an AWS WAF challenge. No empty response was accepted as a snapshot.",
+      "fetchStatus": "blocked_by_source_protection",
+      "httpStatus": 202
     },
     {
       "sourceId": "datatft_18_1_20260828",
@@ -67,9 +88,34 @@
       "pageUpdatedAt": "2026-08-28T07:40:00+08:00",
       "sha256": "a35d3a2506f033349654ca9c91cad14dcf6d563e54238969c9d4332b9d609d26",
       "locale": "zh_cn",
-      "useFor": ["display_skeleton", "nameZh", "effectsZh", "category", "cost", "stageRanges", "requirements"],
+      "useFor": [
+        "display_skeleton",
+        "nameZh",
+        "effectsZh",
+        "category",
+        "cost",
+        "stageRanges",
+        "requirements"
+      ],
       "confidence": "community_high_confidence",
       "warning": "Used as the provisional skeleton only because Tier C could not be snapshotted; numeric fields require Tier C review."
+    },
+    {
+      "sourceId": "opgg_set18_wisps_20260828",
+      "tier": "C",
+      "url": "https://op.gg/tft/set/18/wisps",
+      "retrievedAt": "2026-08-28T18:13:55Z",
+      "pageUpdatedAt": null,
+      "sha256": "a86e988ede972dda45239a9736d7f184fd9880f7dfe70c143057b3c87a944d33",
+      "locale": "en",
+      "fetchStatus": "blocked_by_source_protection",
+      "httpStatus": 403,
+      "useFor": [
+        "corpus_completeness_cross_check",
+        "category_count_cross_check"
+      ],
+      "confidence": "unverified",
+      "warning": "Human review supplied aggregate 200/category observations, but this environment could not extract record identities. OP.GG does not automatically override higher-tier fields."
     }
   ]
 }

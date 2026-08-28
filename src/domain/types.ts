@@ -10,11 +10,17 @@ export interface Requirement {
   textZh: string; textEn?: string; machineEvaluable: boolean;
 }
 export interface FieldSource { sourceId: string; verifiedAt: string; confidence: Confidence }
+export type Knowledge<T> = { status: 'unknown' } | { status: 'confirmed'; value: T };
+export type KnowledgeInput<T> = Knowledge<T> | T | null | undefined;
+export const knownValue = <T>(input: KnowledgeInput<T>): T | undefined => {
+  if (input && typeof input === 'object' && 'status' in input) return input.status === 'confirmed' ? input.value : undefined;
+  return input === null || input === undefined ? undefined : input;
+};
 export interface Wisp {
   id: string; riotId?: string | null; nameZh: string; nameEn: string; category: WispCategory;
   cost: number; minimumAffordableGold?: number | null; stageRanges: StageRange[];
   effects: { normal: string; blossom?: string | null; prismatic?: string | null };
-  requirements: Requirement[]; oncePerGame: boolean; reofferCooldownShops?: number | null;
+  requirements: Requirement[]; oncePerGame: KnowledgeInput<boolean>; reofferCooldownShops?: KnowledgeInput<number | null>;
   searchConcepts: string[]; synonyms: string[]; sources: Record<string, FieldSource>; patch: '18.1';
 }
 export interface WispDataset {

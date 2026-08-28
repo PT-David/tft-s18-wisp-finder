@@ -1,0 +1,37 @@
+{
+  "dataTftOnly": [],
+  "opggOnly": [],
+  "intersection": [],
+  "categoryCountBySource": {
+    "datatft": {
+      "champion": 16,
+      "combat": 75,
+      "misc": 23,
+      "shop": 19,
+      "gold_xp": 13,
+      "risky": 18,
+      "item": 5
+    },
+    "opgg": {
+      "champion": 16,
+      "combat": 94,
+      "shop": 19,
+      "gold_xp": 14,
+      "risky": 21,
+      "item": 6,
+      "misc": 30
+    }
+  },
+  "matchedByExactId": [],
+  "matchedByExactEnglishName": [],
+  "matchedByExactChineseName": [],
+  "needsReview": [
+    {
+      "count": 31,
+      "classification": "F",
+      "reason": "OP.GG record-level snapshot was blocked in this environment; individual identities cannot be responsibly invented."
+    }
+  ],
+  "excludedFromProduction": [],
+  "reason": "The normalized corpus remains the 169 committed DataTFT rows because they are the only complete record-level skeleton available. This is provisional, not proof of completeness."
+}

@@ -38,6 +38,16 @@ async function main() {
   const updated = (await page.locator('.database-meta-value').allTextContents())[1] ?? null; await browser.close();
   const snapshot = { sourceId: `datatft_18_1_${retrievedAt.slice(0, 10).replaceAll('-', '')}`, retrievedAt, pageUpdatedAt: updated, url: 'https://www.datatft.com/database#charm', locale: 'zh_cn', records };
   await writeFile(resolve(raw, 'datatft-wisps-zh.json'), `${JSON.stringify(snapshot, null, 2)}\n`);
+  for (const source of [
+    { file: 'opgg-wisps-corpus.json', sourceId: 'opgg_set18_wisps', url: 'https://op.gg/tft/set/18/wisps' },
+    { file: 'lolchess-fetch-status.json', sourceId: 'lolchess_wisps_18_1', url: 'https://lolchess.gg/rewards/set18/wisps' },
+  ]) {
+    const previous = JSON.parse(await readFile(resolve(raw, source.file), 'utf8')) as Record<string, unknown>;
+    const response = await fetch(source.url).catch(() => undefined);
+    const blocked = !response?.ok || response.status === 202;
+    const status = { sourceId: source.sourceId, url: source.url, retrievedAt, fetchStatus: blocked ? 'blocked_by_source_protection' : 'fetched_requires_extractor_review', httpStatus: response?.status ?? null, records: [], humanReviewObservation: previous.humanReviewObservation, warning: blocked ? 'Source protection blocked this execution path; no bypass was attempted and no empty page was accepted.' : 'HTML was reachable but is not accepted until a source-specific minimal extractor is reviewed.' };
+    await writeFile(resolve(raw, source.file), `${JSON.stringify(status, null, 2)}\n`);
+  }
   console.log(`Fetched ${records.length} DataTFT rows. Cache hashes: ${sha256(await readFile(resolve(cache, 'en_us.json')))}, ${sha256(await readFile(resolve(cache, 'zh_cn.json')))}`);
 }
 

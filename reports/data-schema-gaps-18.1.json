@@ -1,14 +1,9 @@
 [
   {
-    "field": "reofferCooldownShops",
-    "issue": "Current schema cannot distinguish unknown from confirmed absent when omitted/null are both used by existing consumers.",
-    "affectedCount": 169,
-    "recommendation": "Add an explicit knowledge-status enum in a later schema migration; this build omits the field."
-  },
-  {
     "field": "minimumAffordableGold",
     "issue": "DataTFT exposes cost but not all affordability rules.",
     "affectedCount": 169,
-    "recommendation": "Treat the cost-derived value as a lower bound and add rule provenance/status."
+    "resolution": "Field omitted in production; seed fixtures retain independently asserted values.",
+    "recommendation": "Add a derived-lower-bound state only if the UI later needs to expose that distinction."
   }
 ]
