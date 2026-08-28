@@ -1,0 +1,17 @@
+[
+  {
+    "wispIdentity": "corpus",
+    "field": "LoLCHESS structured skeleton",
+    "sourceA": "datatft_18_1_20260828",
+    "sourceB": "lolchess_wisps_18_1",
+    "valueA": "169 displayed records",
+    "valueB": "unavailable (AWS WAF challenge)",
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Tier C skeleton could not be retrieved, so Tier D must not be silently promoted.",
+    "resolution": "needs_review",
+    "note": "Dataset remains productionReady=false until the Tier C snapshot and field-level comparison are available."
+  }
+]

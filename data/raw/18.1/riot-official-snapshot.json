@@ -1,0 +1,19 @@
+{
+  "retrievedAt": "2026-08-28T16:57:07Z",
+  "documents": [
+    {
+      "sourceId": "riot_patch_18_1_20260828",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+      "downloadSha256": "d65b555ed03a04a08bb508131e3cbe602bc63fd4a34812f31c34429e3fcd93cc",
+      "upstreamModifiedAt": null,
+      "observations": ["Patch 18.1 is the live rules context", "Official Wisp and Stage 5+ rule statements have highest priority"]
+    },
+    {
+      "sourceId": "riot_enchanted_wilds_overview_20260828",
+      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/enchanted-wilds-overview/",
+      "downloadSha256": "9b2add9d5e4b50bdc0fed9e66132eef0c1548f5706d4f539b724d7d023901532",
+      "upstreamModifiedAt": null,
+      "observations": ["Wisp mechanic and Blossom breakpoint context"]
+    }
+  ]
+}

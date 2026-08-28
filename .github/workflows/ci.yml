@@ -15,8 +15,12 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run data:build:18.1
+      - run: npm run data:audit:18.1
+      - run: npm run validate:seed
       - run: npm run validate:data
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - run: git diff --exit-code

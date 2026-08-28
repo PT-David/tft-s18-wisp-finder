@@ -1,0 +1,94 @@
+[
+  {
+    "nameEn": "Mitosis",
+    "matched": true,
+    "productionId": "da_18_mitosis",
+    "differences": [
+      "nameZh",
+      "effects"
+    ]
+  },
+  {
+    "nameEn": "Field of Mice",
+    "matched": true,
+    "productionId": "da_18_fieldofmice",
+    "differences": [
+      "nameZh",
+      "effects",
+      "requirements"
+    ]
+  },
+  {
+    "nameEn": "Hero Of Prophecy",
+    "matched": true,
+    "productionId": "da_heroofprophecy18",
+    "differences": [
+      "nameZh",
+      "effects",
+      "requirements",
+      "oncePerGame"
+    ]
+  },
+  {
+    "nameEn": "Petrify Shields",
+    "matched": true,
+    "productionId": "da_petrifyshields18",
+    "differences": [
+      "nameZh",
+      "effects"
+    ]
+  },
+  {
+    "nameEn": "Prolific Power",
+    "matched": true,
+    "productionId": "da_18_prolificpower",
+    "differences": [
+      "nameZh",
+      "effects",
+      "requirements"
+    ]
+  },
+  {
+    "nameEn": "Verdant Vitality",
+    "matched": true,
+    "productionId": "da_18_verdantvitality",
+    "differences": [
+      "nameZh",
+      "effects",
+      "requirements"
+    ]
+  },
+  {
+    "nameEn": "Ultra Ascension",
+    "matched": true,
+    "productionId": "da_18_ultraascension",
+    "differences": [
+      "nameZh",
+      "effects"
+    ]
+  },
+  {
+    "nameEn": "Downpour",
+    "matched": true,
+    "productionId": "da_downpour18",
+    "differences": [
+      "nameZh",
+      "effects"
+    ]
+  },
+  {
+    "nameEn": "Lucky 7",
+    "matched": true,
+    "productionId": "da_lucky718",
+    "differences": [
+      "nameZh",
+      "effects"
+    ]
+  },
+  {
+    "nameEn": "Blood Ritual",
+    "matched": false,
+    "productionId": null,
+    "differences": []
+  }
+]

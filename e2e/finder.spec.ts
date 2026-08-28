@@ -2,8 +2,21 @@ import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
 test.beforeEach(async ({ page }) => {
+  const seed = JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8'));
+  await page.route('**/data/wisps.json', (route) => route.fulfill({ json: seed }));
   await page.goto('/');
   await expect(page.locator('#resultCount')).toHaveText('10 个结果');
+});
+
+test('production corpus smoke: 完整数据可加载且 reference autocomplete 可用', async ({ page }) => {
+  await page.unroute('**/data/wisps.json');
+  await page.reload();
+  const production = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: unknown[] };
+  expect(production.records.length).toBeGreaterThan(10);
+  await expect(page.locator('#resultCount')).toHaveText(`${production.records.length} 个结果`);
+  await page.locator('#advancedFilters summary').click();
+  await page.locator('#referenceQuery').fill('有丝分裂');
+  await expect(page.locator('[data-reference-option]')).not.toHaveCount(0);
 });
 
 test('逐字输入、caret 编辑与连续 Backspace 保持原生行为', async ({ page }) => {
