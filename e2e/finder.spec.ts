@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
@@ -54,6 +55,39 @@ test('真实搜索支持名称、中文同义词、phrase synonym 和 AND', asyn
   }
 });
 
+test('AND 只作为弱辅助说明，多关键词继续同时满足', async ({ page }) => {
+  await expect(page.locator('kbd')).toHaveCount(0);
+  await expect(page.locator('.search-help')).toHaveText('多关键词同时满足');
+  await page.locator('#query').fill('英雄 生命');
+  await expect(page.locator('.card')).toHaveCount(2);
+});
+
+test('版本选择器只在 header 显示一次，移动端值仍可读', async ({ page }) => {
+  await expect(page.locator('#patch')).toHaveCount(1);
+  await expect(page.locator('header #patch')).toHaveValue('18.1');
+  await expect(page.locator('#queryPanel #patch')).toHaveCount(0);
+  await page.setViewportSize({ width: 390, height: 844 });
+  const fontSize = await page.locator('#patch').evaluate((node) => parseFloat(getComputedStyle(node).fontSize));
+  expect(fontSize).toBeGreaterThanOrEqual(11);
+});
+
+test('reference autocomplete 可搜索、选择、生效及清除', async ({ page }) => {
+  await page.locator('#advancedFilters summary').click();
+  await page.locator('#referenceQuery').fill('Petri');
+  await expect(page.locator('[data-reference-option="petrify_shields"]')).toBeVisible();
+  await page.locator('[data-reference-option="petrify_shields"]').click();
+  await expect(page.locator('#referenceChip')).toContainText('Petrify Shields');
+  await expect(page.locator('.card')).toHaveCount(7);
+  await page.locator('[data-clear-reference]').click();
+  await expect(page.locator('.card')).toHaveCount(10);
+});
+
+test('卡片轻量操作可直接设为阶段参考', async ({ page }) => {
+  await page.locator('[data-wisp-id="mitosis"] [data-set-reference]').click();
+  await expect(page.locator('#referenceChip')).toContainText('Mitosis');
+  await expect(page.locator('.card')).toHaveCount(1);
+});
+
 test('搜索只改变 Displayed Results/K，不改变 Candidate Pool N', async ({ page }) => {
   await page.locator('#probabilityMode').check();
   await expect(page.locator('[data-stat="n"]').first()).toHaveText('10');
@@ -100,4 +134,54 @@ test('桌面滚动时完整查询面板不 sticky 遮挡结果', async ({ page }
   await page.locator('.card').last().scrollIntoViewIfNeeded();
   const positions = await page.evaluate(() => ({ panelBottom: document.querySelector('#queryPanel')!.getBoundingClientRect().bottom, headerBottom: document.querySelector('header')!.getBoundingClientRect().bottom }));
   expect(positions.panelBottom).toBeLessThanOrEqual(positions.headerBottom);
+});
+
+test('搜索 SVG 垂直居中，桌面卡片正文可读且不溢出', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await expect(page.locator('.search-icon')).toHaveCount(1);
+  const metrics = await page.evaluate(() => {
+    const icon = document.querySelector('.search-icon')!.getBoundingClientRect();
+    const input = document.querySelector('#query')!.getBoundingClientRect();
+    const card = document.querySelector('[data-wisp-id="field_of_mice"]') as HTMLElement;
+    const effect = card.querySelector('.effect span') as HTMLElement;
+    const requirement = card.querySelector('.requirements') as HTMLElement;
+    const title = card.querySelector('h3') as HTMLElement;
+    return {
+      centerDelta: Math.abs((icon.top + icon.height / 2) - (input.top + input.height / 2)),
+      iconPointerEvents: getComputedStyle(document.querySelector('.search-icon')!).pointerEvents,
+      effectSize: parseFloat(getComputedStyle(effect).fontSize), requirementSize: parseFloat(getComputedStyle(requirement).fontSize),
+      titleSize: parseFloat(getComputedStyle(title).fontSize), overflow: card.scrollWidth > card.clientWidth,
+    };
+  });
+  expect(metrics.centerDelta).toBeLessThanOrEqual(1);
+  expect(metrics.iconPointerEvents).toBe('none');
+  expect(metrics.effectSize).toBeGreaterThanOrEqual(14);
+  expect(metrics.requirementSize).toBeGreaterThanOrEqual(13);
+  expect(metrics.titleSize).toBeGreaterThanOrEqual(17);
+  expect(metrics.overflow).toBe(false);
+});
+
+test('patch 切换隔离卡片缓存、reference 与 excluded', async ({ page }) => {
+  const source = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: Array<Record<string, unknown>> };
+  const base = source.records[0]!;
+  const fixture = {
+    ...source,
+    records: [
+      { ...base, id: 'shared', nameZh: '共享仙灵', nameEn: 'Shared Wisp', patch: '18.1', effects: { normal: '18.1 旧效果' } },
+      { ...base, id: 'shared', nameZh: '共享仙灵', nameEn: 'Shared Wisp', patch: '18.2', effects: { normal: '18.2 新效果' } },
+    ],
+  };
+  await page.route('**/data/wisps.json', (route) => route.fulfill({ json: fixture }));
+  await page.reload();
+  await expect(page.locator('.normal-effect')).toContainText('18.1 旧效果');
+  await page.locator('[data-set-reference="shared"]').click();
+  await page.locator('#probabilityMode').check();
+  await page.locator('[data-exclude="shared"]').click();
+  await expect(page.locator('#excludedRegion')).toContainText('已排除 1 个');
+  await page.locator('#patch').selectOption('18.2');
+  await expect(page.locator('.normal-effect')).toContainText('18.2 新效果');
+  await expect(page.locator('.normal-effect')).not.toContainText('18.1 旧效果');
+  await expect(page.locator('#referenceChip')).toBeHidden();
+  await expect(page.locator('#excludedRegion')).toBeHidden();
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText('1');
 });

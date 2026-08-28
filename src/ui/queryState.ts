@@ -44,7 +44,7 @@ export function rangeFromInputs(startValue: string, endValue: string): StageRang
 
 export function criteriaFromUI(state: QueryUIState, wisps: readonly Wisp[]): CandidateCriteria {
   const exact = parseStagePoint(state.exactStage);
-  const reference = wisps.find(({ id }) => id === state.referenceId);
+  const reference = wisps.find(({ id, patch }) => id === state.referenceId && patch === state.patch);
   return {
     stage: exact,
     stageRange: exact ? undefined : rangeFromInputs(state.rangeStart, state.rangeEnd),

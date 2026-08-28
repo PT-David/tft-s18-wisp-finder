@@ -24,4 +24,10 @@ describe('UI 状态显式转换', () => {
     expect(validationMessage(state({ minCost: '9', maxCost: '2' }))).toContain('最低售价');
     expect(validationMessage(state({ rangeStart: '5-2', rangeEnd: '4-1' }))).toContain('阶段范围');
   });
+  test('reference 只从当前 patch 查找', () => {
+    const reference = wisps[0]!;
+    const crossPatch = { ...reference, patch: '18.2' as never };
+    const criteria = criteriaFromUI(state({ referenceId: reference.id, patch: '18.2' }), [reference, crossPatch]);
+    expect(criteria.referenceRanges).toBe(crossPatch.stageRanges);
+  });
 });

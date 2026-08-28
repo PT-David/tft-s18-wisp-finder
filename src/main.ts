@@ -5,6 +5,7 @@ import type { Wisp, WispCategory } from './domain/types';
 import { WISP_CATEGORIES } from './domain/types';
 import { calculateStageFive, probabilityForWisp, type StageFiveSlot } from './probability/equalWeight';
 import { runQuery } from './query/queryModel';
+import { normalizeSearchText } from './search/searchEngine';
 import { criteriaFromUI, validationMessage, type QueryUIState } from './ui/queryState';
 import { CATEGORY_LABELS, EFFECT_LABELS, slotLabel, toCardViewModel, type EffectMode } from './ui/viewModels';
 
@@ -22,20 +23,22 @@ const state: QueryUIState = {
   slot: 'ordinary', minCost: '', maxCost: '', referenceId: '', excluded: new Set(), patch: '18.1',
 };
 
-function controlsHtml(patches: readonly string[]): string {
+const activeWisps = (): readonly Wisp[] => wisps.filter((wisp) => wisp.patch === state.patch);
+
+function controlsHtml(): string {
   return `<section class="query-panel" id="queryPanel" aria-label="查询条件">
-    <div class="search-row"><label class="search"><span>搜索</span><input id="query" type="search" placeholder="搜索仙灵名称或效果……" autocomplete="off"><kbd>AND</kbd></label>
-      <label class="patch-select">版本<select id="patch">${patches.map((patch) => `<option value="${esc(patch)}">${esc(patch)}</option>`).join('')}</select></label></div>
+    <div class="search-row"><label class="search"><span>搜索</span><svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input id="query" type="search" placeholder="搜索仙灵名称或效果……" autocomplete="off"></label>
+      <span class="search-help">多关键词同时满足</span></div>
     <div class="filters primary-filters">
       <label>精确回合<input id="exactStage" placeholder="如 4-3"></label><label>范围开始<input id="rangeStart" placeholder="如 3-1"></label>
       <label>范围结束<input id="rangeEnd" placeholder="如 4-7"></label><label>当前金币<input id="gold" inputmode="numeric" placeholder="不限"></label>
-      <label>重点效果<select id="effectMode">${(['normal', 'blossom', 'prismatic'] as EffectMode[]).map((mode) => `<option value="${mode}">${EFFECT_LABELS[mode]}</option>`).join('')}</select></label>
+      <label>强调效果<select id="effectMode">${(['normal', 'blossom', 'prismatic'] as EffectMode[]).map((mode) => `<option value="${mode}">${EFFECT_LABELS[mode]}</option>`).join('')}</select></label>
     </div>
     <div class="compact-row"><fieldset><legend>官方类别</legend><div class="chips">${WISP_CATEGORIES.map((category) => `<label class="chip category-${category}"><input data-category="${category}" type="checkbox">${CATEGORY_LABELS[category]}</label>`).join('')}</div></fieldset>
       <div class="switches"><label><input id="prismaticOnly" type="checkbox"> 仅 Prismatic</label><label><input id="probabilityMode" type="checkbox"> 概率模式</label></div></div>
     <details class="advanced" id="advancedFilters"><summary>高级筛选</summary><div class="filters advanced-grid">
       <label>可负担候选<select id="affordableOnly"><option value="true">只看当前可负担</option><option value="false">允许浏览买不起的</option></select></label>
-      <label>参考仙灵剩余窗口<select id="referenceId"><option value="">不启用</option>${wisps.map((wisp) => `<option value="${wisp.id}">${esc(wisp.nameZh)}</option>`).join('')}</select></label>
+      <div class="reference-picker"><label for="referenceQuery">阶段参考仙灵</label><div id="referenceInputWrap"><input id="referenceQuery" autocomplete="off" placeholder="输入中文名或英文名" aria-controls="referenceOptions" aria-autocomplete="list"></div><div class="reference-options" id="referenceOptions" role="listbox" hidden></div><div class="reference-chip" id="referenceChip" hidden></div><small id="referenceHint">与参考仙灵阶段重叠</small></div>
       <label>最低售价<input id="minCost" inputmode="numeric" placeholder="不限"></label><label>最高售价<input id="maxCost" inputmode="numeric" placeholder="不限"></label>
     </div></details><p class="form-error" id="formError" role="status"></p>
   </section>`;
@@ -62,6 +65,7 @@ function createCard(wisp: Wisp): HTMLElement {
     ${(vm.oncePerGame || vm.cooldown !== undefined) ? `<div class="limits">${vm.oncePerGame ? '<span>每局仅一次</span>' : ''}${vm.cooldown !== undefined ? `<span>冷却 ${vm.cooldown} 商店</span>` : ''}</div>` : ''}
     ${vm.prismatic ? `<details class="mini-details prismatic-details"><summary>✧ Prismatic Blossom</summary><p>${esc(vm.prismatic)}</p></details>` : ''}
     <div class="card-prob" hidden><span>此仙灵：<b data-card-prob>0%</b></span><button type="button" data-exclude="${vm.id}">排除此仙灵</button></div>
+    <div class="card-actions"><button type="button" data-set-reference="${vm.id}">设为阶段参考</button></div>
     <details class="mini-details source-details"><summary>数据来源</summary><p>${sourceRows.map(esc).join('<br>')}</p></details>`;
   return node;
 }
@@ -70,7 +74,7 @@ function updateExcluded(): void {
   const region = byId<HTMLElement>('excludedRegion');
   if (!state.probabilityMode || !state.excluded.size) { region.hidden = true; region.innerHTML = ''; return; }
   const excluded = [...state.excluded].flatMap((id) => {
-    const wisp = wisps.find((item) => item.id === id);
+    const wisp = activeWisps().find((item) => item.id === id);
     return wisp ? [`<button type="button" data-restore="${id}">${esc(wisp.nameZh)} ×</button>`] : [];
   });
   region.hidden = false;
@@ -80,13 +84,15 @@ function updateExcluded(): void {
 function updateResults(): void {
   const message = validationMessage(state);
   byId('formError').textContent = message;
-  const query = runQuery(wisps.filter((wisp) => wisp.patch === state.patch), criteriaFromUI(state, wisps), state.query);
+  const patchWisps = activeWisps();
+  const query = runQuery(patchWisps, criteriaFromUI(state, patchWisps), state.query);
   const targetIds = new Set(query.displayedResults.map(({ wisp }) => wisp.id));
   const cards = byId<HTMLElement>('cards');
   const visible = new Set<string>();
   for (const { wisp } of query.displayedResults) {
-    let node = cardNodes.get(wisp.id);
-    if (!node) { node = createCard(wisp); cardNodes.set(wisp.id, node); }
+    const cacheKey = `${wisp.patch}:${wisp.id}`;
+    let node = cardNodes.get(cacheKey);
+    if (!node) { node = createCard(wisp); cardNodes.set(cacheKey, node); }
     visible.add(wisp.id);
     const probability = node.querySelector<HTMLElement>('[data-card-prob]')!;
     const slot = state.slot === 'uncertain' ? 'ordinary' : state.slot;
@@ -107,6 +113,46 @@ function updateResults(): void {
   updateExcluded();
 }
 
+function updateReferenceHint(): void {
+  byId('referenceHint').textContent = state.exactStage.trim()
+    ? '与参考仙灵当前回合后的剩余阶段重叠'
+    : '与参考仙灵阶段重叠';
+}
+
+function renderReferenceOptions(query: string): void {
+  const options = byId<HTMLElement>('referenceOptions');
+  const normalized = normalizeSearchText(query);
+  if (!normalized || state.referenceId) { options.hidden = true; options.innerHTML = ''; return; }
+  const matches = activeWisps().filter((wisp) => [wisp.nameZh, wisp.nameEn].some((name) => normalizeSearchText(name).includes(normalized))).slice(0, 6);
+  options.innerHTML = matches.length
+    ? matches.map((wisp) => `<button type="button" role="option" data-reference-option="${wisp.id}"><b>${esc(wisp.nameZh)}</b><span>${esc(wisp.nameEn)}</span></button>`).join('')
+    : '<p>没有匹配仙灵</p>';
+  options.hidden = false;
+}
+
+function setReference(id: string): void {
+  const wisp = activeWisps().find((item) => item.id === id);
+  if (!wisp) return;
+  state.referenceId = wisp.id;
+  byId<HTMLDetailsElement>('advancedFilters').open = true;
+  byId<HTMLElement>('referenceInputWrap').hidden = true;
+  const chip = byId<HTMLElement>('referenceChip');
+  chip.hidden = false;
+  chip.innerHTML = `<span>${esc(wisp.nameEn || wisp.nameZh)}</span><button type="button" data-clear-reference aria-label="清除阶段参考">×</button>`;
+  renderReferenceOptions('');
+  updateResults();
+}
+
+function clearReference(): void {
+  state.referenceId = '';
+  const input = byId<HTMLInputElement>('referenceQuery');
+  input.value = '';
+  byId<HTMLElement>('referenceInputWrap').hidden = false;
+  byId<HTMLElement>('referenceChip').hidden = true;
+  renderReferenceOptions('');
+  updateResults();
+}
+
 function bindControls(): void {
   const textBinding: Array<[string, keyof Pick<QueryUIState, 'query' | 'exactStage' | 'rangeStart' | 'rangeEnd' | 'gold' | 'minCost' | 'maxCost'>]> = [
     ['query', 'query'], ['exactStage', 'exactStage'], ['rangeStart', 'rangeStart'], ['rangeEnd', 'rangeEnd'], ['gold', 'gold'], ['minCost', 'minCost'], ['maxCost', 'maxCost'],
@@ -122,14 +168,19 @@ function bindControls(): void {
   byId<HTMLSelectElement>('affordableOnly').addEventListener('change', (event) => { state.affordableOnly = (event.currentTarget as HTMLSelectElement).value === 'true'; updateResults(); });
   byId<HTMLInputElement>('prismaticOnly').addEventListener('change', (event) => { state.prismaticOnly = (event.currentTarget as HTMLInputElement).checked; updateResults(); });
   byId<HTMLInputElement>('probabilityMode').addEventListener('change', (event) => { state.probabilityMode = (event.currentTarget as HTMLInputElement).checked; updateResults(); });
-  byId<HTMLSelectElement>('referenceId').addEventListener('change', (event) => { state.referenceId = (event.currentTarget as HTMLSelectElement).value; updateResults(); });
-  byId<HTMLSelectElement>('patch').addEventListener('change', (event) => { state.patch = (event.currentTarget as HTMLSelectElement).value; byId('headerPatch').textContent = `PATCH ${state.patch}`; updateResults(); });
+  byId<HTMLInputElement>('referenceQuery').addEventListener('input', (event) => renderReferenceOptions((event.currentTarget as HTMLInputElement).value));
+  byId<HTMLSelectElement>('patch').addEventListener('change', (event) => {
+    state.patch = (event.currentTarget as HTMLSelectElement).value;
+    state.excluded.clear();
+    clearReference();
+  });
   byId<HTMLSelectElement>('effectMode').addEventListener('change', (event) => { state.effectMode = (event.currentTarget as HTMLSelectElement).value as EffectMode; document.documentElement.dataset.effectMode = state.effectMode; });
   for (const input of document.querySelectorAll<HTMLInputElement>('[data-category]')) input.addEventListener('change', () => {
     const category = input.dataset.category as WispCategory;
     input.checked ? state.categories.add(category) : state.categories.delete(category);
     updateResults();
   });
+  byId<HTMLInputElement>('exactStage').addEventListener('input', updateReferenceHint);
 }
 
 function rulesHtml(): string {
@@ -140,8 +191,8 @@ function rulesHtml(): string {
 function initialize(): void {
   const patches = [...new Set(wisps.map(({ patch }) => patch))];
   state.patch = patches[0] || '18.1';
-  app.innerHTML = `<header><a class="brand" href="#" data-tab="finder"><span>✦</span><b>WISP FINDER</b><small>SET 18</small></a><nav><button data-tab="finder" class="active">仙灵查询</button><button data-tab="rules">刷新规律</button></nav><span class="patch" id="headerPatch">PATCH ${esc(state.patch)}</span></header>
-    <main><section id="finderPage">${controlsHtml(patches)}<div class="content"><section class="probability" id="probability" hidden></section><section class="excluded" id="excludedRegion" hidden></section><div class="result-heading"><div><p class="eyebrow">DISPLAYED RESULTS</p><h2 id="resultCount"></h2></div><p id="poolSummary"></p></div><section class="cards" id="cards"></section><div class="empty" id="empty" hidden><b>没有匹配结果</b><span>请调整搜索词或公共筛选。</span></div></div></section><section class="rules-page content" id="rulesPage" hidden>${rulesHtml()}</section></main><footer>当前为部分核验种子数据，并非完整仙灵全集。</footer>`;
+  app.innerHTML = `<header><a class="brand" href="#" data-tab="finder"><span>✦</span><b>WISP FINDER</b><small>SET 18</small></a><nav><button data-tab="finder" class="active">仙灵查询</button><button data-tab="rules">刷新规律</button></nav><label class="header-patch">版本<select id="patch">${patches.map((patch) => `<option value="${esc(patch)}">${esc(patch)}</option>`).join('')}</select></label></header>
+    <main><section id="finderPage">${controlsHtml()}<div class="content"><section class="probability" id="probability" hidden></section><section class="excluded" id="excludedRegion" hidden></section><div class="result-heading"><div><p class="eyebrow">DISPLAYED RESULTS</p><h2 id="resultCount"></h2></div><p id="poolSummary"></p></div><section class="cards" id="cards"></section><div class="empty" id="empty" hidden><b>没有匹配结果</b><span>请调整搜索词或公共筛选。</span></div></div></section><section class="rules-page content" id="rulesPage" hidden>${rulesHtml()}</section></main><footer>当前为部分核验种子数据，并非完整仙灵全集。</footer>`;
   bindControls();
   app.addEventListener('change', (event) => {
     if ((event.target as HTMLElement).id === 'slot') { state.slot = (event.target as HTMLSelectElement).value as StageFiveSlot; updateResults(); }
@@ -157,9 +208,14 @@ function initialize(): void {
     }
     const exclude = target.closest<HTMLElement>('[data-exclude]')?.dataset.exclude;
     const restore = target.closest<HTMLElement>('[data-restore]')?.dataset.restore;
+    const referenceOption = target.closest<HTMLElement>('[data-reference-option]')?.dataset.referenceOption;
+    const cardReference = target.closest<HTMLElement>('[data-set-reference]')?.dataset.setReference;
     if (exclude) { state.excluded.add(exclude); updateResults(); }
     if (restore) { state.excluded.delete(restore); updateResults(); }
     if (target.closest('[data-clear-excluded]')) { state.excluded.clear(); updateResults(); }
+    if (referenceOption) setReference(referenceOption);
+    if (cardReference) setReference(cardReference);
+    if (target.closest('[data-clear-reference]')) clearReference();
   });
   updateResults();
 }
