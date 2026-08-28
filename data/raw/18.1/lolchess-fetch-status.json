@@ -9,7 +9,13 @@
   "humanReviewObservation": {
     "observedAt": "2026-08-28",
     "prismaticBlossomsOnlyCount": 11,
-    "mitosisHasBlossomSection": false
+    "mitosisHasBlossomSection": false,
+    "publicIndexUpdated": "2026-08-26"
   },
-  "warning": "The public page is browser-accessible; only this cloud fetch path was blocked. This is not an unavailable-source claim and is not a valid field snapshot."
+  "warning": "The public page is browser-accessible; this cloud path returned a source-protection response with no body. The public-index date is an observation, not pageUpdatedAt. Use the documented browser snapshot importer.",
+  "attemptedUrls": [
+    "https://lolchess.gg/rewards/set18/wisps",
+    "https://lolchess.gg/rewards/set18/wisps?hl=en"
+  ],
+  "pageUpdatedAt": null
 }

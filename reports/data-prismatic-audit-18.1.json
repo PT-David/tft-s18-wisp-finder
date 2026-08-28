@@ -46,7 +46,28 @@
     "Ultra Ascension"
   ],
   "communityDragonCount": 19,
+  "allThreeAgree": [],
   "intersectionDataTftCommunityDragon": [
+    "Barrier",
+    "Blaze",
+    "Combust",
+    "Counterspell",
+    "Downpour",
+    "Giant's Aura",
+    "Hireling",
+    "Hugify",
+    "Hummingbird",
+    "Late Bloomer",
+    "Lightning Storm",
+    "Lucky 7",
+    "Phantom Armor",
+    "Stand Alone",
+    "Tattered Armor",
+    "Treetop Archers",
+    "Tremors",
+    "Ultra Ascension"
+  ],
+  "dataTftCommunityDragonOnly": [
     "Barrier",
     "Blaze",
     "Combust",

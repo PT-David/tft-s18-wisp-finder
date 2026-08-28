@@ -39,7 +39,7 @@ async function main() {
   const snapshot = { sourceId: `datatft_18_1_${retrievedAt.slice(0, 10).replaceAll('-', '')}`, retrievedAt, pageUpdatedAt: updated, url: 'https://www.datatft.com/database#charm', locale: 'zh_cn', records };
   await writeFile(resolve(raw, 'datatft-wisps-zh.json'), `${JSON.stringify(snapshot, null, 2)}\n`);
   for (const source of [
-    { file: 'opgg-wisps-corpus.json', sourceId: 'opgg_set18_wisps', url: 'https://op.gg/tft/set/18/wisps' },
+    { file: 'opgg-wisps-corpus.json', sourceId: 'opgg_set18_wisps', url: 'https://op.gg/zh-cn/tft/set/18' },
     { file: 'lolchess-fetch-status.json', sourceId: 'lolchess_wisps_18_1', url: 'https://lolchess.gg/rewards/set18/wisps' },
   ]) {
     const previous = JSON.parse(await readFile(resolve(raw, source.file), 'utf8')) as Record<string, unknown>;

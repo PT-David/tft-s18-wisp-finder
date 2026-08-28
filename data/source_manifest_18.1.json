@@ -70,15 +70,16 @@
       "url": "https://lolchess.gg/rewards/set18/wisps",
       "retrievedAt": "2026-08-28T16:49:16Z",
       "pageUpdatedAt": null,
-      "sha256": null,
+      "sha256": "0bce42d603128054edbecb55a8c84077793e4998a68357e7054589b7f1c1bc74",
       "useFor": [
         "intended_structured_skeleton",
         "field_cross_check"
       ],
       "confidence": "unverified",
-      "warning": "Public page is browser-accessible; this cloud fetch path received an AWS WAF challenge. No empty response was accepted as a snapshot.",
+      "warning": "Public page is browser-accessible; this cloud path returned a source-protection response with no body. 2026-08-26 is an external index observation, not pageUpdatedAt.",
       "fetchStatus": "blocked_by_source_protection",
-      "httpStatus": 202
+      "httpStatus": 202,
+      "observedPublicIndexUpdated": "2026-08-26"
     },
     {
       "sourceId": "datatft_18_1_20260828",
@@ -103,10 +104,10 @@
     {
       "sourceId": "opgg_set18_wisps_20260828",
       "tier": "C",
-      "url": "https://op.gg/tft/set/18/wisps",
+      "url": "https://op.gg/zh-cn/tft/set/18",
       "retrievedAt": "2026-08-28T18:13:55Z",
       "pageUpdatedAt": null,
-      "sha256": "a86e988ede972dda45239a9736d7f184fd9880f7dfe70c143057b3c87a944d33",
+      "sha256": "dce707c86934c0d9beb987e1bab2fcbafed39cd902b2226803d038b196142638",
       "locale": "en",
       "fetchStatus": "blocked_by_source_protection",
       "httpStatus": 403,
@@ -115,7 +116,7 @@
         "category_count_cross_check"
       ],
       "confidence": "unverified",
-      "warning": "Human review supplied aggregate 200/category observations, but this environment could not extract record identities. OP.GG does not automatically override higher-tier fields."
+      "warning": "Normal GET attempts for zh-cn, zh-tw, and en Set 18 pages received HTTP 403 at the environment tunnel. Aggregate observations are not record-level source data; use browser import."
     }
   ]
 }

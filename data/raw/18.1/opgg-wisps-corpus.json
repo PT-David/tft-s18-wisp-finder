@@ -1,6 +1,6 @@
 {
   "sourceId": "opgg_set18_wisps_20260828",
-  "url": "https://op.gg/tft/set/18/wisps",
+  "url": "https://op.gg/zh-cn/tft/set/18",
   "retrievedAt": "2026-08-28T18:13:55Z",
   "fetchStatus": "blocked_by_source_protection",
   "httpStatus": 403,
@@ -19,5 +19,10 @@
       "misc": 30
     }
   },
-  "warning": "The execution environment received HTTP 403. Aggregate counts were supplied by human review; no record-level OP.GG rows are claimed or fabricated. A browser-exported minimal snapshot is required for item-by-item reconciliation."
+  "warning": "All normal GET attempts received HTTP 403 at the environment tunnel. Aggregate counts are human observations; no record-level rows are claimed or fabricated. Use the documented browser snapshot importer.",
+  "attemptedUrls": [
+    "https://op.gg/zh-cn/tft/set/18",
+    "https://op.gg/zh-tw/tft/set/18",
+    "https://op.gg/en/tft/set/18"
+  ]
 }

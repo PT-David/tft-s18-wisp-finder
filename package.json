@@ -9,6 +9,8 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "data:fetch:18.1": "tsx scripts/data/fetch-18.1.ts",
+    "data:import:opgg": "tsx scripts/data/import-browser-snapshot.ts opgg",
+    "data:import:lolchess": "tsx scripts/data/import-browser-snapshot.ts lolchess",
     "data:build:18.1": "tsx scripts/data/build-18.1.ts",
     "data:audit:18.1": "tsx scripts/data/build-18.1.ts",
     "validate:seed": "tsx scripts/validate-data.ts data/wisps_18.1.json",

@@ -40,7 +40,8 @@ export const parseStagePoint = (value: string): StagePoint | undefined => {
 export const PLAYABLE_ROUNDS_PER_STAGE = 7;
 export const parsePlayableRound = (value: string): StagePoint | undefined => {
   const point = parseStagePoint(value);
-  return point && point.round <= PLAYABLE_ROUNDS_PER_STAGE ? point : undefined;
+  // Wisp offers start at Stage 2; Stage 1 PvE positions are outside this query product.
+  return point && point.stage >= 2 && point.round <= PLAYABLE_ROUNDS_PER_STAGE ? point : undefined;
 };
 
 export function rangeFromInputs(startValue: string, endValue: string): StageRange | undefined {
@@ -73,7 +74,7 @@ export function validationMessage(state: QueryUIState): string {
   const max = finiteOptionalNumber(state.maxCost);
   if (min !== undefined && max !== undefined && min > max) return '最低售价不能高于最高售价。';
   for (const [label, value] of [['精确回合', state.exactStage], ['范围开始', state.rangeStart], ['范围结束', state.rangeEnd]] as const) {
-    if (value.trim() && !parsePlayableRound(value)) return `${label}无效，请输入真实回合（如 4-7；每阶段为 1～7）。`;
+    if (value.trim() && !parsePlayableRound(value)) return `${label}无效，请输入仙灵可出现的真实回合（Stage 2+，每阶段 1～7，如 4-7）。`;
   }
   const start = parsePlayableRound(state.rangeStart);
   const end = parsePlayableRound(state.rangeEnd);

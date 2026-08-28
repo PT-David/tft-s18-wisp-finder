@@ -18,7 +18,7 @@ describe('UI 状态显式转换', () => {
 
   test('用户回合只接受 Set 18 可玩的 1～7 回合位置', () => {
     expect(parsePlayableRound('4-7')).toEqual({ stage: 4, round: 7 });
-    for (const value of ['4-8', '4-99', '0-1', '-1-2', 'bad']) expect(parsePlayableRound(value)).toBeUndefined();
+    for (const value of ['4-8', '4-99', '1-1', '0-1', '-1-2', 'bad']) expect(parsePlayableRound(value)).toBeUndefined();
     const invalid = state({ exactStage: '4-8' });
     expect(criteriaFromUI(invalid, wisps).stage).toBeUndefined();
     expect(validationMessage(invalid)).toContain('精确回合无效');
