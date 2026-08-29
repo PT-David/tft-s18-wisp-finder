@@ -1,7 +1,1551 @@
 {
   "dataTftOnly": [],
-  "opggOnly": [],
-  "intersection": [],
+  "opggOnly": [
+    {
+      "record": {
+        "sourceKey": "RitualComplete",
+        "name": "仪式完成",
+        "category": "Risky",
+        "cost": 3,
+        "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ProtectiveRitual",
+        "name": "保护仪式",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本轮受到的任何玩家伤害减少 3 点。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "FakeLevel",
+        "name": "假关卡",
+        "category": "Misc",
+        "cost": 10,
+        "effect": "你暂时达到10级。",
+        "appearanceCondition": "尚未达到10级",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "AllIn",
+        "name": "全部投入",
+        "category": "Risky",
+        "cost": 5,
+        "effect": "若接下来3场战斗全部获胜，则提升1级。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "DoubleUp",
+        "name": "加倍",
+        "category": "Misc",
+        "cost": 2,
+        "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "Escalation",
+        "name": "升级",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "FriendlyFlora",
+        "name": "友好的植物群",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "所有友军获得50%效果的致命花卉加成。",
+        "appearanceCondition": "已激活致命花卉羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "MinionHorde",
+        "name": "小黄人部落",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "生成 4 个小兵。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "Breeze",
+        "name": "微风",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "你的队伍获得12%攻击速度。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "TheChariot",
+        "name": "战车",
+        "category": "GoldXP",
+        "cost": 10,
+        "effect": "商店刷新和购买经验值的费用减半。",
+        "appearanceCondition": "拥有至少30金币",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "NewandImproved",
+        "name": "新增和改进",
+        "category": "Misc",
+        "cost": 3,
+        "effect": "获得一个袖珍重组器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "StarPower",
+        "name": "星力",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+        "appearanceCondition": "至少上场1名3星非坦克弈子",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "BetterBestie",
+        "name": "更好的闺蜜",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "BrutalBargain",
+        "name": "残酷的讨价还价",
+        "category": "Item",
+        "cost": 0,
+        "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "CrystalBall",
+        "name": "水晶球",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+        "appearanceCondition": "剩余至少4名玩家",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ConsumableShop",
+        "name": "消耗品",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "MeltingResists",
+        "name": "熔化抗蚀剂",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+        "appearanceCondition": "地狱特质活跃",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "GuildofThieves",
+        "name": "盗贼公会",
+        "category": "Combat",
+        "cost": 6,
+        "effect": "获得 2 个临时盗贼手套。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "FaeFederation",
+        "name": "精灵联邦",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "本回合你的所有弈子获得2个仙灵。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "FaerieFlight",
+        "name": "精灵飞行",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本场战斗吸引的仙灵数量提高100%。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TigersVisit",
+        "name": "老虎来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得老虎原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ComfortFood",
+        "name": "舒适食品",
+        "category": "Risky",
+        "cost": 2,
+        "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "BloodHunt",
+        "name": "血猎",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+        "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TouchGrass",
+        "name": "触摸草",
+        "category": "Misc",
+        "cost": 0,
+        "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+        "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "Snacktime",
+        "name": "零食时间！",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "HorsesVisit",
+        "name": "马来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得马原始增益。",
+        "appearanceCondition": "原始特质活跃，未选择马",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "Tornado",
+        "name": "龙卷风",
+        "category": "Combat",
+        "cost": 10,
+        "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    }
+  ],
+  "intersection": [
+    {
+      "productionId": "da_hugify18",
+      "opggKey": "Hugify",
+      "opggName": "Hugify",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_threeme18",
+      "opggKey": "ThreeMe",
+      "opggName": "三个我",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_allthrees",
+      "opggKey": "AllThrees",
+      "opggName": "三人行",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_rolypolys18",
+      "opggKey": "RolyPolys",
+      "opggName": "不倒翁",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_jungling18",
+      "opggKey": "Jungling",
+      "opggName": "丛林",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_middlepath18",
+      "opggKey": "MiddlePath",
+      "opggName": "中间路径",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_majorpolymorph",
+      "opggKey": "MajorPolymorph",
+      "opggName": "主要多晶型物",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_ridethewave18",
+      "opggKey": "RidetheWave",
+      "opggName": "乘风破浪",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_allfives",
+      "opggKey": "AllFives",
+      "opggName": "五五开",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_lifedebt",
+      "opggKey": "LifeDebt",
+      "opggName": "人生债务",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "snapshot_021_534324382164",
+      "opggKey": "Truce",
+      "opggName": "休战",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_propagate",
+      "opggKey": "Propagate",
+      "opggName": "传播",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_infliction",
+      "opggKey": "Infliction",
+      "opggName": "伤害",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_aftershock",
+      "opggKey": "Aftershock",
+      "opggName": "余震",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_borrowedgear18",
+      "opggKey": "BorrowedGear",
+      "opggName": "借来的装备",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_downpour18",
+      "opggKey": "Downpour",
+      "opggName": "倾盆大雨",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_allones",
+      "opggKey": "AllOnes",
+      "opggName": "全一",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_alltwos",
+      "opggKey": "AllTwos",
+      "opggName": "全两",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_preppers",
+      "opggKey": "Preppers",
+      "opggName": "准备者",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_quicken18",
+      "opggKey": "Quicken",
+      "opggName": "加快",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_animateshop18",
+      "opggKey": "AnimateShop",
+      "opggName": "动画商店",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_boostershot18",
+      "opggKey": "BoosterShot",
+      "opggName": "助推器射击",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_counterspell",
+      "opggKey": "Counterspell",
+      "opggName": "反咒语",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_payday",
+      "opggKey": "Payday",
+      "opggName": "发薪日",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_backrowstar",
+      "opggKey": "BackrowStar",
+      "opggName": "后排星",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_allfours",
+      "opggKey": "AllFours",
+      "opggName": "四肢着地",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_terraforming18",
+      "opggKey": "Terraforming",
+      "opggName": "地形改造",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_bulwark18",
+      "opggKey": "Bulwark",
+      "opggName": "壁垒",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_revenge18",
+      "opggKey": "Revenge",
+      "opggName": "复仇",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_prolificpower",
+      "opggKey": "ProlificPower",
+      "opggName": "多产的力量",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_diversified18",
+      "opggKey": "Diversified",
+      "opggName": "多元化",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_polymorph",
+      "opggKey": "Polymorph",
+      "opggName": "多晶型物",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_latebloomer18",
+      "opggKey": "LateBloomer",
+      "opggName": "大器晚成",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_bigguns18",
+      "opggKey": "BigGuns",
+      "opggName": "大枪",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_bigboom18",
+      "opggKey": "BigBoom",
+      "opggName": "大繁荣",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_naturesally18",
+      "opggKey": "NaturesAlly",
+      "opggName": "大自然的盟友",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_solargift18",
+      "opggKey": "SolarGift",
+      "opggName": "太阳能礼物",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_fellowship",
+      "opggKey": "Fellowship",
+      "opggName": "奖学金",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_trophyhunter18",
+      "opggKey": "TrophyHunter",
+      "opggName": "奖杯猎人",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_scrappy18",
+      "opggKey": "Scrappy",
+      "opggName": "好斗",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_solitudescloak18",
+      "opggKey": "SolitudesCloak",
+      "opggName": "孤独斗篷",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_apprentice18",
+      "opggKey": "Apprentice",
+      "opggName": "学徒",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_grandmaster18",
+      "opggKey": "Grandmaster",
+      "opggName": "宗师",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_manarichsoil18",
+      "opggKey": "ManaRichSoil",
+      "opggName": "富含法力的土壤",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_marksmensgale18",
+      "opggKey": "MarksmensGale",
+      "opggName": "射手之风",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "snapshot_106_1bce73a8632c",
+      "opggKey": "MarksmensMarks",
+      "opggName": "射手标记",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_knickknackjar18",
+      "opggKey": "KnickKnackJar",
+      "opggName": "小摆设罐",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_knickknackbag18",
+      "opggKey": "KnickKnackBag",
+      "opggName": "小摆设袋",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_knickknacksack18",
+      "opggKey": "KnickKnackSack",
+      "opggName": "小摆设袋",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_doodadjar18",
+      "opggKey": "DoodadJar",
+      "opggName": "小玩意罐",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_doodadsack18",
+      "opggKey": "DoodadSack",
+      "opggName": "小玩意麻袋",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_peddler18",
+      "opggKey": "Peddler",
+      "opggName": "小贩",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_barrier18",
+      "opggKey": "Barrier",
+      "opggName": "屏障",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_giantsaura18",
+      "opggKey": "GiantsAura",
+      "opggName": "巨人光环",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_giantgrowth",
+      "opggKey": "GiantGrowth",
+      "opggName": "巨大的增长",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "snapshot_050_770e0f5d1043",
+      "opggKey": "Drought",
+      "opggName": "干旱",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_lucky718",
+      "opggKey": "Lucky7",
+      "opggName": "幸运7",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_phantomemblem18",
+      "opggKey": "PhantomEmblem",
+      "opggName": "幻影徽章",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_phantomgloves18",
+      "opggKey": "PhantomGloves",
+      "opggName": "幻影手套",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_phantomvest18",
+      "opggKey": "PhantomVest",
+      "opggName": "幻影背心",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_phantomarmor18",
+      "opggKey": "PhantomArmor",
+      "opggName": "幻影铠甲",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_phantomsplash18",
+      "opggKey": "PhantomSplash",
+      "opggName": "幻影飞溅",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_abandonship18",
+      "opggKey": "AbandonShip",
+      "opggName": "弃船",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_salvager18",
+      "opggKey": "Salvager",
+      "opggName": "打捞者",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_improvedreach18",
+      "opggKey": "ImprovedReach",
+      "opggName": "扩大覆盖范围",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_foundfriend18",
+      "opggKey": "FoundFriend",
+      "opggName": "找到朋友",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_resistant",
+      "opggKey": "Resistant",
+      "opggName": "抵抗",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_searchparty18",
+      "opggKey": "SearchParty",
+      "opggName": "搜寻队",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_fertilize",
+      "opggKey": "Fertilize",
+      "opggName": "施肥",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_earlyfix",
+      "opggKey": "EarlyFix",
+      "opggName": "早期修复",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_barter18",
+      "opggKey": "Barter",
+      "opggName": "易货贸易",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_starfall",
+      "opggKey": "Starfall",
+      "opggName": "星陨",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_greaterchaos18",
+      "opggKey": "GreaterChaos",
+      "opggName": "更大的混乱",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_moonlightritual18",
+      "opggKey": "MoonlightRitual",
+      "opggName": "月光仪式",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_moonrise",
+      "opggKey": "Moonrise",
+      "opggName": "月出",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_mitosis",
+      "opggKey": "Mitosis",
+      "opggName": "有丝分裂",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_killingfrenzy",
+      "opggKey": "KillingFrenzy",
+      "opggName": "杀戮狂潮",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_killersregret18",
+      "opggKey": "KillersRegret",
+      "opggName": "杀手的遗憾",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_bunchobelts18",
+      "opggKey": "BunchOBelts",
+      "opggName": "束腰带",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_barkarmor",
+      "opggKey": "BarkArmor",
+      "opggName": "树皮盔甲",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_treetoparchers",
+      "opggKey": "TreetopArchers",
+      "opggName": "树顶弓箭手",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_foresttwins18",
+      "opggKey": "ForestTwins",
+      "opggName": "森林双胞胎",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_forestguide18",
+      "opggKey": "ForestGuide",
+      "opggName": "森林指南",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_forestmage",
+      "opggKey": "ForestMage",
+      "opggName": "森林法师",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_minorpolymorph",
+      "opggKey": "MinorPolymorph",
+      "opggName": "次要多晶型物",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "snapshot_085_b53a01d778ee",
+      "opggKey": "HealingPool",
+      "opggName": "治疗池",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_manapotion18_charm",
+      "opggKey": "ManaPotion",
+      "opggName": "法力药水",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_flow18",
+      "opggKey": "Flow",
+      "opggName": "流程",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_refreshinglight18",
+      "opggKey": "RefreshingLight",
+      "opggName": "清爽的光线",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_rollingbones18",
+      "opggKey": "RollingBones",
+      "opggName": "滚骨头",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_heatedrivalry",
+      "opggKey": "HeatedRivalry",
+      "opggName": "激烈的竞争",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_blaze18",
+      "opggKey": "Blaze",
+      "opggName": "火焰",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_journeyman18",
+      "opggKey": "Journeyman",
+      "opggName": "熟练工",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_combust18",
+      "opggKey": "Combust",
+      "opggName": "燃烧",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_blastpotion18_charm",
+      "opggKey": "BlastPotion",
+      "opggName": "爆炸药水",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_standalone18",
+      "opggKey": "StandAlone",
+      "opggName": "独立",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_livingsoil18",
+      "opggKey": "LivingSoil",
+      "opggName": "生命土壤",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_healthpotion18_charm",
+      "opggKey": "HealthPotion",
+      "opggName": "生命药水",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_platedshields18",
+      "opggKey": "PlatedShields",
+      "opggName": "电镀屏蔽",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_handofbaron18",
+      "opggKey": "HandofBaron",
+      "opggName": "男爵之手",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_petrifieddummy18",
+      "opggKey": "PetrifiedDummy",
+      "opggName": "石化假人",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_petrifyshields18",
+      "opggKey": "PetrifyShields",
+      "opggName": "石化护盾",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_tatteredarmor",
+      "opggKey": "TatteredArmor",
+      "opggName": "破烂的盔甲",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_coinflip18",
+      "opggKey": "CoinFlip",
+      "opggName": "硬币翻转",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_artifactinate18",
+      "opggKey": "Artifactinate",
+      "opggName": "神器",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_cutpurse18",
+      "opggKey": "Cutpurse",
+      "opggName": "窃贼",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_yordlespirit",
+      "opggKey": "YordleSpirit",
+      "opggName": "约德尔精神",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_experienced",
+      "opggKey": "Experienced",
+      "opggName": "经验丰富",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_slowstudy18",
+      "opggKey": "SlowStudy",
+      "opggName": "缓慢学习",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_flipfrenzy18",
+      "opggKey": "FlipFrenzy",
+      "opggName": "翻转疯狂",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_fieldofmice",
+      "opggKey": "FieldofMice",
+      "opggName": "老鼠场",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_natureswrath18",
+      "opggKey": "NaturesWrath",
+      "opggName": "自然之怒",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_freeroller",
+      "opggKey": "Freeroller",
+      "opggName": "自由选手",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_heroicsacrifice",
+      "opggKey": "HeroicSacrifice",
+      "opggName": "英勇牺牲",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_herosentrance18",
+      "opggKey": "HerosEntrance",
+      "opggName": "英雄的入口",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_wrappedinthorns18",
+      "opggKey": "WrappedinThorns",
+      "opggName": "荆棘丛生",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_homingfireflies18",
+      "opggKey": "HomingFireflies",
+      "opggName": "萤火虫归巢",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_smurfing18",
+      "opggKey": "Smurfing",
+      "opggName": "蓝精灵",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_hummingbird",
+      "opggKey": "Hummingbird",
+      "opggName": "蜂鸟",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_bloodandiron18",
+      "opggKey": "BloodandIron",
+      "opggName": "血与铁",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_bloodmoney",
+      "opggKey": "BloodMoney",
+      "opggName": "血钱",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_doodadbag18",
+      "opggKey": "DoodadBag",
+      "opggName": "装饰袋",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_trainingyard18",
+      "opggKey": "TrainingYard",
+      "opggName": "训练场",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_startingtown18",
+      "opggKey": "StartingTown",
+      "opggName": "起始城镇",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_supercritical",
+      "opggKey": "Supercritical",
+      "opggName": "超临界",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_ultraascension",
+      "opggKey": "UltraAscension",
+      "opggName": "超提升",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_lesserchaos18",
+      "opggKey": "LesserChaos",
+      "opggName": "较小的混乱",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_radiantize",
+      "opggKey": "Radiantize",
+      "opggName": "辐射",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_bordervillage18",
+      "opggKey": "BorderVillage",
+      "opggName": "边境村",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_losttravelers",
+      "opggKey": "LostTravelers",
+      "opggName": "迷路的旅行者",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_goldengoose18",
+      "opggKey": "GoldenGoose",
+      "opggName": "金鹅",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_ironwood18",
+      "opggKey": "Ironwood",
+      "opggName": "铁木",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_ironcore18",
+      "opggKey": "IronCore",
+      "opggName": "铁芯",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_growup18",
+      "opggKey": "GrowUp",
+      "opggName": "长大",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_circleofelders",
+      "opggKey": "CircleofElders",
+      "opggName": "长老圈子",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_flashfire18",
+      "opggKey": "FlashFire",
+      "opggName": "闪火",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_lightningstorm",
+      "opggKey": "LightningStorm",
+      "opggName": "闪电风暴",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_idlecraftsman18",
+      "opggKey": "IdleCraftsman",
+      "opggName": "闲置工匠",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_sunfiresorcery",
+      "opggKey": "SunfireSorcery",
+      "opggName": "阳火魔法",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_stealthy18",
+      "opggKey": "Stealthy",
+      "opggName": "隐秘",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_hireling18",
+      "opggKey": "Hireling",
+      "opggName": "雇佣兵",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_mercenaryforce",
+      "opggKey": "MercenaryForce",
+      "opggName": "雇佣军",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_rain18",
+      "opggKey": "Rain",
+      "opggName": "雨",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_pocketchange",
+      "opggKey": "PocketChange",
+      "opggName": "零钱",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_lightningstrike",
+      "opggKey": "LightningStrike",
+      "opggName": "雷击",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_tremors",
+      "opggKey": "Tremors",
+      "opggName": "震颤",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_verdantvitality",
+      "opggKey": "VerdantVitality",
+      "opggName": "青翠的活力",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_18_bronzespoon",
+      "opggKey": "BronzeSpoon",
+      "opggName": "青铜勺子",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_heroofprophecy18",
+      "opggKey": "HeroofProphecy",
+      "opggName": "预言英雄",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_dieroll18",
+      "opggKey": "DieRoll",
+      "opggName": "骰子",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "da_potioncraft18",
+      "opggKey": "Potioncraft",
+      "opggName": "魔药工艺",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "snapshot_086_d83df5e4cd8a",
+      "opggKey": "GoldenRoad",
+      "opggName": "黄金之路",
+      "matchMethod": "exact_name_or_key"
+    },
+    {
+      "productionId": "snapshot_139_6fda4e76a4da",
+      "opggKey": "CloneCompanion",
+      "opggName": "克隆伴侣",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_022_fc7538964718",
+      "opggKey": "SinisterDeal",
+      "opggName": "险恶交易",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_049_d60aa5ac9feb",
+      "opggKey": "MinorGambit",
+      "opggName": "小策略",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_090_cf945e21ddef",
+      "opggKey": "Regeneration",
+      "opggName": "再生",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_120_cf0b477ffe00",
+      "opggKey": "MinorBloodRitual",
+      "opggName": "小型血仪式",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_136_c467ccd546d7",
+      "opggKey": "ComponentBounty",
+      "opggName": "组件赏金",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_147_2dc94df4e3a5",
+      "opggKey": "GoodLoss",
+      "opggName": "损失惨重",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_121_1899d3fe4c61",
+      "opggKey": "MajorGambit",
+      "opggName": "主要策略",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_157_3ed870773960",
+      "opggKey": "BloodRitual",
+      "opggName": "血仪式",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_048_cbc77e083fc2",
+      "opggKey": "TakeOneWithYa",
+      "opggName": "和你一起拍一张",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "da_thingamajigjar18",
+      "opggKey": "ThingamjigJar",
+      "opggName": "Thingamjig 罐子",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_036_f484358ea1e5",
+      "opggKey": "EssenceTheft",
+      "opggName": "精华盗窃",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "da_thingamajigsack18",
+      "opggKey": "ThingamjigBag",
+      "opggName": "Thingamjig 包",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "da_thingamajigbag18",
+      "opggKey": "ThingamjigSack",
+      "opggName": "Thingamjig 麻袋",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "snapshot_051_e06d127b43f9",
+      "opggKey": "Flood",
+      "opggName": "洪水",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "da_curiocart18",
+      "opggKey": "PremiumSwapMeet",
+      "opggName": "高级互换见面会",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    },
+    {
+      "productionId": "da_beggarswisp18",
+      "opggKey": "GoldenAltar",
+      "opggName": "金色祭坛",
+      "matchMethod": "effect_category_cost_alias_candidate"
+    }
+  ],
+  "aliasCandidates": [
+    {
+      "productionId": "snapshot_139_6fda4e76a4da",
+      "dataTftName": "克隆弈子",
+      "opggKey": "CloneCompanion",
+      "opggName": "克隆伴侣"
+    },
+    {
+      "productionId": "snapshot_022_fc7538964718",
+      "dataTftName": "不祥交易",
+      "opggKey": "SinisterDeal",
+      "opggName": "险恶交易"
+    },
+    {
+      "productionId": "snapshot_049_d60aa5ac9feb",
+      "dataTftName": "低阶胜负手",
+      "opggKey": "MinorGambit",
+      "opggName": "小策略"
+    },
+    {
+      "productionId": "snapshot_090_cf945e21ddef",
+      "dataTftName": "回复",
+      "opggKey": "Regeneration",
+      "opggName": "再生"
+    },
+    {
+      "productionId": "snapshot_120_cf0b477ffe00",
+      "dataTftName": "小型血祭",
+      "opggKey": "MinorBloodRitual",
+      "opggName": "小型血仪式"
+    },
+    {
+      "productionId": "snapshot_136_c467ccd546d7",
+      "dataTftName": "散件赏金",
+      "opggKey": "ComponentBounty",
+      "opggName": "组件赏金"
+    },
+    {
+      "productionId": "snapshot_147_2dc94df4e3a5",
+      "dataTftName": "输得漂亮",
+      "opggKey": "GoodLoss",
+      "opggName": "损失惨重"
+    },
+    {
+      "productionId": "snapshot_121_1899d3fe4c61",
+      "dataTftName": "高阶胜负手",
+      "opggKey": "MajorGambit",
+      "opggName": "主要策略"
+    },
+    {
+      "productionId": "snapshot_157_3ed870773960",
+      "dataTftName": "血祭",
+      "opggKey": "BloodRitual",
+      "opggName": "血仪式"
+    },
+    {
+      "productionId": "snapshot_048_cbc77e083fc2",
+      "dataTftName": "带一个走",
+      "opggKey": "TakeOneWithYa",
+      "opggName": "和你一起拍一张"
+    },
+    {
+      "productionId": "da_thingamajigjar18",
+      "dataTftName": "小装置罐",
+      "opggKey": "ThingamjigJar",
+      "opggName": "Thingamjig 罐子"
+    },
+    {
+      "productionId": "snapshot_036_f484358ea1e5",
+      "dataTftName": "摄魂夺魄",
+      "opggKey": "EssenceTheft",
+      "opggName": "精华盗窃"
+    },
+    {
+      "productionId": "da_thingamajigsack18",
+      "dataTftName": "小装置袋",
+      "opggKey": "ThingamjigBag",
+      "opggName": "Thingamjig 包"
+    },
+    {
+      "productionId": "da_thingamajigbag18",
+      "dataTftName": "小装置包",
+      "opggKey": "ThingamjigSack",
+      "opggName": "Thingamjig 麻袋"
+    },
+    {
+      "productionId": "snapshot_051_e06d127b43f9",
+      "dataTftName": "洪涝",
+      "opggKey": "Flood",
+      "opggName": "洪水"
+    },
+    {
+      "productionId": "da_curiocart18",
+      "dataTftName": "珍品摆摊车",
+      "opggKey": "PremiumSwapMeet",
+      "opggName": "高级互换见面会"
+    },
+    {
+      "productionId": "da_beggarswisp18",
+      "dataTftName": "仙灵的怜悯",
+      "opggKey": "GoldenAltar",
+      "opggName": "金色祭坛"
+    }
+  ],
+  "categoryDiscrepancies": [],
   "categoryCountBySource": {
     "datatft": {
       "champion": 16,
@@ -13,25 +1557,1028 @@
       "item": 5
     },
     "opgg": {
-      "champion": 16,
-      "combat": 94,
-      "shop": 19,
-      "gold_xp": 14,
-      "risky": 21,
-      "item": 6,
-      "misc": 30
+      "Combat": 94,
+      "Misc": 30,
+      "Champion": 16,
+      "Shop": 19,
+      "Risky": 21,
+      "GoldXP": 14,
+      "Item": 6
     }
   },
   "matchedByExactId": [],
-  "matchedByExactEnglishName": [],
+  "matchedByExactEnglishName": [
+    "da_hugify18",
+    "da_threeme18",
+    "da_18_allthrees",
+    "da_rolypolys18",
+    "da_jungling18",
+    "da_middlepath18",
+    "da_18_majorpolymorph",
+    "da_ridethewave18",
+    "da_18_allfives",
+    "da_18_lifedebt",
+    "snapshot_021_534324382164",
+    "da_18_propagate",
+    "da_18_infliction",
+    "da_18_aftershock",
+    "da_borrowedgear18",
+    "da_downpour18",
+    "da_18_allones",
+    "da_18_alltwos",
+    "da_18_preppers",
+    "da_quicken18",
+    "da_animateshop18",
+    "da_boostershot18",
+    "da_18_counterspell",
+    "da_18_payday",
+    "da_18_backrowstar",
+    "da_18_allfours",
+    "da_terraforming18",
+    "da_bulwark18",
+    "da_revenge18",
+    "da_18_prolificpower",
+    "da_diversified18",
+    "da_18_polymorph",
+    "da_latebloomer18",
+    "da_bigguns18",
+    "da_bigboom18",
+    "da_naturesally18",
+    "da_solargift18",
+    "da_18_fellowship",
+    "da_trophyhunter18",
+    "da_scrappy18",
+    "da_solitudescloak18",
+    "da_apprentice18",
+    "da_grandmaster18",
+    "da_manarichsoil18",
+    "da_marksmensgale18",
+    "snapshot_106_1bce73a8632c",
+    "da_knickknackjar18",
+    "da_knickknackbag18",
+    "da_knickknacksack18",
+    "da_doodadjar18",
+    "da_doodadsack18",
+    "da_peddler18",
+    "da_barrier18",
+    "da_giantsaura18",
+    "da_18_giantgrowth",
+    "snapshot_050_770e0f5d1043",
+    "da_lucky718",
+    "da_phantomemblem18",
+    "da_phantomgloves18",
+    "da_phantomvest18",
+    "da_phantomarmor18",
+    "da_phantomsplash18",
+    "da_abandonship18",
+    "da_salvager18",
+    "da_improvedreach18",
+    "da_foundfriend18",
+    "da_18_resistant",
+    "da_searchparty18",
+    "da_18_fertilize",
+    "da_18_earlyfix",
+    "da_barter18",
+    "da_18_starfall",
+    "da_greaterchaos18",
+    "da_moonlightritual18",
+    "da_18_moonrise",
+    "da_18_mitosis",
+    "da_18_killingfrenzy",
+    "da_killersregret18",
+    "da_bunchobelts18",
+    "da_18_barkarmor",
+    "da_treetoparchers",
+    "da_foresttwins18",
+    "da_forestguide18",
+    "da_18_forestmage",
+    "da_18_minorpolymorph",
+    "snapshot_085_b53a01d778ee",
+    "da_manapotion18_charm",
+    "da_flow18",
+    "da_refreshinglight18",
+    "da_rollingbones18",
+    "da_18_heatedrivalry",
+    "da_blaze18",
+    "da_journeyman18",
+    "da_combust18",
+    "da_blastpotion18_charm",
+    "da_standalone18",
+    "da_livingsoil18",
+    "da_healthpotion18_charm",
+    "da_platedshields18",
+    "da_handofbaron18",
+    "da_petrifieddummy18",
+    "da_petrifyshields18",
+    "da_18_tatteredarmor",
+    "da_coinflip18",
+    "da_artifactinate18",
+    "da_cutpurse18",
+    "da_18_yordlespirit",
+    "da_18_experienced",
+    "da_slowstudy18",
+    "da_flipfrenzy18",
+    "da_18_fieldofmice",
+    "da_natureswrath18",
+    "da_18_freeroller",
+    "da_18_heroicsacrifice",
+    "da_herosentrance18",
+    "da_wrappedinthorns18",
+    "da_homingfireflies18",
+    "da_smurfing18",
+    "da_18_hummingbird",
+    "da_bloodandiron18",
+    "da_18_bloodmoney",
+    "da_doodadbag18",
+    "da_trainingyard18",
+    "da_startingtown18",
+    "da_18_supercritical",
+    "da_18_ultraascension",
+    "da_lesserchaos18",
+    "da_18_radiantize",
+    "da_bordervillage18",
+    "da_18_losttravelers",
+    "da_goldengoose18",
+    "da_ironwood18",
+    "da_ironcore18",
+    "da_growup18",
+    "da_18_circleofelders",
+    "da_flashfire18",
+    "da_18_lightningstorm",
+    "da_idlecraftsman18",
+    "da_18_sunfiresorcery",
+    "da_stealthy18",
+    "da_hireling18",
+    "da_18_mercenaryforce",
+    "da_rain18",
+    "da_18_pocketchange",
+    "da_18_lightningstrike",
+    "da_18_tremors",
+    "da_18_verdantvitality",
+    "da_18_bronzespoon",
+    "da_heroofprophecy18",
+    "da_dieroll18",
+    "da_potioncraft18",
+    "snapshot_086_d83df5e4cd8a"
+  ],
   "matchedByExactChineseName": [],
   "needsReview": [
     {
-      "count": 31,
-      "classification": "F",
-      "reason": "OP.GG record-level snapshot was blocked in this environment; individual identities cannot be responsibly invented."
+      "record": {
+        "sourceKey": "RitualComplete",
+        "name": "仪式完成",
+        "category": "Risky",
+        "cost": 3,
+        "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ProtectiveRitual",
+        "name": "保护仪式",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本轮受到的任何玩家伤害减少 3 点。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "FakeLevel",
+        "name": "假关卡",
+        "category": "Misc",
+        "cost": 10,
+        "effect": "你暂时达到10级。",
+        "appearanceCondition": "尚未达到10级",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "AllIn",
+        "name": "全部投入",
+        "category": "Risky",
+        "cost": 5,
+        "effect": "若接下来3场战斗全部获胜，则提升1级。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "DoubleUp",
+        "name": "加倍",
+        "category": "Misc",
+        "cost": 2,
+        "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "Escalation",
+        "name": "升级",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "FriendlyFlora",
+        "name": "友好的植物群",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "所有友军获得50%效果的致命花卉加成。",
+        "appearanceCondition": "已激活致命花卉羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "MinionHorde",
+        "name": "小黄人部落",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "生成 4 个小兵。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "Breeze",
+        "name": "微风",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "你的队伍获得12%攻击速度。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "TheChariot",
+        "name": "战车",
+        "category": "GoldXP",
+        "cost": 10,
+        "effect": "商店刷新和购买经验值的费用减半。",
+        "appearanceCondition": "拥有至少30金币",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "NewandImproved",
+        "name": "新增和改进",
+        "category": "Misc",
+        "cost": 3,
+        "effect": "获得一个袖珍重组器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "StarPower",
+        "name": "星力",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+        "appearanceCondition": "至少上场1名3星非坦克弈子",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "BetterBestie",
+        "name": "更好的闺蜜",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "BrutalBargain",
+        "name": "残酷的讨价还价",
+        "category": "Item",
+        "cost": 0,
+        "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "CrystalBall",
+        "name": "水晶球",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+        "appearanceCondition": "剩余至少4名玩家",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ConsumableShop",
+        "name": "消耗品",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "MeltingResists",
+        "name": "熔化抗蚀剂",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+        "appearanceCondition": "地狱特质活跃",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "GuildofThieves",
+        "name": "盗贼公会",
+        "category": "Combat",
+        "cost": 6,
+        "effect": "获得 2 个临时盗贼手套。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "FaeFederation",
+        "name": "精灵联邦",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "本回合你的所有弈子获得2个仙灵。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "FaerieFlight",
+        "name": "精灵飞行",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本场战斗吸引的仙灵数量提高100%。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TigersVisit",
+        "name": "老虎来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得老虎原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ComfortFood",
+        "name": "舒适食品",
+        "category": "Risky",
+        "cost": 2,
+        "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "BloodHunt",
+        "name": "血猎",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+        "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TouchGrass",
+        "name": "触摸草",
+        "category": "Misc",
+        "cost": 0,
+        "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+        "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "Snacktime",
+        "name": "零食时间！",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "HorsesVisit",
+        "name": "马来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得马原始增益。",
+        "appearanceCondition": "原始特质活跃，未选择马",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "Tornado",
+        "name": "龙卷风",
+        "category": "Combat",
+        "cost": 10,
+        "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
     }
   ],
-  "excludedFromProduction": [],
-  "reason": "The normalized corpus remains the 169 committed DataTFT rows because they are the only complete record-level skeleton available. This is provisional, not proof of completeness."
+  "excludedFromProduction": [
+    {
+      "record": {
+        "sourceKey": "RitualComplete",
+        "name": "仪式完成",
+        "category": "Risky",
+        "cost": 3,
+        "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ProtectiveRitual",
+        "name": "保护仪式",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本轮受到的任何玩家伤害减少 3 点。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "FakeLevel",
+        "name": "假关卡",
+        "category": "Misc",
+        "cost": 10,
+        "effect": "你暂时达到10级。",
+        "appearanceCondition": "尚未达到10级",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "AllIn",
+        "name": "全部投入",
+        "category": "Risky",
+        "cost": 5,
+        "effect": "若接下来3场战斗全部获胜，则提升1级。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "DoubleUp",
+        "name": "加倍",
+        "category": "Misc",
+        "cost": 2,
+        "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "Escalation",
+        "name": "升级",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "FriendlyFlora",
+        "name": "友好的植物群",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "所有友军获得50%效果的致命花卉加成。",
+        "appearanceCondition": "已激活致命花卉羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "MinionHorde",
+        "name": "小黄人部落",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "生成 4 个小兵。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "Breeze",
+        "name": "微风",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "你的队伍获得12%攻击速度。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "TheChariot",
+        "name": "战车",
+        "category": "GoldXP",
+        "cost": 10,
+        "effect": "商店刷新和购买经验值的费用减半。",
+        "appearanceCondition": "拥有至少30金币",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "NewandImproved",
+        "name": "新增和改进",
+        "category": "Misc",
+        "cost": 3,
+        "effect": "获得一个袖珍重组器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "StarPower",
+        "name": "星力",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+        "appearanceCondition": "至少上场1名3星非坦克弈子",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "BetterBestie",
+        "name": "更好的闺蜜",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "BrutalBargain",
+        "name": "残酷的讨价还价",
+        "category": "Item",
+        "cost": 0,
+        "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "CrystalBall",
+        "name": "水晶球",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+        "appearanceCondition": "剩余至少4名玩家",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ConsumableShop",
+        "name": "消耗品",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "MeltingResists",
+        "name": "熔化抗蚀剂",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+        "appearanceCondition": "地狱特质活跃",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "GuildofThieves",
+        "name": "盗贼公会",
+        "category": "Combat",
+        "cost": 6,
+        "effect": "获得 2 个临时盗贼手套。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "FaeFederation",
+        "name": "精灵联邦",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "本回合你的所有弈子获得2个仙灵。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "FaerieFlight",
+        "name": "精灵飞行",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本场战斗吸引的仙灵数量提高100%。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TigersVisit",
+        "name": "老虎来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得老虎原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "ComfortFood",
+        "name": "舒适食品",
+        "category": "Risky",
+        "cost": 2,
+        "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    },
+    {
+      "record": {
+        "sourceKey": "BloodHunt",
+        "name": "血猎",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+        "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "TouchGrass",
+        "name": "触摸草",
+        "category": "Misc",
+        "cost": 0,
+        "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+        "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "Snacktime",
+        "name": "零食时间！",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "HorsesVisit",
+        "name": "马来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得马原始增益。",
+        "appearanceCondition": "原始特质活跃，未选择马",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "C",
+      "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+    },
+    {
+      "record": {
+        "sourceKey": "Tornado",
+        "name": "龙卷风",
+        "category": "Combat",
+        "cost": 10,
+        "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "classification": "A",
+      "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+    }
+  ],
+  "classificationCounts": {
+    "A": 11,
+    "B": 0,
+    "C": 20,
+    "D": 0,
+    "E": 0,
+    "F": 0
+  },
+  "reason": "All 200 OP.GG rows were parsed. The normalized corpus remains 169: the 31 record-level differences are retained as A/C review evidence rather than automatically promoted without timing/provenance fields required by the production schema."
 }

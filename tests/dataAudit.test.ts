@@ -9,7 +9,9 @@ describe('Stage C1 production audit regressions', () => {
   test('corpus discrepancy is reported from source observations', () => {
     const report = load<any>('reports/data-corpus-diff-18.1.json');
     expect(report.categoryCountBySource.datatft).not.toEqual(report.categoryCountBySource.opgg);
-    expect(report.needsReview[0].count).toBeGreaterThan(0);
+    expect(report.intersection).toHaveLength(169);
+    expect(report.opggOnly).toHaveLength(31);
+    expect(report.classificationCounts).toEqual({ A: 11, B: 0, C: 20, D: 0, E: 0, F: 0 });
   });
 
   test('a base without a distinct Upgrade variant has no Blossom', () => {

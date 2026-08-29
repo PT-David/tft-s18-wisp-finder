@@ -1,6 +1,6 @@
 {
   "patch": "18.1",
-  "snapshotAt": "2026-08-28T16:49:16Z",
+  "snapshotAt": "2026-08-29T04:15:26Z",
   "sources": [
     {
       "sourceId": "riot_patch_18_1_20260828",
@@ -68,15 +68,15 @@
       "sourceId": "lolchess_wisps_18_1_20260828_attempt",
       "tier": "C",
       "url": "https://lolchess.gg/rewards/set18/wisps",
-      "retrievedAt": "2026-08-28T16:49:16Z",
+      "retrievedAt": "2026-08-29T04:32:00Z",
       "pageUpdatedAt": null,
-      "sha256": "0bce42d603128054edbecb55a8c84077793e4998a68357e7054589b7f1c1bc74",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "useFor": [
         "intended_structured_skeleton",
         "field_cross_check"
       ],
       "confidence": "unverified",
-      "warning": "Public page is browser-accessible; this cloud path returned a source-protection response with no body. 2026-08-26 is an external index observation, not pageUpdatedAt.",
+      "warning": "One ordinary GET returned an AWS WAF challenge (HTTP 202); stopped immediately without bypass. Use the browser snapshot importer fallback.",
       "fetchStatus": "blocked_by_source_protection",
       "httpStatus": 202,
       "observedPublicIndexUpdated": "2026-08-26"
@@ -102,21 +102,31 @@
       "warning": "Used as the provisional skeleton only because Tier C could not be snapshotted; numeric fields require Tier C review."
     },
     {
-      "sourceId": "opgg_set18_wisps_20260828",
+      "sourceId": "opgg_set18_wisps_20260829",
       "tier": "C",
       "url": "https://op.gg/zh-cn/tft/set/18",
-      "retrievedAt": "2026-08-28T18:13:55Z",
+      "retrievedAt": "2026-08-29T04:15:26Z",
       "pageUpdatedAt": null,
-      "sha256": "dce707c86934c0d9beb987e1bab2fcbafed39cd902b2226803d038b196142638",
-      "locale": "en",
-      "fetchStatus": "blocked_by_source_protection",
-      "httpStatus": 403,
+      "sha256": "dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da",
+      "locale": "zh_cn",
+      "fetchStatus": "fetched_and_extracted",
+      "httpStatus": 200,
       "useFor": [
         "corpus_completeness_cross_check",
         "category_count_cross_check"
       ],
-      "confidence": "unverified",
-      "warning": "Normal GET attempts for zh-cn, zh-tw, and en Set 18 pages received HTTP 403 at the environment tunnel. Aggregate observations are not record-level source data; use browser import."
+      "confidence": "community_high_confidence",
+      "warning": "All 200 record-level rows were parsed from the localized Next.js Flight payload; corpus-only rows still require policy review.",
+      "recordCount": 200,
+      "categoryCounts": {
+        "Combat": 94,
+        "Misc": 30,
+        "Champion": 16,
+        "Shop": 19,
+        "Risky": 21,
+        "GoldXP": 14,
+        "Item": 6
+      }
     }
   ]
 }

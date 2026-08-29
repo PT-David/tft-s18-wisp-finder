@@ -1,13 +1,13 @@
 # TFT 18.1 Wisp data audit
 
-- Snapshot: 2026-08-28T16:49:16Z.
+- Snapshot: 2026-08-28T16:49:16Z; OP.GG retrieved 2026-08-29T04:15:26Z.
 - Corpus definition: all live-patch Wisps that can actually be offered in a normal or rules-authorized Wisp slot. Upgrade/Prismatic variants, inactive/internal records, and aliases are not separate entries.
-- Corpus status: DataTFT has 169 committed rows; OP.GG human review observed 200, but normal GETs to the zh-cn/zh-tw/en Set 18 pages received HTTP 403 at this environment tunnel and therefore have no record-level identities. The observed 31-row difference remains individually unclassified (F: insufficient evidence).
-- CommunityDragon: 345 variants (163 base-shaped, 163 Upgrade-shaped, 19 Prismatic-shaped). Exact localized-name intersection: 152. The 163/169/200 counts reflect client base-shaped records, DataTFT displayed rows, and an OP.GG aggregate observation respectively; only record-level activation evidence can resolve their policy differences.
-- Normalized remains 169: it is the only committed complete record-level skeleton, not because completeness is proven. No production records were added or removed in this pass.
-- Riot/client ID coverage: 152/169; Chinese-name coverage: 169/169. The 17 fallback Chinese names cite DataTFT, not CommunityDragon.
-- Blossom: 130; Mitosis is null because its client Upgrade text is not distinct. Prismatic: DataTFT 20, CommunityDragon 19, LoLCHESS human observation 11; record-level LoLCHESS identities are still required.
-- LoLCHESS pageUpdatedAt remains null. 2026-08-26 is retained only as a public-index observation; it is not substituted for a date from page body.
-- oncePerGame and reofferCooldownShops remain explicit unknown knowledge states; minimumAffordableGold remains omitted. Requirements remain DataTFT-sourced until LoLCHESS rows can be compared.
-- Blocking unresolved conflicts: 6; unmatched entries: 29.
-- **Production ready: no.** Use the source-specific browser import commands documented in reports/browser-snapshot-needed-18.1.md, then rebuild offline.
+- OP.GG: HTTP 200, SHA-256 dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da, 200 parsed rows. Category counts: {"Combat":94,"Misc":30,"Champion":16,"Shop":19,"Risky":21,"GoldXP":14,"Item":6}. This replaces the obsolete blocked observation.
+- Reconciliation: 169 OP.GG/DataTFT intersection, 31 OP.GG-only, 0 DataTFT-only. The OP.GG-only rows are individually classified: {"A":11,"B":0,"C":20,"D":0,"E":0,"F":0}. A means a catalogued live-shaped row missing from DataTFT; C means a conditional corpus-policy difference.
+- Normalized remains 169, after evidence review rather than a 200-count assumption: the 31 rows are not promoted until their timing and production-required provenance can be established.
+- CommunityDragon: 345 variants (163 base, 163 Upgrade, 19 Prismatic); exact localized-name intersection 152.
+- Riot/client ID coverage: 152/169; Chinese-name coverage: 169/169.
+- Blossom: 130; Mitosis remains null because its client Upgrade text is not distinct. Prismatic: DataTFT 20, CommunityDragon 19, LoLCHESS human observation 11.
+- LoLCHESS ordinary GET was attempted once and received HTTP 202 AWS WAF protection; no bypass was attempted. The browser snapshot importer remains the fallback.
+- oncePerGame and reofferCooldownShops remain explicit unknown knowledge states; minimumAffordableGold remains omitted.
+- **Production ready: no.** The build remains deterministic and offline from committed snapshots.

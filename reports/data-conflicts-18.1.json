@@ -24,7 +24,7 @@
     "wispIdentity": "corpus",
     "field": "corpus size",
     "sourceA": "datatft_18_1_20260828",
-    "sourceB": "opgg_set18_wisps_20260828",
+    "sourceB": "opgg_set18_wisps_20260829",
     "valueA": 169,
     "valueB": 200,
     "sourceTimestamps": {
@@ -33,7 +33,7 @@
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "Record-level OP.GG export is required to classify the observed difference."
+    "note": "All OP.GG identities are extracted; the 31 additions require corpus-policy and required-field review before promotion."
   },
   {
     "conflictType": "category_counts",
@@ -42,7 +42,7 @@
     "wispIdentity": "corpus",
     "field": "category distribution",
     "sourceA": "datatft_18_1_20260828",
-    "sourceB": "opgg_set18_wisps_20260828",
+    "sourceB": "opgg_set18_wisps_20260829",
     "valueA": {
       "champion": 16,
       "combat": 75,
@@ -53,13 +53,13 @@
       "item": 5
     },
     "valueB": {
-      "champion": 16,
-      "combat": 94,
-      "shop": 19,
-      "gold_xp": 14,
-      "risky": 21,
-      "item": 6,
-      "misc": 30
+      "Combat": 94,
+      "Misc": 30,
+      "Champion": 16,
+      "Shop": 19,
+      "Risky": 21,
+      "GoldXP": 14,
+      "Item": 6
     },
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
@@ -67,7 +67,7 @@
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "Every category except Champion and Shop differs."
+    "note": "Record-level matching found no category disagreement in the 169-row intersection; the aggregate difference comes from OP.GG-only rows."
   },
   {
     "conflictType": "blossom_coverage",

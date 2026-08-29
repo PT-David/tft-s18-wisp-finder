@@ -39,6 +39,30 @@ function jsonPayloads(html: string): unknown[] {
   for (const match of html.matchAll(/data-wisp-record=["']([^"']+)["']/gi)) {
     try { payloads.push(JSON.parse(entities(match[1]!))); } catch { /* invalid explicit record */ }
   }
+  // Next.js App Router serializes server data into Flight chunks rather than
+  // __NEXT_DATA__.  The argument is a JSON array, so decoding it does not
+  // require evaluating page JavaScript.
+  for (const match of html.matchAll(/self\.__next_f\.push\((\[.*?\])\)<\/script>/gis)) {
+    try {
+      const chunk = JSON.parse(match[1]!) as unknown[];
+      if (typeof chunk[1] !== 'string') continue;
+      const marker = '"wisps":';
+      const start = chunk[1].indexOf(marker);
+      if (start < 0) continue;
+      const tail = chunk[1].slice(start + marker.length);
+      // The Wisp array is followed by other Flight data. Locate its balanced
+      // closing bracket while respecting JSON strings, then parse only it.
+      let depth = 0; let quoted = false; let escaped = false; let end = -1;
+      for (let index = 0; index < tail.length; index += 1) {
+        const char = tail[index]!;
+        if (quoted) { if (escaped) escaped = false; else if (char === '\\') escaped = true; else if (char === '"') quoted = false; continue; }
+        if (char === '"') quoted = true;
+        else if (char === '[') depth += 1;
+        else if (char === ']' && --depth === 0) { end = index + 1; break; }
+      }
+      if (end > 0) payloads.push(JSON.parse(tail.slice(0, end)));
+    } catch { /* malformed Flight chunk */ }
+  }
   return payloads;
 }
 
@@ -57,7 +81,15 @@ export function parseBrowserSnapshot(source: BrowserSource, html: string): { sou
     if (record) found.push(record); Object.values(object).forEach(walk);
   };
   jsonPayloads(html).forEach(walk);
-  const records = [...new Map(found.map((record) => [record.sourceKey ?? `${record.name}\0${record.category ?? ''}`, record])).values()]
+  const deduped = new Map<string, ImportedWisp>();
+  for (const record of found) {
+    const key = record.sourceKey ?? `${record.name}\0${record.category ?? ''}`;
+    const prior = deduped.get(key);
+    // Locale pages can carry both the English seed and localized server result
+    // in separate Flight chunks. Prefer the localized row deterministically.
+    if (!prior || (/zh-(?:cn|tw)/i.test(canonical) && /[\u3400-\u9fff]/u.test(record.name) && !/[\u3400-\u9fff]/u.test(prior.name))) deduped.set(key, record);
+  }
+  const records = [...deduped.values()]
     .sort((a, b) => a.name.localeCompare(b.name, 'en'));
   if (!records.length) throw new Error('快照身份正确，但未找到结构化 Wisp records；不会覆盖现有 raw JSON');
   const updatedText = html.match(/(?:Updated|更新(?:日期|時間)?)[：:\s]*([A-Za-z]+\s+\d{1,2},\s+\d{4}|\d{4}[-/.]\d{1,2}[-/.]\d{1,2})/i)?.[1] ?? null;

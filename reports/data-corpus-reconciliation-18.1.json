@@ -36,11 +36,435 @@
     },
     {
       "source": "opgg",
-      "rawCount": 0,
+      "rawCount": 200,
       "observedCount": 200,
-      "acceptedBaseCount": 0,
-      "matchedToProduction": 0,
-      "unmatched": [],
+      "acceptedBaseCount": 169,
+      "matchedToProduction": 169,
+      "unmatched": [
+        {
+          "record": {
+            "sourceKey": "RitualComplete",
+            "name": "仪式完成",
+            "category": "Risky",
+            "cost": 3,
+            "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+            "appearanceCondition": "已激活魔女羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "ProtectiveRitual",
+            "name": "保护仪式",
+            "category": "Misc",
+            "cost": 1,
+            "effect": "本轮受到的任何玩家伤害减少 3 点。",
+            "appearanceCondition": "已激活魔女羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "FakeLevel",
+            "name": "假关卡",
+            "category": "Misc",
+            "cost": 10,
+            "effect": "你暂时达到10级。",
+            "appearanceCondition": "尚未达到10级",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "AllIn",
+            "name": "全部投入",
+            "category": "Risky",
+            "cost": 5,
+            "effect": "若接下来3场战斗全部获胜，则提升1级。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "DoubleUp",
+            "name": "加倍",
+            "category": "Misc",
+            "cost": 2,
+            "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "Escalation",
+            "name": "升级",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "FriendlyFlora",
+            "name": "友好的植物群",
+            "category": "Combat",
+            "cost": 2,
+            "effect": "所有友军获得50%效果的致命花卉加成。",
+            "appearanceCondition": "已激活致命花卉羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "MinionHorde",
+            "name": "小黄人部落",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "生成 4 个小兵。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "Breeze",
+            "name": "微风",
+            "category": "Combat",
+            "cost": 1,
+            "effect": "你的队伍获得12%攻击速度。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "TheChariot",
+            "name": "战车",
+            "category": "GoldXP",
+            "cost": 10,
+            "effect": "商店刷新和购买经验值的费用减半。",
+            "appearanceCondition": "拥有至少30金币",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "NewandImproved",
+            "name": "新增和改进",
+            "category": "Misc",
+            "cost": 3,
+            "effect": "获得一个袖珍重组器。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "StarPower",
+            "name": "星力",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+            "appearanceCondition": "至少上场1名3星非坦克弈子",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "BetterBestie",
+            "name": "更好的闺蜜",
+            "category": "Combat",
+            "cost": 1,
+            "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+            "appearanceCondition": "已激活灵巧精羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "BrutalBargain",
+            "name": "残酷的讨价还价",
+            "category": "Item",
+            "cost": 0,
+            "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "CrystalBall",
+            "name": "水晶球",
+            "category": "Combat",
+            "cost": 1,
+            "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+            "appearanceCondition": "剩余至少4名玩家",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "TurtlesVisit",
+            "name": "海龟来访",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "本场战斗获得乌龟原始增益。",
+            "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "ConsumableShop",
+            "name": "消耗品",
+            "category": "Misc",
+            "cost": 1,
+            "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "MeltingResists",
+            "name": "熔化抗蚀剂",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+            "appearanceCondition": "地狱特质活跃",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "PottedLifebloom",
+            "name": "盆栽生命绽放",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "获得1朵临时生命花。",
+            "appearanceCondition": "已激活永恒之森羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "PottedStonebark",
+            "name": "盆栽石皮树",
+            "category": "Combat",
+            "cost": 2,
+            "effect": "获得一棵临时石皮树。",
+            "appearanceCondition": "已激活永恒之森羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "GuildofThieves",
+            "name": "盗贼公会",
+            "category": "Combat",
+            "cost": 6,
+            "effect": "获得 2 个临时盗贼手套。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "FaeFederation",
+            "name": "精灵联邦",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "本回合你的所有弈子获得2个仙灵。",
+            "appearanceCondition": "已激活仙灵羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "FaerieFlight",
+            "name": "精灵飞行",
+            "category": "Misc",
+            "cost": 1,
+            "effect": "本场战斗吸引的仙灵数量提高100%。",
+            "appearanceCondition": "已激活仙灵羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "MemorialDummy",
+            "name": "纪念假人",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+            "appearanceCondition": "战场上有至少1名携带装备的坦克",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "TigersVisit",
+            "name": "老虎来访",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "在这次战斗中获得老虎原始增益。",
+            "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "ComfortFood",
+            "name": "舒适食品",
+            "category": "Risky",
+            "cost": 2,
+            "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        },
+        {
+          "record": {
+            "sourceKey": "BloodHunt",
+            "name": "血猎",
+            "category": "Combat",
+            "cost": 2,
+            "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+            "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "TouchGrass",
+            "name": "触摸草",
+            "category": "Misc",
+            "cost": 0,
+            "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+            "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "Snacktime",
+            "name": "零食时间！",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+            "appearanceCondition": "已激活灵巧精羁绊",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "HorsesVisit",
+            "name": "马来访",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "在这次战斗中获得马原始增益。",
+            "appearanceCondition": "原始特质活跃，未选择马",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "C",
+          "reason": "OP.GG exposes a record-level conditional Wisp absent from DataTFT; corpus-policy review is required."
+        },
+        {
+          "record": {
+            "sourceKey": "Tornado",
+            "name": "龙卷风",
+            "category": "Combat",
+            "cost": 10,
+            "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+            "blossom": null,
+            "prismatic": null
+          },
+          "classification": "A",
+          "reason": "OP.GG exposes this record in its current All Wisps catalog with cost and effect, but DataTFT has no corresponding row."
+        }
+      ],
       "excluded": 0,
       "exclusionReasons": [
         "No row is excluded without record-level activation/alias evidence."
