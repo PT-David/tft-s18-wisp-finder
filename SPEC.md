@@ -34,6 +34,10 @@ Placeholder：`搜索仙灵名称或效果……`
 
 多个普通关键词默认 AND。
 
+人工批准的 Set 18 查询扩展包括“法强 → 法术强度 / 法术加成”和“攻击力 → 物理加成”。
+为避免 substring search 污染，AP、AD 不进入运行时同义词。内部 taxonomy 将实际升星动作
+`champion_star_up` 与静态星级/指定星级弈子 `champion_star_level` 分开；裸 N 星不表示升星。
+
 ### 3.2 公共筛选
 
 只放不需要“理解仙灵内容”即可定义的客观字段：

@@ -2,7 +2,7 @@
   "metadata": {
     "schemaVersion": 1,
     "patch": "18.1",
-    "reviewedAgainstGeneratorVersion": "c2.1-v4",
+    "reviewedAgainstGeneratorVersion": "c2.1-v5",
     "reviewedAgainstInputSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7"
   },
   "policy": {
@@ -12,22 +12,191 @@
     "irrelevantResultIncrease": "query expansion must not materially increase irrelevant results"
   },
   "taxonomyDecisions": [
-    { "action": "rename", "fromKey": "survival_duration", "key": "survival_condition", "reason": "同时覆盖存活时间及存活友军数量结算，duration 命名过窄。" },
-    { "action": "wording", "key": "time_stage", "reason": "覆盖回合或阶段时机及条件，不仅是 Requirement 条件。" },
-    { "action": "wording", "key": "shop_price", "reason": "表示商品购买价格，而非玩家出售所得。" },
-    { "action": "wording", "key": "crowd_control", "reason": "控制效果不要求群体或 AoE。" }
+    {
+      "action": "rename",
+      "fromKey": "survival_duration",
+      "key": "survival_condition",
+      "reason": "同时覆盖存活时间及存活友军数量结算，duration 命名过窄。"
+    },
+    {
+      "action": "wording",
+      "key": "time_stage",
+      "reason": "覆盖回合或阶段时机及条件，不仅是 Requirement 条件。"
+    },
+    {
+      "action": "wording",
+      "key": "shop_price",
+      "reason": "表示商品购买价格，而非玩家出售所得。"
+    },
+    {
+      "action": "wording",
+      "key": "crowd_control",
+      "reason": "控制效果不要求群体或 AoE。"
+    },
+    {
+      "action": "add",
+      "key": "champion_star_level",
+      "reason": "将静态星级、星级 Requirement 与指定星级弈子获取/召唤从实际升星动作中拆分。"
+    },
+    {
+      "action": "refine",
+      "key": "champion_star_up",
+      "reason": "仅表示现有弈子实际发生升星或星级提升动作，不再由裸 N 星触发。"
+    },
+    {
+      "action": "wording",
+      "key": "shield",
+      "reason": "泛化为提供、提升、削减护盾或以护盾为作用对象的护盾相关概念。"
+    },
+    {
+      "action": "wording",
+      "key": "win_streak",
+      "reason": "覆盖连胜状态和连胜计数。"
+    },
+    {
+      "action": "wording",
+      "key": "loss_streak",
+      "reason": "覆盖连败状态和连败计数。"
+    }
   ],
   "queryExpansionDecisions": [
-    { "groupKey": "champion_duplicator_terms", "approved": ["Champion Duplicator", "英雄复制器", "复制器"], "rejected": [{ "alias": "妮蔻", "reason": "真实英雄名称与历史俗称存在天然语义歧义。" }] },
-    { "groupKey": "reroll_terms", "approved": ["刷新", "重随", "reroll"], "rejected": [{ "alias": "D", "reason": "单字符 alias 会通过 substring matching 污染大量英文文本。" }, { "alias": "roll", "reason": "会与 Die Roll、Rolling Bones 等非商店刷新名称碰撞。" }] },
-    { "groupKey": "death_terms", "approved": ["阵亡", "死亡"], "rejected": [{ "alias": "death", "reason": "本轮没有足够收益证据，按 precision-first 保持拒绝。" }] },
-    { "groupKey": "kill_terms", "approved": ["击杀", "takedown"], "rejected": [{ "alias": "击倒", "reason": "production corpus 未证明其稳定表示 takedown。" }, { "alias": "takedowns", "reason": "本轮未发现需要复数扩展的稳定 corpus 证据。" }] },
-    { "groupKey": "experience_terms", "approved": ["经验", "经验值", "XP", "experience"], "rejected": [] },
-    { "groupKey": "health_terms", "approved": ["生命值", "血量", "HP", "health"], "rejected": [] },
-    { "groupKey": "ability_power_terms", "approved": ["法术强度", "法强"], "rejected": [{ "alias": "AP", "reason": "两字母 acronym 在 substring matching 下误匹配风险高。" }] },
-    { "groupKey": "attack_speed_terms", "approved": ["攻击速度", "攻速"], "rejected": [{ "alias": "AS", "reason": "两字母 acronym 在 substring matching 下误匹配风险高。" }] },
-    { "groupKey": "true_damage_terms", "approved": ["真实伤害", "真伤"], "rejected": [] }
+    {
+      "groupKey": "champion_duplicator_terms",
+      "approved": [
+        "Champion Duplicator",
+        "英雄复制器",
+        "复制器"
+      ],
+      "rejected": [
+        {
+          "alias": "妮蔻",
+          "reason": "真实英雄名称与历史俗称存在天然语义歧义。"
+        }
+      ]
+    },
+    {
+      "groupKey": "reroll_terms",
+      "approved": [
+        "刷新",
+        "重随",
+        "reroll"
+      ],
+      "rejected": [
+        {
+          "alias": "D",
+          "reason": "单字符 alias 会通过 substring matching 污染大量英文文本。"
+        },
+        {
+          "alias": "roll",
+          "reason": "会与 Die Roll、Rolling Bones 等非商店刷新名称碰撞。"
+        }
+      ]
+    },
+    {
+      "groupKey": "death_terms",
+      "approved": [
+        "阵亡",
+        "死亡"
+      ],
+      "rejected": [
+        {
+          "alias": "death",
+          "reason": "本轮没有足够收益证据，按 precision-first 保持拒绝。"
+        }
+      ]
+    },
+    {
+      "groupKey": "kill_terms",
+      "approved": [
+        "击杀",
+        "takedown"
+      ],
+      "rejected": [
+        {
+          "alias": "击倒",
+          "reason": "production corpus 未证明其稳定表示 takedown。"
+        },
+        {
+          "alias": "takedowns",
+          "reason": "本轮未发现需要复数扩展的稳定 corpus 证据。"
+        }
+      ]
+    },
+    {
+      "groupKey": "experience_terms",
+      "approved": [
+        "经验",
+        "经验值",
+        "XP",
+        "experience"
+      ],
+      "rejected": []
+    },
+    {
+      "groupKey": "health_terms",
+      "approved": [
+        "生命值",
+        "血量",
+        "HP",
+        "health"
+      ],
+      "rejected": []
+    },
+    {
+      "groupKey": "ability_power_terms",
+      "approved": [
+        "法术强度",
+        "法术加成",
+        "法强"
+      ],
+      "rejected": [
+        {
+          "alias": "AP",
+          "reason": "两字母 acronym 在 substring matching 下误匹配风险高。"
+        }
+      ]
+    },
+    {
+      "groupKey": "attack_speed_terms",
+      "approved": [
+        "攻击速度",
+        "攻速"
+      ],
+      "rejected": [
+        {
+          "alias": "AS",
+          "reason": "两字母 acronym 在 substring matching 下误匹配风险高。"
+        }
+      ]
+    },
+    {
+      "groupKey": "true_damage_terms",
+      "approved": [
+        "真实伤害",
+        "真伤"
+      ],
+      "rejected": []
+    },
+    {
+      "groupKey": "attack_damage_terms",
+      "approved": [
+        "攻击力",
+        "物理加成"
+      ],
+      "rejected": [
+        {
+          "alias": "AD",
+          "reason": "两字母 acronym 在 substring matching 下误匹配风险高。"
+        }
+      ]
+    }
   ],
-  "futureCandidates": [{ "alias": "蓝量", "intent": "mana", "status": "needs_corpus_and_semantic_review" }],
+  "futureCandidates": [
+    {
+      "alias": "蓝量",
+      "intent": "mana",
+      "status": "needs_corpus_and_semantic_review"
+    }
+  ],
   "assignmentDecisions": []
 }

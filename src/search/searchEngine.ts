@@ -12,7 +12,8 @@ export const BASE_SYNONYMS: SynonymGroups = [
   ['刷新', '重随', 'reroll'],
   ['经验', '经验值', 'xp', 'experience'],
   ['复制器', '英雄复制器', 'champion duplicator'],
-  ['法术强度', '法强'],
+  ['法术强度', '法术加成', '法强'],
+  ['攻击力', '物理加成'],
   ['攻击速度', '攻速'],
   ['真实伤害', '真伤'],
 ];

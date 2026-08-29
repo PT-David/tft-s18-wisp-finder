@@ -62,6 +62,16 @@ describe('搜索引擎', () => {
     expect(searchWisps([fixture('target', { effects: { normal: `获得${text}` } })], query)).toHaveLength(1);
   });
 
+  test.each([['法强', '法术加成'], ['攻击力', '物理加成']])('%s expands to current production wording %s', (query, text) => {
+    expect(searchWisps([fixture('target', { effects: { normal: `获得${text}` } })], query)).toHaveLength(1);
+  });
+
+  test('AP and AD remain literal queries rather than substring-risk expansions', () => {
+    const target = fixture('target', { effects: { normal: '获得法术加成和物理加成' } });
+    expect(searchWisps([target], 'AP')).toHaveLength(0);
+    expect(searchWisps([target], 'AD')).toHaveLength(0);
+  });
+
   test('multi-token AND 可与 phrase synonym 同时使用', () => {
     const both = fixture('both', { effects: { normal: '己方阵亡时获得英雄复制器' } });
     const copyOnly = fixture('copy-only', { effects: { normal: '获得英雄复制器' } });

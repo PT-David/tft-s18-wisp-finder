@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v4",
+  "generatorVersion": "c2.1-v5",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -20,11 +20,35 @@
           "language": "zh"
         },
         {
+          "term": "法术加成",
+          "language": "zh"
+        },
+        {
           "term": "法术强度",
           "language": "zh"
         }
       ],
-      "evidence": "人工审核批准的低歧义中文缩写",
+      "evidence": "人工审核批准的 Set 18 法术加成表达",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
+    },
+    {
+      "key": "attack_damage_terms",
+      "canonicalTerm": "攻击力",
+      "conceptKeys": [
+        "attack_damage"
+      ],
+      "aliases": [
+        {
+          "term": "攻击力",
+          "language": "zh"
+        },
+        {
+          "term": "物理加成",
+          "language": "zh"
+        }
+      ],
+      "evidence": "人工审核批准的 Set 18 物理加成表达",
       "intrinsicRisks": [],
       "reviewStatus": "draft_candidate"
     },
