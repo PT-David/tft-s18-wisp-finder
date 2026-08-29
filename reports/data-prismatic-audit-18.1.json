@@ -22,7 +22,27 @@
     "克隆弈子"
   ],
   "dataTftCount": 20,
-  "lolchess": [],
+  "lolchess": [
+    "Barrier",
+    "Blaze",
+    "Combust",
+    "Counterspell",
+    "Downpour",
+    "Giant's Aura",
+    "Hireling",
+    "Hugify",
+    "Hummingbird",
+    "Late Bloomer",
+    "Lightning Storm",
+    "Lucky 7",
+    "Phantom Armor",
+    "Stand Alone",
+    "Tattered Armor",
+    "Treetop Archers",
+    "Tremors",
+    "Truce",
+    "Ultra Ascension"
+  ],
   "lolchessHumanObservedCount": 11,
   "communityDragon": [
     "Barrier",
@@ -46,7 +66,26 @@
     "Ultra Ascension"
   ],
   "communityDragonCount": 19,
-  "allThreeAgree": [],
+  "allThreeAgree": [
+    "Barrier",
+    "Blaze",
+    "Combust",
+    "Counterspell",
+    "Downpour",
+    "Giant's Aura",
+    "Hireling",
+    "Hugify",
+    "Hummingbird",
+    "Late Bloomer",
+    "Lightning Storm",
+    "Lucky 7",
+    "Phantom Armor",
+    "Stand Alone",
+    "Tattered Armor",
+    "Treetop Archers",
+    "Tremors",
+    "Ultra Ascension"
+  ],
   "intersectionDataTftCommunityDragon": [
     "Barrier",
     "Blaze",
@@ -67,33 +106,16 @@
     "Tremors",
     "Ultra Ascension"
   ],
-  "dataTftCommunityDragonOnly": [
-    "Barrier",
-    "Blaze",
-    "Combust",
-    "Counterspell",
-    "Downpour",
-    "Giant's Aura",
-    "Hireling",
-    "Hugify",
-    "Hummingbird",
-    "Late Bloomer",
-    "Lightning Storm",
-    "Lucky 7",
-    "Phantom Armor",
-    "Stand Alone",
-    "Tattered Armor",
-    "Treetop Archers",
-    "Tremors",
-    "Ultra Ascension"
-  ],
+  "dataTftCommunityDragonOnly": [],
   "c1Only": [
     "休战",
     "克隆弈子"
   ],
-  "lolchessOnly": [],
+  "lolchessOnly": [
+    "Truce"
+  ],
   "chosenStatus": "needs_review",
-  "reason": "LoLCHESS record identities were not available from the blocked cloud fetch; no attempt was made to force either count.",
+  "reason": "Record identities imported; definition/content differences still require reviewed resolutions.",
   "needsReview": [
     "Barrier",
     "Blaze",
@@ -114,6 +136,7 @@
     "Tremors",
     "Ultra Ascension",
     "休战",
-    "克隆弈子"
+    "克隆弈子",
+    "Truce"
   ]
 }

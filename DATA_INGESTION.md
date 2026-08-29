@@ -56,3 +56,18 @@ scripts/
 - Stage 6 高费用。
 
 完整全集应由导入流程生成，而不是让 Codex 手抄到代码中。
+
+## 6. LoLCHESS 浏览器快照
+
+普通浏览器通过 “Save Page As → HTML only” 保存的页面是受支持的正式
+fallback。导入器先检查 JSON、JSON-LD、`__NEXT_DATA__` 与 Flight payload；
+若其中没有 Wisp records，则按 `.name-cell`、`.description-cell`、升级 label、
+requirements hint 和 stage info 等语义 DOM 解析服务端渲染列表，而不依赖构建时
+生成的随机 CSS hash。两条路径均无记录时会 fail closed，绝不覆盖已有 raw JSON。
+
+```bash
+npm run data:import:lolchess -- artifacts/import/lolchess-set18-wisps.html
+```
+
+导入后的 LoLCHESS 数据作为逐记录审计证据；来源总数不同不能单独证明 corpus
+成员关系，也不代表 normalized production 已完整。

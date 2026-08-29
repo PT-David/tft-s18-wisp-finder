@@ -1,0 +1,63 @@
+{
+  "sourceCount": 174,
+  "exactEnglishIdentityMatches": 152,
+  "unmatchedLolchess": [
+    "Bear's Visit",
+    "Blood Ritual",
+    "Component Bounty",
+    "Drought",
+    "Essence Theft",
+    "Flood",
+    "Golden Road",
+    "Good Loss",
+    "Healing Pool",
+    "Major Gambit",
+    "Marksmen's Marks",
+    "Minor Blood Ritual",
+    "Minor Gambit",
+    "Potted Lifebloom",
+    "Potted Stonebark",
+    "Regeneration",
+    "Sinister Deal",
+    "Snacktime!",
+    "Take One With Ya",
+    "Tiger's Visit",
+    "Truce",
+    "Turtle's Visit"
+  ],
+  "blossom": {
+    "productionCount": 130,
+    "lolchessCount": 145,
+    "matchedAgreement": 150,
+    "mismatches": [
+      {
+        "nameEn": "Bronze Spoon",
+        "productionHasBlossom": true,
+        "lolchessHasBlossom": false
+      },
+      {
+        "nameEn": "Experienced",
+        "productionHasBlossom": true,
+        "lolchessHasBlossom": false
+      }
+    ]
+  },
+  "requirements": {
+    "productionCount": 56,
+    "lolchessCount": 60
+  },
+  "oncePerGame": {
+    "lolchessConfirmed": [
+      "Blood Ritual",
+      "Hero Of Prophecy"
+    ],
+    "appliedToProduction": [
+      "Hero Of Prophecy"
+    ]
+  },
+  "stageRanges": {
+    "compared": 152,
+    "agreements": 152,
+    "mismatches": []
+  }
+}

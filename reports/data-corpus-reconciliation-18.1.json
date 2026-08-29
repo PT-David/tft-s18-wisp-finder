@@ -14,7 +14,7 @@
     "candidateCount": 48,
     "ambiguousCount": 27,
     "unresolvedOpggCount": 48,
-    "dataTftOnlyCount": 17
+    "dataTftUnmatchedCount": 17
   },
   "duplicateAuditMatchingDiff": {
     "before": {
@@ -32,7 +32,7 @@
       "candidateCount": 48,
       "ambiguousCount": 27,
       "unresolvedOpggCount": 48,
-      "dataTftOnlyCount": 17,
+      "dataTftUnmatchedCount": 17,
       "confirmedCorpusButIncomplete": 8
     },
     "promotedToExactClientKey": 0
@@ -230,7 +230,7 @@
     },
     {
       "source": "lolchess",
-      "rawCount": 0,
+      "rawCount": 174,
       "fetchStatus": "blocked_by_source_protection"
     }
   ]

@@ -7,7 +7,7 @@
     "communitydragonZhVariants": 345,
     "opggHumanObserved": 200,
     "opggExtracted": 200,
-    "lolchess": 0
+    "lolchess": 174
   },
   "unionByAcceptedSkeleton": 169,
   "intersectionByExactLocalizedName": 152,
@@ -36,8 +36,8 @@
   "withBlossom": 130,
   "withPrismatic": 20,
   "withRequirements": 56,
-  "oncePerGameConfirmedTrue": 0,
-  "oncePerGameUnknown": 169,
+  "oncePerGameConfirmedTrue": 1,
+  "oncePerGameUnknown": 168,
   "withReofferCooldownShops": 0,
   "criticalFieldsMissing": 17,
   "unresolvedCriticalConflicts": 6,

@@ -8951,7 +8951,8 @@
         }
       ],
       "oncePerGame": {
-        "status": "unknown"
+        "status": "confirmed",
+        "value": true
       },
       "reofferCooldownShops": {
         "status": "unknown"
@@ -9005,9 +9006,9 @@
           "confidence": "community_high_confidence"
         },
         "oncePerGame": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "reofferCooldownShops": {
           "sourceId": "datatft_18_1_20260828",

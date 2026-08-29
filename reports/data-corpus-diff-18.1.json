@@ -4789,7 +4789,7 @@
     }
   ],
   "opggOnlyConfirmed": [],
-  "dataTftOnlyConfirmed": [
+  "dataTftUnmatched": [
     {
       "id": "da_beggarswisp18",
       "nameEn": "Beggar's Wisp",
@@ -7199,6 +7199,15 @@
         "riotId": null
       }
     ]
+  },
+  "confirmedCorpusMembership": {
+    "minimum": 169,
+    "evidenceRule": "A source count is not an intersection; membership requires record identity evidence."
+  },
+  "normalizedProductionCompleteness": {
+    "normalizedCount": 169,
+    "criticalMissingIdentityCount": 17,
+    "complete": false
   },
   "confirmedCorpusButIncomplete": [
     {

@@ -13,7 +13,10 @@ describe('Stage C1 production audit regressions', () => {
     expect(report.confirmedMatches.every((match: any) => match.confidence === 'confirmed' && match.evidence)).toBe(true);
     expect(report.candidateMatches.every((match: any) => match.reasonNotConfirmed && !match.productionId)).toBe(true);
     expect(report.confirmedIntersection).toBe(report.confirmedMatches.length);
-    expect(report.dataTftOnlyConfirmed.length).toBeGreaterThan(0);
+    expect(report.dataTftUnmatched.length).toBeGreaterThan(0);
+    expect(report).not.toHaveProperty('dataTftOnlyConfirmed');
+    expect(report.confirmedCorpusMembership.minimum).toBeGreaterThan(0);
+    expect(report.normalizedProductionCompleteness.complete).toBe(false);
     expect(report.unresolved.opgg.length).toBeGreaterThan(0);
   });
 
@@ -32,10 +35,23 @@ describe('Stage C1 production audit regressions', () => {
     expect(variants.baseVariants + variants.upgradeVariants + variants.prismaticVariants).toBe(variants.totalVariants);
   });
 
-  test('Prismatic discrepancy remains explicit instead of forcing a count', () => {
+  test('Prismatic sources are compared record by record instead of forcing a count', () => {
     const audit = load<any>('reports/data-prismatic-audit-18.1.json');
-    expect(audit.dataTftCount).not.toBe(audit.lolchessHumanObservedCount);
+    expect(audit.lolchess).toHaveLength(19);
+    expect(audit.communityDragonCount).toBe(19);
     expect(audit.chosenStatus).toBe('needs_review');
+  });
+
+  test('audits LoLCHESS field coverage and applies explicit knowledge evidence', () => {
+    const audit = load<any>('reports/data-lolchess-field-audit-18.1.json');
+    expect(audit.sourceCount).toBe(174);
+    expect(audit.blossom.lolchessCount).toBe(145);
+    expect(audit.requirements.lolchessCount).toBe(60);
+    expect(audit.stageRanges.compared).toBe(audit.exactEnglishIdentityMatches);
+    expect(audit.oncePerGame.lolchessConfirmed).toEqual(['Blood Ritual', 'Hero Of Prophecy']);
+    const hero = dataset.records.find((record) => record.nameEn === 'Hero Of Prophecy')!;
+    expect(hero.oncePerGame).toEqual({ status: 'confirmed', value: true });
+    expect(hero.sources.oncePerGame.sourceId).toContain('lolchess');
   });
 
   test('provenance falls back to DataTFT and unknown facts stay unknown', () => {
