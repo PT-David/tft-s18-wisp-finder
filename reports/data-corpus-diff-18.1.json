@@ -1,5 +1,5 @@
 {
-  "confirmedIntersection": 152,
+  "confirmedIntersection": 166,
   "confirmedMatches": [
     {
       "opggSourceKey": "MoonlightRitual",
@@ -2018,6 +2018,97 @@
       "confidence": "confirmed"
     },
     {
+      "opggSourceKey": "MajorGambit",
+      "opggName": "主要策略",
+      "productionId": "snapshot_121_1899d3fe4c61",
+      "nameZh": "高阶胜负手",
+      "nameEn": "Major Gambit",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "majorgambit",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Truce",
+      "opggName": "休战",
+      "productionId": "snapshot_021_534324382164",
+      "nameZh": "休战",
+      "nameEn": "Truce",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "truce",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Regeneration",
+      "opggName": "再生",
+      "productionId": "snapshot_090_cf945e21ddef",
+      "nameZh": "回复",
+      "nameEn": "Regeneration",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "regeneration",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TakeOneWithYa",
+      "opggName": "和你一起拍一张",
+      "productionId": "snapshot_048_cbc77e083fc2",
+      "nameZh": "带一个走",
+      "nameEn": "Take One With Ya",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "takeonewithya",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MinorBloodRitual",
+      "opggName": "小型血仪式",
+      "productionId": "snapshot_120_cf0b477ffe00",
+      "nameZh": "小型血祭",
+      "nameEn": "Minor Blood Ritual",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "minorbloodritual",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MinorGambit",
+      "opggName": "小策略",
+      "productionId": "snapshot_049_d60aa5ac9feb",
+      "nameZh": "低阶胜负手",
+      "nameEn": "Minor Gambit",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "minorgambit",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GoodLoss",
+      "opggName": "损失惨重",
+      "productionId": "snapshot_147_2dc94df4e3a5",
+      "nameZh": "输得漂亮",
+      "nameEn": "Good Loss",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "goodloss",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
       "opggSourceKey": "ManaPotion",
       "opggName": "法力药水",
       "productionId": "da_manapotion18_charm",
@@ -2026,6 +2117,19 @@
       "matchMethod": "exact_english_name",
       "evidence": {
         "normalizedEnglishName": "manapotion",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Flood",
+      "opggName": "洪水",
+      "productionId": "snapshot_051_e06d127b43f9",
+      "nameZh": "洪涝",
+      "nameEn": "Flood",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "flood",
         "unique": true
       },
       "confidence": "confirmed"
@@ -2057,14 +2161,53 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Truce",
-      "opggName": "休战",
-      "productionId": "snapshot_021_534324382164",
-      "nameZh": "休战",
-      "nameEn": "休战",
-      "matchMethod": "exact_chinese_name",
+      "opggSourceKey": "EssenceTheft",
+      "opggName": "精华盗窃",
+      "productionId": "snapshot_036_f484358ea1e5",
+      "nameZh": "摄魂夺魄",
+      "nameEn": "Essence Theft",
+      "matchMethod": "exact_english_name",
       "evidence": {
-        "normalizedChineseName": "休战",
+        "normalizedEnglishName": "essencetheft",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ComponentBounty",
+      "opggName": "组件赏金",
+      "productionId": "snapshot_136_c467ccd546d7",
+      "nameZh": "散件赏金",
+      "nameEn": "Component Bounty",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "componentbounty",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BloodRitual",
+      "opggName": "血仪式",
+      "productionId": "snapshot_157_3ed870773960",
+      "nameZh": "血祭",
+      "nameEn": "Blood Ritual",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "bloodritual",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SinisterDeal",
+      "opggName": "险恶交易",
+      "productionId": "snapshot_022_fc7538964718",
+      "nameZh": "不祥交易",
+      "nameEn": "Sinister Deal",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "sinisterdeal",
         "unique": true
       },
       "confidence": "confirmed"
@@ -2120,229 +2263,48 @@
         "unique": true
       },
       "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThingamjigBag",
+      "opggName": "Thingamjig 包",
+      "productionId": "da_thingamajigbag18",
+      "nameZh": "小装置包",
+      "nameEn": "Thingamajig Bag",
+      "matchMethod": "reviewed_cross_source_identity",
+      "evidence": {
+        "mappingTableKey": "ThingamjigBag",
+        "reviewed": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThingamjigJar",
+      "opggName": "Thingamjig 罐子",
+      "productionId": "da_thingamajigjar18",
+      "nameZh": "小装置罐",
+      "nameEn": "Thingamajig Jar",
+      "matchMethod": "reviewed_cross_source_identity",
+      "evidence": {
+        "mappingTableKey": "ThingamjigJar",
+        "reviewed": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThingamjigSack",
+      "opggName": "Thingamjig 麻袋",
+      "productionId": "da_thingamajigsack18",
+      "nameZh": "小装置袋",
+      "nameEn": "Thingamajig Sack",
+      "matchMethod": "reviewed_cross_source_identity",
+      "evidence": {
+        "mappingTableKey": "ThingamjigSack",
+        "reviewed": true
+      },
+      "confidence": "confirmed"
     }
   ],
   "candidateMatches": [
-    {
-      "opggRecord": {
-        "sourceKey": "ThingamjigBag",
-        "name": "Thingamjig 包",
-        "category": "Misc",
-        "cost": 3,
-        "effect": "获得 3 种随机消耗品，可提供法术强度或法力再生。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.7847985347985348,
-          "effectSimilarity": 0.38095238095238093,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.7033333333333334,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.88,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.6433333333333333,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.64,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.08146520146520142,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "ThingamjigJar",
-        "name": "Thingamjig 罐子",
-        "category": "Misc",
-        "cost": 0,
-        "effect": "获得 1 个随机消耗品，可提供法术强度或法力再生。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.8985714285714286,
-          "effectSimilarity": 0.42857142857142855,
-          "nameSimilarity": 0.88,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.6433333333333333,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.64,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.6371794871794871,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.25523809523809526,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "ThingamjigSack",
-        "name": "Thingamjig 麻袋",
-        "category": "Misc",
-        "cost": 5,
-        "effect": "获得 5 种随机消耗品，可提供法术强度或法力再生。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.7055555555555556,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.8888888888888888,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.6371794871794871,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.6371794871794871,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.06837606837606847,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MajorGambit",
-        "name": "主要策略",
-        "category": "Risky",
-        "cost": 2,
-        "effect": "如果你赢得下一场玩家战斗，获得 10 金币。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.8166666666666667,
-          "effectSimilarity": 0.6666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.8166666666666667,
-          "effectSimilarity": 0.6666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.6,
-          "effectSimilarity": 0.45,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
     {
       "opggRecord": {
         "sourceKey": "RitualComplete",
@@ -2356,46 +2318,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.49242424242424243,
-          "effectSimilarity": 0.24242424242424243,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.39242424242424245,
-          "effectSimilarity": 0.24242424242424243,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.023809523809523808,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.35,
-          "effectSimilarity": 0.2,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.09999999999999998,
+      "bestVsSecondMargin": 0.023809523809523808,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2412,46 +2374,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.25,
-          "effectSimilarity": 0,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.06666666666666667,
+          "effectSimilarity": 0.06666666666666667,
           "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.22692307692307692,
-          "effectSimilarity": 0.07692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.21451612903225806,
-          "effectSimilarity": 0.06451612903225806,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.021739130434782608,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.023076923076923078,
+      "bestVsSecondMargin": 0.04492753623188406,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2468,46 +2430,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.23333333333333334,
-          "effectSimilarity": 0.08333333333333333,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.15,
+          "score": 0.07407407407407407,
+          "effectSimilarity": 0.07407407407407407,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08333333333333334,
+      "bestVsSecondMargin": 0.07407407407407407,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2536,33 +2498,33 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_147_2dc94df4e3a5",
-          "nameEn": "输得漂亮",
-          "nameZh": "输得漂亮",
-          "effect": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "category": "risky",
-          "cost": 5,
-          "score": 0.1,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 1.0865591397849463,
+      "bestVsSecondMargin": 1.2115591397849463,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2578,101 +2540,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_147_2dc94df4e3a5",
-          "nameEn": "输得漂亮",
-          "nameZh": "输得漂亮",
-          "effect": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "category": "risky",
-          "cost": 5,
-          "score": 0.3928571428571428,
-          "effectSimilarity": 0.14285714285714285,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_048_cbc77e083fc2",
-          "nameEn": "带一个走",
-          "nameZh": "带一个走",
-          "effect": "如果你失败但至少击杀了1名敌人，获得4经验值。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.2428571428571428,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "Regeneration",
-        "name": "再生",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "你的团队每秒治疗 1% 最大生命值。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 1.0192307692307694,
-          "effectSimilarity": 0.7692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.22903225806451613,
-          "effectSimilarity": 0.12903225806451613,
+          "cost": 5,
+          "score": 0.1,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": true
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.16,
-          "effectSimilarity": 0.16,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.7901985111662533,
+      "bestVsSecondMargin": 0.1,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2688,46 +2595,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.15,
-          "effectSimilarity": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0.05263157894736842,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.15,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0,
+      "bestVsSecondMargin": 0.05263157894736842,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2743,19 +2650,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.31666666666666665,
-          "effectSimilarity": 0.06666666666666667,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -2769,21 +2663,34 @@
           "costMatch": false
         },
         {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.20256410256410257,
-          "effectSimilarity": 0.10256410256410256,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.11287758346581876,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.23529411764705882,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0975609756097561,
+          "effectSimilarity": 0.0975609756097561,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.045454545454545414,
-      "status": "ambiguous",
+      "bestVsSecondMargin": 0.15833453774630246,
+      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -2799,32 +2706,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.20689655172413793,
-          "effectSimilarity": 0.20689655172413793,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -2836,175 +2717,36 @@
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.056896551724137934,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "TakeOneWithYa",
-        "name": "和你一起拍一张",
-        "category": "Risky",
-        "cost": 1,
-        "effect": "若战败且击杀了至少1名弈子，获得4经验值。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_048_cbc77e083fc2",
-          "nameEn": "带一个走",
-          "nameZh": "带一个走",
-          "effect": "如果你失败但至少击杀了1名敌人，获得4经验值。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.7236842105263157,
-          "effectSimilarity": 0.47368421052631576,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
         },
         {
-          "productionId": "snapshot_147_2dc94df4e3a5",
-          "nameEn": "输得漂亮",
-          "nameZh": "输得漂亮",
-          "effect": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "category": "risky",
-          "cost": 5,
-          "score": 0.37727272727272726,
-          "effectSimilarity": 0.22727272727272727,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.31451612903225806,
-          "effectSimilarity": 0.06451612903225806,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        }
-      ],
-      "bestVsSecondMargin": 0.34641148325358845,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MinorBloodRitual",
-        "name": "小型血仪式",
-        "category": "Misc",
-        "cost": 4,
-        "effect": "失去3玩家生命值。获得1个次级弈子复制器。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 1.1261904761904762,
-          "effectSimilarity": 0.8333333333333334,
-          "nameSimilarity": 0.5714285714285714,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.7785714285714286,
-          "effectSimilarity": 0.6285714285714286,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.6166666666666667,
-          "effectSimilarity": 0.4666666666666667,
+          "score": 0.05,
+          "effectSimilarity": 0.05,
           "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.3476190476190476,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MinorGambit",
-        "name": "小策略",
-        "category": "Risky",
-        "cost": 1,
-        "effect": "如果你赢得下一场玩家战斗，获得 2 金币。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 1.0625,
-          "effectSimilarity": 0.8125,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.8375,
-          "effectSimilarity": 0.6875,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.5602564102564103,
-          "effectSimilarity": 0.41025641025641024,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.22499999999999998,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.09999999999999999,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3019,19 +2761,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -3045,21 +2774,34 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.1,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.027777777777777776,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1111111111111111,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0,
-      "status": "ambiguous",
+      "bestVsSecondMargin": 0.12222222222222222,
+      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3074,47 +2816,47 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.4,
-          "effectSimilarity": 0.25,
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_051_e06d127b43f9",
-          "nameEn": "洪涝",
-          "nameZh": "洪涝",
-          "effect": "你的连胜数加1。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.21764705882352942,
-          "effectSimilarity": 0.11764705882352941,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05714285714285714,
+          "effectSimilarity": 0.05714285714285714,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.18333333333333335,
-          "effectSimilarity": 0.08333333333333333,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.1823529411764706,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.09285714285714286,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3156,14 +2898,14 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_048_cbc77e083fc2",
-          "nameEn": "带一个走",
-          "nameZh": "带一个走",
-          "effect": "如果你失败但至少击杀了1名敌人，获得4经验值。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.11764705882352941,
-          "effectSimilarity": 0.11764705882352941,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
@@ -3171,61 +2913,6 @@
       ],
       "bestVsSecondMargin": 0.03575851393188856,
       "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "GoodLoss",
-        "name": "损失惨重",
-        "category": "Risky",
-        "cost": 5,
-        "effect": "接下来的3场玩家对战中，战败时获得6经验值。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_147_2dc94df4e3a5",
-          "nameEn": "输得漂亮",
-          "nameZh": "输得漂亮",
-          "effect": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "category": "risky",
-          "cost": 5,
-          "score": 0.7833333333333333,
-          "effectSimilarity": 0.5333333333333333,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.4357142857142857,
-          "effectSimilarity": 0.2857142857142857,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.4357142857142857,
-          "effectSimilarity": 0.2857142857142857,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.3476190476190476,
-      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3240,46 +2927,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.3269230769230769,
-          "effectSimilarity": 0.07692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.31666666666666665,
-          "effectSimilarity": 0.06666666666666667,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.25,
-          "effectSimilarity": 0.1,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.010256410256410275,
+      "bestVsSecondMargin": 0.0625,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3296,19 +2983,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.4078947368421052,
-          "effectSimilarity": 0.15789473684210525,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -3322,20 +2996,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.1930232558139535,
-          "effectSimilarity": 0.09302325581395349,
-          "nameSimilarity": 0,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.06859410430839002,
+          "effectSimilarity": 0.04081632653061224,
+          "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.03125,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.125,
+          "categoryMatch": false,
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.20911424903722714,
+      "bestVsSecondMargin": 0.13018638349648803,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3352,46 +3039,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.26111111111111107,
-          "effectSimilarity": 0.1111111111111111,
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.2111111111111111,
-          "effectSimilarity": 0.1111111111111111,
-          "nameSimilarity": 0,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0675531914893617,
+          "effectSimilarity": 0.0425531914893617,
+          "nameSimilarity": 0.1,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.2,
-          "effectSimilarity": 0.2,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.04999999999999996,
+      "bestVsSecondMargin": 0.08244680851063829,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3407,47 +3094,47 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.48709677419354835,
-          "effectSimilarity": 0.3870967741935484,
-          "nameSimilarity": 0,
+          "score": 0.37756410256410255,
+          "effectSimilarity": 0.10256410256410256,
+          "nameSimilarity": 0.1,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.19196617336152222,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0.18181818181818182,
           "categoryMatch": false,
           "costMatch": true
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.4444444444444444,
-          "effectSimilarity": 0.4444444444444444,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.43243243243243246,
-          "effectSimilarity": 0.43243243243243246,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.042652329749103934,
-      "status": "ambiguous",
+      "bestVsSecondMargin": 0.18559792920258034,
+      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3463,102 +3150,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.3375,
-          "effectSimilarity": 0.1875,
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.2142857142857143,
-          "effectSimilarity": 0.11428571428571428,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_051_e06d127b43f9",
-          "nameEn": "洪涝",
-          "nameZh": "洪涝",
-          "effect": "你的连胜数加1。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.18,
-          "effectSimilarity": 0.08,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.12321428571428572,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "Flood",
-        "name": "洪水",
-        "category": "Risky",
-        "cost": 1,
-        "effect": "连胜次数增加2。",
-        "appearanceCondition": "当前没有连胜或连败，或正处于连胜",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_051_e06d127b43f9",
-          "nameEn": "洪涝",
-          "nameZh": "洪涝",
-          "effect": "你的连胜数加1。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.41666666666666663,
-          "effectSimilarity": 0.16666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.25,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_048_cbc77e083fc2",
-          "nameEn": "带一个走",
-          "nameZh": "带一个走",
-          "effect": "如果你失败但至少击杀了1名敌人，获得4经验值。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.25,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        }
-      ],
-      "bestVsSecondMargin": 0.16666666666666663,
+      "bestVsSecondMargin": 0.10348837209302325,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3575,46 +3206,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.25,
+          "cost": 5,
+          "score": 0.15,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.17407407407407408,
-          "effectSimilarity": 0.07407407407407407,
-          "nameSimilarity": 0,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.08095238095238094,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0.09523809523809523,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.16896551724137931,
-          "effectSimilarity": 0.06896551724137931,
-          "nameSimilarity": 0,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.21052631578947367,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07592592592592592,
+      "bestVsSecondMargin": 0.06904761904761905,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3630,47 +3261,47 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.3644688644688645,
-          "effectSimilarity": 0.09523809523809523,
-          "nameSimilarity": 0.07692307692307693,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.2644688644688645,
-          "effectSimilarity": 0.09523809523809523,
-          "nameSimilarity": 0.07692307692307693,
-          "categoryMatch": true,
+          "score": 0.1,
+          "effectSimilarity": 0.1,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.26375661375661374,
-          "effectSimilarity": 0.09523809523809523,
-          "nameSimilarity": 0.07407407407407407,
-          "categoryMatch": true,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.045454545454545456,
+          "effectSimilarity": 0.045454545454545456,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.10000000000000003,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.05454545454545455,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3686,19 +3317,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.22142857142857142,
-          "effectSimilarity": 0.07142857142857142,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -3712,21 +3330,34 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.12121212121212122,
-          "effectSimilarity": 0.12121212121212122,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.021739130434782608,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07142857142857142,
-      "status": "ambiguous",
+      "bestVsSecondMargin": 0.12826086956521737,
+      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3742,46 +3373,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.34523809523809523,
-          "effectSimilarity": 0.09523809523809523,
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.3307692307692308,
-          "effectSimilarity": 0.23076923076923078,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.24,
-          "effectSimilarity": 0.24,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.014468864468864417,
+      "bestVsSecondMargin": 0.0875,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3798,19 +3429,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -3824,20 +3442,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.1,
-          "effectSimilarity": 0.1,
-          "nameSimilarity": 0,
+          "score": 0.08333333333333333,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0.08333333333333333,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.022727272727272728,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09090909090909091,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0,
+      "bestVsSecondMargin": 0.06666666666666667,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3853,103 +3484,47 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.23200992555831265,
-          "effectSimilarity": 0.1935483870967742,
-          "nameSimilarity": 0.15384615384615385,
-          "categoryMatch": false,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.19047619047619047,
-          "effectSimilarity": 0.19047619047619047,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.17692307692307693,
-          "effectSimilarity": 0.07692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": true
-        }
-      ],
-      "bestVsSecondMargin": 0.041533735082122186,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "EssenceTheft",
-        "name": "精华盗窃",
-        "category": "Risky",
-        "cost": 1,
-        "effect": "本场战斗获得50%额外魔女精华。",
-        "appearanceCondition": "已激活魔女羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.6346153846153846,
-          "effectSimilarity": 0.38461538461538464,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.31896551724137934,
-          "effectSimilarity": 0.06896551724137931,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_048_cbc77e083fc2",
-          "nameEn": "带一个走",
-          "nameZh": "带一个走",
-          "effect": "如果你失败但至少击杀了1名敌人，获得4经验值。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.3106060606060606,
+          "score": 0.06060606060606061,
           "effectSimilarity": 0.06060606060606061,
           "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.31564986737400524,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.08939393939393939,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3965,19 +3540,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.22407407407407406,
-          "effectSimilarity": 0.07407407407407407,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -3991,21 +3553,34 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.20810810810810812,
-          "effectSimilarity": 0.10810810810810811,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10526315789473684,
+          "effectSimilarity": 0.10526315789473684,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.00740740740740739,
-      "status": "ambiguous",
+      "bestVsSecondMargin": 0.11140350877192984,
+      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -4021,46 +3596,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.27083333333333337,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.08333333333333333,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.2125,
-          "effectSimilarity": 0.0625,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05128205128205128,
+          "effectSimilarity": 0.05128205128205128,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.17142857142857143,
-          "effectSimilarity": 0.07142857142857142,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.02631578947368421,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.058333333333333376,
+      "bestVsSecondMargin": 0.02496626180836707,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4077,19 +3652,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.25,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -4103,76 +3665,34 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.15000000000000002,
-          "effectSimilarity": 0.05,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08214285714285716,
+      "bestVsSecondMargin": 0.01785714285714285,
       "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "ComponentBounty",
-        "name": "组件赏金",
-        "category": "Risky",
-        "cost": 4,
-        "effect": "若赢得下一场玩家对战，获得1个基础装备锻造器。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.9748062015503876,
-          "effectSimilarity": 0.5581395348837209,
-          "nameSimilarity": 0.6666666666666666,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.7055555555555556,
-          "effectSimilarity": 0.5555555555555556,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.7055555555555556,
-          "effectSimilarity": 0.5555555555555556,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.26925064599483195,
-      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -4188,46 +3708,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.25,
+          "cost": 5,
+          "score": 0.15,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.17797619047619048,
-          "effectSimilarity": 0.05714285714285714,
-          "nameSimilarity": 0.08333333333333333,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10405405405405406,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.2,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.16896551724137931,
-          "effectSimilarity": 0.06896551724137931,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07202380952380952,
+      "bestVsSecondMargin": 0.045945945945945935,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4243,101 +3763,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.6071428571428571,
-          "effectSimilarity": 0.45714285714285713,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.55,
-          "effectSimilarity": 0.4,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_147_2dc94df4e3a5",
-          "nameEn": "输得漂亮",
-          "nameZh": "输得漂亮",
-          "effect": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "category": "risky",
-          "cost": 5,
-          "score": 0.46111111111111114,
-          "effectSimilarity": 0.3111111111111111,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.05714285714285705,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "BloodRitual",
-        "name": "血仪式",
-        "category": "Misc",
-        "cost": 5,
-        "effect": "失去9玩家生命值。获得1个弈子复制器。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.8166666666666667,
-          "effectSimilarity": 0.6666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.7970588235294118,
-          "effectSimilarity": 0.6470588235294118,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.65,
-          "effectSimilarity": 0.5,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.029411764705882353,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.11764705882352941,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.019607843137254832,
+      "bestVsSecondMargin": 0.01709986320109439,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4367,33 +3832,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.04878048780487805,
+          "effectSimilarity": 0.04878048780487805,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.058823529411764705,
-          "effectSimilarity": 0.058823529411764705,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.10810810810810814,
+      "bestVsSecondMargin": 0.2093276203032301,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4410,32 +3875,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.49242424242424243,
-          "effectSimilarity": 0.24242424242424243,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.2965116279069767,
-          "effectSimilarity": 0.046511627906976744,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -4447,10 +3886,36 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.18888888888888888,
+          "effectSimilarity": 0.08888888888888889,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.19591261451726572,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.05745257452574526,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -4492,76 +3957,21 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.24814814814814815,
-          "effectSimilarity": 0.14814814814814814,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
       "bestVsSecondMargin": 0.0783577533577533,
       "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "SinisterDeal",
-        "name": "险恶交易",
-        "category": "Misc",
-        "cost": 0,
-        "effect": "失去3玩家生命值。获得2金币。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 1.1666666666666667,
-          "effectSimilarity": 0.8333333333333334,
-          "nameSimilarity": 0.3333333333333333,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.75,
-          "effectSimilarity": 0.6,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.6327586206896552,
-          "effectSimilarity": 0.4827586206896552,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.41666666666666674,
-      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -4577,19 +3987,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.34512195121951217,
-          "effectSimilarity": 0.1951219512195122,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -4603,20 +4000,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.13333333333333333,
-          "effectSimilarity": 0.13333333333333333,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.14966740576496673,
+      "bestVsSecondMargin": 0.19545454545454544,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4633,46 +4043,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.25,
+          "cost": 5,
+          "score": 0.15,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.17142857142857143,
-          "effectSimilarity": 0.07142857142857142,
-          "nameSimilarity": 0,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10555555555555556,
+          "effectSimilarity": 0.05555555555555555,
+          "nameSimilarity": 0.2,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.16666666666666669,
-          "effectSimilarity": 0.06666666666666667,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07857142857142857,
+      "bestVsSecondMargin": 0.04444444444444444,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4715,17 +4125,17 @@
           "costMatch": true
         },
         {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.18695652173913044,
-          "effectSimilarity": 0.08695652173913043,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.05,
+          "effectSimilarity": 0.05,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
       "bestVsSecondMargin": 0.140530303030303,
@@ -4744,19 +4154,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.4,
-          "effectSimilarity": 0.25,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -4770,20 +4167,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.12903225806451613,
-          "effectSimilarity": 0.12903225806451613,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.13571428571428573,
+      "bestVsSecondMargin": 0.2642857142857143,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     }
@@ -4791,274 +4201,13 @@
   "opggOnlyConfirmed": [],
   "dataTftUnmatched": [
     {
-      "id": "da_beggarswisp18",
-      "nameEn": "Beggar's Wisp",
-      "nameZh": "仙灵的怜悯",
-      "riotId": "DA_BeggarsWisp18"
-    },
-    {
-      "id": "da_curiocart18",
-      "nameEn": "Curio Cart",
-      "nameZh": "珍品摆摊车",
-      "riotId": "DA_CurioCart18"
-    },
-    {
-      "id": "da_thingamajigbag18",
-      "nameEn": "Thingamajig Bag",
-      "nameZh": "小装置包",
-      "riotId": "DA_ThingamajigBag18"
-    },
-    {
-      "id": "da_thingamajigjar18",
-      "nameEn": "Thingamajig Jar",
-      "nameZh": "小装置罐",
-      "riotId": "DA_ThingamajigJar18"
-    },
-    {
-      "id": "da_thingamajigsack18",
-      "nameEn": "Thingamajig Sack",
-      "nameZh": "小装置袋",
-      "riotId": "DA_ThingamajigSack18"
-    },
-    {
-      "id": "snapshot_022_fc7538964718",
-      "nameEn": "不祥交易",
-      "nameZh": "不祥交易",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_036_f484358ea1e5",
-      "nameEn": "摄魂夺魄",
-      "nameZh": "摄魂夺魄",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_048_cbc77e083fc2",
-      "nameEn": "带一个走",
-      "nameZh": "带一个走",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_049_d60aa5ac9feb",
-      "nameEn": "低阶胜负手",
-      "nameZh": "低阶胜负手",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_051_e06d127b43f9",
-      "nameEn": "洪涝",
-      "nameZh": "洪涝",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_090_cf945e21ddef",
-      "nameEn": "回复",
-      "nameZh": "回复",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_120_cf0b477ffe00",
-      "nameEn": "小型血祭",
-      "nameZh": "小型血祭",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_121_1899d3fe4c61",
-      "nameEn": "高阶胜负手",
-      "nameZh": "高阶胜负手",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_136_c467ccd546d7",
-      "nameEn": "散件赏金",
-      "nameZh": "散件赏金",
-      "riotId": null
-    },
-    {
       "id": "snapshot_139_6fda4e76a4da",
       "nameEn": "克隆弈子",
       "nameZh": "克隆弈子",
       "riotId": null
-    },
-    {
-      "id": "snapshot_147_2dc94df4e3a5",
-      "nameEn": "输得漂亮",
-      "nameZh": "输得漂亮",
-      "riotId": null
-    },
-    {
-      "id": "snapshot_157_3ed870773960",
-      "nameEn": "血祭",
-      "nameZh": "血祭",
-      "riotId": null
     }
   ],
   "ambiguous": [
-    {
-      "opggRecord": {
-        "sourceKey": "ThingamjigBag",
-        "name": "Thingamjig 包",
-        "category": "Misc",
-        "cost": 3,
-        "effect": "获得 3 种随机消耗品，可提供法术强度或法力再生。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.7847985347985348,
-          "effectSimilarity": 0.38095238095238093,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.7033333333333334,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.88,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.6433333333333333,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.64,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.08146520146520142,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "ThingamjigSack",
-        "name": "Thingamjig 麻袋",
-        "category": "Misc",
-        "cost": 5,
-        "effect": "获得 5 种随机消耗品，可提供法术强度或法力再生。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.7055555555555556,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.8888888888888888,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.6371794871794871,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.6371794871794871,
-          "effectSimilarity": 0.3333333333333333,
-          "nameSimilarity": 0.6153846153846154,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.06837606837606847,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MajorGambit",
-        "name": "主要策略",
-        "category": "Risky",
-        "cost": 2,
-        "effect": "如果你赢得下一场玩家战斗，获得 10 金币。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.8166666666666667,
-          "effectSimilarity": 0.6666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.8166666666666667,
-          "effectSimilarity": 0.6666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.6,
-          "effectSimilarity": 0.45,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
     {
       "opggRecord": {
         "sourceKey": "RitualComplete",
@@ -5072,46 +4221,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.49242424242424243,
-          "effectSimilarity": 0.24242424242424243,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.39242424242424245,
-          "effectSimilarity": 0.24242424242424243,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.023809523809523808,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.35,
-          "effectSimilarity": 0.2,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.09999999999999998,
+      "bestVsSecondMargin": 0.023809523809523808,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5128,46 +4277,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.25,
-          "effectSimilarity": 0,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.06666666666666667,
+          "effectSimilarity": 0.06666666666666667,
           "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.22692307692307692,
-          "effectSimilarity": 0.07692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.21451612903225806,
-          "effectSimilarity": 0.06451612903225806,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.021739130434782608,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.023076923076923078,
+      "bestVsSecondMargin": 0.04492753623188406,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5184,46 +4333,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.23333333333333334,
-          "effectSimilarity": 0.08333333333333333,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.15,
+          "score": 0.07407407407407407,
+          "effectSimilarity": 0.07407407407407407,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08333333333333334,
+      "bestVsSecondMargin": 0.07407407407407407,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5239,72 +4388,30 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigjar18",
-          "nameEn": "Thingamajig Jar",
-          "nameZh": "小装置罐",
-          "effect": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.15,
-          "effectSimilarity": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0.05263157894736842,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.15,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "Escalation",
-        "name": "升级",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.31666666666666665,
-          "effectSimilarity": 0.06666666666666667,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
         },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
@@ -5313,27 +4420,14 @@
           "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
           "cost": 5,
-          "score": 0.27121212121212124,
-          "effectSimilarity": 0.12121212121212122,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.20256410256410257,
-          "effectSimilarity": 0.10256410256410256,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.045454545454545414,
+      "bestVsSecondMargin": 0.05263157894736842,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5350,32 +4444,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.20689655172413793,
-          "effectSimilarity": 0.20689655172413793,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -5387,36 +4455,49 @@
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05,
+          "effectSimilarity": 0.05,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.056896551724137934,
+      "bestVsSecondMargin": 0.09999999999999999,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
       "opggRecord": {
-        "sourceKey": "MinionHorde",
-        "name": "小黄人部落",
+        "sourceKey": "Breeze",
+        "name": "微风",
         "category": "Combat",
-        "cost": 4,
-        "effect": "生成 4 个小兵。",
+        "cost": 1,
+        "effect": "你的队伍获得12%攻击速度。",
         "blossom": null,
         "prismatic": null
       },
       "topCandidates": [
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -5431,20 +4512,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.1,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05714285714285714,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0,
+      "bestVsSecondMargin": 0.09285714285714286,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5487,14 +4581,14 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_048_cbc77e083fc2",
-          "nameEn": "带一个走",
-          "nameZh": "带一个走",
-          "effect": "如果你失败但至少击杀了1名敌人，获得4经验值。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.11764705882352941,
-          "effectSimilarity": 0.11764705882352941,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
@@ -5516,46 +4610,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.3269230769230769,
-          "effectSimilarity": 0.07692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.31666666666666665,
-          "effectSimilarity": 0.06666666666666667,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.25,
-          "effectSimilarity": 0.1,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.010256410256410275,
+      "bestVsSecondMargin": 0.0625,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5572,101 +4666,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.26111111111111107,
-          "effectSimilarity": 0.1111111111111111,
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.2111111111111111,
-          "effectSimilarity": 0.1111111111111111,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.2,
-          "effectSimilarity": 0.2,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.04999999999999996,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "BrutalBargain",
-        "name": "残酷的讨价还价",
-        "category": "Item",
-        "cost": 0,
-        "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.48709677419354835,
-          "effectSimilarity": 0.3870967741935484,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.4444444444444444,
-          "effectSimilarity": 0.4444444444444444,
-          "nameSimilarity": 0,
+          "score": 0.0675531914893617,
+          "effectSimilarity": 0.0425531914893617,
+          "nameSimilarity": 0.1,
           "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.43243243243243246,
-          "effectSimilarity": 0.43243243243243246,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.042652329749103934,
+      "bestVsSecondMargin": 0.08244680851063829,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5683,75 +4722,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.25,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.17407407407407408,
-          "effectSimilarity": 0.07407407407407407,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.16896551724137931,
-          "effectSimilarity": 0.06896551724137931,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": true
-        }
-      ],
-      "bestVsSecondMargin": 0.07592592592592592,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MeltingResists",
-        "name": "熔化抗蚀剂",
-        "category": "Combat",
-        "cost": 4,
-        "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
-        "appearanceCondition": "地狱特质活跃",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.22142857142857142,
-          "effectSimilarity": 0.07142857142857142,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -5765,20 +4735,88 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.12121212121212122,
-          "effectSimilarity": 0.12121212121212122,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.08095238095238094,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.21052631578947367,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.06904761904761905,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ConsumableShop",
+        "name": "消耗品",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.1,
+          "effectSimilarity": 0.1,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.045454545454545456,
+          "effectSimilarity": 0.045454545454545456,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07142857142857142,
+      "bestVsSecondMargin": 0.05454545454545455,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5795,46 +4833,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.34523809523809523,
-          "effectSimilarity": 0.09523809523809523,
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.3307692307692308,
-          "effectSimilarity": 0.23076923076923078,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.24,
-          "effectSimilarity": 0.24,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.014468864468864417,
+      "bestVsSecondMargin": 0.0875,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5851,19 +4889,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
@@ -5877,20 +4902,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
-          "score": 0.1,
-          "effectSimilarity": 0.1,
-          "nameSimilarity": 0,
+          "score": 0.08333333333333333,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0.08333333333333333,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.022727272727272728,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09090909090909091,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0,
+      "bestVsSecondMargin": 0.06666666666666667,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5906,102 +4944,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.23200992555831265,
-          "effectSimilarity": 0.1935483870967742,
-          "nameSimilarity": 0.15384615384615385,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.19047619047619047,
-          "effectSimilarity": 0.19047619047619047,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.17692307692307693,
-          "effectSimilarity": 0.07692307692307693,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": true
-        }
-      ],
-      "bestVsSecondMargin": 0.041533735082122186,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "FaeFederation",
-        "name": "精灵联邦",
-        "category": "Combat",
-        "cost": 4,
-        "effect": "本回合你的所有弈子获得2个仙灵。",
-        "appearanceCondition": "已激活仙灵羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.22407407407407406,
-          "effectSimilarity": 0.07407407407407407,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
           "nameZh": "克隆弈子",
           "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
           "cost": 5,
-          "score": 0.21666666666666667,
-          "effectSimilarity": 0.06666666666666667,
+          "score": 0.15,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_136_c467ccd546d7",
-          "nameEn": "散件赏金",
-          "nameZh": "散件赏金",
-          "effect": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "category": "risky",
-          "cost": 4,
-          "score": 0.20810810810810812,
-          "effectSimilarity": 0.10810810810810811,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.06060606060606061,
+          "effectSimilarity": 0.06060606060606061,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.00740740740740739,
+      "bestVsSecondMargin": 0.08939393939393939,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -6018,46 +5000,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "da_thingamajigbag18",
-          "nameEn": "Thingamajig Bag",
-          "nameZh": "小装置包",
-          "effect": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 1,
-          "score": 0.27083333333333337,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.08333333333333333,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.2125,
-          "effectSimilarity": 0.0625,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05128205128205128,
+          "effectSimilarity": 0.05128205128205128,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_036_f484358ea1e5",
-          "nameEn": "摄魂夺魄",
-          "nameZh": "摄魂夺魄",
-          "effect": "本场对战额外获得50%【女巫精粹】。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.17142857142857143,
-          "effectSimilarity": 0.07142857142857142,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.02631578947368421,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.058333333333333376,
+      "bestVsSecondMargin": 0.02496626180836707,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -6074,19 +5056,6 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
-          "category": "combat",
-          "cost": 3,
-          "score": 0.25,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": true
-        },
-        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -6100,20 +5069,33 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.15000000000000002,
-          "effectSimilarity": 0.05,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08214285714285716,
+      "bestVsSecondMargin": 0.01785714285714285,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -6130,46 +5112,46 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.25,
+          "cost": 5,
+          "score": 0.15,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "da_thingamajigsack18",
-          "nameEn": "Thingamajig Sack",
-          "nameZh": "小装置袋",
-          "effect": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.17797619047619048,
-          "effectSimilarity": 0.05714285714285714,
-          "nameSimilarity": 0.08333333333333333,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10405405405405406,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.2,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.16896551724137931,
-          "effectSimilarity": 0.06896551724137931,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07202380952380952,
+      "bestVsSecondMargin": 0.045945945945945935,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -6185,101 +5167,102 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_049_d60aa5ac9feb",
-          "nameEn": "低阶胜负手",
-          "nameZh": "低阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得2金币。",
-          "category": "risky",
-          "cost": 1,
-          "score": 0.6071428571428571,
-          "effectSimilarity": 0.45714285714285713,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.55,
-          "effectSimilarity": 0.4,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.029411764705882353,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.11764705882352941,
+          "categoryMatch": false,
           "costMatch": false
         },
         {
-          "productionId": "snapshot_147_2dc94df4e3a5",
-          "nameEn": "输得漂亮",
-          "nameZh": "输得漂亮",
-          "effect": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "category": "risky",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
           "cost": 5,
-          "score": 0.46111111111111114,
-          "effectSimilarity": 0.3111111111111111,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.05714285714285705,
+      "bestVsSecondMargin": 0.01709986320109439,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
       "opggRecord": {
-        "sourceKey": "BloodRitual",
-        "name": "血仪式",
+        "sourceKey": "TouchGrass",
+        "name": "触摸草",
         "category": "Misc",
-        "cost": 5,
-        "effect": "失去9玩家生命值。获得1个弈子复制器。",
+        "cost": 0,
+        "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+        "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
         "blossom": null,
         "prismatic": null
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_157_3ed870773960",
-          "nameEn": "血祭",
-          "nameZh": "血祭",
-          "effect": "失去10玩家生命值。获得1个【英雄复制器】。",
-          "category": "misc",
-          "cost": 6,
-          "score": 0.8166666666666667,
-          "effectSimilarity": 0.6666666666666666,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.7970588235294118,
-          "effectSimilarity": 0.6470588235294118,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
           "cost": 0,
-          "score": 0.65,
-          "effectSimilarity": 0.5,
+          "score": 0.24634146341463414,
+          "effectSimilarity": 0.14634146341463414,
           "nameSimilarity": 0,
-          "categoryMatch": true,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.18888888888888888,
+          "effectSimilarity": 0.08888888888888889,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.019607843137254832,
+      "bestVsSecondMargin": 0.05745257452574526,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -6322,17 +5305,17 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_022_fc7538964718",
-          "nameEn": "不祥交易",
-          "nameZh": "不祥交易",
-          "effect": "失去4玩家生命值。获得2金币。",
-          "category": "misc",
-          "cost": 0,
-          "score": 0.24814814814814815,
-          "effectSimilarity": 0.14814814814814814,
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
       "bestVsSecondMargin": 0.0783577533577533,
@@ -6352,108 +5335,52 @@
       },
       "topCandidates": [
         {
-          "productionId": "snapshot_090_cf945e21ddef",
-          "nameEn": "回复",
-          "nameZh": "回复",
-          "effect": "你的队伍每秒治疗1%最大生命值。",
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
-          "cost": 3,
-          "score": 0.25,
+          "cost": 5,
+          "score": 0.15,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": true,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_121_1899d3fe4c61",
-          "nameEn": "高阶胜负手",
-          "nameZh": "高阶胜负手",
-          "effect": "如果你赢得下一场玩家对战，获得8金币。",
-          "category": "risky",
-          "cost": 3,
-          "score": 0.17142857142857143,
-          "effectSimilarity": 0.07142857142857142,
-          "nameSimilarity": 0,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10555555555555556,
+          "effectSimilarity": 0.05555555555555555,
+          "nameSimilarity": 0.2,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         },
         {
-          "productionId": "snapshot_120_cf0b477ffe00",
-          "nameEn": "小型血祭",
-          "nameZh": "小型血祭",
-          "effect": "失去3玩家生命值。获得1个【次级英雄复制器】。",
-          "category": "misc",
-          "cost": 3,
-          "score": 0.16666666666666669,
-          "effectSimilarity": 0.06666666666666667,
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
           "nameSimilarity": 0,
           "categoryMatch": false,
-          "costMatch": true
+          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.07857142857142857,
+      "bestVsSecondMargin": 0.04444444444444444,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     }
   ],
   "unresolved": {
     "opgg": [
-      {
-        "record": {
-          "sourceKey": "ThingamjigBag",
-          "name": "Thingamjig 包",
-          "category": "Misc",
-          "cost": 3,
-          "effect": "获得 3 种随机消耗品，可提供法术强度或法力再生。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "ThingamjigJar",
-          "name": "Thingamjig 罐子",
-          "category": "Misc",
-          "cost": 0,
-          "effect": "获得 1 个随机消耗品，可提供法术强度或法力再生。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "ThingamjigSack",
-          "name": "Thingamjig 麻袋",
-          "category": "Misc",
-          "cost": 5,
-          "effect": "获得 5 种随机消耗品，可提供法术强度或法力再生。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "MajorGambit",
-          "name": "主要策略",
-          "category": "Risky",
-          "cost": 2,
-          "effect": "如果你赢得下一场玩家战斗，获得 10 金币。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
       {
         "record": {
           "sourceKey": "RitualComplete",
@@ -6529,20 +5456,6 @@
       },
       {
         "record": {
-          "sourceKey": "Regeneration",
-          "name": "再生",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "你的团队每秒治疗 1% 最大生命值。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
-      },
-      {
-        "record": {
           "sourceKey": "DoubleUp",
           "name": "加倍",
           "category": "Misc",
@@ -6586,48 +5499,6 @@
       },
       {
         "record": {
-          "sourceKey": "TakeOneWithYa",
-          "name": "和你一起拍一张",
-          "category": "Risky",
-          "cost": 1,
-          "effect": "若战败且击杀了至少1名弈子，获得4经验值。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "MinorBloodRitual",
-          "name": "小型血仪式",
-          "category": "Misc",
-          "cost": 4,
-          "effect": "失去3玩家生命值。获得1个次级弈子复制器。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "MinorGambit",
-          "name": "小策略",
-          "category": "Risky",
-          "cost": 1,
-          "effect": "如果你赢得下一场玩家战斗，获得 2 金币。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
           "sourceKey": "MinionHorde",
           "name": "小黄人部落",
           "category": "Combat",
@@ -6662,20 +5533,6 @@
           "cost": 10,
           "effect": "商店刷新和购买经验值的费用减半。",
           "appearanceCondition": "拥有至少30金币",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "GoodLoss",
-          "name": "损失惨重",
-          "category": "Risky",
-          "cost": 5,
-          "effect": "接下来的3场玩家对战中，战败时获得6经验值。",
           "blossom": null,
           "prismatic": null
         },
@@ -6749,21 +5606,6 @@
           "cost": 1,
           "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
           "appearanceCondition": "剩余至少4名玩家",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "Flood",
-          "name": "洪水",
-          "category": "Risky",
-          "cost": 1,
-          "effect": "连胜次数增加2。",
-          "appearanceCondition": "当前没有连胜或连败，或正处于连胜",
           "blossom": null,
           "prismatic": null
         },
@@ -6861,21 +5703,6 @@
       },
       {
         "record": {
-          "sourceKey": "EssenceTheft",
-          "name": "精华盗窃",
-          "category": "Risky",
-          "cost": 1,
-          "effect": "本场战斗获得50%额外魔女精华。",
-          "appearanceCondition": "已激活魔女羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
-      },
-      {
-        "record": {
           "sourceKey": "FaeFederation",
           "name": "精灵联邦",
           "category": "Combat",
@@ -6921,20 +5748,6 @@
       },
       {
         "record": {
-          "sourceKey": "ComponentBounty",
-          "name": "组件赏金",
-          "category": "Risky",
-          "cost": 4,
-          "effect": "若赢得下一场玩家对战，获得1个基础装备锻造器。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
           "sourceKey": "TigersVisit",
           "name": "老虎来访",
           "category": "Combat",
@@ -6955,20 +5768,6 @@
           "category": "Risky",
           "cost": 2,
           "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "BloodRitual",
-          "name": "血仪式",
-          "category": "Misc",
-          "cost": 5,
-          "effect": "失去9玩家生命值。获得1个弈子复制器。",
           "blossom": null,
           "prismatic": null
         },
@@ -7014,20 +5813,6 @@
           "cost": 0,
           "effect": "根据怪诞祭品的费用和星级获得金币。",
           "appearanceCondition": "已激活怪诞羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "SinisterDeal",
-          "name": "险恶交易",
-          "category": "Misc",
-          "cost": 0,
-          "effect": "失去3玩家生命值。获得2金币。",
           "blossom": null,
           "prismatic": null
         },
@@ -7097,105 +5882,9 @@
     ],
     "dataTft": [
       {
-        "id": "da_beggarswisp18",
-        "nameEn": "Beggar's Wisp",
-        "nameZh": "仙灵的怜悯",
-        "riotId": "DA_BeggarsWisp18"
-      },
-      {
-        "id": "da_curiocart18",
-        "nameEn": "Curio Cart",
-        "nameZh": "珍品摆摊车",
-        "riotId": "DA_CurioCart18"
-      },
-      {
-        "id": "da_thingamajigbag18",
-        "nameEn": "Thingamajig Bag",
-        "nameZh": "小装置包",
-        "riotId": "DA_ThingamajigBag18"
-      },
-      {
-        "id": "da_thingamajigjar18",
-        "nameEn": "Thingamajig Jar",
-        "nameZh": "小装置罐",
-        "riotId": "DA_ThingamajigJar18"
-      },
-      {
-        "id": "da_thingamajigsack18",
-        "nameEn": "Thingamajig Sack",
-        "nameZh": "小装置袋",
-        "riotId": "DA_ThingamajigSack18"
-      },
-      {
-        "id": "snapshot_022_fc7538964718",
-        "nameEn": "不祥交易",
-        "nameZh": "不祥交易",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_036_f484358ea1e5",
-        "nameEn": "摄魂夺魄",
-        "nameZh": "摄魂夺魄",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_048_cbc77e083fc2",
-        "nameEn": "带一个走",
-        "nameZh": "带一个走",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_049_d60aa5ac9feb",
-        "nameEn": "低阶胜负手",
-        "nameZh": "低阶胜负手",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_051_e06d127b43f9",
-        "nameEn": "洪涝",
-        "nameZh": "洪涝",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_090_cf945e21ddef",
-        "nameEn": "回复",
-        "nameZh": "回复",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_120_cf0b477ffe00",
-        "nameEn": "小型血祭",
-        "nameZh": "小型血祭",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_121_1899d3fe4c61",
-        "nameEn": "高阶胜负手",
-        "nameZh": "高阶胜负手",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_136_c467ccd546d7",
-        "nameEn": "散件赏金",
-        "nameZh": "散件赏金",
-        "riotId": null
-      },
-      {
         "id": "snapshot_139_6fda4e76a4da",
         "nameEn": "克隆弈子",
         "nameZh": "克隆弈子",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_147_2dc94df4e3a5",
-        "nameEn": "输得漂亮",
-        "nameZh": "输得漂亮",
-        "riotId": null
-      },
-      {
-        "id": "snapshot_157_3ed870773960",
-        "nameEn": "血祭",
-        "nameZh": "血祭",
         "riotId": null
       }
     ]
@@ -7206,7 +5895,7 @@
   },
   "normalizedProductionCompleteness": {
     "normalizedCount": 169,
-    "criticalMissingIdentityCount": 17,
+    "criticalMissingIdentityCount": 1,
     "complete": false
   },
   "confirmedCorpusButIncomplete": [
@@ -7226,26 +5915,6 @@
         "opggCurrentCatalog": true,
         "canonicalClientKey": "clonecompanion",
         "communityDragonApiName": "DA_CloneCompanion18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "Regeneration",
-        "name": "再生",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "你的团队每秒治疗 1% 最大生命值。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "regeneration",
-        "communityDragonApiName": "DA_Regeneration18",
         "communityDragonVariantKind": "base"
       },
       "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
@@ -7309,27 +5978,6 @@
         "opggCurrentCatalog": true,
         "canonicalClientKey": "pottedstonebark",
         "communityDragonApiName": "DA_PottedStonebark18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "EssenceTheft",
-        "name": "精华盗窃",
-        "category": "Risky",
-        "cost": 1,
-        "effect": "本场战斗获得50%额外魔女精华。",
-        "appearanceCondition": "已激活魔女羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "essencetheft",
-        "communityDragonApiName": "DA_EssenceTheft18",
         "communityDragonVariantKind": "base"
       },
       "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
@@ -7400,9 +6048,9 @@
   },
   "matchMethodCounts": {
     "exact_client_key": 144,
-    "exact_english_name": 3,
-    "exact_chinese_name": 5,
-    "reviewed_alias": 0
+    "exact_english_name": 15,
+    "exact_chinese_name": 4,
+    "reviewed_cross_source_identity": 3
   },
   "classificationCounts": {
     "A": 0,
@@ -7410,11 +6058,11 @@
     "C": 0,
     "D": 0,
     "E": 0,
-    "F": 48
+    "F": 34
   },
   "corpusEstimate": {
     "confirmedMinimum": 169,
-    "unresolvedOpgg": 48,
+    "unresolvedOpgg": 34,
     "normalizedProductionCount": 169
   },
   "reason": "Only client identity, unique exact names, or reviewed aliases enter the confirmed intersection. A client-supported unlinked identity is not counted as OP.GG-only because it may alias an unmatched DataTFT row."

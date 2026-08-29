@@ -1,21 +1,27 @@
 [
   {
-    "conflictType": "source_access",
-    "severity": "critical",
-    "blocksProductionReady": true,
+    "conflictType": "acquisition_warning",
+    "severity": "low",
+    "blocksProductionReady": false,
     "wispIdentity": "corpus",
-    "field": "LoLCHESS structured skeleton",
-    "sourceA": "datatft_18_1_20260828",
-    "sourceB": "lolchess_wisps_18_1",
-    "valueA": 169,
-    "valueB": "cloud_fetch_blocked",
+    "field": "LoLCHESS cloud acquisition",
+    "sourceA": "lolchess_wisps_18_1_20260828_attempt",
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "status": "blocked_by_source_protection",
+      "httpStatus": 202
+    },
+    "valueB": {
+      "status": "browser_snapshot_imported",
+      "recordCount": 174
+    },
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
       "sourceB": null
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "The public source exists, but this execution path received an AWS WAF challenge."
+    "note": "The cloud attempt was blocked, but the verified browser snapshot supplies record-level evidence."
   },
   {
     "conflictType": "corpus_count",
@@ -74,18 +80,23 @@
     "severity": "high",
     "blocksProductionReady": true,
     "wispIdentity": "corpus",
-    "field": "Blossom coverage",
+    "field": "Blossom presence",
     "sourceA": "datatft_18_1_20260828",
-    "sourceB": "communitydragon_live_18_1_20260827",
-    "valueA": 169,
-    "valueB": 130,
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "normalizedProduction": 130,
+      "communityDragonDistinctUpgrade": 130
+    },
+    "valueB": {
+      "lolchess": 145
+    },
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
       "sourceB": null
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "DataTFT renders an upgrade block for every row; production now requires a distinct client Upgrade variant."
+    "note": "Presence is audited per confirmed canonical identity; cross-language free text remains semantic review."
   },
   {
     "conflictType": "prismatic_coverage",
@@ -94,16 +105,21 @@
     "wispIdentity": "corpus",
     "field": "Prismatic coverage",
     "sourceA": "datatft_18_1_20260828",
-    "sourceB": "lolchess_human_observation",
-    "valueA": 20,
-    "valueB": 11,
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "dataTft": 20,
+      "communityDragon": 19
+    },
+    "valueB": {
+      "lolchess": 19
+    },
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
       "sourceB": null
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "The LoLCHESS public page observation says 11 Prismatic Blossoms Only; record-level comparison remains required."
+    "note": "Current record-level snapshots are compared by canonical identity; historical aggregate observation 11 is superseded."
   },
   {
     "conflictType": "knowledge_state",
@@ -111,34 +127,38 @@
     "blocksProductionReady": false,
     "wispIdentity": "corpus",
     "field": "oncePerGame/reofferCooldownShops",
-    "sourceA": "seed_regression",
-    "sourceB": "production_snapshots",
-    "valueA": "some confirmed examples",
-    "valueB": "unknown in current production sources",
+    "sourceA": "normalized_production",
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "default": "unknown"
+    },
+    "valueB": {
+      "oncePerGameConfirmedTrue": 2
+    },
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
       "sourceB": null
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "Unknown is now represented explicitly instead of false/null."
+    "note": "Only explicitly evidenced knowledge is confirmed; absence remains unknown."
   },
   {
     "conflictType": "source_membership",
     "severity": "high",
     "blocksProductionReady": true,
     "wispIdentity": "corpus",
-    "field": "DataTFT-only / CommunityDragon-only",
+    "field": "unresolved cross-source identities",
     "sourceA": "datatft_18_1_20260828",
-    "sourceB": "communitydragon_live_18_1_20260827",
-    "valueA": 17,
-    "valueB": 12,
+    "sourceB": "opgg_set18_wisps_20260829",
+    "valueA": 1,
+    "valueB": 34,
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
       "sourceB": null
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "Exact-name association remains incomplete; fuzzy matches are not silently accepted."
+    "note": "Counts are unresolved identity review queues, not confirmed source-only corpus membership."
   }
 ]

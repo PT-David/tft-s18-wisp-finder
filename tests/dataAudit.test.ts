@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, test } from 'vitest';
+import { validateProvenanceSources } from '../scripts/validate-data';
 
 const load = <T>(path: string) => JSON.parse(readFileSync(path, 'utf8')) as T;
 
@@ -9,7 +10,7 @@ describe('Stage C1 production audit regressions', () => {
   test('corpus discrepancy is reported from source observations', () => {
     const report = load<any>('reports/data-corpus-diff-18.1.json');
     expect(report.categoryCountBySource.datatft).not.toEqual(report.categoryCountBySource.opgg);
-    expect(report.confirmedMatches.every((match: any) => ['exact_client_key','exact_english_name','exact_chinese_name','reviewed_alias'].includes(match.matchMethod))).toBe(true);
+    expect(report.confirmedMatches.every((match: any) => ['exact_client_key','exact_english_name','exact_chinese_name','reviewed_cross_source_identity'].includes(match.matchMethod))).toBe(true);
     expect(report.confirmedMatches.every((match: any) => match.confidence === 'confirmed' && match.evidence)).toBe(true);
     expect(report.candidateMatches.every((match: any) => match.reasonNotConfirmed && !match.productionId)).toBe(true);
     expect(report.confirmedIntersection).toBe(report.confirmedMatches.length);
@@ -37,9 +38,11 @@ describe('Stage C1 production audit regressions', () => {
 
   test('Prismatic sources are compared record by record instead of forcing a count', () => {
     const audit = load<any>('reports/data-prismatic-audit-18.1.json');
-    expect(audit.lolchess).toHaveLength(19);
-    expect(audit.communityDragonCount).toBe(19);
-    expect(audit.chosenStatus).toBe('needs_review');
+    expect(audit.counts).toEqual({ dataTft: 20, communityDragon: 19, lolchess: 19 });
+    expect(audit.status).toBe('needs_review');
+    expect(audit.historicalObservation.status).toContain('superseded');
+    expect(audit.fieldConflict.some((row: any) => row.nameZh === '休战' && row.nameEn === 'Truce')).toBe(true);
+    expect(audit.sourceOnly.some((row: any) => row.nameZh === '休战')).toBe(false);
   });
 
   test('audits LoLCHESS field coverage and applies explicit knowledge evidence', () => {
@@ -47,11 +50,39 @@ describe('Stage C1 production audit regressions', () => {
     expect(audit.sourceCount).toBe(174);
     expect(audit.blossom.lolchessCount).toBe(145);
     expect(audit.requirements.lolchessCount).toBe(60);
+    expect(audit.requirements.presenceAgreement.length).toBeGreaterThan(0);
+    expect(audit.requirements.presenceConflict.length).toBeGreaterThan(0);
+    expect(audit.requirements.structuredComparison.length).toBeGreaterThan(0);
+    expect(audit.blossom.presenceConflict.map((row: any) => row.nameEn)).toEqual(expect.arrayContaining(['Bronze Spoon', 'Experienced']));
     expect(audit.stageRanges.compared).toBe(audit.exactEnglishIdentityMatches);
     expect(audit.oncePerGame.lolchessConfirmed).toEqual(['Blood Ritual', 'Hero Of Prophecy']);
     const hero = dataset.records.find((record) => record.nameEn === 'Hero Of Prophecy')!;
     expect(hero.oncePerGame).toEqual({ status: 'confirmed', value: true });
     expect(hero.sources.oncePerGame.sourceId).toContain('lolchess');
+    const bloodRitual = dataset.records.find((record) => record.nameEn === 'Blood Ritual')!;
+    expect(bloodRitual.oncePerGame).toEqual({ status: 'confirmed', value: true });
+  });
+
+  test('registers browser acquisition, rejects dangling provenance, and does not let WAF block availability', () => {
+    const manifest = load<any>('data/source_manifest_18.1.json');
+    const browser = manifest.sources.find((source: any) => source.sourceId === 'lolchess_set18_wisps_browser_import');
+    expect(browser).toMatchObject({ recordCount: 174, pageUpdatedAt: 'August 28, 2026', fetchStatus: 'browser_snapshot_imported', confidence: 'verified_third_party' });
+    expect(validateProvenanceSources(dataset as any, manifest)).toEqual([]);
+    expect(validateProvenanceSources({ records: [{ sources: { effects: { sourceId: 'missing' } } }] }, manifest)).toContain('records[0].sources.effects.sourceId: manifest 中不存在 "missing"');
+    const conflicts = load<any[]>('reports/data-conflicts-18.1.json');
+    const warning = conflicts.find((item) => item.conflictType === 'acquisition_warning');
+    expect(warning).toMatchObject({ blocksProductionReady: false, valueB: { status: 'browser_snapshot_imported', recordCount: 174 } });
+    expect(conflicts.some((item) => item.note.includes('records unavailable'))).toBe(false);
+  });
+
+  test('uses explicit reviewed mappings while retaining unresolved review work', () => {
+    const mappings = load<any>('data/overrides/18.1/reviewed-identity-mappings.json');
+    expect(mappings.records).toHaveLength(17);
+    expect(mappings.records.every((row: any) => row.evidence.identityChainUnique && row.reason)).toBe(true);
+    const reconciliation = load<any>('reports/data-corpus-reconciliation-18.1.json');
+    expect(reconciliation.matching.reviewedCrossSourceIdentityCount).toBe(17);
+    expect(reconciliation.matching.dataTftUnmatchedCount).toBeGreaterThan(0);
+    expect(reconciliation.exactCorpusSize).toBe('unresolved');
   });
 
   test('provenance falls back to DataTFT and unknown facts stay unknown', () => {

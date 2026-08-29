@@ -95,8 +95,13 @@
   },
   {
     "nameEn": "Blood Ritual",
-    "matched": false,
-    "productionId": null,
-    "differences": []
+    "matched": true,
+    "productionId": "snapshot_157_3ed870773960",
+    "differences": [
+      "nameZh",
+      "effects",
+      "requirements",
+      "oncePerGame"
+    ]
   }
 ]

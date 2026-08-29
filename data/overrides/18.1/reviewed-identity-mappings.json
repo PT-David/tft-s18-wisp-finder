@@ -1,0 +1,465 @@
+{
+  "patch": "18.1",
+  "matchMethod": "reviewed_cross_source_identity",
+  "records": [
+    {
+      "productionId": "da_beggarswisp18",
+      "dataTftNameZh": "仙灵的怜悯",
+      "canonicalNameEn": "Beggar's Wisp",
+      "communityDragonId": "DA_BeggarsWisp18",
+      "opggSourceKey": null,
+      "lolchessName": "Beggar's Wisp",
+      "evidence": {
+        "cost": 0,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 10,
+              "round": 1
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "da_curiocart18",
+      "dataTftNameZh": "珍品摆摊车",
+      "canonicalNameEn": "Curio Cart",
+      "communityDragonId": "DA_CurioCart18",
+      "opggSourceKey": null,
+      "lolchessName": "Curio Cart",
+      "evidence": {
+        "cost": 0,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 3,
+              "round": 1
+            },
+            "end": {
+              "stage": 4,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "da_thingamajigbag18",
+      "dataTftNameZh": "小装置包",
+      "canonicalNameEn": "Thingamajig Bag",
+      "communityDragonId": "DA_ThingamajigBag18",
+      "opggSourceKey": "ThingamjigBag",
+      "lolchessName": "Thingamajig Bag",
+      "evidence": {
+        "cost": 1,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 3,
+              "round": 1
+            },
+            "end": {
+              "stage": 4,
+              "round": 1
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "da_thingamajigjar18",
+      "dataTftNameZh": "小装置罐",
+      "canonicalNameEn": "Thingamajig Jar",
+      "communityDragonId": "DA_ThingamajigJar18",
+      "opggSourceKey": "ThingamjigJar",
+      "lolchessName": "Thingamajig Jar",
+      "evidence": {
+        "cost": 0,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 2,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "da_thingamajigsack18",
+      "dataTftNameZh": "小装置袋",
+      "canonicalNameEn": "Thingamajig Sack",
+      "communityDragonId": "DA_ThingamajigSack18",
+      "opggSourceKey": "ThingamjigSack",
+      "lolchessName": "Thingamajig Sack",
+      "evidence": {
+        "cost": 3,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 5,
+              "round": 1
+            },
+            "end": {
+              "stage": 10,
+              "round": 1
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_022_fc7538964718",
+      "dataTftNameZh": "不祥交易",
+      "canonicalNameEn": "Sinister Deal",
+      "communityDragonId": null,
+      "opggSourceKey": "SinisterDeal",
+      "lolchessName": "Sinister Deal",
+      "evidence": {
+        "cost": 0,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 3,
+              "round": 4
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_036_f484358ea1e5",
+      "dataTftNameZh": "摄魂夺魄",
+      "canonicalNameEn": "Essence Theft",
+      "communityDragonId": null,
+      "opggSourceKey": "EssenceTheft",
+      "lolchessName": "Essence Theft",
+      "evidence": {
+        "cost": 1,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 4,
+              "round": 1
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_048_cbc77e083fc2",
+      "dataTftNameZh": "带一个走",
+      "canonicalNameEn": "Take One With Ya",
+      "communityDragonId": null,
+      "opggSourceKey": "TakeOneWithYa",
+      "lolchessName": "Take One With Ya",
+      "evidence": {
+        "cost": 1,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 2,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_049_d60aa5ac9feb",
+      "dataTftNameZh": "低阶胜负手",
+      "canonicalNameEn": "Minor Gambit",
+      "communityDragonId": null,
+      "opggSourceKey": "MinorGambit",
+      "lolchessName": "Minor Gambit",
+      "evidence": {
+        "cost": 1,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 2,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_051_e06d127b43f9",
+      "dataTftNameZh": "洪涝",
+      "canonicalNameEn": "Flood",
+      "communityDragonId": null,
+      "opggSourceKey": "Flood",
+      "lolchessName": "Flood",
+      "evidence": {
+        "cost": 1,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 2,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_090_cf945e21ddef",
+      "dataTftNameZh": "回复",
+      "canonicalNameEn": "Regeneration",
+      "communityDragonId": null,
+      "opggSourceKey": "Regeneration",
+      "lolchessName": "Regeneration",
+      "evidence": {
+        "cost": 3,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 3,
+              "round": 5
+            },
+            "end": {
+              "stage": 4,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_120_cf0b477ffe00",
+      "dataTftNameZh": "小型血祭",
+      "canonicalNameEn": "Minor Blood Ritual",
+      "communityDragonId": null,
+      "opggSourceKey": "MinorBloodRitual",
+      "lolchessName": "Minor Blood Ritual",
+      "evidence": {
+        "cost": 3,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 3,
+              "round": 4
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_121_1899d3fe4c61",
+      "dataTftNameZh": "高阶胜负手",
+      "canonicalNameEn": "Major Gambit",
+      "communityDragonId": null,
+      "opggSourceKey": "MajorGambit",
+      "lolchessName": "Major Gambit",
+      "evidence": {
+        "cost": 3,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 4,
+              "round": 2
+            },
+            "end": {
+              "stage": 5,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_136_c467ccd546d7",
+      "dataTftNameZh": "散件赏金",
+      "canonicalNameEn": "Component Bounty",
+      "communityDragonId": null,
+      "opggSourceKey": "ComponentBounty",
+      "lolchessName": "Component Bounty",
+      "evidence": {
+        "cost": 4,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 3,
+              "round": 1
+            },
+            "end": {
+              "stage": 4,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_147_2dc94df4e3a5",
+      "dataTftNameZh": "输得漂亮",
+      "canonicalNameEn": "Good Loss",
+      "communityDragonId": null,
+      "opggSourceKey": "GoodLoss",
+      "lolchessName": "Good Loss",
+      "evidence": {
+        "cost": 5,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 3,
+              "round": 1
+            },
+            "end": {
+              "stage": 4,
+              "round": 1
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_157_3ed870773960",
+      "dataTftNameZh": "血祭",
+      "canonicalNameEn": "Blood Ritual",
+      "communityDragonId": null,
+      "opggSourceKey": "BloodRitual",
+      "lolchessName": "Blood Ritual",
+      "evidence": {
+        "cost": 6,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 4,
+              "round": 2
+            },
+            "end": {
+              "stage": 4,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    },
+    {
+      "productionId": "snapshot_021_534324382164",
+      "dataTftNameZh": "休战",
+      "canonicalNameEn": "Truce",
+      "communityDragonId": null,
+      "opggSourceKey": "Truce",
+      "lolchessName": "Truce",
+      "evidence": {
+        "cost": 0,
+        "stageRanges": [
+          {
+            "start": {
+              "stage": 2,
+              "round": 1
+            },
+            "end": {
+              "stage": 2,
+              "round": 7
+            }
+          }
+        ],
+        "businessFactsCrossLanguageReviewed": true,
+        "identityChainUnique": true
+      },
+      "verifiedAt": "2026-08-29",
+      "reason": "Reviewed cross-source identity: canonical LoLCHESS identity and the DataTFT row agree on cost, complete stage windows, and distinctive business facts; mapping is explicit rather than inferred at build time."
+    }
+  ]
+}

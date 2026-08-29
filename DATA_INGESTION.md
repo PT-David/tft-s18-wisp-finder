@@ -71,3 +71,12 @@ npm run data:import:lolchess -- artifacts/import/lolchess-set18-wisps.html
 
 导入后的 LoLCHESS 数据作为逐记录审计证据；来源总数不同不能单独证明 corpus
 成员关系，也不代表 normalized production 已完整。
+
+## 7. Stage C1 engineering exit criteria
+
+Stage C1 在 raw snapshots 可重现、manifest/provenance 无悬空引用、当前报告无
+stale facts、仅强证据或显式 reviewed mapping 可确认 identity、其余项目进入
+`reports/data-manual-review-18.1.json`、生成器 deterministic 且 CI（包括 E2E）
+全绿时完成。人工数据审核可以继续存在；它不应诱发 fuzzy auto-match，也不应把
+`productionReady` 提前设为 `true`。来源规模不同且尚不能证明精确全集时，结论必须
+保持 `exact corpus size unresolved`。

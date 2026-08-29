@@ -72,11 +72,10 @@
       "pageUpdatedAt": null,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "useFor": [
-        "intended_structured_skeleton",
-        "field_cross_check"
+        "acquisition_history"
       ],
       "confidence": "unverified",
-      "warning": "One ordinary GET returned an AWS WAF challenge (HTTP 202); stopped immediately without bypass. Use the browser snapshot importer fallback.",
+      "warning": "Historical cloud attempt received an AWS WAF challenge (HTTP 202); superseded for record evidence by the browser snapshot channel.",
       "fetchStatus": "blocked_by_source_protection",
       "httpStatus": 202,
       "observedPublicIndexUpdated": "2026-08-26"
@@ -99,7 +98,7 @@
         "requirements"
       ],
       "confidence": "community_high_confidence",
-      "warning": "Used as the provisional skeleton only because Tier C could not be snapshotted; numeric fields require Tier C review."
+      "warning": "Provisional normalized skeleton; fields are cross-checked against the available LoLCHESS browser snapshot and client data."
     },
     {
       "sourceId": "opgg_set18_wisps_20260829",
@@ -129,6 +128,38 @@
       },
       "declaredRecordCount": 200,
       "parsedRecordCount": 200
+    },
+    {
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "tier": "C",
+      "url": "https://lolchess.gg/rewards/set18/wisps?utm_source=chatgpt.com",
+      "locale": "en",
+      "retrievedAt": "2026-08-29T11:22:31.117Z",
+      "pageUpdatedAt": "August 28, 2026",
+      "sha256": "d1d6ad0bc28e4ccf5ef4ccb5815ac9effb694ff0b271088776ac08f0870ce2d8",
+      "recordCount": 174,
+      "fieldCoverage": {
+        "name": 174,
+        "cost": 174,
+        "normalEffect": 174,
+        "stageRanges": 174,
+        "blossom": 145,
+        "prismatic": 19,
+        "requirements": 60,
+        "oncePerGameConfirmed": 2,
+        "reofferCooldownShops": 0
+      },
+      "fetchStatus": "browser_snapshot_imported",
+      "useFor": [
+        "identity_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ],
+      "confidence": "verified_third_party"
     }
   ]
 }

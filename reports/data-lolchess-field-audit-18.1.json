@@ -1,50 +1,4230 @@
 {
   "sourceCount": 174,
-  "exactEnglishIdentityMatches": 152,
+  "exactEnglishIdentityMatches": 164,
   "unmatchedLolchess": [
     "Bear's Visit",
-    "Blood Ritual",
-    "Component Bounty",
     "Drought",
-    "Essence Theft",
-    "Flood",
     "Golden Road",
-    "Good Loss",
     "Healing Pool",
-    "Major Gambit",
     "Marksmen's Marks",
-    "Minor Blood Ritual",
-    "Minor Gambit",
     "Potted Lifebloom",
     "Potted Stonebark",
-    "Regeneration",
-    "Sinister Deal",
     "Snacktime!",
-    "Take One With Ya",
     "Tiger's Visit",
-    "Truce",
     "Turtle's Visit"
   ],
   "blossom": {
     "productionCount": 130,
     "lolchessCount": 145,
-    "matchedAgreement": 150,
-    "mismatches": [
+    "allAgreeAbsent": [
       {
-        "nameEn": "Bronze Spoon",
-        "productionHasBlossom": true,
+        "identity": "da_18_circleofelders",
+        "nameEn": "Circle of Elders",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
         "lolchessHasBlossom": false
       },
       {
-        "nameEn": "Experienced",
-        "productionHasBlossom": true,
+        "identity": "da_18_heroicsacrifice",
+        "nameEn": "Heroic Sacrifice",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_18_mitosis",
+        "nameEn": "Mitosis",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_18_propagate",
+        "nameEn": "Propagate",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_apprentice18",
+        "nameEn": "Apprentice",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_bigguns18",
+        "nameEn": "Big Guns",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_bordervillage18",
+        "nameEn": "Border Village",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_flipfrenzy18",
+        "nameEn": "Flip Frenzy",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_forestguide18",
+        "nameEn": "Forest Guide",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_grandmaster18",
+        "nameEn": "Grandmaster",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_heroofprophecy18",
+        "nameEn": "Hero Of Prophecy",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_idlecraftsman18",
+        "nameEn": "Idle Craftsman",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_journeyman18",
+        "nameEn": "Journeyman",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_jungling18",
+        "nameEn": "Jungling",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_middlepath18",
+        "nameEn": "Middle Path",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_phantomemblem18",
+        "nameEn": "Phantom Emblem",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_refreshinglight18",
+        "nameEn": "Refreshing Light",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_searchparty18",
+        "nameEn": "Search Party",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_solargift18",
+        "nameEn": "Solar Gift",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_startingtown18",
+        "nameEn": "Starting Town",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_threeme18",
+        "nameEn": "Three Me",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_trophyhunter18",
+        "nameEn": "Trophy Hunter",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "snapshot_136_c467ccd546d7",
+        "nameEn": "Component Bounty",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
         "lolchessHasBlossom": false
       }
+    ],
+    "allAgreePresent": [
+      {
+        "identity": "da_18_aftershock",
+        "nameEn": "Aftershock",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_allfives",
+        "nameEn": "All Fives",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_allfours",
+        "nameEn": "All Fours",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_allones",
+        "nameEn": "All Ones",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_allthrees",
+        "nameEn": "All Threes",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_alltwos",
+        "nameEn": "All Twos",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_backrowstar",
+        "nameEn": "Backrow Star",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_barkarmor",
+        "nameEn": "Bark Armor",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_bloodmoney",
+        "nameEn": "Blood Money",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_counterspell",
+        "nameEn": "Counterspell",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_earlyfix",
+        "nameEn": "Early Fix",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_fellowship",
+        "nameEn": "Fellowship",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_fertilize",
+        "nameEn": "Fertilize",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_fieldofmice",
+        "nameEn": "Field of Mice",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_forestmage",
+        "nameEn": "Forest Mage",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_freeroller",
+        "nameEn": "Freeroller",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_giantgrowth",
+        "nameEn": "Giant Growth",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_heatedrivalry",
+        "nameEn": "Heated Rivalry",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_hummingbird",
+        "nameEn": "Hummingbird",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_infliction",
+        "nameEn": "Infliction",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_killingfrenzy",
+        "nameEn": "Killing Frenzy",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_lifedebt",
+        "nameEn": "Life Debt",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_lightningstorm",
+        "nameEn": "Lightning Storm",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_lightningstrike",
+        "nameEn": "Lightning Strike",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_losttravelers",
+        "nameEn": "Lost Travelers",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_majorpolymorph",
+        "nameEn": "Major Polymorph",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_mercenaryforce",
+        "nameEn": "Mercenary Force",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_minorpolymorph",
+        "nameEn": "Minor Polymorph",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_moonrise",
+        "nameEn": "Moonrise",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_payday",
+        "nameEn": "Payday",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_pocketchange",
+        "nameEn": "Pocket Change",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_polymorph",
+        "nameEn": "Polymorph",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_preppers",
+        "nameEn": "Preppers",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_prolificpower",
+        "nameEn": "Prolific Power",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_radiantize",
+        "nameEn": "Radiantize",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_resistant",
+        "nameEn": "Resistant",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_starfall",
+        "nameEn": "Starfall",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_sunfiresorcery",
+        "nameEn": "Sunfire Sorcery",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_supercritical",
+        "nameEn": "Supercritical",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_tatteredarmor",
+        "nameEn": "Tattered Armor",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_tremors",
+        "nameEn": "Tremors",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_ultraascension",
+        "nameEn": "Ultra Ascension",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_verdantvitality",
+        "nameEn": "Verdant Vitality",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_18_yordlespirit",
+        "nameEn": "Yordle Spirit",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_abandonship18",
+        "nameEn": "Abandon Ship",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_animateshop18",
+        "nameEn": "Animate Shop",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_artifactinate18",
+        "nameEn": "Artifactinate",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_barrier18",
+        "nameEn": "Barrier",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_barter18",
+        "nameEn": "Barter",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_beggarswisp18",
+        "nameEn": "Beggar's Wisp",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_bigboom18",
+        "nameEn": "Big Boom",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_blastpotion18_charm",
+        "nameEn": "Blast Potion",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_blaze18",
+        "nameEn": "Blaze",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_bloodandiron18",
+        "nameEn": "Blood and Iron",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_boostershot18",
+        "nameEn": "Booster Shot",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_borrowedgear18",
+        "nameEn": "Borrowed Gear",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_bulwark18",
+        "nameEn": "Bulwark",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_bunchobelts18",
+        "nameEn": "Bunch-o'-Belts",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_coinflip18",
+        "nameEn": "Coin Flip",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_combust18",
+        "nameEn": "Combust",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_curiocart18",
+        "nameEn": "Curio Cart",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_cutpurse18",
+        "nameEn": "Cutpurse",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_dieroll18",
+        "nameEn": "Die Roll",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_diversified18",
+        "nameEn": "Diversified",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_doodadbag18",
+        "nameEn": "Doodad Bag",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_doodadjar18",
+        "nameEn": "Doodad Jar",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_doodadsack18",
+        "nameEn": "Doodad Sack",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_downpour18",
+        "nameEn": "Downpour",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_flashfire18",
+        "nameEn": "Flash Fire",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_flow18",
+        "nameEn": "Flow",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_foresttwins18",
+        "nameEn": "Forest Twins",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_foundfriend18",
+        "nameEn": "Found Friend",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_giantsaura18",
+        "nameEn": "Giant's Aura",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_goldengoose18",
+        "nameEn": "Golden Goose",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_greaterchaos18",
+        "nameEn": "Greater Chaos",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_growup18",
+        "nameEn": "Grow Up",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_handofbaron18",
+        "nameEn": "Hand Of Baron",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_healthpotion18_charm",
+        "nameEn": "Health Potion",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_herosentrance18",
+        "nameEn": "Hero's Entrance",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_hireling18",
+        "nameEn": "Hireling",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_homingfireflies18",
+        "nameEn": "Homing Fireflies",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_hugify18",
+        "nameEn": "Hugify",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_improvedreach18",
+        "nameEn": "Improved Reach",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_ironcore18",
+        "nameEn": "Iron Core",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_ironwood18",
+        "nameEn": "Ironwood",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_killersregret18",
+        "nameEn": "Killer's Regret",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_knickknackbag18",
+        "nameEn": "Knick-Knack Bag",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_knickknackjar18",
+        "nameEn": "Knick-Knack Jar",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_knickknacksack18",
+        "nameEn": "Knick-Knack Sack",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_latebloomer18",
+        "nameEn": "Late Bloomer",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_lesserchaos18",
+        "nameEn": "Lesser Chaos",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_livingsoil18",
+        "nameEn": "Living Soil",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_lucky718",
+        "nameEn": "Lucky 7",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_manapotion18_charm",
+        "nameEn": "Mana Potion",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_manarichsoil18",
+        "nameEn": "Mana-Rich Soil",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_marksmensgale18",
+        "nameEn": "Marksmen's Gale",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_moonlightritual18",
+        "nameEn": "Moonlight Ritual",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_naturesally18",
+        "nameEn": "Nature's Ally",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_natureswrath18",
+        "nameEn": "Nature's Wrath",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_peddler18",
+        "nameEn": "Peddler",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_petrifieddummy18",
+        "nameEn": "Petrified Dummy",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_petrifyshields18",
+        "nameEn": "Petrify Shields",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_phantomarmor18",
+        "nameEn": "Phantom Armor",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_phantomgloves18",
+        "nameEn": "Phantom Gloves",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_phantomsplash18",
+        "nameEn": "Phantom Splash",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_phantomvest18",
+        "nameEn": "Phantom Vest",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_platedshields18",
+        "nameEn": "Plated Shields",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_potioncraft18",
+        "nameEn": "Potioncraft",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_quicken18",
+        "nameEn": "Quicken",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_rain18",
+        "nameEn": "Rain",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_revenge18",
+        "nameEn": "Revenge",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_ridethewave18",
+        "nameEn": "Ride the Wave",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_rollingbones18",
+        "nameEn": "Rolling Bones",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_rolypolys18",
+        "nameEn": "Roly-Polys",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_salvager18",
+        "nameEn": "Salvager",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_scrappy18",
+        "nameEn": "Scrappy",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_slowstudy18",
+        "nameEn": "Slow Study",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_smurfing18",
+        "nameEn": "Smurfing",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_solitudescloak18",
+        "nameEn": "Solitude's Cloak",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_standalone18",
+        "nameEn": "Stand Alone",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_stealthy18",
+        "nameEn": "Stealthy",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_terraforming18",
+        "nameEn": "Terraforming",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_thingamajigbag18",
+        "nameEn": "Thingamajig Bag",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_thingamajigjar18",
+        "nameEn": "Thingamajig Jar",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_thingamajigsack18",
+        "nameEn": "Thingamajig Sack",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_trainingyard18",
+        "nameEn": "Training Yard",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_treetoparchers",
+        "nameEn": "Treetop Archers",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_wrappedinthorns18",
+        "nameEn": "Wrapped In Thorns",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      }
+    ],
+    "presenceConflict": [
+      {
+        "identity": "da_18_bronzespoon",
+        "nameEn": "Bronze Spoon",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_18_experienced",
+        "nameEn": "Experienced",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "snapshot_021_534324382164",
+        "nameEn": "Truce",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_022_fc7538964718",
+        "nameEn": "Sinister Deal",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_036_f484358ea1e5",
+        "nameEn": "Essence Theft",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_048_cbc77e083fc2",
+        "nameEn": "Take One With Ya",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_049_d60aa5ac9feb",
+        "nameEn": "Minor Gambit",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_051_e06d127b43f9",
+        "nameEn": "Flood",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_090_cf945e21ddef",
+        "nameEn": "Regeneration",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_120_cf0b477ffe00",
+        "nameEn": "Minor Blood Ritual",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_121_1899d3fe4c61",
+        "nameEn": "Major Gambit",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_147_2dc94df4e3a5",
+        "nameEn": "Good Loss",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      },
+      {
+        "identity": "snapshot_157_3ed870773960",
+        "nameEn": "Blood Ritual",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": true
+      }
+    ],
+    "identityUnresolved": [
+      "Bear's Visit",
+      "Drought",
+      "Golden Road",
+      "Healing Pool",
+      "Marksmen's Marks",
+      "Potted Lifebloom",
+      "Potted Stonebark",
+      "Snacktime!",
+      "Tiger's Visit",
+      "Turtle's Visit"
     ]
   },
   "requirements": {
     "productionCount": 56,
-    "lolchessCount": 60
+    "lolchessCount": 60,
+    "presenceAgreement": [
+      {
+        "identity": "da_18_aftershock",
+        "nameEn": "Aftershock",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_backrowstar",
+        "nameEn": "Backrow Star",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_barkarmor",
+        "nameEn": "Bark Armor",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_bloodmoney",
+        "nameEn": "Blood Money",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_bronzespoon",
+        "nameEn": "Bronze Spoon",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_circleofelders",
+        "nameEn": "Circle of Elders",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_counterspell",
+        "nameEn": "Counterspell",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_earlyfix",
+        "nameEn": "Early Fix",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_experienced",
+        "nameEn": "Experienced",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_fellowship",
+        "nameEn": "Fellowship",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_fertilize",
+        "nameEn": "Fertilize",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_fieldofmice",
+        "nameEn": "Field of Mice",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_forestmage",
+        "nameEn": "Forest Mage",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_freeroller",
+        "nameEn": "Freeroller",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_giantgrowth",
+        "nameEn": "Giant Growth",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_heatedrivalry",
+        "nameEn": "Heated Rivalry",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_heroicsacrifice",
+        "nameEn": "Heroic Sacrifice",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_hummingbird",
+        "nameEn": "Hummingbird",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_killingfrenzy",
+        "nameEn": "Killing Frenzy",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_lifedebt",
+        "nameEn": "Life Debt",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 70
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_lightningstorm",
+        "nameEn": "Lightning Storm",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_lightningstrike",
+        "nameEn": "Lightning Strike",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_losttravelers",
+        "nameEn": "Lost Travelers",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_mercenaryforce",
+        "nameEn": "Mercenary Force",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 30
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 30
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 30
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_18_mitosis",
+        "nameEn": "Mitosis",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_moonrise",
+        "nameEn": "Moonrise",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_payday",
+        "nameEn": "Payday",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_propagate",
+        "nameEn": "Propagate",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_radiantize",
+        "nameEn": "Radiantize",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_resistant",
+        "nameEn": "Resistant",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_supercritical",
+        "nameEn": "Supercritical",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_tremors",
+        "nameEn": "Tremors",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_ultraascension",
+        "nameEn": "Ultra Ascension",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_verdantvitality",
+        "nameEn": "Verdant Vitality",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_yordlespirit",
+        "nameEn": "Yordle Spirit",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_abandonship18",
+        "nameEn": "Abandon Ship",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_apprentice18",
+        "nameEn": "Apprentice",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_artifactinate18",
+        "nameEn": "Artifactinate",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 3
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_barrier18",
+        "nameEn": "Barrier",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_barter18",
+        "nameEn": "Barter",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_beggarswisp18",
+        "nameEn": "Beggar's Wisp",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bigboom18",
+        "nameEn": "Big Boom",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bigguns18",
+        "nameEn": "Big Guns",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_blastpotion18_charm",
+        "nameEn": "Blast Potion",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_blaze18",
+        "nameEn": "Blaze",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bloodandiron18",
+        "nameEn": "Blood and Iron",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_boostershot18",
+        "nameEn": "Booster Shot",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bordervillage18",
+        "nameEn": "Border Village",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_borrowedgear18",
+        "nameEn": "Borrowed Gear",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bulwark18",
+        "nameEn": "Bulwark",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bunchobelts18",
+        "nameEn": "Bunch-o'-Belts",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_coinflip18",
+        "nameEn": "Coin Flip",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_combust18",
+        "nameEn": "Combust",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_curiocart18",
+        "nameEn": "Curio Cart",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_cutpurse18",
+        "nameEn": "Cutpurse",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_dieroll18",
+        "nameEn": "Die Roll",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_diversified18",
+        "nameEn": "Diversified",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_doodadbag18",
+        "nameEn": "Doodad Bag",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_doodadjar18",
+        "nameEn": "Doodad Jar",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_doodadsack18",
+        "nameEn": "Doodad Sack",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_downpour18",
+        "nameEn": "Downpour",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_flashfire18",
+        "nameEn": "Flash Fire",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_flipfrenzy18",
+        "nameEn": "Flip Frenzy",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_flow18",
+        "nameEn": "Flow",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_forestguide18",
+        "nameEn": "Forest Guide",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_foresttwins18",
+        "nameEn": "Forest Twins",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_foundfriend18",
+        "nameEn": "Found Friend",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_goldengoose18",
+        "nameEn": "Golden Goose",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_grandmaster18",
+        "nameEn": "Grandmaster",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_greaterchaos18",
+        "nameEn": "Greater Chaos",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_growup18",
+        "nameEn": "Grow Up",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_handofbaron18",
+        "nameEn": "Hand Of Baron",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_healthpotion18_charm",
+        "nameEn": "Health Potion",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_heroofprophecy18",
+        "nameEn": "Hero Of Prophecy",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 50
+          },
+          {
+            "type": "level",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "level",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_herosentrance18",
+        "nameEn": "Hero's Entrance",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_hireling18",
+        "nameEn": "Hireling",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_homingfireflies18",
+        "nameEn": "Homing Fireflies",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_hugify18",
+        "nameEn": "Hugify",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_idlecraftsman18",
+        "nameEn": "Idle Craftsman",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_improvedreach18",
+        "nameEn": "Improved Reach",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_ironcore18",
+        "nameEn": "Iron Core",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_ironwood18",
+        "nameEn": "Ironwood",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_journeyman18",
+        "nameEn": "Journeyman",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_jungling18",
+        "nameEn": "Jungling",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_killersregret18",
+        "nameEn": "Killer's Regret",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_knickknackbag18",
+        "nameEn": "Knick-Knack Bag",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_knickknackjar18",
+        "nameEn": "Knick-Knack Jar",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_knickknacksack18",
+        "nameEn": "Knick-Knack Sack",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_latebloomer18",
+        "nameEn": "Late Bloomer",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_lesserchaos18",
+        "nameEn": "Lesser Chaos",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_livingsoil18",
+        "nameEn": "Living Soil",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_lucky718",
+        "nameEn": "Lucky 7",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_manapotion18_charm",
+        "nameEn": "Mana Potion",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_manarichsoil18",
+        "nameEn": "Mana-Rich Soil",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_marksmensgale18",
+        "nameEn": "Marksmen's Gale",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_middlepath18",
+        "nameEn": "Middle Path",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_moonlightritual18",
+        "nameEn": "Moonlight Ritual",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_naturesally18",
+        "nameEn": "Nature's Ally",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_natureswrath18",
+        "nameEn": "Nature's Wrath",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_petrifieddummy18",
+        "nameEn": "Petrified Dummy",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_petrifyshields18",
+        "nameEn": "Petrify Shields",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_phantomarmor18",
+        "nameEn": "Phantom Armor",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_phantomemblem18",
+        "nameEn": "Phantom Emblem",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_phantomgloves18",
+        "nameEn": "Phantom Gloves",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_phantomsplash18",
+        "nameEn": "Phantom Splash",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_phantomvest18",
+        "nameEn": "Phantom Vest",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_platedshields18",
+        "nameEn": "Plated Shields",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_potioncraft18",
+        "nameEn": "Potioncraft",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_rain18",
+        "nameEn": "Rain",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_refreshinglight18",
+        "nameEn": "Refreshing Light",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_revenge18",
+        "nameEn": "Revenge",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_ridethewave18",
+        "nameEn": "Ride the Wave",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 20
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 20
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 20
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_rollingbones18",
+        "nameEn": "Rolling Bones",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_rolypolys18",
+        "nameEn": "Roly-Polys",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_salvager18",
+        "nameEn": "Salvager",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_scrappy18",
+        "nameEn": "Scrappy",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_slowstudy18",
+        "nameEn": "Slow Study",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_smurfing18",
+        "nameEn": "Smurfing",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_solargift18",
+        "nameEn": "Solar Gift",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_standalone18",
+        "nameEn": "Stand Alone",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_startingtown18",
+        "nameEn": "Starting Town",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_terraforming18",
+        "nameEn": "Terraforming",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_thingamajigbag18",
+        "nameEn": "Thingamajig Bag",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_thingamajigjar18",
+        "nameEn": "Thingamajig Jar",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_thingamajigsack18",
+        "nameEn": "Thingamajig Sack",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_threeme18",
+        "nameEn": "Three Me",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_trainingyard18",
+        "nameEn": "Training Yard",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_treetoparchers",
+        "nameEn": "Treetop Archers",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_trophyhunter18",
+        "nameEn": "Trophy Hunter",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_021_534324382164",
+        "nameEn": "Truce",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_022_fc7538964718",
+        "nameEn": "Sinister Deal",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 4
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_036_f484358ea1e5",
+        "nameEn": "Essence Theft",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_049_d60aa5ac9feb",
+        "nameEn": "Minor Gambit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_090_cf945e21ddef",
+        "nameEn": "Regeneration",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_120_cf0b477ffe00",
+        "nameEn": "Minor Blood Ritual",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 3
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_157_3ed870773960",
+        "nameEn": "Blood Ritual",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      }
+    ],
+    "presenceConflict": [
+      {
+        "identity": "da_18_allfives",
+        "nameEn": "All Fives",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 15
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 15
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_allfours",
+        "nameEn": "All Fours",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 8
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 8
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_allones",
+        "nameEn": "All Ones",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 5
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_allthrees",
+        "nameEn": "All Threes",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 5
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_alltwos",
+        "nameEn": "All Twos",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 5
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_infliction",
+        "nameEn": "Infliction",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_majorpolymorph",
+        "nameEn": "Major Polymorph",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_minorpolymorph",
+        "nameEn": "Minor Polymorph",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_pocketchange",
+        "nameEn": "Pocket Change",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 2
+          }
+        ],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_polymorph",
+        "nameEn": "Polymorph",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_preppers",
+        "nameEn": "Preppers",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 2
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_prolificpower",
+        "nameEn": "Prolific Power",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_starfall",
+        "nameEn": "Starfall",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_sunfiresorcery",
+        "nameEn": "Sunfire Sorcery",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_tatteredarmor",
+        "nameEn": "Tattered Armor",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_animateshop18",
+        "nameEn": "Animate Shop",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 12
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 12
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_giantsaura18",
+        "nameEn": "Giant's Aura",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_peddler18",
+        "nameEn": "Peddler",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_quicken18",
+        "nameEn": "Quicken",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_searchparty18",
+        "nameEn": "Search Party",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_solitudescloak18",
+        "nameEn": "Solitude's Cloak",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_stealthy18",
+        "nameEn": "Stealthy",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_wrappedinthorns18",
+        "nameEn": "Wrapped In Thorns",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_048_cbc77e083fc2",
+        "nameEn": "Take One With Ya",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_051_e06d127b43f9",
+        "nameEn": "Flood",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_121_1899d3fe4c61",
+        "nameEn": "Major Gambit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_136_c467ccd546d7",
+        "nameEn": "Component Bounty",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_147_2dc94df4e3a5",
+        "nameEn": "Good Loss",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      }
+    ],
+    "identityUnresolved": [
+      "Bear's Visit",
+      "Drought",
+      "Golden Road",
+      "Healing Pool",
+      "Marksmen's Marks",
+      "Potted Lifebloom",
+      "Potted Stonebark",
+      "Snacktime!",
+      "Tiger's Visit",
+      "Turtle's Visit"
+    ],
+    "structuredComparison": [
+      {
+        "identity": "da_18_mercenaryforce",
+        "nameEn": "Mercenary Force",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 30
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 30
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 30
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_diversified18",
+        "nameEn": "Diversified",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_heroofprophecy18",
+        "nameEn": "Hero Of Prophecy",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 50
+          },
+          {
+            "type": "level",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "level",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_ridethewave18",
+        "nameEn": "Ride the Wave",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 20
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 20
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 20
+          }
+        ],
+        "status": "structured_conflict"
+      }
+    ],
+    "structuredConflict": [
+      {
+        "identity": "da_18_mercenaryforce",
+        "nameEn": "Mercenary Force",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 30
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 30
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 30
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_diversified18",
+        "nameEn": "Diversified",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_heroofprophecy18",
+        "nameEn": "Hero Of Prophecy",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 50
+          },
+          {
+            "type": "level",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 35
+          },
+          {
+            "type": "level",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "structured_conflict"
+      },
+      {
+        "identity": "da_ridethewave18",
+        "nameEn": "Ride the Wave",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 20
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 20
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 20
+          }
+        ],
+        "status": "structured_conflict"
+      }
+    ],
+    "semanticReviewRequired": [
+      {
+        "identity": "da_18_allfives",
+        "nameEn": "All Fives",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 15
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 15
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_allfours",
+        "nameEn": "All Fours",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 8
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 8
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_allones",
+        "nameEn": "All Ones",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 5
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_allthrees",
+        "nameEn": "All Threes",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 5
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_alltwos",
+        "nameEn": "All Twos",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 5
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 5
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_fieldofmice",
+        "nameEn": "Field of Mice",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_forestmage",
+        "nameEn": "Forest Mage",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_heroicsacrifice",
+        "nameEn": "Heroic Sacrifice",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_infliction",
+        "nameEn": "Infliction",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_killingfrenzy",
+        "nameEn": "Killing Frenzy",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_lifedebt",
+        "nameEn": "Life Debt",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 70
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_majorpolymorph",
+        "nameEn": "Major Polymorph",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_minorpolymorph",
+        "nameEn": "Minor Polymorph",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_moonrise",
+        "nameEn": "Moonrise",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_pocketchange",
+        "nameEn": "Pocket Change",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 2
+          }
+        ],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_polymorph",
+        "nameEn": "Polymorph",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_preppers",
+        "nameEn": "Preppers",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 2
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_prolificpower",
+        "nameEn": "Prolific Power",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_starfall",
+        "nameEn": "Starfall",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_sunfiresorcery",
+        "nameEn": "Sunfire Sorcery",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_supercritical",
+        "nameEn": "Supercritical",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_tatteredarmor",
+        "nameEn": "Tattered Armor",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_18_verdantvitality",
+        "nameEn": "Verdant Vitality",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_abandonship18",
+        "nameEn": "Abandon Ship",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_animateshop18",
+        "nameEn": "Animate Shop",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 12
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 12
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_artifactinate18",
+        "nameEn": "Artifactinate",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 3
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_boostershot18",
+        "nameEn": "Booster Shot",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bulwark18",
+        "nameEn": "Bulwark",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_curiocart18",
+        "nameEn": "Curio Cart",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_flashfire18",
+        "nameEn": "Flash Fire",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_giantsaura18",
+        "nameEn": "Giant's Aura",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_handofbaron18",
+        "nameEn": "Hand Of Baron",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_herosentrance18",
+        "nameEn": "Hero's Entrance",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_homingfireflies18",
+        "nameEn": "Homing Fireflies",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_idlecraftsman18",
+        "nameEn": "Idle Craftsman",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_improvedreach18",
+        "nameEn": "Improved Reach",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_jungling18",
+        "nameEn": "Jungling",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_manarichsoil18",
+        "nameEn": "Mana-Rich Soil",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_marksmensgale18",
+        "nameEn": "Marksmen's Gale",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          },
+          {
+            "type": "board_count",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_moonlightritual18",
+        "nameEn": "Moonlight Ritual",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 1
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_natureswrath18",
+        "nameEn": "Nature's Wrath",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_peddler18",
+        "nameEn": "Peddler",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_quicken18",
+        "nameEn": "Quicken",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_refreshinglight18",
+        "nameEn": "Refreshing Light",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_searchparty18",
+        "nameEn": "Search Party",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          },
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_solargift18",
+        "nameEn": "Solar Gift",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_solitudescloak18",
+        "nameEn": "Solitude's Cloak",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_standalone18",
+        "nameEn": "Stand Alone",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_stealthy18",
+        "nameEn": "Stealthy",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_terraforming18",
+        "nameEn": "Terraforming",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_trophyhunter18",
+        "nameEn": "Trophy Hunter",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_wrappedinthorns18",
+        "nameEn": "Wrapped In Thorns",
+        "productionHasRequirements": false,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_022_fc7538964718",
+        "nameEn": "Sinister Deal",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 4
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_036_f484358ea1e5",
+        "nameEn": "Essence Theft",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_048_cbc77e083fc2",
+        "nameEn": "Take One With Ya",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_049_d60aa5ac9feb",
+        "nameEn": "Minor Gambit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_051_e06d127b43f9",
+        "nameEn": "Flood",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_120_cf0b477ffe00",
+        "nameEn": "Minor Blood Ritual",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 3
+          }
+        ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_121_1899d3fe4c61",
+        "nameEn": "Major Gambit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_136_c467ccd546d7",
+        "nameEn": "Component Bounty",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_147_2dc94df4e3a5",
+        "nameEn": "Good Loss",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": false,
+        "productionFacts": [],
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "snapshot_157_3ed870773960",
+        "nameEn": "Blood Ritual",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "player_health",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
+        "status": "semantic_review_required"
+      }
+    ]
   },
   "oncePerGame": {
     "lolchessConfirmed": [
@@ -52,12 +4232,13 @@
       "Hero Of Prophecy"
     ],
     "appliedToProduction": [
-      "Hero Of Prophecy"
+      "Hero Of Prophecy",
+      "Blood Ritual"
     ]
   },
   "stageRanges": {
-    "compared": 152,
-    "agreements": 152,
+    "compared": 164,
+    "agreements": 164,
     "mismatches": []
   }
 }
