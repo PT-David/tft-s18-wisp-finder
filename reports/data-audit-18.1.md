@@ -1,13 +1,13 @@
-# TFT 18.1 Wisp data audit
+# TFT 18.1 Wisp 数据审计
 
-- Snapshot: 2026-08-28T16:49:16Z; OP.GG retrieved 2026-08-29T04:15:26Z.
-- Corpus definition: all live-patch Wisps that can actually be offered in a normal or rules-authorized Wisp slot. Upgrade/Prismatic variants, inactive/internal records, and aliases are not separate entries.
-- OP.GG: HTTP 200, SHA-256 dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da, 200 parsed rows. Category counts: {"Combat":94,"Misc":30,"Champion":16,"Shop":19,"Risky":21,"GoldXP":14,"Item":6}. This replaces the obsolete blocked observation.
-- Reconciliation: 169 OP.GG/DataTFT intersection, 31 OP.GG-only, 0 DataTFT-only. The OP.GG-only rows are individually classified: {"A":11,"B":0,"C":20,"D":0,"E":0,"F":0}. A means a catalogued live-shaped row missing from DataTFT; C means a conditional corpus-policy difference.
-- Normalized remains 169, after evidence review rather than a 200-count assumption: the 31 rows are not promoted until their timing and production-required provenance can be established.
-- CommunityDragon: 345 variants (163 base, 163 Upgrade, 19 Prismatic); exact localized-name intersection 152.
-- Riot/client ID coverage: 152/169; Chinese-name coverage: 169/169.
-- Blossom: 130; Mitosis remains null because its client Upgrade text is not distinct. Prismatic: DataTFT 20, CommunityDragon 19, LoLCHESS human observation 11.
-- LoLCHESS ordinary GET was attempted once and received HTTP 202 AWS WAF protection; no bypass was attempted. The browser snapshot importer remains the fallback.
-- oncePerGame and reofferCooldownShops remain explicit unknown knowledge states; minimumAffordableGold remains omitted.
-- **Production ready: no.** The build remains deterministic and offline from committed snapshots.
+- 快照：DataTFT 2026-08-28T16:49:16Z；OP.GG 2026-08-29T04:15:26Z。
+- OP.GG：HTTP 200，SHA-256 dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da，页面声明 200 条，实际解析 200 条；分类合计 200。
+- 旧算法会无阈值地耗尽两侧记录，因而人为制造 169/31/0；该结果已删除。新规则只有 client key、唯一英文名、唯一中文名和 reviewed alias 可以确认身份。
+- 确认交集：152（{"exact_client_key":144,"exact_english_name":3,"exact_chinese_name":5,"reviewed_alias":0}）；模糊候选 48，其中 ambiguous 27。候选不会进入确认交集。
+- 确认 OP.GG-only：0；确认 DataTFT-only：17；OP.GG unresolved：48。原 31 条差异结论已全部撤销并按当前强证据重新计算。
+- CommunityDragon 为 8 条未链接 OP.GG identity 提供 exact base client identity；它确认 corpus 身份，但不能证明这些记录与 17 条 DataTFT unmatched rows 相互独立，因此 confirmed OP.GG-only 仍为 0。
+- appearanceCondition 只作为需求字段，绝不再决定 A/C 或排除。规则授权的条件 Wisp 仍属于 corpus。
+- 当前可证实 corpus 下限为 169；normalized production 也是 169。另有 8 个已确认 corpus identity 尚未完成 DataTFT/production 身份链接，不能重复计数。
+- Blossom 130；Mitosis 的非独立 Upgrade 仍为 null。Knowledge<T>、字段 provenance、seed/production 分离均保持不变。
+- LoLCHESS 普通 GET 收到 HTTP 202 AWS WAF；未绕过，browser snapshot importer 仍为 fallback。
+- **Production ready：否。** 当前仍需人工审核 48 个 OP.GG candidate group 与 17 个 DataTFT unmatched rows；离线构建保持确定性。

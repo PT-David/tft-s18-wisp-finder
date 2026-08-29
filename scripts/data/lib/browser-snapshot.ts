@@ -66,7 +66,7 @@ function jsonPayloads(html: string): unknown[] {
   return payloads;
 }
 
-export function parseBrowserSnapshot(source: BrowserSource, html: string): { sourceUrl: string; pageUpdatedAt: string | null; records: ImportedWisp[]; sha256: string } {
+export function parseBrowserSnapshot(source: BrowserSource, html: string): { sourceUrl: string; pageUpdatedAt: string | null; declaredRecordCount: number | null; records: ImportedWisp[]; sha256: string } {
   const expected = source === 'opgg' ? /https:\/\/op\.gg\/(?:zh-cn|zh-tw|en)\/tft\/set\/18/i : /https:\/\/lolchess\.gg\/rewards\/set18\/wisps/i;
   const canonical = html.match(/<link\b[^>]*rel=["']canonical["'][^>]*href=["']([^"']+)/i)?.[1]
     ?? html.match(/<meta\b[^>]*property=["']og:url["'][^>]*content=["']([^"']+)/i)?.[1];
@@ -92,6 +92,9 @@ export function parseBrowserSnapshot(source: BrowserSource, html: string): { sou
   const records = [...deduped.values()]
     .sort((a, b) => a.name.localeCompare(b.name, 'en'));
   if (!records.length) throw new Error('快照身份正确，但未找到结构化 Wisp records；不会覆盖现有 raw JSON');
+  const declaredRecordCount = source === 'opgg' ? Number(html.match(/(?:all|全部)\s*(\d+)\s*(?:个\s*)?Wisps/i)?.[1] ?? NaN) : null;
+  if (source === 'opgg' && !Number.isFinite(declaredRecordCount)) throw new Error('OP.GG 快照未暴露页面声明的 Wisp 总数；不会用硬编码数量替代');
+  if (declaredRecordCount !== null && records.length !== declaredRecordCount) throw new Error(`OP.GG 页面声明 ${declaredRecordCount} 条，但解析得到 ${records.length} 条；不会覆盖现有 raw JSON`);
   const updatedText = html.match(/(?:Updated|更新(?:日期|時間)?)[：:\s]*([A-Za-z]+\s+\d{1,2},\s+\d{4}|\d{4}[-/.]\d{1,2}[-/.]\d{1,2})/i)?.[1] ?? null;
-  return { sourceUrl: canonical, pageUpdatedAt: updatedText, records, sha256: createHash('sha256').update(html).digest('hex') };
+  return { sourceUrl: canonical, pageUpdatedAt: updatedText, declaredRecordCount, records, sha256: createHash('sha256').update(html).digest('hex') };
 }

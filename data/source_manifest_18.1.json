@@ -126,7 +126,9 @@
         "Risky": 21,
         "GoldXP": 14,
         "Item": 6
-      }
+      },
+      "declaredRecordCount": 200,
+      "parsedRecordCount": 200
     }
   ]
 }

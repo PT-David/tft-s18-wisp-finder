@@ -9,7 +9,7 @@
     "opggExtracted": 200,
     "lolchess": 0
   },
-  "unionByAcceptedSkeleton": 181,
+  "unionByAcceptedSkeleton": 169,
   "intersectionByExactLocalizedName": 152,
   "normalizedCount": 169,
   "withRiotId": 152,
@@ -41,5 +41,5 @@
   "withReofferCooldownShops": 0,
   "criticalFieldsMissing": 17,
   "unresolvedCriticalConflicts": 6,
-  "unmatchedCount": 29
+  "unmatchedCount": 65
 }

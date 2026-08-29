@@ -1872,5 +1872,7 @@
       "blossom": null,
       "prismatic": null
     }
-  ]
+  ],
+  "declaredRecordCount": 200,
+  "parsedRecordCount": 200
 }

@@ -54,9 +54,10 @@ async function main() {
   const opggHtml = opggResponse.body;
   if (opggResponse.status < 200 || opggResponse.status >= 300) throw new Error(`${opggUrl}: HTTP ${opggResponse.status}`);
   const parsed = parseBrowserSnapshot('opgg', opggHtml);
-  if (parsed.records.length !== 200) throw new Error(`OP.GG extractor expected the page-declared 200 rows, got ${parsed.records.length}`);
   const categoryCounts = Object.fromEntries([...new Set(parsed.records.map(({ category }) => category!))].sort().map((category) => [category, parsed.records.filter((row) => row.category === category).length]));
-  const opggSnapshot = { sourceId: `opgg_set18_wisps_${retrievedAt.slice(0, 10).replaceAll('-', '')}`, url: opggUrl, retrievedAt, httpStatus: opggResponse.status, sha256: sha256(opggHtml), fetchStatus: 'fetched_and_extracted', recordCount: parsed.records.length, categoryCounts, records: parsed.records };
+  const categorySum = Object.values(categoryCounts).reduce((sum, count) => sum + count, 0);
+  if (categorySum !== parsed.declaredRecordCount) throw new Error(`OP.GG category sum ${categorySum} differs from declared count ${parsed.declaredRecordCount}`);
+  const opggSnapshot = { sourceId: `opgg_set18_wisps_${retrievedAt.slice(0, 10).replaceAll('-', '')}`, url: opggUrl, retrievedAt, httpStatus: opggResponse.status, sha256: sha256(opggHtml), fetchStatus: 'fetched_and_extracted', declaredRecordCount: parsed.declaredRecordCount, parsedRecordCount: parsed.records.length, recordCount: parsed.records.length, categoryCounts, records: parsed.records };
   await writeFile(resolve(raw, 'opgg-wisps-corpus.json'), `${JSON.stringify(opggSnapshot, null, 2)}\n`);
 
   const lolUrl = 'https://lolchess.gg/rewards/set18/wisps';

@@ -33,7 +33,7 @@
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "All OP.GG identities are extracted; the 31 additions require corpus-policy and required-field review before promotion."
+    "note": "Source counts are not treated as an intersection. Only strong identity matches establish overlap; corpus membership and production completeness are separate states."
   },
   {
     "conflictType": "category_counts",
@@ -67,7 +67,7 @@
     },
     "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
     "resolution": "needs_review",
-    "note": "Record-level matching found no category disagreement in the 169-row intersection; the aggregate difference comes from OP.GG-only rows."
+    "note": "Aggregate category differences are retained independently from identity matching."
   },
   {
     "conflictType": "blossom_coverage",
