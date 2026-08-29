@@ -1,13 +1,53 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v3",
+  "generatorVersion": "c2.1-v4",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
     "recordCount": 169
   },
   "queryExpansionGroups": [
+    {
+      "key": "ability_power_terms",
+      "canonicalTerm": "法术强度",
+      "conceptKeys": [
+        "ability_power"
+      ],
+      "aliases": [
+        {
+          "term": "法强",
+          "language": "zh"
+        },
+        {
+          "term": "法术强度",
+          "language": "zh"
+        }
+      ],
+      "evidence": "人工审核批准的低歧义中文缩写",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
+    },
+    {
+      "key": "attack_speed_terms",
+      "canonicalTerm": "攻击速度",
+      "conceptKeys": [
+        "attack_speed"
+      ],
+      "aliases": [
+        {
+          "term": "攻击速度",
+          "language": "zh"
+        },
+        {
+          "term": "攻速",
+          "language": "zh"
+        }
+      ],
+      "evidence": "人工审核批准的低歧义中文缩写",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
+    },
     {
       "key": "champion_duplicator_terms",
       "canonicalTerm": "Champion Duplicator",
@@ -24,15 +64,32 @@
           "language": "zh"
         },
         {
-          "term": "妮蔻",
-          "language": "game_slang"
+          "term": "英雄复制器",
+          "language": "zh"
         }
       ],
-      "evidence": "C2 canonical query vocabulary rule",
+      "evidence": "人工审核移除有英雄名歧义的旧俗称",
       "intrinsicRisks": [
         "clone_vs_duplicator"
       ],
       "reviewStatus": "needs_review"
+    },
+    {
+      "key": "death_terms",
+      "canonicalTerm": "阵亡",
+      "aliases": [
+        {
+          "term": "死亡",
+          "language": "zh"
+        },
+        {
+          "term": "阵亡",
+          "language": "zh"
+        }
+      ],
+      "evidence": "主体中立的死亡查询表达",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
     },
     {
       "key": "experience_terms",
@@ -42,15 +99,23 @@
       ],
       "aliases": [
         {
+          "term": "experience",
+          "language": "en"
+        },
+        {
           "term": "XP",
           "language": "en"
         },
         {
           "term": "经验",
           "language": "zh"
+        },
+        {
+          "term": "经验值",
+          "language": "zh"
         }
       ],
-      "evidence": "C2 canonical query vocabulary rule",
+      "evidence": "人工审核批准的经验查询表达",
       "intrinsicRisks": [],
       "reviewStatus": "draft_candidate"
     },
@@ -58,6 +123,10 @@
       "key": "health_terms",
       "canonicalTerm": "生命值",
       "aliases": [
+        {
+          "term": "health",
+          "language": "en"
+        },
         {
           "term": "HP",
           "language": "en"
@@ -78,6 +147,26 @@
       "reviewStatus": "needs_review"
     },
     {
+      "key": "kill_terms",
+      "canonicalTerm": "击杀",
+      "conceptKeys": [
+        "kill_takedown"
+      ],
+      "aliases": [
+        {
+          "term": "takedown",
+          "language": "en"
+        },
+        {
+          "term": "击杀",
+          "language": "zh"
+        }
+      ],
+      "evidence": "人工审核批准的击杀查询表达；不与死亡或处决合并",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
+    },
+    {
       "key": "reroll_terms",
       "canonicalTerm": "刷新",
       "conceptKeys": [
@@ -86,28 +175,43 @@
       ],
       "aliases": [
         {
-          "term": "D",
-          "language": "game_slang"
-        },
-        {
           "term": "reroll",
           "language": "en"
         },
         {
-          "term": "roll",
-          "language": "game_slang"
+          "term": "刷新",
+          "language": "zh"
         },
         {
-          "term": "刷新",
+          "term": "重随",
           "language": "zh"
         }
       ],
-      "evidence": "C2 canonical query vocabulary rule",
+      "evidence": "人工审核移除单字符及名称碰撞 alias",
       "intrinsicRisks": [
-        "single_letter_alias:D",
         "reroll_vs_refresh"
       ],
       "reviewStatus": "needs_review"
+    },
+    {
+      "key": "true_damage_terms",
+      "canonicalTerm": "真实伤害",
+      "conceptKeys": [
+        "true_damage"
+      ],
+      "aliases": [
+        {
+          "term": "真伤",
+          "language": "zh"
+        },
+        {
+          "term": "真实伤害",
+          "language": "zh"
+        }
+      ],
+      "evidence": "人工审核批准的低歧义中文缩写",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
     }
   ],
   "recordAliases": [],
@@ -121,11 +225,6 @@
     {
       "groupKey": "health_terms",
       "risk": "player_vs_unit_health",
-      "reviewStatus": "needs_review"
-    },
-    {
-      "groupKey": "reroll_terms",
-      "risk": "single_letter_alias:D",
       "reviewStatus": "needs_review"
     },
     {

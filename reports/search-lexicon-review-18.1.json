@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v3",
+  "generatorVersion": "c2.1-v4",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -9,16 +9,19 @@
   },
   "summary": {
     "recordsScanned": 169,
+    "taxonomyDefinitions": 39,
     "conceptCandidateAssignments": 250,
     "conceptKeysUsed": 36,
-    "queryExpansionGroups": 4,
+    "queryExpansionGroups": 9,
     "recordAliases": 0,
     "highConfidenceAssignments": 234,
     "needsReviewAssignments": 16,
     "reviewItems": 204,
     "uniqueWispsWithReviewItems": 89,
     "actualAliasCollisions": 0,
+    "intrinsicAliasRisks": 3,
     "riskyQueryExpansionGroups": 3,
+    "aliasLiteralOccurrences": 193,
     "reviewGroupCounts": {
       "player_vs_unit_health": 67,
       "death_kill_execute": 32,
@@ -2362,13 +2365,1133 @@
     },
     {
       "groupKey": "reroll_terms",
-      "risk": "single_letter_alias:D",
+      "risk": "reroll_vs_refresh",
       "reviewStatus": "needs_review"
+    }
+  ],
+  "aliasCorpusAudit": [
+    {
+      "groupKey": "ability_power_terms",
+      "alias": "法强",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "ability_power_terms",
+      "alias": "法术强度",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "attack_speed_terms",
+      "alias": "攻击速度",
+      "occurrences": [
+        {
+          "wispId": "da_18_backrowstar",
+          "field": "effects.normal",
+          "text": "1个随机后排弈子获得85%攻击速度，持续7秒。"
+        },
+        {
+          "wispId": "da_18_backrowstar",
+          "field": "effects.blossom",
+          "text": "1个随机后排弈子获得115%攻击速度，持续8秒。"
+        },
+        {
+          "wispId": "da_18_hummingbird",
+          "field": "effects.normal",
+          "text": "你攻击速度最高的那个单位变小，获得20%攻击速度。"
+        },
+        {
+          "wispId": "da_18_hummingbird",
+          "field": "effects.blossom",
+          "text": "你攻击速度最高的那个单位变小，获得35%攻击速度。"
+        },
+        {
+          "wispId": "da_18_hummingbird",
+          "field": "effects.prismatic",
+          "text": "你攻击速度最高的10个单位变小，获得100%攻击速度。"
+        },
+        {
+          "wispId": "da_18_killingfrenzy",
+          "field": "effects.normal",
+          "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。"
+        },
+        {
+          "wispId": "da_18_killingfrenzy",
+          "field": "effects.blossom",
+          "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。"
+        },
+        {
+          "wispId": "da_flow18",
+          "field": "effects.normal",
+          "text": "你的弈子们获得持续10秒的不可阻挡效果和15%攻击速度。"
+        },
+        {
+          "wispId": "da_flow18",
+          "field": "effects.blossom",
+          "text": "你的弈子们获得持续15秒的不可阻挡效果和15%攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackbag18",
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackbag18",
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackjar18",
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackjar18",
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknacksack18",
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknacksack18",
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_marksmensgale18",
+          "field": "effects.normal",
+          "text": "你【射手】的攻击提供3%可叠加的攻击速度。"
+        },
+        {
+          "wispId": "da_marksmensgale18",
+          "field": "effects.blossom",
+          "text": "你【射手】的攻击提供5%可叠加的攻击速度。"
+        },
+        {
+          "wispId": "da_quicken18",
+          "field": "effects.normal",
+          "text": "施放技能时，你的弈子们获得30%攻击速度，持续4秒。"
+        },
+        {
+          "wispId": "da_quicken18",
+          "field": "effects.blossom",
+          "text": "施放技能时，你的弈子们获得40%攻击速度，持续5秒。"
+        }
+      ],
+      "occurrenceCount": 19
+    },
+    {
+      "groupKey": "attack_speed_terms",
+      "alias": "攻速",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "champion_duplicator_terms",
+      "alias": "Champion Duplicator",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "champion_duplicator_terms",
+      "alias": "复制器",
+      "occurrences": [
+        {
+          "wispId": "da_18_fieldofmice",
+          "field": "effects.normal",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。"
+        },
+        {
+          "wispId": "da_18_fieldofmice",
+          "field": "effects.blossom",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。"
+        },
+        {
+          "wispId": "da_18_mitosis",
+          "field": "effects.normal",
+          "text": "获得1个【微型英雄复制器】。"
+        },
+        {
+          "wispId": "snapshot_120_cf0b477ffe00",
+          "field": "effects.normal",
+          "text": "失去3玩家生命值。获得1个【次级英雄复制器】。"
+        },
+        {
+          "wispId": "snapshot_157_3ed870773960",
+          "field": "effects.normal",
+          "text": "失去10玩家生命值。获得1个【英雄复制器】。"
+        }
+      ],
+      "occurrenceCount": 5
+    },
+    {
+      "groupKey": "champion_duplicator_terms",
+      "alias": "英雄复制器",
+      "occurrences": [
+        {
+          "wispId": "da_18_fieldofmice",
+          "field": "effects.normal",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。"
+        },
+        {
+          "wispId": "da_18_fieldofmice",
+          "field": "effects.blossom",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。"
+        },
+        {
+          "wispId": "da_18_mitosis",
+          "field": "effects.normal",
+          "text": "获得1个【微型英雄复制器】。"
+        },
+        {
+          "wispId": "snapshot_120_cf0b477ffe00",
+          "field": "effects.normal",
+          "text": "失去3玩家生命值。获得1个【次级英雄复制器】。"
+        },
+        {
+          "wispId": "snapshot_157_3ed870773960",
+          "field": "effects.normal",
+          "text": "失去10玩家生命值。获得1个【英雄复制器】。"
+        }
+      ],
+      "occurrenceCount": 5
+    },
+    {
+      "groupKey": "death_terms",
+      "alias": "死亡",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "death_terms",
+      "alias": "阵亡",
+      "occurrences": [
+        {
+          "wispId": "da_18_fertilize",
+          "field": "effects.normal",
+          "text": "每有1名阵亡的敌人，获得1经验值。"
+        },
+        {
+          "wispId": "da_18_fertilize",
+          "field": "effects.blossom",
+          "text": "每有1名阵亡的敌人，获得1经验值。获得2经验值。"
+        },
+        {
+          "wispId": "da_18_pocketchange",
+          "field": "effects.normal",
+          "text": "你的1星弈子们在阵亡时掉落1金币。"
+        },
+        {
+          "wispId": "da_18_pocketchange",
+          "field": "effects.blossom",
+          "text": "你的1星弈子们在阵亡时掉落1金币。获得1金币。"
+        },
+        {
+          "wispId": "da_18_propagate",
+          "field": "effects.normal",
+          "text": "获得第1名阵亡的友军的1个复制体。"
+        },
+        {
+          "wispId": "da_bigboom18",
+          "field": "effects.normal",
+          "text": "第一名阵亡的友军会产生爆炸，造成25%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_bigboom18",
+          "field": "effects.blossom",
+          "text": "最先阵亡的2名友军会产生爆炸，造成25%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_bloodandiron18",
+          "field": "effects.normal",
+          "text": "在20个弈子阵亡后，获得1个【基础装备锻造器】。"
+        },
+        {
+          "wispId": "da_bloodandiron18",
+          "field": "effects.blossom",
+          "text": "在16个弈子阵亡后，获得1个【基础装备锻造器】。"
+        },
+        {
+          "wispId": "da_combust18",
+          "field": "effects.normal",
+          "text": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_combust18",
+          "field": "effects.blossom",
+          "text": "你的弈子们在阵亡时产生爆炸，造成22%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_combust18",
+          "field": "effects.prismatic",
+          "text": "你的弈子们在阵亡时产生爆炸，造成100%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_killersregret18",
+          "field": "effects.normal",
+          "text": "你最先阵亡的3个弈子会将其击杀者晕眩1.5秒。"
+        },
+        {
+          "wispId": "da_killersregret18",
+          "field": "effects.blossom",
+          "text": "你最先阵亡的4个弈子会将其击杀者晕眩1.75秒。"
+        },
+        {
+          "wispId": "da_naturesally18",
+          "field": "effects.normal",
+          "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】。"
+        },
+        {
+          "wispId": "da_naturesally18",
+          "field": "effects.blossom",
+          "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】 有时会召唤出2星的版本。"
+        },
+        {
+          "wispId": "da_petrifieddummy18",
+          "field": "effects.normal",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。"
+        },
+        {
+          "wispId": "da_petrifieddummy18",
+          "field": "effects.blossom",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。"
+        },
+        {
+          "wispId": "da_revenge18",
+          "field": "effects.normal",
+          "text": "每当1名友军阵亡时，你的弈子们获得4%可叠加的伤害增幅。"
+        },
+        {
+          "wispId": "da_revenge18",
+          "field": "effects.blossom",
+          "text": "每当1名友军阵亡时，你的弈子们获得6%可叠加的伤害增幅。"
+        }
+      ],
+      "occurrenceCount": 20
+    },
+    {
+      "groupKey": "experience_terms",
+      "alias": "experience",
+      "occurrences": [
+        {
+          "wispId": "da_18_experienced",
+          "field": "nameEn",
+          "text": "Experienced"
+        }
+      ],
+      "occurrenceCount": 1
+    },
+    {
+      "groupKey": "experience_terms",
+      "alias": "XP",
+      "occurrences": [
+        {
+          "wispId": "da_18_experienced",
+          "field": "nameEn",
+          "text": "Experienced"
+        }
+      ],
+      "occurrenceCount": 1
+    },
+    {
+      "groupKey": "experience_terms",
+      "alias": "经验",
+      "occurrences": [
+        {
+          "wispId": "da_18_bronzespoon",
+          "field": "effects.normal",
+          "text": "获得4经验值。"
+        },
+        {
+          "wispId": "da_18_bronzespoon",
+          "field": "effects.blossom",
+          "text": "获得4经验值。"
+        },
+        {
+          "wispId": "da_18_experienced",
+          "field": "effects.normal",
+          "text": "获得2经验值。"
+        },
+        {
+          "wispId": "da_18_experienced",
+          "field": "effects.blossom",
+          "text": "获得2经验值。"
+        },
+        {
+          "wispId": "da_18_fertilize",
+          "field": "effects.normal",
+          "text": "每有1名阵亡的敌人，获得1经验值。"
+        },
+        {
+          "wispId": "da_18_fertilize",
+          "field": "effects.blossom",
+          "text": "每有1名阵亡的敌人，获得1经验值。获得2经验值。"
+        },
+        {
+          "wispId": "da_growup18",
+          "field": "effects.normal",
+          "text": "获得10经验值。"
+        },
+        {
+          "wispId": "da_growup18",
+          "field": "effects.blossom",
+          "text": "获得12经验值。"
+        },
+        {
+          "wispId": "da_slowstudy18",
+          "field": "effects.normal",
+          "text": "在15秒后，每有1名存活的友军，获得2经验值。"
+        },
+        {
+          "wispId": "da_slowstudy18",
+          "field": "effects.blossom",
+          "text": "在12秒后，每有1名存活的友军，获得2经验值。"
+        },
+        {
+          "wispId": "snapshot_048_cbc77e083fc2",
+          "field": "effects.normal",
+          "text": "如果你失败但至少击杀了1名敌人，获得4经验值。"
+        },
+        {
+          "wispId": "snapshot_147_2dc94df4e3a5",
+          "field": "effects.normal",
+          "text": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。"
+        }
+      ],
+      "occurrenceCount": 12
+    },
+    {
+      "groupKey": "experience_terms",
+      "alias": "经验值",
+      "occurrences": [
+        {
+          "wispId": "da_18_bronzespoon",
+          "field": "effects.normal",
+          "text": "获得4经验值。"
+        },
+        {
+          "wispId": "da_18_bronzespoon",
+          "field": "effects.blossom",
+          "text": "获得4经验值。"
+        },
+        {
+          "wispId": "da_18_experienced",
+          "field": "effects.normal",
+          "text": "获得2经验值。"
+        },
+        {
+          "wispId": "da_18_experienced",
+          "field": "effects.blossom",
+          "text": "获得2经验值。"
+        },
+        {
+          "wispId": "da_18_fertilize",
+          "field": "effects.normal",
+          "text": "每有1名阵亡的敌人，获得1经验值。"
+        },
+        {
+          "wispId": "da_18_fertilize",
+          "field": "effects.blossom",
+          "text": "每有1名阵亡的敌人，获得1经验值。获得2经验值。"
+        },
+        {
+          "wispId": "da_growup18",
+          "field": "effects.normal",
+          "text": "获得10经验值。"
+        },
+        {
+          "wispId": "da_growup18",
+          "field": "effects.blossom",
+          "text": "获得12经验值。"
+        },
+        {
+          "wispId": "da_slowstudy18",
+          "field": "effects.normal",
+          "text": "在15秒后，每有1名存活的友军，获得2经验值。"
+        },
+        {
+          "wispId": "da_slowstudy18",
+          "field": "effects.blossom",
+          "text": "在12秒后，每有1名存活的友军，获得2经验值。"
+        },
+        {
+          "wispId": "snapshot_048_cbc77e083fc2",
+          "field": "effects.normal",
+          "text": "如果你失败但至少击杀了1名敌人，获得4经验值。"
+        },
+        {
+          "wispId": "snapshot_147_2dc94df4e3a5",
+          "field": "effects.normal",
+          "text": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。"
+        }
+      ],
+      "occurrenceCount": 12
+    },
+    {
+      "groupKey": "health_terms",
+      "alias": "health",
+      "occurrences": [
+        {
+          "wispId": "da_healthpotion18_charm",
+          "field": "nameEn",
+          "text": "Health Potion"
+        }
+      ],
+      "occurrenceCount": 1
+    },
+    {
+      "groupKey": "health_terms",
+      "alias": "HP",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "health_terms",
+      "alias": "生命值",
+      "occurrences": [
+        {
+          "wispId": "da_18_fellowship",
+          "field": "effects.normal",
+          "text": "每有1名相邻的友军，弈子们就会获得4%最大生命值护盾和4%伤害增幅。"
+        },
+        {
+          "wispId": "da_18_fellowship",
+          "field": "effects.blossom",
+          "text": "每有1名相邻的友军，弈子们就会获得6%最大生命值护盾和6%伤害增幅。"
+        },
+        {
+          "wispId": "da_18_giantgrowth",
+          "field": "effects.normal",
+          "text": "你生命值最高的那个单位成长，获得750生命值。"
+        },
+        {
+          "wispId": "da_18_giantgrowth",
+          "field": "effects.blossom",
+          "text": "你生命值最高的2个单位成长，获得750生命值。"
+        },
+        {
+          "wispId": "da_18_killingfrenzy",
+          "field": "effects.normal",
+          "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。"
+        },
+        {
+          "wispId": "da_18_killingfrenzy",
+          "field": "effects.blossom",
+          "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。"
+        },
+        {
+          "wispId": "da_18_lifedebt",
+          "field": "effects.normal",
+          "text": "每失去12玩家生命值，获得1金币。"
+        },
+        {
+          "wispId": "da_18_lifedebt",
+          "field": "effects.blossom",
+          "text": "每失去12玩家生命值，获得1金币。然后治疗3生命值。"
+        },
+        {
+          "wispId": "da_18_lifedebt",
+          "field": "requirements[0].textZh",
+          "text": "已损失至少10点生命值"
+        },
+        {
+          "wispId": "da_18_lightningstorm",
+          "field": "effects.normal",
+          "text": "每过1秒，对1名敌人造成5%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstorm",
+          "field": "effects.blossom",
+          "text": "每过1秒，对1名敌人造成7%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstorm",
+          "field": "effects.prismatic",
+          "text": "每过0.15秒，对1名敌人造成5%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstrike",
+          "field": "effects.normal",
+          "text": "对所有敌人造成10%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstrike",
+          "field": "effects.blossom",
+          "text": "对所有敌人造成18%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_verdantvitality",
+          "field": "effects.normal",
+          "text": "你的弈子们获得50生命值。"
+        },
+        {
+          "wispId": "da_18_verdantvitality",
+          "field": "effects.blossom",
+          "text": "你的弈子们获得75生命值。"
+        },
+        {
+          "wispId": "da_bigboom18",
+          "field": "effects.normal",
+          "text": "第一名阵亡的友军会产生爆炸，造成25%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_bigboom18",
+          "field": "effects.blossom",
+          "text": "最先阵亡的2名友军会产生爆炸，造成25%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_borrowedgear18",
+          "field": "effects.blossom",
+          "text": "1个弈子获得1件临时推荐装备和250生命值。"
+        },
+        {
+          "wispId": "da_bulwark18",
+          "field": "effects.normal",
+          "text": "你的【坦克】在生命值降至50%时，会获得20%最大生命值护盾。"
+        },
+        {
+          "wispId": "da_bulwark18",
+          "field": "effects.blossom",
+          "text": "你的【坦克】在生命值降至50%时，会获得30%最大生命值护盾。"
+        },
+        {
+          "wispId": "da_combust18",
+          "field": "effects.normal",
+          "text": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_combust18",
+          "field": "effects.blossom",
+          "text": "你的弈子们在阵亡时产生爆炸，造成22%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_combust18",
+          "field": "effects.prismatic",
+          "text": "你的弈子们在阵亡时产生爆炸，造成100%最大生命值魔法伤害。"
+        },
+        {
+          "wispId": "da_diversified18",
+          "field": "effects.normal",
+          "text": "每有1个已激活的非唯一羁绊，你的队伍获得30生命值。"
+        },
+        {
+          "wispId": "da_diversified18",
+          "field": "effects.blossom",
+          "text": "每有1个已激活的非唯一羁绊，你的队伍获得45生命值。"
+        },
+        {
+          "wispId": "da_doodadbag18",
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的护甲与魔抗或生命值。"
+        },
+        {
+          "wispId": "da_doodadbag18",
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的护甲与魔抗或生命值。"
+        },
+        {
+          "wispId": "da_doodadjar18",
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的护甲与魔抗或生命值。"
+        },
+        {
+          "wispId": "da_doodadjar18",
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的护甲与魔抗或生命值。"
+        },
+        {
+          "wispId": "da_doodadsack18",
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的护甲与魔抗或生命值。"
+        },
+        {
+          "wispId": "da_doodadsack18",
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的护甲与魔抗或生命值。"
+        },
+        {
+          "wispId": "da_giantsaura18",
+          "field": "effects.normal",
+          "text": "你生命值最高的那名友军，每秒在一片区域内造成2%最大生命值伤害。"
+        },
+        {
+          "wispId": "da_giantsaura18",
+          "field": "effects.blossom",
+          "text": "你生命值最高的那名友军，每秒在一片区域内造成3%最大生命值伤害。"
+        },
+        {
+          "wispId": "da_giantsaura18",
+          "field": "effects.prismatic",
+          "text": "你生命值最高的那名友军，成为了一名极其危险的人物。"
+        },
+        {
+          "wispId": "da_heroofprophecy18",
+          "field": "requirements[1].textZh",
+          "text": "生命值高于50"
+        },
+        {
+          "wispId": "da_hugify18",
+          "field": "effects.normal",
+          "text": "你生命值最高的那个单位成长，获得350生命值。"
+        },
+        {
+          "wispId": "da_hugify18",
+          "field": "effects.blossom",
+          "text": "你生命值最高的那个单位成长，获得600生命值。"
+        },
+        {
+          "wispId": "da_hugify18",
+          "field": "effects.prismatic",
+          "text": "你生命值最高的10个单位成长，获得2500生命值。"
+        },
+        {
+          "wispId": "da_ironcore18",
+          "field": "effects.normal",
+          "text": "每有1个位于前排的单位，你前排中心的那个弈子就会获得6%最大生命值。"
+        },
+        {
+          "wispId": "da_ironcore18",
+          "field": "effects.blossom",
+          "text": "每有1个位于前排的单位，你前排中心的那个弈子就会获得8%最大生命值。"
+        },
+        {
+          "wispId": "da_ironwood18",
+          "field": "effects.normal",
+          "text": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低14%。"
+        },
+        {
+          "wispId": "da_ironwood18",
+          "field": "effects.blossom",
+          "text": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低20%。"
+        },
+        {
+          "wispId": "da_petrifieddummy18",
+          "field": "effects.normal",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。"
+        },
+        {
+          "wispId": "da_petrifieddummy18",
+          "field": "effects.blossom",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。"
+        },
+        {
+          "wispId": "da_solitudescloak18",
+          "field": "effects.normal",
+          "text": "邻格无友军的弈子们获得10%最大生命值和10%伤害增幅。"
+        },
+        {
+          "wispId": "da_solitudescloak18",
+          "field": "effects.blossom",
+          "text": "邻格无友军的弈子们获得15%最大生命值和15%伤害增幅。"
+        },
+        {
+          "wispId": "da_standalone18",
+          "field": "effects.normal",
+          "text": "独自处于所在排的弈子们获得15%生命值和15%伤害增幅。"
+        },
+        {
+          "wispId": "da_standalone18",
+          "field": "effects.blossom",
+          "text": "独自处于所在排的弈子们获得22%生命值和22%伤害增幅。"
+        },
+        {
+          "wispId": "da_standalone18",
+          "field": "effects.prismatic",
+          "text": "独自处于所在排的弈子们获得100%生命值和150%伤害增幅。"
+        },
+        {
+          "wispId": "snapshot_022_fc7538964718",
+          "field": "effects.normal",
+          "text": "失去4玩家生命值。获得2金币。"
+        },
+        {
+          "wispId": "snapshot_022_fc7538964718",
+          "field": "requirements[0].textZh",
+          "text": "处于高生命值"
+        },
+        {
+          "wispId": "snapshot_085_b53a01d778ee",
+          "field": "effects.normal",
+          "text": "获得5玩家生命值。"
+        },
+        {
+          "wispId": "snapshot_085_b53a01d778ee",
+          "field": "requirements[0].textZh",
+          "text": "已损失至少10点生命值"
+        },
+        {
+          "wispId": "snapshot_090_cf945e21ddef",
+          "field": "effects.normal",
+          "text": "你的队伍每秒治疗1%最大生命值。"
+        },
+        {
+          "wispId": "snapshot_120_cf0b477ffe00",
+          "field": "effects.normal",
+          "text": "失去3玩家生命值。获得1个【次级英雄复制器】。"
+        },
+        {
+          "wispId": "snapshot_120_cf0b477ffe00",
+          "field": "requirements[0].textZh",
+          "text": "处于高生命值"
+        },
+        {
+          "wispId": "snapshot_157_3ed870773960",
+          "field": "effects.normal",
+          "text": "失去10玩家生命值。获得1个【英雄复制器】。"
+        },
+        {
+          "wispId": "snapshot_157_3ed870773960",
+          "field": "requirements[0].textZh",
+          "text": "处于高生命值"
+        }
+      ],
+      "occurrenceCount": 59
+    },
+    {
+      "groupKey": "health_terms",
+      "alias": "血量",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "kill_terms",
+      "alias": "takedown",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "kill_terms",
+      "alias": "击杀",
+      "occurrences": [
+        {
+          "wispId": "da_18_bloodmoney",
+          "field": "effects.normal",
+          "text": "每击杀1个弈子，获得1金币。"
+        },
+        {
+          "wispId": "da_18_bloodmoney",
+          "field": "effects.blossom",
+          "text": "每击杀1个弈子，获得1金币。获得1金币。"
+        },
+        {
+          "wispId": "da_18_heatedrivalry",
+          "field": "effects.normal",
+          "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+3参与击杀数。"
+        },
+        {
+          "wispId": "da_18_heatedrivalry",
+          "field": "effects.blossom",
+          "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+7参与击杀数。"
+        },
+        {
+          "wispId": "da_18_killingfrenzy",
+          "field": "effects.normal",
+          "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。"
+        },
+        {
+          "wispId": "da_18_killingfrenzy",
+          "field": "effects.blossom",
+          "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。"
+        },
+        {
+          "wispId": "da_killersregret18",
+          "field": "effects.normal",
+          "text": "你最先阵亡的3个弈子会将其击杀者晕眩1.5秒。"
+        },
+        {
+          "wispId": "da_killersregret18",
+          "field": "effects.blossom",
+          "text": "你最先阵亡的4个弈子会将其击杀者晕眩1.75秒。"
+        },
+        {
+          "wispId": "da_natureswrath18",
+          "field": "effects.normal",
+          "text": "在10秒后，将所有未携带装备的单位击杀。"
+        },
+        {
+          "wispId": "da_natureswrath18",
+          "field": "effects.blossom",
+          "text": "在8秒后，将所有未携带装备的单位击杀。"
+        },
+        {
+          "wispId": "da_rollingbones18",
+          "field": "effects.normal",
+          "text": "每获得1次击杀，你都有50%几率获得1次免费刷新。"
+        },
+        {
+          "wispId": "da_rollingbones18",
+          "field": "effects.blossom",
+          "text": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。"
+        },
+        {
+          "wispId": "da_trophyhunter18",
+          "field": "effects.normal",
+          "text": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。"
+        },
+        {
+          "wispId": "snapshot_048_cbc77e083fc2",
+          "field": "effects.normal",
+          "text": "如果你失败但至少击杀了1名敌人，获得4经验值。"
+        }
+      ],
+      "occurrenceCount": 14
     },
     {
       "groupKey": "reroll_terms",
-      "risk": "reroll_vs_refresh",
-      "reviewStatus": "needs_review"
+      "alias": "reroll",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "reroll_terms",
+      "alias": "刷新",
+      "occurrences": [
+        {
+          "wispId": "da_18_allfives",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满5费弈子。"
+        },
+        {
+          "wispId": "da_18_allfives",
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满5费弈子。获得5金币。"
+        },
+        {
+          "wispId": "da_18_allfours",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满4费弈子。"
+        },
+        {
+          "wispId": "da_18_allfours",
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满4费弈子。获得2金币。"
+        },
+        {
+          "wispId": "da_18_allones",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满1费弈子。"
+        },
+        {
+          "wispId": "da_18_allones",
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满1费弈子。获得1金币。"
+        },
+        {
+          "wispId": "da_18_allthrees",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满3费弈子。"
+        },
+        {
+          "wispId": "da_18_allthrees",
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满3费弈子。获得2金币。"
+        },
+        {
+          "wispId": "da_18_alltwos",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2费弈子。"
+        },
+        {
+          "wispId": "da_18_alltwos",
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满2费弈子。获得1金币。"
+        },
+        {
+          "wispId": "da_18_freeroller",
+          "field": "nameZh",
+          "text": "免费刷新术"
+        },
+        {
+          "wispId": "da_18_freeroller",
+          "field": "effects.normal",
+          "text": "获得2次刷新。"
+        },
+        {
+          "wispId": "da_18_freeroller",
+          "field": "effects.blossom",
+          "text": "获得3次刷新。"
+        },
+        {
+          "wispId": "da_18_starfall",
+          "field": "effects.normal",
+          "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。"
+        },
+        {
+          "wispId": "da_18_starfall",
+          "field": "effects.blossom",
+          "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。"
+        },
+        {
+          "wispId": "da_abandonship18",
+          "field": "effects.normal",
+          "text": "出售你棋盘上和备战席的所有弈子，获得6金币和8次刷新。"
+        },
+        {
+          "wispId": "da_abandonship18",
+          "field": "effects.blossom",
+          "text": "出售你棋盘上和备战席的所有弈子，获得10金币和10次刷新。"
+        },
+        {
+          "wispId": "da_animateshop18",
+          "field": "effects.normal",
+          "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。"
+        },
+        {
+          "wispId": "da_animateshop18",
+          "field": "effects.blossom",
+          "text": "在26秒的持续时间里，你的商店每2秒免费刷新一次。"
+        },
+        {
+          "wispId": "da_beggarswisp18",
+          "field": "effects.normal",
+          "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。"
+        },
+        {
+          "wispId": "da_beggarswisp18",
+          "field": "effects.blossom",
+          "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得5金币。"
+        },
+        {
+          "wispId": "da_bordervillage18",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星2费弈子。"
+        },
+        {
+          "wispId": "da_flashfire18",
+          "field": "effects.normal",
+          "text": "刷新你的商店。【地狱火】引燃2个商店栏位，将其升级。"
+        },
+        {
+          "wispId": "da_flashfire18",
+          "field": "effects.blossom",
+          "text": "刷新你的商店。【地狱火】引燃3个商店栏位，将其升级。"
+        },
+        {
+          "wispId": "da_lucky718",
+          "field": "effects.normal",
+          "text": "获得7次商店刷新。"
+        },
+        {
+          "wispId": "da_lucky718",
+          "field": "effects.blossom",
+          "text": "获得10次商店刷新。"
+        },
+        {
+          "wispId": "da_lucky718",
+          "field": "effects.prismatic",
+          "text": "获得777次商店刷新。"
+        },
+        {
+          "wispId": "da_middlepath18",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星3费弈子。"
+        },
+        {
+          "wispId": "da_ridethewave18",
+          "field": "effects.normal",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。"
+        },
+        {
+          "wispId": "da_ridethewave18",
+          "field": "effects.blossom",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。"
+        },
+        {
+          "wispId": "da_rollingbones18",
+          "field": "effects.normal",
+          "text": "每获得1次击杀，你都有50%几率获得1次免费刷新。"
+        },
+        {
+          "wispId": "da_rollingbones18",
+          "field": "effects.blossom",
+          "text": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。"
+        },
+        {
+          "wispId": "da_rolypolys18",
+          "field": "effects.normal",
+          "text": "在18秒后，每有1名存活的友军，获得1次刷新。"
+        },
+        {
+          "wispId": "da_rolypolys18",
+          "field": "effects.blossom",
+          "text": "在16秒后，每有1名存活的友军，获得1次刷新。"
+        },
+        {
+          "wispId": "da_searchparty18",
+          "field": "effects.normal",
+          "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。"
+        },
+        {
+          "wispId": "da_startingtown18",
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星1费弈子。"
+        }
+      ],
+      "occurrenceCount": 36
+    },
+    {
+      "groupKey": "reroll_terms",
+      "alias": "重随",
+      "occurrences": [
+        {
+          "wispId": "da_refreshinglight18",
+          "field": "effects.normal",
+          "text": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。"
+        }
+      ],
+      "occurrenceCount": 1
+    },
+    {
+      "groupKey": "true_damage_terms",
+      "alias": "真伤",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "true_damage_terms",
+      "alias": "真实伤害",
+      "occurrences": [
+        {
+          "wispId": "da_18_lightningstorm",
+          "field": "effects.normal",
+          "text": "每过1秒，对1名敌人造成5%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstorm",
+          "field": "effects.blossom",
+          "text": "每过1秒，对1名敌人造成7%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstorm",
+          "field": "effects.prismatic",
+          "text": "每过0.15秒，对1名敌人造成5%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstrike",
+          "field": "effects.normal",
+          "text": "对所有敌人造成10%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_18_lightningstrike",
+          "field": "effects.blossom",
+          "text": "对所有敌人造成18%最大生命值真实伤害。"
+        },
+        {
+          "wispId": "da_blaze18",
+          "field": "effects.normal",
+          "text": "火焰席卷整个棋盘，对敌人造成持续递增的真实伤害。"
+        },
+        {
+          "wispId": "da_blaze18",
+          "field": "effects.blossom",
+          "text": "火焰席卷整个棋盘，对敌人造成更高的真实伤害。"
+        }
+      ],
+      "occurrenceCount": 7
     }
   ]
 }

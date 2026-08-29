@@ -6,11 +6,15 @@ export type SynonymGroups = readonly (readonly string[])[];
 
 // A deliberately small bootstrap vocabulary. The complete reviewed lexicon is a data-stage deliverable.
 export const BASE_SYNONYMS: SynonymGroups = [
-  ['生命值', '血量', 'hp'],
+  ['生命值', '血量', 'hp', 'health'],
   ['阵亡', '死亡'],
-  ['刷新', 'reroll', 'roll', 'd'],
-  ['经验', 'xp'],
-  ['复制器', '妮蔻', 'champion duplicator'],
+  ['击杀', 'takedown'],
+  ['刷新', '重随', 'reroll'],
+  ['经验', '经验值', 'xp', 'experience'],
+  ['复制器', '英雄复制器', 'champion duplicator'],
+  ['法术强度', '法强'],
+  ['攻击速度', '攻速'],
+  ['真实伤害', '真伤'],
 ];
 
 export function normalizeSearchText(value: string): string {

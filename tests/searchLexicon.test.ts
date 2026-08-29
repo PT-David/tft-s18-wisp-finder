@@ -65,11 +65,11 @@ describe('Stage C2.1 search lexicon generation', () => {
 
   it('does not confuse delayed triggers or buff durations with survival', () => {
     for (const id of ['da_18_radiantize', 'da_herosentrance18', 'da_natureswrath18']) {
-      expect(assignment(id, 'survival_duration')).toBeUndefined();
+      expect(assignment(id, 'survival_condition')).toBeUndefined();
       expect(assignment(id, 'delayed_trigger')).toBeDefined();
     }
-    expect(assignment('da_quicken18', 'survival_duration')).toBeUndefined();
-    expect(assignment('da_rolypolys18', 'survival_duration')).toBeDefined();
+    expect(assignment('da_quicken18', 'survival_condition')).toBeUndefined();
+    expect(assignment('da_rolypolys18', 'survival_condition')).toBeDefined();
   });
 
   it('retains evidence for every simple and compound Aftershock delayed trigger', () => {
@@ -116,7 +116,7 @@ describe('Stage C2.1 search lexicon generation', () => {
     ];
     expect(detectAliasCollisions(groups)).toEqual([{ alias: 'coin', groupKeys: ['gain', 'payment'], conceptKeys: ['gold_gain', 'gold_payment'], reviewStatus: 'needs_review' }]);
     expect(generated.synonymDraft.actualAliasCollisions).toEqual([]);
-    expect(generated.synonymDraft.intrinsicAliasRisks).toContainEqual({ groupKey: 'reroll_terms', risk: 'single_letter_alias:D', reviewStatus: 'needs_review' });
+    expect(generated.synonymDraft.intrinsicAliasRisks).not.toContainEqual(expect.objectContaining({ risk: 'single_letter_alias:D' }));
   });
 
   it('reports review workload metrics from the actual generated collections', () => {

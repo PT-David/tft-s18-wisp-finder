@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v3",
+  "generatorVersion": "c2.1-v4",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -75,7 +75,7 @@
     {
       "key": "crowd_control",
       "labelZh": "控制",
-      "description": "施加眩晕等群体控制。"
+      "description": "施加眩晕等控制效果。"
     },
     {
       "key": "delayed_trigger",
@@ -139,7 +139,7 @@
     {
       "key": "kill_takedown",
       "labelZh": "击杀或参与击杀",
-      "description": "明确的击杀、击倒或参与击杀语义。",
+      "description": "明确的击杀或参与击杀语义。",
       "riskGroup": "death_kill_execute"
     },
     {
@@ -178,8 +178,8 @@
     },
     {
       "key": "shop_price",
-      "labelZh": "商店售价",
-      "description": "商店中商品的金币价格或价格范围。",
+      "labelZh": "商店价格",
+      "description": "商店中商品的金币购买价格或价格范围。",
       "riskGroup": "gold_cost_vs_reward"
     },
     {
@@ -189,9 +189,9 @@
       "riskGroup": "reroll_vs_refresh"
     },
     {
-      "key": "survival_duration",
+      "key": "survival_condition",
       "labelZh": "存活结算",
-      "description": "明确按单位存活或存活友军数量触发。",
+      "description": "明确以单位是否存活、存活时间或存活友军数量作为效果触发或结算依据。",
       "riskGroup": "survival_vs_once_per_game"
     },
     {
@@ -202,8 +202,8 @@
     },
     {
       "key": "time_stage",
-      "labelZh": "回合或阶段条件",
-      "description": "由回合、阶段或准备阶段决定；不包含普通效果持续时间。"
+      "labelZh": "回合或阶段时机/条件",
+      "description": "描述回合、阶段或准备阶段的时机或条件；不包含普通效果持续时间。"
     },
     {
       "key": "trait_active",
@@ -1374,7 +1374,7 @@
     },
     {
       "wispId": "da_18_payday",
-      "conceptKey": "survival_duration",
+      "conceptKey": "survival_condition",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -4207,7 +4207,7 @@
     },
     {
       "wispId": "da_rolypolys18",
-      "conceptKey": "survival_duration",
+      "conceptKey": "survival_condition",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -4318,7 +4318,7 @@
     },
     {
       "wispId": "da_slowstudy18",
-      "conceptKey": "survival_duration",
+      "conceptKey": "survival_condition",
       "evidence": [
         {
           "field": "effects.blossom",

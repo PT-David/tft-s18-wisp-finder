@@ -49,11 +49,11 @@
 示例：
 
 - 生命值 / 血量 / HP
-- 复制器 / 妮蔻 / Champion Duplicator
+- 复制器 / 英雄复制器 / Champion Duplicator
 - 阵亡 / 死亡
-- 击杀 / 击倒 / takedown
-- 刷新 / D / reroll / roll
-- 经验 / XP
+- 击杀 / takedown
+- 刷新 / 重随 / reroll
+- 经验 / 经验值 / XP / experience
 
 同义词仅用于 query expansion，不强迫显示在卡片上。
 
@@ -92,7 +92,7 @@ production 数据；人工完成语义、碰撞及证据审核后，才能在 C2
 
 金币候选分别使用获得、实际支付/失去、当前金币条件和商店售价 concept。普通“在 N
 秒后”使用 delayed-trigger 语义；只有明确按存活或存活友军数量结算时才进入
-`survival_duration`，buff duration 不属于 survival 或 stage/time condition。
+`survival_condition`，buff duration 不属于 survival 或 stage/time condition。
 
 ## 5. 后续工作
 
@@ -103,3 +103,8 @@ production 数据；人工完成语义、碰撞及证据审核后，才能在 C2
 - 每个仙灵的 `searchConcepts[]`
 
 C2.1 draft 经人工审核后再进入 C2.2；不得直接把自动候选灌入 production 字段。
+
+人工审核结论维护在 `data/reviews/18.1/search-lexicon-decisions.json`，generator 不得覆盖。
+validator 将其 generator version 与 normalized input SHA 和当前 draft 对齐，过期结论必须重新确认。
+报告中的 `taxonomyDefinitions` 是完整 canonical key 定义数，`conceptKeysUsed` 仅是当前 production
+文本实际命中的 key 数，两者不得混用。
