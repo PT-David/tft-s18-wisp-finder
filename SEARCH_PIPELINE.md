@@ -106,5 +106,8 @@ C2.1 draft 经人工审核后再进入 C2.2；不得直接把自动候选灌入 
 
 人工审核结论维护在 `data/reviews/18.1/search-lexicon-decisions.json`，generator 不得覆盖。
 validator 将其 generator version 与 normalized input SHA 和当前 draft 对齐，过期结论必须重新确认。
+每个 generated query expansion group 必须恰好对应一条人工 decision。后续 assignment 审核记录使用
+`wispId`、`conceptKey`、`action`（approved / rejected / modified）和非空 `reason`；modified 还必须提供
+不同且合法的 `replacementConceptKey`。未实际审核 assignment 时数组保持为空。
 报告中的 `taxonomyDefinitions` 是完整 canonical key 定义数，`conceptKeysUsed` 仅是当前 production
 文本实际命中的 key 数，两者不得混用。

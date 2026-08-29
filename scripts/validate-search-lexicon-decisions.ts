@@ -5,7 +5,14 @@ export interface DecisionOverlay {
   policy: { precisionFirst: boolean };
   taxonomyDecisions: { action: string; key: string; fromKey?: string; reason: string }[];
   queryExpansionDecisions: { groupKey: string; approved: string[]; rejected: { alias: string; reason: string }[] }[];
-  assignmentDecisions: { wispId: string; conceptKey: string }[];
+  assignmentDecisions: AssignmentDecision[];
+}
+export interface AssignmentDecision {
+  wispId: string;
+  conceptKey: string;
+  action: 'approved' | 'rejected' | 'modified';
+  reason: string;
+  replacementConceptKey?: string;
 }
 interface Draft { patch: string; generatorVersion: string; input: { sha256: string }; taxonomy?: { key: string }[]; assignments?: { wispId: string; conceptKey: string }[]; queryExpansionGroups?: { key: string; aliases: { term: string }[] }[] }
 
@@ -21,10 +28,24 @@ export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Dr
     if (!taxonomy.has(item.key)) errors.push(`unknown taxonomy decision key: ${item.key}`);
     if (!item.reason) errors.push(`taxonomy decision lacks reason: ${item.key}`);
   }
-  const groups = new Map(synonyms.queryExpansionGroups?.map(group => [group.key, group]));
+  const normalizeGroupKey = (key: string) => key.normalize('NFKC').toLocaleLowerCase().trim();
+  const generatedGroups = synonyms.queryExpansionGroups ?? [];
+  const groups = new Map(generatedGroups.map(group => [normalizeGroupKey(group.key), group]));
+  const decisionGroupCounts = new Map<string, number>();
   for (const decision of decisions.queryExpansionDecisions ?? []) {
-    const group = groups.get(decision.groupKey);
-    if (!group) { errors.push(`unknown query expansion group: ${decision.groupKey}`); continue; }
+    const groupKey = normalizeGroupKey(decision.groupKey);
+    decisionGroupCounts.set(groupKey, (decisionGroupCounts.get(groupKey) ?? 0) + 1);
+  }
+  for (const group of generatedGroups) {
+    if (!decisionGroupCounts.has(normalizeGroupKey(group.key))) errors.push(`query expansion group has no manual review decision: ${group.key}`);
+  }
+  for (const [groupKey, count] of decisionGroupCounts) {
+    if (count > 1) errors.push(`duplicate query expansion group decision: ${groupKey}`);
+    if (!groups.has(groupKey)) errors.push(`unknown query expansion group: ${groupKey}`);
+  }
+  for (const decision of decisions.queryExpansionDecisions ?? []) {
+    const group = groups.get(normalizeGroupKey(decision.groupKey));
+    if (!group) continue;
     const approved = new Set(decision.approved.map(x => x.normalize('NFKC').toLocaleLowerCase()));
     const rejected = new Set<string>();
     for (const item of decision.rejected) {
@@ -39,7 +60,24 @@ export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Dr
     if (rejected.size !== decision.rejected.length) errors.push(`duplicate rejected alias: ${decision.groupKey}`);
   }
   const assignments = new Set(concepts.assignments?.map(x => `${x.wispId}\0${x.conceptKey}`));
-  for (const item of decisions.assignmentDecisions ?? []) if (!assignments.has(`${item.wispId}\0${item.conceptKey}`)) errors.push(`assignment decision not found in draft: ${item.wispId}/${item.conceptKey}`);
+  const assignmentDecisionKeys = new Set<string>();
+  for (const item of decisions.assignmentDecisions ?? []) {
+    const key = `${item.wispId}\0${item.conceptKey}`;
+    if (assignmentDecisionKeys.has(key)) errors.push(`duplicate assignment decision: ${item.wispId}/${item.conceptKey}`);
+    assignmentDecisionKeys.add(key);
+    if (!assignments.has(key)) errors.push(`assignment decision not found in draft: ${item.wispId}/${item.conceptKey}`);
+    if (!['approved', 'rejected', 'modified'].includes(item.action)) errors.push(`invalid assignment decision action: ${item.wispId}/${item.conceptKey}/${String(item.action)}`);
+    if (!item.reason?.trim()) errors.push(`assignment decision lacks reason: ${item.wispId}/${item.conceptKey}`);
+    if (item.action === 'modified') {
+      if (!item.replacementConceptKey) errors.push(`modified assignment decision requires replacementConceptKey: ${item.wispId}/${item.conceptKey}`);
+      else {
+        if (!taxonomy.has(item.replacementConceptKey)) errors.push(`unknown replacement taxonomy key: ${item.replacementConceptKey}`);
+        if (item.replacementConceptKey === item.conceptKey) errors.push(`replacement concept must differ from original: ${item.wispId}/${item.conceptKey}`);
+      }
+    } else if (item.replacementConceptKey !== undefined) {
+      errors.push(`${item.action} assignment decision must not have replacementConceptKey: ${item.wispId}/${item.conceptKey}`);
+    }
+  }
   return errors;
 }
 
