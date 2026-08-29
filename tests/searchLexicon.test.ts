@@ -72,6 +72,15 @@ describe('Stage C2.1 search lexicon generation', () => {
     expect(assignment('da_rolypolys18', 'survival_duration')).toBeDefined();
   });
 
+  it('retains evidence for every simple and compound Aftershock delayed trigger', () => {
+    const delayed = assignment('da_18_aftershock', 'delayed_trigger');
+    expect(delayed?.evidence.map(x => x.field)).toEqual(['effects.blossom', 'effects.normal']);
+    expect(delayed?.evidence.find(x => x.field === 'effects.blossom')).toMatchObject({
+      text: '在8和18秒后，晕眩所有敌人1.5秒。',
+      matchedTerms: ['在8和18秒后'],
+    });
+  });
+
   it('does not confuse generic copies with Champion Duplicators', () => {
     expect(assignment('da_18_fieldofmice', 'champion_duplicator')).toBeDefined();
     expect(assignment('snapshot_139_6fda4e76a4da', 'champion_duplicator')).toBeUndefined();

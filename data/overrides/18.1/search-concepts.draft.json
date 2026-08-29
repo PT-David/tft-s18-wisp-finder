@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v2",
+  "generatorVersion": "c2.1-v3",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -253,6 +253,13 @@
       "wispId": "da_18_aftershock",
       "conceptKey": "delayed_trigger",
       "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8和18秒后，晕眩所有敌人1.5秒。",
+          "matchedTerms": [
+            "在8和18秒后"
+          ]
+        },
         {
           "field": "effects.normal",
           "text": "在8秒后，晕眩所有敌人1.5秒。",

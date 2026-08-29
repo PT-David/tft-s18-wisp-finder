@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import type { Requirement, Wisp, WispDataset } from '../../../src/domain/types';
 
-export const GENERATOR_VERSION = 'c2.1-v2';
+export const GENERATOR_VERSION = 'c2.1-v3';
 export const INPUT_PATH = 'data/normalized/wisps_18.1.json';
 
 export type RiskGroup = 'player_vs_unit_health' | 'death_kill_execute' | 'item_semantics' |
@@ -63,7 +63,7 @@ const R: Rule[] = [
   { key: 'enemy_death', regex: /阵亡的敌人|敌人.*阵亡/ }, { key: 'execute_threshold', regex: /处决生命值低于\d+%|生命值低于\d+%.*处决/ },
   { key: 'kill_takedown', regex: /参与击杀|完成击杀|每(?:获得)?\d*次?击杀|至少击杀|将所有[^。]*击杀/ },
   { key: 'survival_duration', regex: /每有\d+名存活的友军|弈子在战斗中存活|存活(?:达到|至少|满)\d+秒/ },
-  { key: 'delayed_trigger', regex: /在\d+(?:\.\d+)?秒后/ },
+  { key: 'delayed_trigger', regex: /在\d+(?:\.\d+)?(?:(?:和|、)\d+(?:\.\d+)?)*秒后/ },
   { key: 'shield', regex: /护盾/ }, { key: 'attack_speed', regex: /攻击速度/ }, { key: 'ability_power', regex: /法术强度|法强/ },
   { key: 'attack_damage', regex: /攻击力/ }, { key: 'true_damage', regex: /真实伤害/ }, { key: 'crowd_control', regex: /晕眩|眩晕|控制/ },
   { key: 'item_component', regex: /基础装备|装备组件|散件/ }, { key: 'completed_item', regex: /成装|完整装备/ },
