@@ -1,0 +1,3813 @@
+{
+  "sourceId": "lolchess_set18_wisps_browser_import",
+  "url": "https://lolchess.gg/rewards/set18/wisps?utm_source=chatgpt.com",
+  "locale": "en",
+  "importedAt": "2026-08-29T11:22:31.117Z",
+  "retrievedAt": "2026-08-29T11:22:31.117Z",
+  "pageUpdatedAt": "August 28, 2026",
+  "sha256": "d1d6ad0bc28e4ccf5ef4ccb5815ac9effb694ff0b271088776ac08f0870ce2d8",
+  "fetchStatus": "browser_snapshot_imported",
+  "declaredRecordCount": null,
+  "parsedRecordCount": 174,
+  "recordCount": 174,
+  "fieldCoverage": {
+    "name": 174,
+    "cost": 174,
+    "normalEffect": 174,
+    "stageRanges": 174,
+    "blossom": 145,
+    "prismatic": 19,
+    "requirements": 60,
+    "oncePerGameConfirmed": 2,
+    "reofferCooldownShops": 0
+  },
+  "prismaticRecordCount": 19,
+  "records": [
+    {
+      "name": "Abandon Ship",
+      "nameEn": "Abandon Ship",
+      "cost": 0,
+      "effect": "Sell your board and bench, gain 6 gold and 8 rerolls.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Sell your board and bench, gain 10 gold and 10 rerolls.",
+      "prismatic": null,
+      "requirements": [
+        "no 3-star champion"
+      ]
+    },
+    {
+      "name": "Aftershock",
+      "nameEn": "Aftershock",
+      "cost": 2,
+      "effect": "After 8 seconds, stun all enemies for 1.5 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "After 8 and 18 seconds, stun all enemies for 1.5 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "All Fives",
+      "nameEn": "All Fives",
+      "cost": 10,
+      "effect": "Reroll your shop with all 5-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Reroll your shop with all 5-cost champions. Gain 5 gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 15 gold"
+      ]
+    },
+    {
+      "name": "All Fours",
+      "nameEn": "All Fours",
+      "cost": 4,
+      "effect": "Reroll your shop with all 4-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Reroll your shop with all 4-cost champions. Gain 2 gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 8 gold"
+      ]
+    },
+    {
+      "name": "All Ones",
+      "nameEn": "All Ones",
+      "cost": 0,
+      "effect": "Reroll your shop with all 1-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Reroll your shop with all 1-cost champions. Gain 1 Gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 5 gold"
+      ]
+    },
+    {
+      "name": "All Threes",
+      "nameEn": "All Threes",
+      "cost": 2,
+      "effect": "Reroll your shop with all 3-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Reroll your shop with all 3-cost champions. Gain 2 gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 5 gold"
+      ]
+    },
+    {
+      "name": "All Twos",
+      "nameEn": "All Twos",
+      "cost": 1,
+      "effect": "Reroll your shop with all 2-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Reroll your shop with all 2-cost champions. Gain 1 gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 5 gold"
+      ]
+    },
+    {
+      "name": "Animate Shop",
+      "nameEn": "Animate Shop",
+      "cost": 8,
+      "effect": "For 18 seconds, your shop rerolls for free every 2 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "For 26 seconds, your shop rerolls for free every 2 seconds.",
+      "prismatic": null,
+      "requirements": [
+        "at least 12 gold"
+      ]
+    },
+    {
+      "name": "Apprentice",
+      "nameEn": "Apprentice",
+      "cost": 3,
+      "effect": "Gain a random 2-star 1-cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Artifactinate",
+      "nameEn": "Artifactinate",
+      "cost": 2,
+      "effect": "Lose 3 components, including ones built into items. Gain an Artifact anvil.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Lose 3 components, including ones built into items. Gain an Artifact anvil and 1 Reforger.",
+      "prismatic": null,
+      "requirements": [
+        "at least 3 item components"
+      ]
+    },
+    {
+      "name": "Backrow Star",
+      "nameEn": "Backrow Star",
+      "cost": 3,
+      "effect": "A random back row champion gains 85% Attack Speed for 7 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "A random back row champion gains 115% Attack Speed for 8 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Bark Armor",
+      "nameEn": "Bark Armor",
+      "cost": 0,
+      "effect": "Your champions gain 150 shield for 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your champions gain 225 shield for 10 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Barrier",
+      "nameEn": "Barrier",
+      "cost": 4,
+      "effect": "Allies gain 1250 Shield, decaying over 6 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Allies gain 1250 Shield, decaying over 9 seconds.",
+      "prismatic": "Allies gain 7500 Shield, decaying over 30 seconds.",
+      "requirements": []
+    },
+    {
+      "name": "Barter",
+      "nameEn": "Barter",
+      "cost": 2,
+      "effect": "The next champion sold this round sells for 200% gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "The next champion sold this round sells for 250% gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Bear's Visit",
+      "nameEn": "Bear's Visit",
+      "cost": 3,
+      "effect": "Gain the Bear Primal buff for this combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain the Tiger Primal buff for this combat.",
+      "prismatic": null,
+      "requirements": [
+        "Primal trait active"
+      ]
+    },
+    {
+      "name": "Beggar's Wisp",
+      "nameEn": "Beggar's Wisp",
+      "cost": 0,
+      "effect": "The wilds couldn't find a wisp for you this roll. Gain 3 gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "The wilds couldn't find a wisp for you this roll. Gain 5 gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Big Boom",
+      "nameEn": "Big Boom",
+      "cost": 1,
+      "effect": "The first ally to die explodes, dealing 25% Max Health magic damage.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "The first 2 allies to die explode, dealing 25% Max Health magic damage.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Big Guns",
+      "nameEn": "Big Guns",
+      "cost": 8,
+      "effect": "Gain 2 random 1-star 4-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Blast Potion",
+      "nameEn": "Blast Potion",
+      "cost": 1,
+      "effect": "Gain a temporary equippable Blast Potion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a temporary equippable Radiant Blast Potion.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Blaze",
+      "nameEn": "Blaze",
+      "cost": 5,
+      "effect": "Fire spreads across the board, dealing true damage to enemies.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Fire spreads across the board, dealing more true damage to enemies.",
+      "prismatic": "Spread a raging fire across the board!",
+      "requirements": []
+    },
+    {
+      "name": "Blood and Iron",
+      "nameEn": "Blood and Iron",
+      "cost": 3,
+      "effect": "After 20 champion deaths, gain a component anvil.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "After 16 champion deaths, gain a component anvil.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Blood Money",
+      "nameEn": "Blood Money",
+      "cost": 2,
+      "effect": "Gain 1 gold for every champion you kill.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 1 gold for every champion you kill. Gain 1 gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Blood Ritual",
+      "nameEn": "Blood Ritual",
+      "cost": 6,
+      "effect": "Lose 10 Player Health. Gain a Champion Duplicator.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Lose 8 Player Health. Gain a Champion Duplicator.",
+      "prismatic": null,
+      "requirements": [
+        "at least 10 player health"
+      ],
+      "oncePerGame": true
+    },
+    {
+      "name": "Booster Shot",
+      "nameEn": "Booster Shot",
+      "cost": 6,
+      "effect": "Up to 2 1-star champions temporarily star up during combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Up to 3 1-star champions temporarily star up during combat.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more 1-star champions on board, or an itemized 5-cost"
+      ]
+    },
+    {
+      "name": "Border Village",
+      "nameEn": "Border Village",
+      "cost": 6,
+      "effect": "Reroll your shop with all 2-star 2-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Borrowed Gear",
+      "nameEn": "Borrowed Gear",
+      "cost": 1,
+      "effect": "A champion gains a temporary recommended item.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "A champion gains a temporary recommended item and 250 Health.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Bronze Spoon",
+      "nameEn": "Bronze Spoon",
+      "cost": 3,
+      "effect": "Gain 4 XP.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Bulwark",
+      "nameEn": "Bulwark",
+      "cost": 3,
+      "effect": "Your Tanks gain a 20% Max Health shield upon falling below 50% Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Tanks gain a 30% Max Health shield upon falling below 50% Health.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more tanks on board"
+      ]
+    },
+    {
+      "name": "Bunch-o'-Belts",
+      "nameEn": "Bunch-o'-Belts",
+      "cost": 2,
+      "effect": "Your allies gain 7 temporary, non-removable Giant's Belts.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your allies gain 10 temporary, non-removable Giant's Belts.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Circle of Elders",
+      "nameEn": "Circle of Elders",
+      "cost": 45,
+      "effect": "Gain one of each 5-cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Coin Flip",
+      "nameEn": "Coin Flip",
+      "cost": 0,
+      "effect": "Flip a coin, gain 1 gold if it's heads.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Flip 2 coins, gain 1 gold if it's heads.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Combust",
+      "nameEn": "Combust",
+      "cost": 5,
+      "effect": "Your champions explode on death, dealing 15% Max Health magic damage.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your champions explode on death, dealing 22% Max Health magic damage.",
+      "prismatic": "Your champions explode on death, dealing 100% Max Health magic damage.",
+      "requirements": []
+    },
+    {
+      "name": "Component Bounty",
+      "nameEn": "Component Bounty",
+      "cost": 4,
+      "effect": "If you win the next player combat, gain a random component.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Counterspell",
+      "nameEn": "Counterspell",
+      "cost": 2,
+      "effect": "Increase all enemies' Max Mana by 15 until their next cast.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Increase all enemies' Max Mana by 22 until their next cast.",
+      "prismatic": "Increase all enemies' Max Mana by 150 until their next cast.",
+      "requirements": []
+    },
+    {
+      "name": "Curio Cart",
+      "nameEn": "Curio Cart",
+      "cost": 0,
+      "effect": "Open an item store. Items cost 0 to 15 gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Open an item store. Items cost 0 to 15 gold. Gain 2 Gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 10 gold"
+      ]
+    },
+    {
+      "name": "Cutpurse",
+      "nameEn": "Cutpurse",
+      "cost": 3,
+      "effect": "Every 5 seconds, your champions have a 15% chance to drop 1 Gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Every 4 seconds, your champions have a 15% chance to drop 1 Gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Die Roll",
+      "nameEn": "Die Roll",
+      "cost": 2,
+      "effect": "Roll a six-sided die. Gain gold equal to the result.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Roll two six-sided dice. Gain gold equal to the result.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Diversified",
+      "nameEn": "Diversified",
+      "cost": 3,
+      "effect": "Your team gains 30 Health for each active non-unique trait.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your team gains 45 Health for each active non-unique trait.",
+      "prismatic": null,
+      "requirements": [
+        "at least 5 non-unique traits active"
+      ]
+    },
+    {
+      "name": "Doodad Bag",
+      "nameEn": "Doodad Bag",
+      "cost": 1,
+      "effect": "Gain 2 consumables that give permanent Armor and Magic Resist or Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 3 consumables that give permanent Armor and Magic Resist or Health.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Doodad Jar",
+      "nameEn": "Doodad Jar",
+      "cost": 0,
+      "effect": "Gain 1 consumable that gives permanent Armor and Magic Resist or Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 2 consumables that give permanent Armor and Magic Resist or Health.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Doodad Sack",
+      "nameEn": "Doodad Sack",
+      "cost": 3,
+      "effect": "Gain 3 consumables that give permanent Armor and Magic Resist or Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 4 consumables that give permanent Armor and Magic Resist or Health.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Downpour",
+      "nameEn": "Downpour",
+      "cost": 3,
+      "effect": "Your team gains 2 Mana Regen.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your team gains 3 Mana Regen.",
+      "prismatic": "Your team gains 15 Mana Regen.",
+      "requirements": []
+    },
+    {
+      "name": "Drought",
+      "nameEn": "Drought",
+      "cost": 1,
+      "effect": "Add 2 to your loss streak.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Add 3 to your loss streak.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Early Fix",
+      "nameEn": "Early Fix",
+      "cost": 0,
+      "effect": "Gain 1 Item Reforger.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 2 Item Reforgers.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Essence Theft",
+      "nameEn": "Essence Theft",
+      "cost": 1,
+      "effect": "Gain 50% bonus Coven Essence this combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 90% bonus Coven Essence this combat.",
+      "prismatic": null,
+      "requirements": [
+        "Coven trait active"
+      ]
+    },
+    {
+      "name": "Experienced",
+      "nameEn": "Experienced",
+      "cost": 1,
+      "effect": "Gain 2 XP.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Fellowship",
+      "nameEn": "Fellowship",
+      "cost": 4,
+      "effect": "Champions gain 4% Max Health Shield and 4% Damage Amp per adjacent ally.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Champions gain 6% Max Health Shield and 6% Damage Amp per adjacent ally.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Fertilize",
+      "nameEn": "Fertilize",
+      "cost": 1,
+      "effect": "Gain 1 XP for each enemy that dies.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Gain 1 XP for each enemy that dies. Gain 2 XP.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Field of Mice",
+      "nameEn": "Field of Mice",
+      "cost": 8,
+      "effect": "Gain a Tiny Champion Duplicator for each unique one-cost fielded last round.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain a Tiny Duplicator and a gold for each unique 1-cost champion you fielded last round.",
+      "prismatic": null,
+      "requirements": [
+        "5 or more 1-cost champions fielded last combat"
+      ]
+    },
+    {
+      "name": "Flash Fire",
+      "nameEn": "Flash Fire",
+      "cost": 2,
+      "effect": "Reroll your shop. Inferno lights 2 shop slots on fire, upgrading them.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Reroll your shop. Inferno lights 3 shop slots on fire, upgrading them.",
+      "prismatic": null,
+      "requirements": [
+        "Inferno trait active"
+      ]
+    },
+    {
+      "name": "Flip Frenzy",
+      "nameEn": "Flip Frenzy",
+      "cost": 1,
+      "effect": "Flip a coin, gain 1 gold if it's heads. Continue until you flip tails.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Flood",
+      "nameEn": "Flood",
+      "cost": 1,
+      "effect": "Add 1 to your win streak.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Add 2 to your win streak.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Flow",
+      "nameEn": "Flow",
+      "cost": 3,
+      "effect": "Your champions are Unstoppable and gain 15% Attack Speed for 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your champions are Unstoppable and gain 15% Attack Speed for 15 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Forest Guide",
+      "nameEn": "Forest Guide",
+      "cost": 5,
+      "effect": "Gain a random 4-cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Forest Mage",
+      "nameEn": "Forest Mage",
+      "cost": 1,
+      "effect": "Fill your shop with Wisps. You can only buy one.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Fill your shop with upgraded Wisps. You can only buy one.",
+      "prismatic": null,
+      "requirements": [
+        "during the first 8 seconds of planning"
+      ]
+    },
+    {
+      "name": "Forest Twins",
+      "nameEn": "Forest Twins",
+      "cost": 4,
+      "effect": "Gain 2 copies of a 2-cost champion you don't have.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 3 copies of a 2-cost champion you don't have.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Found Friend",
+      "nameEn": "Found Friend",
+      "cost": 0,
+      "effect": "Gain a temporary Training Dummy with a Giant's Belt.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a Training Dummy with a Sunfire Cape.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Freeroller",
+      "nameEn": "Freeroller",
+      "cost": 2,
+      "effect": "Gain 2 rerolls.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 3 rerolls.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Giant Growth",
+      "nameEn": "Giant Growth",
+      "cost": 4,
+      "effect": "Your highest Health unit grows, gaining 750 Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your 2 highest Health units grow, gaining 750 Health.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Giant's Aura",
+      "nameEn": "Giant's Aura",
+      "cost": 5,
+      "effect": "Your highest Health ally deals 2% max Health damage per second in an area.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your highest Health ally deals 3% max Health damage per second in an area.",
+      "prismatic": "Your highest Health ally becomes an absolute menace.",
+      "requirements": [
+        "at least 1 itemized tanks on board"
+      ]
+    },
+    {
+      "name": "Golden Goose",
+      "nameEn": "Golden Goose",
+      "cost": 1,
+      "effect": "Gain 1 gold for every 1700 damage your highest damage champion deals.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 1 gold for every 1000 damage your highest damage champion deals.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Golden Road",
+      "nameEn": "Golden Road",
+      "cost": 2,
+      "effect": "After 3 player combats, gain 2 Gold per fight won.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "After 3 player combats, gain 2 Gold per fight won plus 1 Gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Good Loss",
+      "nameEn": "Good Loss",
+      "cost": 5,
+      "effect": "For the next 3 player combats, gain 4 XP if you lose.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "For the next 3 player combats, gain 6 XP if you lose.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Grandmaster",
+      "nameEn": "Grandmaster",
+      "cost": 18,
+      "effect": "Gain a random 2-star 5-cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Greater Chaos",
+      "nameEn": "Greater Chaos",
+      "cost": 4,
+      "effect": "Cast 2 random Wisps.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Cast 2 random Wisps worth 2 or more gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Grow Up",
+      "nameEn": "Grow Up",
+      "cost": 7,
+      "effect": "Gain 10 XP.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 12 XP.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Hand Of Baron",
+      "nameEn": "Hand Of Baron",
+      "cost": 6,
+      "effect": "Your team gains Baron Buff, increasing their stats.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your team gains Baron Buff, greatly increasing their stats.",
+      "prismatic": null,
+      "requirements": [
+        "Riftbeast trait active"
+      ]
+    },
+    {
+      "name": "Healing Pool",
+      "nameEn": "Healing Pool",
+      "cost": 2,
+      "effect": "Heal 5 Player Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Heal 7 Player Health.",
+      "prismatic": null,
+      "requirements": [
+        "at least 10 missing player health"
+      ]
+    },
+    {
+      "name": "Health Potion",
+      "nameEn": "Health Potion",
+      "cost": 1,
+      "effect": "Gain a tempoary equippable Health Potion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a temporary equippable Radiant Health Potion.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Heated Rivalry",
+      "nameEn": "Heated Rivalry",
+      "cost": 3,
+      "effect": "Gain a Rengar or a Kha'Zix. They gain 3 takedowns.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a Rengar or a Kha'Zix. They gain 7 takedowns.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Hero Of Prophecy",
+      "nameEn": "Hero Of Prophecy",
+      "cost": 35,
+      "effect": "Gain a 5-cost champion. Gain them again each round FOREVER.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "at least 35 gold; at least 50 player health; level 10 or higher"
+      ],
+      "oncePerGame": true
+    },
+    {
+      "name": "Hero's Entrance",
+      "nameEn": "Hero's Entrance",
+      "cost": 4,
+      "effect": "After 8 seconds, the leftmost benched champion joins combat and gains 2 recommended items.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "After 5 seconds, the leftmost benched champion joins combat and gains 2 recommended items.",
+      "prismatic": null,
+      "requirements": [
+        "at least 1 champion on the bench"
+      ]
+    },
+    {
+      "name": "Heroic Sacrifice",
+      "nameEn": "Heroic Sacrifice",
+      "cost": 5,
+      "effect": "Your 3 strongest Champions gain HEROIC POWER, but other allies are sacrificed.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "2 or more champions with 3+ items"
+      ]
+    },
+    {
+      "name": "Hireling",
+      "nameEn": "Hireling",
+      "cost": 5,
+      "effect": "A temporary 1-star 5-cost with 1 recommended items joins your team.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "A temporary 1-star 5-cost with 2 recommended items joins your team.",
+      "prismatic": "3 temporary 2-star 5-costs with 2 recommended items each join your team.",
+      "requirements": []
+    },
+    {
+      "name": "Homing Fireflies",
+      "nameEn": "Homing Fireflies",
+      "cost": 2,
+      "effect": "Your Casters spawn a firefly per 20 Mana spent. Each deals 110 magic damage.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Casters spawn a firefly per 15 Mana spent. Each deals 110 magic damage.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more casters on board"
+      ]
+    },
+    {
+      "name": "Hugify",
+      "nameEn": "Hugify",
+      "cost": 1,
+      "effect": "Your highest Health unit grows, gaining 350 Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your highest Health unit grows, gaining 600 Health.",
+      "prismatic": "Your 10 highest Health units grow, gaining 2500 Health.",
+      "requirements": []
+    },
+    {
+      "name": "Hummingbird",
+      "nameEn": "Hummingbird",
+      "cost": 1,
+      "effect": "Your highest Attack Speed unit shrinks, gaining 20% Attack Speed.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your highest Attack Speed unit shrinks, gaining 35% Attack Speed.",
+      "prismatic": "Your 10 highest Attack Speed units shrink, gaining 100% Attack Speed.",
+      "requirements": []
+    },
+    {
+      "name": "Idle Craftsman",
+      "nameEn": "Idle Craftsman",
+      "cost": 4,
+      "effect": "A component on your bench turns into a completed item it builds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "at least 1 item components"
+      ]
+    },
+    {
+      "name": "Improved Reach",
+      "nameEn": "Improved Reach",
+      "cost": 2,
+      "effect": "Your Fighters gain 1 range.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Fighters gain 2 range.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more fighters on board; at least 1 itemized fighters on board"
+      ]
+    },
+    {
+      "name": "Infliction",
+      "nameEn": "Infliction",
+      "cost": 6,
+      "effect": "Slow, Burn, Shred, and Sunder enemies for 8 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Slow, Burn, Shred, and Sunder enemies for 12 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Iron Core",
+      "nameEn": "Iron Core",
+      "cost": 2,
+      "effect": "Your front center champion gains 6% Max Health per front-row unit.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your front center champion gains 8% Max Health per front-row unit.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Ironwood",
+      "nameEn": "Ironwood",
+      "cost": 3,
+      "effect": "Enemies attacking your highest health champion deal 14% less damage.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Enemies attacking your highest health champion deal 20% less damage.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Journeyman",
+      "nameEn": "Journeyman",
+      "cost": 6,
+      "effect": "Gain a random 2-star 2-cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Jungling",
+      "nameEn": "Jungling",
+      "cost": 4,
+      "effect": "Overrun the shop with Riftbeasts.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Riftbeast trait active"
+      ]
+    },
+    {
+      "name": "Killer's Regret",
+      "nameEn": "Killer's Regret",
+      "cost": 2,
+      "effect": "Your first 3 champions to die stun their killer for 1.5 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your first 4 champions to die stun their killer for 1.75 second.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Killing Frenzy",
+      "nameEn": "Killing Frenzy",
+      "cost": 3,
+      "effect": "Fighters execute targets under 12% Health. They gain 15% Attack Speed on kill.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Fighters execute targets under 15% Health. They gain 40% Attack Speed on kill.",
+      "prismatic": null,
+      "requirements": [
+        "at least 1 itemized fighters on board; 2 or more fighters on board"
+      ]
+    },
+    {
+      "name": "Knick-Knack Bag",
+      "nameEn": "Knick-Knack Bag",
+      "cost": 1,
+      "effect": "Gain 2 consumables that give permanent Attack Damage or Attack Speed.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 3 consumables that give permanent Attack Damage or Attack Speed.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Knick-Knack Jar",
+      "nameEn": "Knick-Knack Jar",
+      "cost": 0,
+      "effect": "Gain 1 consumable that gives permanent Attack Damage or Attack Speed.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 2 consumables that give permanent Attack Damage or Attack Speed.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Knick-Knack Sack",
+      "nameEn": "Knick-Knack Sack",
+      "cost": 3,
+      "effect": "Gain 3 consumables that give permanent Attack Damage or Attack Speed.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 4 consumables that give permanent Attack Damage or Attack Speed.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Late Bloomer",
+      "nameEn": "Late Bloomer",
+      "cost": 6,
+      "effect": "A temporary 3-star 1-cost joins your team.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "A temporary 3-star 1-cost with 1recommend item joins your team.",
+      "prismatic": "A squad of 5 temporary 4-star 1-costs joins your team.",
+      "requirements": []
+    },
+    {
+      "name": "Lesser Chaos",
+      "nameEn": "Lesser Chaos",
+      "cost": 1,
+      "effect": "Cast a random Wisp.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Cast a random Wisp worth 1 or more gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Life Debt",
+      "nameEn": "Life Debt",
+      "cost": 0,
+      "effect": "Gain 1 gold for every 12 missing Player Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 1 gold for every 12 missing Player Health. Then heal 3 Health.",
+      "prismatic": null,
+      "requirements": [
+        "at least 70 missing player health"
+      ]
+    },
+    {
+      "name": "Lightning Storm",
+      "nameEn": "Lightning Storm",
+      "cost": 5,
+      "effect": "Every 1 second deal 5% Max Health true damage to an enemy.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Every 1 seconds deal 7% Max Health true damage to an enemy.",
+      "prismatic": "Every 0.15 seconds deal 5% Max Health true damage to an enemy.",
+      "requirements": []
+    },
+    {
+      "name": "Lightning Strike",
+      "nameEn": "Lightning Strike",
+      "cost": 2,
+      "effect": "Deal 10% Max Health true damage to all enemies.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Deal 18% Max Health true damage to all enemies.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Living Soil",
+      "nameEn": "Living Soil",
+      "cost": 2,
+      "effect": "Every 4 seconds, roots stun an enemy for 1 second.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Every 4 seconds, roots stun 2 enemies for 1 second.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Lost Travelers",
+      "nameEn": "Lost Travelers",
+      "cost": 3,
+      "effect": "Gain 3 gold worth of random champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 4 gold worth of random champions.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Lucky 7",
+      "nameEn": "Lucky 7",
+      "cost": 7,
+      "effect": "Gain 7 shop rerolls.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 10 shop rerolls.",
+      "prismatic": "Gain 777 shop rerolls.",
+      "requirements": []
+    },
+    {
+      "name": "Major Gambit",
+      "nameEn": "Major Gambit",
+      "cost": 3,
+      "effect": "If you win the next player combat, gain 8 Gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "If you win next combat, gain 10 Gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Major Polymorph",
+      "nameEn": "Major Polymorph",
+      "cost": 0,
+      "effect": "A random 4-cost you own permanently transforms into a 5-cost.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "The highest star level 4-cost you own permanently transforms into a 5-cost.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Mana Potion",
+      "nameEn": "Mana Potion",
+      "cost": 1,
+      "effect": "Gain a temporary equippable Mana Potion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a temporary equippable Radiant Mana Potion.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Mana-Rich Soil",
+      "nameEn": "Mana-Rich Soil",
+      "cost": 3,
+      "effect": "Your Casters have 18% reduced Max Mana.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Casters have 25% reduced Max Mana.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more casters on board; at least 1 itemized casters on board"
+      ]
+    },
+    {
+      "name": "Marksmen's Gale",
+      "nameEn": "Marksmen's Gale",
+      "cost": 2,
+      "effect": "Your Marksmen's attacks grant 3% stacking Attack Speed.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Marksmen's attacks grant 5% stacking Attack Speed.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more marksmen on board; at least 1 itemized marksmen on board"
+      ]
+    },
+    {
+      "name": "Marksmen's Marks",
+      "nameEn": "Marksmen's Marks",
+      "cost": 3,
+      "effect": "Your Marksmen have a 30% chance to double attack.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Marksmen have a 45% chance to double attack.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more marksmen on board; at least 1 itemized marksmen on board"
+      ]
+    },
+    {
+      "name": "Mercenary Force",
+      "nameEn": "Mercenary Force",
+      "cost": 3,
+      "effect": "Gain 3% Damage Amp for every 10 gold you have.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 4.5% Damage Amp for every 10 gold you have.",
+      "prismatic": null,
+      "requirements": [
+        "at least 30 gold"
+      ]
+    },
+    {
+      "name": "Middle Path",
+      "nameEn": "Middle Path",
+      "cost": 6,
+      "effect": "Reroll your shop with all 2-star 3-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Minor Blood Ritual",
+      "nameEn": "Minor Blood Ritual",
+      "cost": 3,
+      "effect": "Lose 3 Player Health. Gain a Lesser Champion Duplicator.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Lose 1 Player Health. Gain a Lesser Champion Duplicator.",
+      "prismatic": null,
+      "requirements": [
+        "at least 3 player health"
+      ]
+    },
+    {
+      "name": "Minor Gambit",
+      "nameEn": "Minor Gambit",
+      "cost": 1,
+      "effect": "If you win the next player combat, gain 2 Gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "If you win the next player combat, gain 3 Gold.",
+      "prismatic": null,
+      "requirements": [
+        "Coven trait inactive"
+      ]
+    },
+    {
+      "name": "Minor Polymorph",
+      "nameEn": "Minor Polymorph",
+      "cost": 0,
+      "effect": "A random 1-cost you own permanently transforms into a 2-cost.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "The highest star level 1-cost you own permanently transforms into a 2-cost.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Mitosis",
+      "nameEn": "Mitosis",
+      "cost": 1,
+      "effect": "Gain a Tiny Champion Duplicator.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Moonlight Ritual",
+      "nameEn": "Moonlight Ritual",
+      "cost": 2,
+      "effect": "Your lowest star 1-cost or 2-cost champion stars up in combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your two lowest star 1-cost or 2-cost champions star up in combat.",
+      "prismatic": null,
+      "requirements": [
+        "at least 1 2-star 1 or 2-cost champion"
+      ]
+    },
+    {
+      "name": "Moonrise",
+      "nameEn": "Moonrise",
+      "cost": 2,
+      "effect": "After 8 seconds, increase Lunar's effects by 100%.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "After 8 seconds, increase Lunar's effects by 175%.",
+      "prismatic": null,
+      "requirements": [
+        "Lunar trait active"
+      ]
+    },
+    {
+      "name": "Nature's Ally",
+      "nameEn": "Nature's Ally",
+      "cost": 2,
+      "effect": "Every 3 ally deaths, summon a random Riftbeast.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Every 3 ally deaths, summon a random Riftbeast that's sometimes 2-star.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Nature's Wrath",
+      "nameEn": "Nature's Wrath",
+      "cost": 1,
+      "effect": "Kill EVERYONE without an item after 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Kill EVERYONE without an item after 8 seconds.",
+      "prismatic": null,
+      "requirements": [
+        "5 or more champions with 1+ items; Elderwood trait inactive"
+      ]
+    },
+    {
+      "name": "Payday",
+      "nameEn": "Payday",
+      "cost": 4,
+      "effect": "For each ally champion that survives combat, gain 2 Gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "For each ally champion that survives combat, gain 3 Gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Peddler",
+      "nameEn": "Peddler",
+      "cost": 0,
+      "effect": "Open a random item store. Random items cost 0 to 14 gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Open a random item store. Random items cost 0 to 14 gold. Gain 2 Gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 10 gold"
+      ]
+    },
+    {
+      "name": "Petrified Dummy",
+      "nameEn": "Petrified Dummy",
+      "cost": 2,
+      "effect": "Your first champion to die turns into a 900 Health dummy with their defenses.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your first champion to die turns into a 1350 Health dummy with their defenses.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Petrify Shields",
+      "nameEn": "Petrify Shields",
+      "cost": 2,
+      "effect": "10% Slow enemies and reduce their shields by 20% for 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        },
+        {
+          "start": {
+            "stage": 6,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "10% Slow enemies and reduce their shields by 30% for 10 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Phantom Armor",
+      "nameEn": "Phantom Armor",
+      "cost": 2,
+      "effect": "Gain a temporary Warmog's Armor.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a temporary The Indomitable.",
+      "prismatic": "Gain 6 temporary Radiant Warmog's Armors and 5 Removers.",
+      "requirements": []
+    },
+    {
+      "name": "Phantom Emblem",
+      "nameEn": "Phantom Emblem",
+      "cost": 3,
+      "effect": "Gain a temporary emblem of your most active trait.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Phantom Gloves",
+      "nameEn": "Phantom Gloves",
+      "cost": 3,
+      "effect": "Gain a temporary Thief's Gloves.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a temporary Mittens.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Phantom Splash",
+      "nameEn": "Phantom Splash",
+      "cost": 2,
+      "effect": "Combat start: Up to 2 inactive traits activate at the lowest level.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Combat Start: Up to 4 inactive traits activate at the lowest level.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Phantom Vest",
+      "nameEn": "Phantom Vest",
+      "cost": 2,
+      "effect": "Gain a temporary Bramble Vest.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain a temporary Aegis of Dawn.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Plated Shields",
+      "nameEn": "Plated Shields",
+      "cost": 2,
+      "effect": "Shields are 15% stronger. Allies gain 150 shield for 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Shields are 20% stronger. Allies gain 300 shield for 10 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Pocket Change",
+      "nameEn": "Pocket Change",
+      "cost": 1,
+      "effect": "Your one-star champions drop 1 gold on death.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your one-star champions drop 1 gold on death. Gain 1 gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Polymorph",
+      "nameEn": "Polymorph",
+      "cost": 0,
+      "effect": "A random 2-cost you own permanently transforms into a 3-cost.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "The highest star level 2-cost you own permanently transforms into a 3-cost.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Potioncraft",
+      "nameEn": "Potioncraft",
+      "cost": 3,
+      "effect": "Gain three temporary equippable Potions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain three temporary equippable Radiant Potions.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Potted Lifebloom",
+      "nameEn": "Potted Lifebloom",
+      "cost": 2,
+      "effect": "Gain a temporary Lifeblossom.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Elderwood trait active"
+      ]
+    },
+    {
+      "name": "Potted Stonebark",
+      "nameEn": "Potted Stonebark",
+      "cost": 2,
+      "effect": "Gain a temporary Stonebark Tree.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Elderwood trait active"
+      ]
+    },
+    {
+      "name": "Preppers",
+      "nameEn": "Preppers",
+      "cost": 2,
+      "effect": "Your stacking items start next combat partially stacked.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your stacking items start next combat extra stacked.",
+      "prismatic": null,
+      "requirements": [
+        "at least 2 stacking items"
+      ]
+    },
+    {
+      "name": "Prolific Power",
+      "nameEn": "Prolific Power",
+      "cost": 0,
+      "effect": "Your champions gain 4% Attack Damage and Ability Power.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your champions gain 6% Attack Damage and Ability Power.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Propagate",
+      "nameEn": "Propagate",
+      "cost": 2,
+      "effect": "Gain a copy of the first allied champion to die.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Quicken",
+      "nameEn": "Quicken",
+      "cost": 2,
+      "effect": "On cast, your champions gain 30% Attack Speed for 4 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "On cast, your champions gain 40% Attack Speed for 5 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Radiantize",
+      "nameEn": "Radiantize",
+      "cost": 4,
+      "effect": "After 8 seconds, 1 random equipped item temporarily becomes Radiant.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "After 5 seconds, 1 random equipped item temporarily becomes Radiant.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Rain",
+      "nameEn": "Rain",
+      "cost": 1,
+      "effect": "Your team gains 1 Mana Regen.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your team gains 2 Mana Regen.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Refreshing Light",
+      "nameEn": "Refreshing Light",
+      "cost": 6,
+      "effect": "Gain a free reroll per star level of each unique Solar champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Solar trait active"
+      ]
+    },
+    {
+      "name": "Regeneration",
+      "nameEn": "Regeneration",
+      "cost": 3,
+      "effect": "Your team heals 1% max Health per second.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Your team heals 2% max Health per second.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Resistant",
+      "nameEn": "Resistant",
+      "cost": 2,
+      "effect": "Tanks reduce instances of incoming damage by 10.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Tanks reduce instances of incoming damage by 18.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Revenge",
+      "nameEn": "Revenge",
+      "cost": 3,
+      "effect": "Whenever an ally dies, your champions gain 4% stacking Damage Amp.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Whenever an ally dies, your champions gain 6% stacking Damage Amp.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Ride the Wave",
+      "nameEn": "Ride the Wave",
+      "cost": 3,
+      "effect": "The next 2 rerolls this round will have 2+ champions fielded last combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "The next 3 rerolls this round will have 2+ champions fielded last combat.",
+      "prismatic": null,
+      "requirements": [
+        "during the first 20 seconds of planning; at least 20 gold"
+      ]
+    },
+    {
+      "name": "Rolling Bones",
+      "nameEn": "Rolling Bones",
+      "cost": 3,
+      "effect": "You have a 50% chance to get a free reroll with each kill.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "60% chance to get a reroll with each kill, and 1 more if you win.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Roly-Polys",
+      "nameEn": "Roly-Polys",
+      "cost": 4,
+      "effect": "For each ally champion alive after 18 seconds, gain a reroll.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "For each ally champion alive after 16 seconds, gain a reroll.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Salvager",
+      "nameEn": "Salvager",
+      "cost": 0,
+      "effect": "Any units you bench have items removed and broken apart.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Any units you bench have items removed and broken apart. Gain 2 Gold.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Scrappy",
+      "nameEn": "Scrappy",
+      "cost": 3,
+      "effect": "Combat start: 2 champions without items gain a temporary recommended item.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Combat Start: 3 champions without items gain a temporary recommended item.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Search Party",
+      "nameEn": "Search Party",
+      "cost": 3,
+      "effect": "Each of your shops has a 4-cost in it this round until you buy one.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "at least 10 gold"
+      ]
+    },
+    {
+      "name": "Sinister Deal",
+      "nameEn": "Sinister Deal",
+      "cost": 0,
+      "effect": "Lose 4 Player Health. Gain 2 Gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": "Lose 3 Player Health. Gain 3 Gold.",
+      "prismatic": null,
+      "requirements": [
+        "at least 4 player health"
+      ]
+    },
+    {
+      "name": "Slow Study",
+      "nameEn": "Slow Study",
+      "cost": 4,
+      "effect": "For each ally champion alive after 15 seconds, gain 2 XP.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "For each ally champion alive after 12 seconds, gain 2 XP.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Smurfing",
+      "nameEn": "Smurfing",
+      "cost": 7,
+      "effect": "Gain a random 5 cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain a random 5-cost champion.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Snacktime!",
+      "nameEn": "Snacktime!",
+      "cost": 2,
+      "effect": "The BFF eats enemies he damages under 16% Max Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "The BFF eats enemies he damages under 22% Max Health.",
+      "prismatic": null,
+      "requirements": [
+        "Sprykin trait active"
+      ]
+    },
+    {
+      "name": "Solar Gift",
+      "nameEn": "Solar Gift",
+      "cost": 6,
+      "effect": "Gain a Leona, Sejuani, and Kayle",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Solar trait active"
+      ]
+    },
+    {
+      "name": "Solitude's Cloak",
+      "nameEn": "Solitude's Cloak",
+      "cost": 3,
+      "effect": "Champions with no adjacent allies gain 10% Max Health and 10% Damage Amp.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Champions with no adjacent allies gain 15% Max Health and 15% Damage Amp.",
+      "prismatic": null,
+      "requirements": [
+        "Sunbeam and Moonbeam are inactive"
+      ]
+    },
+    {
+      "name": "Stand Alone",
+      "nameEn": "Stand Alone",
+      "cost": 3,
+      "effect": "Champions alone in their row gain 15% Health and 15% Damage Amp.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Champions alone in their row gain 22% Health and 22% Damage Amp.",
+      "prismatic": "Champions alone in their row gain 100% Health and 150% Damage Amp.",
+      "requirements": [
+        "Elderwood trait inactive; Lunar trait inactive; Greenfather trait inactive"
+      ]
+    },
+    {
+      "name": "Starfall",
+      "nameEn": "Starfall",
+      "cost": 1,
+      "effect": "The first 6 times you reroll your shop this round, the lowest cost champion becomes 2-star.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "The first 8 times you reroll your shop this round, the lowest cost champion becomes 2-star.",
+      "prismatic": null,
+      "requirements": [
+        "at least 10 gold"
+      ]
+    },
+    {
+      "name": "Starting Town",
+      "nameEn": "Starting Town",
+      "cost": 3,
+      "effect": "Reroll your shop with all 2-star 1-cost champions.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 3,
+            "round": 4
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Stealthy",
+      "nameEn": "Stealthy",
+      "cost": 0,
+      "effect": "Your 2 strongest Fighters or Assassins are untargetable for 6 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "2 random champions on the back row are untargetable for 10 seconds.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more fighters on board"
+      ]
+    },
+    {
+      "name": "Sunfire Sorcery",
+      "nameEn": "Sunfire Sorcery",
+      "cost": 2,
+      "effect": "Burn and Wound enemies for 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Burn and Wound enemies for 15 seconds.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Supercritical",
+      "nameEn": "Supercritical",
+      "cost": 3,
+      "effect": "Allies with Precision gain 25% Critical Strike Damage.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Allies with Precision gain 40% Critical Strike Damage.",
+      "prismatic": null,
+      "requirements": [
+        "at least 1 allied champion has Precision"
+      ]
+    },
+    {
+      "name": "Take One With Ya",
+      "nameEn": "Take One With Ya",
+      "cost": 1,
+      "effect": "If you lose and kill at least one enemy, gain 4 XP.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "If you lose and kill at least one enemy, gain 6 XP.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Tattered Armor",
+      "nameEn": "Tattered Armor",
+      "cost": 1,
+      "effect": "30% Shred and Sunder enemies for 10 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "30% Shred and Sunder enemies for 15 seconds.",
+      "prismatic": "90% Shred and Sunder enemies for 45 seconds.",
+      "requirements": []
+    },
+    {
+      "name": "Terraforming",
+      "nameEn": "Terraforming",
+      "cost": 2,
+      "effect": "Gain 7 seeds at start of combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 10 seeds at start of combat.",
+      "prismatic": null,
+      "requirements": [
+        "Greenfather trait active"
+      ]
+    },
+    {
+      "name": "Thingamajig Bag",
+      "nameEn": "Thingamajig Bag",
+      "cost": 1,
+      "effect": "Gain 2 consumables that give permanent Ability Power or Mana Regen.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 3 consumables that give permanent Ability Power or Mana Regen.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Thingamajig Jar",
+      "nameEn": "Thingamajig Jar",
+      "cost": 0,
+      "effect": "Gain 1 consumable that gives permanent Ability Power or Mana Regen.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 2 consumables that give permanent Ability Power or Mana Regen.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Thingamajig Sack",
+      "nameEn": "Thingamajig Sack",
+      "cost": 3,
+      "effect": "Gain 3 consumables that give permanent Ability Power or Mana Regen.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Gain 4 consumables that give permanent Ability Power or Mana Regen.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Three Me",
+      "nameEn": "Three Me",
+      "cost": 9,
+      "effect": "Gain a random 2-star 3-cost champion.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Tiger's Visit",
+      "nameEn": "Tiger's Visit",
+      "cost": 3,
+      "effect": "Gain the Tiger Primal buff for this combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Primal trait active"
+      ]
+    },
+    {
+      "name": "Training Yard",
+      "nameEn": "Training Yard",
+      "cost": 3,
+      "effect": "Gain 2 Training Dummies each with a random tank item.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 3 Training Dummies each with a random tank item.",
+      "prismatic": null,
+      "requirements": []
+    },
+    {
+      "name": "Treetop Archers",
+      "nameEn": "Treetop Archers",
+      "cost": 5,
+      "effect": "Archers fire from the trees, dealing 500 physical damage every 3 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Archers fire from the trees, dealing 900 physical damage every 3 seconds.",
+      "prismatic": "An implausible number of archers fire from the trees.",
+      "requirements": []
+    },
+    {
+      "name": "Tremors",
+      "nameEn": "Tremors",
+      "cost": 4,
+      "effect": "Every 8 seconds, Stun enemies for 1 second.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 5,
+            "round": 1
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Every 8 seconds, Stun enemies for 1.5 seconds.",
+      "prismatic": "Every 3 seconds, Stun enemies for 1.5 seconds.",
+      "requirements": []
+    },
+    {
+      "name": "Trophy Hunter",
+      "nameEn": "Trophy Hunter",
+      "cost": 2,
+      "effect": "Next player combat, your Rivals' takedowns count twice.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Rival trait active"
+      ]
+    },
+    {
+      "name": "Truce",
+      "nameEn": "Truce",
+      "cost": 0,
+      "effect": "Gain 1 gold. Your opponent gains 1 gold.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 2,
+            "round": 1
+          },
+          "end": {
+            "stage": 2,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Gain 2 gold. Your opponent gains 1 gold.",
+      "prismatic": "Gain 100 gold. Your opponent gains 1 gold.",
+      "requirements": []
+    },
+    {
+      "name": "Turtle's Visit",
+      "nameEn": "Turtle's Visit",
+      "cost": 3,
+      "effect": "Gain the Turtle Primal buff for this combat.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": null,
+      "prismatic": null,
+      "requirements": [
+        "Primal trait active"
+      ]
+    },
+    {
+      "name": "Ultra Ascension",
+      "nameEn": "Ultra Ascension",
+      "cost": 1,
+      "effect": "After 25 seconds, allies gain 300% Damage Amp.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "After 23 seconds, allies gain 300% Damage Amp.",
+      "prismatic": "After 12 seconds, allies gain 300% Damage Amp.",
+      "requirements": []
+    },
+    {
+      "name": "Verdant Vitality",
+      "nameEn": "Verdant Vitality",
+      "cost": 0,
+      "effect": "Your champions gain 50 Health.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your champions gain 75 Health.",
+      "prismatic": null,
+      "requirements": [
+        "less than 10 gold"
+      ]
+    },
+    {
+      "name": "Wrapped In Thorns",
+      "nameEn": "Wrapped In Thorns",
+      "cost": 2,
+      "effect": "Your Tanks reflect 12% of damage taken to adjacent enemies every 4 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "blossom": "Your Tanks reflect 18% of damage taken to adjacent enemies every 4 seconds.",
+      "prismatic": null,
+      "requirements": [
+        "2 or more tanks on board"
+      ]
+    },
+    {
+      "name": "Yordle Spirit",
+      "nameEn": "Yordle Spirit",
+      "cost": 3,
+      "effect": "Allies have a 99% chance to dodge attacks for 4 seconds.",
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "blossom": "Allies have a 99% chance to dodge attacks for 5 seconds.",
+      "prismatic": null,
+      "requirements": []
+    }
+  ]
+}
