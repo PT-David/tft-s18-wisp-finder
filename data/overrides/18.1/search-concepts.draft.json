@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v4",
+  "generatorVersion": "c2.1-v6",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -57,9 +57,14 @@
       "description": "直接获得弈子或使弈子加入队伍。"
     },
     {
+      "key": "champion_star_level",
+      "labelZh": "弈子星级",
+      "description": "涉及弈子的当前或指定星级、星级 Requirement、星级比较、按星级选择或计数，以及直接获得或召唤指定星级弈子。"
+    },
+    {
       "key": "champion_star_up",
       "labelZh": "弈子升星",
-      "description": "提升或指定弈子星级。"
+      "description": "现有弈子实际发生升星或星级提升动作。"
     },
     {
       "key": "champion_transform",
@@ -145,7 +150,7 @@
     {
       "key": "loss_streak",
       "labelZh": "连败",
-      "description": "由连败状态决定。"
+      "description": "涉及连败状态或连败计数。"
     },
     {
       "key": "player_health_gain",
@@ -174,7 +179,7 @@
     {
       "key": "shield",
       "labelZh": "护盾",
-      "description": "为弈子提供护盾。"
+      "description": "涉及提供、提升、削减护盾，或以护盾为作用对象。"
     },
     {
       "key": "shop_price",
@@ -218,7 +223,7 @@
     {
       "key": "win_streak",
       "labelZh": "连胜",
-      "description": "由连胜状态决定。"
+      "description": "涉及连胜状态或连胜计数。"
     },
     {
       "key": "xp_gain",
@@ -872,6 +877,28 @@
       "reviewFlags": []
     },
     {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。",
+          "matchedTerms": [
+            "上回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
+          "matchedTerms": [
+            "上回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
       "wispId": "da_18_forestmage",
       "conceptKey": "time_stage",
       "evidence": [
@@ -919,6 +946,28 @@
           "text": "获得2次刷新。",
           "matchedTerms": [
             "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_heatedrivalry",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+7参与击杀数。",
+          "matchedTerms": [
+            "获得1个【雷恩加尔】"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+3参与击杀数。",
+          "matchedTerms": [
+            "获得1个【雷恩加尔】"
           ]
         }
       ],
@@ -1256,6 +1305,21 @@
       "reviewFlags": []
     },
     {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的4费弈子永久变形为1个5费弈子。",
+          "matchedTerms": [
+            "星级"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
       "wispId": "da_18_mercenaryforce",
       "conceptKey": "gold_requirement",
       "evidence": [
@@ -1290,6 +1354,21 @@
           "text": "你拥有的1个随机1费弈子永久变形为1个2费弈子。",
           "matchedTerms": [
             "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的1费弈子永久变形为1个2费弈子。",
+          "matchedTerms": [
+            "星级"
           ]
         }
       ],
@@ -1396,6 +1475,37 @@
     },
     {
       "wispId": "da_18_pocketchange",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的1星弈子们在阵亡时掉落1金币。获得1金币。",
+          "matchedTerms": [
+            "1星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的1星弈子们在阵亡时掉落1金币。",
+          "matchedTerms": [
+            "1星"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有至少2个1星弈子",
+          "matchedTerms": [
+            "1星"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_pocketchange",
       "conceptKey": "gold_gain",
       "evidence": [
         {
@@ -1432,6 +1542,65 @@
           "text": "你拥有的1个随机2费弈子永久变形为1个3费弈子。",
           "matchedTerms": [
             "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的2费弈子永久变形为1个3费弈子。",
+          "matchedTerms": [
+            "星级"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKey": "ability_power",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们获得6%物理加成和法术加成。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们获得4%物理加成和法术加成。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKey": "attack_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们获得6%物理加成和法术加成。",
+          "matchedTerms": [
+            "物理加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们获得4%物理加成和法术加成。",
+          "matchedTerms": [
+            "物理加成"
           ]
         }
       ],
@@ -1487,14 +1656,14 @@
           "field": "effects.blossom",
           "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
           "matchedTerms": [
-            "变为2星"
+            "会变为2星"
           ]
         },
         {
           "field": "effects.normal",
           "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
           "matchedTerms": [
-            "变为2星"
+            "会变为2星"
           ]
         }
       ],
@@ -1517,6 +1686,28 @@
           "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
           "matchedTerms": [
             "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "这回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "这回合"
           ]
         }
       ],
@@ -1636,7 +1827,7 @@
     },
     {
       "wispId": "da_abandonship18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "requirements[0].textZh",
@@ -1805,7 +1996,7 @@
     },
     {
       "wispId": "da_apprentice18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -1984,6 +2175,28 @@
       "reviewFlags": []
     },
     {
+      "wispId": "da_barter18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在本回合内，你下次出售的弈子将以250%金币卖出。",
+          "matchedTerms": [
+            "本回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你下次出售的弈子将以200%金币卖出。",
+          "matchedTerms": [
+            "本回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
       "wispId": "da_beggarswisp18",
       "conceptKey": "gold_gain",
       "evidence": [
@@ -2051,6 +2264,21 @@
           "text": "获得2个随机1星4费弈子。",
           "matchedTerms": [
             "获得2个随机1星4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得2个随机1星4费弈子。",
+          "matchedTerms": [
+            "1星"
           ]
         }
       ],
@@ -2142,20 +2370,51 @@
     },
     {
       "wispId": "da_boostershot18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.blossom",
           "text": "至多3个1星弈子会在战斗期间暂时升星。",
           "matchedTerms": [
-            "升星"
+            "1星"
           ]
         },
         {
           "field": "effects.normal",
           "text": "至多2个1星弈子会在战斗期间暂时升星。",
           "matchedTerms": [
-            "升星"
+            "1星"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有2个1星弈子，或1个满装备的5费弈子",
+          "matchedTerms": [
+            "1星"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "至多3个1星弈子会在战斗期间暂时升星。",
+          "matchedTerms": [
+            "暂时升星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "至多2个1星弈子会在战斗期间暂时升星。",
+          "matchedTerms": [
+            "暂时升星"
           ]
         }
       ],
@@ -2196,7 +2455,7 @@
     },
     {
       "wispId": "da_bordervillage18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -2703,7 +2962,7 @@
     },
     {
       "wispId": "da_grandmaster18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -2959,8 +3218,15 @@
     },
     {
       "wispId": "da_hireling18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "1个携带着2件推荐装备的临时1星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "1星"
+          ]
+        },
         {
           "field": "effects.normal",
           "text": "1个携带着1件推荐装备的临时5星1费弈子加入你的队伍。",
@@ -3133,7 +3399,7 @@
     },
     {
       "wispId": "da_journeyman18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -3209,6 +3475,28 @@
     },
     {
       "wispId": "da_knickknackbag18",
+      "conceptKey": "attack_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "物理加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "物理加成"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_knickknackbag18",
       "conceptKey": "attack_speed",
       "evidence": [
         {
@@ -3231,6 +3519,28 @@
     },
     {
       "wispId": "da_knickknackjar18",
+      "conceptKey": "attack_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "物理加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "物理加成"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_knickknackjar18",
       "conceptKey": "attack_speed",
       "evidence": [
         {
@@ -3245,6 +3555,28 @@
           "text": "获得1个消耗品，其能提供永久的物理加成或攻击速度。",
           "matchedTerms": [
             "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_knickknacksack18",
+      "conceptKey": "attack_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "物理加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "物理加成"
           ]
         }
       ],
@@ -3333,7 +3665,7 @@
     },
     {
       "wispId": "da_latebloomer18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -3540,7 +3872,7 @@
     },
     {
       "wispId": "da_middlepath18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -3601,20 +3933,20 @@
     },
     {
       "wispId": "da_moonlightritual18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.blossom",
           "text": "在战斗期间，你最低星级的2个1费或2费弈子将会升星。",
           "matchedTerms": [
-            "升星"
+            "星级"
           ]
         },
         {
           "field": "effects.normal",
           "text": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
           "matchedTerms": [
-            "升星"
+            "星级"
           ]
         },
         {
@@ -3625,6 +3957,28 @@
           ],
           "requirementIndex": 0,
           "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在战斗期间，你最低星级的2个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "将会升星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "将会升星"
+          ]
         }
       ],
       "confidence": "candidate_high_confidence",
@@ -3654,7 +4008,7 @@
     },
     {
       "wispId": "da_naturesally18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -4014,6 +4368,51 @@
     },
     {
       "wispId": "da_refreshinglight18",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
+          "matchedTerms": [
+            "1星级"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "free_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
+          "matchedTerms": [
+            "免费重随"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
+          "matchedTerms": [
+            "免费重随"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_refreshinglight18",
       "conceptKey": "trait_active",
       "evidence": [
         {
@@ -4096,6 +4495,20 @@
       "wispId": "da_ridethewave18",
       "conceptKey": "time_stage",
       "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。",
+          "matchedTerms": [
+            "本回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。",
+          "matchedTerms": [
+            "本回合"
+          ]
+        },
         {
           "field": "requirements[0].textZh",
           "text": "准备阶段的前20秒内",
@@ -4295,6 +4708,21 @@
       "reviewFlags": []
     },
     {
+      "wispId": "da_searchparty18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+          "matchedTerms": [
+            "本回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
       "wispId": "da_slowstudy18",
       "conceptKey": "delayed_trigger",
       "evidence": [
@@ -4406,6 +4834,21 @@
     },
     {
       "wispId": "da_solargift18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个【蕾欧娜】、1个【瑟庄妮】和1个【凯尔】。",
+          "matchedTerms": [
+            "获得1个【蕾欧娜】"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_solargift18",
       "conceptKey": "trait_active",
       "evidence": [
         {
@@ -4473,7 +4916,7 @@
     },
     {
       "wispId": "da_startingtown18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -4519,6 +4962,72 @@
       "reviewFlags": []
     },
     {
+      "wispId": "da_thingamajigbag18",
+      "conceptKey": "ability_power",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_thingamajigjar18",
+      "conceptKey": "ability_power",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_thingamajigsack18",
+      "conceptKey": "ability_power",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的法术加成或法力回复。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
+          "matchedTerms": [
+            "法术加成"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
       "wispId": "da_threeme18",
       "conceptKey": "champion_cost_tier",
       "evidence": [
@@ -4550,7 +5059,7 @@
     },
     {
       "wispId": "da_threeme18",
-      "conceptKey": "champion_star_up",
+      "conceptKey": "champion_star_level",
       "evidence": [
         {
           "field": "effects.normal",
@@ -5078,6 +5587,36 @@
           ],
           "requirementIndex": 0,
           "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
+          "matchedTerms": [
+            "下一个玩家对战回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
+          "matchedTerms": [
+            "接下来的3场玩家对战回合"
+          ]
         }
       ],
       "confidence": "candidate_high_confidence",

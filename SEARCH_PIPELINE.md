@@ -94,6 +94,14 @@ production 数据；人工完成语义、碰撞及证据审核后，才能在 C2
 秒后”使用 delayed-trigger 语义；只有明确按存活或存活友军数量结算时才进入
 `survival_condition`，buff duration 不属于 survival 或 stage/time condition。
 
+`champion_star_up` 只表示现有弈子实际发生升星或星级提升动作；静态星级、星级
+Requirement，以及直接获得或召唤指定星级弈子的表达使用 `champion_star_level`。裸
+`N星` 不得自动推导出升星动作。`time_stage` 覆盖上/本/这/每/下一回合、玩家对战回合、
+准备阶段和明确的第 N 回合，但不收录“持续 N 秒”“每 N 秒”或“在 N 秒后”。
+
+`shield` 是泛化的护盾相关概念，覆盖提供、提升、削减护盾以及以护盾为作用对象；
+`win_streak` 与 `loss_streak` 分别覆盖对应状态和计数，不只表示由状态决定的条件。
+
 ## 5. 后续工作
 
 使用完整 18.1 仙灵文本实际生成第一版：
@@ -110,4 +118,5 @@ validator 将其 generator version 与 normalized input SHA 和当前 draft 对�
 `wispId`、`conceptKey`、`action`（approved / rejected / modified）和非空 `reason`；modified 还必须提供
 不同且合法的 `replacementConceptKey`。未实际审核 assignment 时数组保持为空。
 报告中的 `taxonomyDefinitions` 是完整 canonical key 定义数，`conceptKeysUsed` 仅是当前 production
-文本实际命中的 key 数，两者不得混用。
+文本实际命中的 key 数，两者不得混用。`assignmentsByConcept` 按 concept key 稳定排序，供人工逐项
+审核时直接核对各 concept 的 assignment 数量。

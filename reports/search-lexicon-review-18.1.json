@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v4",
+  "generatorVersion": "c2.1-v6",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -9,19 +9,61 @@
   },
   "summary": {
     "recordsScanned": 169,
-    "taxonomyDefinitions": 39,
-    "conceptCandidateAssignments": 250,
-    "conceptKeysUsed": 36,
-    "queryExpansionGroups": 9,
+    "taxonomyDefinitions": 40,
+    "conceptCandidateAssignments": 276,
+    "conceptKeysUsed": 39,
+    "assignmentsByConcept": {
+      "ability_power": 4,
+      "ally_death": 5,
+      "artifact_item": 1,
+      "attack_damage": 4,
+      "attack_speed": 9,
+      "board_composition": 10,
+      "champion_cost_tier": 27,
+      "champion_duplicator": 4,
+      "champion_obtain": 13,
+      "champion_star_level": 19,
+      "champion_star_up": 3,
+      "champion_transform": 1,
+      "completed_item": 2,
+      "crowd_control": 4,
+      "delayed_trigger": 8,
+      "enemy_death": 1,
+      "execute_threshold": 1,
+      "free_reroll": 4,
+      "gold_gain": 25,
+      "gold_payment": 0,
+      "gold_requirement": 6,
+      "item_component": 4,
+      "item_requirement": 10,
+      "item_shop": 2,
+      "kill_takedown": 7,
+      "loss_streak": 6,
+      "player_health_gain": 2,
+      "player_health_loss": 4,
+      "player_health_threshold": 6,
+      "reforger": 2,
+      "shield": 6,
+      "shop_price": 2,
+      "shop_reroll": 20,
+      "survival_condition": 3,
+      "temporary_item": 12,
+      "time_stage": 10,
+      "trait_active": 14,
+      "true_damage": 3,
+      "win_streak": 5,
+      "xp_gain": 7
+    },
+    "queryExpansionGroups": 10,
     "recordAliases": 0,
-    "highConfidenceAssignments": 234,
+    "highConfidenceAssignments": 260,
     "needsReviewAssignments": 16,
     "reviewItems": 204,
     "uniqueWispsWithReviewItems": 89,
     "actualAliasCollisions": 0,
     "intrinsicAliasRisks": 3,
     "riskyQueryExpansionGroups": 3,
-    "aliasLiteralOccurrences": 193,
+    "aliasLiteralOccurrences": 209,
     "reviewGroupCounts": {
       "player_vs_unit_health": 67,
       "death_kill_execute": 32,
@@ -2378,9 +2420,109 @@
     },
     {
       "groupKey": "ability_power_terms",
+      "alias": "法术加成",
+      "occurrences": [
+        {
+          "wispId": "da_18_prolificpower",
+          "field": "effects.normal",
+          "text": "你的弈子们获得4%物理加成和法术加成。"
+        },
+        {
+          "wispId": "da_18_prolificpower",
+          "field": "effects.blossom",
+          "text": "你的弈子们获得6%物理加成和法术加成。"
+        },
+        {
+          "wispId": "da_thingamajigbag18",
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的法术加成或法力回复。"
+        },
+        {
+          "wispId": "da_thingamajigbag18",
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的法术加成或法力回复。"
+        },
+        {
+          "wispId": "da_thingamajigjar18",
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的法术加成或法力回复。"
+        },
+        {
+          "wispId": "da_thingamajigjar18",
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的法术加成或法力回复。"
+        },
+        {
+          "wispId": "da_thingamajigsack18",
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的法术加成或法力回复。"
+        },
+        {
+          "wispId": "da_thingamajigsack18",
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的法术加成或法力回复。"
+        }
+      ],
+      "occurrenceCount": 8
+    },
+    {
+      "groupKey": "ability_power_terms",
       "alias": "法术强度",
       "occurrences": [],
       "occurrenceCount": 0
+    },
+    {
+      "groupKey": "attack_damage_terms",
+      "alias": "攻击力",
+      "occurrences": [],
+      "occurrenceCount": 0
+    },
+    {
+      "groupKey": "attack_damage_terms",
+      "alias": "物理加成",
+      "occurrences": [
+        {
+          "wispId": "da_18_prolificpower",
+          "field": "effects.normal",
+          "text": "你的弈子们获得4%物理加成和法术加成。"
+        },
+        {
+          "wispId": "da_18_prolificpower",
+          "field": "effects.blossom",
+          "text": "你的弈子们获得6%物理加成和法术加成。"
+        },
+        {
+          "wispId": "da_knickknackbag18",
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackbag18",
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackjar18",
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknackjar18",
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknacksack18",
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。"
+        },
+        {
+          "wispId": "da_knickknacksack18",
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的物理加成或攻击速度。"
+        }
+      ],
+      "occurrenceCount": 8
     },
     {
       "groupKey": "attack_speed_terms",

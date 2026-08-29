@@ -93,6 +93,87 @@ describe('Stage C2.1 search lexicon generation', () => {
     expect(generated.report.reviewGroups.reroll_vs_refresh.some(x => x.wispId === 'da_18_freeroller')).toBe(true);
   });
 
+  it('recognizes current Set 18 AP and AD terminology', () => {
+    expect(assignment('da_18_prolificpower', 'ability_power')).toBeDefined();
+    expect(assignment('da_18_prolificpower', 'attack_damage')).toBeDefined();
+    expect(assignment('da_thingamajigjar18', 'ability_power')).toBeDefined();
+    expect(assignment('da_knickknackjar18', 'attack_damage')).toBeDefined();
+  });
+
+  it('assigns free reroll and shop reroll to the production 免费重随 wording', () => {
+    expect(assignment('da_refreshinglight18', 'free_reroll')).toBeDefined();
+    expect(assignment('da_refreshinglight18', 'shop_reroll')).toBeDefined();
+  });
+
+  it('uses champion category context for named champion grants, not bracketed items', () => {
+    expect(assignment('da_18_heatedrivalry', 'champion_obtain')).toBeDefined();
+    expect(assignment('da_solargift18', 'champion_obtain')).toBeDefined();
+    for (const id of ['da_18_earlyfix', 'da_18_fieldofmice', 'da_18_mitosis', 'snapshot_157_3ed870773960', 'da_artifactinate18', 'da_bloodandiron18']) {
+      expect(assignment(id, 'champion_obtain')).toBeUndefined();
+    }
+  });
+
+  it('separates actual star-up actions from static star-level references', () => {
+    for (const id of ['da_18_starfall', 'da_boostershot18', 'da_moonlightritual18']) {
+      expect(assignment(id, 'champion_star_up')).toBeDefined();
+    }
+    expect(assignment('da_apprentice18', 'champion_star_level')).toBeDefined();
+    expect(assignment('da_apprentice18', 'champion_star_up')).toBeUndefined();
+    expect(generated.conceptDraft.assignments.filter(x => x.conceptKey === 'champion_star_up')).toHaveLength(3);
+  });
+
+  it('assigns star-level comparisons and retains complete production evidence', () => {
+    for (const id of ['da_18_majorpolymorph', 'da_18_minorpolymorph', 'da_18_polymorph']) {
+      const starLevel = assignment(id, 'champion_star_level');
+      expect(starLevel?.evidence).toContainEqual(expect.objectContaining({
+        field: 'effects.blossom',
+        matchedTerms: ['星级'],
+      }));
+      expect(assignment(id, 'champion_star_up')).toBeUndefined();
+    }
+
+    const moonlight = assignment('da_moonlightritual18', 'champion_star_level');
+    expect(moonlight?.evidence).toEqual(expect.arrayContaining([
+      expect.objectContaining({ field: 'effects.normal', matchedTerms: ['星级'] }),
+      expect.objectContaining({ field: 'effects.blossom', matchedTerms: ['星级'] }),
+    ]));
+    expect(assignment('da_moonlightritual18', 'champion_star_up')).toBeDefined();
+    expect(assignment('da_refreshinglight18', 'champion_star_level')).toBeDefined();
+  });
+
+  it('covers every production field containing explicit 星级 wording', () => {
+    for (const wisp of dataset.records) {
+      const fields = [
+        ['effects.normal', wisp.effects.normal],
+        ['effects.blossom', wisp.effects.blossom],
+        ['effects.prismatic', wisp.effects.prismatic],
+        ...wisp.requirements.flatMap((requirement, index) => [
+          [`requirements[${index}].textZh`, requirement.textZh],
+          [`requirements[${index}].textEn`, requirement.textEn],
+        ]),
+      ] as const;
+      for (const [field, text] of fields) if (text?.includes('星级')) {
+        expect(assignment(wisp.id, 'champion_star_level')?.evidence.some(
+          evidence => evidence.field === field && evidence.matchedTerms.some(term => term.includes('星级')),
+        )).toBe(true);
+      }
+    }
+  });
+
+  it('covers explicit round timing without treating second-based timing as a stage', () => {
+    for (const id of ['da_18_fieldofmice', 'da_barter18', 'da_18_starfall', 'snapshot_136_c467ccd546d7', 'snapshot_147_2dc94df4e3a5']) {
+      expect(assignment(id, 'time_stage')).toBeDefined();
+    }
+    for (const id of ['da_18_radiantize', 'da_herosentrance18', 'da_natureswrath18', 'da_quicken18']) {
+      expect(assignment(id, 'time_stage')).toBeUndefined();
+    }
+  });
+
+  it('keeps shield as the generic concept for shield reduction', () => {
+    expect(assignment('da_petrifyshields18', 'shield')).toBeDefined();
+    expect(TAXONOMY.find(x => x.key === 'shield')?.description).toContain('削减护盾');
+  });
+
   it('keeps query expansion and record aliases separate and preserves phrases', () => {
     const synonyms = generated.synonymDraft;
     expect(Array.isArray(synonyms.queryExpansionGroups)).toBe(true);
@@ -128,6 +209,8 @@ describe('Stage C2.1 search lexicon generation', () => {
     expect(summary.actualAliasCollisions).toBe(actualAliasCollisions.length);
     expect(summary.riskyQueryExpansionGroups).toBe(generated.synonymDraft.queryExpansionGroups.filter(x => x.intrinsicRisks.length).length);
     expect(summary.reviewGroupCounts).toEqual(Object.fromEntries(Object.entries(reviewGroups).map(([key, items]) => [key, items.length])));
+    expect(summary.assignmentsByConcept).toEqual(Object.fromEntries(TAXONOMY.map(({ key }) => [key, generated.conceptDraft.assignments.filter(x => x.conceptKey === key).length])));
+    expect(Object.keys(summary.assignmentsByConcept)).toEqual([...Object.keys(summary.assignmentsByConcept)].sort());
   });
 
   it('does not alter production search fields', () => {
