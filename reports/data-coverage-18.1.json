@@ -1,0 +1,45 @@
+{
+  "patch": "18.1",
+  "productionReady": false,
+  "sourceRecordCounts": {
+    "datatft": 169,
+    "communitydragonEnVariants": 345,
+    "communitydragonZhVariants": 345,
+    "opggHumanObserved": 200,
+    "opggExtracted": 200,
+    "lolchess": 174
+  },
+  "unionByAcceptedSkeleton": 169,
+  "intersectionByExactLocalizedName": 152,
+  "normalizedCount": 169,
+  "withRiotId": 152,
+  "withChineseName": 169,
+  "chinesePlaceholderCount": 0,
+  "categoryCounts": {
+    "champion": 16,
+    "combat": 75,
+    "misc": 23,
+    "shop": 19,
+    "gold_xp": 13,
+    "risky": 18,
+    "item": 5
+  },
+  "startingStageCounts": {
+    "2": 39,
+    "3": 55,
+    "4": 35,
+    "5": 32,
+    "6": 8,
+    "7": 0,
+    "8": 0
+  },
+  "withBlossom": 130,
+  "withPrismatic": 20,
+  "withRequirements": 56,
+  "oncePerGameConfirmedTrue": 2,
+  "oncePerGameUnknown": 167,
+  "withReofferCooldownShops": 0,
+  "criticalFieldsMissing": 17,
+  "unresolvedCriticalConflicts": 5,
+  "unmatchedCount": 35
+}

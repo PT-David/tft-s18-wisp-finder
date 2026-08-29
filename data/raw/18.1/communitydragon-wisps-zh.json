@@ -1,0 +1,4049 @@
+{
+  "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
+  "retrievedAt": "2026-08-28T16:49:15Z",
+  "upstreamModifiedAt": "2026-08-27T22:54:07Z",
+  "url": "https://raw.communitydragon.org/latest/cdragon/tft/zh_cn.json",
+  "locale": "zh_cn",
+  "records": [
+    {
+      "apiName": "DA_MoonlightRitual18",
+      "name": "月光仪式",
+      "desc": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KnickKnackJar18_Upgrade",
+      "name": "小饰品罐",
+      "desc": "获得@Upgrade_Boost1_Num@个消耗品，其能提供永久的物理加成或攻击速度。",
+      "effects": {
+        "{e3908749}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ForestTwinsUpgrade18",
+      "name": "森林多胞胎",
+      "desc": "获得<Set18CharmUpgrade>3</Set18CharmUpgrade>个相同的弈子，他们是其中一个你尚未拥有的2费弈子的复制体。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Hummingbird_Upgrade",
+      "name": "蜂鸟",
+      "desc": "你攻击速度最高的那个单位变小，获得@ASGainUpgrade*100@%攻击速度。",
+      "effects": {
+        "{782aafb6}": 0.3500000238418579
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_FlipFrenzy18_Upgrade",
+      "name": "疯狂掷币人",
+      "desc": "抛掷1枚硬币，如果硬币正面朝上，获得@GoldIfHeads@金币。重复抛掷，直至你抛掷的硬币反面朝上。",
+      "effects": {
+        "{b198bbbb}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_YordleSpirit",
+      "name": "约德尔之灵",
+      "desc": "友军有@DodgeChance@%几率闪避攻击，持续@Duration@秒。",
+      "effects": {
+        "DodgeChance": 99.0,
+        "Duration": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PottedStonebark18_Upgrade",
+      "name": "盆栽石皮树",
+      "desc": "获得1颗临时的【石皮树】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Hireling18",
+      "name": "雇佣兵",
+      "desc": "1个临时的、携带着@NumRecommendedItems@件推荐装备的@StarLevel@星@UnitTier@费弈子加入你的队伍。",
+      "effects": {
+        "UnitTier": 5.0,
+        "starLevel": 1.0,
+        "{a718327a}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThingamajigSack18",
+      "name": "小装置袋",
+      "desc": "获得@Boost3_Num@个消耗品，其能提供永久的法术加成或法力回复。",
+      "effects": {
+        "{f51b563e}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Hireling18_Prismatic",
+      "name": "雇佣兵",
+      "desc": "@PrismaticNumUnits@个临时的、携带着@NumRecommendedItemsUpgrade@件推荐装备的@PrismaticStarLevel@<Set18CharmUpgrade>星</Set18CharmUpgrade>@UnitTier@费弈子加入你的队伍。",
+      "effects": {
+        "UnitTier": 5.0,
+        "{07479167}": 2.0,
+        "{1572b982}": 2.0,
+        "{9c13cce0}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SalvagerUpgrade18",
+      "name": "打捞术",
+      "desc": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。<Set18CharmUpgrade>获得</Set18CharmUpgrade>@GoldGainUpgrade@<Set18CharmUpgrade>金币。</Set18CharmUpgrade>",
+      "effects": {
+        "{27ba61a0}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThingamajigSack18_Upgrade",
+      "name": "小装置袋",
+      "desc": "获得@Upgrade_Boost3_Num@个随机消耗品，其能提供法术加成或法力回复。",
+      "effects": {
+        "{b29e473b}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_PaydayUpgrade",
+      "name": "庆功宴",
+      "desc": "每有1个己方弈子在战斗中存活，获得@UpgradeGoldPerSurvivor@金币。",
+      "effects": {
+        "{983a508e}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BackrowStar",
+      "name": "后排之星",
+      "desc": "1个随机后排弈子获得@ASMultiplier*100@%攻击速度，持续@ASDuration@秒。",
+      "effects": {
+        "ASDuration": 7.0,
+        "ASMultiplier": 0.75
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Mitosis",
+      "name": "有丝分裂",
+      "desc": "获得1个【微型英雄复制器】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TreetopArchers_Prismatic",
+      "name": "树顶弓箭手",
+      "desc": "<Set18CharmUpgrade>数量多到难以置信</Set18CharmUpgrade>的弓箭手自林间放箭",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomSplash18",
+      "name": "幻影浪花",
+      "desc": "战斗开始时：至多有@NumTraitsActivated@个未激活的羁绊会以最低等级激活。",
+      "effects": {
+        "{95e6e729}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BarkArmor",
+      "name": "树皮护甲",
+      "desc": "你的弈子们获得@ShieldAmount@护盾值，持续@Duration@秒。",
+      "effects": {
+        "Duration": 10.0,
+        "ShieldAmount": 150.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DiversifiedUpgrade18",
+      "name": "多样化",
+      "desc": "每有1个已激活的非唯一羁绊，你的队伍获得@AddedHealthUpgrade@生命值。",
+      "effects": {
+        "{cd51663d}": 45.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Ironwood18_Upgrade",
+      "name": "坚硬木材",
+      "desc": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低@DamageReduction_Upgrade*100@%。",
+      "effects": {
+        "{57df3692}": 0.18000000715255737
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MercenaryForce_Upgrade",
+      "name": "金钱之力",
+      "desc": "每拥有@PerXGold@金币，获得@DamageAmpUpgrade*100@%伤害增幅。",
+      "effects": {
+        "{94a79fde}": 0.04500000178813934,
+        "{ddf97b5a}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LesserChaos18_Upgrade",
+      "name": "拼一把小的！",
+      "desc": "随机施放1个<Set18CharmUpgrade>价值</Set18CharmUpgrade>在@UpgradeGoldLowerBound@<Set18CharmUpgrade>或以上金币</Set18CharmUpgrade>的【自然仙灵】。",
+      "effects": {
+        "{76a7a00a}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SearchParty18_Upgrade",
+      "name": "搜查队",
+      "desc": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RolyPolysUpgrade18",
+      "name": "不倒翁",
+      "desc": "在@Upgrade_WaitTime@秒后，每有1名存活的友军，获得1次刷新。",
+      "effects": {
+        "{5abead80}": 16.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Lucky718",
+      "name": "幸运7",
+      "desc": "获得@NumRerolls@次商店刷新。",
+      "effects": {
+        "NumRerolls": 7.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Propagate_Upgrade",
+      "name": "繁殖",
+      "desc": "获得第1个阵亡的友军的1个复制体。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Preppers",
+      "name": "未雨绸缪",
+      "desc": "你的叠层型装备在下次战斗开始时，拥有部分初始层数。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PottedStonebark18",
+      "name": "盆栽石皮树",
+      "desc": "获得1颗临时的【石皮树】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Regeneration18_Upgrade",
+      "name": "再生",
+      "desc": "你的队伍每秒治疗@HealPerSecondUpgrade*100@%最大生命值。",
+      "effects": {
+        "{11e51486}": 0.019999999552965164
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Hugify18",
+      "name": "巨大化",
+      "desc": "你生命值最高的那个单位成长，获得@Health@生命值。",
+      "effects": {
+        "Health": 350.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Journeyman18",
+      "name": "旅行者",
+      "desc": "获得1个随机2星2费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MajorPolymorph_Upgrade",
+      "name": "高阶变形术",
+      "desc": "你拥有的那个<Set18CharmUpgrade>星级最高</Set18CharmUpgrade>的4费弈子永久变形为1个5费。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_FlashFire18_Upgrade",
+      "name": "爆燃",
+      "desc": "刷新你的商店。【地狱火】引燃@Upgrade_FireSlots@个商店栏位，将其升级。",
+      "effects": {
+        "{9d00d5e9}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Barrier18",
+      "name": "屏障",
+      "desc": "友军获得@Shield@护盾值，在@Duration@秒内持续衰减。",
+      "effects": {
+        "Duration": 6.0,
+        "Shield": 1250.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RefreshingLight18",
+      "name": "焕新之光",
+      "desc": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomSplashUpgrade18",
+      "name": "幻影浪花",
+      "desc": "战斗开始时：至多有@NumTraitsActivatedUpgrade@个未激活的羁绊会以最低等级激活。",
+      "effects": {
+        "{bc019453}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Supercritical",
+      "name": "超级暴击",
+      "desc": "拥有【技能暴击】的友军获得@CritDamage*100@%暴击伤害。",
+      "effects": {
+        "CritDamage": 0.25
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SlowStudy18",
+      "name": "慢速学习",
+      "desc": "在@WaitTime@秒后，每有1名存活的友军，获得@XPAdded@经验值。",
+      "effects": {
+        "{b20bdb15}": 2.0,
+        "{c883d659}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BearsVisit18",
+      "name": "蛮熊降临",
+      "desc": "本场对战获得【野兽之灵】的【蛮熊】增益。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_TatteredArmor_Upgrade",
+      "name": "衣衫褴褛",
+      "desc": "对敌人施加@UpgradeShredSunderPercent@%魔抗击碎与护甲击碎，持续@UpgradeDuration@秒。",
+      "effects": {
+        "{7825e067}": 30.0,
+        "{dc488023}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Fellowship",
+      "name": "贴贴",
+      "desc": "每有1名相邻的友军，弈子们就会获得@MaxHealthShield*100@%最大生命值护盾和@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.03999999910593033,
+        "MaxHealthShield": 0.03999999910593033
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MemorialDummy18",
+      "name": "衣冠冢",
+      "desc": "你最先阵亡的携带着装备的那个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Grandmaster18",
+      "name": "奇境宗师",
+      "desc": "获得1个随机2星5费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_HeroicSacrifice_Upgrade",
+      "name": "英勇就义",
+      "desc": "你最强大的@NumAllies@个弈子获得<Set18CharmUpgrade>史！诗！级！强！化！</Set18CharmUpgrade>，但其他友军将会牺牲。",
+      "effects": {
+        "NumAllies": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Jungling18",
+      "name": "野区",
+      "desc": "让【峡谷野怪】占据你的商店。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_AbandonShip18",
+      "name": "弃船",
+      "desc": "出售你棋盘上和备战席的所有弈子，获得@Gold@金币和@Rerolls@次刷新。",
+      "effects": {
+        "Gold": 6.0,
+        "Rerolls": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BigGuns18",
+      "name": "大腕",
+      "desc": "获得2个随机1星4费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Barrier18_Upgrade",
+      "name": "屏障",
+      "desc": "友军获得@Shield@护盾值，在@DurationUpgrade@秒内持续衰减。",
+      "effects": {
+        "Shield": 1250.0,
+        "{0772688f}": 9.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Terraforming18",
+      "name": "生态改造",
+      "desc": "战斗开始时，获得@Seeds@颗种子。 ",
+      "effects": {
+        "{3cc8530d}": 5.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MemorialDummy18_Upgrade",
+      "name": "衣冠冢",
+      "desc": "你最先阵亡的@Upgrade_DummyAmount@个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+      "effects": {
+        "{2f6ceba8}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HeroOfProphecy18_Upgrade",
+      "name": "预言之子",
+      "desc": "获得1个五费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Moonrise",
+      "name": "皓月当空",
+      "desc": "在@ActivationDelay@秒后，提升@IncreaseRatio*100@%【月蚀骑士】羁绊效果。",
+      "effects": {
+        "ActivationDelay": 8.0,
+        "{888f2c3c}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BorrowedGear18",
+      "name": "借来的装备",
+      "desc": "1个弈子获得1件临时推荐装备。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_ProlificPower_Upgrade",
+      "name": "元气满满",
+      "desc": "你的弈子们获得@UpgradeADAP*100@%物理加成和法术加成。",
+      "effects": {
+        "{e3d9411b}": 0.15000000596046448
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DieRoll18_Upgrade",
+      "name": "掷骰子",
+      "desc": "投掷<Set18CharmUpgrade>2</Set18CharmUpgrade>个六面体骰子。获得相当于结果点数的金币。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GiantsAura18_Upgrade",
+      "name": "巨人光环",
+      "desc": "你生命值最高的那名友军，每秒在一片区域内造成@Damage_Upgrade*100@%最大生命值伤害。",
+      "effects": {
+        "{8ae4ca4f}": 0.029999999329447746
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TigersVisit18_Wisp_Upgrade",
+      "name": "猛虎降临",
+      "desc": "本场对战获得【野兽之灵】的【猛虎】增益。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MarksmensGale18",
+      "name": "射手狂风",
+      "desc": "你的【射手】在攻击时获得@AttackSpeed*100@%可叠加的攻击速度。",
+      "effects": {
+        "AttackSpeed": 0.029999971389770508
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_CircleofElders_Upgrade",
+      "name": "长者之环",
+      "desc": "获得每个5费弈子各1个。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BigBoom18",
+      "name": "大爆炸",
+      "desc": "第一名阵亡的友军会产生爆炸，造成@maxHealthExplosionDamage*100@%最大生命值魔法伤害。",
+      "effects": {
+        "{8e1bf27f}": 0.25
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LightningStrike",
+      "name": "闪电打击",
+      "desc": "对所有敌人造成@HPPercentDamage*100@%最大生命值真实伤害。",
+      "effects": {
+        "HPPercentDamage": 0.10000000149011612
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_UltraAscension_Prismatic",
+      "name": "终极飞升",
+      "desc": "在@PrismaticActivationDelay@秒后，友军获得@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 3.0,
+        "{2869cc92}": 12.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SolarGift18",
+      "name": "日蚀之礼",
+      "desc": "获得1个【蕾欧娜】、1个【瑟庄妮】和1个【凯尔】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Smurfing18_Upgrade",
+      "name": "炸鱼行为",
+      "desc": "获得一个随机5费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BoosterShot18_Upgrade",
+      "name": "强化激素",
+      "desc": "至多@UpgradeNumChampsToStarUp@个1星弈子会在战斗期间暂时升星。",
+      "effects": {
+        "{67e7aa25}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PlatedShields18",
+      "name": "镀板护盾",
+      "desc": "护盾强度提升@BonusShieldPercent*100@%。友军获得@ShieldAmount@护盾值，持续@ShieldDuration@秒。",
+      "effects": {
+        "BonusShieldPercent": 0.15000000596046448,
+        "ShieldAmount": 150.0,
+        "ShieldDuration": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_FoundFriend18_Upgrade",
+      "name": "找个朋友",
+      "desc": "获得1个携带着1个<Set18CharmUpgrade>【日炎斗篷】</Set18CharmUpgrade>的【训练假人】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MinorPolymorph",
+      "name": "低阶变形术",
+      "desc": "你拥有的1个1费弈子永久变形为1个2费。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Tremors",
+      "name": "地动山摇",
+      "desc": "每@StunInterval@秒，晕眩敌人@StunDuration@秒。",
+      "effects": {
+        "StunDuration": 1.0,
+        "{1c57eeac}": 8.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LateBloomer18_Prismatic",
+      "name": "大器晚成",
+      "desc": "一<Set18CharmUpgrade>队</Set18CharmUpgrade>(包含@PrismaticNumUnits@个)临时的@PrismaticStarLevel@<Set18CharmUpgrade>星</Set18CharmUpgrade>@UnitTier@费弈子加入你的队伍。",
+      "effects": {
+        "UnitTier": 1.0,
+        "{07479167}": 4.0,
+        "{9c13cce0}": 5.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Radiantize_Upgrade",
+      "name": "光明化",
+      "desc": "在@DelayUpgrade@秒后，@NumItemsUpgrade@件被携带着的随机装备暂时变为光明版。",
+      "effects": {
+        "{480cb954}": 5.0,
+        "{ea057af7}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Jungling18_Upgrade",
+      "name": "野区",
+      "desc": "让【峡谷野怪】占据你的商店。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HomingFireflies18",
+      "name": "萤火虫之家",
+      "desc": "你的【术师】每消耗@ManaPerFirefly@法力值，召唤1只萤火虫。每只萤火虫造成@FireflyDamage@魔法伤害。",
+      "effects": {
+        "{3ec4306b}": 110.0,
+        "{8ecd74fa}": 20.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Payday",
+      "name": "庆功宴",
+      "desc": "每有1个己方弈子在战斗中存活，获得@GoldPerSurvivor@金币。",
+      "effects": {
+        "{46c3fc24}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KnickKnackSack18",
+      "name": "小饰品袋",
+      "desc": "获得@Boost3_Num@个消耗品，其能提供永久的物理加成或攻击速度。",
+      "effects": {
+        "{f51b563e}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Experienced_Upgrade",
+      "name": "老练",
+      "desc": "获得@UpgradeXP@经验值。",
+      "effects": {
+        "{f3a05617}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomEmblemUpgrade18",
+      "name": "幻影纹章",
+      "desc": "获得1个你层级最高羁绊的临时的纹章。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Rain18_Upgrade",
+      "name": "泪雨",
+      "desc": "你的队伍获得@Upgrade_ManaRegen@法力回复。",
+      "effects": {
+        "{f5ecc72c}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThingamajigJar18_Upgrade",
+      "name": "小装置罐",
+      "desc": "获得@Upgrade_Boost1_Num@个消耗品，其能提供永久的法术加成或法力回复。",
+      "effects": {
+        "{e3908749}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BloodMoney_Upgrade",
+      "name": "染血之币",
+      "desc": "每击杀1个弈子，获得@UpgradeGoldOnDeath@金币。<Set18CharmUpgrade>获得</Set18CharmUpgrade>@UpgradeBaseGold@<Set18CharmUpgrade>金币。</Set18CharmUpgrade>",
+      "effects": {
+        "{47c078e2}": 1.0,
+        "{d0153c08}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Propagate",
+      "name": "繁殖",
+      "desc": "获得第1个阵亡的友军的1个复制体。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PetrifyShields18_Upgrade",
+      "name": "破盾秘法",
+      "desc": "使敌人减速@ChillAmount@%，并将其护盾值削减@UpgradeShieldMultiplier*100@%，持续@Duration@秒。",
+      "effects": {
+        "Duration": 10.0,
+        "{00f48239}": 0.30000001192092896,
+        "{f83d9449}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_HeatedRivalry",
+      "name": "鏖战不休",
+      "desc": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+@NumStacks@参与击杀数。",
+      "effects": {
+        "{cd13f842}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThingamajigBag18",
+      "name": "小装置包",
+      "desc": "获得@Boost2_Num@个消耗品，其能提供永久的法术加成或法力回复。",
+      "effects": {
+        "{f55ad6bd}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllTwos_Upgrade",
+      "name": "全2费商店",
+      "desc": "刷新你的商店，使其充满2费弈子。获得@AllTwosUpgradeGold@金币。",
+      "effects": {
+        "{fd3d3623}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Artifactinate18",
+      "name": "神器化",
+      "desc": "失去@NumComponents@件基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】。",
+      "effects": {
+        "NumComponents": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Hummingbird",
+      "name": "蜂鸟",
+      "desc": "你攻击速度最高的那个单位变小，获得@ASGain*100@%攻击速度。",
+      "effects": {
+        "ASGain": 0.20000004768371582
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BronzeSpoon",
+      "name": "铜汤匙",
+      "desc": "获得@XP@经验值。",
+      "effects": {
+        "XP": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllFives",
+      "name": "全5费商店",
+      "desc": "刷新你的商店，使其充满5费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_KillingFrenzy",
+      "name": "屠戮狂暴",
+      "desc": "【战士】会处决生命值低于@ExecuteThreshold@%的目标。在击杀时，他们获得@OnKillAtkSpdAmount*100@%攻击速度。",
+      "effects": {
+        "ExecuteThreshold": 12.0,
+        "{a074cdeb}": 0.1499999761581421
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Revenge18",
+      "name": "复仇",
+      "desc": "每当1名友军阵亡时，你的弈子们获得@DamageAmp*100@%可叠加的伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.03999999910593033
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Journeyman18_Upgrade",
+      "name": "旅行者",
+      "desc": "获得1个随机2星2费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PottedLifebloom18",
+      "name": "盆栽生命花",
+      "desc": "获得1株临时的【生命花】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ImprovedReach18",
+      "name": "瞄准镜",
+      "desc": "你的【战士】获得+@RangeIncrease@攻击距离。",
+      "effects": {
+        "RangeIncrease": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CloneCompanion18_Prismatic",
+      "name": "复制同伴",
+      "desc": "复制你伤害最高的那个弈子。复制体造成@CloneDamageMultiplierPrismatic*100@%伤害。",
+      "effects": {
+        "{9c2aef6c}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Snacktime18_Upgrade",
+      "name": "点心时间到！",
+      "desc": "【毛茸茸大朋友】会吃掉最大生命值低于@ExecuteThresholdUpgrade*100@%且受过其伤害的敌人。",
+      "effects": {
+        "{0f6cb861}": 0.20000000298023224
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_YordleSpirit_Upgrade",
+      "name": "约德尔之灵",
+      "desc": "友军有@DodgeChanceUpgrade@%几率闪避攻击，持续@DurationUpgrade@秒。",
+      "effects": {
+        "{0772688f}": 5.0,
+        "{bffa5d30}": 99.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HerosEntrance18",
+      "name": "英雄登场",
+      "desc": "在@UnitJoinDelay@秒后，备战席最左侧的弈子加入战斗，并获得@NumRecItems@件推荐装备。",
+      "effects": {
+        "{3a7ee236}": 8.0,
+        "{48278ec5}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Potioncraft18",
+      "name": "药学博士",
+      "desc": "获得3个临时的、可装备的【药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Quicken18",
+      "name": "加速",
+      "desc": "施放技能时，你的弈子们获得@AttackSpeedGain*100@%攻击速度，持续@Duration@秒。",
+      "effects": {
+        "Duration": 4.0,
+        "{f5c9e48b}": 0.2999999523162842
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ManaRichSoil18",
+      "name": "富魔之壤",
+      "desc": "你的【术师】最大法力值减少@MaxManaMultiplier*100@%",
+      "effects": {
+        "{24a482c1}": 0.18000000715255737
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThreeMe18_Upgrade",
+      "name": "对影成三",
+      "desc": "获得1个随机2星3费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LightningStorm",
+      "name": "闪电风暴",
+      "desc": "每过@Frequency@秒，对1名敌人造成@HPPercentDamage*100@%最大生命值真实伤害。",
+      "effects": {
+        "Frequency": 1.0,
+        "HPPercentDamage": 0.05000000074505806
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LostTravelers",
+      "name": "迷路的游客",
+      "desc": "获得总价值3金币的随机弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LightningStorm_Prismatic",
+      "name": "闪电风暴",
+      "desc": "每过@FrequencyPrismatic@秒，对1名敌人造成@HPPercentDamagePrismatic*100@%最大生命值真实伤害。",
+      "effects": {
+        "{3462c11f}": 0.15000000596046448,
+        "{974299ad}": 0.05000000074505806
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_ForestMage",
+      "name": "森林魔法师",
+      "desc": "用【自然仙灵】填满你的商店。但是你只能购买1个！",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomArmor18",
+      "name": "幻影护甲",
+      "desc": "获得1个临时的【狂徒铠甲】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_TatteredArmor",
+      "name": "衣衫褴褛",
+      "desc": "对敌人施加@ShredSunderPercent@%魔抗击碎与护甲击碎，持续@Duration@秒。",
+      "effects": {
+        "Duration": 10.0,
+        "{ad1ca1ad}": 30.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DoodadSack18",
+      "name": "小玩具袋",
+      "desc": "获得@Boost3_Num@个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "effects": {
+        "{f51b563e}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BackrowStar_Upgrade",
+      "name": "后排之星",
+      "desc": "1个随机后排弈子获得@ASMultiplierUpgrade*100@%攻击速度，持续@ASDurationUpgrade@秒。",
+      "effects": {
+        "{6c71691e}": 1.0,
+        "{707d81f7}": 8.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Counterspell_Prismatic",
+      "name": "法术反制",
+      "desc": "使所有敌人的最大法力值提高@ManaIncreasePrismatic@，直至敌人下一次施放技能。",
+      "effects": {
+        "{cf9cecba}": 150.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Fertilize_Upgrade",
+      "name": "肥料",
+      "desc": "每有1名阵亡的敌人，获得@XPonDeath@经验值。<Set18CharmUpgrade>获得</Set18CharmUpgrade>@BaseXPUpgrade@<Set18CharmUpgrade>经验值。</Set18CharmUpgrade>",
+      "effects": {
+        "{59b78842}": 1.0,
+        "{6148395c}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ManaRichSoil18_Upgrade",
+      "name": "富魔之壤",
+      "desc": "你的【术师】最大法力值减少@MaxManaMultiplierUpgrade*100@%",
+      "effects": {
+        "{e475c01b}": 0.25
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BeggarsWisp18_Upgrade",
+      "name": "仙灵的怜悯",
+      "desc": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得@GoldUpgrade@金币。",
+      "effects": {
+        "{726ae049}": 6.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_NaturesWrath18",
+      "name": "自然之怒",
+      "desc": "在@KillDelay@秒后，将所有未携带装备的单位击杀。",
+      "effects": {
+        "{b582d13c}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LivingSoil18_Upgrade",
+      "name": "活体土壤",
+      "desc": "每过@RootFrequency@秒，根须会晕眩@RootTargets_Upgrade@名敌人@RootDuration@秒。",
+      "effects": {
+        "RootDuration": 1.0,
+        "{204ba722}": 2.0,
+        "{6a1de581}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SearchParty18",
+      "name": "搜查队",
+      "desc": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KillersRegret18",
+      "name": "侩子手的悔恨",
+      "desc": "你最先阵亡的@NumUnits@个弈子会将其击杀者晕眩@StunDuration@秒。",
+      "effects": {
+        "NumUnits": 3.0,
+        "StunDuration": 1.25
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CloneCompanionUpgrade18",
+      "name": "复制同伴",
+      "desc": "复制你伤害最高的那个弈子。复制体造成@CloneDamageMultiplierUpgrade*100@%伤害。",
+      "effects": {
+        "{23437198}": 0.30000001192092896
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllFives_Upgrade",
+      "name": "全5费商店",
+      "desc": "刷新你的商店，使其充满5费弈子。获得@AllFivesUpgradeGold@金币。",
+      "effects": {
+        "{9ea1f81d}": 5.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SlowStudyUpgrade18",
+      "name": "慢速学习",
+      "desc": "在@WaitTimeUpgrade@秒后，每有1名存活的友军，获得@XPAdded@经验值。",
+      "effects": {
+        "{b20bdb15}": 2.0,
+        "{d8f9e583}": 12.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KnickKnackJar18",
+      "name": "小饰品罐",
+      "desc": "获得@Boost1_Num@个消耗品，其能提供永久的物理加成或攻击速度。",
+      "effects": {
+        "{892c50b8}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Counterspell",
+      "name": "法术反制",
+      "desc": "使所有敌人的最大法力值提高@ManaIncrease@，直至敌人下一次施放技能。",
+      "effects": {
+        "ManaIncrease": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BigGuns18_Upgrade",
+      "name": "大腕",
+      "desc": "获得2个随机1星4费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Lucky718_Prismatic",
+      "name": "幸运7",
+      "desc": "获得@PrismaticNumRerolls@次商店刷新。",
+      "effects": {
+        "{5caee464}": 777.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Blaze18_Upgrade",
+      "name": "炽焰",
+      "desc": "火焰席卷整个棋盘，对敌人造成<Set18CharmUpgrade>更高</Set18CharmUpgrade>的真实伤害。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ManaPotion18_Upgrade_Charm",
+      "name": "法力药水",
+      "desc": "获得1个临时的、可装备的【<Set18CharmUpgrade>光明版</Set18CharmUpgrade>法力药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Hireling18_Upgrade",
+      "name": "雇佣兵",
+      "desc": "1个临时的、携带着@NumRecommendedItemsUpgrade@件推荐装备的@StarLevel@星@UnitTier@费弈子加入你的队伍。",
+      "effects": {
+        "UnitTier": 5.0,
+        "starLevel": 1.0,
+        "{1572b982}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Artifactinate18_Upgrade",
+      "name": "神器化",
+      "desc": "失去@NumComponentsUpgrade@件基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】<Set18CharmUpgrade>和</Set18CharmUpgrade>@NumReforgerUpgrade@个<Set18CharmUpgrade>【装备重铸器】</Set18CharmUpgrade>。",
+      "effects": {
+        "{4947f1c5}": 3.0,
+        "{a8dcd7a7}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomGloves18",
+      "name": "幻影手套",
+      "desc": "获得1个临时的【窃贼手套】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Flow18_Upgrade",
+      "name": "行云流水",
+      "desc": "你的弈子们获得持续@DurationUpgrade@秒的不可阻挡效果和@AttackSpeed*100@%攻击速度。",
+      "effects": {
+        "AttackSpeed": 0.1499999761581421,
+        "{0772688f}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_EarlyFix",
+      "name": "防微杜渐",
+      "desc": "获得@NumReforgers@个【装备重铸器】。",
+      "effects": {
+        "NumReforgers": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BloodAndIron18",
+      "name": "鲜血与铁",
+      "desc": "在@NumDeathsToProc@个弈子阵亡后，获得1个【基础装备锻造器】。",
+      "effects": {
+        "{f9756e11}": 20.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MarksmensGale18_Upgrade",
+      "name": "射手狂风",
+      "desc": "你的【射手】在攻击时获得@AttackSpeed_Upgrade*100@%可叠加的攻击速度。",
+      "effects": {
+        "{8bfbba27}": 0.04999995231628418
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DieRoll18",
+      "name": "掷骰子",
+      "desc": "投掷1个6面体骰子。获得相当于结果点数的金币。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Bulwark18",
+      "name": "壁垒",
+      "desc": "你的【坦克】在生命值降至@HealthThreshold*100@%时，会获得@ShieldPercentHealth*100@%最大生命值护盾。",
+      "effects": {
+        "HealthThreshold": 0.5,
+        "ShieldPercentHealth": 0.20000000298023224
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Freeroller_Upgrade",
+      "name": "免费刷新术",
+      "desc": "获得@Upgrade_Rerolls@次刷新。",
+      "effects": {
+        "{9b36a1a3}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Mitosis_Upgrade",
+      "name": "有丝分裂",
+      "desc": "获得1个【微型英雄复制器】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ForestTwins18",
+      "name": "森林多胞胎",
+      "desc": "获得2个相同的弈子，他们是其中一个你尚未拥有的2费弈子的复制体。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Apprentice18",
+      "name": "学徒",
+      "desc": "获得1个随机2星1费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_StandAlone18_Upgrade",
+      "name": "孤身站场",
+      "desc": "独自处于所在排的弈子们获得@Health_Upgrade*100@%生命值和@DamageAmp_Upgrade*100@%伤害增幅。",
+      "effects": {
+        "{7acd771c}": 0.2200000286102295,
+        "{7b935ba9}": 0.2199999988079071
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ForestGuide18",
+      "name": "森林向导",
+      "desc": "获得1个随机4费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Peddler18",
+      "name": "小贩",
+      "desc": "开启1个随机装备商店。随机装备的费用在0到@TooltipMaxCostOfItem@金币之间。",
+      "effects": {
+        "{72eb58d9}": 14.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_SunfireSorcery",
+      "name": "日炎巫术",
+      "desc": "对敌人施加持续@Duration@秒的灼烧和重伤效果。",
+      "effects": {
+        "Duration": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MoonlightRitualUpgrade18",
+      "name": "月光仪式",
+      "desc": "在战斗期间，你最低星级的<Set18CharmUpgrade>2个</Set18CharmUpgrade>1费或2费弈子将会升星。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HerosEntranceUpgrade18",
+      "name": "英雄登场",
+      "desc": "在@UnitJoinDelayUpgrade@秒后，备战席最左侧的弈子加入战斗，并获得@NumRecItemsUpgrade@件推荐装备。",
+      "effects": {
+        "{aa4b0f26}": 5.0,
+        "{f7ee1777}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_EarlyFix_Upgrade",
+      "name": "防微杜渐",
+      "desc": "获得@UpgradeNumReforgers@个【装备重铸器】。",
+      "effects": {
+        "{86202fe4}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LifeDebt_Upgrade",
+      "name": "以命为注",
+      "desc": "每失去@MissingHealthAmount@玩家生命值，获得@GoldPerMissingHealth@金币。<Set18CharmUpgrade>然后治疗</Set18CharmUpgrade>@UpgradeHealing@<Set18CharmUpgrade>生命值。</Set18CharmUpgrade>",
+      "effects": {
+        "{4839335d}": 12.0,
+        "{a86fd734}": 1.0,
+        "{fff268eb}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Starfall_Upgrade",
+      "name": "星落",
+      "desc": "这回合你前@UpgradeShopLimit@次刷新商店时，费用最低的那个弈子会变为2星。",
+      "effects": {
+        "{f38dea36}": 8.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GoldenGoose18",
+      "name": "招财猫",
+      "desc": "你造成伤害最高的那名友军，每造成@EarnGoldForEveryNDamage@伤害，获得@GoldEarned@金币。",
+      "effects": {
+        "{26bd3b14}": 1.0,
+        "{c99225e6}": 1700.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_KillingFrenzy_Upgrade",
+      "name": "屠戮狂暴",
+      "desc": "【战士】会处决生命值低于@UpgradeExecuteThreshold@<Set18CharmUpgrade>%</Set18CharmUpgrade>的目标。在击杀时，他们获得@OnKillAtkSpdAmountUpgrade*100@%攻击速度。",
+      "effects": {
+        "UpgradeExecuteThreshold": 15.0,
+        "{c2df5b31}": 0.3999999761581421
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Peddler18_Upgrade",
+      "name": "小贩",
+      "desc": "开启1个随机装备商店。随机装备的费用在0到@TooltipMaxCostOfItem@金币之间。<Set18CharmUpgrade>获得</Set18CharmUpgrade>@UpgradeGoldGain@<Set18CharmUpgrade>金币。</Set18CharmUpgrade>",
+      "effects": {
+        "{0fb627ae}": 2.0,
+        "{72eb58d9}": 14.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_IdleCraftsman18",
+      "name": "闲散工匠",
+      "desc": "将你备战席的1件基础装备转化为它可合成的1件成装。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LesserChaos18",
+      "name": "拼一把小的！",
+      "desc": "随机施放1个【自然仙灵】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Fellowship_Upgrade",
+      "name": "贴贴",
+      "desc": "每有1名相邻的友军，弈子们就会获得@MaxHealthShieldUpgrade*100@%最大生命值护盾和@DamageAmpUpgrade*100@%伤害增幅。",
+      "effects": {
+        "{624df32a}": 0.05999999865889549,
+        "{94a79fde}": 0.05999999865889549
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DoodadSack18_Upgrade",
+      "name": "小玩具袋",
+      "desc": "获得@Upgrade_Boost3_Num@个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "effects": {
+        "{b29e473b}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_IronCore18_Upgrade",
+      "name": "钢铁核心",
+      "desc": "每有1个位于前排的单位，你前排中心的那个弈子就会获得@UpgradeMaxHealthPerFrontRowUnit*100@%最大生命值。",
+      "effects": {
+        "{7792756f}": 0.059999942779541016
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Radiantize",
+      "name": "光明化",
+      "desc": "在@Delay@秒后，@NumItems@件被携带着的随机装备暂时变为光明版。",
+      "effects": {
+        "Delay": 8.0,
+        "NumItems": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BearsVisit18_Upgrade",
+      "name": "猛虎降临",
+      "desc": "本场对战获得【野兽之灵】的【猛虎】增益。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_ProlificPower",
+      "name": "元气满满",
+      "desc": "你的弈子们获得@ADAP*100@%物理加成和法术加成。",
+      "effects": {
+        "ADAP": 0.07999999821186066
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LightningStorm_Upgrade",
+      "name": "闪电风暴",
+      "desc": "每过@FrequencyUpgrade@秒，对1名敌人造成@HPPercentDamageUpgrade*100@%最大生命值真实伤害。",
+      "effects": {
+        "{62637c5b}": 1.0,
+        "{d77a77f5}": 0.07000000029802322
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_StartingTown18_Upgrade",
+      "name": "新手村",
+      "desc": "刷新你的商店，使其充满2星1费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_WrappedInThorns18",
+      "name": "荆棘环身",
+      "desc": "你的【坦克】每@ReflectFrequency@秒将所受伤害的@DamageReflectionMult*100@%反射给邻格的敌人。",
+      "effects": {
+        "{935d1a4c}": 4.0,
+        "{e6916987}": 0.11999999731779099
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Polymorph_Upgrade",
+      "name": "变形术",
+      "desc": "你拥有的那个<Set18CharmUpgrade>星级最高</Set18CharmUpgrade>的2费弈子永久变形为1个3费。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DoodadBag18",
+      "name": "小玩具包",
+      "desc": "获得@Boost2_Num@个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "effects": {
+        "{f55ad6bd}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CoinFlip18_Upgrade",
+      "name": "抛硬币",
+      "desc": "抛掷@UpgradeNumCoinsFlipped@枚<Set18CharmUpgrade>硬币</Set18CharmUpgrade>，如果硬币正面朝上，获得@GoldIfHeads@金币。",
+      "effects": {
+        "{75b4b0cb}": 2.0,
+        "{b198bbbb}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_EssenceTheft18_Upgrade",
+      "name": "精粹掠夺者",
+      "desc": "本场对战额外获得@UpgradeBonus*100@%【女巫精粹】。",
+      "effects": {
+        "{3b467d7a}": 0.8999999761581421
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RideTheWave18",
+      "name": "顺流而下",
+      "desc": "在本回合内，在上场对战中登场的@NumUnitsPerShop@+个弈子会出现在你的下@NumShops@次刷新的商店中。",
+      "effects": {
+        "NumShops": 2.0,
+        "{957b1671}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BigBoom18_Upgrade",
+      "name": "大爆炸",
+      "desc": "最先阵亡的@numAlliesExplode_Upgrade@名友军会产生爆炸，造成@maxHealthExplosionDamage*100@%最大生命值魔法伤害。",
+      "effects": {
+        "{21b79895}": 2.0,
+        "{8e1bf27f}": 0.25
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BloodAndIron18_Upgrade",
+      "name": "鲜血与铁",
+      "desc": "在@NumDeathsToProc_Upgrade@个弈子阵亡后，获得1个【基础装备锻造器】。",
+      "effects": {
+        "{68235692}": 16.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Ironwood18",
+      "name": "坚硬木材",
+      "desc": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低@DamageReduction*100@%。",
+      "effects": {
+        "DamageReduction": 0.11999999731779099
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Barrier18_Prismatic",
+      "name": "屏障",
+      "desc": "友军获得@ShieldPrismatic@护盾值，在@DurationPrismatic@秒内持续衰减。",
+      "effects": {
+        "{290aef20}": 7500.0,
+        "{623265e3}": 30.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HeroOfProphecy18",
+      "name": "预言之子",
+      "desc": "获得1个五费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Scrappy18",
+      "name": "零碎",
+      "desc": "战斗开始时：未携带任何装备的@NumChamps@个弈子会获得1件临时的推荐装备。",
+      "effects": {
+        "NumChamps": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_StandAlone18_Prismatic",
+      "name": "孤身站场",
+      "desc": "独自处于所在排的弈子们获得@Health_Prismatic*100@%生命值和@DamageAmp_Prismatic*100@%伤害增幅。",
+      "effects": {
+        "{6ab04a11}": 1.5,
+        "{91b883e0}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_SupercriticalUpgrade",
+      "name": "超级暴击",
+      "desc": "拥有【技能暴击】的友军获得@UpgradeCritDamage*100@%暴击伤害。",
+      "effects": {
+        "{6c5a2a96}": 0.4000000059604645
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomVest18_Upgrade",
+      "name": "幻影背心",
+      "desc": "获得1件临时的<Set18CharmUpgrade>【黎明圣盾】</Set18CharmUpgrade>。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ImprovedReach18_Upgrade",
+      "name": "瞄准镜",
+      "desc": "你的【战士】获得+@RangeIncrease_Upgrade@攻击距离。",
+      "effects": {
+        "{0ab1a585}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_TatteredArmor_Prismatic",
+      "name": "衣衫褴褛",
+      "desc": "对敌人施加@PrismaticShredSunderPercent@<Set18CharmUpgrade>%</Set18CharmUpgrade>魔抗击碎与护甲击碎，持续@PrismaticDuration@秒。",
+      "effects": {
+        "{594be86b}": 90.0,
+        "{5eabd1df}": 45.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PetrifiedDummy18_Upgrade",
+      "name": "石化术",
+      "desc": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和@StatueHealth_Upgrade@生命值的【训练假人】。",
+      "effects": {
+        "{c38ff060}": 1350.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThreeMe18",
+      "name": "对影成三",
+      "desc": "获得1个随机2星3费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TigersVisit18_Wisp",
+      "name": "战马降临",
+      "desc": "本场对战获得【野兽之灵】的【战马】增益。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RefreshingLight18_Upgrade",
+      "name": "焕新之光",
+      "desc": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThingamajigJar18",
+      "name": "小装置罐",
+      "desc": "获得@Boost1_Num@个消耗品，其能提供永久的法术加成或法力回复。",
+      "effects": {
+        "{892c50b8}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_FlashFire18",
+      "name": "爆燃",
+      "desc": "刷新你的商店。【地狱火】引燃@FireSlots@个商店栏位，将其升级。",
+      "effects": {
+        "{e1c9400a}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllThrees",
+      "name": "全3费商店",
+      "desc": "刷新你的商店，使其充满3费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LateBloomer18",
+      "name": "大器晚成",
+      "desc": "一个临时的@StarLevel@星@UnitTier@费弈子加入你的队伍。",
+      "effects": {
+        "UnitTier": 1.0,
+        "starLevel": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RollingBones18_Upgrade",
+      "name": "骨头滚滚",
+      "desc": "每获得1次击杀，你都有@RerollChanceOnKillUpgrade*100@几率获得1次刷新，如果获胜该几率提升@RerollsOnWinUpgrade@。",
+      "effects": {
+        "{796d17df}": 1.0,
+        "{91ef03e2}": 0.6000000238418579
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_AnimateShop18",
+      "name": "活体商店",
+      "desc": "在@Duration@秒的持续时间内，你的商店每@Period@秒免费刷新1次。",
+      "effects": {
+        "Duration": 18.0,
+        "Period": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Downpour18_Prismatic",
+      "name": "倾盆大雨",
+      "desc": "你的队伍获得@Prismatic_ManaRegen@法力回复。",
+      "effects": {
+        "{38b3cb38}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomEmblem18",
+      "name": "幻影纹章",
+      "desc": "获得1个你层级最高羁绊的临时的纹章。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Tremors_Upgrade",
+      "name": "地动山摇",
+      "desc": "每@StunInterval@秒，晕眩敌人@StunDurationUpgrade@秒。",
+      "effects": {
+        "{1c57eeac}": 8.0,
+        "{371528cb}": 1.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Starfall",
+      "name": "星落",
+      "desc": "你在这回合的最先@ShopLimit@次刷新商店，会使费用最低的那个弈子会变为2星。",
+      "effects": {
+        "{257f0d98}": 6.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MiddlePath18_Upgrade",
+      "name": "中央大道",
+      "desc": "刷新你的商店，使其充满2星3费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CoinFlip18",
+      "name": "抛硬币",
+      "desc": "抛掷1枚硬币，如果硬币正面朝上，获得@GoldIfHeads@金币。",
+      "effects": {
+        "{b198bbbb}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RollingBones18",
+      "name": "骨头滚滚",
+      "desc": "每获得1次击杀，你都有@RerollChanceOnKill*100@%几率获得1次免费刷新。 ",
+      "effects": {
+        "{f29f295a}": 0.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_WrappedInThorns18_Upgrade",
+      "name": "荆棘环身",
+      "desc": "你的【坦克】每@UReflectFrequency@秒将所受伤害的@UDamageReflectionMult*100@%反射给邻格的敌人。",
+      "effects": {
+        "{943f3796}": 0.18000000715255737,
+        "{cb6b2741}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_FlipFrenzy18",
+      "name": "疯狂掷币人",
+      "desc": "抛掷1枚硬币，如果硬币正面朝上，获得@GoldIfHeads@金币。重复抛掷，直至你抛掷的硬币反面朝上。",
+      "effects": {
+        "{b198bbbb}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Cutpurse18_Upgrade",
+      "name": "梁上君子",
+      "desc": "每过@Timer_Upgraded@秒，你的弈子们就有@PercentChance*100@%几率掉落@GoldDrop@金币。",
+      "effects": {
+        "{59d091e2}": 0.15000000596046448,
+        "{627bf513}": 4.0,
+        "{90187eca}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SolarGift18_Upgrade",
+      "name": "日蚀之礼",
+      "desc": "获得1个【蕾欧娜】、1个【瑟庄妮】和1个【凯尔】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GrowUp18",
+      "name": "长大",
+      "desc": "获得@XP@经验值。",
+      "effects": {
+        "XP": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KillersRegretUpgrade18",
+      "name": "侩子手的悔恨",
+      "desc": "你最先阵亡的@NumUnitsUpgrade@个弈子会将其击杀者晕眩@StunDurationUpgrade@秒。",
+      "effects": {
+        "{371528cb}": 1.5,
+        "{6d8a71ae}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GiantsAura18_Prismatic",
+      "name": "巨人光环",
+      "desc": "你生命值最高的那名友军，成为了<Set18CharmUpgrade>一名极其危险的人物。</Set18CharmUpgrade>",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Hugify18_Prismatic",
+      "name": "巨大化",
+      "desc": "你生命值最高的@NumUnitsPrismatic@个单位成长，获得@HealthPrismatic@生命值。",
+      "effects": {
+        "{b69baaa6}": 10.0,
+        "{ed972305}": 2500.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_PocketChange_Upgrade",
+      "name": "零花钱",
+      "desc": "你的1星弈子们在阵亡时掉落@GoldOnDeath@金币。<Set18CharmUpgrade>获得</Set18CharmUpgrade>@UpgradeGoldGranted@<Set18CharmUpgrade>金币。</Set18CharmUpgrade>",
+      "effects": {
+        "{7f96a204}": 1.0,
+        "{fb3024bc}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MiddlePath18",
+      "name": "中央大道",
+      "desc": "刷新你的商店，使其充满2星3费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_UltraAscension",
+      "name": "终极飞升",
+      "desc": "在@ActivationDelay@秒后，友军获得@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "ActivationDelay": 25.0,
+        "DamageAmp": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllOnes_Upgrade",
+      "name": "全1费商店",
+      "desc": "刷新你的商店，使其充满1费弈子。获得@AllOnesUpgradeGold@金币。",
+      "effects": {
+        "{b6bd5759}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TrophyHunter18",
+      "name": "猎手的黄金之路",
+      "desc": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GreaterChaos18",
+      "name": "拼一把大的！",
+      "desc": "随机施放@NumCharms@个【自然仙灵】。",
+      "effects": {
+        "{841baa03}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AfterShock_Upgrade",
+      "name": "余震",
+      "desc": "在@ActivationDelay@<Set18CharmUpgrade>和</Set18CharmUpgrade>@SecondActivationDelayUpgrade@秒后，晕眩所有敌人造成@StunDurationUpgrade@秒。",
+      "effects": {
+        "ActivationDelay": 8.0,
+        "{2ec2e204}": 18.0,
+        "{371528cb}": 1.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllTwos",
+      "name": "全2费商店",
+      "desc": "刷新你的商店，使其充满2费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_AnimateShop18_Upgrade",
+      "name": "活体商店",
+      "desc": "在@UpgradeDuration@秒的持续时间内，你的商店每@Period@秒免费刷新1次。",
+      "effects": {
+        "Period": 2.0,
+        "{dc488023}": 26.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PlatedShields18_Upgrade",
+      "name": "镀板护盾",
+      "desc": "护盾强度提升@BonusShieldPercentUpgrade*100@%。友军获得@ShieldAmountUpgrade@护盾值，持续@ShieldDuration@秒。",
+      "effects": {
+        "ShieldDuration": 10.0,
+        "{48f8f722}": 0.20000000298023224,
+        "{6e181340}": 300.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Infliction_Upgrade",
+      "name": "折磨",
+      "desc": "对所有敌人施加持续@DurationUpgrade@秒的减速、灼烧、魔抗击碎与护甲击碎效果。",
+      "effects": {
+        "{0772688f}": 12.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KnickKnackBag18",
+      "name": "小饰品包",
+      "desc": "获得@Boost2_Num@个消耗品，其能提供永久的物理加成或攻击速度。",
+      "effects": {
+        "{f55ad6bd}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BoosterShot18",
+      "name": "强化激素",
+      "desc": "至多@NumChampsToStarUp@个1星弈子会在战斗期间暂时升星。",
+      "effects": {
+        "{d100628f}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_StartingTown18",
+      "name": "新手村",
+      "desc": "刷新你的商店，使其充满2星1费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_SunfireSorcery_Upgrade",
+      "name": "日炎巫术",
+      "desc": "对敌人施加持续@UpgradeDuration@秒的灼烧和重伤效果。",
+      "effects": {
+        "{dc488023}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HomingFireflies18_Upgrade",
+      "name": "萤火虫之家",
+      "desc": "你的【术师】每消耗@ManaPerFireflyUpgrade@法力值，召唤1只萤火虫。每只萤火虫造成@FireflyDamage@魔法伤害。",
+      "effects": {
+        "{3ec4306b}": 110.0,
+        "{7c90ed02}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RevengeUpgrade18",
+      "name": "复仇",
+      "desc": "每当1名友军阵亡时，你的弈子们获得@DamageAmpUpgrade*100@%可叠加的伤害增幅。",
+      "effects": {
+        "{94a79fde}": 0.05999999865889549
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_IdleCraftsman18_Upgrade",
+      "name": "闲散工匠",
+      "desc": "将你备战席的1件基础装备转化为它可合成的1件成装。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Blaze18",
+      "name": "炽焰",
+      "desc": "火焰席卷整个棋盘，对敌人造成真实伤害。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Terraforming18_Upgrade",
+      "name": "生态改造",
+      "desc": "战斗开始时，获得@SeedsUpgrade@颗种子。 ",
+      "effects": {
+        "{9debba8f}": 9.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MarksmensMarks18_Upgrade",
+      "name": "射手印记",
+      "desc": "你的【射手】有@DoubleAttackChance_Upgrade*100@%几率双重攻击。",
+      "effects": {
+        "{8960af9f}": 0.44999998807907104
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SolitudesCloakUpgrade18",
+      "name": "独行斗篷",
+      "desc": "邻格无友军的弈子们获得@MaxHPBuffUpgrade*100@%最大生命值和@DamageAmpUpgrade*100@%伤害增幅。",
+      "effects": {
+        "{7e647b04}": 0.1499999761581421,
+        "{94a79fde}": 0.15000000596046448
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BlastPotion18_Upgrade_Charm",
+      "name": "爆炸药水",
+      "desc": "获得1个临时的、可装备的【<Set18CharmUpgrade>光明版</Set18CharmUpgrade>爆炸药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Barter18_Upgrade",
+      "name": "以物易物",
+      "desc": "在本回合内，你下次出售的弈子将以@SellMultiplierUpgrade*100@%金币卖出。",
+      "effects": {
+        "{6daecc16}": 2.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LifeDebt",
+      "name": "以命为注",
+      "desc": "每失去@MissingHealthAmount@玩家生命值，获得@GoldPerMissingHealth@金币。",
+      "effects": {
+        "{4839335d}": 12.0,
+        "{a86fd734}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_SolitudesCloak18",
+      "name": "独行斗篷",
+      "desc": "邻格无友军的弈子们获得@MaxHPBuff*100@%最大生命值和@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.10000000149011612,
+        "{229cde48}": 0.10000002384185791
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Salvager18",
+      "name": "打捞术",
+      "desc": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_GiantGrowth",
+      "name": "巨型增长",
+      "desc": "你生命值最高的那个单位成长，获得@HPGain@生命值。",
+      "effects": {
+        "{e26d6f9e}": 700.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CloneCompanion18",
+      "name": "复制同伴",
+      "desc": "复制你伤害最高的那个弈子。复制体造成@CloneDamageMultiplier*100@%伤害。",
+      "effects": {
+        "CloneDamageMultiplier": 0.20000000298023224
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HandOfBaron18_Upgrade",
+      "name": "男爵之手",
+      "desc": "你的队伍获得【纳什男爵】增益，<Set18CharmUpgrade>极大</Set18CharmUpgrade>提升他们的属性。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_StandAlone18",
+      "name": "孤身站场",
+      "desc": "独自处于所在排的弈子们获得@Health*100@%生命值和@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.15000000596046448,
+        "Health": 0.1499999761581421
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Cutpurse18",
+      "name": "梁上君子",
+      "desc": "每过@Timer@秒，你的弈子们就有@PercentChance*100@%几率掉落@GoldDrop@金币。",
+      "effects": {
+        "Timer": 5.0,
+        "{59d091e2}": 0.15000000596046448,
+        "{90187eca}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BeggarsWisp18",
+      "name": "仙灵的怜悯",
+      "desc": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得@Gold@金币。",
+      "effects": {
+        "Gold": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TurtlesVisit18_Upgrade",
+      "name": "灵龟降临",
+      "desc": "本场对战获得【野兽之灵】的【灵龟】增益。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DoodadJar18",
+      "name": "小玩具罐",
+      "desc": "获得@Boost1_Num@个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "effects": {
+        "{892c50b8}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Scrappy18_Upgrade",
+      "name": "零碎",
+      "desc": "战斗开始时：未携带任何装备的@NumChampsUpgrade@个弈子会获得1件临时的推荐装备。",
+      "effects": {
+        "{79b0187d}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LostTravelers_Upgrade",
+      "name": "迷路的游客",
+      "desc": "获得总价值<Set18CharmUpgrade>4</Set18CharmUpgrade>金币的随机弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Combust18",
+      "name": "易燃物",
+      "desc": "你的弈子们在阵亡时产生爆炸，造成@maxHealthExplosionDamage*100@%最大生命值魔法伤害。",
+      "effects": {
+        "{8e1bf27f}": 0.15000000596046448
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GoldenGooseUpgrade18",
+      "name": "招财猫",
+      "desc": "你造成伤害最高的那名友军，每造成@EarnGoldForEveryNDamageUpgrade@伤害，获得@GoldEarned@金币。",
+      "effects": {
+        "{26bd3b14}": 1.0,
+        "{3bf73dd6}": 1000.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_NaturesAlly18_Upgrade",
+      "name": "自然之友",
+      "desc": "每有@ChampionDeathsPerSummon_Upgrade@名友军阵亡，召唤1个随机【峡谷野怪】 <Set18CharmUpgrade>有时会召唤出2星的版本</Set18CharmUpgrade>。",
+      "effects": {
+        "{fc70a444}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MoonriseUpgrade",
+      "name": "皓月当空",
+      "desc": "在@ActivationDelay@秒后，提升@IncreaseRatioUpgrade*100@%【月蚀骑士】羁绊效果。",
+      "effects": {
+        "ActivationDelay": 8.0,
+        "{a19cf950}": 1.75
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LivingSoil18",
+      "name": "活体土壤",
+      "desc": "每过@RootFrequency@秒，根须会晕眩1名敌人@RootDuration@秒。",
+      "effects": {
+        "RootDuration": 1.0,
+        "{6a1de581}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllOnes",
+      "name": "全1费商店",
+      "desc": "刷新你的商店，使其充满1费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TrophyHunter18_Upgrade",
+      "name": "猎手的黄金之路",
+      "desc": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HealthPotion18_Upgrade_Charm",
+      "name": "生命药水",
+      "desc": "获得1个临时的、可装备的【<Set18CharmUpgrade>光明版</Set18CharmUpgrade>生命药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BorrowedGear18_Upgrade",
+      "name": "借来的装备",
+      "desc": "一名弈子获得1件临时推荐装备和@UpgradeHealth@<Set18CharmUpgrade>生命值</Set18CharmUpgrade>。",
+      "effects": {
+        "{f1950c41}": 250.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Bulwark18_Upgrade",
+      "name": "壁垒",
+      "desc": "你的【坦克】在生命值降至@HealthThreshold*100@%时，会获得@ShieldPercentHealth_Upgrade*100@%最大生命值护盾。",
+      "effects": {
+        "HealthThreshold": 0.5,
+        "{e5eb7b68}": 0.30000001192092896
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Resistant",
+      "name": "抵抗",
+      "desc": "【坦克】使即将到来的每段伤害减少@FlatDmgBlock@。",
+      "effects": {
+        "{036341d3}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BronzeSpoon_Upgrade",
+      "name": "铜汤匙",
+      "desc": "获得@UpgradeXP@经验值。",
+      "effects": {
+        "{f3a05617}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Flow18",
+      "name": "行云流水",
+      "desc": "你的弈子们获得持续@Duration@秒的不可阻挡效果和@AttackSpeed*100@%攻击速度。",
+      "effects": {
+        "AttackSpeed": 0.1499999761581421,
+        "Duration": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_NaturesWrath18_Upgrade",
+      "name": "自然之怒",
+      "desc": "在@UpgradeKillDelay@秒后，将所有未携带装备的单位击杀。",
+      "effects": {
+        "{3c366cd6}": 8.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_FieldofMice_Upgrade",
+      "name": "小人国",
+      "desc": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】<Set18CharmUpgrade>和1金币</Set18CharmUpgrade>。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ForestGuide18_Upgrade",
+      "name": "森林向导",
+      "desc": "获得1个随机4费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ThingamajigBag18_Upgrade",
+      "name": "小装置包",
+      "desc": "获得@Upgrade_Boost2_Num@个消耗品，其能提供永久的法术加成或法力回复。",
+      "effects": {
+        "{924c9fa4}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TrainingYard18_Upgrade",
+      "name": "训练场",
+      "desc": "获得@NumDummiesUpgrade@个携带着1件随机坦克装备的【训练假人】。",
+      "effects": {
+        "{f8d8b6f3}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_HeroicSacrifice",
+      "name": "英勇就义",
+      "desc": "你最强大的@NumAllies@个弈子获得史！诗！级！强！化！，但其他友军将会牺牲。",
+      "effects": {
+        "NumAllies": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Stealthy18_Upgrade",
+      "name": "鬼鬼祟祟",
+      "desc": "你后排的@NumChampionsUpgrade@个随机弈子获得持续@UntargetableDurationUpgrade@秒的不可被选取效果。",
+      "effects": {
+        "{38788569}": 10.0,
+        "{3f2cae9b}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PetrifiedDummy18",
+      "name": "石化术",
+      "desc": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和@StatueHealth@生命值的【训练假人】。",
+      "effects": {
+        "{9c37d39b}": 900.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TrainingYard18",
+      "name": "训练场",
+      "desc": "获得@NumDummies@个携带着1件随机坦克装备的【训练假人】。",
+      "effects": {
+        "NumDummies": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Apprentice18_Upgrade",
+      "name": "学徒",
+      "desc": "获得1个随机2星1费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HealthPotion18_Charm",
+      "name": "生命药水",
+      "desc": "获得1个临时的、可装备的【生命药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Resistant_Upgrade",
+      "name": "抵抗",
+      "desc": "【坦克】使即将到来的每段伤害减少@UpgradeFlatDmgBlock@。",
+      "effects": {
+        "{a30df675}": 18.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_MarksmensMarks18",
+      "name": "射手印记",
+      "desc": "你的【射手】有@DoubleAttackChance*100@%几率双重攻击。",
+      "effects": {
+        "DoubleAttackChance": 0.30000001192092896
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BorderVillage18_Upgrade",
+      "name": "边境村庄",
+      "desc": "刷新你的商店，使其充满2星2费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GreaterChaos18_Upgrade",
+      "name": "拼一把大的！",
+      "desc": "随机施放@NumCharmsUpgrade@个<Set18CharmUpgrade>价值</Set18CharmUpgrade>在@UpgradeGoldLowerBound@<Set18CharmUpgrade>或以上金币</Set18CharmUpgrade>的【自然仙灵】。",
+      "effects": {
+        "{1ab38d39}": 2.0,
+        "{76a7a00a}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DoodadJar18_Upgrade",
+      "name": "小玩具罐",
+      "desc": "获得@Upgrade_Boost1_Num@个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "effects": {
+        "{e3908749}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_NaturesAlly18",
+      "name": "自然之友",
+      "desc": "每有@ChampionDeathsPerSummon@名友军阵亡，召唤1个随机【峡谷野怪】。",
+      "effects": {
+        "{125a1007}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomGloves18_Upgrade",
+      "name": "幻影手套",
+      "desc": "获得1个临时的<Set18CharmUpgrade>【连指手套】</Set18CharmUpgrade>。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GrowUp18_Upgrade",
+      "name": "长大",
+      "desc": "获得@UpgradeXP@经验值。",
+      "effects": {
+        "{f3a05617}": 12.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_VerdantVitality_Upgrade",
+      "name": "绿意盎然",
+      "desc": "你的弈子们获得@UpgradeHealthAmount@生命值。",
+      "effects": {
+        "{73ad14ad}": 175.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_UltraAscension_Upgrade",
+      "name": "终极飞升",
+      "desc": "在@UpgradeActivationDelay@秒后，友军获得@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 3.0,
+        "{ed86ab76}": 23.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Counterspell_Upgrade",
+      "name": "法术反制",
+      "desc": "使所有敌人的最大法力值提高@ManaIncreaseUpgrade@，直至敌人下一次施放技能。",
+      "effects": {
+        "{c4ed9f02}": 22.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KnickKnackBag18_Upgrade",
+      "name": "小饰品包",
+      "desc": "获得@Upgrade_Boost2_Num@个消耗品，其能提供永久的物理加成或攻击速度。",
+      "effects": {
+        "{924c9fa4}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Combust18_Upgrade",
+      "name": "易燃物",
+      "desc": "你的弈子们在阵亡时产生爆炸，造成@maxHealthExplosionDamage_Upgrade*100@%最大生命值魔法伤害。",
+      "effects": {
+        "{168a598c}": 0.2199999988079071
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Diversified18",
+      "name": "多样化",
+      "desc": "每有1个已激活的非唯一羁绊，你的队伍获得@AddedHealth@生命值。",
+      "effects": {
+        "{aa5536af}": 30.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TreetopArchers",
+      "name": "树顶弓箭手",
+      "desc": "弓箭手自林间放箭，每@VolleyFrequencyInSeconds@秒造成@PhysicalDamagePerVolley@物理伤害。",
+      "effects": {
+        "{2e6adaf2}": 3.0,
+        "{8100666d}": 500.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Rain18",
+      "name": "泪雨",
+      "desc": "你的队伍获得@ManaRegen@法力回复。",
+      "effects": {
+        "ManaRegen": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Tremors_Prismatic",
+      "name": "地动山摇",
+      "desc": "每@StunIntervalPrismatic@秒，晕眩敌人@StunDurationPrismatic@秒。",
+      "effects": {
+        "{0ac845a4}": 3.0,
+        "{2e11466f}": 1.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AfterShock",
+      "name": "余震",
+      "desc": "在@ActivationDelay@秒后，晕眩所有敌人@StunDuration@秒。",
+      "effects": {
+        "ActivationDelay": 8.0,
+        "StunDuration": 1.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Snacktime18",
+      "name": "点心时间到！",
+      "desc": "【毛茸茸大朋友】会吃掉最大生命值低于@ExecuteThreshold*100@%且受过其伤害的敌人。",
+      "effects": {
+        "ExecuteThreshold": 0.15000000596046448
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Freeroller",
+      "name": "免费刷新术",
+      "desc": "获得@Rerolls@次刷新。",
+      "effects": {
+        "Rerolls": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_LateBloomer18_Upgrade",
+      "name": "大器晚成",
+      "desc": "一名携带着<Set18CharmUpgrade> </Set18CharmUpgrade>@NumRecommendedItemsUpgrade@<Set18CharmUpgrade>件推荐装备</Set18CharmUpgrade>的临时@StarLevel@星@UnitTier@费弈子加入你的队伍。",
+      "effects": {
+        "UnitTier": 1.0,
+        "starLevel": 3.0,
+        "{1572b982}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_LightningStrike_Upgrade",
+      "name": "闪电打击",
+      "desc": "对所有敌人造成@HPPercentDamageUpgrade*100@%最大生命值真实伤害。",
+      "effects": {
+        "{d77a77f5}": 0.18000000715255737
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_GiantGrowth_Upgrade",
+      "name": "巨型增长",
+      "desc": "你生命值最高的@NumUnitsUpgrade@个单位成长，获得@HPGainUpgrade@生命值。",
+      "effects": {
+        "{58332efe}": 700.0,
+        "{6d8a71ae}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Experienced",
+      "name": "老练",
+      "desc": "获得@XP@经验值。",
+      "effects": {
+        "XP": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_HandOfBaron18",
+      "name": "男爵之手",
+      "desc": "你的队伍获得【纳什男爵】增益，提升他们的属性。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BunchOBeltsUpgrade18",
+      "name": "腰带批发",
+      "desc": "你的友军获得@NumBeltsToGrantUpgrade@个无法移除的临时【巨人腰带】。",
+      "effects": {
+        "{8cb48708}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Hummingbird_Prismatic",
+      "name": "蜂鸟",
+      "desc": "你攻击速度最高的@NumUnitsPrismatic@个单位变小，获得@ASGainPrismatic*100@%攻击速度。",
+      "effects": {
+        "{0b8be49e}": 1.0,
+        "{b69baaa6}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_KnickKnackSack18_Upgrade",
+      "name": "小饰品袋",
+      "desc": "获得@Upgrade_Boost3_Num@个消耗品，其能提供永久的物理加成或攻击速度。",
+      "effects": {
+        "{b29e473b}": 4.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MajorPolymorph",
+      "name": "高阶变形术",
+      "desc": "你拥有的1个4费弈子永久变形为1个5费。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Regeneration18",
+      "name": "再生",
+      "desc": "你的队伍每秒治疗@HealPerSecond*100@%最大生命值。",
+      "effects": {
+        "HealPerSecond": 0.009999999776482582
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Preppers_Upgrade",
+      "name": "未雨绸缪",
+      "desc": "你的叠层型装备在下次战斗开始时，拥有<Set18CharmUpgrade>额外</Set18CharmUpgrade>初始层数。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Potioncraft18_Upgrade",
+      "name": "药学博士",
+      "desc": "获得3个临时的、可装备的【<Set18CharmUpgrade>光明版</Set18CharmUpgrade>药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomVest18",
+      "name": "幻影背心",
+      "desc": "获得1个临时的【棘刺背心】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TreetopArchers_Upgrade",
+      "name": "树顶弓箭手",
+      "desc": "弓箭手自林间放箭，每@VolleyFrequencyInSecondsUpgrade@秒造成@PhysicalDamagePerVolleyUpgrade@物理伤害。",
+      "effects": {
+        "{b4afb76f}": 900.0,
+        "{e79145ca}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllThrees_Upgrade",
+      "name": "全3费商店",
+      "desc": "刷新你的商店，使其充满3费弈子。获得@AllThreesUpgradeGold@金币。",
+      "effects": {
+        "{429070dd}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RolyPolys18",
+      "name": "不倒翁",
+      "desc": "在@WaitTime@秒后，每有1名存活的友军，获得1次刷新。",
+      "effects": {
+        "{c883d659}": 18.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Lucky718_Upgrade",
+      "name": "幸运7",
+      "desc": "获得@UpgradeNumRerolls@次商店刷新。",
+      "effects": {
+        "{fbdd9e48}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MinorPolymorph_Upgrade",
+      "name": "低阶变形术",
+      "desc": "你拥有的那个<Set18CharmUpgrade>星级最高</Set18CharmUpgrade>的1费弈子永久变形为1个2费。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_MercenaryForce",
+      "name": "金钱之力",
+      "desc": "每拥有@PerXGold@金币，获得@DamageAmp*100@%伤害增幅。",
+      "effects": {
+        "DamageAmp": 0.029999999329447746,
+        "{ddf97b5a}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Hugify18_Upgrade",
+      "name": "巨大化",
+      "desc": "你生命值最高的那个单位成长，获得@HealthUpgrade@生命值。",
+      "effects": {
+        "{32cf649d}": 600.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Stealthy18",
+      "name": "鬼鬼祟祟",
+      "desc": "你最强大的@NumChampions@个【战士】或【刺客】获得持续@UntargetableDuration@秒的不可被选取效果。 ",
+      "effects": {
+        "NumChampions": 2.0,
+        "UntargetableDuration": 6.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Infliction",
+      "name": "折磨",
+      "desc": "对所有敌人施加持续@Duration@秒的减速、灼烧、魔抗击碎与护甲击碎效果。",
+      "effects": {
+        "Duration": 8.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Combust18_Prismatic",
+      "name": "易燃物",
+      "desc": "你的弈子们在阵亡时产生爆炸，造成@maxHealthExplosionDamage_Prismatic*100@%最大生命值魔法伤害。",
+      "effects": {
+        "{809820f0}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BorderVillage18",
+      "name": "边境村庄",
+      "desc": "刷新你的商店，使其充满2星2费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomArmor18_Upgrade",
+      "name": "幻影护甲",
+      "desc": "获得1个临时的<Set18CharmUpgrade>【顽强不屈】</Set18CharmUpgrade>。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BunchOBelts18",
+      "name": "腰带批发",
+      "desc": "你的友军获得@NumBeltsToGrant@个无法移除的临时【巨人腰带】。",
+      "effects": {
+        "{dc19d4e4}": 7.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Barter18",
+      "name": "以物易物",
+      "desc": "在本回合内，你下次出售的弈子将以@SellMultiplier*100@%金币卖出。",
+      "effects": {
+        "{ac97fe26}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Downpour18_Upgrade",
+      "name": "倾盆大雨",
+      "desc": "你的队伍获得@Upgrade_ManaRegen@法力回复。",
+      "effects": {
+        "{f5ecc72c}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_BlastPotion18_Charm",
+      "name": "爆炸药水",
+      "desc": "获得1个临时的、可装备的【爆炸药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_GiantsAura18",
+      "name": "巨人光环",
+      "desc": "你生命值最高的那名友军，每秒在一片区域内造成@Damage*100@%最大生命值伤害。",
+      "effects": {
+        "Damage": 0.019999999552965164
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PetrifyShields18",
+      "name": "破盾秘法",
+      "desc": "使敌人减速@ChillAmount@%，并将其护盾值削减@ShieldMultiplier*100@%，持续@Duration@秒。",
+      "effects": {
+        "Duration": 10.0,
+        "ShieldMultiplier": 0.19999998807907104,
+        "{f83d9449}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_VerdantVitality",
+      "name": "绿意盎然",
+      "desc": "你的弈子们获得@HealthAmount@生命值。",
+      "effects": {
+        "HealthAmount": 100.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_RideTheWaveUpgrade18",
+      "name": "顺流而下",
+      "desc": "在本回合内，在上场对战中登场的@NumUnitsPerShop@+个弈子会出现在你的下@NumShopsUpgrade@次刷新的商店中。",
+      "effects": {
+        "{957b1671}": 2.0,
+        "{ef7be7a8}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_HeatedRivalry_Upgrade",
+      "name": "鏖战不休",
+      "desc": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+@NumStacksUpgrade@参与击杀数。",
+      "effects": {
+        "{4d47989a}": 7.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Grandmaster18_Upgrade",
+      "name": "奇境宗师",
+      "desc": "获得1个随机2星5费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_ForestMage_Upgrade",
+      "name": "森林魔法师",
+      "desc": "用<Set18CharmUpgrade>升级后</Set18CharmUpgrade>的【自然仙灵】填满你的商店。但你只能购买1个。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BloodMoney",
+      "name": "染血之币",
+      "desc": "每击杀1个弈子，获得@GoldOnDeath@金币。",
+      "effects": {
+        "{fb3024bc}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_QuickenUpgrade18",
+      "name": "加速",
+      "desc": "施放技能时，你的弈子们获得@AttackSpeedGainUpgrade*100@%攻击速度，持续@DurationUpgrade@秒。",
+      "effects": {
+        "{0772688f}": 5.0,
+        "{a7300451}": 0.3999999761581421
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_CircleofElders",
+      "name": "长者之环",
+      "desc": "获得每个5费弈子各1个。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Polymorph",
+      "name": "变形术",
+      "desc": "你拥有的2个1费弈子永久变形为1个3费。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_PocketChange",
+      "name": "零花钱",
+      "desc": "你的1星弈子们在阵亡时掉落@GoldOnDeath@金币。",
+      "effects": {
+        "{fb3024bc}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_ManaPotion18_Charm",
+      "name": "法力药水",
+      "desc": "获得1个临时的、可装备的【法力药水】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Smurfing18",
+      "name": "炸鱼行为",
+      "desc": "获得1个随机5费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_DoodadBag18_Upgrade",
+      "name": "小玩具包",
+      "desc": "获得@Upgrade_Boost2_Num@个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "effects": {
+        "{924c9fa4}": 3.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CurioCart18",
+      "name": "珍品摆摊车",
+      "desc": "开启1个装备商店。装备的费用在0到@TooltipMaxCostOfItem@金币之间。",
+      "effects": {
+        "{72eb58d9}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_EssenceTheft18",
+      "name": "精粹掠夺者",
+      "desc": "本场对战额外获得@Bonus*100@%【女巫精粹】。",
+      "effects": {
+        "Bonus": 0.5
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PottedLifebloom18_Upgrade",
+      "name": "盆栽生命花",
+      "desc": "获得1株临时的【生命花】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_FoundFriend18",
+      "name": "找个朋友",
+      "desc": "获得1个临时的携带着【巨人腰带】的【训练假人】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_IronCore18",
+      "name": "钢铁核心",
+      "desc": "每有1个位于前排的单位，你前排中心的那个弈子就会获得@MaxHealthPerFrontRowUnit*100@%最大生命值。",
+      "effects": {
+        "{94e5ce49}": 0.039999961853027344
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_TurtlesVisit18",
+      "name": "灵龟降临",
+      "desc": "本场对战获得【野兽之灵】的【灵龟】增益。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Blaze18_Prismatic",
+      "name": "炽焰",
+      "desc": "<Set18CharmUpgrade>猛烈</Set18CharmUpgrade>的火焰席卷整个棋盘！",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_AbandonShip18_Upgrade",
+      "name": "弃船",
+      "desc": "出售你棋盘上和备战席的所有弈子，获得@GoldUpgrade@金币和@RerollsUpgrade@次刷新。",
+      "effects": {
+        "{30bc37c4}": 12.0,
+        "{726ae049}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_BarkArmor_Upgrade",
+      "name": "树皮护甲",
+      "desc": "你的弈子们获得@UpgradeShieldAmount@护盾值，持续@UpgradeDuration@秒。",
+      "effects": {
+        "{5cb0761a}": 225.0,
+        "{dc488023}": 10.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllFours_Upgrade",
+      "name": "全4费商店",
+      "desc": "刷新你的商店，使其充满4费弈子。获得@AllFoursUpgradeGold@金币。",
+      "effects": {
+        "{a7731a59}": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_Downpour18",
+      "name": "倾盆大雨",
+      "desc": "你的队伍获得@ManaRegen@法力回复。",
+      "effects": {
+        "ManaRegen": 2.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_Fertilize",
+      "name": "肥料",
+      "desc": "每有1名阵亡的敌人，获得@XPonDeath@经验值。",
+      "effects": {
+        "{59b78842}": 1.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_AllFours",
+      "name": "全4费商店",
+      "desc": "刷新你的商店，使其充满4费弈子。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_PhantomArmor18_Prismatic",
+      "name": "幻影护甲",
+      "desc": "获得<Set18CharmUpgrade>6</Set18CharmUpgrade>个临时的【<Set18CharmUpgrade>光明版</Set18CharmUpgrade>狂徒铠甲】<Set18CharmUpgrade>和5个【装备拆卸器】</Set18CharmUpgrade>。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_18_FieldofMice",
+      "name": "小人国",
+      "desc": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
+      "effects": {},
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    },
+    {
+      "apiName": "DA_CurioCart18_Upgrade",
+      "name": "珍品摆摊车",
+      "desc": "开启1个装备商店。装备的费用在0到@TooltipMaxCostOfItem@金币之间。<Set18CharmUpgrade>获得</Set18CharmUpgrade>@UpgradeGoldGain@<Set18CharmUpgrade>金币。</Set18CharmUpgrade>",
+      "effects": {
+        "{0fb627ae}": 2.0,
+        "{72eb58d9}": 15.0
+      },
+      "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+      "tags": [
+        "{5b609ae2}"
+      ]
+    }
+  ]
+}

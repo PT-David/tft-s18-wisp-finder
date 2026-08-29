@@ -1,0 +1,21 @@
+{
+  "sourceId": "lolchess_wisps_18_1_20260828_attempt",
+  "url": "https://lolchess.gg/rewards/set18/wisps",
+  "retrievedAt": "2026-08-29T04:32:00Z",
+  "fetchStatus": "blocked_by_source_protection",
+  "httpStatus": 202,
+  "challenge": "AWS WAF",
+  "records": [],
+  "humanReviewObservation": {
+    "observedAt": "2026-08-28",
+    "prismaticBlossomsOnlyCount": 11,
+    "mitosisHasBlossomSection": false,
+    "publicIndexUpdated": "2026-08-26"
+  },
+  "warning": "One ordinary GET returned an AWS WAF challenge (HTTP 202); stopped immediately without bypass. Use the browser snapshot importer fallback.",
+  "attemptedUrls": [
+    "https://lolchess.gg/rewards/set18/wisps"
+  ],
+  "pageUpdatedAt": null,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

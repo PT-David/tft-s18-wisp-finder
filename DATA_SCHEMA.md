@@ -53,6 +53,10 @@ export interface FieldSource {
   confidence: Confidence;
 }
 
+export type Knowledge<T> =
+  | { status: 'unknown' }
+  | { status: 'confirmed'; value: T };
+
 export interface Wisp {
   id: string;
   riotId?: string | null;
@@ -70,8 +74,8 @@ export interface Wisp {
   };
 
   requirements: Requirement[];
-  oncePerGame: boolean;
-  reofferCooldownShops?: number | null;
+  oncePerGame: boolean | Knowledge<boolean>;
+  reofferCooldownShops?: number | null | Knowledge<number | null>;
 
   searchConcepts: string[];
   synonyms: string[];
@@ -80,6 +84,11 @@ export interface Wisp {
   patch: '18.1';
 }
 ```
+
+生产快照使用 `Knowledge<T>` 区分未知与已确认值。旧 seed 中的 boolean/number/null
+继续作为向后兼容输入；新生产数据不得用 `false` 或 `null` 表示未取得信息。
+`minimumAffordableGold` 没有独立证据时省略；不得仅将 `cost` 复制到该字段并声称为
+已确认最低可负担金币。候选过滤仍可把基础售价作为显然必要的购买下界，但不能把它展示为完整规则。
 
 ## 3. Requirements 结构示例
 

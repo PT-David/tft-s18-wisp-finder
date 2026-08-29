@@ -1,0 +1,3013 @@
+{
+  "sourceId": "datatft_18_1_20260828",
+  "retrievedAt": "2026-08-28T16:49:16Z",
+  "pageUpdatedAt": "2026-08-28T07:40:00+08:00",
+  "url": "https://www.datatft.com/database#charm",
+  "locale": "zh_cn",
+  "records": [
+    {
+      "sourceIndex": 0,
+      "key": null,
+      "nameZh": "全1费商店",
+      "category": "shop",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "刷新你的商店，使其充满1费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "刷新你的商店，使其充满1费弈子。获得1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 1,
+      "key": null,
+      "nameZh": "防微杜渐",
+      "category": "misc",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "获得1个【装备重铸器】",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "获得2个【装备重铸器】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 2,
+      "key": null,
+      "nameZh": "森林魔法师",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "用【自然仙灵】填满你的商店。但你只能购买1个。",
+      "labelsZh": [
+        "回合：3-5 ~ 10-1",
+        "准备阶段的前8秒内"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "用升级后的【自然仙灵】填满你的商店。但你只能购买1个。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 3,
+      "key": null,
+      "nameZh": "以命为注",
+      "category": "goldxp",
+      "tier": 2,
+      "cost": 0,
+      "effectZh": "每失去12玩家生命值，获得1金币。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "已损失至少10点生命值"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "每失去12玩家生命值，获得1金币。然后治疗3生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 4,
+      "key": null,
+      "nameZh": "元气满满",
+      "category": "combat",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你的弈子们获得4%物理加成和法术加成。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1",
+        "金币少于10"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你的弈子们获得6%物理加成和法术加成。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 5,
+      "key": null,
+      "nameZh": "绿意盎然",
+      "category": "combat",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你的弈子们获得50生命值。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1",
+        "金币少于10"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你的弈子们获得75生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 6,
+      "key": null,
+      "nameZh": "弃船",
+      "category": "risky",
+      "tier": 3,
+      "cost": 0,
+      "effectZh": "出售你棋盘上和备战席的所有弈子，获得6金币和8次刷新。",
+      "labelsZh": [
+        "回合：3-1 ~ 3-4",
+        "没有3星弈子",
+        "棋盘价值在12到20之间",
+        "处于短连胜中",
+        "准备阶段的前15秒内"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "出售你棋盘上和备战席的所有弈子，获得10金币和10次刷新。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 7,
+      "key": null,
+      "nameZh": "神器化",
+      "category": "item",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "至少拥有3件基础装备"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】和1个【装备重铸器】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 8,
+      "key": null,
+      "nameZh": "抛硬币",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "抛掷1枚硬币，如果硬币正面朝上，获得1金币。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "抛掷2枚硬币，如果硬币正面朝上，获得1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 9,
+      "key": null,
+      "nameZh": "打捞术",
+      "category": "misc",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。获得2金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 10,
+      "key": null,
+      "nameZh": "小贩",
+      "category": "item",
+      "tier": 2,
+      "cost": 0,
+      "effectZh": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 11,
+      "key": null,
+      "nameZh": "珍品摆摊车",
+      "category": "item",
+      "tier": 2,
+      "cost": 0,
+      "effectZh": "开启1个装备商店。装备的费用在0到15金币之间。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7",
+        "拥有足够的金币"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 12,
+      "key": null,
+      "nameZh": "树皮护甲",
+      "category": "combat",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你的弈子们获得150护盾值，持续10秒。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你的弈子们获得225护盾值，持续10秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 13,
+      "key": null,
+      "nameZh": "高阶变形术",
+      "category": "risky",
+      "tier": 2,
+      "cost": 0,
+      "effectZh": "你拥有的1个随机4费弈子会永久变形为1个5费弈子。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "拥有对应费用的弈子"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你拥有的那个星级最高的4费弈子永久变形为1个5费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 14,
+      "key": null,
+      "nameZh": "低阶变形术",
+      "category": "risky",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你拥有的1个随机1费弈子永久变形为1个2费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "拥有对应费用的弈子"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你拥有的那个星级最高的1费弈子永久变形为1个2费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 15,
+      "key": null,
+      "nameZh": "变形术",
+      "category": "risky",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你拥有的1个随机2费弈子永久变形为1个3费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 4-1",
+        "拥有对应费用的弈子"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你拥有的那个星级最高的2费弈子永久变形为1个3费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 16,
+      "key": null,
+      "nameZh": "小玩具罐",
+      "category": "misc",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "获得1个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得2个消耗品，其能提供永久的护甲与魔抗或生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 17,
+      "key": null,
+      "nameZh": "找个朋友",
+      "category": "combat",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "获得1个携带着1个【巨人腰带】的【训练假人】。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "获得1个携带着1个【日炎斗篷】的【训练假人】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 18,
+      "key": null,
+      "nameZh": "小饰品罐",
+      "category": "misc",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "获得1个消耗品，其能提供永久的物理加成或攻击速度。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "获得2个消耗品，其能提供永久的物理加成或攻击速度。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 19,
+      "key": null,
+      "nameZh": "小装置罐",
+      "category": "misc",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "获得1个消耗品，其能提供永久的法术加成或法力回复。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得2个消耗品，其能提供永久的法术加成或法力回复。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 20,
+      "key": null,
+      "nameZh": "仙灵的怜悯",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+      "labelsZh": [
+        "回合：2-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得5金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 21,
+      "key": null,
+      "nameZh": "休战",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "获得1金币。你的对手获得1金币。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "获得2金币。你的对手获得1金币。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "获得100金币。你的对手获得1金币。"
+      }
+    },
+    {
+      "sourceIndex": 22,
+      "key": null,
+      "nameZh": "不祥交易",
+      "category": "misc",
+      "tier": 2,
+      "cost": 0,
+      "effectZh": "失去4玩家生命值。获得2金币。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "处于高生命值"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "失去3玩家生命值。获得3金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 23,
+      "key": null,
+      "nameZh": "终极飞升",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "在25秒后，友军获得300%伤害增幅。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "在23秒后，友军获得300%伤害增幅。"
+      },
+      "prismatic": {
+        "cost": 1,
+        "effectZh": "在12秒后，友军获得300%伤害增幅。"
+      }
+    },
+    {
+      "sourceIndex": 24,
+      "key": null,
+      "nameZh": "蜂鸟",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "你攻击速度最高的那个单位变小，获得20%攻击速度。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你攻击速度最高的那个单位变小，获得35%攻击速度。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "你攻击速度最高的10个单位变小，获得100%攻击速度。"
+      }
+    },
+    {
+      "sourceIndex": 25,
+      "key": null,
+      "nameZh": "衣衫褴褛",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "对敌人施加30%魔抗击碎与护甲击碎，持续10秒。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7",
+        "尚未对敌人施加【魔抗击碎】或【护甲击碎】"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "对敌人施加30%魔抗击碎与护甲击碎，持续15秒。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "对敌人施加90%魔抗击碎与护甲击碎，持续45秒。"
+      }
+    },
+    {
+      "sourceIndex": 26,
+      "key": null,
+      "nameZh": "巨大化",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "你生命值最高的那个单位成长，获得350生命值。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你生命值最高的那个单位成长，获得600生命值。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "你生命值最高的10个单位成长，获得2500生命值。"
+      }
+    },
+    {
+      "sourceIndex": 27,
+      "key": null,
+      "nameZh": "全2费商店",
+      "category": "shop",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "刷新你的商店，使其充满2费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "刷新你的商店，使其充满2费弈子。获得1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 28,
+      "key": null,
+      "nameZh": "老练",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得2经验值。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "获得2经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 29,
+      "key": null,
+      "nameZh": "肥料",
+      "category": "risky",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "每有1名阵亡的敌人，获得1经验值。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "每有1名阵亡的敌人，获得1经验值。获得2经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 30,
+      "key": null,
+      "nameZh": "有丝分裂",
+      "category": "champion",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得1个【微型英雄复制器】。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "获得1个【微型英雄复制器】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 31,
+      "key": null,
+      "nameZh": "零花钱",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "你的1星弈子们在阵亡时掉落1金币。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1",
+        "拥有至少2个1星弈子"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你的1星弈子们在阵亡时掉落1金币。获得1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 32,
+      "key": null,
+      "nameZh": "星落",
+      "category": "shop",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 33,
+      "key": null,
+      "nameZh": "大爆炸",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "第一名阵亡的友军会产生爆炸，造成25%最大生命值魔法伤害。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "最先阵亡的2名友军会产生爆炸，造成25%最大生命值魔法伤害。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 34,
+      "key": null,
+      "nameZh": "爆炸药水",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得1个临时的、可装备的【爆炸药水】。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得1个临时的、可装备的【光明版爆炸药水】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 35,
+      "key": null,
+      "nameZh": "借来的装备",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "1个弈子获得1件临时推荐装备。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "1个弈子获得1件临时推荐装备和250生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 36,
+      "key": null,
+      "nameZh": "摄魂夺魄",
+      "category": "risky",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "本场对战额外获得50%【女巫精粹】。",
+      "labelsZh": [
+        "回合：2-1 ~ 4-1",
+        "已激活【魔女】"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "本场对战额外获得90%【女巫精粹】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 37,
+      "key": null,
+      "nameZh": "疯狂掷币人",
+      "category": "risky",
+      "tier": 2,
+      "cost": 1,
+      "effectZh": "抛掷1枚硬币，如果硬币正面朝上，获得1金币。重复抛掷，直至你抛掷的硬币反面朝上。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "抛掷1枚硬币，如果硬币正面朝上，获得1金币。重复抛掷，直至你抛掷的硬币反面朝上。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 38,
+      "key": null,
+      "nameZh": "招财猫",
+      "category": "goldxp",
+      "tier": 2,
+      "cost": 1,
+      "effectZh": "你造成伤害最高的那个弈子，每造成1700伤害，获得1金币。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你造成伤害最高的那个弈子，每造成1000伤害，获得1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 39,
+      "key": null,
+      "nameZh": "生命药水",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得1个临时的、可装备的【生命药水】。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得1个临时的、可装备的【光明版生命药水】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 40,
+      "key": null,
+      "nameZh": "拼一把小的！",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "随机施放1个【自然仙灵】。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "随机施放1个价值在1或以上金币的【自然仙灵】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 41,
+      "key": null,
+      "nameZh": "法力药水",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得1个临时的、可装备的【法力药水】。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得1个临时的、可装备的【光明版法力药水】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 42,
+      "key": null,
+      "nameZh": "泪雨",
+      "category": "combat",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "你的队伍获得1法力回复。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你的队伍获得2法力回复。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 43,
+      "key": null,
+      "nameZh": "鬼鬼祟祟",
+      "category": "combat",
+      "tier": 1,
+      "cost": 0,
+      "effectZh": "你最强大的2个【战士】或【刺客】获得持续6秒的不可被选取效果。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "你后排的2个随机弈子获得持续10秒的不可被选取效果。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 44,
+      "key": null,
+      "nameZh": "自然之怒",
+      "category": "combat",
+      "tier": 3,
+      "cost": 1,
+      "effectZh": "在10秒后，将所有未携带装备的单位击杀。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1",
+        "拥有携带装备的弈子"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "在8秒后，将所有未携带装备的单位击杀。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 45,
+      "key": null,
+      "nameZh": "小玩具包",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得2个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得3个消耗品，其能提供永久的护甲与魔抗或生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 46,
+      "key": null,
+      "nameZh": "小饰品包",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得2个消耗品，其能提供永久的物理加成或攻击速度。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得3个消耗品，其能提供永久的物理加成或攻击速度。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 47,
+      "key": null,
+      "nameZh": "小装置包",
+      "category": "misc",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "获得2个消耗品，其能提供永久的法术加成或法力回复。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得3个消耗品，其能提供永久的法术加成或法力回复。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 48,
+      "key": null,
+      "nameZh": "带一个走",
+      "category": "risky",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "如果你失败但至少击杀了1名敌人，获得4经验值。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7",
+        "处于短连胜中"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "如果你失败但至少击杀了1名敌人，获得6经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 49,
+      "key": null,
+      "nameZh": "低阶胜负手",
+      "category": "risky",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "如果你赢得下一场玩家对战，获得2金币。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7",
+        "处于短连败中",
+        "未激活【魔女】"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "如果你赢得下一场玩家对战，获得3金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 50,
+      "key": null,
+      "nameZh": "干旱",
+      "category": "risky",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "你的连败数加2。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7",
+        "处于连胜或连败中"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你的连败数加3。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 51,
+      "key": null,
+      "nameZh": "洪涝",
+      "category": "risky",
+      "tier": 1,
+      "cost": 1,
+      "effectZh": "你的连胜数加1。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7",
+        "处于连胜或连败中"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "你的连胜数加2。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 52,
+      "key": null,
+      "nameZh": "以物易物",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "在本回合内，你下次出售的弈子将以200%金币卖出。",
+      "labelsZh": [
+        "回合：3-5 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "在本回合内，你下次出售的弈子将以250%金币卖出。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 53,
+      "key": null,
+      "nameZh": "法术反制",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "使所有敌人的最大法力值提高15，直至敌人下一次施放技能。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "使所有敌人的最大法力值提高22，直至敌人下一次施放技能。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "使所有敌人的最大法力值提高150，直至敌人下一次施放技能。"
+      }
+    },
+    {
+      "sourceIndex": 54,
+      "key": null,
+      "nameZh": "幻影护甲",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "获得1个临时的【狂徒铠甲】。",
+      "labelsZh": [
+        "回合：3-1 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得1个临时的【顽强不屈】。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "获得6个临时的【光明版狂徒铠甲】和5个【装备拆卸器】。"
+      }
+    },
+    {
+      "sourceIndex": 55,
+      "key": null,
+      "nameZh": "余震",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "在8秒后，晕眩所有敌人1.5秒。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "在8和18秒后，晕眩所有敌人1.5秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 56,
+      "key": null,
+      "nameZh": "全3费商店",
+      "category": "shop",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "刷新你的商店，使其充满3费弈子。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "刷新你的商店，使其充满3费弈子。获得2金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 57,
+      "key": null,
+      "nameZh": "染血之币",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "每击杀1个弈子，获得1金币。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "每击杀1个弈子，获得1金币。获得1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 58,
+      "key": null,
+      "nameZh": "免费刷新术",
+      "category": "shop",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "获得2次刷新。",
+      "labelsZh": [
+        "回合：2-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得3次刷新。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 59,
+      "key": null,
+      "nameZh": "闪电打击",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "对所有敌人造成10%最大生命值真实伤害。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "对所有敌人造成18%最大生命值真实伤害。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 60,
+      "key": null,
+      "nameZh": "皓月当空",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "在8秒后，提升100%【月蚀骑士】羁绊效果。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "已激活【月光射线】"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "在8秒后，提升175%【月蚀骑士】羁绊效果。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 61,
+      "key": null,
+      "nameZh": "未雨绸缪",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "你的叠层型装备在下次战斗开始时，拥有部分初始层数。",
+      "labelsZh": [
+        "回合：3-1 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你的叠层型装备在下次战斗开始时，拥有额外初始层数。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 62,
+      "key": null,
+      "nameZh": "繁殖",
+      "category": "champion",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "获得第1名阵亡的友军的1个复制体。",
+      "labelsZh": [
+        "回合：2-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得第1个阵亡的友军的1个复制体。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 63,
+      "key": null,
+      "nameZh": "抵抗",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "【坦克】使即将到来的每段伤害减少10。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "【坦克】使即将到来的每段伤害减少18。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 64,
+      "key": null,
+      "nameZh": "日炎巫术",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "对敌人施加持续10秒的灼烧和重伤效果。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7",
+        "尚未对敌人施加【灼烧】或【重伤】，除非已激活【炼狱】"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "对敌人施加持续15秒的灼烧和重伤效果。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 65,
+      "key": null,
+      "nameZh": "腰带批发",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "你的友军获得7个无法移除的临时【巨人腰带】。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你的友军获得10个无法移除的临时【巨人腰带】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 66,
+      "key": null,
+      "nameZh": "掷骰子",
+      "category": "goldxp",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "投掷1个6面体骰子。获得相当于结果点数的金币。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "投掷2个6面体骰子。获得相当于结果点数的金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 67,
+      "key": null,
+      "nameZh": "爆燃",
+      "category": "shop",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "刷新你的商店。【地狱火】引燃2个商店栏位，将其升级。",
+      "labelsZh": [
+        "回合：3-5 ~ 5-7",
+        "已激活【炼狱】"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "刷新你的商店。【地狱火】引燃3个商店栏位，将其升级。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 68,
+      "key": null,
+      "nameZh": "萤火虫之家",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "你的【术师】每消耗20法力值，召唤1只萤火虫。每只造成110魔法伤害。",
+      "labelsZh": [
+        "回合：3-5 ~ 10-1",
+        "场上至少有2个术师"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你的【术师】每消耗15法力值，召唤1只萤火虫。每只造成110魔法伤害。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 69,
+      "key": null,
+      "nameZh": "瞄准镜",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "你的【战士】获得+1攻击距离。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "场上至少有2个战士",
+        "拥有1个带装备的战士"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你的【战士】获得+2攻击距离。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 70,
+      "key": null,
+      "nameZh": "钢铁核心",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "每有1个位于前排的单位，你前排中心的那个弈子就会获得6%最大生命值。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "每有1个位于前排的单位，你前排中心的那个弈子就会获得8%最大生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 71,
+      "key": null,
+      "nameZh": "侩子手的悔恨",
+      "category": "combat",
+      "tier": 3,
+      "cost": 2,
+      "effectZh": "你最先阵亡的3个弈子会将其击杀者晕眩1.5秒。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你最先阵亡的4个弈子会将其击杀者晕眩1.75秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 72,
+      "key": null,
+      "nameZh": "活体土壤",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "每过4秒，根须会晕眩1名敌人1秒。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "每过4秒，根须会晕眩2名敌人1秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 73,
+      "key": null,
+      "nameZh": "射手狂风",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "你【射手】的攻击提供3%可叠加的攻击速度。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1",
+        "场上至少有2个射手",
+        "拥有1个带装备的射手"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你【射手】的攻击提供5%可叠加的攻击速度。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 74,
+      "key": null,
+      "nameZh": "月光仪式",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7",
+        "拥有1个2星1费或2费弈子"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "在战斗期间，你最低星级的2个1费或2费弈子将会升星。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 75,
+      "key": null,
+      "nameZh": "自然之友",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "每有3名友军阵亡，召唤1个随机【峡谷野怪】。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "每有3名友军阵亡，召唤1个随机【峡谷野怪】 有时会召唤出2星的版本。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 76,
+      "key": null,
+      "nameZh": "石化术",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 77,
+      "key": null,
+      "nameZh": "破盾秘法",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "使敌人缓速10%，并将其护盾值削减0.8，持续10秒。",
+      "labelsZh": [
+        "回合：4-2 ~ 4-7, 6-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "使敌人缓速10%，并将其护盾值削减0.7，持续10秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 78,
+      "key": null,
+      "nameZh": "幻影浪花",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "战斗开始时：至多有2个未激活的羁绊会以最低层级激活。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "战斗开始时：至多有4个未激活的羁绊会以最低层级激活。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 79,
+      "key": null,
+      "nameZh": "幻影背心",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "获得1个临时的【棘刺背心】。",
+      "labelsZh": [
+        "回合：3-1 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得1个临时的【黎明圣盾】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 80,
+      "key": null,
+      "nameZh": "镀板护盾",
+      "category": "combat",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "护盾强度提升15%。友军获得持续10秒的150护盾值。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "护盾强度提升20%。友军获得持续10秒的300护盾值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 81,
+      "key": null,
+      "nameZh": "生态改造",
+      "category": "misc",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "战斗开始时，获得7颗种子。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1",
+        "已激活【翠神】"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "战斗开始时，获得10颗种子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 82,
+      "key": null,
+      "nameZh": "猎手的黄金之路",
+      "category": "risky",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。",
+      "labelsZh": [
+        "回合：2-1 ~ 4-7",
+        "已激活【宿敌】"
+      ],
+      "upgrade": {
+        "cost": 0,
+        "effectZh": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 83,
+      "key": null,
+      "nameZh": "荆棘环身",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "你的【坦克】每4秒将承受伤害的12%反射给邻格的敌人。",
+      "labelsZh": [
+        "回合：3-5 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "你的【坦克】每4秒将所受伤害的18%反射给邻格的敌人。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 84,
+      "key": null,
+      "nameZh": "加速",
+      "category": "combat",
+      "tier": 1,
+      "cost": 2,
+      "effectZh": "施放技能时，你的弈子们获得30%攻击速度，持续4秒。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7",
+        "不适用于满装备的无蓝弈子"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "施放技能时，你的弈子们获得40%攻击速度，持续5秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 85,
+      "key": null,
+      "nameZh": "治疗池",
+      "category": "misc",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "获得5玩家生命值。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "已损失至少10点生命值"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得7玩家生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 86,
+      "key": null,
+      "nameZh": "黄金之路",
+      "category": "risky",
+      "tier": 2,
+      "cost": 2,
+      "effectZh": "在3场玩家对战后，获得2x期间胜场数的金币。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "处于短连败中"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "在3场玩家对战回合后，获得2x期间胜场数的金币外加1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 87,
+      "key": null,
+      "nameZh": "倾盆大雨",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "你的队伍获得2法力回复。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "你的队伍获得3法力回复。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "你的队伍获得15法力回复。"
+      }
+    },
+    {
+      "sourceIndex": 88,
+      "key": null,
+      "nameZh": "梁上君子",
+      "category": "risky",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "每过5秒，你的弈子们就有15%几率掉落1金币。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "每过4秒，你的弈子们就有15%几率掉落1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 89,
+      "key": null,
+      "nameZh": "行云流水",
+      "category": "combat",
+      "tier": 1,
+      "cost": 3,
+      "effectZh": "你的弈子们获得持续10秒的不可阻挡效果和15%攻击速度。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "你的弈子们获得持续15秒的不可阻挡效果和15%攻击速度。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 90,
+      "key": null,
+      "nameZh": "回复",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "你的队伍每秒治疗1%最大生命值。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "你的队伍每秒治疗2%最大生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 91,
+      "key": null,
+      "nameZh": "孤身站场",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "独自处于所在排的弈子们获得15%生命值和15%伤害增幅。",
+      "labelsZh": [
+        "回合：3-5 ~ 10-1",
+        "未激活【永恒之森】",
+        "未激活【月光射线】",
+        "未激活【翠神】"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "独自处于所在排的弈子们获得22%生命值和22%伤害增幅。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "独自处于所在排的弈子们获得100%生命值和150%伤害增幅。"
+      }
+    },
+    {
+      "sourceIndex": 92,
+      "key": null,
+      "nameZh": "铜汤匙",
+      "category": "goldxp",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得4经验值。",
+      "labelsZh": [
+        "回合：2-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得4经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 93,
+      "key": null,
+      "nameZh": "鏖战不休",
+      "category": "champion",
+      "tier": 1,
+      "cost": 3,
+      "effectZh": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+3参与击杀数。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+7参与击杀数。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 94,
+      "key": null,
+      "nameZh": "屠戮狂暴",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "拥有1个带装备的战士"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 95,
+      "key": null,
+      "nameZh": "迷路的游客",
+      "category": "champion",
+      "tier": 1,
+      "cost": 3,
+      "effectZh": "获得总价值3金币的随机弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "获得总价值4金币的随机弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 96,
+      "key": null,
+      "nameZh": "金钱之力",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "每拥有10金币，获得3%伤害增幅。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "至少拥有30金币"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "每拥有10金币，获得4.5%伤害增幅。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 97,
+      "key": null,
+      "nameZh": "超级暴击",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "拥有【技能暴击】的友军获得25%暴击伤害。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1",
+        "拥有2个具有【技能暴击】的单位"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "拥有【技能暴击】的友军获得40%暴击伤害。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 98,
+      "key": null,
+      "nameZh": "约德尔之灵",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "友军有99%几率闪避攻击，持续4秒。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "友军有99%几率闪避攻击，持续5秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 99,
+      "key": null,
+      "nameZh": "学徒",
+      "category": "champion",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得1个随机2星1费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "获得1个随机2星1费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 100,
+      "key": null,
+      "nameZh": "鲜血与铁",
+      "category": "item",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "在20个弈子阵亡后，获得1个【基础装备锻造器】。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "在16个弈子阵亡后，获得1个【基础装备锻造器】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 101,
+      "key": null,
+      "nameZh": "壁垒",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "你的【坦克】在生命值降至50%时，会获得20%最大生命值护盾。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1",
+        "场上至少有2个坦克"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "你的【坦克】在生命值降至50%时，会获得30%最大生命值护盾。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 102,
+      "key": null,
+      "nameZh": "小玩具袋",
+      "category": "misc",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得3个消耗品，其能提供永久的护甲与魔抗或生命值。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得4个消耗品，其能提供永久的护甲与魔抗或生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 103,
+      "key": null,
+      "nameZh": "坚硬木材",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低14%。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低20%。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 104,
+      "key": null,
+      "nameZh": "小饰品袋",
+      "category": "misc",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得3个消耗品，其能提供永久的物理加成或攻击速度。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得4个消耗品，其能提供永久的物理加成或攻击速度。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 105,
+      "key": null,
+      "nameZh": "富魔之壤",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "你的【术师】最大法力值减少0.82。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "场上至少有2个术师",
+        "拥有1个带装备的术师"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "你的【术师】最大法力值减少0.75。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 106,
+      "key": null,
+      "nameZh": "射手标记",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "你的【射手】有30%几率双重攻击。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "场上至少有2个射手",
+        "拥有1个带装备的射手"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "你的【射手】有45%几率双重攻击。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 107,
+      "key": null,
+      "nameZh": "幻影手套",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得1个临时的【窃贼手套】。",
+      "labelsZh": [
+        "回合：3-1 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得1个临时的【连指手套】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 108,
+      "key": null,
+      "nameZh": "药学博士",
+      "category": "misc",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得3个临时的、可装备的【药水】。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得3个临时的、可装备的【光明版药水】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 109,
+      "key": null,
+      "nameZh": "复仇",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "每当1名友军阵亡时，你的弈子们获得4%可叠加的伤害增幅。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "每当1名友军阵亡时，你的弈子们获得6%可叠加的伤害增幅。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 110,
+      "key": null,
+      "nameZh": "顺流而下",
+      "category": "shop",
+      "tier": 3,
+      "cost": 3,
+      "effectZh": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "准备阶段的前20秒内",
+        "至少拥有20金币"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 111,
+      "key": null,
+      "nameZh": "骨头滚滚",
+      "category": "shop",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "每获得1次击杀，你都有50%几率获得1次免费刷新。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 112,
+      "key": null,
+      "nameZh": "零碎",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "战斗开始时：未携带任何装备的2个弈子会获得1件临时的推荐装备。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "战斗开始时：未携带任何装备的3个弈子会获得1件临时的推荐装备。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 113,
+      "key": null,
+      "nameZh": "搜查队",
+      "category": "shop",
+      "tier": 1,
+      "cost": 3,
+      "effectZh": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 114,
+      "key": null,
+      "nameZh": "独行斗篷",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "邻格无友军的弈子们获得10%最大生命值和10%伤害增幅。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "邻格无友军的弈子们获得15%最大生命值和15%伤害增幅。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 115,
+      "key": null,
+      "nameZh": "小装置袋",
+      "category": "misc",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得3个消耗品，其能提供永久的法术加成或法力回复。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得4个消耗品，其能提供永久的法术加成或法力回复。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 116,
+      "key": null,
+      "nameZh": "训练场",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "获得2个携带着1件随机坦克装备的【训练假人】。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "获得3个携带着1件随机坦克装备的【训练假人】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 117,
+      "key": null,
+      "nameZh": "多样化",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "每有1个已激活的非唯一羁绊，你的队伍获得30生命值。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "已激活至少5个羁绊"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "每有1个已激活的非唯一羁绊，你的队伍获得45生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 118,
+      "key": null,
+      "nameZh": "新手村",
+      "category": "shop",
+      "tier": 3,
+      "cost": 3,
+      "effectZh": "刷新你的商店，使其充满2星1费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "刷新你的商店，使其充满2星1费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 119,
+      "key": null,
+      "nameZh": "幻影纹章",
+      "category": "combat",
+      "tier": 3,
+      "cost": 3,
+      "effectZh": "获得1个你层级最高羁绊的临时的纹章。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 1,
+        "effectZh": "获得1个你层级最高羁绊的临时的纹章。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 120,
+      "key": null,
+      "nameZh": "小型血祭",
+      "category": "misc",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "失去3玩家生命值。获得1个【次级英雄复制器】。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "处于高生命值"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "失去1玩家生命值。获得1个【次级英雄复制器】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 121,
+      "key": null,
+      "nameZh": "高阶胜负手",
+      "category": "risky",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "如果你赢得下一场玩家对战，获得8金币。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "处于短连败中"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "如果你赢得下一场对战，获得10金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 122,
+      "key": null,
+      "nameZh": "庆功宴",
+      "category": "risky",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "每有1个己方弈子在战斗中存活，获得2金币。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "每有1个己方弈子在战斗中存活，获得3金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 123,
+      "key": null,
+      "nameZh": "不倒翁",
+      "category": "shop",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "在18秒后，每有1名存活的友军，获得1次刷新。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "在16秒后，每有1名存活的友军，获得1次刷新。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 124,
+      "key": null,
+      "nameZh": "慢速学习",
+      "category": "goldxp",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "在15秒后，每有1名存活的友军，获得2经验值。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "在12秒后，每有1名存活的友军，获得2经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 125,
+      "key": null,
+      "nameZh": "地动山摇",
+      "category": "combat",
+      "tier": 3,
+      "cost": 4,
+      "effectZh": "每8秒，晕眩敌人1秒。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "每8秒，晕眩敌人1.5秒。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "每3秒，晕眩敌人1.5秒。"
+      }
+    },
+    {
+      "sourceIndex": 126,
+      "key": null,
+      "nameZh": "全4费商店",
+      "category": "shop",
+      "tier": 1,
+      "cost": 4,
+      "effectZh": "刷新你的商店，使其充满4费弈子。",
+      "labelsZh": [
+        "回合：5-1 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "刷新你的商店，使其充满4费弈子。获得2金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 127,
+      "key": null,
+      "nameZh": "后排之星",
+      "category": "combat",
+      "tier": 2,
+      "cost": 3,
+      "effectZh": "1个随机后排弈子获得85%攻击速度，持续7秒。",
+      "labelsZh": [
+        "回合：4-2 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "1个随机后排弈子获得115%攻击速度，持续8秒。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 128,
+      "key": null,
+      "nameZh": "贴贴",
+      "category": "combat",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "每有1名相邻的友军，弈子们就会获得4%最大生命值护盾和4%伤害增幅。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "每有1名相邻的友军，弈子们就会获得6%最大生命值护盾和6%伤害增幅。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 129,
+      "key": null,
+      "nameZh": "巨型增长",
+      "category": "combat",
+      "tier": 3,
+      "cost": 4,
+      "effectZh": "你生命值最高的那个单位成长，获得750生命值。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "你生命值最高的2个单位成长，获得750生命值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 130,
+      "key": null,
+      "nameZh": "森林多胞胎",
+      "category": "champion",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "获得2个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "获得3个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 131,
+      "key": null,
+      "nameZh": "拼一把大的！",
+      "category": "misc",
+      "tier": 3,
+      "cost": 4,
+      "effectZh": "随机施放2个【自然仙灵】。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "随机施放2个价值在2或以上金币的【自然仙灵】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 132,
+      "key": null,
+      "nameZh": "英雄登场",
+      "category": "combat",
+      "tier": 3,
+      "cost": 4,
+      "effectZh": "在8秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1",
+        "备战席上有弈子"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "在5秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 133,
+      "key": null,
+      "nameZh": "闲散工匠",
+      "category": "item",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "将你备战席的1件基础装备转化为它可合成的1件成装。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1",
+        "备战席上至少有1件基础装备"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "将你备战席的1件基础装备转化为它可合成的1件成装。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 134,
+      "key": null,
+      "nameZh": "野区",
+      "category": "shop",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "让【峡谷野怪】占据你的商店。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7",
+        "已激活【峡谷怪物】"
+      ],
+      "upgrade": {
+        "cost": 3,
+        "effectZh": "让【峡谷野怪】占据你的商店。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 135,
+      "key": null,
+      "nameZh": "屏障",
+      "category": "combat",
+      "tier": 2,
+      "cost": 4,
+      "effectZh": "友军获得1250护盾值，在6秒内持续衰减。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "友军获得1250护盾值，在9秒内持续衰减。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "友军获得7500护盾值，在30秒内持续衰减。"
+      }
+    },
+    {
+      "sourceIndex": 136,
+      "key": null,
+      "nameZh": "散件赏金",
+      "category": "risky",
+      "tier": 1,
+      "cost": 4,
+      "effectZh": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7",
+        "处于短连败中"
+      ],
+      "upgrade": {
+        "cost": 2,
+        "effectZh": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 137,
+      "key": null,
+      "nameZh": "闪电风暴",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "每过1秒，对1名敌人造成5%最大生命值真实伤害。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "每过1秒，对1名敌人造成7%最大生命值真实伤害。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "每过0.15秒，对1名敌人造成5%最大生命值真实伤害。"
+      }
+    },
+    {
+      "sourceIndex": 138,
+      "key": null,
+      "nameZh": "炽焰",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "火焰席卷整个棋盘，对敌人造成持续递增的真实伤害。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "火焰席卷整个棋盘，对敌人造成更高的真实伤害。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "猛烈的火焰席卷整个棋盘！"
+      }
+    },
+    {
+      "sourceIndex": 139,
+      "key": null,
+      "nameZh": "克隆弈子",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "复制你伤害最高的弈子。复制体造成20%伤害。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "复制你伤害最高的弈子。复制体造成30%伤害。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "复制你伤害最高的弈子。复制体造成100%伤害。"
+      }
+    },
+    {
+      "sourceIndex": 140,
+      "key": null,
+      "nameZh": "易燃物",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "你的弈子们在阵亡时产生爆炸，造成22%最大生命值魔法伤害。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "你的弈子们在阵亡时产生爆炸，造成100%最大生命值魔法伤害。"
+      }
+    },
+    {
+      "sourceIndex": 141,
+      "key": null,
+      "nameZh": "巨人光环",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "你生命值最高的那名友军，每秒在一片区域内造成2%最大生命值伤害。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "你生命值最高的那名友军，每秒在一片区域内造成3%最大生命值伤害。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "你生命值最高的那名友军，成为了一名极其危险的人物。"
+      }
+    },
+    {
+      "sourceIndex": 142,
+      "key": null,
+      "nameZh": "雇佣兵",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "1个携带着1件推荐装备的临时5星1费弈子加入你的队伍。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "1个携带着2件推荐装备的临时1星5费弈子加入你的队伍。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "3个临时的、携带着2件推荐装备的2星5费弈子加入你的队伍。"
+      }
+    },
+    {
+      "sourceIndex": 143,
+      "key": null,
+      "nameZh": "树顶弓箭手",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "弓箭手自林间放箭，每3秒造成500物理伤害。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "弓箭手自林间放箭，每3秒造成900物理伤害。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "数量多到难以置信的弓箭手自林间放箭。"
+      }
+    },
+    {
+      "sourceIndex": 144,
+      "key": null,
+      "nameZh": "英勇就义",
+      "category": "combat",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "你最强大的3个弈子获得史！诗！级！强！化！，但其他友军将会牺牲。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7",
+        "拥有携带装备的弈子",
+        "满装备单位少于4个"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "你最强大的3个弈子获得史！诗！级！强！化！，但其他友军将会牺牲。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 145,
+      "key": null,
+      "nameZh": "森林向导",
+      "category": "champion",
+      "tier": 3,
+      "cost": 5,
+      "effectZh": "获得1个随机4费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 2-7"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "获得1个随机4费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 146,
+      "key": null,
+      "nameZh": "光明化",
+      "category": "combat",
+      "tier": 3,
+      "cost": 4,
+      "effectZh": "在8秒后，1件被携带着的随机装备暂时变为光明版。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "在5秒后，1件被携带着的随机装备暂时变为光明版。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 147,
+      "key": null,
+      "nameZh": "输得漂亮",
+      "category": "risky",
+      "tier": 2,
+      "cost": 5,
+      "effectZh": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1",
+        "处于短连胜中"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "在接下来的3场玩家对战回合，你每输掉一场就会获得6经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 148,
+      "key": null,
+      "nameZh": "日蚀之礼",
+      "category": "champion",
+      "tier": 2,
+      "cost": 6,
+      "effectZh": "获得1个【蕾欧娜】、1个【瑟庄妮】和1个【凯尔】。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4",
+        "已激活【日光射线】"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "获得1个【蕾欧娜】、1个【瑟庄妮】和1个【凯尔】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 149,
+      "key": null,
+      "nameZh": "强化激素",
+      "category": "combat",
+      "tier": 2,
+      "cost": 6,
+      "effectZh": "至多2个1星弈子会在战斗期间暂时升星。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "拥有2个1星弈子，或1个满装备的5费弈子"
+      ],
+      "upgrade": {
+        "cost": 6,
+        "effectZh": "至多3个1星弈子会在战斗期间暂时升星。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 150,
+      "key": null,
+      "nameZh": "折磨",
+      "category": "combat",
+      "tier": 3,
+      "cost": 6,
+      "effectZh": "对所有敌人施加持续8秒的缓速、灼烧、魔抗击碎与护甲击碎效果。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "尚未对敌人施加【魔抗击碎】或【护甲击碎】",
+        "尚未对敌人施加【灼烧】或【重伤】，除非已激活【炼狱】"
+      ],
+      "upgrade": {
+        "cost": 6,
+        "effectZh": "对所有敌人施加持续12秒的缓速、灼烧、魔抗击碎与护甲击碎效果。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 151,
+      "key": null,
+      "nameZh": "大器晚成",
+      "category": "combat",
+      "tier": 3,
+      "cost": 6,
+      "effectZh": "一个临时的3星1费弈子加入你的队伍。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 6,
+        "effectZh": "一名携带着 1件推荐装备的临时3星1费弈子加入己方队伍。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "一队(包含5个)临时的4星1费弈子加入你的队伍。"
+      }
+    },
+    {
+      "sourceIndex": 152,
+      "key": null,
+      "nameZh": "边境村庄",
+      "category": "shop",
+      "tier": 3,
+      "cost": 6,
+      "effectZh": "刷新你的商店，使其充满2星2费弈子。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "刷新你的商店，使其充满2星2费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 153,
+      "key": null,
+      "nameZh": "男爵之手",
+      "category": "combat",
+      "tier": 3,
+      "cost": 6,
+      "effectZh": "你的队伍获得【纳什男爵】增益，提升他们的属性。",
+      "labelsZh": [
+        "回合：5-1 ~ 10-1",
+        "已激活【峡谷怪物】"
+      ],
+      "upgrade": {
+        "cost": 6,
+        "effectZh": "你的队伍获得【纳什男爵】增益，极大提升他们的属性。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 154,
+      "key": null,
+      "nameZh": "旅行者",
+      "category": "champion",
+      "tier": 2,
+      "cost": 6,
+      "effectZh": "获得1个随机2星2费弈子。",
+      "labelsZh": [
+        "回合：2-1 ~ 3-4"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "获得1个随机2星2费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 155,
+      "key": null,
+      "nameZh": "中央大道",
+      "category": "shop",
+      "tier": 2,
+      "cost": 6,
+      "effectZh": "刷新你的商店，使其充满2星3费弈子。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 4,
+        "effectZh": "刷新你的商店，使其充满2星3费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 156,
+      "key": null,
+      "nameZh": "焕新之光",
+      "category": "shop",
+      "tier": 2,
+      "cost": 6,
+      "effectZh": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-7",
+        "已激活【日光射线】"
+      ],
+      "upgrade": {
+        "cost": 5,
+        "effectZh": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 157,
+      "key": null,
+      "nameZh": "血祭",
+      "category": "misc",
+      "tier": 3,
+      "cost": 6,
+      "effectZh": "失去10玩家生命值。获得1个【英雄复制器】。",
+      "labelsZh": [
+        "回合：4-2 ~ 4-7",
+        "处于高生命值"
+      ],
+      "upgrade": {
+        "cost": 6,
+        "effectZh": "失去8玩家生命值。获得1个【英雄复制器】。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 158,
+      "key": null,
+      "nameZh": "幸运7",
+      "category": "shop",
+      "tier": 2,
+      "cost": 7,
+      "effectZh": "获得7次商店刷新。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 7,
+        "effectZh": "获得10次商店刷新。"
+      },
+      "prismatic": {
+        "cost": 0,
+        "effectZh": "获得777次商店刷新。"
+      }
+    },
+    {
+      "sourceIndex": 159,
+      "key": null,
+      "nameZh": "炸鱼行为",
+      "category": "champion",
+      "tier": 3,
+      "cost": 7,
+      "effectZh": "获得1个随机5费弈子。",
+      "labelsZh": [
+        "回合：3-5 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 6,
+        "effectZh": "获得1个随机5费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 160,
+      "key": null,
+      "nameZh": "长大",
+      "category": "goldxp",
+      "tier": 2,
+      "cost": 7,
+      "effectZh": "获得10经验值。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 7,
+        "effectZh": "获得12经验值。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 161,
+      "key": null,
+      "nameZh": "小人国",
+      "category": "champion",
+      "tier": 2,
+      "cost": 8,
+      "effectZh": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1",
+        "上一场战斗中上阵了5个1费弈子"
+      ],
+      "upgrade": {
+        "cost": 8,
+        "effectZh": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 162,
+      "key": null,
+      "nameZh": "活体商店",
+      "category": "shop",
+      "tier": 2,
+      "cost": 8,
+      "effectZh": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
+      "labelsZh": [
+        "回合：4-2 ~ 5-7"
+      ],
+      "upgrade": {
+        "cost": 8,
+        "effectZh": "在26秒的持续时间里，你的商店每2秒免费刷新一次。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 163,
+      "key": null,
+      "nameZh": "大腕",
+      "category": "champion",
+      "tier": 2,
+      "cost": 8,
+      "effectZh": "获得2个随机1星4费弈子。",
+      "labelsZh": [
+        "回合：4-2 ~ 4-7"
+      ],
+      "upgrade": {
+        "cost": 7,
+        "effectZh": "获得2个随机1星4费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 164,
+      "key": null,
+      "nameZh": "对影成三",
+      "category": "champion",
+      "tier": 2,
+      "cost": 9,
+      "effectZh": "获得1个随机2星3费弈子。",
+      "labelsZh": [
+        "回合：3-1 ~ 4-1"
+      ],
+      "upgrade": {
+        "cost": 8,
+        "effectZh": "获得1个随机2星3费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 165,
+      "key": null,
+      "nameZh": "全5费商店",
+      "category": "shop",
+      "tier": 3,
+      "cost": 10,
+      "effectZh": "刷新你的商店，使其充满5费弈子。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 10,
+        "effectZh": "刷新你的商店，使其充满5费弈子。获得5金币。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 166,
+      "key": null,
+      "nameZh": "奇境宗师",
+      "category": "champion",
+      "tier": 3,
+      "cost": 18,
+      "effectZh": "获得1个随机2星5费弈子。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 14,
+        "effectZh": "获得1个随机2星5费弈子。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 167,
+      "key": null,
+      "nameZh": "预言之子",
+      "category": "champion",
+      "tier": 3,
+      "cost": 35,
+      "effectZh": "获得1个5费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1",
+        "至少拥有35金币",
+        "生命值高于50",
+        "等级达到10级或以上"
+      ],
+      "upgrade": {
+        "cost": 33,
+        "effectZh": "获得1个5费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。"
+      },
+      "prismatic": null
+    },
+    {
+      "sourceIndex": 168,
+      "key": null,
+      "nameZh": "长者之环",
+      "category": "champion",
+      "tier": 3,
+      "cost": 45,
+      "effectZh": "获得每个5费弈子各1个。",
+      "labelsZh": [
+        "回合：6-1 ~ 10-1"
+      ],
+      "upgrade": {
+        "cost": 40,
+        "effectZh": "获得每个5费弈子各1个。"
+      },
+      "prismatic": null
+    }
+  ]
+}

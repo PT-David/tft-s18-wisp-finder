@@ -1,0 +1,294 @@
+{
+  "lolchessIdentityUnresolved": [],
+  "communityDragonOnly": [
+    "再生",
+    "复制同伴",
+    "射手印记",
+    "战马降临",
+    "灵龟降临",
+    "点心时间到！",
+    "猛虎降临",
+    "盆栽生命花",
+    "盆栽石皮树",
+    "精粹掠夺者",
+    "蛮熊降临",
+    "衣冠冢"
+  ],
+  "dataTftUnmatched": [
+    {
+      "id": "snapshot_021_534324382164",
+      "nameZh": "休战",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_022_fc7538964718",
+      "nameZh": "不祥交易",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_036_f484358ea1e5",
+      "nameZh": "摄魂夺魄",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_048_cbc77e083fc2",
+      "nameZh": "带一个走",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_049_d60aa5ac9feb",
+      "nameZh": "低阶胜负手",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_050_770e0f5d1043",
+      "nameZh": "干旱",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_051_e06d127b43f9",
+      "nameZh": "洪涝",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_085_b53a01d778ee",
+      "nameZh": "治疗池",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_086_d83df5e4cd8a",
+      "nameZh": "黄金之路",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_090_cf945e21ddef",
+      "nameZh": "回复",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_106_1bce73a8632c",
+      "nameZh": "射手标记",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_120_cf0b477ffe00",
+      "nameZh": "小型血祭",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_121_1899d3fe4c61",
+      "nameZh": "高阶胜负手",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_136_c467ccd546d7",
+      "nameZh": "散件赏金",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_139_6fda4e76a4da",
+      "nameZh": "克隆弈子",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_147_2dc94df4e3a5",
+      "nameZh": "输得漂亮",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_157_3ed870773960",
+      "nameZh": "血祭",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    }
+  ],
+  "withoutRiotId": [
+    {
+      "id": "snapshot_021_534324382164",
+      "nameZh": "休战",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_022_fc7538964718",
+      "nameZh": "不祥交易",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_036_f484358ea1e5",
+      "nameZh": "摄魂夺魄",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_048_cbc77e083fc2",
+      "nameZh": "带一个走",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_049_d60aa5ac9feb",
+      "nameZh": "低阶胜负手",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_050_770e0f5d1043",
+      "nameZh": "干旱",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_051_e06d127b43f9",
+      "nameZh": "洪涝",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_085_b53a01d778ee",
+      "nameZh": "治疗池",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_086_d83df5e4cd8a",
+      "nameZh": "黄金之路",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_090_cf945e21ddef",
+      "nameZh": "回复",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_106_1bce73a8632c",
+      "nameZh": "射手标记",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_120_cf0b477ffe00",
+      "nameZh": "小型血祭",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_121_1899d3fe4c61",
+      "nameZh": "高阶胜负手",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_136_c467ccd546d7",
+      "nameZh": "散件赏金",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_139_6fda4e76a4da",
+      "nameZh": "克隆弈子",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_147_2dc94df4e3a5",
+      "nameZh": "输得漂亮",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_157_3ed870773960",
+      "nameZh": "血祭",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    }
+  ],
+  "withoutChineseMatch": [
+    "再生",
+    "复制同伴",
+    "射手印记",
+    "战马降临",
+    "灵龟降临",
+    "点心时间到！",
+    "猛虎降临",
+    "盆栽生命花",
+    "盆栽石皮树",
+    "精粹掠夺者",
+    "蛮熊降临",
+    "衣冠冢"
+  ],
+  "fuzzyNameOnly": [
+    {
+      "id": "snapshot_021_534324382164",
+      "nameZh": "休战",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_022_fc7538964718",
+      "nameZh": "不祥交易",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_036_f484358ea1e5",
+      "nameZh": "摄魂夺魄",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_048_cbc77e083fc2",
+      "nameZh": "带一个走",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_049_d60aa5ac9feb",
+      "nameZh": "低阶胜负手",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_050_770e0f5d1043",
+      "nameZh": "干旱",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_051_e06d127b43f9",
+      "nameZh": "洪涝",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_085_b53a01d778ee",
+      "nameZh": "治疗池",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_086_d83df5e4cd8a",
+      "nameZh": "黄金之路",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_090_cf945e21ddef",
+      "nameZh": "回复",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_106_1bce73a8632c",
+      "nameZh": "射手标记",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_120_cf0b477ffe00",
+      "nameZh": "小型血祭",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_121_1899d3fe4c61",
+      "nameZh": "高阶胜负手",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_136_c467ccd546d7",
+      "nameZh": "散件赏金",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_139_6fda4e76a4da",
+      "nameZh": "克隆弈子",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_147_2dc94df4e3a5",
+      "nameZh": "输得漂亮",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    },
+    {
+      "id": "snapshot_157_3ed870773960",
+      "nameZh": "血祭",
+      "reason": "No exact zh_cn client-name match; fuzzy matching was not accepted."
+    }
+  ],
+  "unknownCategory": [],
+  "other": []
+}

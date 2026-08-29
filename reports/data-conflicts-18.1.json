@@ -1,0 +1,164 @@
+[
+  {
+    "conflictType": "acquisition_warning",
+    "severity": "low",
+    "blocksProductionReady": false,
+    "wispIdentity": "corpus",
+    "field": "LoLCHESS cloud acquisition",
+    "sourceA": "lolchess_wisps_18_1_20260828_attempt",
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "status": "blocked_by_source_protection",
+      "httpStatus": 202
+    },
+    "valueB": {
+      "status": "browser_snapshot_imported",
+      "recordCount": 174
+    },
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "The cloud attempt was blocked, but the verified browser snapshot supplies record-level evidence."
+  },
+  {
+    "conflictType": "corpus_count",
+    "severity": "critical",
+    "blocksProductionReady": true,
+    "wispIdentity": "corpus",
+    "field": "corpus size",
+    "sourceA": "datatft_18_1_20260828",
+    "sourceB": "opgg_set18_wisps_20260829",
+    "valueA": 169,
+    "valueB": 200,
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "Source counts are not treated as an intersection. Only strong identity matches establish overlap; corpus membership and production completeness are separate states."
+  },
+  {
+    "conflictType": "category_counts",
+    "severity": "high",
+    "blocksProductionReady": true,
+    "wispIdentity": "corpus",
+    "field": "category distribution",
+    "sourceA": "datatft_18_1_20260828",
+    "sourceB": "opgg_set18_wisps_20260829",
+    "valueA": {
+      "champion": 16,
+      "combat": 75,
+      "misc": 23,
+      "shop": 19,
+      "gold_xp": 13,
+      "risky": 18,
+      "item": 5
+    },
+    "valueB": {
+      "Combat": 94,
+      "Misc": 30,
+      "Champion": 16,
+      "Shop": 19,
+      "Risky": 21,
+      "GoldXP": 14,
+      "Item": 6
+    },
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "Aggregate category differences are retained independently from identity matching."
+  },
+  {
+    "conflictType": "blossom_coverage",
+    "severity": "high",
+    "blocksProductionReady": true,
+    "wispIdentity": "corpus",
+    "field": "Blossom presence",
+    "sourceA": "datatft_18_1_20260828",
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "normalizedProduction": 130,
+      "communityDragonDistinctUpgrade": 130
+    },
+    "valueB": {
+      "lolchess": 145
+    },
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "Presence is audited per confirmed canonical identity; cross-language free text remains semantic review."
+  },
+  {
+    "conflictType": "prismatic_coverage",
+    "severity": "high",
+    "blocksProductionReady": true,
+    "wispIdentity": "corpus",
+    "field": "Prismatic coverage",
+    "sourceA": "datatft_18_1_20260828",
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "dataTft": 20,
+      "communityDragon": 19
+    },
+    "valueB": {
+      "lolchess": 19
+    },
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "Current record-level snapshots are compared by canonical identity; historical aggregate observation 11 is superseded."
+  },
+  {
+    "conflictType": "knowledge_state",
+    "severity": "medium",
+    "blocksProductionReady": false,
+    "wispIdentity": "corpus",
+    "field": "oncePerGame/reofferCooldownShops",
+    "sourceA": "normalized_production",
+    "sourceB": "lolchess_set18_wisps_browser_import",
+    "valueA": {
+      "default": "unknown"
+    },
+    "valueB": {
+      "oncePerGameConfirmedTrue": 2
+    },
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "Only explicitly evidenced knowledge is confirmed; absence remains unknown."
+  },
+  {
+    "conflictType": "source_membership",
+    "severity": "high",
+    "blocksProductionReady": true,
+    "wispIdentity": "corpus",
+    "field": "unresolved cross-source identities",
+    "sourceA": "datatft_18_1_20260828",
+    "sourceB": "opgg_set18_wisps_20260829",
+    "valueA": 1,
+    "valueB": 34,
+    "sourceTimestamps": {
+      "sourceA": "2026-08-28T16:49:16Z",
+      "sourceB": null
+    },
+    "priorityReasoning": "Differences are reported from snapshots; no count is hard-coded as an acceptance target.",
+    "resolution": "needs_review",
+    "note": "Counts are unresolved identity review queues, not confirmed source-only corpus membership."
+  }
+]

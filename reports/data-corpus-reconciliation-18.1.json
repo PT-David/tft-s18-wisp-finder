@@ -1,0 +1,223 @@
+{
+  "corpusDefinition": "All live-patch Wisps actually offered in a normal or rules-authorized Wisp slot. Conditional appearance does not exclude a Wisp; only inactive/internal/non-offerable records, variants, and aliases are excluded with evidence.",
+  "exactCorpusSize": "unresolved",
+  "confirmedCorpusMinimum": 174,
+  "confirmedCorpusMinimumReason": "normalizedProductionCount + max(0, confirmedCorpusButIncompleteCount - dataTftUnmatchedCount)",
+  "normalizedProductionCount": 169,
+  "productionReady": false,
+  "stageC1EngineeringExit": {
+    "status": "complete",
+    "remainingWork": "data_curation_and_review",
+    "structuralBlockingBug": false
+  },
+  "matching": {
+    "confirmedSharedIdentities": 168,
+    "methodCounts": {
+      "exact_client_key": 144,
+      "exact_english_name": 15,
+      "exact_chinese_name": 4,
+      "reviewed_cross_source_identity": 3
+    },
+    "reviewedCrossSourceIdentityCount": 17,
+    "candidateCount": 34,
+    "ambiguousCount": 21,
+    "unresolvedOpggCount": 34,
+    "dataTftUnmatchedCount": 1
+  },
+  "duplicateAuditMatchingDiff": {
+    "before": {
+      "status": "historical_superseded",
+      "confirmedIntersection": 152,
+      "exactClientKey": 144,
+      "candidateCount": 48,
+      "ambiguousCount": 27,
+      "unresolvedOpggCount": 48,
+      "dataTftUnmatchedCount": 17,
+      "confirmedCorpusButIncomplete": 8
+    },
+    "after": {
+      "confirmedIntersection": 166,
+      "exactClientKey": 144,
+      "candidateCount": 34,
+      "ambiguousCount": 21,
+      "unresolvedOpggCount": 34,
+      "dataTftUnmatchedCount": 1,
+      "confirmedCorpusButIncomplete": 6
+    },
+    "promotedToExactClientKey": 0
+  },
+  "confirmedCorpusButIncomplete": [
+    {
+      "record": {
+        "sourceKey": "CloneCompanion",
+        "name": "克隆伴侣",
+        "category": "Combat",
+        "cost": 5,
+        "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "clonecompanion",
+        "communityDragonApiName": "DA_CloneCompanion18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "turtlesvisit",
+        "communityDragonApiName": "DA_TurtlesVisit18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "pottedlifebloom",
+        "communityDragonApiName": "DA_PottedLifebloom18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "pottedstonebark",
+        "communityDragonApiName": "DA_PottedStonebark18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "memorialdummy",
+        "communityDragonApiName": "DA_MemorialDummy18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "Snacktime",
+        "name": "零食时间！",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "snacktime",
+        "communityDragonApiName": "DA_Snacktime18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    }
+  ],
+  "acquisition": {
+    "cloudFetch": {
+      "status": "blocked_by_source_protection",
+      "httpStatus": 202
+    },
+    "browserSnapshot": {
+      "status": "browser_snapshot_imported",
+      "recordCount": 174,
+      "pageUpdatedAt": "August 28, 2026"
+    }
+  },
+  "sources": [
+    {
+      "source": "communitydragon",
+      "rawRowCount": 345,
+      "rawBaseRows": 163,
+      "rawUpgradeRows": 163,
+      "rawPrismaticRows": 19,
+      "uniqueBaseApiNames": 163,
+      "uniqueCanonicalBaseIdentities": 163
+    },
+    {
+      "source": "datatft",
+      "rawCount": 169,
+      "normalizedProductionCount": 169
+    },
+    {
+      "source": "opgg",
+      "rawCount": 200,
+      "confirmedMatched": 166,
+      "confirmedDistinctOnly": 0,
+      "clientSupportedUnlinked": 6,
+      "unresolved": 34
+    },
+    {
+      "source": "lolchess",
+      "cloudFetch": {
+        "status": "blocked_by_source_protection",
+        "httpStatus": 202
+      },
+      "browserSnapshot": {
+        "status": "browser_snapshot_imported",
+        "rawCount": 174,
+        "pageUpdatedAt": "August 28, 2026"
+      }
+    }
+  ]
+}

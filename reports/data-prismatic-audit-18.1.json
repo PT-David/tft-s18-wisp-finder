@@ -1,0 +1,634 @@
+{
+  "counts": {
+    "dataTft": 20,
+    "communityDragon": 19,
+    "lolchess": 19
+  },
+  "historicalObservation": {
+    "value": 11,
+    "status": "superseded_by_record_level_browser_snapshot"
+  },
+  "allThreeConfirmed": [
+    {
+      "identity": "da_18_counterspell",
+      "nameEn": "Counterspell",
+      "nameZh": "法术反制",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_hummingbird",
+      "nameEn": "Hummingbird",
+      "nameZh": "蜂鸟",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_lightningstorm",
+      "nameEn": "Lightning Storm",
+      "nameZh": "闪电风暴",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tatteredarmor",
+      "nameEn": "Tattered Armor",
+      "nameZh": "衣衫褴褛",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tremors",
+      "nameEn": "Tremors",
+      "nameZh": "地动山摇",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_ultraascension",
+      "nameEn": "Ultra Ascension",
+      "nameZh": "终极飞升",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_barrier18",
+      "nameEn": "Barrier",
+      "nameZh": "屏障",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_blaze18",
+      "nameEn": "Blaze",
+      "nameZh": "炽焰",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_combust18",
+      "nameEn": "Combust",
+      "nameZh": "易燃物",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_downpour18",
+      "nameEn": "Downpour",
+      "nameZh": "倾盆大雨",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_giantsaura18",
+      "nameEn": "Giant's Aura",
+      "nameZh": "巨人光环",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hireling18",
+      "nameEn": "Hireling",
+      "nameZh": "雇佣兵",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hugify18",
+      "nameEn": "Hugify",
+      "nameZh": "巨大化",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_latebloomer18",
+      "nameEn": "Late Bloomer",
+      "nameZh": "大器晚成",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_lucky718",
+      "nameEn": "Lucky 7",
+      "nameZh": "幸运7",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_phantomarmor18",
+      "nameEn": "Phantom Armor",
+      "nameZh": "幻影护甲",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_standalone18",
+      "nameEn": "Stand Alone",
+      "nameZh": "孤身站场",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_treetoparchers",
+      "nameEn": "Treetop Archers",
+      "nameZh": "树顶弓箭手",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    }
+  ],
+  "dataTftAndCommunityDragon": [
+    {
+      "identity": "da_18_counterspell",
+      "nameEn": "Counterspell",
+      "nameZh": "法术反制",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_hummingbird",
+      "nameEn": "Hummingbird",
+      "nameZh": "蜂鸟",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_lightningstorm",
+      "nameEn": "Lightning Storm",
+      "nameZh": "闪电风暴",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tatteredarmor",
+      "nameEn": "Tattered Armor",
+      "nameZh": "衣衫褴褛",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tremors",
+      "nameEn": "Tremors",
+      "nameZh": "地动山摇",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_ultraascension",
+      "nameEn": "Ultra Ascension",
+      "nameZh": "终极飞升",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_barrier18",
+      "nameEn": "Barrier",
+      "nameZh": "屏障",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_blaze18",
+      "nameEn": "Blaze",
+      "nameZh": "炽焰",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_combust18",
+      "nameEn": "Combust",
+      "nameZh": "易燃物",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_downpour18",
+      "nameEn": "Downpour",
+      "nameZh": "倾盆大雨",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_giantsaura18",
+      "nameEn": "Giant's Aura",
+      "nameZh": "巨人光环",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hireling18",
+      "nameEn": "Hireling",
+      "nameZh": "雇佣兵",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hugify18",
+      "nameEn": "Hugify",
+      "nameZh": "巨大化",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_latebloomer18",
+      "nameEn": "Late Bloomer",
+      "nameZh": "大器晚成",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_lucky718",
+      "nameEn": "Lucky 7",
+      "nameZh": "幸运7",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_phantomarmor18",
+      "nameEn": "Phantom Armor",
+      "nameZh": "幻影护甲",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_standalone18",
+      "nameEn": "Stand Alone",
+      "nameZh": "孤身站场",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_treetoparchers",
+      "nameEn": "Treetop Archers",
+      "nameZh": "树顶弓箭手",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    }
+  ],
+  "communityDragonAndLolchess": [
+    {
+      "identity": "da_18_counterspell",
+      "nameEn": "Counterspell",
+      "nameZh": "法术反制",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_hummingbird",
+      "nameEn": "Hummingbird",
+      "nameZh": "蜂鸟",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_lightningstorm",
+      "nameEn": "Lightning Storm",
+      "nameZh": "闪电风暴",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tatteredarmor",
+      "nameEn": "Tattered Armor",
+      "nameZh": "衣衫褴褛",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tremors",
+      "nameEn": "Tremors",
+      "nameZh": "地动山摇",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_ultraascension",
+      "nameEn": "Ultra Ascension",
+      "nameZh": "终极飞升",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_barrier18",
+      "nameEn": "Barrier",
+      "nameZh": "屏障",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_blaze18",
+      "nameEn": "Blaze",
+      "nameZh": "炽焰",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_combust18",
+      "nameEn": "Combust",
+      "nameZh": "易燃物",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_downpour18",
+      "nameEn": "Downpour",
+      "nameZh": "倾盆大雨",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_giantsaura18",
+      "nameEn": "Giant's Aura",
+      "nameZh": "巨人光环",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hireling18",
+      "nameEn": "Hireling",
+      "nameZh": "雇佣兵",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hugify18",
+      "nameEn": "Hugify",
+      "nameZh": "巨大化",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_latebloomer18",
+      "nameEn": "Late Bloomer",
+      "nameZh": "大器晚成",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_lucky718",
+      "nameEn": "Lucky 7",
+      "nameZh": "幸运7",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_phantomarmor18",
+      "nameEn": "Phantom Armor",
+      "nameZh": "幻影护甲",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_standalone18",
+      "nameEn": "Stand Alone",
+      "nameZh": "孤身站场",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_treetoparchers",
+      "nameEn": "Treetop Archers",
+      "nameZh": "树顶弓箭手",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    }
+  ],
+  "dataTftAndLolchess": [
+    {
+      "identity": "da_18_counterspell",
+      "nameEn": "Counterspell",
+      "nameZh": "法术反制",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_hummingbird",
+      "nameEn": "Hummingbird",
+      "nameZh": "蜂鸟",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_lightningstorm",
+      "nameEn": "Lightning Storm",
+      "nameZh": "闪电风暴",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tatteredarmor",
+      "nameEn": "Tattered Armor",
+      "nameZh": "衣衫褴褛",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_tremors",
+      "nameEn": "Tremors",
+      "nameZh": "地动山摇",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_18_ultraascension",
+      "nameEn": "Ultra Ascension",
+      "nameZh": "终极飞升",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_barrier18",
+      "nameEn": "Barrier",
+      "nameZh": "屏障",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_blaze18",
+      "nameEn": "Blaze",
+      "nameZh": "炽焰",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_combust18",
+      "nameEn": "Combust",
+      "nameZh": "易燃物",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_downpour18",
+      "nameEn": "Downpour",
+      "nameZh": "倾盆大雨",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_giantsaura18",
+      "nameEn": "Giant's Aura",
+      "nameZh": "巨人光环",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hireling18",
+      "nameEn": "Hireling",
+      "nameZh": "雇佣兵",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_hugify18",
+      "nameEn": "Hugify",
+      "nameZh": "巨大化",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_latebloomer18",
+      "nameEn": "Late Bloomer",
+      "nameZh": "大器晚成",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_lucky718",
+      "nameEn": "Lucky 7",
+      "nameZh": "幸运7",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_phantomarmor18",
+      "nameEn": "Phantom Armor",
+      "nameZh": "幻影护甲",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_standalone18",
+      "nameEn": "Stand Alone",
+      "nameZh": "孤身站场",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "da_treetoparchers",
+      "nameEn": "Treetop Archers",
+      "nameZh": "树顶弓箭手",
+      "dataTft": true,
+      "communityDragon": true,
+      "lolchess": true
+    },
+    {
+      "identity": "snapshot_021_534324382164",
+      "nameEn": "Truce",
+      "nameZh": "休战",
+      "dataTft": true,
+      "communityDragon": false,
+      "lolchess": true
+    }
+  ],
+  "sourceOnly": [
+    {
+      "identity": "snapshot_139_6fda4e76a4da",
+      "nameEn": "克隆弈子",
+      "nameZh": "克隆弈子",
+      "dataTft": true,
+      "communityDragon": false,
+      "lolchess": false
+    }
+  ],
+  "identityUnresolved": [],
+  "fieldConflict": [
+    {
+      "identity": "snapshot_021_534324382164",
+      "nameEn": "Truce",
+      "nameZh": "休战",
+      "dataTft": true,
+      "communityDragon": false,
+      "lolchess": true
+    },
+    {
+      "identity": "snapshot_139_6fda4e76a4da",
+      "nameEn": "克隆弈子",
+      "nameZh": "克隆弈子",
+      "dataTft": true,
+      "communityDragon": false,
+      "lolchess": false
+    }
+  ],
+  "status": "needs_review",
+  "comparisonKey": "confirmed canonical production identity"
+}

@@ -1,0 +1,6069 @@
+{
+  "confirmedIntersection": 166,
+  "confirmedMatches": [
+    {
+      "opggSourceKey": "MoonlightRitual",
+      "opggName": "月光仪式",
+      "productionId": "da_moonlightritual18",
+      "nameZh": "月光仪式",
+      "nameEn": "Moonlight Ritual",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "moonlightritual",
+        "communityDragonApiName": "DA_MoonlightRitual18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "YordleSpirit",
+      "opggName": "约德尔精神",
+      "productionId": "da_18_yordlespirit",
+      "nameZh": "约德尔之灵",
+      "nameEn": "Yordle Spirit",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "yordlespirit",
+        "communityDragonApiName": "DA_18_YordleSpirit",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Hireling",
+      "opggName": "雇佣兵",
+      "productionId": "da_hireling18",
+      "nameZh": "雇佣兵",
+      "nameEn": "Hireling",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "hireling",
+        "communityDragonApiName": "DA_Hireling18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BackrowStar",
+      "opggName": "后排星",
+      "productionId": "da_18_backrowstar",
+      "nameZh": "后排之星",
+      "nameEn": "Backrow Star",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "backrowstar",
+        "communityDragonApiName": "DA_18_BackrowStar",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Mitosis",
+      "opggName": "有丝分裂",
+      "productionId": "da_18_mitosis",
+      "nameZh": "有丝分裂",
+      "nameEn": "Mitosis",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "mitosis",
+        "communityDragonApiName": "DA_18_Mitosis",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomSplash",
+      "opggName": "幻影飞溅",
+      "productionId": "da_phantomsplash18",
+      "nameZh": "幻影浪花",
+      "nameEn": "Phantom Splash",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomsplash",
+        "communityDragonApiName": "DA_PhantomSplash18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BarkArmor",
+      "opggName": "树皮盔甲",
+      "productionId": "da_18_barkarmor",
+      "nameZh": "树皮护甲",
+      "nameEn": "Bark Armor",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "barkarmor",
+        "communityDragonApiName": "DA_18_BarkArmor",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Lucky7",
+      "opggName": "幸运7",
+      "productionId": "da_lucky718",
+      "nameZh": "幸运7",
+      "nameEn": "Lucky 7",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lucky7",
+        "communityDragonApiName": "DA_Lucky718",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Preppers",
+      "opggName": "准备者",
+      "productionId": "da_18_preppers",
+      "nameZh": "未雨绸缪",
+      "nameEn": "Preppers",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "preppers",
+        "communityDragonApiName": "DA_18_Preppers",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Hugify",
+      "opggName": "Hugify",
+      "productionId": "da_hugify18",
+      "nameZh": "巨大化",
+      "nameEn": "Hugify",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "hugify",
+        "communityDragonApiName": "DA_Hugify18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Journeyman",
+      "opggName": "熟练工",
+      "productionId": "da_journeyman18",
+      "nameZh": "旅行者",
+      "nameEn": "Journeyman",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "journeyman",
+        "communityDragonApiName": "DA_Journeyman18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Barrier",
+      "opggName": "屏障",
+      "productionId": "da_barrier18",
+      "nameZh": "屏障",
+      "nameEn": "Barrier",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "barrier",
+        "communityDragonApiName": "DA_Barrier18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RefreshingLight",
+      "opggName": "清爽的光线",
+      "productionId": "da_refreshinglight18",
+      "nameZh": "焕新之光",
+      "nameEn": "Refreshing Light",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "refreshinglight",
+        "communityDragonApiName": "DA_RefreshingLight18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Supercritical",
+      "opggName": "超临界",
+      "productionId": "da_18_supercritical",
+      "nameZh": "超级暴击",
+      "nameEn": "Supercritical",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "supercritical",
+        "communityDragonApiName": "DA_18_Supercritical",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SlowStudy",
+      "opggName": "缓慢学习",
+      "productionId": "da_slowstudy18",
+      "nameZh": "慢速学习",
+      "nameEn": "Slow Study",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "slowstudy",
+        "communityDragonApiName": "DA_SlowStudy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Fellowship",
+      "opggName": "奖学金",
+      "productionId": "da_18_fellowship",
+      "nameZh": "贴贴",
+      "nameEn": "Fellowship",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "fellowship",
+        "communityDragonApiName": "DA_18_Fellowship",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Grandmaster",
+      "opggName": "宗师",
+      "productionId": "da_grandmaster18",
+      "nameZh": "奇境宗师",
+      "nameEn": "Grandmaster",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "grandmaster",
+        "communityDragonApiName": "DA_Grandmaster18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Jungling",
+      "opggName": "丛林",
+      "productionId": "da_jungling18",
+      "nameZh": "野区",
+      "nameEn": "Jungling",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "jungling",
+        "communityDragonApiName": "DA_Jungling18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AbandonShip",
+      "opggName": "弃船",
+      "productionId": "da_abandonship18",
+      "nameZh": "弃船",
+      "nameEn": "Abandon Ship",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "abandonship",
+        "communityDragonApiName": "DA_AbandonShip18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BigGuns",
+      "opggName": "大枪",
+      "productionId": "da_bigguns18",
+      "nameZh": "大腕",
+      "nameEn": "Big Guns",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bigguns",
+        "communityDragonApiName": "DA_BigGuns18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Terraforming",
+      "opggName": "地形改造",
+      "productionId": "da_terraforming18",
+      "nameZh": "生态改造",
+      "nameEn": "Terraforming",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "terraforming",
+        "communityDragonApiName": "DA_Terraforming18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Moonrise",
+      "opggName": "月出",
+      "productionId": "da_18_moonrise",
+      "nameZh": "皓月当空",
+      "nameEn": "Moonrise",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "moonrise",
+        "communityDragonApiName": "DA_18_Moonrise",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BorrowedGear",
+      "opggName": "借来的装备",
+      "productionId": "da_borrowedgear18",
+      "nameZh": "借来的装备",
+      "nameEn": "Borrowed Gear",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "borrowedgear",
+        "communityDragonApiName": "DA_BorrowedGear18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MarksmensGale",
+      "opggName": "射手之风",
+      "productionId": "da_marksmensgale18",
+      "nameZh": "射手狂风",
+      "nameEn": "Marksmen's Gale",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "marksmensgale",
+        "communityDragonApiName": "DA_MarksmensGale18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BigBoom",
+      "opggName": "大繁荣",
+      "productionId": "da_bigboom18",
+      "nameZh": "大爆炸",
+      "nameEn": "Big Boom",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bigboom",
+        "communityDragonApiName": "DA_BigBoom18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LightningStrike",
+      "opggName": "雷击",
+      "productionId": "da_18_lightningstrike",
+      "nameZh": "闪电打击",
+      "nameEn": "Lightning Strike",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lightningstrike",
+        "communityDragonApiName": "DA_18_LightningStrike",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SolarGift",
+      "opggName": "太阳能礼物",
+      "productionId": "da_solargift18",
+      "nameZh": "日蚀之礼",
+      "nameEn": "Solar Gift",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "solargift",
+        "communityDragonApiName": "DA_SolarGift18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PlatedShields",
+      "opggName": "电镀屏蔽",
+      "productionId": "da_platedshields18",
+      "nameZh": "镀板护盾",
+      "nameEn": "Plated Shields",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "platedshields",
+        "communityDragonApiName": "DA_PlatedShields18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MinorPolymorph",
+      "opggName": "次要多晶型物",
+      "productionId": "da_18_minorpolymorph",
+      "nameZh": "低阶变形术",
+      "nameEn": "Minor Polymorph",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "minorpolymorph",
+        "communityDragonApiName": "DA_18_MinorPolymorph",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Tremors",
+      "opggName": "震颤",
+      "productionId": "da_18_tremors",
+      "nameZh": "地动山摇",
+      "nameEn": "Tremors",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "tremors",
+        "communityDragonApiName": "DA_18_Tremors",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HomingFireflies",
+      "opggName": "萤火虫归巢",
+      "productionId": "da_homingfireflies18",
+      "nameZh": "萤火虫之家",
+      "nameEn": "Homing Fireflies",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "homingfireflies",
+        "communityDragonApiName": "DA_HomingFireflies18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Payday",
+      "opggName": "发薪日",
+      "productionId": "da_18_payday",
+      "nameZh": "庆功宴",
+      "nameEn": "Payday",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "payday",
+        "communityDragonApiName": "DA_18_Payday",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KnickKnackSack",
+      "opggName": "小摆设袋",
+      "productionId": "da_knickknacksack18",
+      "nameZh": "小饰品袋",
+      "nameEn": "Knick-Knack Sack",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "knickknacksack",
+        "communityDragonApiName": "DA_KnickKnackSack18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Propagate",
+      "opggName": "传播",
+      "productionId": "da_18_propagate",
+      "nameZh": "繁殖",
+      "nameEn": "Propagate",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "propagate",
+        "communityDragonApiName": "DA_18_Propagate",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HeatedRivalry",
+      "opggName": "激烈的竞争",
+      "productionId": "da_18_heatedrivalry",
+      "nameZh": "鏖战不休",
+      "nameEn": "Heated Rivalry",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "heatedrivalry",
+        "communityDragonApiName": "DA_18_HeatedRivalry",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Artifactinate",
+      "opggName": "神器",
+      "productionId": "da_artifactinate18",
+      "nameZh": "神器化",
+      "nameEn": "Artifactinate",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "artifactinate",
+        "communityDragonApiName": "DA_Artifactinate18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Hummingbird",
+      "opggName": "蜂鸟",
+      "productionId": "da_18_hummingbird",
+      "nameZh": "蜂鸟",
+      "nameEn": "Hummingbird",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "hummingbird",
+        "communityDragonApiName": "DA_18_Hummingbird",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BronzeSpoon",
+      "opggName": "青铜勺子",
+      "productionId": "da_18_bronzespoon",
+      "nameZh": "铜汤匙",
+      "nameEn": "Bronze Spoon",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bronzespoon",
+        "communityDragonApiName": "DA_18_BronzeSpoon",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllFives",
+      "opggName": "五五开",
+      "productionId": "da_18_allfives",
+      "nameZh": "全5费商店",
+      "nameEn": "All Fives",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allfives",
+        "communityDragonApiName": "DA_18_AllFives",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KillingFrenzy",
+      "opggName": "杀戮狂潮",
+      "productionId": "da_18_killingfrenzy",
+      "nameZh": "屠戮狂暴",
+      "nameEn": "Killing Frenzy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "killingfrenzy",
+        "communityDragonApiName": "DA_18_KillingFrenzy",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Revenge",
+      "opggName": "复仇",
+      "productionId": "da_revenge18",
+      "nameZh": "复仇",
+      "nameEn": "Revenge",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "revenge",
+        "communityDragonApiName": "DA_Revenge18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ImprovedReach",
+      "opggName": "扩大覆盖范围",
+      "productionId": "da_improvedreach18",
+      "nameZh": "瞄准镜",
+      "nameEn": "Improved Reach",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "improvedreach",
+        "communityDragonApiName": "DA_ImprovedReach18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HerosEntrance",
+      "opggName": "英雄的入口",
+      "productionId": "da_herosentrance18",
+      "nameZh": "英雄登场",
+      "nameEn": "Hero's Entrance",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "herosentrance",
+        "communityDragonApiName": "DA_HerosEntrance18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Potioncraft",
+      "opggName": "魔药工艺",
+      "productionId": "da_potioncraft18",
+      "nameZh": "药学博士",
+      "nameEn": "Potioncraft",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "potioncraft",
+        "communityDragonApiName": "DA_Potioncraft18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Quicken",
+      "opggName": "加快",
+      "productionId": "da_quicken18",
+      "nameZh": "加速",
+      "nameEn": "Quicken",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "quicken",
+        "communityDragonApiName": "DA_Quicken18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ManaRichSoil",
+      "opggName": "富含法力的土壤",
+      "productionId": "da_manarichsoil18",
+      "nameZh": "富魔之壤",
+      "nameEn": "Mana-Rich Soil",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "manarichsoil",
+        "communityDragonApiName": "DA_ManaRichSoil18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LightningStorm",
+      "opggName": "闪电风暴",
+      "productionId": "da_18_lightningstorm",
+      "nameZh": "闪电风暴",
+      "nameEn": "Lightning Storm",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lightningstorm",
+        "communityDragonApiName": "DA_18_LightningStorm",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LostTravelers",
+      "opggName": "迷路的旅行者",
+      "productionId": "da_18_losttravelers",
+      "nameZh": "迷路的游客",
+      "nameEn": "Lost Travelers",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "losttravelers",
+        "communityDragonApiName": "DA_18_LostTravelers",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ForestMage",
+      "opggName": "森林法师",
+      "productionId": "da_18_forestmage",
+      "nameZh": "森林魔法师",
+      "nameEn": "Forest Mage",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "forestmage",
+        "communityDragonApiName": "DA_18_ForestMage",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomArmor",
+      "opggName": "幻影铠甲",
+      "productionId": "da_phantomarmor18",
+      "nameZh": "幻影护甲",
+      "nameEn": "Phantom Armor",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomarmor",
+        "communityDragonApiName": "DA_PhantomArmor18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TatteredArmor",
+      "opggName": "破烂的盔甲",
+      "productionId": "da_18_tatteredarmor",
+      "nameZh": "衣衫褴褛",
+      "nameEn": "Tattered Armor",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "tatteredarmor",
+        "communityDragonApiName": "DA_18_TatteredArmor",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DoodadSack",
+      "opggName": "小玩意麻袋",
+      "productionId": "da_doodadsack18",
+      "nameZh": "小玩具袋",
+      "nameEn": "Doodad Sack",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "doodadsack",
+        "communityDragonApiName": "DA_DoodadSack18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "NaturesWrath",
+      "opggName": "自然之怒",
+      "productionId": "da_natureswrath18",
+      "nameZh": "自然之怒",
+      "nameEn": "Nature's Wrath",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "natureswrath",
+        "communityDragonApiName": "DA_NaturesWrath18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SearchParty",
+      "opggName": "搜寻队",
+      "productionId": "da_searchparty18",
+      "nameZh": "搜查队",
+      "nameEn": "Search Party",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "searchparty",
+        "communityDragonApiName": "DA_SearchParty18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KillersRegret",
+      "opggName": "杀手的遗憾",
+      "productionId": "da_killersregret18",
+      "nameZh": "侩子手的悔恨",
+      "nameEn": "Killer's Regret",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "killersregret",
+        "communityDragonApiName": "DA_KillersRegret18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KnickKnackJar",
+      "opggName": "小摆设罐",
+      "productionId": "da_knickknackjar18",
+      "nameZh": "小饰品罐",
+      "nameEn": "Knick-Knack Jar",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "knickknackjar",
+        "communityDragonApiName": "DA_KnickKnackJar18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Counterspell",
+      "opggName": "反咒语",
+      "productionId": "da_18_counterspell",
+      "nameZh": "法术反制",
+      "nameEn": "Counterspell",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "counterspell",
+        "communityDragonApiName": "DA_18_Counterspell",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomGloves",
+      "opggName": "幻影手套",
+      "productionId": "da_phantomgloves18",
+      "nameZh": "幻影手套",
+      "nameEn": "Phantom Gloves",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomgloves",
+        "communityDragonApiName": "DA_PhantomGloves18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "EarlyFix",
+      "opggName": "早期修复",
+      "productionId": "da_18_earlyfix",
+      "nameZh": "防微杜渐",
+      "nameEn": "Early Fix",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "earlyfix",
+        "communityDragonApiName": "DA_18_EarlyFix",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BloodandIron",
+      "opggName": "血与铁",
+      "productionId": "da_bloodandiron18",
+      "nameZh": "鲜血与铁",
+      "nameEn": "Blood and Iron",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bloodandiron",
+        "communityDragonApiName": "DA_BloodAndIron18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DieRoll",
+      "opggName": "骰子",
+      "productionId": "da_dieroll18",
+      "nameZh": "掷骰子",
+      "nameEn": "Die Roll",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "dieroll",
+        "communityDragonApiName": "DA_DieRoll18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Bulwark",
+      "opggName": "壁垒",
+      "productionId": "da_bulwark18",
+      "nameZh": "壁垒",
+      "nameEn": "Bulwark",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bulwark",
+        "communityDragonApiName": "DA_Bulwark18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ForestTwins",
+      "opggName": "森林双胞胎",
+      "productionId": "da_foresttwins18",
+      "nameZh": "森林多胞胎",
+      "nameEn": "Forest Twins",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "foresttwins",
+        "communityDragonApiName": "DA_ForestTwins18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Apprentice",
+      "opggName": "学徒",
+      "productionId": "da_apprentice18",
+      "nameZh": "学徒",
+      "nameEn": "Apprentice",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "apprentice",
+        "communityDragonApiName": "DA_Apprentice18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ForestGuide",
+      "opggName": "森林指南",
+      "productionId": "da_forestguide18",
+      "nameZh": "森林向导",
+      "nameEn": "Forest Guide",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "forestguide",
+        "communityDragonApiName": "DA_ForestGuide18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Peddler",
+      "opggName": "小贩",
+      "productionId": "da_peddler18",
+      "nameZh": "小贩",
+      "nameEn": "Peddler",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "peddler",
+        "communityDragonApiName": "DA_Peddler18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SunfireSorcery",
+      "opggName": "阳火魔法",
+      "productionId": "da_18_sunfiresorcery",
+      "nameZh": "日炎巫术",
+      "nameEn": "Sunfire Sorcery",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "sunfiresorcery",
+        "communityDragonApiName": "DA_18_SunfireSorcery",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GoldenGoose",
+      "opggName": "金鹅",
+      "productionId": "da_goldengoose18",
+      "nameZh": "招财猫",
+      "nameEn": "Golden Goose",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "goldengoose",
+        "communityDragonApiName": "DA_GoldenGoose18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "IdleCraftsman",
+      "opggName": "闲置工匠",
+      "productionId": "da_idlecraftsman18",
+      "nameZh": "闲散工匠",
+      "nameEn": "Idle Craftsman",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "idlecraftsman",
+        "communityDragonApiName": "DA_IdleCraftsman18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LesserChaos",
+      "opggName": "较小的混乱",
+      "productionId": "da_lesserchaos18",
+      "nameZh": "拼一把小的！",
+      "nameEn": "Lesser Chaos",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lesserchaos",
+        "communityDragonApiName": "DA_LesserChaos18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Radiantize",
+      "opggName": "辐射",
+      "productionId": "da_18_radiantize",
+      "nameZh": "光明化",
+      "nameEn": "Radiantize",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "radiantize",
+        "communityDragonApiName": "DA_18_Radiantize",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ProlificPower",
+      "opggName": "多产的力量",
+      "productionId": "da_18_prolificpower",
+      "nameZh": "元气满满",
+      "nameEn": "Prolific Power",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "prolificpower",
+        "communityDragonApiName": "DA_18_ProlificPower",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "WrappedinThorns",
+      "opggName": "荆棘丛生",
+      "productionId": "da_wrappedinthorns18",
+      "nameZh": "荆棘环身",
+      "nameEn": "Wrapped In Thorns",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "wrappedinthorns",
+        "communityDragonApiName": "DA_WrappedInThorns18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DoodadBag",
+      "opggName": "装饰袋",
+      "productionId": "da_doodadbag18",
+      "nameZh": "小玩具包",
+      "nameEn": "Doodad Bag",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "doodadbag",
+        "communityDragonApiName": "DA_DoodadBag18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RidetheWave",
+      "opggName": "乘风破浪",
+      "productionId": "da_ridethewave18",
+      "nameZh": "顺流而下",
+      "nameEn": "Ride the Wave",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ridethewave",
+        "communityDragonApiName": "DA_RideTheWave18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Ironwood",
+      "opggName": "铁木",
+      "productionId": "da_ironwood18",
+      "nameZh": "坚硬木材",
+      "nameEn": "Ironwood",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ironwood",
+        "communityDragonApiName": "DA_Ironwood18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HeroofProphecy",
+      "opggName": "预言英雄",
+      "productionId": "da_heroofprophecy18",
+      "nameZh": "预言之子",
+      "nameEn": "Hero Of Prophecy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "heroofprophecy",
+        "communityDragonApiName": "DA_HeroOfProphecy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Scrappy",
+      "opggName": "好斗",
+      "productionId": "da_scrappy18",
+      "nameZh": "零碎",
+      "nameEn": "Scrappy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "scrappy",
+        "communityDragonApiName": "DA_Scrappy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThreeMe",
+      "opggName": "三个我",
+      "productionId": "da_threeme18",
+      "nameZh": "对影成三",
+      "nameEn": "Three Me",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "threeme",
+        "communityDragonApiName": "DA_ThreeMe18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FlashFire",
+      "opggName": "闪火",
+      "productionId": "da_flashfire18",
+      "nameZh": "爆燃",
+      "nameEn": "Flash Fire",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "flashfire",
+        "communityDragonApiName": "DA_FlashFire18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllThrees",
+      "opggName": "三人行",
+      "productionId": "da_18_allthrees",
+      "nameZh": "全3费商店",
+      "nameEn": "All Threes",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allthrees",
+        "communityDragonApiName": "DA_18_AllThrees",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LateBloomer",
+      "opggName": "大器晚成",
+      "productionId": "da_latebloomer18",
+      "nameZh": "大器晚成",
+      "nameEn": "Late Bloomer",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "latebloomer",
+        "communityDragonApiName": "DA_LateBloomer18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AnimateShop",
+      "opggName": "动画商店",
+      "productionId": "da_animateshop18",
+      "nameZh": "活体商店",
+      "nameEn": "Animate Shop",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "animateshop",
+        "communityDragonApiName": "DA_AnimateShop18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomEmblem",
+      "opggName": "幻影徽章",
+      "productionId": "da_phantomemblem18",
+      "nameZh": "幻影纹章",
+      "nameEn": "Phantom Emblem",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomemblem",
+        "communityDragonApiName": "DA_PhantomEmblem18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Starfall",
+      "opggName": "星陨",
+      "productionId": "da_18_starfall",
+      "nameZh": "星落",
+      "nameEn": "Starfall",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "starfall",
+        "communityDragonApiName": "DA_18_Starfall",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "CoinFlip",
+      "opggName": "硬币翻转",
+      "productionId": "da_coinflip18",
+      "nameZh": "抛硬币",
+      "nameEn": "Coin Flip",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "coinflip",
+        "communityDragonApiName": "DA_CoinFlip18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RollingBones",
+      "opggName": "滚骨头",
+      "productionId": "da_rollingbones18",
+      "nameZh": "骨头滚滚",
+      "nameEn": "Rolling Bones",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "rollingbones",
+        "communityDragonApiName": "DA_RollingBones18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FlipFrenzy",
+      "opggName": "翻转疯狂",
+      "productionId": "da_flipfrenzy18",
+      "nameZh": "疯狂掷币人",
+      "nameEn": "Flip Frenzy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "flipfrenzy",
+        "communityDragonApiName": "DA_FlipFrenzy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GrowUp",
+      "opggName": "长大",
+      "productionId": "da_growup18",
+      "nameZh": "长大",
+      "nameEn": "Grow Up",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "growup",
+        "communityDragonApiName": "DA_GrowUp18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MiddlePath",
+      "opggName": "中间路径",
+      "productionId": "da_middlepath18",
+      "nameZh": "中央大道",
+      "nameEn": "Middle Path",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "middlepath",
+        "communityDragonApiName": "DA_MiddlePath18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "UltraAscension",
+      "opggName": "超提升",
+      "productionId": "da_18_ultraascension",
+      "nameZh": "终极飞升",
+      "nameEn": "Ultra Ascension",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ultraascension",
+        "communityDragonApiName": "DA_18_UltraAscension",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TrophyHunter",
+      "opggName": "奖杯猎人",
+      "productionId": "da_trophyhunter18",
+      "nameZh": "猎手的黄金之路",
+      "nameEn": "Trophy Hunter",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "trophyhunter",
+        "communityDragonApiName": "DA_TrophyHunter18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GreaterChaos",
+      "opggName": "更大的混乱",
+      "productionId": "da_greaterchaos18",
+      "nameZh": "拼一把大的！",
+      "nameEn": "Greater Chaos",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "greaterchaos",
+        "communityDragonApiName": "DA_GreaterChaos18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllTwos",
+      "opggName": "全两",
+      "productionId": "da_18_alltwos",
+      "nameZh": "全2费商店",
+      "nameEn": "All Twos",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "alltwos",
+        "communityDragonApiName": "DA_18_AllTwos",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KnickKnackBag",
+      "opggName": "小摆设袋",
+      "productionId": "da_knickknackbag18",
+      "nameZh": "小饰品包",
+      "nameEn": "Knick-Knack Bag",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "knickknackbag",
+        "communityDragonApiName": "DA_KnickKnackBag18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BoosterShot",
+      "opggName": "助推器射击",
+      "productionId": "da_boostershot18",
+      "nameZh": "强化激素",
+      "nameEn": "Booster Shot",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "boostershot",
+        "communityDragonApiName": "DA_BoosterShot18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "StartingTown",
+      "opggName": "起始城镇",
+      "productionId": "da_startingtown18",
+      "nameZh": "新手村",
+      "nameEn": "Starting Town",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "startingtown",
+        "communityDragonApiName": "DA_StartingTown18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Blaze",
+      "opggName": "火焰",
+      "productionId": "da_blaze18",
+      "nameZh": "炽焰",
+      "nameEn": "Blaze",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "blaze",
+        "communityDragonApiName": "DA_Blaze18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LifeDebt",
+      "opggName": "人生债务",
+      "productionId": "da_18_lifedebt",
+      "nameZh": "以命为注",
+      "nameEn": "Life Debt",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lifedebt",
+        "communityDragonApiName": "DA_18_LifeDebt",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SolitudesCloak",
+      "opggName": "孤独斗篷",
+      "productionId": "da_solitudescloak18",
+      "nameZh": "独行斗篷",
+      "nameEn": "Solitude's Cloak",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "solitudescloak",
+        "communityDragonApiName": "DA_SolitudesCloak18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Salvager",
+      "opggName": "打捞者",
+      "productionId": "da_salvager18",
+      "nameZh": "打捞术",
+      "nameEn": "Salvager",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "salvager",
+        "communityDragonApiName": "DA_Salvager18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GiantGrowth",
+      "opggName": "巨大的增长",
+      "productionId": "da_18_giantgrowth",
+      "nameZh": "巨型增长",
+      "nameEn": "Giant Growth",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "giantgrowth",
+        "communityDragonApiName": "DA_18_GiantGrowth",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "StandAlone",
+      "opggName": "独立",
+      "productionId": "da_standalone18",
+      "nameZh": "孤身站场",
+      "nameEn": "Stand Alone",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "standalone",
+        "communityDragonApiName": "DA_StandAlone18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Cutpurse",
+      "opggName": "窃贼",
+      "productionId": "da_cutpurse18",
+      "nameZh": "梁上君子",
+      "nameEn": "Cutpurse",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "cutpurse",
+        "communityDragonApiName": "DA_Cutpurse18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DoodadJar",
+      "opggName": "小玩意罐",
+      "productionId": "da_doodadjar18",
+      "nameZh": "小玩具罐",
+      "nameEn": "Doodad Jar",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "doodadjar",
+        "communityDragonApiName": "DA_DoodadJar18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Combust",
+      "opggName": "燃烧",
+      "productionId": "da_combust18",
+      "nameZh": "易燃物",
+      "nameEn": "Combust",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "combust",
+        "communityDragonApiName": "DA_Combust18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LivingSoil",
+      "opggName": "生命土壤",
+      "productionId": "da_livingsoil18",
+      "nameZh": "活体土壤",
+      "nameEn": "Living Soil",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "livingsoil",
+        "communityDragonApiName": "DA_LivingSoil18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllOnes",
+      "opggName": "全一",
+      "productionId": "da_18_allones",
+      "nameZh": "全1费商店",
+      "nameEn": "All Ones",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allones",
+        "communityDragonApiName": "DA_18_AllOnes",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Resistant",
+      "opggName": "抵抗",
+      "productionId": "da_18_resistant",
+      "nameZh": "抵抗",
+      "nameEn": "Resistant",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "resistant",
+        "communityDragonApiName": "DA_18_Resistant",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Flow",
+      "opggName": "流程",
+      "productionId": "da_flow18",
+      "nameZh": "行云流水",
+      "nameEn": "Flow",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "flow",
+        "communityDragonApiName": "DA_Flow18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HeroicSacrifice",
+      "opggName": "英勇牺牲",
+      "productionId": "da_18_heroicsacrifice",
+      "nameZh": "英勇就义",
+      "nameEn": "Heroic Sacrifice",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "heroicsacrifice",
+        "communityDragonApiName": "DA_18_HeroicSacrifice",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PetrifiedDummy",
+      "opggName": "石化假人",
+      "productionId": "da_petrifieddummy18",
+      "nameZh": "石化术",
+      "nameEn": "Petrified Dummy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "petrifieddummy",
+        "communityDragonApiName": "DA_PetrifiedDummy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TrainingYard",
+      "opggName": "训练场",
+      "productionId": "da_trainingyard18",
+      "nameZh": "训练场",
+      "nameEn": "Training Yard",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "trainingyard",
+        "communityDragonApiName": "DA_TrainingYard18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "NaturesAlly",
+      "opggName": "大自然的盟友",
+      "productionId": "da_naturesally18",
+      "nameZh": "自然之友",
+      "nameEn": "Nature's Ally",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "naturesally",
+        "communityDragonApiName": "DA_NaturesAlly18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Diversified",
+      "opggName": "多元化",
+      "productionId": "da_diversified18",
+      "nameZh": "多样化",
+      "nameEn": "Diversified",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "diversified",
+        "communityDragonApiName": "DA_Diversified18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TreetopArchers",
+      "opggName": "树顶弓箭手",
+      "productionId": "da_treetoparchers",
+      "nameZh": "树顶弓箭手",
+      "nameEn": "Treetop Archers",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "treetoparchers",
+        "communityDragonApiName": "DA_TreetopArchers",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Rain",
+      "opggName": "雨",
+      "productionId": "da_rain18",
+      "nameZh": "泪雨",
+      "nameEn": "Rain",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "rain",
+        "communityDragonApiName": "DA_Rain18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Aftershock",
+      "opggName": "余震",
+      "productionId": "da_18_aftershock",
+      "nameZh": "余震",
+      "nameEn": "Aftershock",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "aftershock",
+        "communityDragonApiName": "DA_18_AfterShock",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Freeroller",
+      "opggName": "自由选手",
+      "productionId": "da_18_freeroller",
+      "nameZh": "免费刷新术",
+      "nameEn": "Freeroller",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "freeroller",
+        "communityDragonApiName": "DA_18_Freeroller",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Experienced",
+      "opggName": "经验丰富",
+      "productionId": "da_18_experienced",
+      "nameZh": "老练",
+      "nameEn": "Experienced",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "experienced",
+        "communityDragonApiName": "DA_18_Experienced",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HandofBaron",
+      "opggName": "男爵之手",
+      "productionId": "da_handofbaron18",
+      "nameZh": "男爵之手",
+      "nameEn": "Hand Of Baron",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "handofbaron",
+        "communityDragonApiName": "DA_HandOfBaron18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MajorPolymorph",
+      "opggName": "主要多晶型物",
+      "productionId": "da_18_majorpolymorph",
+      "nameZh": "高阶变形术",
+      "nameEn": "Major Polymorph",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "majorpolymorph",
+        "communityDragonApiName": "DA_18_MajorPolymorph",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomVest",
+      "opggName": "幻影背心",
+      "productionId": "da_phantomvest18",
+      "nameZh": "幻影背心",
+      "nameEn": "Phantom Vest",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomvest",
+        "communityDragonApiName": "DA_PhantomVest18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RolyPolys",
+      "opggName": "不倒翁",
+      "productionId": "da_rolypolys18",
+      "nameZh": "不倒翁",
+      "nameEn": "Roly-Polys",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "rolypolys",
+        "communityDragonApiName": "DA_RolyPolys18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MercenaryForce",
+      "opggName": "雇佣军",
+      "productionId": "da_18_mercenaryforce",
+      "nameZh": "金钱之力",
+      "nameEn": "Mercenary Force",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "mercenaryforce",
+        "communityDragonApiName": "DA_18_MercenaryForce",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Stealthy",
+      "opggName": "隐秘",
+      "productionId": "da_stealthy18",
+      "nameZh": "鬼鬼祟祟",
+      "nameEn": "Stealthy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "stealthy",
+        "communityDragonApiName": "DA_Stealthy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Infliction",
+      "opggName": "伤害",
+      "productionId": "da_18_infliction",
+      "nameZh": "折磨",
+      "nameEn": "Infliction",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "infliction",
+        "communityDragonApiName": "DA_18_Infliction",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BorderVillage",
+      "opggName": "边境村",
+      "productionId": "da_bordervillage18",
+      "nameZh": "边境村庄",
+      "nameEn": "Border Village",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bordervillage",
+        "communityDragonApiName": "DA_BorderVillage18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BunchOBelts",
+      "opggName": "束腰带",
+      "productionId": "da_bunchobelts18",
+      "nameZh": "腰带批发",
+      "nameEn": "Bunch-o'-Belts",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bunchobelts",
+        "communityDragonApiName": "DA_BunchOBelts18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Barter",
+      "opggName": "易货贸易",
+      "productionId": "da_barter18",
+      "nameZh": "以物易物",
+      "nameEn": "Barter",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "barter",
+        "communityDragonApiName": "DA_Barter18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GiantsAura",
+      "opggName": "巨人光环",
+      "productionId": "da_giantsaura18",
+      "nameZh": "巨人光环",
+      "nameEn": "Giant's Aura",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "giantsaura",
+        "communityDragonApiName": "DA_GiantsAura18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PetrifyShields",
+      "opggName": "石化护盾",
+      "productionId": "da_petrifyshields18",
+      "nameZh": "破盾秘法",
+      "nameEn": "Petrify Shields",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "petrifyshields",
+        "communityDragonApiName": "DA_PetrifyShields18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "VerdantVitality",
+      "opggName": "青翠的活力",
+      "productionId": "da_18_verdantvitality",
+      "nameZh": "绿意盎然",
+      "nameEn": "Verdant Vitality",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "verdantvitality",
+        "communityDragonApiName": "DA_18_VerdantVitality",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BloodMoney",
+      "opggName": "血钱",
+      "productionId": "da_18_bloodmoney",
+      "nameZh": "染血之币",
+      "nameEn": "Blood Money",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bloodmoney",
+        "communityDragonApiName": "DA_18_BloodMoney",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "CircleofElders",
+      "opggName": "长老圈子",
+      "productionId": "da_18_circleofelders",
+      "nameZh": "长者之环",
+      "nameEn": "Circle of Elders",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "circleofelders",
+        "communityDragonApiName": "DA_18_CircleofElders",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Polymorph",
+      "opggName": "多晶型物",
+      "productionId": "da_18_polymorph",
+      "nameZh": "变形术",
+      "nameEn": "Polymorph",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "polymorph",
+        "communityDragonApiName": "DA_18_Polymorph",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PocketChange",
+      "opggName": "零钱",
+      "productionId": "da_18_pocketchange",
+      "nameZh": "零花钱",
+      "nameEn": "Pocket Change",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "pocketchange",
+        "communityDragonApiName": "DA_18_PocketChange",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Smurfing",
+      "opggName": "蓝精灵",
+      "productionId": "da_smurfing18",
+      "nameZh": "炸鱼行为",
+      "nameEn": "Smurfing",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "smurfing",
+        "communityDragonApiName": "DA_Smurfing18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FoundFriend",
+      "opggName": "找到朋友",
+      "productionId": "da_foundfriend18",
+      "nameZh": "找个朋友",
+      "nameEn": "Found Friend",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "foundfriend",
+        "communityDragonApiName": "DA_FoundFriend18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "IronCore",
+      "opggName": "铁芯",
+      "productionId": "da_ironcore18",
+      "nameZh": "钢铁核心",
+      "nameEn": "Iron Core",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ironcore",
+        "communityDragonApiName": "DA_IronCore18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Downpour",
+      "opggName": "倾盆大雨",
+      "productionId": "da_downpour18",
+      "nameZh": "倾盆大雨",
+      "nameEn": "Downpour",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "downpour",
+        "communityDragonApiName": "DA_Downpour18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Fertilize",
+      "opggName": "施肥",
+      "productionId": "da_18_fertilize",
+      "nameZh": "肥料",
+      "nameEn": "Fertilize",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "fertilize",
+        "communityDragonApiName": "DA_18_Fertilize",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllFours",
+      "opggName": "四肢着地",
+      "productionId": "da_18_allfours",
+      "nameZh": "全4费商店",
+      "nameEn": "All Fours",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allfours",
+        "communityDragonApiName": "DA_18_AllFours",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FieldofMice",
+      "opggName": "老鼠场",
+      "productionId": "da_18_fieldofmice",
+      "nameZh": "小人国",
+      "nameEn": "Field of Mice",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "fieldofmice",
+        "communityDragonApiName": "DA_18_FieldofMice",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MajorGambit",
+      "opggName": "主要策略",
+      "productionId": "snapshot_121_1899d3fe4c61",
+      "nameZh": "高阶胜负手",
+      "nameEn": "Major Gambit",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "majorgambit",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Truce",
+      "opggName": "休战",
+      "productionId": "snapshot_021_534324382164",
+      "nameZh": "休战",
+      "nameEn": "Truce",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "truce",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Regeneration",
+      "opggName": "再生",
+      "productionId": "snapshot_090_cf945e21ddef",
+      "nameZh": "回复",
+      "nameEn": "Regeneration",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "regeneration",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TakeOneWithYa",
+      "opggName": "和你一起拍一张",
+      "productionId": "snapshot_048_cbc77e083fc2",
+      "nameZh": "带一个走",
+      "nameEn": "Take One With Ya",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "takeonewithya",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MinorBloodRitual",
+      "opggName": "小型血仪式",
+      "productionId": "snapshot_120_cf0b477ffe00",
+      "nameZh": "小型血祭",
+      "nameEn": "Minor Blood Ritual",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "minorbloodritual",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MinorGambit",
+      "opggName": "小策略",
+      "productionId": "snapshot_049_d60aa5ac9feb",
+      "nameZh": "低阶胜负手",
+      "nameEn": "Minor Gambit",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "minorgambit",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GoodLoss",
+      "opggName": "损失惨重",
+      "productionId": "snapshot_147_2dc94df4e3a5",
+      "nameZh": "输得漂亮",
+      "nameEn": "Good Loss",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "goodloss",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ManaPotion",
+      "opggName": "法力药水",
+      "productionId": "da_manapotion18_charm",
+      "nameZh": "法力药水",
+      "nameEn": "Mana Potion",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "manapotion",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Flood",
+      "opggName": "洪水",
+      "productionId": "snapshot_051_e06d127b43f9",
+      "nameZh": "洪涝",
+      "nameEn": "Flood",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "flood",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BlastPotion",
+      "opggName": "爆炸药水",
+      "productionId": "da_blastpotion18_charm",
+      "nameZh": "爆炸药水",
+      "nameEn": "Blast Potion",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "blastpotion",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HealthPotion",
+      "opggName": "生命药水",
+      "productionId": "da_healthpotion18_charm",
+      "nameZh": "生命药水",
+      "nameEn": "Health Potion",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "healthpotion",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "EssenceTheft",
+      "opggName": "精华盗窃",
+      "productionId": "snapshot_036_f484358ea1e5",
+      "nameZh": "摄魂夺魄",
+      "nameEn": "Essence Theft",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "essencetheft",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ComponentBounty",
+      "opggName": "组件赏金",
+      "productionId": "snapshot_136_c467ccd546d7",
+      "nameZh": "散件赏金",
+      "nameEn": "Component Bounty",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "componentbounty",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BloodRitual",
+      "opggName": "血仪式",
+      "productionId": "snapshot_157_3ed870773960",
+      "nameZh": "血祭",
+      "nameEn": "Blood Ritual",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "bloodritual",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SinisterDeal",
+      "opggName": "险恶交易",
+      "productionId": "snapshot_022_fc7538964718",
+      "nameZh": "不祥交易",
+      "nameEn": "Sinister Deal",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "sinisterdeal",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MarksmensMarks",
+      "opggName": "射手标记",
+      "productionId": "snapshot_106_1bce73a8632c",
+      "nameZh": "射手标记",
+      "nameEn": "射手标记",
+      "matchMethod": "exact_chinese_name",
+      "evidence": {
+        "normalizedChineseName": "射手标记",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Drought",
+      "opggName": "干旱",
+      "productionId": "snapshot_050_770e0f5d1043",
+      "nameZh": "干旱",
+      "nameEn": "干旱",
+      "matchMethod": "exact_chinese_name",
+      "evidence": {
+        "normalizedChineseName": "干旱",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HealingPool",
+      "opggName": "治疗池",
+      "productionId": "snapshot_085_b53a01d778ee",
+      "nameZh": "治疗池",
+      "nameEn": "治疗池",
+      "matchMethod": "exact_chinese_name",
+      "evidence": {
+        "normalizedChineseName": "治疗池",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GoldenRoad",
+      "opggName": "黄金之路",
+      "productionId": "snapshot_086_d83df5e4cd8a",
+      "nameZh": "黄金之路",
+      "nameEn": "黄金之路",
+      "matchMethod": "exact_chinese_name",
+      "evidence": {
+        "normalizedChineseName": "黄金之路",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThingamjigBag",
+      "opggName": "Thingamjig 包",
+      "productionId": "da_thingamajigbag18",
+      "nameZh": "小装置包",
+      "nameEn": "Thingamajig Bag",
+      "matchMethod": "reviewed_cross_source_identity",
+      "evidence": {
+        "mappingTableKey": "ThingamjigBag",
+        "reviewed": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThingamjigJar",
+      "opggName": "Thingamjig 罐子",
+      "productionId": "da_thingamajigjar18",
+      "nameZh": "小装置罐",
+      "nameEn": "Thingamajig Jar",
+      "matchMethod": "reviewed_cross_source_identity",
+      "evidence": {
+        "mappingTableKey": "ThingamjigJar",
+        "reviewed": true
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ThingamjigSack",
+      "opggName": "Thingamjig 麻袋",
+      "productionId": "da_thingamajigsack18",
+      "nameZh": "小装置袋",
+      "nameEn": "Thingamajig Sack",
+      "matchMethod": "reviewed_cross_source_identity",
+      "evidence": {
+        "mappingTableKey": "ThingamjigSack",
+        "reviewed": true
+      },
+      "confidence": "confirmed"
+    }
+  ],
+  "candidateMatches": [
+    {
+      "opggRecord": {
+        "sourceKey": "RitualComplete",
+        "name": "仪式完成",
+        "category": "Risky",
+        "cost": 3,
+        "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.023809523809523808,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.023809523809523808,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ProtectiveRitual",
+        "name": "保护仪式",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本轮受到的任何玩家伤害减少 3 点。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.06666666666666667,
+          "effectSimilarity": 0.06666666666666667,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.021739130434782608,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.04492753623188406,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FakeLevel",
+        "name": "假关卡",
+        "category": "Misc",
+        "cost": 10,
+        "effect": "你暂时达到10级。",
+        "appearanceCondition": "尚未达到10级",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.07407407407407407,
+          "effectSimilarity": 0.07407407407407407,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.07407407407407407,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "CloneCompanion",
+        "name": "克隆伴侣",
+        "category": "Combat",
+        "cost": 5,
+        "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 1.2365591397849462,
+          "effectSimilarity": 0.9032258064516129,
+          "nameSimilarity": 0.3333333333333333,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 1.2115591397849463,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "AllIn",
+        "name": "全部投入",
+        "category": "Risky",
+        "cost": 5,
+        "effect": "若接下来3场战斗全部获胜，则提升1级。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.1,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.1,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "DoubleUp",
+        "name": "加倍",
+        "category": "Misc",
+        "cost": 2,
+        "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0.05263157894736842,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.05263157894736842,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "Escalation",
+        "name": "升级",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.27121212121212124,
+          "effectSimilarity": 0.12121212121212122,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.11287758346581876,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.23529411764705882,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0975609756097561,
+          "effectSimilarity": 0.0975609756097561,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.15833453774630246,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FriendlyFlora",
+        "name": "友好的植物群",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "所有友军获得50%效果的致命花卉加成。",
+        "appearanceCondition": "已激活致命花卉羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05,
+          "effectSimilarity": 0.05,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.09999999999999999,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "MinionHorde",
+        "name": "小黄人部落",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "生成 4 个小兵。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.027777777777777776,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1111111111111111,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.12222222222222222,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "Breeze",
+        "name": "微风",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "你的队伍获得12%攻击速度。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05714285714285714,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.09285714285714286,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TheChariot",
+        "name": "战车",
+        "category": "GoldXP",
+        "cost": 10,
+        "effect": "商店刷新和购买经验值的费用减半。",
+        "appearanceCondition": "拥有至少30金币",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.2647058823529412,
+          "effectSimilarity": 0.17647058823529413,
+          "nameSimilarity": 0.35294117647058826,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.22894736842105262,
+          "effectSimilarity": 0.05263157894736842,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.03575851393188856,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "NewandImproved",
+        "name": "新增和改进",
+        "category": "Misc",
+        "cost": 3,
+        "effect": "获得一个袖珍重组器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.0625,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "StarPower",
+        "name": "星力",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+        "appearanceCondition": "至少上场1名3星非坦克弈子",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.19878048780487806,
+          "effectSimilarity": 0.04878048780487805,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.06859410430839002,
+          "effectSimilarity": 0.04081632653061224,
+          "nameSimilarity": 0.1111111111111111,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.03125,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.125,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.13018638349648803,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "BetterBestie",
+        "name": "更好的闺蜜",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0675531914893617,
+          "effectSimilarity": 0.0425531914893617,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.08244680851063829,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "BrutalBargain",
+        "name": "残酷的讨价还价",
+        "category": "Item",
+        "cost": 0,
+        "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.37756410256410255,
+          "effectSimilarity": 0.10256410256410256,
+          "nameSimilarity": 0.1,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.19196617336152222,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0.18181818181818182,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.18559792920258034,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "CrystalBall",
+        "name": "水晶球",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+        "appearanceCondition": "剩余至少4名玩家",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.10348837209302325,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.08095238095238094,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.21052631578947367,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.06904761904761905,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ConsumableShop",
+        "name": "消耗品",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.1,
+          "effectSimilarity": 0.1,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.045454545454545456,
+          "effectSimilarity": 0.045454545454545456,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.05454545454545455,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "MeltingResists",
+        "name": "熔化抗蚀剂",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+        "appearanceCondition": "地狱特质活跃",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.021739130434782608,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.12826086956521737,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.0875,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.08333333333333333,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0.08333333333333333,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.022727272727272728,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09090909090909091,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.06666666666666667,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "GuildofThieves",
+        "name": "盗贼公会",
+        "category": "Combat",
+        "cost": 6,
+        "effect": "获得 2 个临时盗贼手套。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.06060606060606061,
+          "effectSimilarity": 0.06060606060606061,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.08939393939393939,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FaeFederation",
+        "name": "精灵联邦",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "本回合你的所有弈子获得2个仙灵。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.21666666666666667,
+          "effectSimilarity": 0.06666666666666667,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10526315789473684,
+          "effectSimilarity": 0.10526315789473684,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.11140350877192984,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FaerieFlight",
+        "name": "精灵飞行",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本场战斗吸引的仙灵数量提高100%。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05128205128205128,
+          "effectSimilarity": 0.05128205128205128,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.02631578947368421,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.02496626180836707,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.16785714285714284,
+          "effectSimilarity": 0.14285714285714285,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.01785714285714285,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TigersVisit",
+        "name": "老虎来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得老虎原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10405405405405406,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.2,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.045945945945945935,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ComfortFood",
+        "name": "舒适食品",
+        "category": "Risky",
+        "cost": 2,
+        "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.029411764705882353,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.11764705882352941,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.01709986320109439,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "BloodHunt",
+        "name": "血猎",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+        "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.25810810810810814,
+          "effectSimilarity": 0.10810810810810811,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.04878048780487805,
+          "effectSimilarity": 0.04878048780487805,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.2093276203032301,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TouchGrass",
+        "name": "触摸草",
+        "category": "Misc",
+        "cost": 0,
+        "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+        "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.24634146341463414,
+          "effectSimilarity": 0.14634146341463414,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.18888888888888888,
+          "effectSimilarity": 0.08888888888888889,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.05745257452574526,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "GoldenAltar",
+        "name": "金色祭坛",
+        "category": "GoldXP",
+        "cost": 0,
+        "effect": "根据怪诞祭品的费用和星级获得金币。",
+        "appearanceCondition": "已激活怪诞羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.37756410256410255,
+          "effectSimilarity": 0.10256410256410256,
+          "nameSimilarity": 0.1,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.29920634920634925,
+          "effectSimilarity": 0.17142857142857143,
+          "nameSimilarity": 0.1111111111111111,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.0783577533577533,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "Snacktime",
+        "name": "零食时间！",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.19545454545454544,
+          "effectSimilarity": 0.045454545454545456,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.19545454545454544,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "HorsesVisit",
+        "name": "马来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得马原始增益。",
+        "appearanceCondition": "原始特质活跃，未选择马",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10555555555555556,
+          "effectSimilarity": 0.05555555555555555,
+          "nameSimilarity": 0.2,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.04444444444444444,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "PremiumSwapMeet",
+        "name": "高级互换见面会",
+        "category": "Item",
+        "cost": 0,
+        "effect": "出售1名3星弈子，获得3次商店刷新和1个幸运装备宝箱。",
+        "appearanceCondition": "拥有1名3星弈子",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.38636363636363635,
+          "effectSimilarity": 0.13636363636363635,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.24583333333333335,
+          "effectSimilarity": 0.125,
+          "nameSimilarity": 0.08333333333333333,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.05,
+          "effectSimilarity": 0.05,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.140530303030303,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "Tornado",
+        "name": "龙卷风",
+        "category": "Combat",
+        "cost": 10,
+        "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.2642857142857143,
+          "effectSimilarity": 0.11428571428571428,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.2642857142857143,
+      "status": "candidate",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    }
+  ],
+  "opggOnlyConfirmed": [],
+  "dataTftUnmatched": [
+    {
+      "id": "snapshot_139_6fda4e76a4da",
+      "nameEn": "克隆弈子",
+      "nameZh": "克隆弈子",
+      "riotId": null
+    }
+  ],
+  "ambiguous": [
+    {
+      "opggRecord": {
+        "sourceKey": "RitualComplete",
+        "name": "仪式完成",
+        "category": "Risky",
+        "cost": 3,
+        "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.023809523809523808,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.023809523809523808,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ProtectiveRitual",
+        "name": "保护仪式",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本轮受到的任何玩家伤害减少 3 点。",
+        "appearanceCondition": "已激活魔女羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.06666666666666667,
+          "effectSimilarity": 0.06666666666666667,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.021739130434782608,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.04492753623188406,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FakeLevel",
+        "name": "假关卡",
+        "category": "Misc",
+        "cost": 10,
+        "effect": "你暂时达到10级。",
+        "appearanceCondition": "尚未达到10级",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.07407407407407407,
+          "effectSimilarity": 0.07407407407407407,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.07407407407407407,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "DoubleUp",
+        "name": "加倍",
+        "category": "Misc",
+        "cost": 2,
+        "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0.05263157894736842,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.05263157894736842,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FriendlyFlora",
+        "name": "友好的植物群",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "所有友军获得50%效果的致命花卉加成。",
+        "appearanceCondition": "已激活致命花卉羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05,
+          "effectSimilarity": 0.05,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.025,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.09999999999999999,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "Breeze",
+        "name": "微风",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "你的队伍获得12%攻击速度。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05714285714285714,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.09285714285714286,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TheChariot",
+        "name": "战车",
+        "category": "GoldXP",
+        "cost": 10,
+        "effect": "商店刷新和购买经验值的费用减半。",
+        "appearanceCondition": "拥有至少30金币",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.2647058823529412,
+          "effectSimilarity": 0.17647058823529413,
+          "nameSimilarity": 0.35294117647058826,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.22894736842105262,
+          "effectSimilarity": 0.05263157894736842,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.03575851393188856,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "NewandImproved",
+        "name": "新增和改进",
+        "category": "Misc",
+        "cost": 3,
+        "effect": "获得一个袖珍重组器。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.0625,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "BetterBestie",
+        "name": "更好的闺蜜",
+        "category": "Combat",
+        "cost": 1,
+        "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0675531914893617,
+          "effectSimilarity": 0.0425531914893617,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.08244680851063829,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.08095238095238094,
+          "effectSimilarity": 0.05714285714285714,
+          "nameSimilarity": 0.09523809523809523,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.05263157894736842,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.21052631578947367,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.06904761904761905,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ConsumableShop",
+        "name": "消耗品",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.1,
+          "effectSimilarity": 0.1,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.045454545454545456,
+          "effectSimilarity": 0.045454545454545456,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.05454545454545455,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.0625,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.0875,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.08333333333333333,
+          "effectSimilarity": 0.0625,
+          "nameSimilarity": 0.08333333333333333,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.022727272727272728,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09090909090909091,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.06666666666666667,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "GuildofThieves",
+        "name": "盗贼公会",
+        "category": "Combat",
+        "cost": 6,
+        "effect": "获得 2 个临时盗贼手套。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.06060606060606061,
+          "effectSimilarity": 0.06060606060606061,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.08939393939393939,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FaerieFlight",
+        "name": "精灵飞行",
+        "category": "Misc",
+        "cost": 1,
+        "effect": "本场战斗吸引的仙灵数量提高100%。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.05128205128205128,
+          "effectSimilarity": 0.05128205128205128,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.02631578947368421,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.02496626180836707,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.16785714285714284,
+          "effectSimilarity": 0.14285714285714285,
+          "nameSimilarity": 0.1,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.01785714285714285,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TigersVisit",
+        "name": "老虎来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得老虎原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10405405405405406,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.2,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.045945945945945935,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "ComfortFood",
+        "name": "舒适食品",
+        "category": "Risky",
+        "cost": 2,
+        "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.029411764705882353,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.11764705882352941,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.01709986320109439,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "TouchGrass",
+        "name": "触摸草",
+        "category": "Misc",
+        "cost": 0,
+        "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+        "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.24634146341463414,
+          "effectSimilarity": 0.14634146341463414,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.18888888888888888,
+          "effectSimilarity": 0.08888888888888889,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.05745257452574526,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "GoldenAltar",
+        "name": "金色祭坛",
+        "category": "GoldXP",
+        "cost": 0,
+        "effect": "根据怪诞祭品的费用和星级获得金币。",
+        "appearanceCondition": "已激活怪诞羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.37756410256410255,
+          "effectSimilarity": 0.10256410256410256,
+          "nameSimilarity": 0.1,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.29920634920634925,
+          "effectSimilarity": 0.17142857142857143,
+          "nameSimilarity": 0.1111111111111111,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.0783577533577533,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "HorsesVisit",
+        "name": "马来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "在这次战斗中获得马原始增益。",
+        "appearanceCondition": "原始特质活跃，未选择马",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10555555555555556,
+          "effectSimilarity": 0.05555555555555555,
+          "nameSimilarity": 0.2,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.04444444444444444,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    }
+  ],
+  "unresolved": {
+    "opgg": [
+      {
+        "record": {
+          "sourceKey": "RitualComplete",
+          "name": "仪式完成",
+          "category": "Risky",
+          "cost": 3,
+          "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+          "appearanceCondition": "已激活魔女羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "ProtectiveRitual",
+          "name": "保护仪式",
+          "category": "Misc",
+          "cost": 1,
+          "effect": "本轮受到的任何玩家伤害减少 3 点。",
+          "appearanceCondition": "已激活魔女羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "FakeLevel",
+          "name": "假关卡",
+          "category": "Misc",
+          "cost": 10,
+          "effect": "你暂时达到10级。",
+          "appearanceCondition": "尚未达到10级",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "CloneCompanion",
+          "name": "克隆伴侣",
+          "category": "Combat",
+          "cost": 5,
+          "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "confirmed_identity_unlinked",
+        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
+      },
+      {
+        "record": {
+          "sourceKey": "AllIn",
+          "name": "全部投入",
+          "category": "Risky",
+          "cost": 5,
+          "effect": "若接下来3场战斗全部获胜，则提升1级。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "DoubleUp",
+          "name": "加倍",
+          "category": "Misc",
+          "cost": 2,
+          "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "Escalation",
+          "name": "升级",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "FriendlyFlora",
+          "name": "友好的植物群",
+          "category": "Combat",
+          "cost": 2,
+          "effect": "所有友军获得50%效果的致命花卉加成。",
+          "appearanceCondition": "已激活致命花卉羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "MinionHorde",
+          "name": "小黄人部落",
+          "category": "Combat",
+          "cost": 4,
+          "effect": "生成 4 个小兵。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "Breeze",
+          "name": "微风",
+          "category": "Combat",
+          "cost": 1,
+          "effect": "你的队伍获得12%攻击速度。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "TheChariot",
+          "name": "战车",
+          "category": "GoldXP",
+          "cost": 10,
+          "effect": "商店刷新和购买经验值的费用减半。",
+          "appearanceCondition": "拥有至少30金币",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "NewandImproved",
+          "name": "新增和改进",
+          "category": "Misc",
+          "cost": 3,
+          "effect": "获得一个袖珍重组器。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "StarPower",
+          "name": "星力",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+          "appearanceCondition": "至少上场1名3星非坦克弈子",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "BetterBestie",
+          "name": "更好的闺蜜",
+          "category": "Combat",
+          "cost": 1,
+          "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+          "appearanceCondition": "已激活灵巧精羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "BrutalBargain",
+          "name": "残酷的讨价还价",
+          "category": "Item",
+          "cost": 0,
+          "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "CrystalBall",
+          "name": "水晶球",
+          "category": "Combat",
+          "cost": 1,
+          "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+          "appearanceCondition": "剩余至少4名玩家",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "TurtlesVisit",
+          "name": "海龟来访",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "本场战斗获得乌龟原始增益。",
+          "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "confirmed_identity_unlinked",
+        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
+      },
+      {
+        "record": {
+          "sourceKey": "ConsumableShop",
+          "name": "消耗品",
+          "category": "Misc",
+          "cost": 1,
+          "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "MeltingResists",
+          "name": "熔化抗蚀剂",
+          "category": "Combat",
+          "cost": 4,
+          "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+          "appearanceCondition": "地狱特质活跃",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "PottedLifebloom",
+          "name": "盆栽生命绽放",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "获得1朵临时生命花。",
+          "appearanceCondition": "已激活永恒之森羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "confirmed_identity_unlinked",
+        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
+      },
+      {
+        "record": {
+          "sourceKey": "PottedStonebark",
+          "name": "盆栽石皮树",
+          "category": "Combat",
+          "cost": 2,
+          "effect": "获得一棵临时石皮树。",
+          "appearanceCondition": "已激活永恒之森羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "confirmed_identity_unlinked",
+        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
+      },
+      {
+        "record": {
+          "sourceKey": "GuildofThieves",
+          "name": "盗贼公会",
+          "category": "Combat",
+          "cost": 6,
+          "effect": "获得 2 个临时盗贼手套。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "FaeFederation",
+          "name": "精灵联邦",
+          "category": "Combat",
+          "cost": 4,
+          "effect": "本回合你的所有弈子获得2个仙灵。",
+          "appearanceCondition": "已激活仙灵羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "FaerieFlight",
+          "name": "精灵飞行",
+          "category": "Misc",
+          "cost": 1,
+          "effect": "本场战斗吸引的仙灵数量提高100%。",
+          "appearanceCondition": "已激活仙灵羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "MemorialDummy",
+          "name": "纪念假人",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+          "appearanceCondition": "战场上有至少1名携带装备的坦克",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "confirmed_identity_unlinked",
+        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
+      },
+      {
+        "record": {
+          "sourceKey": "TigersVisit",
+          "name": "老虎来访",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "在这次战斗中获得老虎原始增益。",
+          "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "ComfortFood",
+          "name": "舒适食品",
+          "category": "Risky",
+          "cost": 2,
+          "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "BloodHunt",
+          "name": "血猎",
+          "category": "Combat",
+          "cost": 2,
+          "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+          "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "TouchGrass",
+          "name": "触摸草",
+          "category": "Misc",
+          "cost": 0,
+          "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+          "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "GoldenAltar",
+          "name": "金色祭坛",
+          "category": "GoldXP",
+          "cost": 0,
+          "effect": "根据怪诞祭品的费用和星级获得金币。",
+          "appearanceCondition": "已激活怪诞羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "Snacktime",
+          "name": "零食时间！",
+          "category": "Combat",
+          "cost": 4,
+          "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+          "appearanceCondition": "已激活灵巧精羁绊",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "confirmed_identity_unlinked",
+        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
+      },
+      {
+        "record": {
+          "sourceKey": "HorsesVisit",
+          "name": "马来访",
+          "category": "Combat",
+          "cost": 3,
+          "effect": "在这次战斗中获得马原始增益。",
+          "appearanceCondition": "原始特质活跃，未选择马",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "PremiumSwapMeet",
+          "name": "高级互换见面会",
+          "category": "Item",
+          "cost": 0,
+          "effect": "出售1名3星弈子，获得3次商店刷新和1个幸运装备宝箱。",
+          "appearanceCondition": "拥有1名3星弈子",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      },
+      {
+        "record": {
+          "sourceKey": "Tornado",
+          "name": "龙卷风",
+          "category": "Combat",
+          "cost": 10,
+          "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+          "blossom": null,
+          "prismatic": null
+        },
+        "classification": "F",
+        "corpusMembership": "unresolved",
+        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
+      }
+    ],
+    "dataTft": [
+      {
+        "id": "snapshot_139_6fda4e76a4da",
+        "nameEn": "克隆弈子",
+        "nameZh": "克隆弈子",
+        "riotId": null
+      }
+    ]
+  },
+  "confirmedCorpusMembership": {
+    "minimum": 174,
+    "evidenceRule": "Conservative lower bound: normalized production plus confirmed incomplete external identities, allowing every unmatched production identity to overlap at most one external identity."
+  },
+  "normalizedProductionCompleteness": {
+    "normalizedCount": 169,
+    "criticalMissingIdentityCount": 1,
+    "complete": false
+  },
+  "confirmedCorpusButIncomplete": [
+    {
+      "record": {
+        "sourceKey": "CloneCompanion",
+        "name": "克隆伴侣",
+        "category": "Combat",
+        "cost": 5,
+        "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "clonecompanion",
+        "communityDragonApiName": "DA_CloneCompanion18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "TurtlesVisit",
+        "name": "海龟来访",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "本场战斗获得乌龟原始增益。",
+        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "turtlesvisit",
+        "communityDragonApiName": "DA_TurtlesVisit18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedLifebloom",
+        "name": "盆栽生命绽放",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "获得1朵临时生命花。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "pottedlifebloom",
+        "communityDragonApiName": "DA_PottedLifebloom18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "PottedStonebark",
+        "name": "盆栽石皮树",
+        "category": "Combat",
+        "cost": 2,
+        "effect": "获得一棵临时石皮树。",
+        "appearanceCondition": "已激活永恒之森羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "pottedstonebark",
+        "communityDragonApiName": "DA_PottedStonebark18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "MemorialDummy",
+        "name": "纪念假人",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+        "appearanceCondition": "战场上有至少1名携带装备的坦克",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "memorialdummy",
+        "communityDragonApiName": "DA_MemorialDummy18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    },
+    {
+      "record": {
+        "sourceKey": "Snacktime",
+        "name": "零食时间！",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+        "appearanceCondition": "已激活灵巧精羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "corpusMembership": "confirmed",
+      "productionRecordStatus": "identity_link_unresolved",
+      "evidence": {
+        "opggCurrentCatalog": true,
+        "canonicalClientKey": "snacktime",
+        "communityDragonApiName": "DA_Snacktime18",
+        "communityDragonVariantKind": "base"
+      },
+      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
+    }
+  ],
+  "categoryDiscrepancies": [],
+  "categoryCountBySource": {
+    "datatft": {
+      "champion": 16,
+      "combat": 75,
+      "misc": 23,
+      "shop": 19,
+      "gold_xp": 13,
+      "risky": 18,
+      "item": 5
+    },
+    "opgg": {
+      "Combat": 94,
+      "Misc": 30,
+      "Champion": 16,
+      "Shop": 19,
+      "Risky": 21,
+      "GoldXP": 14,
+      "Item": 6
+    }
+  },
+  "matchMethodCounts": {
+    "exact_client_key": 144,
+    "exact_english_name": 15,
+    "exact_chinese_name": 4,
+    "reviewed_cross_source_identity": 3
+  },
+  "classificationCounts": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "E": 0,
+    "F": 34
+  },
+  "corpusEstimate": {
+    "confirmedMinimum": 174,
+    "unresolvedOpgg": 34,
+    "normalizedProductionCount": 169
+  },
+  "reason": "Only client identity, unique exact names, or reviewed aliases enter the confirmed intersection. A client-supported unlinked identity is not counted as OP.GG-only because it may alias an unmatched DataTFT row."
+}

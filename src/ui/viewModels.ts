@@ -1,4 +1,4 @@
-import type { FieldSource, Wisp } from '../domain/types';
+import { knownValue, type FieldSource, type Wisp } from '../domain/types';
 import type { StageFiveSlot } from '../probability/equalWeight';
 
 export type EffectMode = 'normal' | 'blossom' | 'prismatic';
@@ -22,7 +22,7 @@ export function toCardViewModel(wisp: Wisp): WispCardViewModel {
     stageText: formatStageRanges(wisp),
     requirements: wisp.requirements.map((item) => item.textZh), hasBlossom: Boolean(wisp.effects.blossom), hasPrismatic: Boolean(wisp.effects.prismatic),
     normal: wisp.effects.normal, blossom: wisp.effects.blossom || undefined, prismatic: wisp.effects.prismatic || undefined,
-    oncePerGame: wisp.oncePerGame, cooldown: wisp.reofferCooldownShops ?? undefined, sources: Object.values(wisp.sources),
+    oncePerGame: knownValue(wisp.oncePerGame) === true, cooldown: knownValue(wisp.reofferCooldownShops) ?? undefined, sources: Object.values(wisp.sources),
   };
 }
 

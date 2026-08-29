@@ -1,47 +1,165 @@
 {
   "patch": "18.1",
-  "verifiedAt": "2026-08-26T22:00:00+08:00",
+  "snapshotAt": "2026-08-29T11:22:31.117Z",
   "sources": [
     {
-      "id": "riot_patch_18_1",
+      "sourceId": "riot_patch_18_1_20260828",
       "tier": "A",
       "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
-      "useFor": ["patch_status", "official_wisp_rules", "official_categories", "stage5_combat_rule"]
+      "retrievedAt": "2026-08-28T16:57:06Z",
+      "upstreamModifiedAt": null,
+      "sha256": "d65b555ed03a04a08bb508131e3cbe602bc63fd4a34812f31c34429e3fcd93cc",
+      "locale": "en_us",
+      "useFor": [
+        "patch_status",
+        "official_wisp_rules",
+        "official_categories",
+        "stage5_combat_rule"
+      ],
+      "confidence": "official"
     },
     {
-      "id": "riot_enchanted_wilds_overview",
+      "sourceId": "riot_enchanted_wilds_overview_20260828",
       "tier": "A",
       "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/enchanted-wilds-overview/",
-      "useFor": ["wisp_mechanic", "blossom_breakpoints"]
+      "retrievedAt": "2026-08-28T16:57:07Z",
+      "upstreamModifiedAt": null,
+      "sha256": "9b2add9d5e4b50bdc0fed9e66132eef0c1548f5706d4f539b724d7d023901532",
+      "locale": "en_us",
+      "useFor": [
+        "wisp_mechanic",
+        "blossom_breakpoints"
+      ],
+      "confidence": "official"
     },
     {
-      "id": "communitydragon_latest",
+      "sourceId": "communitydragon_live_18_1_20260827_en_us",
       "tier": "B",
-      "url": "https://raw.communitydragon.org/latest/cdragon/tft/",
-      "observedSnapshot": "2026-08-16",
-      "warning": "Snapshot predates 18.1 live; do not treat balance numbers as final without cross-check."
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
+      "retrievedAt": "2026-08-28T16:49:15Z",
+      "upstreamModifiedAt": "2026-08-27T22:54:07Z",
+      "sha256": "7331be101d2399145c31336b688b95dd7715d51f94851401d5b5b2d8ed2466ec",
+      "extractedSha256": "03baa3b886b987cc255d0c8792de4ec947b96406a23bd5c0b760bdbd675fdafe",
+      "locale": "en_us",
+      "useFor": [
+        "riotId",
+        "nameEn",
+        "effect_cross_check"
+      ],
+      "confidence": "client_data"
     },
     {
-      "id": "communitydragon_pbe",
+      "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
       "tier": "B",
-      "url": "https://raw.communitydragon.org/pbe/cdragon/tft/",
-      "observedSnapshot": "2026-08-22",
-      "warning": "PBE snapshot; useful for IDs/assets but not final live values without cross-check."
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/zh_cn.json",
+      "retrievedAt": "2026-08-28T16:49:15Z",
+      "upstreamModifiedAt": "2026-08-27T22:54:07Z",
+      "sha256": "00f1d78527c9b8302d3d067d665bc40dc3389bff7429f25c9e42aa4ef751b7e8",
+      "extractedSha256": "a9ea1e0689af417ecb33595e1ae715bf68a4ad1d33211ee3ffb1974b79b809ec",
+      "locale": "zh_cn",
+      "useFor": [
+        "nameZh",
+        "localized_effect_cross_check",
+        "cross_source_join"
+      ],
+      "confidence": "client_data"
     },
     {
-      "id": "lolchess_wisps_18",
+      "sourceId": "lolchess_wisps_18_1_20260828_attempt",
       "tier": "C",
       "url": "https://lolchess.gg/rewards/set18/wisps",
-      "observedUpdated": "2026-08-26",
-      "useFor": ["cost", "stage_ranges", "effects", "blossom", "prismatic", "requirements", "once_per_game"],
-      "confidence": "verified_third_party"
+      "retrievedAt": "2026-08-29T04:32:00Z",
+      "pageUpdatedAt": null,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "useFor": [
+        "acquisition_history"
+      ],
+      "confidence": "unverified",
+      "warning": "Historical cloud attempt received an AWS WAF challenge (HTTP 202); superseded for record evidence by the browser snapshot channel.",
+      "fetchStatus": "blocked_by_source_protection",
+      "httpStatus": 202,
+      "observedPublicIndexUpdated": "2026-08-26"
     },
     {
-      "id": "datatft_database",
+      "sourceId": "datatft_18_1_20260828",
       "tier": "D",
       "url": "https://www.datatft.com/database#charm",
-      "useFor": ["name_zh", "effect_zh_style"],
-      "warning": "Chinese display reference only; do not let translation layer override higher-tier numeric fields."
+      "retrievedAt": "2026-08-28T16:49:16Z",
+      "pageUpdatedAt": "2026-08-28T07:40:00+08:00",
+      "sha256": "a35d3a2506f033349654ca9c91cad14dcf6d563e54238969c9d4332b9d609d26",
+      "locale": "zh_cn",
+      "useFor": [
+        "display_skeleton",
+        "nameZh",
+        "effectsZh",
+        "category",
+        "cost",
+        "stageRanges",
+        "requirements"
+      ],
+      "confidence": "community_high_confidence",
+      "warning": "Provisional normalized skeleton; fields are cross-checked against the available LoLCHESS browser snapshot and client data."
+    },
+    {
+      "sourceId": "opgg_set18_wisps_20260829",
+      "tier": "C",
+      "url": "https://op.gg/zh-cn/tft/set/18",
+      "retrievedAt": "2026-08-29T04:15:26Z",
+      "pageUpdatedAt": null,
+      "sha256": "dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da",
+      "locale": "zh_cn",
+      "fetchStatus": "fetched_and_extracted",
+      "httpStatus": 200,
+      "useFor": [
+        "corpus_completeness_cross_check",
+        "category_count_cross_check"
+      ],
+      "confidence": "community_high_confidence",
+      "warning": "All 200 record-level rows were parsed from the localized Next.js Flight payload; corpus-only rows still require policy review.",
+      "recordCount": 200,
+      "categoryCounts": {
+        "Combat": 94,
+        "Misc": 30,
+        "Champion": 16,
+        "Shop": 19,
+        "Risky": 21,
+        "GoldXP": 14,
+        "Item": 6
+      },
+      "declaredRecordCount": 200,
+      "parsedRecordCount": 200
+    },
+    {
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "tier": "C",
+      "url": "https://lolchess.gg/rewards/set18/wisps?utm_source=chatgpt.com",
+      "locale": "en",
+      "retrievedAt": "2026-08-29T11:22:31.117Z",
+      "pageUpdatedAt": "August 28, 2026",
+      "sha256": "d1d6ad0bc28e4ccf5ef4ccb5815ac9effb694ff0b271088776ac08f0870ce2d8",
+      "recordCount": 174,
+      "fieldCoverage": {
+        "name": 174,
+        "cost": 174,
+        "normalEffect": 174,
+        "stageRanges": 174,
+        "blossom": 145,
+        "prismatic": 19,
+        "requirements": 60,
+        "oncePerGameConfirmed": 2,
+        "reofferCooldownShops": 0
+      },
+      "fetchStatus": "browser_snapshot_imported",
+      "useFor": [
+        "identity_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ],
+      "confidence": "verified_third_party"
     }
   ]
 }
