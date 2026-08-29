@@ -5890,8 +5890,8 @@
     ]
   },
   "confirmedCorpusMembership": {
-    "minimum": 169,
-    "evidenceRule": "A source count is not an intersection; membership requires record identity evidence."
+    "minimum": 174,
+    "evidenceRule": "Conservative lower bound: normalized production plus confirmed incomplete external identities, allowing every unmatched production identity to overlap at most one external identity."
   },
   "normalizedProductionCompleteness": {
     "normalizedCount": 169,
@@ -6061,7 +6061,7 @@
     "F": 34
   },
   "corpusEstimate": {
-    "confirmedMinimum": 169,
+    "confirmedMinimum": 174,
     "unresolvedOpgg": 34,
     "normalizedProductionCount": 169
   },

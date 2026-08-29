@@ -2698,17 +2698,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 15
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 15
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_allfives",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2724,17 +2723,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 8
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 8
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_allfours",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2750,17 +2748,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 5
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 5
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_allones",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2776,17 +2773,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 5
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 5
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_allthrees",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2802,17 +2798,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 5
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 5
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_alltwos",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2827,7 +2822,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_infliction",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2842,7 +2841,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_majorpolymorph",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2857,7 +2860,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_minorpolymorph",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2878,7 +2885,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_pocketchange",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2893,7 +2904,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_polymorph",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2904,17 +2919,15 @@
           "productionHasRequirements": false,
           "lolchessHasRequirements": true,
           "productionFacts": [],
-          "lolchessFacts": [
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 2
-            }
-          ],
+          "lolchessFacts": [],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_preppers",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2929,7 +2942,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_prolificpower",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2945,17 +2962,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 10
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 10
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_starfall",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2970,7 +2986,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_sunfiresorcery",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -2985,7 +3005,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_18_tatteredarmor",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3001,17 +3025,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 12
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 12
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_animateshop18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3024,11 +3047,6 @@
           "productionFacts": [],
           "lolchessFacts": [
             {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 1
-            },
-            {
               "type": "board_count",
               "operator": ">=",
               "value": 1
@@ -3037,7 +3055,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_giantsaura18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3053,17 +3075,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 10
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 10
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_peddler18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3078,7 +3099,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_quicken18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3094,17 +3119,16 @@
               "type": "gold",
               "operator": ">=",
               "value": 10
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 10
             }
           ],
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_searchparty18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3119,7 +3143,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_solitudescloak18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3134,7 +3162,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_stealthy18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3149,7 +3181,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "da_wrappedinthorns18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3164,7 +3200,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "snapshot_048_cbc77e083fc2",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3179,7 +3219,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "snapshot_051_e06d127b43f9",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3194,7 +3238,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "snapshot_121_1899d3fe4c61",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3209,7 +3257,11 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "snapshot_136_c467ccd546d7",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3224,39 +3276,268 @@
           "status": "semantic_review_required"
         },
         "candidateMapping": "snapshot_147_2dc94df4e3a5",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
       {
         "sourceRecords": {
-          "identity": "da_18_mercenaryforce",
-          "nameEn": "Mercenary Force",
+          "identity": "da_18_fieldofmice",
+          "nameEn": "Field of Mice",
           "productionHasRequirements": true,
           "lolchessHasRequirements": true,
-          "productionFacts": [
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_fieldofmice",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_forestmage",
+          "nameEn": "Forest Mage",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_forestmage",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_heroicsacrifice",
+          "nameEn": "Heroic Sacrifice",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_heroicsacrifice",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_killingfrenzy",
+          "nameEn": "Killing Frenzy",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
             {
-              "type": "gold",
+              "type": "board_count",
               "operator": ">=",
-              "value": 30
+              "value": 1
             }
           ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_killingfrenzy",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_lifedebt",
+          "nameEn": "Life Debt",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_lifedebt",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_moonrise",
+          "nameEn": "Moonrise",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_moonrise",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_supercritical",
+          "nameEn": "Supercritical",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_supercritical",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_verdantvitality",
+          "nameEn": "Verdant Vitality",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
           "lolchessFacts": [
             {
               "type": "gold",
               "operator": ">=",
-              "value": 30
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 30
+              "value": 10
             }
           ],
-          "status": "structured_conflict"
+          "status": "semantic_review_required"
         },
-        "candidateMapping": "da_18_mercenaryforce",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "candidateMapping": "da_18_verdantvitality",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_abandonship18",
+          "nameEn": "Abandon Ship",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_abandonship18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_artifactinate18",
+          "nameEn": "Artifactinate",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_artifactinate18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_boostershot18",
+          "nameEn": "Booster Shot",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_boostershot18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_bulwark18",
+          "nameEn": "Bulwark",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_bulwark18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_curiocart18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
@@ -3272,96 +3553,468 @@
               "value": true
             }
           ],
-          "lolchessFacts": [
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 5
-            }
-          ],
-          "status": "structured_conflict"
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
         },
         "candidateMapping": "da_diversified18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
       {
         "sourceRecords": {
-          "identity": "da_heroofprophecy18",
-          "nameEn": "Hero Of Prophecy",
+          "identity": "da_flashfire18",
+          "nameEn": "Flash Fire",
           "productionHasRequirements": true,
           "lolchessHasRequirements": true,
-          "productionFacts": [
-            {
-              "type": "gold",
-              "operator": ">=",
-              "value": 35
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 50
-            },
-            {
-              "type": "level",
-              "operator": ">=",
-              "value": 10
-            }
-          ],
+          "productionFacts": [],
           "lolchessFacts": [
             {
-              "type": "gold",
-              "operator": ">=",
-              "value": 35
-            },
-            {
-              "type": "player_health",
-              "operator": ">=",
-              "value": 35
-            },
-            {
-              "type": "level",
-              "operator": ">=",
-              "value": 10
+              "type": "trait_active",
+              "value": true
             }
           ],
-          "status": "structured_conflict"
+          "status": "semantic_review_required"
         },
-        "candidateMapping": "da_heroofprophecy18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "candidateMapping": "da_flashfire18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       },
       {
         "sourceRecords": {
-          "identity": "da_ridethewave18",
-          "nameEn": "Ride the Wave",
+          "identity": "da_handofbaron18",
+          "nameEn": "Hand Of Baron",
           "productionHasRequirements": true,
           "lolchessHasRequirements": true,
-          "productionFacts": [
-            {
-              "type": "gold",
-              "operator": ">=",
-              "value": 20
-            }
-          ],
+          "productionFacts": [],
           "lolchessFacts": [
             {
-              "type": "gold",
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_handofbaron18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_herosentrance18",
+          "nameEn": "Hero's Entrance",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_herosentrance18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_homingfireflies18",
+          "nameEn": "Homing Fireflies",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_homingfireflies18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_idlecraftsman18",
+          "nameEn": "Idle Craftsman",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_idlecraftsman18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_improvedreach18",
+          "nameEn": "Improved Reach",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
               "operator": ">=",
-              "value": 20
-            },
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_improvedreach18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_jungling18",
+          "nameEn": "Jungling",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_jungling18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_manarichsoil18",
+          "nameEn": "Mana-Rich Soil",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_manarichsoil18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_marksmensgale18",
+          "nameEn": "Marksmen's Gale",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_marksmensgale18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_moonlightritual18",
+          "nameEn": "Moonlight Ritual",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_moonlightritual18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_natureswrath18",
+          "nameEn": "Nature's Wrath",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_natureswrath18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_refreshinglight18",
+          "nameEn": "Refreshing Light",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_refreshinglight18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_solargift18",
+          "nameEn": "Solar Gift",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_solargift18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_standalone18",
+          "nameEn": "Stand Alone",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_standalone18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_terraforming18",
+          "nameEn": "Terraforming",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_terraforming18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_trophyhunter18",
+          "nameEn": "Trophy Hunter",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_trophyhunter18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_022_fc7538964718",
+          "nameEn": "Sinister Deal",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
             {
               "type": "player_health",
               "operator": ">=",
-              "value": 20
+              "value": 4
             }
           ],
-          "status": "structured_conflict"
+          "status": "semantic_review_required"
         },
-        "candidateMapping": "da_ridethewave18",
-        "evidence": "Confirmed identity with Requirements presence or structured-fact disagreement.",
+        "candidateMapping": "snapshot_022_fc7538964718",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_036_f484358ea1e5",
+          "nameEn": "Essence Theft",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_036_f484358ea1e5",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_049_d60aa5ac9feb",
+          "nameEn": "Minor Gambit",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_049_d60aa5ac9feb",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_120_cf0b477ffe00",
+          "nameEn": "Minor Blood Ritual",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "player_health",
+              "operator": ">=",
+              "value": 3
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_120_cf0b477ffe00",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_157_3ed870773960",
+          "nameEn": "Blood Ritual",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "player_health",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_157_3ed870773960",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
         "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
         "whatHumanMustDecide": "Confirm requirement presence and semantics."
       }

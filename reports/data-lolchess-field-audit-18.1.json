@@ -1485,11 +1485,6 @@
         "productionFacts": [],
         "lolchessFacts": [
           {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
-          {
             "type": "board_count",
             "operator": ">=",
             "value": 1
@@ -1503,13 +1498,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 70
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -1556,14 +1545,9 @@
             "type": "gold",
             "operator": ">=",
             "value": 30
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 30
           }
         ],
-        "status": "structured_conflict"
+        "status": "structured_agreement"
       },
       {
         "identity": "da_18_mitosis",
@@ -1630,13 +1614,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -1663,7 +1641,13 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
         "status": "semantic_review_required"
       },
       {
@@ -1699,13 +1683,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 3
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -1854,11 +1832,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 10
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 10
           }
         ],
         "status": "semantic_review_required"
@@ -1892,14 +1865,8 @@
             "value": true
           }
         ],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 5
-          }
-        ],
-        "status": "structured_conflict"
+        "lolchessFacts": [],
+        "status": "semantic_review_required"
       },
       {
         "identity": "da_doodadbag18",
@@ -2086,7 +2053,7 @@
           {
             "type": "player_health",
             "operator": ">=",
-            "value": 35
+            "value": 50
           },
           {
             "type": "level",
@@ -2094,7 +2061,7 @@
             "value": 10
           }
         ],
-        "status": "structured_conflict"
+        "status": "structured_agreement"
       },
       {
         "identity": "da_herosentrance18",
@@ -2102,13 +2069,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -2144,13 +2105,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -2160,11 +2115,6 @@
         "lolchessHasRequirements": true,
         "productionFacts": [],
         "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
           {
             "type": "board_count",
             "operator": ">=",
@@ -2303,11 +2253,6 @@
         "productionFacts": [],
         "lolchessFacts": [
           {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
-          {
             "type": "board_count",
             "operator": ">=",
             "value": 1
@@ -2322,11 +2267,6 @@
         "lolchessHasRequirements": true,
         "productionFacts": [],
         "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
           {
             "type": "board_count",
             "operator": ">=",
@@ -2350,13 +2290,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -2507,14 +2441,9 @@
             "type": "gold",
             "operator": ">=",
             "value": 20
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 20
           }
         ],
-        "status": "structured_conflict"
+        "status": "structured_agreement"
       },
       {
         "identity": "da_rollingbones18",
@@ -2783,11 +2712,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 15
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 15
           }
         ],
         "status": "semantic_review_required"
@@ -2801,11 +2725,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 8
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 8
           }
@@ -2823,11 +2742,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 5
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 5
           }
         ],
         "status": "semantic_review_required"
@@ -2843,11 +2757,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 5
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 5
           }
         ],
         "status": "semantic_review_required"
@@ -2861,11 +2770,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 5
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 5
           }
@@ -2929,13 +2833,7 @@
         "productionHasRequirements": false,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 2
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -2956,11 +2854,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 10
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 10
           }
@@ -2996,11 +2889,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 12
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 12
           }
         ],
         "status": "semantic_review_required"
@@ -3012,11 +2900,6 @@
         "lolchessHasRequirements": true,
         "productionFacts": [],
         "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
           {
             "type": "board_count",
             "operator": ">=",
@@ -3034,11 +2917,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 10
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 10
           }
@@ -3063,11 +2941,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 10
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 10
           }
@@ -3177,34 +3050,9 @@
             "type": "gold",
             "operator": ">=",
             "value": 30
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 30
           }
         ],
-        "status": "structured_conflict"
-      },
-      {
-        "identity": "da_diversified18",
-        "nameEn": "Diversified",
-        "productionHasRequirements": true,
-        "lolchessHasRequirements": true,
-        "productionFacts": [
-          {
-            "type": "trait_active",
-            "value": true
-          }
-        ],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 5
-          }
-        ],
-        "status": "structured_conflict"
+        "status": "structured_agreement"
       },
       {
         "identity": "da_heroofprophecy18",
@@ -3237,104 +3085,6 @@
           {
             "type": "player_health",
             "operator": ">=",
-            "value": 35
-          },
-          {
-            "type": "level",
-            "operator": ">=",
-            "value": 10
-          }
-        ],
-        "status": "structured_conflict"
-      },
-      {
-        "identity": "da_ridethewave18",
-        "nameEn": "Ride the Wave",
-        "productionHasRequirements": true,
-        "lolchessHasRequirements": true,
-        "productionFacts": [
-          {
-            "type": "gold",
-            "operator": ">=",
-            "value": 20
-          }
-        ],
-        "lolchessFacts": [
-          {
-            "type": "gold",
-            "operator": ">=",
-            "value": 20
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 20
-          }
-        ],
-        "status": "structured_conflict"
-      }
-    ],
-    "structuredConflict": [
-      {
-        "identity": "da_18_mercenaryforce",
-        "nameEn": "Mercenary Force",
-        "productionHasRequirements": true,
-        "lolchessHasRequirements": true,
-        "productionFacts": [
-          {
-            "type": "gold",
-            "operator": ">=",
-            "value": 30
-          }
-        ],
-        "lolchessFacts": [
-          {
-            "type": "gold",
-            "operator": ">=",
-            "value": 30
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 30
-          }
-        ],
-        "status": "structured_conflict"
-      },
-      {
-        "identity": "da_diversified18",
-        "nameEn": "Diversified",
-        "productionHasRequirements": true,
-        "lolchessHasRequirements": true,
-        "productionFacts": [
-          {
-            "type": "trait_active",
-            "value": true
-          }
-        ],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 5
-          }
-        ],
-        "status": "structured_conflict"
-      },
-      {
-        "identity": "da_heroofprophecy18",
-        "nameEn": "Hero Of Prophecy",
-        "productionHasRequirements": true,
-        "lolchessHasRequirements": true,
-        "productionFacts": [
-          {
-            "type": "gold",
-            "operator": ">=",
-            "value": 35
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
             "value": 50
           },
           {
@@ -3343,24 +3093,7 @@
             "value": 10
           }
         ],
-        "lolchessFacts": [
-          {
-            "type": "gold",
-            "operator": ">=",
-            "value": 35
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 35
-          },
-          {
-            "type": "level",
-            "operator": ">=",
-            "value": 10
-          }
-        ],
-        "status": "structured_conflict"
+        "status": "structured_agreement"
       },
       {
         "identity": "da_ridethewave18",
@@ -3379,16 +3112,12 @@
             "type": "gold",
             "operator": ">=",
             "value": 20
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 20
           }
         ],
-        "status": "structured_conflict"
+        "status": "structured_agreement"
       }
     ],
+    "structuredConflict": [],
     "semanticReviewRequired": [
       {
         "identity": "da_18_allfives",
@@ -3399,11 +3128,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 15
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 15
           }
@@ -3421,11 +3145,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 8
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 8
           }
         ],
         "status": "semantic_review_required"
@@ -3439,11 +3158,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 5
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 5
           }
@@ -3461,11 +3175,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 5
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 5
           }
         ],
         "status": "semantic_review_required"
@@ -3479,11 +3188,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 5
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 5
           }
@@ -3534,11 +3238,6 @@
         "productionFacts": [],
         "lolchessFacts": [
           {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
-          {
             "type": "board_count",
             "operator": ">=",
             "value": 1
@@ -3552,13 +3251,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 70
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3623,13 +3316,7 @@
         "productionHasRequirements": false,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 2
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3652,11 +3339,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 10
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 10
           }
         ],
         "status": "semantic_review_required"
@@ -3676,13 +3358,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3700,7 +3376,13 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "gold",
+            "operator": ">=",
+            "value": 10
+          }
+        ],
         "status": "semantic_review_required"
       },
       {
@@ -3723,11 +3405,6 @@
             "type": "gold",
             "operator": ">=",
             "value": 12
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 12
           }
         ],
         "status": "semantic_review_required"
@@ -3738,13 +3415,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 3
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3776,13 +3447,22 @@
             "type": "gold",
             "operator": ">=",
             "value": 10
-          },
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 10
           }
         ],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_diversified18",
+        "nameEn": "Diversified",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3806,11 +3486,6 @@
         "lolchessHasRequirements": true,
         "productionFacts": [],
         "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
           {
             "type": "board_count",
             "operator": ">=",
@@ -3839,13 +3514,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3863,13 +3532,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3879,11 +3542,6 @@
         "lolchessHasRequirements": true,
         "productionFacts": [],
         "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
           {
             "type": "board_count",
             "operator": ">=",
@@ -3914,11 +3572,6 @@
         "productionFacts": [],
         "lolchessFacts": [
           {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
-          {
             "type": "board_count",
             "operator": ">=",
             "value": 1
@@ -3934,11 +3587,6 @@
         "productionFacts": [],
         "lolchessFacts": [
           {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          },
-          {
             "type": "board_count",
             "operator": ">=",
             "value": 1
@@ -3952,13 +3600,7 @@
         "productionHasRequirements": true,
         "lolchessHasRequirements": true,
         "productionFacts": [],
-        "lolchessFacts": [
-          {
-            "type": "player_health",
-            "operator": ">=",
-            "value": 1
-          }
-        ],
+        "lolchessFacts": [],
         "status": "semantic_review_required"
       },
       {
@@ -3979,11 +3621,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 10
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 10
           }
@@ -4022,11 +3659,6 @@
         "lolchessFacts": [
           {
             "type": "gold",
-            "operator": ">=",
-            "value": 10
-          },
-          {
-            "type": "player_health",
             "operator": ">=",
             "value": 10
           }

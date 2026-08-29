@@ -10,7 +10,7 @@
 - 确认 OP.GG-only：0；DataTFT unmatched（不等同于其它来源不存在）：1；OP.GG unresolved：34。原 31 条差异结论已全部撤销并按当前强证据重新计算。
 - CommunityDragon 为 6 条未链接 OP.GG identity 提供 exact base client identity；它确认 corpus 身份，但不能证明这些记录与 1 条 DataTFT unmatched rows 相互独立，因此 confirmed OP.GG-only 仍为 0。
 - appearanceCondition 只作为需求字段，绝不再决定 A/C 或排除。规则授权的条件 Wisp 仍属于 corpus。
-- 当前可证实 corpus 下限为 169；normalized production 也是 169。另有 6 个已确认 corpus identity 尚未完成 DataTFT/production 身份链接，不能重复计数。
+- 当前可证实 corpus 保守下限为 174（normalized 169 + max(0, incomplete 6 - unmatched 1)）；exact corpus size 仍 unresolved。另有 6 个已确认 corpus identity 尚未完成 DataTFT/production 身份链接，不能重复计数。
 - Blossom 130；Mitosis 的非独立 Upgrade 仍为 null。Knowledge<T>、字段 provenance、seed/production 分离均保持不变。
 - LoLCHESS browser snapshot：174 条，按确认/reviewed canonical identity 与 production 匹配 164 条；逐字段审计见 data-lolchess-field-audit-18.1.json。来源规模 163/169/174/200 分别反映 CommunityDragon canonical base、DataTFT normalized、LoLCHESS rendered catalog、OP.GG catalog 的不同结构与口径，不能仅凭数量选择全集。
 - **Production ready：否。** 当前仍需人工审核 34 个 OP.GG candidate group 与 1 个 DataTFT unmatched rows；离线构建保持确定性。

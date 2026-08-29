@@ -82,7 +82,25 @@ describe('Stage C1 production audit regressions', () => {
     const reconciliation = load<any>('reports/data-corpus-reconciliation-18.1.json');
     expect(reconciliation.matching.reviewedCrossSourceIdentityCount).toBe(17);
     expect(reconciliation.matching.dataTftUnmatchedCount).toBeGreaterThan(0);
+    expect(reconciliation.confirmedCorpusMinimum).toBe(174);
     expect(reconciliation.exactCorpusSize).toBe('unresolved');
+  });
+
+  test('manual queue includes every semantic requirement review exactly once', () => {
+    const fieldAudit = load<any>('reports/data-lolchess-field-audit-18.1.json');
+    const manual = load<any>('reports/data-manual-review-18.1.json');
+    const queued = manual.groups.requirements_semantics;
+    const expected = new Set([...fieldAudit.requirements.presenceConflict, ...fieldAudit.requirements.structuredConflict, ...fieldAudit.requirements.semanticReviewRequired].map((row: any) => row.identity));
+    expect(queued.map((item: any) => item.candidateMapping)).toHaveLength(expected.size);
+    expect(new Set(queued.map((item: any) => item.candidateMapping))).toEqual(expected);
+    expect(queued.every((item: any) => item.reviewReasons.length === new Set(item.reviewReasons).size)).toBe(true);
+    expect(Object.values(manual.groups).reduce((sum: number, rows: any) => sum + rows.length, 0)).toBe(Object.values(manual.groups).flat().length);
+  });
+
+  test('manifest snapshotAt is the deterministic latest source retrieval time', () => {
+    const manifest = load<any>('data/source_manifest_18.1.json');
+    const latest = Math.max(...manifest.sources.map((source: any) => Date.parse(source.retrievedAt)).filter(Number.isFinite));
+    expect(Date.parse(manifest.snapshotAt)).toBe(latest);
   });
 
   test('provenance falls back to DataTFT and unknown facts stay unknown', () => {

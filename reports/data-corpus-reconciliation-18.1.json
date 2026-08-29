@@ -1,7 +1,8 @@
 {
   "corpusDefinition": "All live-patch Wisps actually offered in a normal or rules-authorized Wisp slot. Conditional appearance does not exclude a Wisp; only inactive/internal/non-offerable records, variants, and aliases are excluded with evidence.",
   "exactCorpusSize": "unresolved",
-  "confirmedCorpusMinimum": 169,
+  "confirmedCorpusMinimum": 174,
+  "confirmedCorpusMinimumReason": "normalizedProductionCount + max(0, confirmedCorpusButIncompleteCount - dataTftUnmatchedCount)",
   "normalizedProductionCount": 169,
   "productionReady": false,
   "stageC1EngineeringExit": {
