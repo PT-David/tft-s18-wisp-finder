@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import type { Requirement, Wisp, WispDataset } from '../../../src/domain/types';
 
-export const GENERATOR_VERSION = 'c2.1-v3';
+export const GENERATOR_VERSION = 'c2.1-v4';
 export const INPUT_PATH = 'data/normalized/wisps_18.1.json';
 
 export type RiskGroup = 'player_vs_unit_health' | 'death_kill_execute' | 'item_semantics' |
@@ -20,18 +20,18 @@ export const TAXONOMY: TaxonomyEntry[] = [
   T('champion_cost_tier', '弈子费用等级', '指向特定费用等级的弈子。'), T('champion_duplicator', '英雄复制器', '明确获得或使用英雄复制器道具。', 'clone_vs_duplicator'),
   T('champion_obtain', '获得弈子', '直接获得弈子或使弈子加入队伍。'), T('champion_star_up', '弈子升星', '提升或指定弈子星级。'),
   T('champion_transform', '弈子转化', '将弈子转换为另一形态或对象。'), T('completed_item', '成装', '明确涉及完整装备或成装。', 'item_semantics'),
-  T('crowd_control', '控制', '施加眩晕等群体控制。'), T('delayed_trigger', '延迟触发', '在战斗开始若干秒后触发一次效果；不表示存活奖励。'), T('enemy_death', '敌方阵亡', '由敌方单位阵亡触发。', 'death_kill_execute'),
+  T('crowd_control', '控制', '施加眩晕等控制效果。'), T('delayed_trigger', '延迟触发', '在战斗开始若干秒后触发一次效果；不表示存活奖励。'), T('enemy_death', '敌方阵亡', '由敌方单位阵亡触发。', 'death_kill_execute'),
   T('execute_threshold', '处决阈值', '在目标低于生命阈值时处决。', 'death_kill_execute'), T('free_reroll', '免费刷新', '明确提供免费商店刷新。', 'reroll_vs_refresh'),
   T('gold_gain', '获得金币', '奖励或产出金币。', 'gold_cost_vs_reward'), T('gold_payment', '支付或失去金币', '效果明确要求实际支付、花费或失去金币。', 'gold_cost_vs_reward'),
   T('gold_requirement', '金币条件', '明确检查当前持有金币阈值。', 'gold_cost_vs_reward'),
   T('item_component', '基础装备', '明确涉及基础装备或散件。', 'item_semantics'), T('item_requirement', '装备条件', 'Requirement 明确要求已持有或携带装备。', 'item_semantics'),
-  T('item_shop', '装备商店', '开启或使用装备商店。', 'item_semantics'), T('kill_takedown', '击杀或参与击杀', '明确的击杀、击倒或参与击杀语义。', 'death_kill_execute'),
+  T('item_shop', '装备商店', '开启或使用装备商店。', 'item_semantics'), T('kill_takedown', '击杀或参与击杀', '明确的击杀或参与击杀语义。', 'death_kill_execute'),
   T('loss_streak', '连败', '由连败状态决定。'), T('player_health_gain', '玩家生命恢复', '明确增加或治疗玩家生命。', 'player_vs_unit_health'),
   T('player_health_loss', '玩家生命损失', '明确失去玩家生命。', 'player_vs_unit_health'), T('player_health_threshold', '玩家生命阈值', 'Requirement 或文本明确检查玩家生命。', 'player_vs_unit_health'),
   T('reforger', '重铸器', '明确涉及装备重铸器。', 'item_semantics'), T('shield', '护盾', '为弈子提供护盾。'),
-  T('shop_price', '商店售价', '商店中商品的金币价格或价格范围。', 'gold_cost_vs_reward'), T('shop_reroll', '商店刷新', '明确刷新 TFT 商店。', 'reroll_vs_refresh'),
-  T('survival_duration', '存活结算', '明确按单位存活或存活友军数量触发。', 'survival_vs_once_per_game'),
-  T('temporary_item', '临时装备', '明确为临时且可装备或明确是装备的对象。', 'item_semantics'), T('time_stage', '回合或阶段条件', '由回合、阶段或准备阶段决定；不包含普通效果持续时间。'),
+  T('shop_price', '商店价格', '商店中商品的金币购买价格或价格范围。', 'gold_cost_vs_reward'), T('shop_reroll', '商店刷新', '明确刷新 TFT 商店。', 'reroll_vs_refresh'),
+  T('survival_condition', '存活结算', '明确以单位是否存活、存活时间或存活友军数量作为效果触发或结算依据。', 'survival_vs_once_per_game'),
+  T('temporary_item', '临时装备', '明确为临时且可装备或明确是装备的对象。', 'item_semantics'), T('time_stage', '回合或阶段时机/条件', '描述回合、阶段或准备阶段的时机或条件；不包含普通效果持续时间。'),
   T('trait_active', '羁绊激活', '由羁绊激活状态决定。'), T('true_damage', '真实伤害', '造成真实伤害。'),
   T('win_streak', '连胜', '由连胜状态决定。'), T('xp_gain', '获得经验', '奖励经验值。'),
 ].sort((a, b) => a.key.localeCompare(b.key));
@@ -62,7 +62,7 @@ const R: Rule[] = [
   { key: 'ally_death', regex: /友军.*阵亡|己方弈子.*阵亡|最先阵亡的\d*个?弈子|第\d+个阵亡的弈子|你的弈子们在阵亡/ },
   { key: 'enemy_death', regex: /阵亡的敌人|敌人.*阵亡/ }, { key: 'execute_threshold', regex: /处决生命值低于\d+%|生命值低于\d+%.*处决/ },
   { key: 'kill_takedown', regex: /参与击杀|完成击杀|每(?:获得)?\d*次?击杀|至少击杀|将所有[^。]*击杀/ },
-  { key: 'survival_duration', regex: /每有\d+名存活的友军|弈子在战斗中存活|存活(?:达到|至少|满)\d+秒/ },
+  { key: 'survival_condition', regex: /每有\d+名存活的友军|弈子在战斗中存活|存活(?:达到|至少|满)\d+秒/ },
   { key: 'delayed_trigger', regex: /在\d+(?:\.\d+)?(?:(?:和|、)\d+(?:\.\d+)?)*秒后/ },
   { key: 'shield', regex: /护盾/ }, { key: 'attack_speed', regex: /攻击速度/ }, { key: 'ability_power', regex: /法术强度|法强/ },
   { key: 'attack_damage', regex: /攻击力/ }, { key: 'true_damage', regex: /真实伤害/ }, { key: 'crowd_control', regex: /晕眩|眩晕|控制/ },
@@ -85,10 +85,15 @@ const AMBIGUOUS: { regex: RegExp; risk: RiskGroup; rule: string; reason: string;
 
 export interface QueryGroup { key: string; canonicalTerm: string; conceptKeys?: string[]; aliases: { term: string; language: string }[]; evidence: string; intrinsicRisks: string[]; reviewStatus: 'draft_candidate' | 'needs_review' }
 const GROUPS = ([
-  { key: 'champion_duplicator_terms', canonicalTerm: 'Champion Duplicator', conceptKeys: ['champion_duplicator'], aliases: [{ term: 'Champion Duplicator', language: 'en' }, { term: '复制器', language: 'zh' }, { term: '妮蔻', language: 'game_slang' }], evidence: 'C2 canonical query vocabulary rule', intrinsicRisks: ['clone_vs_duplicator'], reviewStatus: 'needs_review' },
-  { key: 'experience_terms', canonicalTerm: '经验', conceptKeys: ['xp_gain'], aliases: [{ term: '经验', language: 'zh' }, { term: 'XP', language: 'en' }], evidence: 'C2 canonical query vocabulary rule', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
-  { key: 'health_terms', canonicalTerm: '生命值', aliases: [{ term: 'HP', language: 'en' }, { term: '生命值', language: 'zh' }, { term: '血量', language: 'game_slang' }], evidence: '通用 health 查询表达；不推断玩家或弈子主体', intrinsicRisks: ['player_vs_unit_health'], reviewStatus: 'needs_review' },
-  { key: 'reroll_terms', canonicalTerm: '刷新', conceptKeys: ['shop_reroll', 'free_reroll'], aliases: [{ term: 'D', language: 'game_slang' }, { term: 'reroll', language: 'en' }, { term: 'roll', language: 'game_slang' }, { term: '刷新', language: 'zh' }], evidence: 'C2 canonical query vocabulary rule', intrinsicRisks: ['single_letter_alias:D', 'reroll_vs_refresh'], reviewStatus: 'needs_review' },
+  { key: 'ability_power_terms', canonicalTerm: '法术强度', conceptKeys: ['ability_power'], aliases: [{ term: '法术强度', language: 'zh' }, { term: '法强', language: 'zh' }], evidence: '人工审核批准的低歧义中文缩写', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+  { key: 'attack_speed_terms', canonicalTerm: '攻击速度', conceptKeys: ['attack_speed'], aliases: [{ term: '攻击速度', language: 'zh' }, { term: '攻速', language: 'zh' }], evidence: '人工审核批准的低歧义中文缩写', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+  { key: 'champion_duplicator_terms', canonicalTerm: 'Champion Duplicator', conceptKeys: ['champion_duplicator'], aliases: [{ term: 'Champion Duplicator', language: 'en' }, { term: '英雄复制器', language: 'zh' }, { term: '复制器', language: 'zh' }], evidence: '人工审核移除有英雄名歧义的旧俗称', intrinsicRisks: ['clone_vs_duplicator'], reviewStatus: 'needs_review' },
+  { key: 'death_terms', canonicalTerm: '阵亡', aliases: [{ term: '阵亡', language: 'zh' }, { term: '死亡', language: 'zh' }], evidence: '主体中立的死亡查询表达', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+  { key: 'experience_terms', canonicalTerm: '经验', conceptKeys: ['xp_gain'], aliases: [{ term: '经验', language: 'zh' }, { term: '经验值', language: 'zh' }, { term: 'XP', language: 'en' }, { term: 'experience', language: 'en' }], evidence: '人工审核批准的经验查询表达', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+  { key: 'health_terms', canonicalTerm: '生命值', aliases: [{ term: 'HP', language: 'en' }, { term: 'health', language: 'en' }, { term: '生命值', language: 'zh' }, { term: '血量', language: 'game_slang' }], evidence: '通用 health 查询表达；不推断玩家或弈子主体', intrinsicRisks: ['player_vs_unit_health'], reviewStatus: 'needs_review' },
+  { key: 'kill_terms', canonicalTerm: '击杀', conceptKeys: ['kill_takedown'], aliases: [{ term: '击杀', language: 'zh' }, { term: 'takedown', language: 'en' }], evidence: '人工审核批准的击杀查询表达；不与死亡或处决合并', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+  { key: 'reroll_terms', canonicalTerm: '刷新', conceptKeys: ['shop_reroll', 'free_reroll'], aliases: [{ term: 'reroll', language: 'en' }, { term: '刷新', language: 'zh' }, { term: '重随', language: 'zh' }], evidence: '人工审核移除单字符及名称碰撞 alias', intrinsicRisks: ['reroll_vs_refresh'], reviewStatus: 'needs_review' },
+  { key: 'true_damage_terms', canonicalTerm: '真实伤害', conceptKeys: ['true_damage'], aliases: [{ term: '真实伤害', language: 'zh' }, { term: '真伤', language: 'zh' }], evidence: '人工审核批准的低歧义中文缩写', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
 ] satisfies QueryGroup[]).sort((a, b) => a.key.localeCompare(b.key));
 
 /** Actual collision means the same normalized alias occurs in distinct semantic groups. */
@@ -100,6 +105,16 @@ export function detectAliasCollisions(groups: readonly QueryGroup[]) {
     entry.groups.add(group.key); (group.conceptKeys ?? []).forEach((concept) => entry.concepts.add(concept)); aliases.set(key, entry);
   }
   return [...aliases].filter(([, x]) => x.groups.size > 1).map(([alias, x]) => ({ alias, groupKeys: [...x.groups].sort(), conceptKeys: [...x.concepts].sort(), reviewStatus: 'needs_review' as const })).sort((a, b) => a.alias.localeCompare(b.alias));
+}
+
+function auditAliases(groups: readonly QueryGroup[], records: readonly Wisp[]) {
+  return groups.flatMap((group) => group.aliases.map((alias) => {
+    const needle = alias.term.normalize('NFKC').toLocaleLowerCase();
+    const occurrences = records.flatMap((wisp) => fieldsOf(wisp)
+      .filter((field) => field.text.normalize('NFKC').toLocaleLowerCase().includes(needle))
+      .map((field) => ({ wispId: wisp.id, field: field.field, text: field.text })));
+    return { groupKey: group.key, alias: alias.term, occurrences, occurrenceCount: occurrences.length };
+  })).sort((a, b) => a.groupKey.localeCompare(b.groupKey) || a.alias.localeCompare(b.alias));
 }
 
 export function generateSearchLexicon(dataset: WispDataset, inputBytes: Buffer) {
@@ -117,6 +132,7 @@ export function generateSearchLexicon(dataset: WispDataset, inputBytes: Buffer) 
   const queryExpansionGroups = GROUPS.map(g => ({ ...g, aliases: [...g.aliases].sort((a,b) => a.term.normalize('NFKC').toLocaleLowerCase().localeCompare(b.term.normalize('NFKC').toLocaleLowerCase())) }));
   const actualAliasCollisions = detectAliasCollisions(queryExpansionGroups);
   const intrinsicAliasRisks = queryExpansionGroups.flatMap(group => group.intrinsicRisks.map(risk => ({ groupKey: group.key, risk, reviewStatus: 'needs_review' as const })));
+  const aliasCorpusAudit = auditAliases(queryExpansionGroups, dataset.records);
   const input = { path: INPUT_PATH, sha256: createHash('sha256').update(inputBytes).digest('hex'), recordCount: dataset.records.length };
   const common = { schemaVersion: 1, patch: '18.1', generatorVersion: GENERATOR_VERSION, input };
   const conceptDraft = { ...common, taxonomy: TAXONOMY, assignments };
@@ -125,6 +141,6 @@ export function generateSearchLexicon(dataset: WispDataset, inputBytes: Buffer) 
   const reviewGroups = { player_vs_unit_health: review.player_vs_unit_health, death_kill_execute: review.death_kill_execute, item_semantics: review.item_semantics, gold_cost_vs_reward: review.gold_cost_vs_reward, clone_vs_duplicator: review.clone_vs_duplicator, reroll_vs_refresh: review.reroll_vs_refresh, other_ambiguous: [...review.survival_vs_once_per_game, ...review.other_ambiguous] };
   const reviewItems = Object.values(reviewGroups).flat();
   const reviewGroupCounts = Object.fromEntries(Object.entries(reviewGroups).map(([key, items]) => [key, items.length]));
-  const report = { ...common, summary: { recordsScanned: dataset.records.length, conceptCandidateAssignments: assignments.length, conceptKeysUsed: new Set(assignments.map(a => a.conceptKey)).size, queryExpansionGroups: queryExpansionGroups.length, recordAliases: 0, highConfidenceAssignments: high, needsReviewAssignments: assignments.length - high, reviewItems: reviewItems.length, uniqueWispsWithReviewItems: new Set(reviewItems.map(item => item.wispId)).size, actualAliasCollisions: actualAliasCollisions.length, riskyQueryExpansionGroups: queryExpansionGroups.filter(g => g.intrinsicRisks.length).length, reviewGroupCounts }, reviewGroups, actualAliasCollisions, intrinsicAliasRisks };
+  const report = { ...common, summary: { recordsScanned: dataset.records.length, taxonomyDefinitions: TAXONOMY.length, conceptCandidateAssignments: assignments.length, conceptKeysUsed: new Set(assignments.map(a => a.conceptKey)).size, queryExpansionGroups: queryExpansionGroups.length, recordAliases: 0, highConfidenceAssignments: high, needsReviewAssignments: assignments.length - high, reviewItems: reviewItems.length, uniqueWispsWithReviewItems: new Set(reviewItems.map(item => item.wispId)).size, actualAliasCollisions: actualAliasCollisions.length, intrinsicAliasRisks: intrinsicAliasRisks.length, riskyQueryExpansionGroups: queryExpansionGroups.filter(g => g.intrinsicRisks.length).length, aliasLiteralOccurrences: aliasCorpusAudit.reduce((sum, item) => sum + item.occurrenceCount, 0), reviewGroupCounts }, reviewGroups, actualAliasCollisions, intrinsicAliasRisks, aliasCorpusAudit };
   return { conceptDraft, synonymDraft, report };
 }

@@ -38,9 +38,28 @@ describe('搜索引擎', () => {
 
   test('中文、单词和多词英文同义词形成一个通用 phrase clause', () => {
     const duplicator = fixture('duplicator', { effects: { normal: '获得英雄复制器' } });
-    expect(searchWisps([duplicator], '妮蔻')).toHaveLength(1);
+    expect(searchWisps([duplicator], '妮蔻')).toHaveLength(0);
+    expect(searchWisps([duplicator], '英雄复制器')).toHaveLength(1);
     expect(searchWisps([duplicator], 'Champion Duplicator')).toHaveLength(1);
     expect(buildQueryClauses('Champion Duplicator')).toEqual([expect.objectContaining({ source: 'champion duplicator' })]);
+  });
+
+  test('precision-first expansions avoid D, roll, and 妮蔻 pollution', () => {
+    const records = [
+      fixture('letter-d', { nameEn: 'Golden Dividend' }),
+      fixture('die-roll', { nameEn: 'Die Roll' }),
+      fixture('rolling-bones', { nameEn: 'Rolling Bones' }),
+      fixture('neeko', { effects: { normal: '获得妮蔻' } }),
+      fixture('reroll', { effects: { normal: '获得一次免费重随' } }),
+      fixture('duplicator', { effects: { normal: '获得英雄复制器' } }),
+    ];
+    expect(searchWisps(records, '刷新').map(hit => hit.wisp.id)).toEqual(['reroll']);
+    expect(searchWisps(records, '重随').map(hit => hit.wisp.id)).toEqual(['reroll']);
+    expect(searchWisps(records, '复制器').map(hit => hit.wisp.id)).toEqual(['duplicator']);
+  });
+
+  test.each([['法强', '法术强度'], ['攻速', '攻击速度'], ['真伤', '真实伤害']])('%s safely expands to %s', (query, text) => {
+    expect(searchWisps([fixture('target', { effects: { normal: `获得${text}` } })], query)).toHaveLength(1);
   });
 
   test('multi-token AND 可与 phrase synonym 同时使用', () => {
