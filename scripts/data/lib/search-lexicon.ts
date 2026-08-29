@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import type { Requirement, Wisp, WispDataset } from '../../../src/domain/types';
 
-export const GENERATOR_VERSION = 'c2.1-v5';
+export const GENERATOR_VERSION = 'c2.1-v6';
 export const INPUT_PATH = 'data/normalized/wisps_18.1.json';
 
 export type RiskGroup = 'player_vs_unit_health' | 'death_kill_execute' | 'item_semantics' |
@@ -18,7 +18,7 @@ export const TAXONOMY: TaxonomyEntry[] = [
   T('artifact_item', '神器', '获得、转化或使用神器装备。', 'item_semantics'), T('attack_damage', '攻击力', '改变弈子的攻击力。'),
   T('attack_speed', '攻击速度', '改变弈子的攻击速度。'), T('board_composition', '阵容条件', '由棋盘或备战席阵容构成决定。'),
   T('champion_cost_tier', '弈子费用等级', '指向特定费用等级的弈子。'), T('champion_duplicator', '英雄复制器', '明确获得或使用英雄复制器道具。', 'clone_vs_duplicator'),
-  T('champion_obtain', '获得弈子', '直接获得弈子或使弈子加入队伍。'), T('champion_star_level', '弈子星级', '静态星级、星级 Requirement，或直接获得、召唤指定星级的弈子。'),
+  T('champion_obtain', '获得弈子', '直接获得弈子或使弈子加入队伍。'), T('champion_star_level', '弈子星级', '涉及弈子的当前或指定星级、星级 Requirement、星级比较、按星级选择或计数，以及直接获得或召唤指定星级弈子。'),
   T('champion_star_up', '弈子升星', '现有弈子实际发生升星或星级提升动作。'),
   T('champion_transform', '弈子转化', '将弈子转换为另一形态或对象。'), T('completed_item', '成装', '明确涉及完整装备或成装。', 'item_semantics'),
   T('crowd_control', '控制', '施加眩晕等控制效果。'), T('delayed_trigger', '延迟触发', '在战斗开始若干秒后触发一次效果；不表示存活奖励。'), T('enemy_death', '敌方阵亡', '由敌方单位阵亡触发。', 'death_kill_execute'),
@@ -58,7 +58,7 @@ const R: Rule[] = [
   { key: 'player_health_threshold', regex: /玩家生命值|已损失至少\d+点生命值|处于高生命值|生命值高于\d+/, field: f => f.field.startsWith('requirements['), confidence: 'needs_review', risk: 'player_vs_unit_health', reviewReason: 'Requirement 的文本或类型未始终明确写出玩家。', decision: '确认该阈值检查玩家生命而非弈子生命。' },
   { key: 'free_reroll', regex: /免费(?:刷新|重随)/ }, { key: 'shop_reroll', regex: /刷新(?:你的)?商店|商店.*刷新|刷新次数|次刷新|免费重随/ },
   { key: 'champion_duplicator', regex: /(?:微型|次级)?英雄复制器|champion duplicator/i },
-  { key: 'champion_star_up', regex: /会变为[2-5]星|暂时升星|将会升星/ }, { key: 'champion_star_level', regex: /(?<!变为)[1-5]星/ }, { key: 'champion_cost_tier', regex: /[1-5]费弈子/ },
+  { key: 'champion_star_up', regex: /会变为[2-5]星|暂时升星|将会升星/ }, { key: 'champion_star_level', regex: /(?<!变为)[1-5]星级|(?<!变为)[1-5]星|星级/ }, { key: 'champion_cost_tier', regex: /[1-5]费弈子/ },
   { key: 'champion_obtain', regex: /获得\d+个[^。]*弈子|弈子加入(?:你的|己方)?队伍/ },
   { key: 'champion_obtain', regex: /获得\d+个【(?![^】]*器】)[^】]+】/, wisp: w => w.category === 'champion' }, { key: 'champion_transform', regex: /弈子.*转化为|单位.*转化为/ },
   { key: 'ally_death', regex: /友军.*阵亡|己方弈子.*阵亡|最先阵亡的\d*个?弈子|第\d+个阵亡的弈子|你的弈子们在阵亡/ },

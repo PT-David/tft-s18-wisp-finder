@@ -2,7 +2,7 @@
   "metadata": {
     "schemaVersion": 1,
     "patch": "18.1",
-    "reviewedAgainstGeneratorVersion": "c2.1-v5",
+    "reviewedAgainstGeneratorVersion": "c2.1-v6",
     "reviewedAgainstInputSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7"
   },
   "policy": {
@@ -57,6 +57,11 @@
       "action": "wording",
       "key": "loss_streak",
       "reason": "覆盖连败状态和连败计数。"
+    },
+    {
+      "action": "wording",
+      "key": "champion_star_level",
+      "reason": "覆盖当前或指定星级、星级 Requirement、星级高低比较、按星级选择或计数，以及直接获得或召唤指定星级弈子。"
     }
   ],
   "queryExpansionDecisions": [

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v5",
+  "generatorVersion": "c2.1-v6",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -59,7 +59,7 @@
     {
       "key": "champion_star_level",
       "labelZh": "弈子星级",
-      "description": "静态星级、星级 Requirement，或直接获得、召唤指定星级的弈子。"
+      "description": "涉及弈子的当前或指定星级、星级 Requirement、星级比较、按星级选择或计数，以及直接获得或召唤指定星级弈子。"
     },
     {
       "key": "champion_star_up",
@@ -1305,6 +1305,21 @@
       "reviewFlags": []
     },
     {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的4费弈子永久变形为1个5费弈子。",
+          "matchedTerms": [
+            "星级"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
       "wispId": "da_18_mercenaryforce",
       "conceptKey": "gold_requirement",
       "evidence": [
@@ -1339,6 +1354,21 @@
           "text": "你拥有的1个随机1费弈子永久变形为1个2费弈子。",
           "matchedTerms": [
             "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的1费弈子永久变形为1个2费弈子。",
+          "matchedTerms": [
+            "星级"
           ]
         }
       ],
@@ -1512,6 +1542,21 @@
           "text": "你拥有的1个随机2费弈子永久变形为1个3费弈子。",
           "matchedTerms": [
             "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKey": "champion_star_level",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的2费弈子永久变形为1个3费弈子。",
+          "matchedTerms": [
+            "星级"
           ]
         }
       ],
@@ -3891,6 +3936,20 @@
       "conceptKey": "champion_star_level",
       "evidence": [
         {
+          "field": "effects.blossom",
+          "text": "在战斗期间，你最低星级的2个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "星级"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "星级"
+          ]
+        },
+        {
           "field": "requirements[0].textZh",
           "text": "拥有1个2星1费或2费弈子",
           "matchedTerms": [
@@ -4315,7 +4374,7 @@
           "field": "effects.normal",
           "text": "你的【日蚀骑士】弈子每有1星级(相同弈子不重复计数)，获得1次免费重随。",
           "matchedTerms": [
-            "1星"
+            "1星级"
           ]
         }
       ],

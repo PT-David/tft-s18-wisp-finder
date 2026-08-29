@@ -122,6 +122,44 @@ describe('Stage C2.1 search lexicon generation', () => {
     expect(generated.conceptDraft.assignments.filter(x => x.conceptKey === 'champion_star_up')).toHaveLength(3);
   });
 
+  it('assigns star-level comparisons and retains complete production evidence', () => {
+    for (const id of ['da_18_majorpolymorph', 'da_18_minorpolymorph', 'da_18_polymorph']) {
+      const starLevel = assignment(id, 'champion_star_level');
+      expect(starLevel?.evidence).toContainEqual(expect.objectContaining({
+        field: 'effects.blossom',
+        matchedTerms: ['星级'],
+      }));
+      expect(assignment(id, 'champion_star_up')).toBeUndefined();
+    }
+
+    const moonlight = assignment('da_moonlightritual18', 'champion_star_level');
+    expect(moonlight?.evidence).toEqual(expect.arrayContaining([
+      expect.objectContaining({ field: 'effects.normal', matchedTerms: ['星级'] }),
+      expect.objectContaining({ field: 'effects.blossom', matchedTerms: ['星级'] }),
+    ]));
+    expect(assignment('da_moonlightritual18', 'champion_star_up')).toBeDefined();
+    expect(assignment('da_refreshinglight18', 'champion_star_level')).toBeDefined();
+  });
+
+  it('covers every production field containing explicit 星级 wording', () => {
+    for (const wisp of dataset.records) {
+      const fields = [
+        ['effects.normal', wisp.effects.normal],
+        ['effects.blossom', wisp.effects.blossom],
+        ['effects.prismatic', wisp.effects.prismatic],
+        ...wisp.requirements.flatMap((requirement, index) => [
+          [`requirements[${index}].textZh`, requirement.textZh],
+          [`requirements[${index}].textEn`, requirement.textEn],
+        ]),
+      ] as const;
+      for (const [field, text] of fields) if (text?.includes('星级')) {
+        expect(assignment(wisp.id, 'champion_star_level')?.evidence.some(
+          evidence => evidence.field === field && evidence.matchedTerms.some(term => term.includes('星级')),
+        )).toBe(true);
+      }
+    }
+  });
+
   it('covers explicit round timing without treating second-based timing as a stage', () => {
     for (const id of ['da_18_fieldofmice', 'da_barter18', 'da_18_starfall', 'snapshot_136_c467ccd546d7', 'snapshot_147_2dc94df4e3a5']) {
       expect(assignment(id, 'time_stage')).toBeDefined();
