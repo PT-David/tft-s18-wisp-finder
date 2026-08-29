@@ -1,28 +1,1878 @@
 {
-  "sourceId": "opgg_set18_wisps_20260828",
+  "sourceId": "opgg_set18_wisps_20260829",
   "url": "https://op.gg/zh-cn/tft/set/18",
-  "retrievedAt": "2026-08-28T18:13:55Z",
-  "fetchStatus": "blocked_by_source_protection",
-  "httpStatus": 403,
-  "pageUpdatedAt": null,
-  "records": [],
-  "humanReviewObservation": {
-    "observedAt": "2026-08-28",
-    "recordCount": 200,
-    "categoryCounts": {
-      "champion": 16,
-      "combat": 94,
-      "shop": 19,
-      "gold_xp": 14,
-      "risky": 21,
-      "item": 6,
-      "misc": 30
-    }
+  "retrievedAt": "2026-08-29T04:15:26Z",
+  "httpStatus": 200,
+  "sha256": "dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da",
+  "fetchStatus": "fetched_and_extracted",
+  "recordCount": 200,
+  "categoryCounts": {
+    "Combat": 94,
+    "Misc": 30,
+    "Champion": 16,
+    "Shop": 19,
+    "Risky": 21,
+    "GoldXP": 14,
+    "Item": 6
   },
-  "warning": "All normal GET attempts received HTTP 403 at the environment tunnel. Aggregate counts are human observations; no record-level rows are claimed or fabricated. Use the documented browser snapshot importer.",
-  "attemptedUrls": [
-    "https://op.gg/zh-cn/tft/set/18",
-    "https://op.gg/zh-tw/tft/set/18",
-    "https://op.gg/en/tft/set/18"
-  ]
+  "records": [
+    {
+      "sourceKey": "Hugify",
+      "name": "Hugify",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "生命值最高的友军弈子会增大体型并获得350生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ThingamjigBag",
+      "name": "Thingamjig 包",
+      "category": "Misc",
+      "cost": 3,
+      "effect": "获得 3 种随机消耗品，可提供法术强度或法力再生。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ThingamjigJar",
+      "name": "Thingamjig 罐子",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "获得 1 个随机消耗品，可提供法术强度或法力再生。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ThingamjigSack",
+      "name": "Thingamjig 麻袋",
+      "category": "Misc",
+      "cost": 5,
+      "effect": "获得 5 种随机消耗品，可提供法术强度或法力再生。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ThreeMe",
+      "name": "三个我",
+      "category": "Champion",
+      "cost": 9,
+      "effect": "获得1名随机2星3费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AllThrees",
+      "name": "三人行",
+      "category": "Shop",
+      "cost": 2,
+      "effect": "刷新商店，使其中全部出现3费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "RolyPolys",
+      "name": "不倒翁",
+      "category": "Shop",
+      "cost": 3,
+      "effect": "战斗开始18秒时，每有1名存活友军弈子便获得1次商店刷新。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Jungling",
+      "name": "丛林",
+      "category": "Shop",
+      "cost": 4,
+      "effect": "使商店全部出现峡谷兽。",
+      "appearanceCondition": "已激活峡谷兽羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MiddlePath",
+      "name": "中间路径",
+      "category": "Shop",
+      "cost": 7,
+      "effect": "刷新商店，使其中全部出现2星3费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MajorPolymorph",
+      "name": "主要多晶型物",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "你拥有的1名4费弈子永久变为5费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MajorGambit",
+      "name": "主要策略",
+      "category": "Risky",
+      "cost": 2,
+      "effect": "如果你赢得下一场玩家战斗，获得 10 金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "RidetheWave",
+      "name": "乘风破浪",
+      "category": "Shop",
+      "cost": 3,
+      "effect": "本回合接下来的2次刷新会出现上场对战中部署过的2+名弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AllFives",
+      "name": "五五开",
+      "category": "Shop",
+      "cost": 10,
+      "effect": "刷新商店，使其中全部出现5费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LifeDebt",
+      "name": "人生债务",
+      "category": "GoldXP",
+      "cost": 0,
+      "effect": "每损失10玩家生命值，获得1金币。",
+      "appearanceCondition": "已损失至少70玩家生命值",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "RitualComplete",
+      "name": "仪式完成",
+      "category": "Risky",
+      "cost": 3,
+      "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+      "appearanceCondition": "已激活魔女羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Truce",
+      "name": "休战",
+      "category": "GoldXP",
+      "cost": 0,
+      "effect": "你和对手各获得1金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Propagate",
+      "name": "传播",
+      "category": "Champion",
+      "cost": 1,
+      "effect": "获得首名阵亡友军弈子的1个弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Infliction",
+      "name": "伤害",
+      "category": "Combat",
+      "cost": 6,
+      "effect": "对敌人施加减速、灼烧、魔抗削减和护甲削减，持续8秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Aftershock",
+      "name": "余震",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "10秒后，击晕所有敌人1.5秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ProtectiveRitual",
+      "name": "保护仪式",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "本轮受到的任何玩家伤害减少 3 点。",
+      "appearanceCondition": "已激活魔女羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BorrowedGear",
+      "name": "借来的装备",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "1名弈子获得1件临时推荐装备。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Downpour",
+      "name": "倾盆大雨",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的团队获得 2 点法力回复。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FakeLevel",
+      "name": "假关卡",
+      "category": "Misc",
+      "cost": 10,
+      "effect": "你暂时达到10级。",
+      "appearanceCondition": "尚未达到10级",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "CloneCompanion",
+      "name": "克隆伴侣",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AllOnes",
+      "name": "全一",
+      "category": "Shop",
+      "cost": 0,
+      "effect": "刷新商店，使其中全部出现1费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AllTwos",
+      "name": "全两",
+      "category": "Shop",
+      "cost": 1,
+      "effect": "刷新商店，使其中全部出现2费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AllIn",
+      "name": "全部投入",
+      "category": "Risky",
+      "cost": 5,
+      "effect": "若接下来3场战斗全部获胜，则提升1级。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Regeneration",
+      "name": "再生",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "你的团队每秒治疗 1% 最大生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Preppers",
+      "name": "准备者",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的叠加型装备会以部分叠加层数开始战斗。",
+      "appearanceCondition": "拥有至少2件叠加型装备",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "DoubleUp",
+      "name": "加倍",
+      "category": "Misc",
+      "cost": 2,
+      "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Quicken",
+      "name": "加快",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "施放技能时，你的弈子获得25%攻击速度，持续3秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AnimateShop",
+      "name": "动画商店",
+      "category": "Shop",
+      "cost": 8,
+      "effect": "20 秒内，你的商店每 2 秒免费刷新一次。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BoosterShot",
+      "name": "助推器射击",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "最多 2 名 1 星冠军在战斗中暂时升星。",
+      "appearanceCondition": "战场上有至少1名1星3至5费弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Escalation",
+      "name": "升级",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FriendlyFlora",
+      "name": "友好的植物群",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "所有友军获得50%效果的致命花卉加成。",
+      "appearanceCondition": "已激活致命花卉羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Counterspell",
+      "name": "反咒语",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "使所有敌人的最大法力提高15，持续至其下次施放技能。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Payday",
+      "name": "发薪日",
+      "category": "Risky",
+      "cost": 3,
+      "effect": "每有1名友军弈子在战斗中存活，获得2金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BackrowStar",
+      "name": "后排星",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "随机1名后排弈子获得75%攻击速度，持续7秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TakeOneWithYa",
+      "name": "和你一起拍一张",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "若战败且击杀了至少1名弈子，获得4经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AllFours",
+      "name": "四肢着地",
+      "category": "Shop",
+      "cost": 4,
+      "effect": "刷新商店，使其中全部出现4费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Terraforming",
+      "name": "地形改造",
+      "category": "Misc",
+      "cost": 2,
+      "effect": "战斗开始时获得5颗自然之父种子。",
+      "appearanceCondition": "已激活自然之父羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Bulwark",
+      "name": "壁垒",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "当你的坦克生命值低于 50% 时，你的坦克将获得 20% 最大生命值护盾。",
+      "appearanceCondition": "战场上有至少2名坦克",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Revenge",
+      "name": "复仇",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "每当盟友死亡时，你的英雄就会获得 4% 的叠加伤害增幅。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ProlificPower",
+      "name": "多产的力量",
+      "category": "Combat",
+      "cost": 0,
+      "effect": "你的英雄获得 8% 的攻击力和法术强度。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Diversified",
+      "name": "多元化",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "每激活一个羁绊，你的队伍便获得30生命值。",
+      "appearanceCondition": "激活了至少4个非唯一羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Polymorph",
+      "name": "多晶型物",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "你拥有的1名2费弈子永久变为3费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LateBloomer",
+      "name": "大器晚成",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "1名携带1件推荐装备的临时3星1费弈子加入你的队伍。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BigGuns",
+      "name": "大枪",
+      "category": "Champion",
+      "cost": 8,
+      "effect": "获得2名随机1星4费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BigBoom",
+      "name": "大繁荣",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "第一个死去的盟友会爆炸，造成 20% 最大生命值魔法伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "NaturesAlly",
+      "name": "大自然的盟友",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "每有3名友军阵亡，召唤1只随机峡谷兽。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "SolarGift",
+      "name": "太阳能礼物",
+      "category": "Champion",
+      "cost": 5,
+      "effect": "获得蕾欧娜、瑟庄妮和凯尔。",
+      "appearanceCondition": "已激活太阳羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Fellowship",
+      "name": "奖学金",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "每有1名相邻友军，弈子便获得相当于4%最大生命值的护盾和4%伤害增幅。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TrophyHunter",
+      "name": "奖杯猎人",
+      "category": "Risky",
+      "cost": 2,
+      "effect": "对宿敌的参与击杀数提高100%。",
+      "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Scrappy",
+      "name": "好斗",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "2名未携带装备的弈子获得1件临时推荐装备。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "SolitudesCloak",
+      "name": "孤独斗篷",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "没有相邻友军的英雄获得 10% 最大生命值和 10% 伤害增幅。",
+      "appearanceCondition": "日光束或月光束生效时不会出现",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Apprentice",
+      "name": "学徒",
+      "category": "Champion",
+      "cost": 3,
+      "effect": "获得1名随机2星1费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Grandmaster",
+      "name": "宗师",
+      "category": "Champion",
+      "cost": 18,
+      "effect": "获得1名随机2星5费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ManaRichSoil",
+      "name": "富含法力的土壤",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "你的施法者最大法力降低15%。",
+      "appearanceCondition": "战场上有至少2名施法者",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MarksmensGale",
+      "name": "射手之风",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的射手每次攻击获得可叠加的3%攻击速度。",
+      "appearanceCondition": "战场上有至少2名射手",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MarksmensMarks",
+      "name": "射手标记",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "你的射手有 25% 的几率进行双重攻击。",
+      "appearanceCondition": "战场上有至少2名射手",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MinorBloodRitual",
+      "name": "小型血仪式",
+      "category": "Misc",
+      "cost": 4,
+      "effect": "失去3玩家生命值。获得1个次级弈子复制器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "KnickKnackJar",
+      "name": "小摆设罐",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "获得 1 个随机消耗品，可赋予攻击力或攻击速度。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "KnickKnackBag",
+      "name": "小摆设袋",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "获得 2 种随机消耗品，可提供攻击力或攻击速度。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "KnickKnackSack",
+      "name": "小摆设袋",
+      "category": "Misc",
+      "cost": 5,
+      "effect": "获得 4 种随机消耗品，可提供攻击力或攻击速度。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "DoodadJar",
+      "name": "小玩意罐",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "获得 1 件随机消耗品，可提供护甲、魔法抗性或生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "DoodadSack",
+      "name": "小玩意麻袋",
+      "category": "Misc",
+      "cost": 5,
+      "effect": "获得 5 种随机消耗品，可提供护甲、魔抗或生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MinorGambit",
+      "name": "小策略",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "如果你赢得下一场玩家战斗，获得 2 金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Peddler",
+      "name": "小贩",
+      "category": "Item",
+      "cost": 6,
+      "effect": "开启一个可购买装备的商店。装备售价为0至10金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MinionHorde",
+      "name": "小黄人部落",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "生成 4 个小兵。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Barrier",
+      "name": "屏障",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "盟友获得 1000 点护盾，在 5 秒内衰减。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GiantsAura",
+      "name": "巨人光环",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "生命值最高的友军每秒对周围敌人造成2%最大生命值的伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GiantGrowth",
+      "name": "巨大的增长",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "生命值最高的弈子获得600生命值并增大体型。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Drought",
+      "name": "干旱",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "连败次数增加2。",
+      "appearanceCondition": "当前没有连胜或连败，或正处于连败",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Lucky7",
+      "name": "幸运7",
+      "category": "Shop",
+      "cost": 7,
+      "effect": "获得7次商店刷新。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PhantomEmblem",
+      "name": "幻影徽章",
+      "category": "Combat",
+      "cost": 6,
+      "effect": "获得你最活跃特质的临时徽章。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PhantomGloves",
+      "name": "幻影手套",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "获得临时的盗贼手套。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PhantomVest",
+      "name": "幻影背心",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "获得 1 件临时荆棘背心。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PhantomArmor",
+      "name": "幻影铠甲",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "获得 1 件临时战魔护甲。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PhantomSplash",
+      "name": "幻影飞溅",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "战斗开始时，最多2个未激活羁绊会以最低档激活。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "AbandonShip",
+      "name": "弃船",
+      "category": "Risky",
+      "cost": 0,
+      "effect": "出售战场和备战席上的所有弈子，获得10金币、10经验值和5次商店刷新。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Breeze",
+      "name": "微风",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "你的队伍获得12%攻击速度。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TheChariot",
+      "name": "战车",
+      "category": "GoldXP",
+      "cost": 10,
+      "effect": "商店刷新和购买经验值的费用减半。",
+      "appearanceCondition": "拥有至少30金币",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Salvager",
+      "name": "打捞者",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "放到备战席上的弈子会卸下装备，并将成装拆分为基础装备。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ImprovedReach",
+      "name": "扩大覆盖范围",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "战士的攻击距离增加1格。",
+      "appearanceCondition": "战场上有至少2名战士",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FoundFriend",
+      "name": "找到朋友",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "获得一个带有巨人腰带的训练假人。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Resistant",
+      "name": "抵抗",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "坦克每次受到的伤害都会减少 15。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GoodLoss",
+      "name": "损失惨重",
+      "category": "Risky",
+      "cost": 5,
+      "effect": "接下来的3场玩家对战中，战败时获得6经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "SearchParty",
+      "name": "搜寻队",
+      "category": "Shop",
+      "cost": 3,
+      "effect": "本回合每次商店刷新都会出现1名4费弈子，直到你购买其中1名。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "NewandImproved",
+      "name": "新增和改进",
+      "category": "Misc",
+      "cost": 3,
+      "effect": "获得一个袖珍重组器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Fertilize",
+      "name": "施肥",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "每有1名敌人死亡，获得1经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "EarlyFix",
+      "name": "早期修复",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "获得 1 重铸器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Barter",
+      "name": "易货贸易",
+      "category": "GoldXP",
+      "cost": 1,
+      "effect": "下一名出售的弈子会按200%金币价格售出。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "StarPower",
+      "name": "星力",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+      "appearanceCondition": "至少上场1名3星非坦克弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Starfall",
+      "name": "星陨",
+      "category": "Shop",
+      "cost": 1,
+      "effect": "刷新商店时，其中费用最低的弈子会变为2星。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GreaterChaos",
+      "name": "更大的混乱",
+      "category": "Misc",
+      "cost": 2,
+      "effect": "施放2个随机守护灵。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BetterBestie",
+      "name": "更好的闺蜜",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+      "appearanceCondition": "已激活灵巧精羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MoonlightRitual",
+      "name": "月光仪式",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的最低星级 1 或 2 成本英雄会在战斗中升星。",
+      "appearanceCondition": "拥有至少1名2星1费或2费弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Moonrise",
+      "name": "月出",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "10秒后，月相羁绊效果提高100%。",
+      "appearanceCondition": "已激活月相羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Mitosis",
+      "name": "有丝分裂",
+      "category": "Champion",
+      "cost": 1,
+      "effect": "获得1个次级弈子复制器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "KillingFrenzy",
+      "name": "杀戮狂潮",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "战士会处决生命值低于10%的目标。击杀时获得15%攻击速度。",
+      "appearanceCondition": "战场上有至少2名战士",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "KillersRegret",
+      "name": "杀手的遗憾",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "最先阵亡的3名弈子会使击杀者晕眩1秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BunchOBelts",
+      "name": "束腰带",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的弈子获得7条临时且不可卸下的巨人腰带。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BarkArmor",
+      "name": "树皮盔甲",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "你的英雄获得 150 点护盾，持续 10 秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TreetopArchers",
+      "name": "树顶弓箭手",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "弓箭手从树上射击，每3秒造成500物理伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ForestTwins",
+      "name": "森林双胞胎",
+      "category": "Champion",
+      "cost": 4,
+      "effect": "获得2个你未拥有的同一2费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ForestGuide",
+      "name": "森林指南",
+      "category": "Champion",
+      "cost": 5,
+      "effect": "获得1名随机4费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ForestMage",
+      "name": "森林法师",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "用5个守护灵填满商店。你可以施放其中1个。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MinorPolymorph",
+      "name": "次要多晶型物",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "你拥有的1名1费弈子永久变为2费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BrutalBargain",
+      "name": "残酷的讨价还价",
+      "category": "Item",
+      "cost": 0,
+      "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "CrystalBall",
+      "name": "水晶球",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+      "appearanceCondition": "剩余至少4名玩家",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HealingPool",
+      "name": "治疗池",
+      "category": "Misc",
+      "cost": 2,
+      "effect": "获得 5 点玩家生命值。",
+      "appearanceCondition": "至少损失 10 点玩家生命值",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ManaPotion",
+      "name": "法力药水",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "获得一瓶可装备的一次性法力药水。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Flood",
+      "name": "洪水",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "连胜次数增加2。",
+      "appearanceCondition": "当前没有连胜或连败，或正处于连胜",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Flow",
+      "name": "流程",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的英雄势不可挡，攻击速度提高 15%，持续 10 秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TurtlesVisit",
+      "name": "海龟来访",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "本场战斗获得乌龟原始增益。",
+      "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ConsumableShop",
+      "name": "消耗品",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "RefreshingLight",
+      "name": "清爽的光线",
+      "category": "Shop",
+      "cost": 6,
+      "effect": "每名不同太阳弈子的每个星级都会提供1次免费商店刷新。",
+      "appearanceCondition": "已激活太阳羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "RollingBones",
+      "name": "滚骨头",
+      "category": "Shop",
+      "cost": 3,
+      "effect": "每次击杀都有60%几率获得1次免费商店刷新。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HeatedRivalry",
+      "name": "激烈的竞争",
+      "category": "Champion",
+      "cost": 3,
+      "effect": "获得雷恩加尔或卡兹克。该弈子获得3次参与击杀。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Blaze",
+      "name": "火焰",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "火焰全面蔓延，对敌人造成不断增加的真实伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MeltingResists",
+      "name": "熔化抗蚀剂",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+      "appearanceCondition": "地狱特质活跃",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Journeyman",
+      "name": "熟练工",
+      "category": "Champion",
+      "cost": 6,
+      "effect": "获得1名随机2星2费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Combust",
+      "name": "燃烧",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "你的弈子死亡时爆炸，造成20%最大生命值的魔法伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BlastPotion",
+      "name": "爆炸药水",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "获得一瓶可装备的一次性爆炸药水。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "StandAlone",
+      "name": "独立",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "独自处于一排的弈子获得15%生命值和15%伤害增幅。",
+      "appearanceCondition": "未激活永恒之森羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LivingSoil",
+      "name": "生命土壤",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "每 4 秒，树根就会击晕一名敌人 1 秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HealthPotion",
+      "name": "生命药水",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "获得一瓶可装备的一次性生命药水。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PlatedShields",
+      "name": "电镀屏蔽",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "护盾强度增强 15%。盟友获得 150 点护盾，持续 10 秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HandofBaron",
+      "name": "男爵之手",
+      "category": "Combat",
+      "cost": 10,
+      "effect": "你的队伍获得纳什男爵增益，提升各项属性。",
+      "appearanceCondition": "已激活峡谷兽羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PottedLifebloom",
+      "name": "盆栽生命绽放",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "获得1朵临时生命花。",
+      "appearanceCondition": "已激活永恒之森羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PottedStonebark",
+      "name": "盆栽石皮树",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "获得一棵临时石皮树。",
+      "appearanceCondition": "已激活永恒之森羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GuildofThieves",
+      "name": "盗贼公会",
+      "category": "Combat",
+      "cost": 6,
+      "effect": "获得 2 个临时盗贼手套。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PetrifiedDummy",
+      "name": "石化假人",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的第一个死去的英雄会变成一个拥有 1000 点生命值和防御力的目标假人。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PetrifyShields",
+      "name": "石化护盾",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "对敌人施加10%减速，并使其护盾降低20%，持续10秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TatteredArmor",
+      "name": "破烂的盔甲",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "对敌人施加30%魔抗削减和护甲削减，持续10秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "CoinFlip",
+      "name": "硬币翻转",
+      "category": "GoldXP",
+      "cost": 0,
+      "effect": "抛一枚硬币，若正面朝上则获得1金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Artifactinate",
+      "name": "神器",
+      "category": "Item",
+      "cost": 0,
+      "effect": "失去3件基础装备，包括已合成进成装的部分。获得1个神器锻造器。",
+      "appearanceCondition": "拥有至少3件基础装备",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Cutpurse",
+      "name": "窃贼",
+      "category": "Risky",
+      "cost": 3,
+      "effect": "每5秒，你的弈子有20%几率掉落1金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "EssenceTheft",
+      "name": "精华盗窃",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "本场战斗获得50%额外魔女精华。",
+      "appearanceCondition": "已激活魔女羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FaeFederation",
+      "name": "精灵联邦",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "本回合你的所有弈子获得2个仙灵。",
+      "appearanceCondition": "已激活仙灵羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FaerieFlight",
+      "name": "精灵飞行",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "本场战斗吸引的仙灵数量提高100%。",
+      "appearanceCondition": "已激活仙灵羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "YordleSpirit",
+      "name": "约德尔精神",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "盟友有 99% 的几率躲避攻击，持续 4 秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MemorialDummy",
+      "name": "纪念假人",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+      "appearanceCondition": "战场上有至少1名携带装备的坦克",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ComponentBounty",
+      "name": "组件赏金",
+      "category": "Risky",
+      "cost": 4,
+      "effect": "若赢得下一场玩家对战，获得1个基础装备锻造器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Experienced",
+      "name": "经验丰富",
+      "category": "GoldXP",
+      "cost": 1,
+      "effect": "获得2经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "SlowStudy",
+      "name": "缓慢学习",
+      "category": "GoldXP",
+      "cost": 3,
+      "effect": "战斗开始15秒时，每有1名存活友军弈子便获得2经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FlipFrenzy",
+      "name": "翻转疯狂",
+      "category": "Risky",
+      "cost": 1,
+      "effect": "抛一枚硬币，正面朝上时获得1金币。持续抛掷，直到出现反面。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TigersVisit",
+      "name": "老虎来访",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "在这次战斗中获得老虎原始增益。",
+      "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FieldofMice",
+      "name": "老鼠场",
+      "category": "Champion",
+      "cost": 5,
+      "effect": "上场的每名不同1费弈子都会提供1个次级弈子复制器。",
+      "appearanceCondition": "上场对战中部署了至少2名1费弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "NaturesWrath",
+      "name": "自然之怒",
+      "category": "Combat",
+      "cost": 15,
+      "effect": "10秒后，击杀所有未携带装备的弈子。",
+      "appearanceCondition": "队伍中有至少3名携带装备的弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Freeroller",
+      "name": "自由选手",
+      "category": "Shop",
+      "cost": 2,
+      "effect": "获得2次商店刷新。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "ComfortFood",
+      "name": "舒适食品",
+      "category": "Risky",
+      "cost": 2,
+      "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HeroicSacrifice",
+      "name": "英勇牺牲",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "携带3件装备的弈子获得英雄之力，但其他友军会被献祭。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HerosEntrance",
+      "name": "英雄的入口",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "8秒后，最左边的替补冠军带着2件物品加入战斗。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "WrappedinThorns",
+      "name": "荆棘丛生",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "你的坦克每4秒向相邻敌人反射所受伤害的12%。",
+      "appearanceCondition": "队伍中有至少2名坦克",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HomingFireflies",
+      "name": "萤火虫归巢",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "施法者每消耗20法力便召唤1只萤火虫。每只造成150魔法伤害。",
+      "appearanceCondition": "战场上有至少2名施法者",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Smurfing",
+      "name": "蓝精灵",
+      "category": "Champion",
+      "cost": 8,
+      "effect": "获得1名随机5费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Hummingbird",
+      "name": "蜂鸟",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "攻击速度最高的友方单位体积缩小并获得 20% 的攻击速度。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BloodandIron",
+      "name": "血与铁",
+      "category": "Item",
+      "cost": 3,
+      "effect": "累计20名弈子死亡后，获得1个基础装备锻造器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BloodRitual",
+      "name": "血仪式",
+      "category": "Misc",
+      "cost": 5,
+      "effect": "失去9玩家生命值。获得1个弈子复制器。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BloodHunt",
+      "name": "血猎",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+      "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BloodMoney",
+      "name": "血钱",
+      "category": "GoldXP",
+      "cost": 1,
+      "effect": "每击杀1名弈子，获得1金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "DoodadBag",
+      "name": "装饰袋",
+      "category": "Misc",
+      "cost": 3,
+      "effect": "获得 3 种随机消耗品，可提供护甲、魔抗或生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TouchGrass",
+      "name": "触摸草",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+      "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TrainingYard",
+      "name": "训练场",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "获得2个训练假人，每个都携带1件随机坦克装备。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "StartingTown",
+      "name": "起始城镇",
+      "category": "Shop",
+      "cost": 4,
+      "effect": "刷新商店，使其中全部出现2星1费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Supercritical",
+      "name": "超临界",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "你的精准单位获得 25% 暴击伤害。",
+      "appearanceCondition": "队伍中有至少1名拥有精准的弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "UltraAscension",
+      "name": "超提升",
+      "category": "Combat",
+      "cost": 0,
+      "effect": "25秒后，友军获得300%伤害增幅。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LesserChaos",
+      "name": "较小的混乱",
+      "category": "Misc",
+      "cost": 1,
+      "effect": "施放1个随机守护灵。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Radiantize",
+      "name": "辐射",
+      "category": "Combat",
+      "cost": 6,
+      "effect": "12秒后，1件随机装备的物品暂时变得光彩夺目。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BorderVillage",
+      "name": "边境村",
+      "category": "Shop",
+      "cost": 6,
+      "effect": "刷新商店，使其中全部出现2星2费弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LostTravelers",
+      "name": "迷路的旅行者",
+      "category": "Champion",
+      "cost": 3,
+      "effect": "获得总价值3金币的随机弈子。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GoldenAltar",
+      "name": "金色祭坛",
+      "category": "GoldXP",
+      "cost": 0,
+      "effect": "根据怪诞祭品的费用和星级获得金币。",
+      "appearanceCondition": "已激活怪诞羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GoldenGoose",
+      "name": "金鹅",
+      "category": "GoldXP",
+      "cost": 2,
+      "effect": "伤害最高的弈子每造成1000伤害，获得1金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Ironwood",
+      "name": "铁木",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "攻击你生命值最高的冠军的敌人造成的伤害减少 10%。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "IronCore",
+      "name": "铁芯",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "前排中央的弈子每有1名前排弈子，便获得4%最大生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GrowUp",
+      "name": "长大",
+      "category": "GoldXP",
+      "cost": 10,
+      "effect": "获得16经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "CircleofElders",
+      "name": "长老圈子",
+      "category": "Champion",
+      "cost": 45,
+      "effect": "获得每名5费弈子各1个。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "FlashFire",
+      "name": "闪火",
+      "category": "Shop",
+      "cost": 3,
+      "effect": "刷新商店。地狱火点燃并升级2个商店栏位。",
+      "appearanceCondition": "已激活地狱火羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LightningStorm",
+      "name": "闪电风暴",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "每秒对一名敌人造成相当于最大生命值 7% 的固定伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "IdleCraftsman",
+      "name": "闲置工匠",
+      "category": "Item",
+      "cost": 4,
+      "effect": "备战席上的1件基础装备变为可由其合成的1件成装。",
+      "appearanceCondition": "拥有至少1件基础装备",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "SunfireSorcery",
+      "name": "阳火魔法",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "对敌人施加灼烧和重伤，持续10秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "SinisterDeal",
+      "name": "险恶交易",
+      "category": "Misc",
+      "cost": 0,
+      "effect": "失去3玩家生命值。获得2金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Stealthy",
+      "name": "隐秘",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "你的 2 名最强战士或刺客在 6 秒内无法成为目标。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Hireling",
+      "name": "雇佣兵",
+      "category": "Combat",
+      "cost": 6,
+      "effect": "1名携带1件推荐装备的临时1星5费弈子加入你的队伍。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MercenaryForce",
+      "name": "雇佣军",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "每拥有 10 金币，伤害增幅就会增加 3%。",
+      "appearanceCondition": "拥有超过30金币",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Rain",
+      "name": "雨",
+      "category": "Combat",
+      "cost": 1,
+      "effect": "你的队伍获得 1 点法力回复。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PocketChange",
+      "name": "零钱",
+      "category": "GoldXP",
+      "cost": 1,
+      "effect": "你的1星弈子死亡时掉落1金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Snacktime",
+      "name": "零食时间！",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+      "appearanceCondition": "已激活灵巧精羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "LightningStrike",
+      "name": "雷击",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "对所有敌人造成最大生命值 10% 的固定伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Tremors",
+      "name": "震颤",
+      "category": "Combat",
+      "cost": 6,
+      "effect": "每 8 秒，击晕敌人 1 秒。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "VerdantVitality",
+      "name": "青翠的活力",
+      "category": "Combat",
+      "cost": 0,
+      "effect": "你的弈子获得125生命值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "BronzeSpoon",
+      "name": "青铜勺子",
+      "category": "GoldXP",
+      "cost": 3,
+      "effect": "获得6经验值。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HeroofProphecy",
+      "name": "预言英雄",
+      "category": "Champion",
+      "cost": 35,
+      "effect": "每回合永久获得同一名随机5费弈子的1个弈子。",
+      "appearanceCondition": "达到10级，且至少有一种5费弈子尚未拥有",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "HorsesVisit",
+      "name": "马来访",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "在这次战斗中获得马原始增益。",
+      "appearanceCondition": "原始特质活跃，未选择马",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "DieRoll",
+      "name": "骰子",
+      "category": "GoldXP",
+      "cost": 2,
+      "effect": "掷六面骰子。获得与结果相等的金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PremiumSwapMeet",
+      "name": "高级互换见面会",
+      "category": "Item",
+      "cost": 0,
+      "effect": "出售1名3星弈子，获得3次商店刷新和1个幸运装备宝箱。",
+      "appearanceCondition": "拥有1名3星弈子",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Potioncraft",
+      "name": "魔药工艺",
+      "category": "Misc",
+      "cost": 3,
+      "effect": "获得3瓶可装备的一次性药水。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "GoldenRoad",
+      "name": "黄金之路",
+      "category": "Risky",
+      "cost": 3,
+      "effect": "3场玩家对战后，每胜利1场获得3金币。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Tornado",
+      "name": "龙卷风",
+      "category": "Combat",
+      "cost": 10,
+      "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+      "blossom": null,
+      "prismatic": null
+    }
+  ],
+  "declaredRecordCount": 200,
+  "parsedRecordCount": 200
 }

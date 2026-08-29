@@ -1,0 +1,4024 @@
+{
+  "patch": "18.1",
+  "generatedFromCurrentSnapshots": true,
+  "groups": {
+    "identity_mapping": [
+      {
+        "sourceRecords": {
+          "dataTft": {
+            "id": "snapshot_139_6fda4e76a4da",
+            "nameEn": "克隆弈子",
+            "nameZh": "克隆弈子",
+            "riotId": null
+          }
+        },
+        "candidateMapping": [
+          {
+            "opggRecord": {
+              "sourceKey": "RitualComplete",
+              "name": "仪式完成",
+              "category": "Risky",
+              "cost": 3,
+              "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+              "appearanceCondition": "已激活魔女羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.023809523809523808,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.09523809523809523,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.023809523809523808,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "ProtectiveRitual",
+              "name": "保护仪式",
+              "category": "Misc",
+              "cost": 1,
+              "effect": "本轮受到的任何玩家伤害减少 3 点。",
+              "appearanceCondition": "已激活魔女羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.06666666666666667,
+                "effectSimilarity": 0.06666666666666667,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.021739130434782608,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.08695652173913043,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.04492753623188406,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "FakeLevel",
+              "name": "假关卡",
+              "category": "Misc",
+              "cost": 10,
+              "effect": "你暂时达到10级。",
+              "appearanceCondition": "尚未达到10级",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.07407407407407407,
+                "effectSimilarity": 0.07407407407407407,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.07407407407407407,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "CloneCompanion",
+              "name": "克隆伴侣",
+              "category": "Combat",
+              "cost": 5,
+              "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 1.2365591397849462,
+                "effectSimilarity": 0.9032258064516129,
+                "nameSimilarity": 0.3333333333333333,
+                "categoryMatch": true,
+                "costMatch": true
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.025,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.1,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 1.2115591397849463,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "AllIn",
+              "name": "全部投入",
+              "category": "Risky",
+              "cost": 5,
+              "effect": "若接下来3场战斗全部获胜，则提升1级。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.1,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": true
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.1,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "DoubleUp",
+              "name": "加倍",
+              "category": "Misc",
+              "cost": 2,
+              "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.05263157894736842,
+                "effectSimilarity": 0.05263157894736842,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.05263157894736842,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "Escalation",
+              "name": "升级",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.27121212121212124,
+                "effectSimilarity": 0.12121212121212122,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.11287758346581876,
+                "effectSimilarity": 0.05405405405405406,
+                "nameSimilarity": 0.23529411764705882,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.0975609756097561,
+                "effectSimilarity": 0.0975609756097561,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.15833453774630246,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "FriendlyFlora",
+              "name": "友好的植物群",
+              "category": "Combat",
+              "cost": 2,
+              "effect": "所有友军获得50%效果的致命花卉加成。",
+              "appearanceCondition": "已激活致命花卉羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.05,
+                "effectSimilarity": 0.05,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.025,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.1,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.09999999999999999,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "MinionHorde",
+              "name": "小黄人部落",
+              "category": "Combat",
+              "cost": 4,
+              "effect": "生成 4 个小兵。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.027777777777777776,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.1111111111111111,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.12222222222222222,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "Breeze",
+              "name": "微风",
+              "category": "Combat",
+              "cost": 1,
+              "effect": "你的队伍获得12%攻击速度。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.05714285714285714,
+                "effectSimilarity": 0.05714285714285714,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.09285714285714286,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "TheChariot",
+              "name": "战车",
+              "category": "GoldXP",
+              "cost": 10,
+              "effect": "商店刷新和购买经验值的费用减半。",
+              "appearanceCondition": "拥有至少30金币",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.2647058823529412,
+                "effectSimilarity": 0.17647058823529413,
+                "nameSimilarity": 0.35294117647058826,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.22894736842105262,
+                "effectSimilarity": 0.05263157894736842,
+                "nameSimilarity": 0.10526315789473684,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.03575851393188856,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "NewandImproved",
+              "name": "新增和改进",
+              "category": "Misc",
+              "cost": 3,
+              "effect": "获得一个袖珍重组器。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.0625,
+                "effectSimilarity": 0.0625,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.0625,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "StarPower",
+              "name": "星力",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+              "appearanceCondition": "至少上场1名3星非坦克弈子",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.19878048780487806,
+                "effectSimilarity": 0.04878048780487805,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.06859410430839002,
+                "effectSimilarity": 0.04081632653061224,
+                "nameSimilarity": 0.1111111111111111,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.03125,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.125,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.13018638349648803,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "BetterBestie",
+              "name": "更好的闺蜜",
+              "category": "Combat",
+              "cost": 1,
+              "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+              "appearanceCondition": "已激活灵巧精羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.0675531914893617,
+                "effectSimilarity": 0.0425531914893617,
+                "nameSimilarity": 0.1,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.046511627906976744,
+                "effectSimilarity": 0.046511627906976744,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.08244680851063829,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "BrutalBargain",
+              "name": "残酷的讨价还价",
+              "category": "Item",
+              "cost": 0,
+              "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.37756410256410255,
+                "effectSimilarity": 0.10256410256410256,
+                "nameSimilarity": 0.1,
+                "categoryMatch": true,
+                "costMatch": true
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.19196617336152222,
+                "effectSimilarity": 0.046511627906976744,
+                "nameSimilarity": 0.18181818181818182,
+                "categoryMatch": false,
+                "costMatch": true
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.18559792920258034,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "CrystalBall",
+              "name": "水晶球",
+              "category": "Combat",
+              "cost": 1,
+              "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+              "appearanceCondition": "剩余至少4名玩家",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.046511627906976744,
+                "effectSimilarity": 0.046511627906976744,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.10348837209302325,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "TurtlesVisit",
+              "name": "海龟来访",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "本场战斗获得乌龟原始增益。",
+              "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.08095238095238094,
+                "effectSimilarity": 0.05714285714285714,
+                "nameSimilarity": 0.09523809523809523,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.05263157894736842,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.21052631578947367,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.06904761904761905,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "ConsumableShop",
+              "name": "消耗品",
+              "category": "Misc",
+              "cost": 1,
+              "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.1,
+                "effectSimilarity": 0.1,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.045454545454545456,
+                "effectSimilarity": 0.045454545454545456,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.05454545454545455,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "MeltingResists",
+              "name": "熔化抗蚀剂",
+              "category": "Combat",
+              "cost": 4,
+              "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+              "appearanceCondition": "地狱特质活跃",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.021739130434782608,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.08695652173913043,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.12826086956521737,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "PottedLifebloom",
+              "name": "盆栽生命绽放",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "获得1朵临时生命花。",
+              "appearanceCondition": "已激活永恒之森羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.0625,
+                "effectSimilarity": 0.0625,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.0875,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "PottedStonebark",
+              "name": "盆栽石皮树",
+              "category": "Combat",
+              "cost": 2,
+              "effect": "获得一棵临时石皮树。",
+              "appearanceCondition": "已激活永恒之森羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.08333333333333333,
+                "effectSimilarity": 0.0625,
+                "nameSimilarity": 0.08333333333333333,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.022727272727272728,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.09090909090909091,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.06666666666666667,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "GuildofThieves",
+              "name": "盗贼公会",
+              "category": "Combat",
+              "cost": 6,
+              "effect": "获得 2 个临时盗贼手套。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.06060606060606061,
+                "effectSimilarity": 0.06060606060606061,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.08939393939393939,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "FaeFederation",
+              "name": "精灵联邦",
+              "category": "Combat",
+              "cost": 4,
+              "effect": "本回合你的所有弈子获得2个仙灵。",
+              "appearanceCondition": "已激活仙灵羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.21666666666666667,
+                "effectSimilarity": 0.06666666666666667,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.10526315789473684,
+                "effectSimilarity": 0.10526315789473684,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.025,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.1,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.11140350877192984,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "FaerieFlight",
+              "name": "精灵飞行",
+              "category": "Misc",
+              "cost": 1,
+              "effect": "本场战斗吸引的仙灵数量提高100%。",
+              "appearanceCondition": "已激活仙灵羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.05128205128205128,
+                "effectSimilarity": 0.05128205128205128,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.02631578947368421,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.10526315789473684,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.02496626180836707,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "MemorialDummy",
+              "name": "纪念假人",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+              "appearanceCondition": "战场上有至少1名携带装备的坦克",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.16785714285714284,
+                "effectSimilarity": 0.14285714285714285,
+                "nameSimilarity": 0.1,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.01785714285714285,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "TigersVisit",
+              "name": "老虎来访",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "在这次战斗中获得老虎原始增益。",
+              "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.10405405405405406,
+                "effectSimilarity": 0.05405405405405406,
+                "nameSimilarity": 0.2,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.045945945945945935,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "ComfortFood",
+              "name": "舒适食品",
+              "category": "Risky",
+              "cost": 2,
+              "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.046511627906976744,
+                "effectSimilarity": 0.046511627906976744,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.029411764705882353,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0.11764705882352941,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.01709986320109439,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "BloodHunt",
+              "name": "血猎",
+              "category": "Combat",
+              "cost": 2,
+              "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+              "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.25810810810810814,
+                "effectSimilarity": 0.10810810810810811,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.04878048780487805,
+                "effectSimilarity": 0.04878048780487805,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.2093276203032301,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "TouchGrass",
+              "name": "触摸草",
+              "category": "Misc",
+              "cost": 0,
+              "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+              "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.24634146341463414,
+                "effectSimilarity": 0.14634146341463414,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": true
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.18888888888888888,
+                "effectSimilarity": 0.08888888888888889,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": true
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.05745257452574526,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "GoldenAltar",
+              "name": "金色祭坛",
+              "category": "GoldXP",
+              "cost": 0,
+              "effect": "根据怪诞祭品的费用和星级获得金币。",
+              "appearanceCondition": "已激活怪诞羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.37756410256410255,
+                "effectSimilarity": 0.10256410256410256,
+                "nameSimilarity": 0.1,
+                "categoryMatch": true,
+                "costMatch": true
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.29920634920634925,
+                "effectSimilarity": 0.17142857142857143,
+                "nameSimilarity": 0.1111111111111111,
+                "categoryMatch": false,
+                "costMatch": true
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.0783577533577533,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "Snacktime",
+              "name": "零食时间！",
+              "category": "Combat",
+              "cost": 4,
+              "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+              "appearanceCondition": "已激活灵巧精羁绊",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.19545454545454544,
+                "effectSimilarity": 0.045454545454545456,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.19545454545454544,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "HorsesVisit",
+              "name": "马来访",
+              "category": "Combat",
+              "cost": 3,
+              "effect": "在这次战斗中获得马原始增益。",
+              "appearanceCondition": "原始特质活跃，未选择马",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.15,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.10555555555555556,
+                "effectSimilarity": 0.05555555555555555,
+                "nameSimilarity": 0.2,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.04444444444444444,
+            "status": "ambiguous",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "PremiumSwapMeet",
+              "name": "高级互换见面会",
+              "category": "Item",
+              "cost": 0,
+              "effect": "出售1名3星弈子，获得3次商店刷新和1个幸运装备宝箱。",
+              "appearanceCondition": "拥有1名3星弈子",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0.38636363636363635,
+                "effectSimilarity": 0.13636363636363635,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": true
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0.24583333333333335,
+                "effectSimilarity": 0.125,
+                "nameSimilarity": 0.08333333333333333,
+                "categoryMatch": false,
+                "costMatch": true
+              },
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.05,
+                "effectSimilarity": 0.05,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.140530303030303,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          },
+          {
+            "opggRecord": {
+              "sourceKey": "Tornado",
+              "name": "龙卷风",
+              "category": "Combat",
+              "cost": 10,
+              "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+              "blossom": null,
+              "prismatic": null
+            },
+            "topCandidates": [
+              {
+                "productionId": "snapshot_139_6fda4e76a4da",
+                "nameEn": "克隆弈子",
+                "nameZh": "克隆弈子",
+                "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+                "category": "combat",
+                "cost": 5,
+                "score": 0.2642857142857143,
+                "effectSimilarity": 0.11428571428571428,
+                "nameSimilarity": 0,
+                "categoryMatch": true,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_beggarswisp18",
+                "nameEn": "Beggar's Wisp",
+                "nameZh": "仙灵的怜悯",
+                "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+                "category": "gold_xp",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              },
+              {
+                "productionId": "da_curiocart18",
+                "nameEn": "Curio Cart",
+                "nameZh": "珍品摆摊车",
+                "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+                "category": "item",
+                "cost": 0,
+                "score": 0,
+                "effectSimilarity": 0,
+                "nameSimilarity": 0,
+                "categoryMatch": false,
+                "costMatch": false
+              }
+            ],
+            "bestVsSecondMargin": 0.2642857142857143,
+            "status": "candidate",
+            "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+          }
+        ],
+        "evidence": "No explicit reviewed cross-source mapping exists.",
+        "whyNotAutoConfirmed": "Similarity signals cannot confirm identity.",
+        "whatHumanMustDecide": "Choose a canonical cross-source identity or confirm that none is supported."
+      }
+    ],
+    "corpus_membership": [
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "RitualComplete",
+            "name": "仪式完成",
+            "category": "Risky",
+            "cost": 3,
+            "effect": "如果你赢得战斗，完成当前的女巫集会仪式。",
+            "appearanceCondition": "已激活魔女羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "ProtectiveRitual",
+            "name": "保护仪式",
+            "category": "Misc",
+            "cost": 1,
+            "effect": "本轮受到的任何玩家伤害减少 3 点。",
+            "appearanceCondition": "已激活魔女羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "FakeLevel",
+            "name": "假关卡",
+            "category": "Misc",
+            "cost": 10,
+            "effect": "你暂时达到10级。",
+            "appearanceCondition": "尚未达到10级",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "CloneCompanion",
+            "name": "克隆伴侣",
+            "category": "Combat",
+            "cost": 5,
+            "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "confirmed_identity_unlinked",
+        "whyNotAutoConfirmed": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "AllIn",
+            "name": "全部投入",
+            "category": "Risky",
+            "cost": 5,
+            "effect": "若接下来3场战斗全部获胜，则提升1级。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "DoubleUp",
+            "name": "加倍",
+            "category": "Misc",
+            "cost": 2,
+            "effect": "下一个购买的守护灵会生效2次，费用也翻倍。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "Escalation",
+            "name": "升级",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "FriendlyFlora",
+            "name": "友好的植物群",
+            "category": "Combat",
+            "cost": 2,
+            "effect": "所有友军获得50%效果的致命花卉加成。",
+            "appearanceCondition": "已激活致命花卉羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "MinionHorde",
+            "name": "小黄人部落",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "生成 4 个小兵。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "Breeze",
+            "name": "微风",
+            "category": "Combat",
+            "cost": 1,
+            "effect": "你的队伍获得12%攻击速度。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "TheChariot",
+            "name": "战车",
+            "category": "GoldXP",
+            "cost": 10,
+            "effect": "商店刷新和购买经验值的费用减半。",
+            "appearanceCondition": "拥有至少30金币",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "NewandImproved",
+            "name": "新增和改进",
+            "category": "Misc",
+            "cost": 3,
+            "effect": "获得一个袖珍重组器。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "StarPower",
+            "name": "星力",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+            "appearanceCondition": "至少上场1名3星非坦克弈子",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "BetterBestie",
+            "name": "更好的闺蜜",
+            "category": "Combat",
+            "cost": 1,
+            "effect": "毛茸茸的大朋友的骑手获得15%攻击速度和150生命值。",
+            "appearanceCondition": "已激活灵巧精羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "BrutalBargain",
+            "name": "残酷的讨价还价",
+            "category": "Item",
+            "cost": 0,
+            "effect": "失去8玩家生命值并获得1个基础装备锻造器。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "CrystalBall",
+            "name": "水晶球",
+            "category": "Combat",
+            "cost": 1,
+            "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+            "appearanceCondition": "剩余至少4名玩家",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "TurtlesVisit",
+            "name": "海龟来访",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "本场战斗获得乌龟原始增益。",
+            "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "confirmed_identity_unlinked",
+        "whyNotAutoConfirmed": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "ConsumableShop",
+            "name": "消耗品",
+            "category": "Misc",
+            "cost": 1,
+            "effect": "开设一家商店，您可以在其中花费金币购买消耗品。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "MeltingResists",
+            "name": "熔化抗蚀剂",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+            "appearanceCondition": "地狱特质活跃",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "PottedLifebloom",
+            "name": "盆栽生命绽放",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "获得1朵临时生命花。",
+            "appearanceCondition": "已激活永恒之森羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "confirmed_identity_unlinked",
+        "whyNotAutoConfirmed": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "PottedStonebark",
+            "name": "盆栽石皮树",
+            "category": "Combat",
+            "cost": 2,
+            "effect": "获得一棵临时石皮树。",
+            "appearanceCondition": "已激活永恒之森羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "confirmed_identity_unlinked",
+        "whyNotAutoConfirmed": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "GuildofThieves",
+            "name": "盗贼公会",
+            "category": "Combat",
+            "cost": 6,
+            "effect": "获得 2 个临时盗贼手套。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "FaeFederation",
+            "name": "精灵联邦",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "本回合你的所有弈子获得2个仙灵。",
+            "appearanceCondition": "已激活仙灵羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "FaerieFlight",
+            "name": "精灵飞行",
+            "category": "Misc",
+            "cost": 1,
+            "effect": "本场战斗吸引的仙灵数量提高100%。",
+            "appearanceCondition": "已激活仙灵羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "MemorialDummy",
+            "name": "纪念假人",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+            "appearanceCondition": "战场上有至少1名携带装备的坦克",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "confirmed_identity_unlinked",
+        "whyNotAutoConfirmed": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "TigersVisit",
+            "name": "老虎来访",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "在这次战斗中获得老虎原始增益。",
+            "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "ComfortFood",
+            "name": "舒适食品",
+            "category": "Risky",
+            "cost": 2,
+            "effect": "获得2玩家生命值。若下一场玩家对战战败，再获得4。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "BloodHunt",
+            "name": "血猎",
+            "category": "Combat",
+            "cost": 2,
+            "effect": "宿敌参与击杀时会冲向目标并造成150物理伤害。",
+            "appearanceCondition": "已激活宿敌羁绊，且至少1名宿敌携带装备",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "TouchGrass",
+            "name": "触摸草",
+            "category": "Misc",
+            "cost": 0,
+            "effect": "获得5金币并禁用所有操作。15秒后，改为仅获得2金币。",
+            "appearanceCondition": "回合开始刷新时，或备战阶段开始后的前2秒",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "GoldenAltar",
+            "name": "金色祭坛",
+            "category": "GoldXP",
+            "cost": 0,
+            "effect": "根据怪诞祭品的费用和星级获得金币。",
+            "appearanceCondition": "已激活怪诞羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "Snacktime",
+            "name": "零食时间！",
+            "category": "Combat",
+            "cost": 4,
+            "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+            "appearanceCondition": "已激活灵巧精羁绊",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "confirmed_identity_unlinked",
+        "whyNotAutoConfirmed": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "HorsesVisit",
+            "name": "马来访",
+            "category": "Combat",
+            "cost": 3,
+            "effect": "在这次战斗中获得马原始增益。",
+            "appearanceCondition": "原始特质活跃，未选择马",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "PremiumSwapMeet",
+            "name": "高级互换见面会",
+            "category": "Item",
+            "cost": 0,
+            "effect": "出售1名3星弈子，获得3次商店刷新和1个幸运装备宝箱。",
+            "appearanceCondition": "拥有1名3星弈子",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      },
+      {
+        "sourceRecords": {
+          "opgg": {
+            "sourceKey": "Tornado",
+            "name": "龙卷风",
+            "category": "Combat",
+            "cost": 10,
+            "effect": "召唤龙卷风，对敌人造成 5% 最大生命值魔法伤害。",
+            "blossom": null,
+            "prismatic": null
+          }
+        },
+        "candidateMapping": null,
+        "evidence": "unresolved",
+        "whyNotAutoConfirmed": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "whatHumanMustDecide": "Whether this is a distinct live corpus identity or an alias/variant."
+      }
+    ],
+    "blossom_presence": [
+      {
+        "sourceRecords": {
+          "identity": "da_18_bronzespoon",
+          "nameEn": "Bronze Spoon",
+          "productionHasBlossom": true,
+          "communityDragonHasDistinctUpgrade": true,
+          "lolchessHasBlossom": false
+        },
+        "candidateMapping": "da_18_bronzespoon",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_experienced",
+          "nameEn": "Experienced",
+          "productionHasBlossom": true,
+          "communityDragonHasDistinctUpgrade": true,
+          "lolchessHasBlossom": false
+        },
+        "candidateMapping": "da_18_experienced",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_021_534324382164",
+          "nameEn": "Truce",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_021_534324382164",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_022_fc7538964718",
+          "nameEn": "Sinister Deal",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_022_fc7538964718",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_036_f484358ea1e5",
+          "nameEn": "Essence Theft",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_036_f484358ea1e5",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_048_cbc77e083fc2",
+          "nameEn": "Take One With Ya",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_048_cbc77e083fc2",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_049_d60aa5ac9feb",
+          "nameEn": "Minor Gambit",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_049_d60aa5ac9feb",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_051_e06d127b43f9",
+          "nameEn": "Flood",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_051_e06d127b43f9",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_090_cf945e21ddef",
+          "nameEn": "Regeneration",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_090_cf945e21ddef",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_120_cf0b477ffe00",
+          "nameEn": "Minor Blood Ritual",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_120_cf0b477ffe00",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_121_1899d3fe4c61",
+          "nameEn": "Major Gambit",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_121_1899d3fe4c61",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_147_2dc94df4e3a5",
+          "nameEn": "Good Loss",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_147_2dc94df4e3a5",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_157_3ed870773960",
+          "nameEn": "Blood Ritual",
+          "productionHasBlossom": false,
+          "communityDragonHasDistinctUpgrade": false,
+          "lolchessHasBlossom": true
+        },
+        "candidateMapping": "snapshot_157_3ed870773960",
+        "evidence": "Confirmed identity with source-level presence disagreement.",
+        "whyNotAutoConfirmed": "Presence differs across current snapshots.",
+        "whatHumanMustDecide": "Which source represents the live Blossom state."
+      }
+    ],
+    "prismatic_identity": [],
+    "requirements_semantics": [
+      {
+        "sourceRecords": {
+          "identity": "da_18_allfives",
+          "nameEn": "All Fives",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 15
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_allfives",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_allfours",
+          "nameEn": "All Fours",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 8
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_allfours",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_allones",
+          "nameEn": "All Ones",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 5
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_allones",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_allthrees",
+          "nameEn": "All Threes",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 5
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_allthrees",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_alltwos",
+          "nameEn": "All Twos",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 5
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_alltwos",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_infliction",
+          "nameEn": "Infliction",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_infliction",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_majorpolymorph",
+          "nameEn": "Major Polymorph",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_majorpolymorph",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_minorpolymorph",
+          "nameEn": "Minor Polymorph",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_minorpolymorph",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_pocketchange",
+          "nameEn": "Pocket Change",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 2
+            }
+          ],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_pocketchange",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_polymorph",
+          "nameEn": "Polymorph",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_polymorph",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_preppers",
+          "nameEn": "Preppers",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_preppers",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_prolificpower",
+          "nameEn": "Prolific Power",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_prolificpower",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_starfall",
+          "nameEn": "Starfall",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_starfall",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_sunfiresorcery",
+          "nameEn": "Sunfire Sorcery",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_sunfiresorcery",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_tatteredarmor",
+          "nameEn": "Tattered Armor",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_tatteredarmor",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_animateshop18",
+          "nameEn": "Animate Shop",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 12
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_animateshop18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_giantsaura18",
+          "nameEn": "Giant's Aura",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_giantsaura18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_peddler18",
+          "nameEn": "Peddler",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_peddler18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_quicken18",
+          "nameEn": "Quicken",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_quicken18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_searchparty18",
+          "nameEn": "Search Party",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_searchparty18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_solitudescloak18",
+          "nameEn": "Solitude's Cloak",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_solitudescloak18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_stealthy18",
+          "nameEn": "Stealthy",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_stealthy18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_wrappedinthorns18",
+          "nameEn": "Wrapped In Thorns",
+          "productionHasRequirements": false,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_wrappedinthorns18",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_048_cbc77e083fc2",
+          "nameEn": "Take One With Ya",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_048_cbc77e083fc2",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_051_e06d127b43f9",
+          "nameEn": "Flood",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_051_e06d127b43f9",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_121_1899d3fe4c61",
+          "nameEn": "Major Gambit",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_121_1899d3fe4c61",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_136_c467ccd546d7",
+          "nameEn": "Component Bounty",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_136_c467ccd546d7",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_147_2dc94df4e3a5",
+          "nameEn": "Good Loss",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": false,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_147_2dc94df4e3a5",
+        "reviewReasons": [
+          "presence_conflict",
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_fieldofmice",
+          "nameEn": "Field of Mice",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_fieldofmice",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_forestmage",
+          "nameEn": "Forest Mage",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_forestmage",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_heroicsacrifice",
+          "nameEn": "Heroic Sacrifice",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_heroicsacrifice",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_killingfrenzy",
+          "nameEn": "Killing Frenzy",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_killingfrenzy",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_lifedebt",
+          "nameEn": "Life Debt",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_lifedebt",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_moonrise",
+          "nameEn": "Moonrise",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_moonrise",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_supercritical",
+          "nameEn": "Supercritical",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_supercritical",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_18_verdantvitality",
+          "nameEn": "Verdant Vitality",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_18_verdantvitality",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_abandonship18",
+          "nameEn": "Abandon Ship",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_abandonship18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_artifactinate18",
+          "nameEn": "Artifactinate",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_artifactinate18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_boostershot18",
+          "nameEn": "Booster Shot",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_boostershot18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_bulwark18",
+          "nameEn": "Bulwark",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_bulwark18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "gold",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_curiocart18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_diversified18",
+          "nameEn": "Diversified",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_diversified18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_flashfire18",
+          "nameEn": "Flash Fire",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_flashfire18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_handofbaron18",
+          "nameEn": "Hand Of Baron",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_handofbaron18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_herosentrance18",
+          "nameEn": "Hero's Entrance",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_herosentrance18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_homingfireflies18",
+          "nameEn": "Homing Fireflies",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_homingfireflies18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_idlecraftsman18",
+          "nameEn": "Idle Craftsman",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_idlecraftsman18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_improvedreach18",
+          "nameEn": "Improved Reach",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_improvedreach18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_jungling18",
+          "nameEn": "Jungling",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_jungling18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_manarichsoil18",
+          "nameEn": "Mana-Rich Soil",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_manarichsoil18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_marksmensgale18",
+          "nameEn": "Marksmen's Gale",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "board_count",
+              "operator": ">=",
+              "value": 1
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_marksmensgale18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_moonlightritual18",
+          "nameEn": "Moonlight Ritual",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_moonlightritual18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_natureswrath18",
+          "nameEn": "Nature's Wrath",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_natureswrath18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_refreshinglight18",
+          "nameEn": "Refreshing Light",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_refreshinglight18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_solargift18",
+          "nameEn": "Solar Gift",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_solargift18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_standalone18",
+          "nameEn": "Stand Alone",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_standalone18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_terraforming18",
+          "nameEn": "Terraforming",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_terraforming18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "da_trophyhunter18",
+          "nameEn": "Trophy Hunter",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "da_trophyhunter18",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_022_fc7538964718",
+          "nameEn": "Sinister Deal",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "player_health",
+              "operator": ">=",
+              "value": 4
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_022_fc7538964718",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_036_f484358ea1e5",
+          "nameEn": "Essence Theft",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_036_f484358ea1e5",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_049_d60aa5ac9feb",
+          "nameEn": "Minor Gambit",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_049_d60aa5ac9feb",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_120_cf0b477ffe00",
+          "nameEn": "Minor Blood Ritual",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "player_health",
+              "operator": ">=",
+              "value": 3
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_120_cf0b477ffe00",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      },
+      {
+        "sourceRecords": {
+          "identity": "snapshot_157_3ed870773960",
+          "nameEn": "Blood Ritual",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "player_health",
+              "operator": ">=",
+              "value": 10
+            }
+          ],
+          "status": "semantic_review_required"
+        },
+        "candidateMapping": "snapshot_157_3ed870773960",
+        "reviewReasons": [
+          "semantic_review_required"
+        ],
+        "evidence": "Confirmed identity requiring presence, structured-fact, or semantic review.",
+        "whyNotAutoConfirmed": "Cross-language free text is not safely machine-equivalent.",
+        "whatHumanMustDecide": "Confirm requirement presence and semantics."
+      }
+    ],
+    "other_field_conflict": []
+  }
+}

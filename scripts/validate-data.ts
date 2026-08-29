@@ -6,9 +6,17 @@ export async function validateFile(path: string): Promise<string[]> {
   return validateDataset(JSON.parse(await readFile(path, 'utf8')) as unknown);
 }
 
+export function validateProvenanceSources(dataset: { records: Array<Record<string, unknown>> }, manifest: { sources: Array<{ sourceId: string }> }): string[] {
+  const sourceIds = new Set(manifest.sources.map(({ sourceId }) => sourceId));
+  return dataset.records.flatMap((record, index) => Object.entries((record.sources as Record<string, unknown> | undefined) ?? {}).flatMap(([field, source]) => {
+    const sourceId = (source as { sourceId?: string }).sourceId;
+    return sourceId && !sourceIds.has(sourceId) ? [`records[${index}].sources.${field}.sourceId: manifest 中不存在 "${sourceId}"`] : [];
+  }));
+}
+
 if (process.argv[1] && import.meta.url === new URL(`file://${resolve(process.argv[1])}`).href) {
   const file = resolve(process.argv[2] ?? 'data/wisps_18.1.json');
-  Promise.all([validateFile(file), readFile(file, 'utf8'), readFile(resolve('public/data/wisps.json'), 'utf8'), readFile(resolve('reports/data-conflicts-18.1.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-en.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-zh.json'), 'utf8'), readFile(resolve('data/raw/18.1/datatft-wisps-zh.json'), 'utf8')]).then(([baseErrors, normalizedText, publicText, conflictText, cdEnText, cdZhText, dtText]) => {
+  Promise.all([validateFile(file), readFile(file, 'utf8'), readFile(resolve('public/data/wisps.json'), 'utf8'), readFile(resolve('reports/data-conflicts-18.1.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-en.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-zh.json'), 'utf8'), readFile(resolve('data/raw/18.1/datatft-wisps-zh.json'), 'utf8'), readFile(resolve('data/source_manifest_18.1.json'), 'utf8')]).then(([baseErrors, normalizedText, publicText, conflictText, cdEnText, cdZhText, dtText, manifestText]) => {
     const errors = [...baseErrors];
     if (process.argv.includes('--production')) {
       const dataset = JSON.parse(normalizedText) as { productionReady?: boolean; datasetStatus?: string; records: Array<Record<string, unknown>> };
@@ -17,6 +25,7 @@ if (process.argv[1] && import.meta.url === new URL(`file://${resolve(process.arg
       const cdEn = (JSON.parse(cdEnText) as { records: Array<Record<string, unknown>> }).records;
       const cdZh = (JSON.parse(cdZhText) as { records: Array<Record<string, unknown>> }).records;
       const dt = (JSON.parse(dtText) as { records: Array<Record<string, unknown>> }).records;
+      errors.push(...validateProvenanceSources(dataset, JSON.parse(manifestText) as { sources: Array<{ sourceId: string }> }));
       dataset.records.forEach((record, index) => {
         if (typeof record.riotId === 'string') { if (riotIds.has(record.riotId)) errors.push(`records[${index}].riotId: 重复 riotId "${record.riotId}"`); riotIds.add(record.riotId); }
         if (/待.*核对|placeholder/i.test(String(record.nameZh))) errors.push(`records[${index}].nameZh: 中文占位符`);

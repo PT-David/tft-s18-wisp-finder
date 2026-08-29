@@ -1,0 +1,19 @@
+{
+  "rawRecordCount": 345,
+  "rawBaseRows": 163,
+  "rawUpgradeRows": 163,
+  "rawPrismaticRows": 19,
+  "uniqueApiNames": 345,
+  "uniqueBaseApiNames": 163,
+  "uniqueUpgradeApiNames": 163,
+  "uniquePrismaticApiNames": 19,
+  "uniqueCanonicalBaseIdentities": 163,
+  "duplicateGroups": [],
+  "canonicalCollisions": [],
+  "exactDuplicateGroupCount": 0,
+  "equivalentDuplicateGroupCount": 0,
+  "conflictingDuplicateGroupCount": 0,
+  "canonicalCollisionCount": 0,
+  "safelyDeduplicatedRowCount": 0,
+  "blockedApiNames": []
+}

@@ -5620,9 +5620,9 @@
           "confidence": "client_data"
         },
         "nameEn": {
-          "sourceId": "communitydragon_live_18_1_20260827_en_us",
-          "verifiedAt": "2026-08-27T22:54:07Z",
-          "confidence": "client_data"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
@@ -6899,9 +6899,9 @@
           "confidence": "client_data"
         },
         "nameEn": {
-          "sourceId": "communitydragon_live_18_1_20260827_en_us",
-          "verifiedAt": "2026-08-27T22:54:07Z",
-          "confidence": "client_data"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
@@ -8951,7 +8951,8 @@
         }
       ],
       "oncePerGame": {
-        "status": "unknown"
+        "status": "confirmed",
+        "value": true
       },
       "reofferCooldownShops": {
         "status": "unknown"
@@ -9005,9 +9006,9 @@
           "confidence": "community_high_confidence"
         },
         "oncePerGame": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "reofferCooldownShops": {
           "sourceId": "datatft_18_1_20260828",
@@ -14338,9 +14339,9 @@
           "confidence": "client_data"
         },
         "nameEn": {
-          "sourceId": "communitydragon_live_18_1_20260827_en_us",
-          "verifiedAt": "2026-08-27T22:54:07Z",
-          "confidence": "client_data"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
@@ -14435,9 +14436,9 @@
           "confidence": "client_data"
         },
         "nameEn": {
-          "sourceId": "communitydragon_live_18_1_20260827_en_us",
-          "verifiedAt": "2026-08-27T22:54:07Z",
-          "confidence": "client_data"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
@@ -14532,9 +14533,9 @@
           "confidence": "client_data"
         },
         "nameEn": {
-          "sourceId": "communitydragon_live_18_1_20260827_en_us",
-          "verifiedAt": "2026-08-27T22:54:07Z",
-          "confidence": "client_data"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
@@ -15079,7 +15080,7 @@
       "id": "snapshot_021_534324382164",
       "riotId": null,
       "nameZh": "休战",
-      "nameEn": "休战",
+      "nameEn": "Truce",
       "category": "gold_xp",
       "cost": 0,
       "stageRanges": [
@@ -15120,9 +15121,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -15176,7 +15177,7 @@
       "id": "snapshot_022_fc7538964718",
       "riotId": null,
       "nameZh": "不祥交易",
-      "nameEn": "不祥交易",
+      "nameEn": "Sinister Deal",
       "category": "misc",
       "cost": 0,
       "stageRanges": [
@@ -15223,9 +15224,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -15279,7 +15280,7 @@
       "id": "snapshot_036_f484358ea1e5",
       "riotId": null,
       "nameZh": "摄魂夺魄",
-      "nameEn": "摄魂夺魄",
+      "nameEn": "Essence Theft",
       "category": "risky",
       "cost": 1,
       "stageRanges": [
@@ -15326,9 +15327,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -15382,7 +15383,7 @@
       "id": "snapshot_048_cbc77e083fc2",
       "riotId": null,
       "nameZh": "带一个走",
-      "nameEn": "带一个走",
+      "nameEn": "Take One With Ya",
       "category": "risky",
       "cost": 1,
       "stageRanges": [
@@ -15429,9 +15430,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -15485,7 +15486,7 @@
       "id": "snapshot_049_d60aa5ac9feb",
       "riotId": null,
       "nameZh": "低阶胜负手",
-      "nameEn": "低阶胜负手",
+      "nameEn": "Minor Gambit",
       "category": "risky",
       "cost": 1,
       "stageRanges": [
@@ -15537,9 +15538,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -15696,7 +15697,7 @@
       "id": "snapshot_051_e06d127b43f9",
       "riotId": null,
       "nameZh": "洪涝",
-      "nameEn": "洪涝",
+      "nameEn": "Flood",
       "category": "risky",
       "cost": 1,
       "stageRanges": [
@@ -15743,9 +15744,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16005,7 +16006,7 @@
       "id": "snapshot_090_cf945e21ddef",
       "riotId": null,
       "nameZh": "回复",
-      "nameEn": "回复",
+      "nameEn": "Regeneration",
       "category": "combat",
       "cost": 3,
       "stageRanges": [
@@ -16046,9 +16047,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16210,7 +16211,7 @@
       "id": "snapshot_120_cf0b477ffe00",
       "riotId": null,
       "nameZh": "小型血祭",
-      "nameEn": "小型血祭",
+      "nameEn": "Minor Blood Ritual",
       "category": "misc",
       "cost": 3,
       "stageRanges": [
@@ -16257,9 +16258,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16313,7 +16314,7 @@
       "id": "snapshot_121_1899d3fe4c61",
       "riotId": null,
       "nameZh": "高阶胜负手",
-      "nameEn": "高阶胜负手",
+      "nameEn": "Major Gambit",
       "category": "risky",
       "cost": 3,
       "stageRanges": [
@@ -16360,9 +16361,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16416,7 +16417,7 @@
       "id": "snapshot_136_c467ccd546d7",
       "riotId": null,
       "nameZh": "散件赏金",
-      "nameEn": "散件赏金",
+      "nameEn": "Component Bounty",
       "category": "risky",
       "cost": 4,
       "stageRanges": [
@@ -16463,9 +16464,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16616,7 +16617,7 @@
       "id": "snapshot_147_2dc94df4e3a5",
       "riotId": null,
       "nameZh": "输得漂亮",
-      "nameEn": "输得漂亮",
+      "nameEn": "Good Loss",
       "category": "risky",
       "cost": 5,
       "stageRanges": [
@@ -16663,9 +16664,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16719,7 +16720,7 @@
       "id": "snapshot_157_3ed870773960",
       "riotId": null,
       "nameZh": "血祭",
-      "nameEn": "血祭",
+      "nameEn": "Blood Ritual",
       "category": "misc",
       "cost": 6,
       "stageRanges": [
@@ -16747,7 +16748,8 @@
         }
       ],
       "oncePerGame": {
-        "status": "unknown"
+        "status": "confirmed",
+        "value": true
       },
       "reofferCooldownShops": {
         "status": "unknown"
@@ -16766,9 +16768,9 @@
           "confidence": "community_high_confidence"
         },
         "nameEn": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "nameZh": {
           "sourceId": "datatft_18_1_20260828",
@@ -16801,9 +16803,9 @@
           "confidence": "community_high_confidence"
         },
         "oncePerGame": {
-          "sourceId": "datatft_18_1_20260828",
-          "verifiedAt": "2026-08-28T16:49:16Z",
-          "confidence": "community_high_confidence"
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
         },
         "reofferCooldownShops": {
           "sourceId": "datatft_18_1_20260828",
