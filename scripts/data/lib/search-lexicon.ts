@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import type { Requirement, Wisp, WispDataset } from '../../../src/domain/types';
 
-export const GENERATOR_VERSION = 'c2.1-v6';
+export const GENERATOR_VERSION = 'c2.1-v8';
 export const INPUT_PATH = 'data/normalized/wisps_18.1.json';
 
 export type RiskGroup = 'player_vs_unit_health' | 'death_kill_execute' | 'item_semantics' |
@@ -21,11 +21,11 @@ export const TAXONOMY: TaxonomyEntry[] = [
   T('champion_obtain', '获得弈子', '直接获得弈子或使弈子加入队伍。'), T('champion_star_level', '弈子星级', '涉及弈子的当前或指定星级、星级 Requirement、星级比较、按星级选择或计数，以及直接获得或召唤指定星级弈子。'),
   T('champion_star_up', '弈子升星', '现有弈子实际发生升星或星级提升动作。'),
   T('champion_transform', '弈子转化', '将弈子转换为另一形态或对象。'), T('completed_item', '成装', '明确涉及完整装备或成装。', 'item_semantics'),
-  T('crowd_control', '控制', '施加眩晕等控制效果。'), T('delayed_trigger', '延迟触发', '在战斗开始若干秒后触发一次效果；不表示存活奖励。'), T('enemy_death', '敌方阵亡', '由敌方单位阵亡触发。', 'death_kill_execute'),
+  T('crowd_control', '控制', '施加眩晕等控制效果。'), T('delayed_trigger', '延迟触发', '在战斗开始后的明确时间点触发效果；不表示普通持续时间或存活奖励。'), T('enemy_death', '敌方阵亡', '由敌方单位阵亡触发。', 'death_kill_execute'),
   T('execute_threshold', '处决阈值', '在目标低于生命阈值时处决。', 'death_kill_execute'), T('free_reroll', '免费刷新', '明确提供免费商店刷新。', 'reroll_vs_refresh'),
   T('gold_gain', '获得金币', '奖励或产出金币。', 'gold_cost_vs_reward'), T('gold_payment', '支付或失去金币', '效果明确要求实际支付、花费或失去金币。', 'gold_cost_vs_reward'),
   T('gold_requirement', '金币条件', '明确检查当前持有金币阈值。', 'gold_cost_vs_reward'),
-  T('item_component', '基础装备', '明确涉及基础装备或散件。', 'item_semantics'), T('item_requirement', '装备条件', 'Requirement 明确要求已持有或携带装备。', 'item_semantics'),
+  T('item_component', '基础装备', '明确涉及基础装备或散件。', 'item_semantics'), T('item_requirement', '装备条件', 'Requirement 对装备的持有、携带、数量或满装状态施加条件或限制。', 'item_semantics'),
   T('item_shop', '装备商店', '开启或使用装备商店。', 'item_semantics'), T('kill_takedown', '击杀或参与击杀', '明确的击杀或参与击杀语义。', 'death_kill_execute'),
   T('loss_streak', '连败', '涉及连败状态或连败计数。'), T('player_health_gain', '玩家生命恢复', '明确增加或治疗玩家生命。', 'player_vs_unit_health'),
   T('player_health_loss', '玩家生命损失', '明确失去玩家生命。', 'player_vs_unit_health'), T('player_health_threshold', '玩家生命阈值', 'Requirement 或文本明确检查玩家生命。', 'player_vs_unit_health'),
@@ -33,7 +33,7 @@ export const TAXONOMY: TaxonomyEntry[] = [
   T('shop_price', '商店价格', '商店中商品的金币购买价格或价格范围。', 'gold_cost_vs_reward'), T('shop_reroll', '商店刷新', '明确刷新 TFT 商店。', 'reroll_vs_refresh'),
   T('survival_condition', '存活结算', '明确以单位是否存活、存活时间或存活友军数量作为效果触发或结算依据。', 'survival_vs_once_per_game'),
   T('temporary_item', '临时装备', '明确为临时且可装备或明确是装备的对象。', 'item_semantics'), T('time_stage', '回合或阶段时机/条件', '描述回合、阶段或准备阶段的时机或条件；不包含普通效果持续时间。'),
-  T('trait_active', '羁绊激活', '由羁绊激活状态决定。'), T('true_damage', '真实伤害', '造成真实伤害。'),
+  T('trait_active', '羁绊激活', '涉及羁绊处于激活或未激活状态，或使羁绊激活。'), T('true_damage', '真实伤害', '造成真实伤害。'),
   T('win_streak', '连胜', '涉及连胜状态或连胜计数。'), T('xp_gain', '获得经验', '奖励经验值。'),
 ].sort((a, b) => a.key.localeCompare(b.key));
 
@@ -48,7 +48,7 @@ const evidence = (f: Field, terms: string[]): Evidence => ({ field: f.field, tex
 
 interface Rule { key: string; regex: RegExp; confidence?: Assignment['confidence']; risk?: RiskGroup; reviewReason?: string; decision?: string; field?: (f: Field) => boolean; wisp?: (w: Wisp) => boolean }
 const R: Rule[] = [
-  { key: 'gold_gain', regex: /获得(?:相当于[^。]*的)?\d*(?:x[^。]*)?金币|掉落\d+金币|金币卖出/ },
+  { key: 'gold_gain', regex: /获得(?:相当于[^。]*的)?\d*(?:x[^。]*)?金币|获得[^。，]*(?:和|以及)\d+金币|掉落\d+金币|金币卖出/ },
   { key: 'gold_payment', regex: /失去\d+金币|花费\d+金币|支付\d+金币/ },
   { key: 'gold_requirement', regex: /至少拥有\d+金币|金币少于\d+|拥有足够的金币/, risk: 'gold_cost_vs_reward', confidence: 'needs_review', reviewReason: '当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。', decision: '确认阈值方向、数值及该条件是否应作为搜索概念。' },
   { key: 'shop_price', regex: /(?:装备的|随机装备的)?费用在\d+到\d+金币/, risk: 'gold_cost_vs_reward', confidence: 'needs_review', reviewReason: '商品价格范围不是玩家已经支付的金币。', decision: '确认这是可检索的商店售价信息，而非购买 Requirement。' },
@@ -56,12 +56,14 @@ const R: Rule[] = [
   { key: 'player_health_loss', regex: /失去\d+玩家生命值|每失去\d+玩家生命值/ },
   { key: 'player_health_gain', regex: /获得\d+玩家生命值|治疗\d+生命值/ , confidence: 'needs_review', risk: 'player_vs_unit_health', reviewReason: '“治疗生命值”未显式写明玩家，需避免与弈子治疗混淆。', decision: '确认治疗对象是否为玩家/Little Legend。' },
   { key: 'player_health_threshold', regex: /玩家生命值|已损失至少\d+点生命值|处于高生命值|生命值高于\d+/, field: f => f.field.startsWith('requirements['), confidence: 'needs_review', risk: 'player_vs_unit_health', reviewReason: 'Requirement 的文本或类型未始终明确写出玩家。', decision: '确认该阈值检查玩家生命而非弈子生命。' },
-  { key: 'free_reroll', regex: /免费(?:刷新|重随)/ }, { key: 'shop_reroll', regex: /刷新(?:你的)?商店|商店.*刷新|刷新次数|次刷新|免费重随/ },
+  { key: 'free_reroll', regex: /免费(?:刷新|重随)/ }, { key: 'shop_reroll', regex: /刷新(?:你的)?商店|商店[^。]*刷新|刷新次数|\d+次(?:免费)?刷新|免费(?:刷新|重随)/ },
   { key: 'champion_duplicator', regex: /(?:微型|次级)?英雄复制器|champion duplicator/i },
   { key: 'champion_star_up', regex: /会变为[2-5]星|暂时升星|将会升星/ }, { key: 'champion_star_level', regex: /(?<!变为)[1-5]星级|(?<!变为)[1-5]星|星级/ }, { key: 'champion_cost_tier', regex: /[1-5]费弈子/ },
-  { key: 'champion_obtain', regex: /获得\d+个[^。]*弈子|弈子加入(?:你的|己方)?队伍/ },
-  { key: 'champion_obtain', regex: /获得\d+个【(?![^】]*器】)[^】]+】/, wisp: w => w.category === 'champion' }, { key: 'champion_transform', regex: /弈子.*转化为|单位.*转化为/ },
-  { key: 'ally_death', regex: /友军.*阵亡|己方弈子.*阵亡|最先阵亡的\d*个?弈子|第\d+个阵亡的弈子|你的弈子们在阵亡/ },
+  { key: 'champion_obtain', regex: /获得\d+个[^。]*弈子|获得每个[1-5]费弈子各\d+个|获得总价值\d+金币的随机弈子|弈子加入(?:你的|己方)?队伍/ },
+  { key: 'champion_obtain', regex: /获得\d+个【(?![^】]*器】)[^】]+】/, wisp: w => w.category === 'champion' },
+  { key: 'champion_obtain', regex: /获得第\d+名阵亡的友军的\d+个复制体/ },
+  { key: 'champion_transform', regex: /弈子[^。]*变形为[^。]*弈子|弈子[^。]*转化为|单位[^。]*转化为/ },
+  { key: 'ally_death', regex: /友军[^。]*阵亡|己方弈子[^。]*阵亡|(?:第(?:一|\d+)名|最先)阵亡的(?:\d+名)?友军|最先阵亡的\d*个?弈子|第\d+个阵亡的弈子|你的[^。]*弈子们在阵亡时/ },
   { key: 'enemy_death', regex: /阵亡的敌人|敌人.*阵亡/ }, { key: 'execute_threshold', regex: /处决生命值低于\d+%|生命值低于\d+%.*处决/ },
   { key: 'kill_takedown', regex: /参与击杀|完成击杀|每(?:获得)?\d*次?击杀|至少击杀|将所有[^。]*击杀/ },
   { key: 'survival_condition', regex: /每有\d+名存活的友军|弈子在战斗中存活|存活(?:达到|至少|满)\d+秒/ },
@@ -70,11 +72,14 @@ const R: Rule[] = [
   { key: 'attack_damage', regex: /攻击力|物理加成/ }, { key: 'true_damage', regex: /真实伤害/ }, { key: 'crowd_control', regex: /晕眩|眩晕|控制/ },
   { key: 'item_component', regex: /基础装备|装备组件|散件/ }, { key: 'completed_item', regex: /成装|完整装备/ },
   { key: 'artifact_item', regex: /神器(?:锻造器|装备)?/ }, { key: 'reforger', regex: /装备重铸器/ },
-  { key: 'temporary_item', regex: /临时[^。]*(?:装备|可装备|狂徒铠甲|棘刺背心|窃贼手套|纹章|巨人腰带|药水)/ },
-  { key: 'item_shop', regex: /装备商店/ }, { key: 'item_requirement', regex: /(?:拥有|携带|带着|满)[^。]*装备|装备单位/, field: f => f.field.startsWith('requirements[') },
-  { key: 'win_streak', regex: /连胜/ }, { key: 'loss_streak', regex: /连败/ }, { key: 'trait_active', regex: /激活.*羁绊|已激活【|未激活【/, field: f => f.field.startsWith('requirements[') },
-  { key: 'board_composition', regex: /场上至少|上阵了|棋盘|备战席/, field: f => f.field.startsWith('requirements[') },
-  { key: 'time_stage', regex: /准备阶段|(?:上|本|这|每|下一|下个|第\d+)回合|下一个玩家对战回合|接下来的?\d+场玩家对战回合/ },
+  { key: 'temporary_item', regex: /临时(?:的)?(?:、)?可装备|临时(?:的)?推荐装备|临时的(?:某|一|\d+)?(?:件)?装备|临时(?:的)?纹章/ },
+  { key: 'temporary_item', regex: /临时(?:的)?【/, wisp: w => w.category === 'item' || /护甲|手套|背心|腰带|armor|gloves?|belts?|vest/i.test(`${w.nameZh} ${w.nameEn}`) },
+  { key: 'item_shop', regex: /装备商店/ }, { key: 'item_requirement', regex: /(?:拥有|携带|带着|满)[^。]*装备|装备单位|至少(?:拥有|有)\d+件[^。]*装备/, field: f => f.field.startsWith('requirements[') },
+  { key: 'win_streak', regex: /连胜/ }, { key: 'loss_streak', regex: /连败/ },
+  { key: 'trait_active', regex: /激活.*羁绊|已激活【|未激活【/, field: f => f.field.startsWith('requirements[') },
+  { key: 'trait_active', regex: /(?:未激活|已激活)的羁绊[^。]*激活|使[^。]*羁绊激活/ },
+  { key: 'board_composition', regex: /场上至少有\d+个|上阵了\d+个[^。]*弈子|棋盘价值|备战席上有弈子/, field: f => f.field.startsWith('requirements[') },
+  { key: 'time_stage', regex: /准备阶段|(?:上|本|这|每|下一|下个|第\d+)回合|(?:下一场|下一个)玩家对战|在\d+场玩家对战后|接下来的?\d+场玩家对战/ },
 ];
 
 const AMBIGUOUS: { regex: RegExp; risk: RiskGroup; rule: string; reason: string; decision: string }[] = [
