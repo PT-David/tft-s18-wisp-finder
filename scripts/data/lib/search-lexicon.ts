@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import type { Requirement, Wisp, WispDataset } from '../../../src/domain/types';
 
-export const GENERATOR_VERSION = 'c2.1-v7';
+export const GENERATOR_VERSION = 'c2.1-v8';
 export const INPUT_PATH = 'data/normalized/wisps_18.1.json';
 
 export type RiskGroup = 'player_vs_unit_health' | 'death_kill_execute' | 'item_semantics' |
@@ -72,7 +72,8 @@ const R: Rule[] = [
   { key: 'attack_damage', regex: /攻击力|物理加成/ }, { key: 'true_damage', regex: /真实伤害/ }, { key: 'crowd_control', regex: /晕眩|眩晕|控制/ },
   { key: 'item_component', regex: /基础装备|装备组件|散件/ }, { key: 'completed_item', regex: /成装|完整装备/ },
   { key: 'artifact_item', regex: /神器(?:锻造器|装备)?/ }, { key: 'reforger', regex: /装备重铸器/ },
-  { key: 'temporary_item', regex: /临时(?:的)?(?:、)?可装备|临时(?:的)?推荐装备|临时的(?:某|一|\d+)?(?:件)?装备|临时(?:的)?(?:、)?【|临时(?:的)?纹章/ },
+  { key: 'temporary_item', regex: /临时(?:的)?(?:、)?可装备|临时(?:的)?推荐装备|临时的(?:某|一|\d+)?(?:件)?装备|临时(?:的)?纹章/ },
+  { key: 'temporary_item', regex: /临时(?:的)?【/, wisp: w => w.category === 'item' || /护甲|手套|背心|腰带|armor|gloves?|belts?|vest/i.test(`${w.nameZh} ${w.nameEn}`) },
   { key: 'item_shop', regex: /装备商店/ }, { key: 'item_requirement', regex: /(?:拥有|携带|带着|满)[^。]*装备|装备单位|至少(?:拥有|有)\d+件[^。]*装备/, field: f => f.field.startsWith('requirements[') },
   { key: 'win_streak', regex: /连胜/ }, { key: 'loss_streak', regex: /连败/ },
   { key: 'trait_active', regex: /激活.*羁绊|已激活【|未激活【/, field: f => f.field.startsWith('requirements[') },

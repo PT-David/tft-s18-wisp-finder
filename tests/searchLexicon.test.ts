@@ -111,12 +111,19 @@ describe('Stage C2.1 search lexicon generation', () => {
   });
 
   it.each([
-    ['3个临时弈子携带着2件推荐装备。', false],
-    ['弈子获得1件临时推荐装备。', true],
-    ['获得临时的某装备。', true],
-  ])('keeps temporary-item syntax attached to the item for %s', (text, expected) => {
+    ['Hireling', 'combat', '3个临时弈子携带着2件推荐装备。', false],
+    ['Potted Stonebark', 'combat', '获得1颗临时的【石皮树】。', false],
+    ['Potted Lifebloom', 'combat', '获得1株临时的【生命花】。', false],
+    ['Temporary Armor', 'item', '获得1个临时的【狂徒铠甲】。', true],
+    ['Mana Potion', 'combat', '获得1个临时的、可装备的【法力药水】。', true],
+    ['Recommended Gear', 'combat', '弈子获得1件临时推荐装备。', true],
+    ['Explicit Item', 'combat', '获得临时的某装备。', true],
+  ] as const)('keeps temporary-item syntax attached to the item for %s', (name, category, text, expected) => {
     const fixture = structuredClone(dataset.records[0]!);
     fixture.id = 'synthetic_temporary_item';
+    fixture.nameEn = name;
+    fixture.nameZh = name;
+    fixture.category = category;
     fixture.effects = { normal: text, blossom: null, prismatic: null };
     fixture.requirements = [];
     const result = generateSearchLexicon({ ...dataset, records: [fixture] }, Buffer.from(text));
