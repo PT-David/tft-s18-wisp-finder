@@ -16,6 +16,27 @@
     "unresolvedOpggCount": 48,
     "dataTftOnlyCount": 17
   },
+  "duplicateAuditMatchingDiff": {
+    "before": {
+      "confirmedIntersection": 152,
+      "exactClientKey": 144,
+      "candidateCount": 48,
+      "ambiguousCount": 27,
+      "unresolvedOpggCount": 48,
+      "dataTftOnlyCount": 17,
+      "confirmedCorpusButIncomplete": 8
+    },
+    "after": {
+      "confirmedIntersection": 152,
+      "exactClientKey": 144,
+      "candidateCount": 48,
+      "ambiguousCount": 27,
+      "unresolvedOpggCount": 48,
+      "dataTftOnlyCount": 17,
+      "confirmedCorpusButIncomplete": 8
+    },
+    "promotedToExactClientKey": 0
+  },
   "confirmedCorpusButIncomplete": [
     {
       "record": {
@@ -187,9 +208,12 @@
   "sources": [
     {
       "source": "communitydragon",
-      "rawCount": 345,
-      "acceptedBaseCount": 163,
-      "excludedVariants": 182
+      "rawRowCount": 345,
+      "rawBaseRows": 163,
+      "rawUpgradeRows": 163,
+      "rawPrismaticRows": 19,
+      "uniqueBaseApiNames": 163,
+      "uniqueCanonicalBaseIdentities": 163
     },
     {
       "source": "datatft",

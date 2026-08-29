@@ -2,986 +2,6 @@
   "confirmedIntersection": 152,
   "confirmedMatches": [
     {
-      "opggSourceKey": "Hugify",
-      "opggName": "Hugify",
-      "productionId": "da_hugify18",
-      "nameZh": "巨大化",
-      "nameEn": "Hugify",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "hugify",
-        "communityDragonApiName": "DA_Hugify18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ThreeMe",
-      "opggName": "三个我",
-      "productionId": "da_threeme18",
-      "nameZh": "对影成三",
-      "nameEn": "Three Me",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "threeme",
-        "communityDragonApiName": "DA_ThreeMe18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AllThrees",
-      "opggName": "三人行",
-      "productionId": "da_18_allthrees",
-      "nameZh": "全3费商店",
-      "nameEn": "All Threes",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "allthrees",
-        "communityDragonApiName": "DA_18_AllThrees",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "RolyPolys",
-      "opggName": "不倒翁",
-      "productionId": "da_rolypolys18",
-      "nameZh": "不倒翁",
-      "nameEn": "Roly-Polys",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "rolypolys",
-        "communityDragonApiName": "DA_RolyPolys18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Jungling",
-      "opggName": "丛林",
-      "productionId": "da_jungling18",
-      "nameZh": "野区",
-      "nameEn": "Jungling",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "jungling",
-        "communityDragonApiName": "DA_Jungling18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "MiddlePath",
-      "opggName": "中间路径",
-      "productionId": "da_middlepath18",
-      "nameZh": "中央大道",
-      "nameEn": "Middle Path",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "middlepath",
-        "communityDragonApiName": "DA_MiddlePath18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "MajorPolymorph",
-      "opggName": "主要多晶型物",
-      "productionId": "da_18_majorpolymorph",
-      "nameZh": "高阶变形术",
-      "nameEn": "Major Polymorph",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "majorpolymorph",
-        "communityDragonApiName": "DA_18_MajorPolymorph",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "RidetheWave",
-      "opggName": "乘风破浪",
-      "productionId": "da_ridethewave18",
-      "nameZh": "顺流而下",
-      "nameEn": "Ride the Wave",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "ridethewave",
-        "communityDragonApiName": "DA_RideTheWave18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AllFives",
-      "opggName": "五五开",
-      "productionId": "da_18_allfives",
-      "nameZh": "全5费商店",
-      "nameEn": "All Fives",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "allfives",
-        "communityDragonApiName": "DA_18_AllFives",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "LifeDebt",
-      "opggName": "人生债务",
-      "productionId": "da_18_lifedebt",
-      "nameZh": "以命为注",
-      "nameEn": "Life Debt",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "lifedebt",
-        "communityDragonApiName": "DA_18_LifeDebt",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Propagate",
-      "opggName": "传播",
-      "productionId": "da_18_propagate",
-      "nameZh": "繁殖",
-      "nameEn": "Propagate",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "propagate",
-        "communityDragonApiName": "DA_18_Propagate",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Infliction",
-      "opggName": "伤害",
-      "productionId": "da_18_infliction",
-      "nameZh": "折磨",
-      "nameEn": "Infliction",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "infliction",
-        "communityDragonApiName": "DA_18_Infliction",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Aftershock",
-      "opggName": "余震",
-      "productionId": "da_18_aftershock",
-      "nameZh": "余震",
-      "nameEn": "Aftershock",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "aftershock",
-        "communityDragonApiName": "DA_18_AfterShock",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BorrowedGear",
-      "opggName": "借来的装备",
-      "productionId": "da_borrowedgear18",
-      "nameZh": "借来的装备",
-      "nameEn": "Borrowed Gear",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "borrowedgear",
-        "communityDragonApiName": "DA_BorrowedGear18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Downpour",
-      "opggName": "倾盆大雨",
-      "productionId": "da_downpour18",
-      "nameZh": "倾盆大雨",
-      "nameEn": "Downpour",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "downpour",
-        "communityDragonApiName": "DA_Downpour18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AllOnes",
-      "opggName": "全一",
-      "productionId": "da_18_allones",
-      "nameZh": "全1费商店",
-      "nameEn": "All Ones",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "allones",
-        "communityDragonApiName": "DA_18_AllOnes",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AllTwos",
-      "opggName": "全两",
-      "productionId": "da_18_alltwos",
-      "nameZh": "全2费商店",
-      "nameEn": "All Twos",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "alltwos",
-        "communityDragonApiName": "DA_18_AllTwos",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Preppers",
-      "opggName": "准备者",
-      "productionId": "da_18_preppers",
-      "nameZh": "未雨绸缪",
-      "nameEn": "Preppers",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "preppers",
-        "communityDragonApiName": "DA_18_Preppers",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Quicken",
-      "opggName": "加快",
-      "productionId": "da_quicken18",
-      "nameZh": "加速",
-      "nameEn": "Quicken",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "quicken",
-        "communityDragonApiName": "DA_Quicken18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AnimateShop",
-      "opggName": "动画商店",
-      "productionId": "da_animateshop18",
-      "nameZh": "活体商店",
-      "nameEn": "Animate Shop",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "animateshop",
-        "communityDragonApiName": "DA_AnimateShop18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BoosterShot",
-      "opggName": "助推器射击",
-      "productionId": "da_boostershot18",
-      "nameZh": "强化激素",
-      "nameEn": "Booster Shot",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "boostershot",
-        "communityDragonApiName": "DA_BoosterShot18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Counterspell",
-      "opggName": "反咒语",
-      "productionId": "da_18_counterspell",
-      "nameZh": "法术反制",
-      "nameEn": "Counterspell",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "counterspell",
-        "communityDragonApiName": "DA_18_Counterspell",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Payday",
-      "opggName": "发薪日",
-      "productionId": "da_18_payday",
-      "nameZh": "庆功宴",
-      "nameEn": "Payday",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "payday",
-        "communityDragonApiName": "DA_18_Payday",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BackrowStar",
-      "opggName": "后排星",
-      "productionId": "da_18_backrowstar",
-      "nameZh": "后排之星",
-      "nameEn": "Backrow Star",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "backrowstar",
-        "communityDragonApiName": "DA_18_BackrowStar",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AllFours",
-      "opggName": "四肢着地",
-      "productionId": "da_18_allfours",
-      "nameZh": "全4费商店",
-      "nameEn": "All Fours",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "allfours",
-        "communityDragonApiName": "DA_18_AllFours",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Terraforming",
-      "opggName": "地形改造",
-      "productionId": "da_terraforming18",
-      "nameZh": "生态改造",
-      "nameEn": "Terraforming",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "terraforming",
-        "communityDragonApiName": "DA_Terraforming18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Bulwark",
-      "opggName": "壁垒",
-      "productionId": "da_bulwark18",
-      "nameZh": "壁垒",
-      "nameEn": "Bulwark",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "bulwark",
-        "communityDragonApiName": "DA_Bulwark18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Revenge",
-      "opggName": "复仇",
-      "productionId": "da_revenge18",
-      "nameZh": "复仇",
-      "nameEn": "Revenge",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "revenge",
-        "communityDragonApiName": "DA_Revenge18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ProlificPower",
-      "opggName": "多产的力量",
-      "productionId": "da_18_prolificpower",
-      "nameZh": "元气满满",
-      "nameEn": "Prolific Power",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "prolificpower",
-        "communityDragonApiName": "DA_18_ProlificPower",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Diversified",
-      "opggName": "多元化",
-      "productionId": "da_diversified18",
-      "nameZh": "多样化",
-      "nameEn": "Diversified",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "diversified",
-        "communityDragonApiName": "DA_Diversified18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Polymorph",
-      "opggName": "多晶型物",
-      "productionId": "da_18_polymorph",
-      "nameZh": "变形术",
-      "nameEn": "Polymorph",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "polymorph",
-        "communityDragonApiName": "DA_18_Polymorph",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "LateBloomer",
-      "opggName": "大器晚成",
-      "productionId": "da_latebloomer18",
-      "nameZh": "大器晚成",
-      "nameEn": "Late Bloomer",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "latebloomer",
-        "communityDragonApiName": "DA_LateBloomer18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BigGuns",
-      "opggName": "大枪",
-      "productionId": "da_bigguns18",
-      "nameZh": "大腕",
-      "nameEn": "Big Guns",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "bigguns",
-        "communityDragonApiName": "DA_BigGuns18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BigBoom",
-      "opggName": "大繁荣",
-      "productionId": "da_bigboom18",
-      "nameZh": "大爆炸",
-      "nameEn": "Big Boom",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "bigboom",
-        "communityDragonApiName": "DA_BigBoom18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "NaturesAlly",
-      "opggName": "大自然的盟友",
-      "productionId": "da_naturesally18",
-      "nameZh": "自然之友",
-      "nameEn": "Nature's Ally",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "naturesally",
-        "communityDragonApiName": "DA_NaturesAlly18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "SolarGift",
-      "opggName": "太阳能礼物",
-      "productionId": "da_solargift18",
-      "nameZh": "日蚀之礼",
-      "nameEn": "Solar Gift",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "solargift",
-        "communityDragonApiName": "DA_SolarGift18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Fellowship",
-      "opggName": "奖学金",
-      "productionId": "da_18_fellowship",
-      "nameZh": "贴贴",
-      "nameEn": "Fellowship",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "fellowship",
-        "communityDragonApiName": "DA_18_Fellowship",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "TrophyHunter",
-      "opggName": "奖杯猎人",
-      "productionId": "da_trophyhunter18",
-      "nameZh": "猎手的黄金之路",
-      "nameEn": "Trophy Hunter",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "trophyhunter",
-        "communityDragonApiName": "DA_TrophyHunter18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Scrappy",
-      "opggName": "好斗",
-      "productionId": "da_scrappy18",
-      "nameZh": "零碎",
-      "nameEn": "Scrappy",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "scrappy",
-        "communityDragonApiName": "DA_Scrappy18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "SolitudesCloak",
-      "opggName": "孤独斗篷",
-      "productionId": "da_solitudescloak18",
-      "nameZh": "独行斗篷",
-      "nameEn": "Solitude's Cloak",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "solitudescloak",
-        "communityDragonApiName": "DA_SolitudesCloak18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Apprentice",
-      "opggName": "学徒",
-      "productionId": "da_apprentice18",
-      "nameZh": "学徒",
-      "nameEn": "Apprentice",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "apprentice",
-        "communityDragonApiName": "DA_Apprentice18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Grandmaster",
-      "opggName": "宗师",
-      "productionId": "da_grandmaster18",
-      "nameZh": "奇境宗师",
-      "nameEn": "Grandmaster",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "grandmaster",
-        "communityDragonApiName": "DA_Grandmaster18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ManaRichSoil",
-      "opggName": "富含法力的土壤",
-      "productionId": "da_manarichsoil18",
-      "nameZh": "富魔之壤",
-      "nameEn": "Mana-Rich Soil",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "manarichsoil",
-        "communityDragonApiName": "DA_ManaRichSoil18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "MarksmensGale",
-      "opggName": "射手之风",
-      "productionId": "da_marksmensgale18",
-      "nameZh": "射手狂风",
-      "nameEn": "Marksmen's Gale",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "marksmensgale",
-        "communityDragonApiName": "DA_MarksmensGale18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "KnickKnackJar",
-      "opggName": "小摆设罐",
-      "productionId": "da_knickknackjar18",
-      "nameZh": "小饰品罐",
-      "nameEn": "Knick-Knack Jar",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "knickknackjar",
-        "communityDragonApiName": "DA_KnickKnackJar18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "KnickKnackBag",
-      "opggName": "小摆设袋",
-      "productionId": "da_knickknackbag18",
-      "nameZh": "小饰品包",
-      "nameEn": "Knick-Knack Bag",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "knickknackbag",
-        "communityDragonApiName": "DA_KnickKnackBag18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "KnickKnackSack",
-      "opggName": "小摆设袋",
-      "productionId": "da_knickknacksack18",
-      "nameZh": "小饰品袋",
-      "nameEn": "Knick-Knack Sack",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "knickknacksack",
-        "communityDragonApiName": "DA_KnickKnackSack18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "DoodadJar",
-      "opggName": "小玩意罐",
-      "productionId": "da_doodadjar18",
-      "nameZh": "小玩具罐",
-      "nameEn": "Doodad Jar",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "doodadjar",
-        "communityDragonApiName": "DA_DoodadJar18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "DoodadSack",
-      "opggName": "小玩意麻袋",
-      "productionId": "da_doodadsack18",
-      "nameZh": "小玩具袋",
-      "nameEn": "Doodad Sack",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "doodadsack",
-        "communityDragonApiName": "DA_DoodadSack18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Peddler",
-      "opggName": "小贩",
-      "productionId": "da_peddler18",
-      "nameZh": "小贩",
-      "nameEn": "Peddler",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "peddler",
-        "communityDragonApiName": "DA_Peddler18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Barrier",
-      "opggName": "屏障",
-      "productionId": "da_barrier18",
-      "nameZh": "屏障",
-      "nameEn": "Barrier",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "barrier",
-        "communityDragonApiName": "DA_Barrier18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "GiantsAura",
-      "opggName": "巨人光环",
-      "productionId": "da_giantsaura18",
-      "nameZh": "巨人光环",
-      "nameEn": "Giant's Aura",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "giantsaura",
-        "communityDragonApiName": "DA_GiantsAura18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "GiantGrowth",
-      "opggName": "巨大的增长",
-      "productionId": "da_18_giantgrowth",
-      "nameZh": "巨型增长",
-      "nameEn": "Giant Growth",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "giantgrowth",
-        "communityDragonApiName": "DA_18_GiantGrowth",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Lucky7",
-      "opggName": "幸运7",
-      "productionId": "da_lucky718",
-      "nameZh": "幸运7",
-      "nameEn": "Lucky 7",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "lucky7",
-        "communityDragonApiName": "DA_Lucky718",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PhantomEmblem",
-      "opggName": "幻影徽章",
-      "productionId": "da_phantomemblem18",
-      "nameZh": "幻影纹章",
-      "nameEn": "Phantom Emblem",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "phantomemblem",
-        "communityDragonApiName": "DA_PhantomEmblem18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PhantomGloves",
-      "opggName": "幻影手套",
-      "productionId": "da_phantomgloves18",
-      "nameZh": "幻影手套",
-      "nameEn": "Phantom Gloves",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "phantomgloves",
-        "communityDragonApiName": "DA_PhantomGloves18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PhantomVest",
-      "opggName": "幻影背心",
-      "productionId": "da_phantomvest18",
-      "nameZh": "幻影背心",
-      "nameEn": "Phantom Vest",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "phantomvest",
-        "communityDragonApiName": "DA_PhantomVest18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PhantomArmor",
-      "opggName": "幻影铠甲",
-      "productionId": "da_phantomarmor18",
-      "nameZh": "幻影护甲",
-      "nameEn": "Phantom Armor",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "phantomarmor",
-        "communityDragonApiName": "DA_PhantomArmor18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PhantomSplash",
-      "opggName": "幻影飞溅",
-      "productionId": "da_phantomsplash18",
-      "nameZh": "幻影浪花",
-      "nameEn": "Phantom Splash",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "phantomsplash",
-        "communityDragonApiName": "DA_PhantomSplash18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "AbandonShip",
-      "opggName": "弃船",
-      "productionId": "da_abandonship18",
-      "nameZh": "弃船",
-      "nameEn": "Abandon Ship",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "abandonship",
-        "communityDragonApiName": "DA_AbandonShip18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Salvager",
-      "opggName": "打捞者",
-      "productionId": "da_salvager18",
-      "nameZh": "打捞术",
-      "nameEn": "Salvager",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "salvager",
-        "communityDragonApiName": "DA_Salvager18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ImprovedReach",
-      "opggName": "扩大覆盖范围",
-      "productionId": "da_improvedreach18",
-      "nameZh": "瞄准镜",
-      "nameEn": "Improved Reach",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "improvedreach",
-        "communityDragonApiName": "DA_ImprovedReach18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "FoundFriend",
-      "opggName": "找到朋友",
-      "productionId": "da_foundfriend18",
-      "nameZh": "找个朋友",
-      "nameEn": "Found Friend",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "foundfriend",
-        "communityDragonApiName": "DA_FoundFriend18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Resistant",
-      "opggName": "抵抗",
-      "productionId": "da_18_resistant",
-      "nameZh": "抵抗",
-      "nameEn": "Resistant",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "resistant",
-        "communityDragonApiName": "DA_18_Resistant",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "SearchParty",
-      "opggName": "搜寻队",
-      "productionId": "da_searchparty18",
-      "nameZh": "搜查队",
-      "nameEn": "Search Party",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "searchparty",
-        "communityDragonApiName": "DA_SearchParty18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Fertilize",
-      "opggName": "施肥",
-      "productionId": "da_18_fertilize",
-      "nameZh": "肥料",
-      "nameEn": "Fertilize",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "fertilize",
-        "communityDragonApiName": "DA_18_Fertilize",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "EarlyFix",
-      "opggName": "早期修复",
-      "productionId": "da_18_earlyfix",
-      "nameZh": "防微杜渐",
-      "nameEn": "Early Fix",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "earlyfix",
-        "communityDragonApiName": "DA_18_EarlyFix",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Barter",
-      "opggName": "易货贸易",
-      "productionId": "da_barter18",
-      "nameZh": "以物易物",
-      "nameEn": "Barter",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "barter",
-        "communityDragonApiName": "DA_Barter18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Starfall",
-      "opggName": "星陨",
-      "productionId": "da_18_starfall",
-      "nameZh": "星落",
-      "nameEn": "Starfall",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "starfall",
-        "communityDragonApiName": "DA_18_Starfall",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "GreaterChaos",
-      "opggName": "更大的混乱",
-      "productionId": "da_greaterchaos18",
-      "nameZh": "拼一把大的！",
-      "nameEn": "Greater Chaos",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "greaterchaos",
-        "communityDragonApiName": "DA_GreaterChaos18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
       "opggSourceKey": "MoonlightRitual",
       "opggName": "月光仪式",
       "productionId": "da_moonlightritual18",
@@ -991,398 +11,6 @@
       "evidence": {
         "canonicalClientKey": "moonlightritual",
         "communityDragonApiName": "DA_MoonlightRitual18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Moonrise",
-      "opggName": "月出",
-      "productionId": "da_18_moonrise",
-      "nameZh": "皓月当空",
-      "nameEn": "Moonrise",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "moonrise",
-        "communityDragonApiName": "DA_18_Moonrise",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Mitosis",
-      "opggName": "有丝分裂",
-      "productionId": "da_18_mitosis",
-      "nameZh": "有丝分裂",
-      "nameEn": "Mitosis",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "mitosis",
-        "communityDragonApiName": "DA_18_Mitosis",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "KillingFrenzy",
-      "opggName": "杀戮狂潮",
-      "productionId": "da_18_killingfrenzy",
-      "nameZh": "屠戮狂暴",
-      "nameEn": "Killing Frenzy",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "killingfrenzy",
-        "communityDragonApiName": "DA_18_KillingFrenzy",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "KillersRegret",
-      "opggName": "杀手的遗憾",
-      "productionId": "da_killersregret18",
-      "nameZh": "侩子手的悔恨",
-      "nameEn": "Killer's Regret",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "killersregret",
-        "communityDragonApiName": "DA_KillersRegret18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BunchOBelts",
-      "opggName": "束腰带",
-      "productionId": "da_bunchobelts18",
-      "nameZh": "腰带批发",
-      "nameEn": "Bunch-o'-Belts",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "bunchobelts",
-        "communityDragonApiName": "DA_BunchOBelts18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BarkArmor",
-      "opggName": "树皮盔甲",
-      "productionId": "da_18_barkarmor",
-      "nameZh": "树皮护甲",
-      "nameEn": "Bark Armor",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "barkarmor",
-        "communityDragonApiName": "DA_18_BarkArmor",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "TreetopArchers",
-      "opggName": "树顶弓箭手",
-      "productionId": "da_treetoparchers",
-      "nameZh": "树顶弓箭手",
-      "nameEn": "Treetop Archers",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "treetoparchers",
-        "communityDragonApiName": "DA_TreetopArchers",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ForestTwins",
-      "opggName": "森林双胞胎",
-      "productionId": "da_foresttwins18",
-      "nameZh": "森林多胞胎",
-      "nameEn": "Forest Twins",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "foresttwins",
-        "communityDragonApiName": "DA_ForestTwins18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ForestGuide",
-      "opggName": "森林指南",
-      "productionId": "da_forestguide18",
-      "nameZh": "森林向导",
-      "nameEn": "Forest Guide",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "forestguide",
-        "communityDragonApiName": "DA_ForestGuide18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "ForestMage",
-      "opggName": "森林法师",
-      "productionId": "da_18_forestmage",
-      "nameZh": "森林魔法师",
-      "nameEn": "Forest Mage",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "forestmage",
-        "communityDragonApiName": "DA_18_ForestMage",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "MinorPolymorph",
-      "opggName": "次要多晶型物",
-      "productionId": "da_18_minorpolymorph",
-      "nameZh": "低阶变形术",
-      "nameEn": "Minor Polymorph",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "minorpolymorph",
-        "communityDragonApiName": "DA_18_MinorPolymorph",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Flow",
-      "opggName": "流程",
-      "productionId": "da_flow18",
-      "nameZh": "行云流水",
-      "nameEn": "Flow",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "flow",
-        "communityDragonApiName": "DA_Flow18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "RefreshingLight",
-      "opggName": "清爽的光线",
-      "productionId": "da_refreshinglight18",
-      "nameZh": "焕新之光",
-      "nameEn": "Refreshing Light",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "refreshinglight",
-        "communityDragonApiName": "DA_RefreshingLight18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "RollingBones",
-      "opggName": "滚骨头",
-      "productionId": "da_rollingbones18",
-      "nameZh": "骨头滚滚",
-      "nameEn": "Rolling Bones",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "rollingbones",
-        "communityDragonApiName": "DA_RollingBones18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "HeatedRivalry",
-      "opggName": "激烈的竞争",
-      "productionId": "da_18_heatedrivalry",
-      "nameZh": "鏖战不休",
-      "nameEn": "Heated Rivalry",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "heatedrivalry",
-        "communityDragonApiName": "DA_18_HeatedRivalry",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Blaze",
-      "opggName": "火焰",
-      "productionId": "da_blaze18",
-      "nameZh": "炽焰",
-      "nameEn": "Blaze",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "blaze",
-        "communityDragonApiName": "DA_Blaze18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Journeyman",
-      "opggName": "熟练工",
-      "productionId": "da_journeyman18",
-      "nameZh": "旅行者",
-      "nameEn": "Journeyman",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "journeyman",
-        "communityDragonApiName": "DA_Journeyman18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Combust",
-      "opggName": "燃烧",
-      "productionId": "da_combust18",
-      "nameZh": "易燃物",
-      "nameEn": "Combust",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "combust",
-        "communityDragonApiName": "DA_Combust18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "StandAlone",
-      "opggName": "独立",
-      "productionId": "da_standalone18",
-      "nameZh": "孤身站场",
-      "nameEn": "Stand Alone",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "standalone",
-        "communityDragonApiName": "DA_StandAlone18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "LivingSoil",
-      "opggName": "生命土壤",
-      "productionId": "da_livingsoil18",
-      "nameZh": "活体土壤",
-      "nameEn": "Living Soil",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "livingsoil",
-        "communityDragonApiName": "DA_LivingSoil18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PlatedShields",
-      "opggName": "电镀屏蔽",
-      "productionId": "da_platedshields18",
-      "nameZh": "镀板护盾",
-      "nameEn": "Plated Shields",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "platedshields",
-        "communityDragonApiName": "DA_PlatedShields18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "HandofBaron",
-      "opggName": "男爵之手",
-      "productionId": "da_handofbaron18",
-      "nameZh": "男爵之手",
-      "nameEn": "Hand Of Baron",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "handofbaron",
-        "communityDragonApiName": "DA_HandOfBaron18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PetrifiedDummy",
-      "opggName": "石化假人",
-      "productionId": "da_petrifieddummy18",
-      "nameZh": "石化术",
-      "nameEn": "Petrified Dummy",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "petrifieddummy",
-        "communityDragonApiName": "DA_PetrifiedDummy18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "PetrifyShields",
-      "opggName": "石化护盾",
-      "productionId": "da_petrifyshields18",
-      "nameZh": "破盾秘法",
-      "nameEn": "Petrify Shields",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "petrifyshields",
-        "communityDragonApiName": "DA_PetrifyShields18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "TatteredArmor",
-      "opggName": "破烂的盔甲",
-      "productionId": "da_18_tatteredarmor",
-      "nameZh": "衣衫褴褛",
-      "nameEn": "Tattered Armor",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "tatteredarmor",
-        "communityDragonApiName": "DA_18_TatteredArmor",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "CoinFlip",
-      "opggName": "硬币翻转",
-      "productionId": "da_coinflip18",
-      "nameZh": "抛硬币",
-      "nameEn": "Coin Flip",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "coinflip",
-        "communityDragonApiName": "DA_CoinFlip18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Artifactinate",
-      "opggName": "神器",
-      "productionId": "da_artifactinate18",
-      "nameZh": "神器化",
-      "nameEn": "Artifactinate",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "artifactinate",
-        "communityDragonApiName": "DA_Artifactinate18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Cutpurse",
-      "opggName": "窃贼",
-      "productionId": "da_cutpurse18",
-      "nameZh": "梁上君子",
-      "nameEn": "Cutpurse",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "cutpurse",
-        "communityDragonApiName": "DA_Cutpurse18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1402,239 +30,155 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Experienced",
-      "opggName": "经验丰富",
-      "productionId": "da_18_experienced",
-      "nameZh": "老练",
-      "nameEn": "Experienced",
+      "opggSourceKey": "Hireling",
+      "opggName": "雇佣兵",
+      "productionId": "da_hireling18",
+      "nameZh": "雇佣兵",
+      "nameEn": "Hireling",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "experienced",
-        "communityDragonApiName": "DA_18_Experienced",
+        "canonicalClientKey": "hireling",
+        "communityDragonApiName": "DA_Hireling18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "SlowStudy",
-      "opggName": "缓慢学习",
-      "productionId": "da_slowstudy18",
-      "nameZh": "慢速学习",
-      "nameEn": "Slow Study",
+      "opggSourceKey": "BackrowStar",
+      "opggName": "后排星",
+      "productionId": "da_18_backrowstar",
+      "nameZh": "后排之星",
+      "nameEn": "Backrow Star",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "slowstudy",
-        "communityDragonApiName": "DA_SlowStudy18",
+        "canonicalClientKey": "backrowstar",
+        "communityDragonApiName": "DA_18_BackrowStar",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "FlipFrenzy",
-      "opggName": "翻转疯狂",
-      "productionId": "da_flipfrenzy18",
-      "nameZh": "疯狂掷币人",
-      "nameEn": "Flip Frenzy",
+      "opggSourceKey": "Mitosis",
+      "opggName": "有丝分裂",
+      "productionId": "da_18_mitosis",
+      "nameZh": "有丝分裂",
+      "nameEn": "Mitosis",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "flipfrenzy",
-        "communityDragonApiName": "DA_FlipFrenzy18",
+        "canonicalClientKey": "mitosis",
+        "communityDragonApiName": "DA_18_Mitosis",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "FieldofMice",
-      "opggName": "老鼠场",
-      "productionId": "da_18_fieldofmice",
-      "nameZh": "小人国",
-      "nameEn": "Field of Mice",
+      "opggSourceKey": "PhantomSplash",
+      "opggName": "幻影飞溅",
+      "productionId": "da_phantomsplash18",
+      "nameZh": "幻影浪花",
+      "nameEn": "Phantom Splash",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "fieldofmice",
-        "communityDragonApiName": "DA_18_FieldofMice",
+        "canonicalClientKey": "phantomsplash",
+        "communityDragonApiName": "DA_PhantomSplash18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "NaturesWrath",
-      "opggName": "自然之怒",
-      "productionId": "da_natureswrath18",
-      "nameZh": "自然之怒",
-      "nameEn": "Nature's Wrath",
+      "opggSourceKey": "BarkArmor",
+      "opggName": "树皮盔甲",
+      "productionId": "da_18_barkarmor",
+      "nameZh": "树皮护甲",
+      "nameEn": "Bark Armor",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "natureswrath",
-        "communityDragonApiName": "DA_NaturesWrath18",
+        "canonicalClientKey": "barkarmor",
+        "communityDragonApiName": "DA_18_BarkArmor",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Freeroller",
-      "opggName": "自由选手",
-      "productionId": "da_18_freeroller",
-      "nameZh": "免费刷新术",
-      "nameEn": "Freeroller",
+      "opggSourceKey": "Lucky7",
+      "opggName": "幸运7",
+      "productionId": "da_lucky718",
+      "nameZh": "幸运7",
+      "nameEn": "Lucky 7",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "freeroller",
-        "communityDragonApiName": "DA_18_Freeroller",
+        "canonicalClientKey": "lucky7",
+        "communityDragonApiName": "DA_Lucky718",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "HeroicSacrifice",
-      "opggName": "英勇牺牲",
-      "productionId": "da_18_heroicsacrifice",
-      "nameZh": "英勇就义",
-      "nameEn": "Heroic Sacrifice",
+      "opggSourceKey": "Preppers",
+      "opggName": "准备者",
+      "productionId": "da_18_preppers",
+      "nameZh": "未雨绸缪",
+      "nameEn": "Preppers",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "heroicsacrifice",
-        "communityDragonApiName": "DA_18_HeroicSacrifice",
+        "canonicalClientKey": "preppers",
+        "communityDragonApiName": "DA_18_Preppers",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "HerosEntrance",
-      "opggName": "英雄的入口",
-      "productionId": "da_herosentrance18",
-      "nameZh": "英雄登场",
-      "nameEn": "Hero's Entrance",
+      "opggSourceKey": "Hugify",
+      "opggName": "Hugify",
+      "productionId": "da_hugify18",
+      "nameZh": "巨大化",
+      "nameEn": "Hugify",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "herosentrance",
-        "communityDragonApiName": "DA_HerosEntrance18",
+        "canonicalClientKey": "hugify",
+        "communityDragonApiName": "DA_Hugify18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "WrappedinThorns",
-      "opggName": "荆棘丛生",
-      "productionId": "da_wrappedinthorns18",
-      "nameZh": "荆棘环身",
-      "nameEn": "Wrapped In Thorns",
+      "opggSourceKey": "Journeyman",
+      "opggName": "熟练工",
+      "productionId": "da_journeyman18",
+      "nameZh": "旅行者",
+      "nameEn": "Journeyman",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "wrappedinthorns",
-        "communityDragonApiName": "DA_WrappedInThorns18",
+        "canonicalClientKey": "journeyman",
+        "communityDragonApiName": "DA_Journeyman18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "HomingFireflies",
-      "opggName": "萤火虫归巢",
-      "productionId": "da_homingfireflies18",
-      "nameZh": "萤火虫之家",
-      "nameEn": "Homing Fireflies",
+      "opggSourceKey": "Barrier",
+      "opggName": "屏障",
+      "productionId": "da_barrier18",
+      "nameZh": "屏障",
+      "nameEn": "Barrier",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "homingfireflies",
-        "communityDragonApiName": "DA_HomingFireflies18",
+        "canonicalClientKey": "barrier",
+        "communityDragonApiName": "DA_Barrier18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Smurfing",
-      "opggName": "蓝精灵",
-      "productionId": "da_smurfing18",
-      "nameZh": "炸鱼行为",
-      "nameEn": "Smurfing",
+      "opggSourceKey": "RefreshingLight",
+      "opggName": "清爽的光线",
+      "productionId": "da_refreshinglight18",
+      "nameZh": "焕新之光",
+      "nameEn": "Refreshing Light",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "smurfing",
-        "communityDragonApiName": "DA_Smurfing18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "Hummingbird",
-      "opggName": "蜂鸟",
-      "productionId": "da_18_hummingbird",
-      "nameZh": "蜂鸟",
-      "nameEn": "Hummingbird",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "hummingbird",
-        "communityDragonApiName": "DA_18_Hummingbird",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BloodandIron",
-      "opggName": "血与铁",
-      "productionId": "da_bloodandiron18",
-      "nameZh": "鲜血与铁",
-      "nameEn": "Blood and Iron",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "bloodandiron",
-        "communityDragonApiName": "DA_BloodAndIron18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "BloodMoney",
-      "opggName": "血钱",
-      "productionId": "da_18_bloodmoney",
-      "nameZh": "染血之币",
-      "nameEn": "Blood Money",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "bloodmoney",
-        "communityDragonApiName": "DA_18_BloodMoney",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "DoodadBag",
-      "opggName": "装饰袋",
-      "productionId": "da_doodadbag18",
-      "nameZh": "小玩具包",
-      "nameEn": "Doodad Bag",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "doodadbag",
-        "communityDragonApiName": "DA_DoodadBag18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "TrainingYard",
-      "opggName": "训练场",
-      "productionId": "da_trainingyard18",
-      "nameZh": "训练场",
-      "nameEn": "Training Yard",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "trainingyard",
-        "communityDragonApiName": "DA_TrainingYard18",
-        "variantKind": "base"
-      },
-      "confidence": "confirmed"
-    },
-    {
-      "opggSourceKey": "StartingTown",
-      "opggName": "起始城镇",
-      "productionId": "da_startingtown18",
-      "nameZh": "新手村",
-      "nameEn": "Starting Town",
-      "matchMethod": "exact_client_key",
-      "evidence": {
-        "canonicalClientKey": "startingtown",
-        "communityDragonApiName": "DA_StartingTown18",
+        "canonicalClientKey": "refreshinglight",
+        "communityDragonApiName": "DA_RefreshingLight18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1654,15 +198,771 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "UltraAscension",
-      "opggName": "超提升",
-      "productionId": "da_18_ultraascension",
-      "nameZh": "终极飞升",
-      "nameEn": "Ultra Ascension",
+      "opggSourceKey": "SlowStudy",
+      "opggName": "缓慢学习",
+      "productionId": "da_slowstudy18",
+      "nameZh": "慢速学习",
+      "nameEn": "Slow Study",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "ultraascension",
-        "communityDragonApiName": "DA_18_UltraAscension",
+        "canonicalClientKey": "slowstudy",
+        "communityDragonApiName": "DA_SlowStudy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Fellowship",
+      "opggName": "奖学金",
+      "productionId": "da_18_fellowship",
+      "nameZh": "贴贴",
+      "nameEn": "Fellowship",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "fellowship",
+        "communityDragonApiName": "DA_18_Fellowship",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Grandmaster",
+      "opggName": "宗师",
+      "productionId": "da_grandmaster18",
+      "nameZh": "奇境宗师",
+      "nameEn": "Grandmaster",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "grandmaster",
+        "communityDragonApiName": "DA_Grandmaster18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Jungling",
+      "opggName": "丛林",
+      "productionId": "da_jungling18",
+      "nameZh": "野区",
+      "nameEn": "Jungling",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "jungling",
+        "communityDragonApiName": "DA_Jungling18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AbandonShip",
+      "opggName": "弃船",
+      "productionId": "da_abandonship18",
+      "nameZh": "弃船",
+      "nameEn": "Abandon Ship",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "abandonship",
+        "communityDragonApiName": "DA_AbandonShip18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BigGuns",
+      "opggName": "大枪",
+      "productionId": "da_bigguns18",
+      "nameZh": "大腕",
+      "nameEn": "Big Guns",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bigguns",
+        "communityDragonApiName": "DA_BigGuns18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Terraforming",
+      "opggName": "地形改造",
+      "productionId": "da_terraforming18",
+      "nameZh": "生态改造",
+      "nameEn": "Terraforming",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "terraforming",
+        "communityDragonApiName": "DA_Terraforming18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Moonrise",
+      "opggName": "月出",
+      "productionId": "da_18_moonrise",
+      "nameZh": "皓月当空",
+      "nameEn": "Moonrise",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "moonrise",
+        "communityDragonApiName": "DA_18_Moonrise",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BorrowedGear",
+      "opggName": "借来的装备",
+      "productionId": "da_borrowedgear18",
+      "nameZh": "借来的装备",
+      "nameEn": "Borrowed Gear",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "borrowedgear",
+        "communityDragonApiName": "DA_BorrowedGear18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MarksmensGale",
+      "opggName": "射手之风",
+      "productionId": "da_marksmensgale18",
+      "nameZh": "射手狂风",
+      "nameEn": "Marksmen's Gale",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "marksmensgale",
+        "communityDragonApiName": "DA_MarksmensGale18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BigBoom",
+      "opggName": "大繁荣",
+      "productionId": "da_bigboom18",
+      "nameZh": "大爆炸",
+      "nameEn": "Big Boom",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bigboom",
+        "communityDragonApiName": "DA_BigBoom18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LightningStrike",
+      "opggName": "雷击",
+      "productionId": "da_18_lightningstrike",
+      "nameZh": "闪电打击",
+      "nameEn": "Lightning Strike",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lightningstrike",
+        "communityDragonApiName": "DA_18_LightningStrike",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SolarGift",
+      "opggName": "太阳能礼物",
+      "productionId": "da_solargift18",
+      "nameZh": "日蚀之礼",
+      "nameEn": "Solar Gift",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "solargift",
+        "communityDragonApiName": "DA_SolarGift18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PlatedShields",
+      "opggName": "电镀屏蔽",
+      "productionId": "da_platedshields18",
+      "nameZh": "镀板护盾",
+      "nameEn": "Plated Shields",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "platedshields",
+        "communityDragonApiName": "DA_PlatedShields18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MinorPolymorph",
+      "opggName": "次要多晶型物",
+      "productionId": "da_18_minorpolymorph",
+      "nameZh": "低阶变形术",
+      "nameEn": "Minor Polymorph",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "minorpolymorph",
+        "communityDragonApiName": "DA_18_MinorPolymorph",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Tremors",
+      "opggName": "震颤",
+      "productionId": "da_18_tremors",
+      "nameZh": "地动山摇",
+      "nameEn": "Tremors",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "tremors",
+        "communityDragonApiName": "DA_18_Tremors",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HomingFireflies",
+      "opggName": "萤火虫归巢",
+      "productionId": "da_homingfireflies18",
+      "nameZh": "萤火虫之家",
+      "nameEn": "Homing Fireflies",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "homingfireflies",
+        "communityDragonApiName": "DA_HomingFireflies18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Payday",
+      "opggName": "发薪日",
+      "productionId": "da_18_payday",
+      "nameZh": "庆功宴",
+      "nameEn": "Payday",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "payday",
+        "communityDragonApiName": "DA_18_Payday",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KnickKnackSack",
+      "opggName": "小摆设袋",
+      "productionId": "da_knickknacksack18",
+      "nameZh": "小饰品袋",
+      "nameEn": "Knick-Knack Sack",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "knickknacksack",
+        "communityDragonApiName": "DA_KnickKnackSack18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Propagate",
+      "opggName": "传播",
+      "productionId": "da_18_propagate",
+      "nameZh": "繁殖",
+      "nameEn": "Propagate",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "propagate",
+        "communityDragonApiName": "DA_18_Propagate",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HeatedRivalry",
+      "opggName": "激烈的竞争",
+      "productionId": "da_18_heatedrivalry",
+      "nameZh": "鏖战不休",
+      "nameEn": "Heated Rivalry",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "heatedrivalry",
+        "communityDragonApiName": "DA_18_HeatedRivalry",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Artifactinate",
+      "opggName": "神器",
+      "productionId": "da_artifactinate18",
+      "nameZh": "神器化",
+      "nameEn": "Artifactinate",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "artifactinate",
+        "communityDragonApiName": "DA_Artifactinate18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Hummingbird",
+      "opggName": "蜂鸟",
+      "productionId": "da_18_hummingbird",
+      "nameZh": "蜂鸟",
+      "nameEn": "Hummingbird",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "hummingbird",
+        "communityDragonApiName": "DA_18_Hummingbird",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BronzeSpoon",
+      "opggName": "青铜勺子",
+      "productionId": "da_18_bronzespoon",
+      "nameZh": "铜汤匙",
+      "nameEn": "Bronze Spoon",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bronzespoon",
+        "communityDragonApiName": "DA_18_BronzeSpoon",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllFives",
+      "opggName": "五五开",
+      "productionId": "da_18_allfives",
+      "nameZh": "全5费商店",
+      "nameEn": "All Fives",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allfives",
+        "communityDragonApiName": "DA_18_AllFives",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KillingFrenzy",
+      "opggName": "杀戮狂潮",
+      "productionId": "da_18_killingfrenzy",
+      "nameZh": "屠戮狂暴",
+      "nameEn": "Killing Frenzy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "killingfrenzy",
+        "communityDragonApiName": "DA_18_KillingFrenzy",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Revenge",
+      "opggName": "复仇",
+      "productionId": "da_revenge18",
+      "nameZh": "复仇",
+      "nameEn": "Revenge",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "revenge",
+        "communityDragonApiName": "DA_Revenge18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ImprovedReach",
+      "opggName": "扩大覆盖范围",
+      "productionId": "da_improvedreach18",
+      "nameZh": "瞄准镜",
+      "nameEn": "Improved Reach",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "improvedreach",
+        "communityDragonApiName": "DA_ImprovedReach18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HerosEntrance",
+      "opggName": "英雄的入口",
+      "productionId": "da_herosentrance18",
+      "nameZh": "英雄登场",
+      "nameEn": "Hero's Entrance",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "herosentrance",
+        "communityDragonApiName": "DA_HerosEntrance18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Potioncraft",
+      "opggName": "魔药工艺",
+      "productionId": "da_potioncraft18",
+      "nameZh": "药学博士",
+      "nameEn": "Potioncraft",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "potioncraft",
+        "communityDragonApiName": "DA_Potioncraft18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Quicken",
+      "opggName": "加快",
+      "productionId": "da_quicken18",
+      "nameZh": "加速",
+      "nameEn": "Quicken",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "quicken",
+        "communityDragonApiName": "DA_Quicken18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ManaRichSoil",
+      "opggName": "富含法力的土壤",
+      "productionId": "da_manarichsoil18",
+      "nameZh": "富魔之壤",
+      "nameEn": "Mana-Rich Soil",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "manarichsoil",
+        "communityDragonApiName": "DA_ManaRichSoil18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LightningStorm",
+      "opggName": "闪电风暴",
+      "productionId": "da_18_lightningstorm",
+      "nameZh": "闪电风暴",
+      "nameEn": "Lightning Storm",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lightningstorm",
+        "communityDragonApiName": "DA_18_LightningStorm",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LostTravelers",
+      "opggName": "迷路的旅行者",
+      "productionId": "da_18_losttravelers",
+      "nameZh": "迷路的游客",
+      "nameEn": "Lost Travelers",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "losttravelers",
+        "communityDragonApiName": "DA_18_LostTravelers",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ForestMage",
+      "opggName": "森林法师",
+      "productionId": "da_18_forestmage",
+      "nameZh": "森林魔法师",
+      "nameEn": "Forest Mage",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "forestmage",
+        "communityDragonApiName": "DA_18_ForestMage",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomArmor",
+      "opggName": "幻影铠甲",
+      "productionId": "da_phantomarmor18",
+      "nameZh": "幻影护甲",
+      "nameEn": "Phantom Armor",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomarmor",
+        "communityDragonApiName": "DA_PhantomArmor18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TatteredArmor",
+      "opggName": "破烂的盔甲",
+      "productionId": "da_18_tatteredarmor",
+      "nameZh": "衣衫褴褛",
+      "nameEn": "Tattered Armor",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "tatteredarmor",
+        "communityDragonApiName": "DA_18_TatteredArmor",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DoodadSack",
+      "opggName": "小玩意麻袋",
+      "productionId": "da_doodadsack18",
+      "nameZh": "小玩具袋",
+      "nameEn": "Doodad Sack",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "doodadsack",
+        "communityDragonApiName": "DA_DoodadSack18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "NaturesWrath",
+      "opggName": "自然之怒",
+      "productionId": "da_natureswrath18",
+      "nameZh": "自然之怒",
+      "nameEn": "Nature's Wrath",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "natureswrath",
+        "communityDragonApiName": "DA_NaturesWrath18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SearchParty",
+      "opggName": "搜寻队",
+      "productionId": "da_searchparty18",
+      "nameZh": "搜查队",
+      "nameEn": "Search Party",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "searchparty",
+        "communityDragonApiName": "DA_SearchParty18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KillersRegret",
+      "opggName": "杀手的遗憾",
+      "productionId": "da_killersregret18",
+      "nameZh": "侩子手的悔恨",
+      "nameEn": "Killer's Regret",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "killersregret",
+        "communityDragonApiName": "DA_KillersRegret18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KnickKnackJar",
+      "opggName": "小摆设罐",
+      "productionId": "da_knickknackjar18",
+      "nameZh": "小饰品罐",
+      "nameEn": "Knick-Knack Jar",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "knickknackjar",
+        "communityDragonApiName": "DA_KnickKnackJar18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Counterspell",
+      "opggName": "反咒语",
+      "productionId": "da_18_counterspell",
+      "nameZh": "法术反制",
+      "nameEn": "Counterspell",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "counterspell",
+        "communityDragonApiName": "DA_18_Counterspell",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomGloves",
+      "opggName": "幻影手套",
+      "productionId": "da_phantomgloves18",
+      "nameZh": "幻影手套",
+      "nameEn": "Phantom Gloves",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomgloves",
+        "communityDragonApiName": "DA_PhantomGloves18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "EarlyFix",
+      "opggName": "早期修复",
+      "productionId": "da_18_earlyfix",
+      "nameZh": "防微杜渐",
+      "nameEn": "Early Fix",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "earlyfix",
+        "communityDragonApiName": "DA_18_EarlyFix",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BloodandIron",
+      "opggName": "血与铁",
+      "productionId": "da_bloodandiron18",
+      "nameZh": "鲜血与铁",
+      "nameEn": "Blood and Iron",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bloodandiron",
+        "communityDragonApiName": "DA_BloodAndIron18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DieRoll",
+      "opggName": "骰子",
+      "productionId": "da_dieroll18",
+      "nameZh": "掷骰子",
+      "nameEn": "Die Roll",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "dieroll",
+        "communityDragonApiName": "DA_DieRoll18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Bulwark",
+      "opggName": "壁垒",
+      "productionId": "da_bulwark18",
+      "nameZh": "壁垒",
+      "nameEn": "Bulwark",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bulwark",
+        "communityDragonApiName": "DA_Bulwark18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ForestTwins",
+      "opggName": "森林双胞胎",
+      "productionId": "da_foresttwins18",
+      "nameZh": "森林多胞胎",
+      "nameEn": "Forest Twins",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "foresttwins",
+        "communityDragonApiName": "DA_ForestTwins18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Apprentice",
+      "opggName": "学徒",
+      "productionId": "da_apprentice18",
+      "nameZh": "学徒",
+      "nameEn": "Apprentice",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "apprentice",
+        "communityDragonApiName": "DA_Apprentice18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "ForestGuide",
+      "opggName": "森林指南",
+      "productionId": "da_forestguide18",
+      "nameZh": "森林向导",
+      "nameEn": "Forest Guide",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "forestguide",
+        "communityDragonApiName": "DA_ForestGuide18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Peddler",
+      "opggName": "小贩",
+      "productionId": "da_peddler18",
+      "nameZh": "小贩",
+      "nameEn": "Peddler",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "peddler",
+        "communityDragonApiName": "DA_Peddler18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SunfireSorcery",
+      "opggName": "阳火魔法",
+      "productionId": "da_18_sunfiresorcery",
+      "nameZh": "日炎巫术",
+      "nameEn": "Sunfire Sorcery",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "sunfiresorcery",
+        "communityDragonApiName": "DA_18_SunfireSorcery",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GoldenGoose",
+      "opggName": "金鹅",
+      "productionId": "da_goldengoose18",
+      "nameZh": "招财猫",
+      "nameEn": "Golden Goose",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "goldengoose",
+        "communityDragonApiName": "DA_GoldenGoose18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "IdleCraftsman",
+      "opggName": "闲置工匠",
+      "productionId": "da_idlecraftsman18",
+      "nameZh": "闲散工匠",
+      "nameEn": "Idle Craftsman",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "idlecraftsman",
+        "communityDragonApiName": "DA_IdleCraftsman18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1696,43 +996,57 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "BorderVillage",
-      "opggName": "边境村",
-      "productionId": "da_bordervillage18",
-      "nameZh": "边境村庄",
-      "nameEn": "Border Village",
+      "opggSourceKey": "ProlificPower",
+      "opggName": "多产的力量",
+      "productionId": "da_18_prolificpower",
+      "nameZh": "元气满满",
+      "nameEn": "Prolific Power",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "bordervillage",
-        "communityDragonApiName": "DA_BorderVillage18",
+        "canonicalClientKey": "prolificpower",
+        "communityDragonApiName": "DA_18_ProlificPower",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "LostTravelers",
-      "opggName": "迷路的旅行者",
-      "productionId": "da_18_losttravelers",
-      "nameZh": "迷路的游客",
-      "nameEn": "Lost Travelers",
+      "opggSourceKey": "WrappedinThorns",
+      "opggName": "荆棘丛生",
+      "productionId": "da_wrappedinthorns18",
+      "nameZh": "荆棘环身",
+      "nameEn": "Wrapped In Thorns",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "losttravelers",
-        "communityDragonApiName": "DA_18_LostTravelers",
+        "canonicalClientKey": "wrappedinthorns",
+        "communityDragonApiName": "DA_WrappedInThorns18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "GoldenGoose",
-      "opggName": "金鹅",
-      "productionId": "da_goldengoose18",
-      "nameZh": "招财猫",
-      "nameEn": "Golden Goose",
+      "opggSourceKey": "DoodadBag",
+      "opggName": "装饰袋",
+      "productionId": "da_doodadbag18",
+      "nameZh": "小玩具包",
+      "nameEn": "Doodad Bag",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "goldengoose",
-        "communityDragonApiName": "DA_GoldenGoose18",
+        "canonicalClientKey": "doodadbag",
+        "communityDragonApiName": "DA_DoodadBag18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RidetheWave",
+      "opggName": "乘风破浪",
+      "productionId": "da_ridethewave18",
+      "nameZh": "顺流而下",
+      "nameEn": "Ride the Wave",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ridethewave",
+        "communityDragonApiName": "DA_RideTheWave18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1752,43 +1066,43 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "IronCore",
-      "opggName": "铁芯",
-      "productionId": "da_ironcore18",
-      "nameZh": "钢铁核心",
-      "nameEn": "Iron Core",
+      "opggSourceKey": "HeroofProphecy",
+      "opggName": "预言英雄",
+      "productionId": "da_heroofprophecy18",
+      "nameZh": "预言之子",
+      "nameEn": "Hero Of Prophecy",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "ironcore",
-        "communityDragonApiName": "DA_IronCore18",
+        "canonicalClientKey": "heroofprophecy",
+        "communityDragonApiName": "DA_HeroOfProphecy18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "GrowUp",
-      "opggName": "长大",
-      "productionId": "da_growup18",
-      "nameZh": "长大",
-      "nameEn": "Grow Up",
+      "opggSourceKey": "Scrappy",
+      "opggName": "好斗",
+      "productionId": "da_scrappy18",
+      "nameZh": "零碎",
+      "nameEn": "Scrappy",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "growup",
-        "communityDragonApiName": "DA_GrowUp18",
+        "canonicalClientKey": "scrappy",
+        "communityDragonApiName": "DA_Scrappy18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "CircleofElders",
-      "opggName": "长老圈子",
-      "productionId": "da_18_circleofelders",
-      "nameZh": "长者之环",
-      "nameEn": "Circle of Elders",
+      "opggSourceKey": "ThreeMe",
+      "opggName": "三个我",
+      "productionId": "da_threeme18",
+      "nameZh": "对影成三",
+      "nameEn": "Three Me",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "circleofelders",
-        "communityDragonApiName": "DA_18_CircleofElders",
+        "canonicalClientKey": "threeme",
+        "communityDragonApiName": "DA_ThreeMe18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1808,85 +1122,505 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "LightningStorm",
-      "opggName": "闪电风暴",
-      "productionId": "da_18_lightningstorm",
-      "nameZh": "闪电风暴",
-      "nameEn": "Lightning Storm",
+      "opggSourceKey": "AllThrees",
+      "opggName": "三人行",
+      "productionId": "da_18_allthrees",
+      "nameZh": "全3费商店",
+      "nameEn": "All Threes",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "lightningstorm",
-        "communityDragonApiName": "DA_18_LightningStorm",
+        "canonicalClientKey": "allthrees",
+        "communityDragonApiName": "DA_18_AllThrees",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "IdleCraftsman",
-      "opggName": "闲置工匠",
-      "productionId": "da_idlecraftsman18",
-      "nameZh": "闲散工匠",
-      "nameEn": "Idle Craftsman",
+      "opggSourceKey": "LateBloomer",
+      "opggName": "大器晚成",
+      "productionId": "da_latebloomer18",
+      "nameZh": "大器晚成",
+      "nameEn": "Late Bloomer",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "idlecraftsman",
-        "communityDragonApiName": "DA_IdleCraftsman18",
+        "canonicalClientKey": "latebloomer",
+        "communityDragonApiName": "DA_LateBloomer18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "SunfireSorcery",
-      "opggName": "阳火魔法",
-      "productionId": "da_18_sunfiresorcery",
-      "nameZh": "日炎巫术",
-      "nameEn": "Sunfire Sorcery",
+      "opggSourceKey": "AnimateShop",
+      "opggName": "动画商店",
+      "productionId": "da_animateshop18",
+      "nameZh": "活体商店",
+      "nameEn": "Animate Shop",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "sunfiresorcery",
-        "communityDragonApiName": "DA_18_SunfireSorcery",
+        "canonicalClientKey": "animateshop",
+        "communityDragonApiName": "DA_AnimateShop18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Stealthy",
-      "opggName": "隐秘",
-      "productionId": "da_stealthy18",
-      "nameZh": "鬼鬼祟祟",
-      "nameEn": "Stealthy",
+      "opggSourceKey": "PhantomEmblem",
+      "opggName": "幻影徽章",
+      "productionId": "da_phantomemblem18",
+      "nameZh": "幻影纹章",
+      "nameEn": "Phantom Emblem",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "stealthy",
-        "communityDragonApiName": "DA_Stealthy18",
+        "canonicalClientKey": "phantomemblem",
+        "communityDragonApiName": "DA_PhantomEmblem18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Hireling",
-      "opggName": "雇佣兵",
-      "productionId": "da_hireling18",
-      "nameZh": "雇佣兵",
-      "nameEn": "Hireling",
+      "opggSourceKey": "Starfall",
+      "opggName": "星陨",
+      "productionId": "da_18_starfall",
+      "nameZh": "星落",
+      "nameEn": "Starfall",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "hireling",
-        "communityDragonApiName": "DA_Hireling18",
+        "canonicalClientKey": "starfall",
+        "communityDragonApiName": "DA_18_Starfall",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "MercenaryForce",
-      "opggName": "雇佣军",
-      "productionId": "da_18_mercenaryforce",
-      "nameZh": "金钱之力",
-      "nameEn": "Mercenary Force",
+      "opggSourceKey": "CoinFlip",
+      "opggName": "硬币翻转",
+      "productionId": "da_coinflip18",
+      "nameZh": "抛硬币",
+      "nameEn": "Coin Flip",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "mercenaryforce",
-        "communityDragonApiName": "DA_18_MercenaryForce",
+        "canonicalClientKey": "coinflip",
+        "communityDragonApiName": "DA_CoinFlip18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RollingBones",
+      "opggName": "滚骨头",
+      "productionId": "da_rollingbones18",
+      "nameZh": "骨头滚滚",
+      "nameEn": "Rolling Bones",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "rollingbones",
+        "communityDragonApiName": "DA_RollingBones18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FlipFrenzy",
+      "opggName": "翻转疯狂",
+      "productionId": "da_flipfrenzy18",
+      "nameZh": "疯狂掷币人",
+      "nameEn": "Flip Frenzy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "flipfrenzy",
+        "communityDragonApiName": "DA_FlipFrenzy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GrowUp",
+      "opggName": "长大",
+      "productionId": "da_growup18",
+      "nameZh": "长大",
+      "nameEn": "Grow Up",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "growup",
+        "communityDragonApiName": "DA_GrowUp18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MiddlePath",
+      "opggName": "中间路径",
+      "productionId": "da_middlepath18",
+      "nameZh": "中央大道",
+      "nameEn": "Middle Path",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "middlepath",
+        "communityDragonApiName": "DA_MiddlePath18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "UltraAscension",
+      "opggName": "超提升",
+      "productionId": "da_18_ultraascension",
+      "nameZh": "终极飞升",
+      "nameEn": "Ultra Ascension",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ultraascension",
+        "communityDragonApiName": "DA_18_UltraAscension",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TrophyHunter",
+      "opggName": "奖杯猎人",
+      "productionId": "da_trophyhunter18",
+      "nameZh": "猎手的黄金之路",
+      "nameEn": "Trophy Hunter",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "trophyhunter",
+        "communityDragonApiName": "DA_TrophyHunter18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GreaterChaos",
+      "opggName": "更大的混乱",
+      "productionId": "da_greaterchaos18",
+      "nameZh": "拼一把大的！",
+      "nameEn": "Greater Chaos",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "greaterchaos",
+        "communityDragonApiName": "DA_GreaterChaos18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllTwos",
+      "opggName": "全两",
+      "productionId": "da_18_alltwos",
+      "nameZh": "全2费商店",
+      "nameEn": "All Twos",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "alltwos",
+        "communityDragonApiName": "DA_18_AllTwos",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "KnickKnackBag",
+      "opggName": "小摆设袋",
+      "productionId": "da_knickknackbag18",
+      "nameZh": "小饰品包",
+      "nameEn": "Knick-Knack Bag",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "knickknackbag",
+        "communityDragonApiName": "DA_KnickKnackBag18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BoosterShot",
+      "opggName": "助推器射击",
+      "productionId": "da_boostershot18",
+      "nameZh": "强化激素",
+      "nameEn": "Booster Shot",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "boostershot",
+        "communityDragonApiName": "DA_BoosterShot18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "StartingTown",
+      "opggName": "起始城镇",
+      "productionId": "da_startingtown18",
+      "nameZh": "新手村",
+      "nameEn": "Starting Town",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "startingtown",
+        "communityDragonApiName": "DA_StartingTown18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Blaze",
+      "opggName": "火焰",
+      "productionId": "da_blaze18",
+      "nameZh": "炽焰",
+      "nameEn": "Blaze",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "blaze",
+        "communityDragonApiName": "DA_Blaze18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LifeDebt",
+      "opggName": "人生债务",
+      "productionId": "da_18_lifedebt",
+      "nameZh": "以命为注",
+      "nameEn": "Life Debt",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "lifedebt",
+        "communityDragonApiName": "DA_18_LifeDebt",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "SolitudesCloak",
+      "opggName": "孤独斗篷",
+      "productionId": "da_solitudescloak18",
+      "nameZh": "独行斗篷",
+      "nameEn": "Solitude's Cloak",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "solitudescloak",
+        "communityDragonApiName": "DA_SolitudesCloak18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Salvager",
+      "opggName": "打捞者",
+      "productionId": "da_salvager18",
+      "nameZh": "打捞术",
+      "nameEn": "Salvager",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "salvager",
+        "communityDragonApiName": "DA_Salvager18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GiantGrowth",
+      "opggName": "巨大的增长",
+      "productionId": "da_18_giantgrowth",
+      "nameZh": "巨型增长",
+      "nameEn": "Giant Growth",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "giantgrowth",
+        "communityDragonApiName": "DA_18_GiantGrowth",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "StandAlone",
+      "opggName": "独立",
+      "productionId": "da_standalone18",
+      "nameZh": "孤身站场",
+      "nameEn": "Stand Alone",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "standalone",
+        "communityDragonApiName": "DA_StandAlone18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Cutpurse",
+      "opggName": "窃贼",
+      "productionId": "da_cutpurse18",
+      "nameZh": "梁上君子",
+      "nameEn": "Cutpurse",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "cutpurse",
+        "communityDragonApiName": "DA_Cutpurse18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "DoodadJar",
+      "opggName": "小玩意罐",
+      "productionId": "da_doodadjar18",
+      "nameZh": "小玩具罐",
+      "nameEn": "Doodad Jar",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "doodadjar",
+        "communityDragonApiName": "DA_DoodadJar18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Combust",
+      "opggName": "燃烧",
+      "productionId": "da_combust18",
+      "nameZh": "易燃物",
+      "nameEn": "Combust",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "combust",
+        "communityDragonApiName": "DA_Combust18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "LivingSoil",
+      "opggName": "生命土壤",
+      "productionId": "da_livingsoil18",
+      "nameZh": "活体土壤",
+      "nameEn": "Living Soil",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "livingsoil",
+        "communityDragonApiName": "DA_LivingSoil18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllOnes",
+      "opggName": "全一",
+      "productionId": "da_18_allones",
+      "nameZh": "全1费商店",
+      "nameEn": "All Ones",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allones",
+        "communityDragonApiName": "DA_18_AllOnes",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Resistant",
+      "opggName": "抵抗",
+      "productionId": "da_18_resistant",
+      "nameZh": "抵抗",
+      "nameEn": "Resistant",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "resistant",
+        "communityDragonApiName": "DA_18_Resistant",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Flow",
+      "opggName": "流程",
+      "productionId": "da_flow18",
+      "nameZh": "行云流水",
+      "nameEn": "Flow",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "flow",
+        "communityDragonApiName": "DA_Flow18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HeroicSacrifice",
+      "opggName": "英勇牺牲",
+      "productionId": "da_18_heroicsacrifice",
+      "nameZh": "英勇就义",
+      "nameEn": "Heroic Sacrifice",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "heroicsacrifice",
+        "communityDragonApiName": "DA_18_HeroicSacrifice",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PetrifiedDummy",
+      "opggName": "石化假人",
+      "productionId": "da_petrifieddummy18",
+      "nameZh": "石化术",
+      "nameEn": "Petrified Dummy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "petrifieddummy",
+        "communityDragonApiName": "DA_PetrifiedDummy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TrainingYard",
+      "opggName": "训练场",
+      "productionId": "da_trainingyard18",
+      "nameZh": "训练场",
+      "nameEn": "Training Yard",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "trainingyard",
+        "communityDragonApiName": "DA_TrainingYard18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "NaturesAlly",
+      "opggName": "大自然的盟友",
+      "productionId": "da_naturesally18",
+      "nameZh": "自然之友",
+      "nameEn": "Nature's Ally",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "naturesally",
+        "communityDragonApiName": "DA_NaturesAlly18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Diversified",
+      "opggName": "多元化",
+      "productionId": "da_diversified18",
+      "nameZh": "多样化",
+      "nameEn": "Diversified",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "diversified",
+        "communityDragonApiName": "DA_Diversified18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "TreetopArchers",
+      "opggName": "树顶弓箭手",
+      "productionId": "da_treetoparchers",
+      "nameZh": "树顶弓箭手",
+      "nameEn": "Treetop Archers",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "treetoparchers",
+        "communityDragonApiName": "DA_TreetopArchers",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1906,43 +1640,211 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "PocketChange",
-      "opggName": "零钱",
-      "productionId": "da_18_pocketchange",
-      "nameZh": "零花钱",
-      "nameEn": "Pocket Change",
+      "opggSourceKey": "Aftershock",
+      "opggName": "余震",
+      "productionId": "da_18_aftershock",
+      "nameZh": "余震",
+      "nameEn": "Aftershock",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "pocketchange",
-        "communityDragonApiName": "DA_18_PocketChange",
+        "canonicalClientKey": "aftershock",
+        "communityDragonApiName": "DA_18_AfterShock",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "LightningStrike",
-      "opggName": "雷击",
-      "productionId": "da_18_lightningstrike",
-      "nameZh": "闪电打击",
-      "nameEn": "Lightning Strike",
+      "opggSourceKey": "Freeroller",
+      "opggName": "自由选手",
+      "productionId": "da_18_freeroller",
+      "nameZh": "免费刷新术",
+      "nameEn": "Freeroller",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "lightningstrike",
-        "communityDragonApiName": "DA_18_LightningStrike",
+        "canonicalClientKey": "freeroller",
+        "communityDragonApiName": "DA_18_Freeroller",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Tremors",
-      "opggName": "震颤",
-      "productionId": "da_18_tremors",
-      "nameZh": "地动山摇",
-      "nameEn": "Tremors",
+      "opggSourceKey": "Experienced",
+      "opggName": "经验丰富",
+      "productionId": "da_18_experienced",
+      "nameZh": "老练",
+      "nameEn": "Experienced",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "tremors",
-        "communityDragonApiName": "DA_18_Tremors",
+        "canonicalClientKey": "experienced",
+        "communityDragonApiName": "DA_18_Experienced",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "HandofBaron",
+      "opggName": "男爵之手",
+      "productionId": "da_handofbaron18",
+      "nameZh": "男爵之手",
+      "nameEn": "Hand Of Baron",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "handofbaron",
+        "communityDragonApiName": "DA_HandOfBaron18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MajorPolymorph",
+      "opggName": "主要多晶型物",
+      "productionId": "da_18_majorpolymorph",
+      "nameZh": "高阶变形术",
+      "nameEn": "Major Polymorph",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "majorpolymorph",
+        "communityDragonApiName": "DA_18_MajorPolymorph",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PhantomVest",
+      "opggName": "幻影背心",
+      "productionId": "da_phantomvest18",
+      "nameZh": "幻影背心",
+      "nameEn": "Phantom Vest",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "phantomvest",
+        "communityDragonApiName": "DA_PhantomVest18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "RolyPolys",
+      "opggName": "不倒翁",
+      "productionId": "da_rolypolys18",
+      "nameZh": "不倒翁",
+      "nameEn": "Roly-Polys",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "rolypolys",
+        "communityDragonApiName": "DA_RolyPolys18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MercenaryForce",
+      "opggName": "雇佣军",
+      "productionId": "da_18_mercenaryforce",
+      "nameZh": "金钱之力",
+      "nameEn": "Mercenary Force",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "mercenaryforce",
+        "communityDragonApiName": "DA_18_MercenaryForce",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Stealthy",
+      "opggName": "隐秘",
+      "productionId": "da_stealthy18",
+      "nameZh": "鬼鬼祟祟",
+      "nameEn": "Stealthy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "stealthy",
+        "communityDragonApiName": "DA_Stealthy18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Infliction",
+      "opggName": "伤害",
+      "productionId": "da_18_infliction",
+      "nameZh": "折磨",
+      "nameEn": "Infliction",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "infliction",
+        "communityDragonApiName": "DA_18_Infliction",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BorderVillage",
+      "opggName": "边境村",
+      "productionId": "da_bordervillage18",
+      "nameZh": "边境村庄",
+      "nameEn": "Border Village",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bordervillage",
+        "communityDragonApiName": "DA_BorderVillage18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "BunchOBelts",
+      "opggName": "束腰带",
+      "productionId": "da_bunchobelts18",
+      "nameZh": "腰带批发",
+      "nameEn": "Bunch-o'-Belts",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "bunchobelts",
+        "communityDragonApiName": "DA_BunchOBelts18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Barter",
+      "opggName": "易货贸易",
+      "productionId": "da_barter18",
+      "nameZh": "以物易物",
+      "nameEn": "Barter",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "barter",
+        "communityDragonApiName": "DA_Barter18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "GiantsAura",
+      "opggName": "巨人光环",
+      "productionId": "da_giantsaura18",
+      "nameZh": "巨人光环",
+      "nameEn": "Giant's Aura",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "giantsaura",
+        "communityDragonApiName": "DA_GiantsAura18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PetrifyShields",
+      "opggName": "石化护盾",
+      "productionId": "da_petrifyshields18",
+      "nameZh": "破盾秘法",
+      "nameEn": "Petrify Shields",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "petrifyshields",
+        "communityDragonApiName": "DA_PetrifyShields18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1962,57 +1864,155 @@
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "BronzeSpoon",
-      "opggName": "青铜勺子",
-      "productionId": "da_18_bronzespoon",
-      "nameZh": "铜汤匙",
-      "nameEn": "Bronze Spoon",
+      "opggSourceKey": "BloodMoney",
+      "opggName": "血钱",
+      "productionId": "da_18_bloodmoney",
+      "nameZh": "染血之币",
+      "nameEn": "Blood Money",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "bronzespoon",
-        "communityDragonApiName": "DA_18_BronzeSpoon",
+        "canonicalClientKey": "bloodmoney",
+        "communityDragonApiName": "DA_18_BloodMoney",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "HeroofProphecy",
-      "opggName": "预言英雄",
-      "productionId": "da_heroofprophecy18",
-      "nameZh": "预言之子",
-      "nameEn": "Hero Of Prophecy",
+      "opggSourceKey": "CircleofElders",
+      "opggName": "长老圈子",
+      "productionId": "da_18_circleofelders",
+      "nameZh": "长者之环",
+      "nameEn": "Circle of Elders",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "heroofprophecy",
-        "communityDragonApiName": "DA_HeroOfProphecy18",
+        "canonicalClientKey": "circleofelders",
+        "communityDragonApiName": "DA_18_CircleofElders",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "DieRoll",
-      "opggName": "骰子",
-      "productionId": "da_dieroll18",
-      "nameZh": "掷骰子",
-      "nameEn": "Die Roll",
+      "opggSourceKey": "Polymorph",
+      "opggName": "多晶型物",
+      "productionId": "da_18_polymorph",
+      "nameZh": "变形术",
+      "nameEn": "Polymorph",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "dieroll",
-        "communityDragonApiName": "DA_DieRoll18",
+        "canonicalClientKey": "polymorph",
+        "communityDragonApiName": "DA_18_Polymorph",
         "variantKind": "base"
       },
       "confidence": "confirmed"
     },
     {
-      "opggSourceKey": "Potioncraft",
-      "opggName": "魔药工艺",
-      "productionId": "da_potioncraft18",
-      "nameZh": "药学博士",
-      "nameEn": "Potioncraft",
+      "opggSourceKey": "PocketChange",
+      "opggName": "零钱",
+      "productionId": "da_18_pocketchange",
+      "nameZh": "零花钱",
+      "nameEn": "Pocket Change",
       "matchMethod": "exact_client_key",
       "evidence": {
-        "canonicalClientKey": "potioncraft",
-        "communityDragonApiName": "DA_Potioncraft18",
+        "canonicalClientKey": "pocketchange",
+        "communityDragonApiName": "DA_18_PocketChange",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Smurfing",
+      "opggName": "蓝精灵",
+      "productionId": "da_smurfing18",
+      "nameZh": "炸鱼行为",
+      "nameEn": "Smurfing",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "smurfing",
+        "communityDragonApiName": "DA_Smurfing18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FoundFriend",
+      "opggName": "找到朋友",
+      "productionId": "da_foundfriend18",
+      "nameZh": "找个朋友",
+      "nameEn": "Found Friend",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "foundfriend",
+        "communityDragonApiName": "DA_FoundFriend18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "IronCore",
+      "opggName": "铁芯",
+      "productionId": "da_ironcore18",
+      "nameZh": "钢铁核心",
+      "nameEn": "Iron Core",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "ironcore",
+        "communityDragonApiName": "DA_IronCore18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Downpour",
+      "opggName": "倾盆大雨",
+      "productionId": "da_downpour18",
+      "nameZh": "倾盆大雨",
+      "nameEn": "Downpour",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "downpour",
+        "communityDragonApiName": "DA_Downpour18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "Fertilize",
+      "opggName": "施肥",
+      "productionId": "da_18_fertilize",
+      "nameZh": "肥料",
+      "nameEn": "Fertilize",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "fertilize",
+        "communityDragonApiName": "DA_18_Fertilize",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "AllFours",
+      "opggName": "四肢着地",
+      "productionId": "da_18_allfours",
+      "nameZh": "全4费商店",
+      "nameEn": "All Fours",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "allfours",
+        "communityDragonApiName": "DA_18_AllFours",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "FieldofMice",
+      "opggName": "老鼠场",
+      "productionId": "da_18_fieldofmice",
+      "nameZh": "小人国",
+      "nameEn": "Field of Mice",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "fieldofmice",
+        "communityDragonApiName": "DA_18_FieldofMice",
         "variantKind": "base"
       },
       "confidence": "confirmed"

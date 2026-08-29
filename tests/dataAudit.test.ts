@@ -17,6 +17,14 @@ describe('Stage C1 production audit regressions', () => {
     expect(report.unresolved.opgg.length).toBeGreaterThan(0);
   });
 
+  test('CommunityDragon raw rows, deduplicated APIs, and canonical identities are audited separately', () => {
+    const audit = load<any>('reports/data-communitydragon-identity-audit-18.1.json');
+    expect(audit.rawBaseRows + audit.rawUpgradeRows + audit.rawPrismaticRows).toBe(audit.rawRecordCount);
+    expect(audit.uniqueCanonicalBaseIdentities).toBeLessThanOrEqual(audit.uniqueBaseApiNames);
+    expect(audit.safelyDeduplicatedRowCount).toBe(audit.duplicateGroups.filter((group: any) => group.payloadStatus !== 'conflicting_duplicate').reduce((sum: number, group: any) => sum + group.count - 1, 0));
+    expect(audit.canonicalCollisions).toHaveLength(audit.canonicalCollisionCount);
+  });
+
   test('a base without a distinct Upgrade variant has no Blossom', () => {
     const mitosis = dataset.records.find((record) => record.nameEn === 'Mitosis')!;
     expect(mitosis.effects.blossom).toBeNull();
