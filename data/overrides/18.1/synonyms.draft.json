@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "generatorVersion": "c2.1-v3",
+  "input": {
+    "path": "data/normalized/wisps_18.1.json",
+    "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+    "recordCount": 169
+  },
+  "queryExpansionGroups": [
+    {
+      "key": "champion_duplicator_terms",
+      "canonicalTerm": "Champion Duplicator",
+      "conceptKeys": [
+        "champion_duplicator"
+      ],
+      "aliases": [
+        {
+          "term": "Champion Duplicator",
+          "language": "en"
+        },
+        {
+          "term": "复制器",
+          "language": "zh"
+        },
+        {
+          "term": "妮蔻",
+          "language": "game_slang"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "intrinsicRisks": [
+        "clone_vs_duplicator"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "key": "experience_terms",
+      "canonicalTerm": "经验",
+      "conceptKeys": [
+        "xp_gain"
+      ],
+      "aliases": [
+        {
+          "term": "XP",
+          "language": "en"
+        },
+        {
+          "term": "经验",
+          "language": "zh"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "intrinsicRisks": [],
+      "reviewStatus": "draft_candidate"
+    },
+    {
+      "key": "health_terms",
+      "canonicalTerm": "生命值",
+      "aliases": [
+        {
+          "term": "HP",
+          "language": "en"
+        },
+        {
+          "term": "生命值",
+          "language": "zh"
+        },
+        {
+          "term": "血量",
+          "language": "game_slang"
+        }
+      ],
+      "evidence": "通用 health 查询表达；不推断玩家或弈子主体",
+      "intrinsicRisks": [
+        "player_vs_unit_health"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "key": "reroll_terms",
+      "canonicalTerm": "刷新",
+      "conceptKeys": [
+        "shop_reroll",
+        "free_reroll"
+      ],
+      "aliases": [
+        {
+          "term": "D",
+          "language": "game_slang"
+        },
+        {
+          "term": "reroll",
+          "language": "en"
+        },
+        {
+          "term": "roll",
+          "language": "game_slang"
+        },
+        {
+          "term": "刷新",
+          "language": "zh"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "intrinsicRisks": [
+        "single_letter_alias:D",
+        "reroll_vs_refresh"
+      ],
+      "reviewStatus": "needs_review"
+    }
+  ],
+  "recordAliases": [],
+  "actualAliasCollisions": [],
+  "intrinsicAliasRisks": [
+    {
+      "groupKey": "champion_duplicator_terms",
+      "risk": "clone_vs_duplicator",
+      "reviewStatus": "needs_review"
+    },
+    {
+      "groupKey": "health_terms",
+      "risk": "player_vs_unit_health",
+      "reviewStatus": "needs_review"
+    },
+    {
+      "groupKey": "reroll_terms",
+      "risk": "single_letter_alias:D",
+      "reviewStatus": "needs_review"
+    },
+    {
+      "groupKey": "reroll_terms",
+      "risk": "reroll_vs_refresh",
+      "reviewStatus": "needs_review"
+    }
+  ]
+}

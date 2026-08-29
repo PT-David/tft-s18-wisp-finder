@@ -75,7 +75,26 @@
 - 分字段打分，不只做全文 contains。
 - 结果顶部可根据 concept 动态生成二级建议。
 
-## 4. 下一轮工作
+## 4. Stage C2.1 候选数据层
+
+运行 `npm run data:lexicon:18.1`，仅以 `data/normalized/wisps_18.1.json` 为输入，
+确定性生成 concept draft、synonym draft 与人工审核报告。生成物中的
+`candidate_high_confidence` 仍是候选，不代表批准，也不会写回 normalized 或 public
+production 数据；人工完成语义、碰撞及证据审核后，才能在 C2.2 决定哪些内容上线。
+
+`queryExpansionGroups` 是全局“查询表达 → 等价查询表达”，`recordAliases` 则只表示
+某个具体 Wisp 的可靠名称别称。效果相似不构成 record alias；没有可靠证据时该数组
+应保持为空。完整短语（例如 `Champion Duplicator`）作为一个 alias 保存，不拆词。
+
+同一 alias 跨不同 semantic group 才是 `actualAliasCollisions`；单字母 `D` 等自身风险
+单独记录为 `intrinsicAliasRisks`，一个 group 关联多个相关 concept 并不构成碰撞。通用
+`HP / 生命值 / 血量` expansion 保持 concept-neutral，不推断玩家或弈子主体。
+
+金币候选分别使用获得、实际支付/失去、当前金币条件和商店售价 concept。普通“在 N
+秒后”使用 delayed-trigger 语义；只有明确按存活或存活友军数量结算时才进入
+`survival_duration`，buff duration 不属于 survival 或 stage/time condition。
+
+## 5. 后续工作
 
 使用完整 18.1 仙灵文本实际生成第一版：
 
@@ -83,4 +102,4 @@
 - `synonyms.json`
 - 每个仙灵的 `searchConcepts[]`
 
-Codex 当前只需要实现读取和索引这些字段的能力，不应自行创建完整词库。
+C2.1 draft 经人工审核后再进入 C2.2；不得直接把自动候选灌入 production 字段。

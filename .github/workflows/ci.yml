@@ -17,6 +17,7 @@ jobs:
       - run: npm ci
       - run: npm run data:build:18.1
       - run: npm run data:audit:18.1
+      - run: npm run data:lexicon:18.1
       - run: npm run validate:seed
       - run: npm run validate:data
       - run: npm test
