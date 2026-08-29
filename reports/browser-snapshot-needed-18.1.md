@@ -18,7 +18,7 @@ The build environment received source-protection responses, so **do not copy 200
 2. Confirm the heading is the **Set 18 Wisps** table. Do not use another Set 18 table's Updated date.
 3. Save **HTML only**, or save `document.documentElement.outerHTML` as UTF-8 to `artifacts/import/lolchess-set18-wisps.html`.
 4. Run `npm run data:import:lolchess -- artifacts/import/lolchess-set18-wisps.html`.
-5. The command must create `data/raw/18.1/lolchess-wisps.json` with non-zero `recordCount`; verify Mitosis is present and its Blossom field is absent/null.
+5. The command supports both embedded structured payloads and the site's server-rendered semantic Wisp rows (`name-cell`, `description-cell`, upgrade labels, hints, and stage cells). It must create `data/raw/18.1/lolchess-wisps.json` with non-zero `recordCount`; inspect `fieldCoverage` and `prismaticRecordCount`, then verify Mitosis is present and its Blossom field is absent/null.
 6. `pageUpdatedAt` is populated only when the saved Wisps page body itself contains an Updated label. An external index observation is not substituted.
 7. Run `npm run data:build:18.1 && npm run validate:data`.
 

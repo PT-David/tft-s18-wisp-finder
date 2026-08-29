@@ -17,9 +17,20 @@ describe('browser snapshot fallback import', () => {
     expect(result.records.find(({ name }) => name === 'Mitosis')).toMatchObject({ blossom: null, oncePerGame: false });
     expect(result.records.find(({ name }) => name === 'Hero Of Prophecy')?.oncePerGame).toBe(true);
   });
+  test('imports rendered LoLCHESS SSR cards with complete semantic fields', () => {
+    const result = parseBrowserSnapshot('lolchess', fixture('lolchess-rendered'));
+    expect(result.pageUpdatedAt).toBe('September 1, 2026');
+    expect(result.records).toHaveLength(5);
+    expect(result.records.find(({ name }) => name === 'Mitosis')?.blossom).toBeNull();
+    expect(result.records.find(({ name }) => name === 'Quicken')).toMatchObject({ cost: 2, category: 'Combat', effect: 'Your champions gain 40% Attack Speed for 10 seconds.', blossom: 'Your champions gain 60% Attack Speed instead.', stageRanges: [{ start: { stage: 3, round: 5 }, end: { stage: 4, round: 7 } }, { start: { stage: 5, round: 1 }, end: { stage: 5, round: 7 } }] });
+    expect(result.records.find(({ name }) => name === 'Counterspell')?.prismatic).toBe('Grant 80 Magic Resist.');
+    expect(result.records.find(({ name }) => name === 'Wrapped In Thorns')?.requirements).toEqual(['2 or more tanks on board']);
+    expect(result.records.find(({ name }) => name === 'Hero Of Prophecy')?.oncePerGame).toBe(true);
+  });
   test('fails closed for the wrong page or recordless HTML', () => {
     expect(() => parseBrowserSnapshot('opgg', '<html></html>')).toThrow('身份校验失败');
     expect(() => parseBrowserSnapshot('opgg', '<link rel="canonical" href="https://op.gg/zh-cn/tft/set/18">')).toThrow('不会覆盖');
+    expect(() => parseBrowserSnapshot('lolchess', '<link rel="canonical" href="https://lolchess.gg/rewards/set18/wisps?hl=en"><main>No list</main>')).toThrow('不会覆盖');
   });
   test('validates parsed count dynamically against the page declaration', () => {
     const mismatched = fixture('opgg').replace('全部 2 个 Wisps', '全部 3 个 Wisps');
