@@ -11,4 +11,4 @@ await Promise.all([
   writeFile('data/overrides/18.1/synonyms.draft.json', `${JSON.stringify(output.synonymDraft, null, 2)}\n`),
   writeFile('reports/search-lexicon-review-18.1.json', `${JSON.stringify(output.report, null, 2)}\n`),
 ]);
-console.log(`C2.1: ${output.report.summary.recordsScanned} records, ${output.report.summary.conceptCandidateAssignments} concept candidates, ${output.report.summary.needsReviewCandidates} need review.`);
+console.log(`C2.1: ${output.report.summary.recordsScanned} records, ${output.report.summary.conceptCandidateAssignments} concept candidates, ${output.report.summary.needsReviewAssignments} need review.`);

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v1",
+  "generatorVersion": "c2.1-v2",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -78,6 +78,11 @@
       "description": "施加眩晕等群体控制。"
     },
     {
+      "key": "delayed_trigger",
+      "labelZh": "延迟触发",
+      "description": "在战斗开始若干秒后触发一次效果；不表示存活奖励。"
+    },
+    {
       "key": "enemy_death",
       "labelZh": "敌方阵亡",
       "description": "由敌方单位阵亡触发。",
@@ -96,15 +101,21 @@
       "riskGroup": "reroll_vs_refresh"
     },
     {
-      "key": "gold_cost",
-      "labelZh": "金币花费",
-      "description": "支付、失去或要求持有金币。",
-      "riskGroup": "gold_cost_vs_reward"
-    },
-    {
       "key": "gold_gain",
       "labelZh": "获得金币",
       "description": "奖励或产出金币。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "gold_payment",
+      "labelZh": "支付或失去金币",
+      "description": "效果明确要求实际支付、花费或失去金币。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "gold_requirement",
+      "labelZh": "金币条件",
+      "description": "明确检查当前持有金币阈值。",
       "riskGroup": "gold_cost_vs_reward"
     },
     {
@@ -166,6 +177,12 @@
       "description": "为弈子提供护盾。"
     },
     {
+      "key": "shop_price",
+      "labelZh": "商店售价",
+      "description": "商店中商品的金币价格或价格范围。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
       "key": "shop_reroll",
       "labelZh": "商店刷新",
       "description": "明确刷新 TFT 商店。",
@@ -173,8 +190,8 @@
     },
     {
       "key": "survival_duration",
-      "labelZh": "存活持续时间",
-      "description": "按存活或持续秒数触发。",
+      "labelZh": "存活结算",
+      "description": "明确按单位存活或存活友军数量触发。",
       "riskGroup": "survival_vs_once_per_game"
     },
     {
@@ -185,8 +202,8 @@
     },
     {
       "key": "time_stage",
-      "labelZh": "时间或阶段",
-      "description": "由回合、阶段或战斗时间决定。"
+      "labelZh": "回合或阶段条件",
+      "description": "由回合、阶段或准备阶段决定；不包含普通效果持续时间。"
     },
     {
       "key": "trait_active",
@@ -234,35 +251,13 @@
     },
     {
       "wispId": "da_18_aftershock",
-      "conceptKey": "survival_duration",
+      "conceptKey": "delayed_trigger",
       "evidence": [
         {
           "field": "effects.normal",
           "text": "在8秒后，晕眩所有敌人1.5秒。",
           "matchedTerms": [
             "在8秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_aftershock",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在8和18秒后，晕眩所有敌人1.5秒。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在8秒后，晕眩所有敌人1.5秒。",
-          "matchedTerms": [
-            "秒后"
           ]
         }
       ],
@@ -587,28 +582,6 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_18_backrowstar",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "1个随机后排弈子获得115%攻击速度，持续8秒。",
-          "matchedTerms": [
-            "持续8秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "1个随机后排弈子获得85%攻击速度，持续7秒。",
-          "matchedTerms": [
-            "持续7秒"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_18_barkarmor",
       "conceptKey": "shield",
       "evidence": [
@@ -624,28 +597,6 @@
           "text": "你的弈子们获得150护盾值，持续10秒。",
           "matchedTerms": [
             "护盾"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_barkarmor",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "你的弈子们获得225护盾值，持续10秒。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "你的弈子们获得150护盾值，持续10秒。",
-          "matchedTerms": [
-            "持续10秒"
           ]
         }
       ],
@@ -914,28 +865,6 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_18_fieldofmice",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。",
-          "matchedTerms": [
-            "回合"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
-          "matchedTerms": [
-            "回合"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_18_forestmage",
       "conceptKey": "time_stage",
       "evidence": [
@@ -1060,28 +989,6 @@
           "text": "你攻击速度最高的10个单位变小，获得100%攻击速度。",
           "matchedTerms": [
             "攻击速度"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_infliction",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "对所有敌人施加持续12秒的缓速、灼烧、魔抗击碎与护甲击碎效果。",
-          "matchedTerms": [
-            "持续12秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "对所有敌人施加持续8秒的缓速、灼烧、魔抗击碎与护甲击碎效果。",
-          "matchedTerms": [
-            "持续8秒"
           ]
         }
       ],
@@ -1343,7 +1250,7 @@
     },
     {
       "wispId": "da_18_mercenaryforce",
-      "conceptKey": "gold_cost",
+      "conceptKey": "gold_requirement",
       "evidence": [
         {
           "field": "requirements[0].textZh",
@@ -1399,7 +1306,7 @@
     },
     {
       "wispId": "da_18_moonrise",
-      "conceptKey": "survival_duration",
+      "conceptKey": "delayed_trigger",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -1413,28 +1320,6 @@
           "text": "在8秒后，提升100%【月蚀骑士】羁绊效果。",
           "matchedTerms": [
             "在8秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_moonrise",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在8秒后，提升175%【月蚀骑士】羁绊效果。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在8秒后，提升100%【月蚀骑士】羁绊效果。",
-          "matchedTerms": [
-            "秒后"
           ]
         }
       ],
@@ -1548,7 +1433,7 @@
     },
     {
       "wispId": "da_18_prolificpower",
-      "conceptKey": "gold_cost",
+      "conceptKey": "gold_requirement",
       "evidence": [
         {
           "field": "requirements[0].textZh",
@@ -1567,7 +1452,7 @@
     },
     {
       "wispId": "da_18_radiantize",
-      "conceptKey": "survival_duration",
+      "conceptKey": "delayed_trigger",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -1581,28 +1466,6 @@
           "text": "在8秒后，1件被携带着的随机装备暂时变为光明版。",
           "matchedTerms": [
             "在8秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_radiantize",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在5秒后，1件被携带着的随机装备暂时变为光明版。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在8秒后，1件被携带着的随机装备暂时变为光明版。",
-          "matchedTerms": [
-            "秒后"
           ]
         }
       ],
@@ -1654,50 +1517,6 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_18_starfall",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
-          "matchedTerms": [
-            "回合"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
-          "matchedTerms": [
-            "回合"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_sunfiresorcery",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "对敌人施加持续15秒的灼烧和重伤效果。",
-          "matchedTerms": [
-            "持续15秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "对敌人施加持续10秒的灼烧和重伤效果。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_18_sunfiresorcery",
       "conceptKey": "trait_active",
       "evidence": [
@@ -1709,35 +1528,6 @@
           ],
           "requirementIndex": 0,
           "requirementType": "source_text"
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_18_tatteredarmor",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "对敌人施加30%魔抗击碎与护甲击碎，持续15秒。",
-          "matchedTerms": [
-            "持续15秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "对敌人施加30%魔抗击碎与护甲击碎，持续10秒。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        },
-        {
-          "field": "effects.prismatic",
-          "text": "对敌人施加90%魔抗击碎与护甲击碎，持续45秒。",
-          "matchedTerms": [
-            "持续45秒"
-          ]
         }
       ],
       "confidence": "candidate_high_confidence",
@@ -1774,7 +1564,7 @@
     },
     {
       "wispId": "da_18_ultraascension",
-      "conceptKey": "survival_duration",
+      "conceptKey": "delayed_trigger",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -1802,37 +1592,8 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_18_ultraascension",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在23秒后，友军获得300%伤害增幅。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在25秒后，友军获得300%伤害增幅。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.prismatic",
-          "text": "在12秒后，友军获得300%伤害增幅。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_18_verdantvitality",
-      "conceptKey": "gold_cost",
+      "conceptKey": "gold_requirement",
       "evidence": [
         {
           "field": "requirements[0].textZh",
@@ -1848,28 +1609,6 @@
       "reviewFlags": [
         "gold_cost_vs_reward"
       ]
-    },
-    {
-      "wispId": "da_18_yordlespirit",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "友军有99%几率闪避攻击，持续5秒。",
-          "matchedTerms": [
-            "持续5秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "友军有99%几率闪避攻击，持续4秒。",
-          "matchedTerms": [
-            "持续4秒"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
     },
     {
       "wispId": "da_abandonship18",
@@ -2021,28 +1760,6 @@
           "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
           "matchedTerms": [
             "商店每2秒免费刷新"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_animateshop18",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在26秒的持续时间里，你的商店每2秒免费刷新一次。",
-          "matchedTerms": [
-            "持续时间"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
-          "matchedTerms": [
-            "持续时间"
           ]
         }
       ],
@@ -2253,28 +1970,6 @@
           "text": "在本回合内，你下次出售的弈子将以200%金币卖出。",
           "matchedTerms": [
             "金币卖出"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_barter18",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在本回合内，你下次出售的弈子将以250%金币卖出。",
-          "matchedTerms": [
-            "回合"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在本回合内，你下次出售的弈子将以200%金币卖出。",
-          "matchedTerms": [
-            "回合"
           ]
         }
       ],
@@ -2658,22 +2353,23 @@
     },
     {
       "wispId": "da_curiocart18",
-      "conceptKey": "gold_cost",
+      "conceptKey": "gold_gain",
       "evidence": [
         {
           "field": "effects.blossom",
           "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
           "matchedTerms": [
-            "费用在0到15金币"
+            "获得2金币"
           ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "matchedTerms": [
-            "费用在0到15金币"
-          ]
-        },
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "gold_requirement",
+      "evidence": [
         {
           "field": "requirements[0].textZh",
           "text": "拥有足够的金币",
@@ -2688,21 +2384,6 @@
       "reviewFlags": [
         "gold_cost_vs_reward"
       ]
-    },
-    {
-      "wispId": "da_curiocart18",
-      "conceptKey": "gold_gain",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
-          "matchedTerms": [
-            "获得2金币"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
     },
     {
       "wispId": "da_curiocart18",
@@ -2725,6 +2406,30 @@
       ],
       "confidence": "candidate_high_confidence",
       "reviewFlags": []
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "shop_price",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
+          "matchedTerms": [
+            "装备的费用在0到15金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "matchedTerms": [
+            "装备的费用在0到15金币"
+          ]
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
     },
     {
       "wispId": "da_cutpurse18",
@@ -2857,28 +2562,6 @@
           "text": "你的弈子们获得持续10秒的不可阻挡效果和15%攻击速度。",
           "matchedTerms": [
             "攻击速度"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_flow18",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "你的弈子们获得持续15秒的不可阻挡效果和15%攻击速度。",
-          "matchedTerms": [
-            "持续15秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "你的弈子们获得持续10秒的不可阻挡效果和15%攻击速度。",
-          "matchedTerms": [
-            "持续10秒"
           ]
         }
       ],
@@ -3119,7 +2802,7 @@
     },
     {
       "wispId": "da_heroofprophecy18",
-      "conceptKey": "gold_cost",
+      "conceptKey": "gold_requirement",
       "evidence": [
         {
           "field": "requirements[0].textZh",
@@ -3163,7 +2846,7 @@
           "field": "effects.normal",
           "text": "获得1个5费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
           "matchedTerms": [
-            "回合"
+            "每回合"
           ]
         }
       ],
@@ -3189,7 +2872,7 @@
     },
     {
       "wispId": "da_herosentrance18",
-      "conceptKey": "survival_duration",
+      "conceptKey": "delayed_trigger",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -3203,28 +2886,6 @@
           "text": "在8秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
           "matchedTerms": [
             "在8秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_herosentrance18",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在5秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在8秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
-          "matchedTerms": [
-            "秒后"
           ]
         }
       ],
@@ -4001,6 +3662,28 @@
     },
     {
       "wispId": "da_natureswrath18",
+      "conceptKey": "delayed_trigger",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在10秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "在10秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_natureswrath18",
       "conceptKey": "item_requirement",
       "evidence": [
         {
@@ -4039,74 +3722,6 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_natureswrath18",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在8秒后，将所有未携带装备的单位击杀。",
-          "matchedTerms": [
-            "在8秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在10秒后，将所有未携带装备的单位击杀。",
-          "matchedTerms": [
-            "在10秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_natureswrath18",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在8秒后，将所有未携带装备的单位击杀。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在10秒后，将所有未携带装备的单位击杀。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_peddler18",
-      "conceptKey": "gold_cost",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
-          "matchedTerms": [
-            "费用在0到14金币"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
-          "matchedTerms": [
-            "费用在0到14金币"
-          ]
-        }
-      ],
-      "confidence": "needs_review",
-      "reviewFlags": [
-        "gold_cost_vs_reward"
-      ]
-    },
-    {
       "wispId": "da_peddler18",
       "conceptKey": "gold_gain",
       "evidence": [
@@ -4142,6 +3757,30 @@
       ],
       "confidence": "candidate_high_confidence",
       "reviewFlags": []
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "shop_price",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
+          "matchedTerms": [
+            "随机装备的费用在0到14金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
+          "matchedTerms": [
+            "随机装备的费用在0到14金币"
+          ]
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
     },
     {
       "wispId": "da_petrifieddummy18",
@@ -4203,28 +3842,6 @@
           "text": "使敌人缓速10%，并将其护盾值削减0.8，持续10秒。",
           "matchedTerms": [
             "护盾"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_petrifyshields18",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "使敌人缓速10%，并将其护盾值削减0.7，持续10秒。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "使敌人缓速10%，并将其护盾值削减0.8，持续10秒。",
-          "matchedTerms": [
-            "持续10秒"
           ]
         }
       ],
@@ -4328,28 +3945,6 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_platedshields18",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "护盾强度提升20%。友军获得持续10秒的300护盾值。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "护盾强度提升15%。友军获得持续10秒的150护盾值。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_potioncraft18",
       "conceptKey": "temporary_item",
       "evidence": [
@@ -4411,28 +4006,6 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_quicken18",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "施放技能时，你的弈子们获得40%攻击速度，持续5秒。",
-          "matchedTerms": [
-            "持续5秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "施放技能时，你的弈子们获得30%攻击速度，持续4秒。",
-          "matchedTerms": [
-            "持续4秒"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_refreshinglight18",
       "conceptKey": "trait_active",
       "evidence": [
@@ -4473,7 +4046,7 @@
     },
     {
       "wispId": "da_ridethewave18",
-      "conceptKey": "gold_cost",
+      "conceptKey": "gold_requirement",
       "evidence": [
         {
           "field": "requirements[1].textZh",
@@ -4516,20 +4089,6 @@
       "wispId": "da_ridethewave18",
       "conceptKey": "time_stage",
       "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。",
-          "matchedTerms": [
-            "回合"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。",
-          "matchedTerms": [
-            "回合"
-          ]
-        },
         {
           "field": "requirements[0].textZh",
           "text": "准备阶段的前20秒内",
@@ -4597,6 +4156,28 @@
     },
     {
       "wispId": "da_rolypolys18",
+      "conceptKey": "delayed_trigger",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "在16秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "在18秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rolypolys18",
       "conceptKey": "shop_reroll",
       "evidence": [
         {
@@ -4625,36 +4206,14 @@
           "field": "effects.blossom",
           "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
           "matchedTerms": [
-            "在16秒后"
+            "每有1名存活的友军"
           ]
         },
         {
           "field": "effects.normal",
           "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
           "matchedTerms": [
-            "在18秒后"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_rolypolys18",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
-          "matchedTerms": [
-            "秒后"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
-          "matchedTerms": [
-            "秒后"
+            "每有1名存活的友军"
           ]
         }
       ],
@@ -4729,23 +4288,8 @@
       "reviewFlags": []
     },
     {
-      "wispId": "da_searchparty18",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.normal",
-          "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
-          "matchedTerms": [
-            "回合"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
       "wispId": "da_slowstudy18",
-      "conceptKey": "survival_duration",
+      "conceptKey": "delayed_trigger",
       "evidence": [
         {
           "field": "effects.blossom",
@@ -4767,20 +4311,20 @@
     },
     {
       "wispId": "da_slowstudy18",
-      "conceptKey": "time_stage",
+      "conceptKey": "survival_duration",
       "evidence": [
         {
           "field": "effects.blossom",
           "text": "在12秒后，每有1名存活的友军，获得2经验值。",
           "matchedTerms": [
-            "秒后"
+            "每有1名存活的友军"
           ]
         },
         {
           "field": "effects.normal",
           "text": "在15秒后，每有1名存活的友军，获得2经验值。",
           "matchedTerms": [
-            "秒后"
+            "每有1名存活的友军"
           ]
         }
       ],
@@ -4944,28 +4488,6 @@
           "text": "刷新你的商店，使其充满2星1费弈子。",
           "matchedTerms": [
             "刷新你的商店"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "da_stealthy18",
-      "conceptKey": "survival_duration",
-      "evidence": [
-        {
-          "field": "effects.blossom",
-          "text": "你后排的2个随机弈子获得持续10秒的不可被选取效果。",
-          "matchedTerms": [
-            "持续10秒"
-          ]
-        },
-        {
-          "field": "effects.normal",
-          "text": "你最强大的2个【战士】或【刺客】获得持续6秒的不可被选取效果。",
-          "matchedTerms": [
-            "持续6秒"
           ]
         }
       ],
@@ -5549,36 +5071,6 @@
           ],
           "requirementIndex": 0,
           "requirementType": "source_text"
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "snapshot_136_c467ccd546d7",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.normal",
-          "text": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
-          "matchedTerms": [
-            "回合"
-          ]
-        }
-      ],
-      "confidence": "candidate_high_confidence",
-      "reviewFlags": []
-    },
-    {
-      "wispId": "snapshot_147_2dc94df4e3a5",
-      "conceptKey": "time_stage",
-      "evidence": [
-        {
-          "field": "effects.normal",
-          "text": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
-          "matchedTerms": [
-            "回合"
-          ]
         }
       ],
       "confidence": "candidate_high_confidence",

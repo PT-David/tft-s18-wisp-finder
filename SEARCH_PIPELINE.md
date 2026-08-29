@@ -86,6 +86,14 @@ production 数据；人工完成语义、碰撞及证据审核后，才能在 C2
 某个具体 Wisp 的可靠名称别称。效果相似不构成 record alias；没有可靠证据时该数组
 应保持为空。完整短语（例如 `Champion Duplicator`）作为一个 alias 保存，不拆词。
 
+同一 alias 跨不同 semantic group 才是 `actualAliasCollisions`；单字母 `D` 等自身风险
+单独记录为 `intrinsicAliasRisks`，一个 group 关联多个相关 concept 并不构成碰撞。通用
+`HP / 生命值 / 血量` expansion 保持 concept-neutral，不推断玩家或弈子主体。
+
+金币候选分别使用获得、实际支付/失去、当前金币条件和商店售价 concept。普通“在 N
+秒后”使用 delayed-trigger 语义；只有明确按存活或存活友军数量结算时才进入
+`survival_duration`，buff duration 不属于 survival 或 stage/time condition。
+
 ## 5. 后续工作
 
 使用完整 18.1 仙灵文本实际生成第一版：

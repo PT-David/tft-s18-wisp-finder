@@ -39,10 +39,37 @@ describe('Stage C2.1 search lexicon generation', () => {
 
   it('separates gold rewards, gold conditions, and item semantics', () => {
     expect(assignment('da_18_bloodmoney', 'gold_gain')).toBeDefined();
-    expect(assignment('da_18_mercenaryforce', 'gold_cost')?.confidence).toBe('needs_review');
+    expect(assignment('da_18_mercenaryforce', 'gold_requirement')?.confidence).toBe('needs_review');
+    expect(assignment('da_18_mercenaryforce', 'gold_payment')).toBeUndefined();
+    expect(assignment('da_heroofprophecy18', 'gold_requirement')).toBeDefined();
+    expect(assignment('da_heroofprophecy18', 'gold_payment')).toBeUndefined();
+    expect(assignment('da_curiocart18', 'shop_price')).toBeDefined();
+    expect(assignment('da_curiocart18', 'gold_payment')).toBeUndefined();
     expect(assignment('da_blastpotion18_charm', 'temporary_item')).toBeDefined();
     expect(assignment('da_18_heroicsacrifice', 'item_requirement')?.evidence.every(x => x.field.startsWith('requirements['))).toBe(true);
     expect(assignment('da_artifactinate18', 'artifact_item')).toBeDefined();
+  });
+
+  it('only treats explicit gold payment or loss as gold_payment', () => {
+    const fixture = structuredClone(dataset.records[0]!);
+    fixture.id = 'synthetic_gold_payment_rule_fixture';
+    fixture.effects.normal = '支付3金币。';
+    fixture.effects.blossom = null;
+    fixture.effects.prismatic = null;
+    fixture.requirements = [];
+    const result = generateSearchLexicon({ ...dataset, records: [fixture] }, Buffer.from('synthetic rule fixture'));
+    expect(result.conceptDraft.assignments.find(x => x.conceptKey === 'gold_payment')).toBeDefined();
+    expect(result.conceptDraft.assignments.find(x => x.conceptKey === 'gold_requirement')).toBeUndefined();
+    expect(result.conceptDraft.assignments.find(x => x.conceptKey === 'shop_price')).toBeUndefined();
+  });
+
+  it('does not confuse delayed triggers or buff durations with survival', () => {
+    for (const id of ['da_18_radiantize', 'da_herosentrance18', 'da_natureswrath18']) {
+      expect(assignment(id, 'survival_duration')).toBeUndefined();
+      expect(assignment(id, 'delayed_trigger')).toBeDefined();
+    }
+    expect(assignment('da_quicken18', 'survival_duration')).toBeUndefined();
+    expect(assignment('da_rolypolys18', 'survival_duration')).toBeDefined();
   });
 
   it('does not confuse generic copies with Champion Duplicators', () => {
@@ -64,14 +91,34 @@ describe('Stage C2.1 search lexicon generation', () => {
     const duplicator = synonyms.queryExpansionGroups.find(x => x.key === 'champion_duplicator_terms');
     expect(duplicator?.aliases).toContainEqual({ term: 'Champion Duplicator', language: 'en' });
     expect(duplicator?.aliases).not.toContainEqual(expect.objectContaining({ term: 'Champion' }));
+    const health = synonyms.queryExpansionGroups.find(x => x.key === 'health_terms');
+    expect(health?.aliases.map(x => x.term)).toEqual(expect.arrayContaining(['HP', '生命值', '血量']));
+    expect(health?.conceptKeys).toBeUndefined();
   });
 
-  it('reports an alias mapped to multiple concepts instead of choosing one', () => {
-    const groups: QueryGroup[] = [
-      { key: 'gain', canonicalTerm: 'coin', conceptKeys: ['gold_gain'], aliases: [{ term: 'coin', language: 'en' }], evidence: 'test rule', collisionRisk: [], reviewStatus: 'draft_candidate' },
-      { key: 'cost', canonicalTerm: 'coin', conceptKeys: ['gold_cost'], aliases: [{ term: 'coin', language: 'en' }], evidence: 'test rule', collisionRisk: [], reviewStatus: 'draft_candidate' },
+  it('only reports cross-group aliases as actual collisions', () => {
+    const related: QueryGroup[] = [
+      { key: 'reroll', canonicalTerm: '刷新', conceptKeys: ['shop_reroll', 'free_reroll'], aliases: [{ term: 'roll', language: 'en' }], evidence: 'test rule', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
     ];
-    expect(detectAliasCollisions(groups)).toEqual([{ alias: 'coin', groupKeys: ['cost', 'gain'], conceptKeys: ['gold_cost', 'gold_gain'], reviewStatus: 'needs_review' }]);
+    expect(detectAliasCollisions(related)).toEqual([]);
+    const groups: QueryGroup[] = [
+      { key: 'gain', canonicalTerm: 'coin', conceptKeys: ['gold_gain'], aliases: [{ term: 'coin', language: 'en' }], evidence: 'test rule', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+      { key: 'payment', canonicalTerm: 'coin', conceptKeys: ['gold_payment'], aliases: [{ term: 'coin', language: 'en' }], evidence: 'test rule', intrinsicRisks: [], reviewStatus: 'draft_candidate' },
+    ];
+    expect(detectAliasCollisions(groups)).toEqual([{ alias: 'coin', groupKeys: ['gain', 'payment'], conceptKeys: ['gold_gain', 'gold_payment'], reviewStatus: 'needs_review' }]);
+    expect(generated.synonymDraft.actualAliasCollisions).toEqual([]);
+    expect(generated.synonymDraft.intrinsicAliasRisks).toContainEqual({ groupKey: 'reroll_terms', risk: 'single_letter_alias:D', reviewStatus: 'needs_review' });
+  });
+
+  it('reports review workload metrics from the actual generated collections', () => {
+    const { summary, reviewGroups, actualAliasCollisions } = generated.report;
+    const reviewItems = Object.values(reviewGroups).flat();
+    expect(summary.highConfidenceAssignments + summary.needsReviewAssignments).toBe(summary.conceptCandidateAssignments);
+    expect(summary.reviewItems).toBe(reviewItems.length);
+    expect(summary.uniqueWispsWithReviewItems).toBe(new Set(reviewItems.map(x => x.wispId)).size);
+    expect(summary.actualAliasCollisions).toBe(actualAliasCollisions.length);
+    expect(summary.riskyQueryExpansionGroups).toBe(generated.synonymDraft.queryExpansionGroups.filter(x => x.intrinsicRisks.length).length);
+    expect(summary.reviewGroupCounts).toEqual(Object.fromEntries(Object.entries(reviewGroups).map(([key, items]) => [key, items.length])));
   });
 
   it('does not alter production search fields', () => {

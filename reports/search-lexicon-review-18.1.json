@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "patch": "18.1",
-  "generatorVersion": "c2.1-v1",
+  "generatorVersion": "c2.1-v2",
   "input": {
     "path": "data/normalized/wisps_18.1.json",
     "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -9,13 +9,25 @@
   },
   "summary": {
     "recordsScanned": 169,
-    "conceptCandidateAssignments": 273,
-    "conceptKeysUsed": 34,
+    "conceptCandidateAssignments": 250,
+    "conceptKeysUsed": 36,
     "queryExpansionGroups": 4,
     "recordAliases": 0,
-    "highConfidenceCandidates": 258,
-    "needsReviewCandidates": 15,
-    "collisionRiskItems": 10
+    "highConfidenceAssignments": 234,
+    "needsReviewAssignments": 16,
+    "reviewItems": 204,
+    "uniqueWispsWithReviewItems": 89,
+    "actualAliasCollisions": 0,
+    "riskyQueryExpansionGroups": 3,
+    "reviewGroupCounts": {
+      "player_vs_unit_health": 67,
+      "death_kill_execute": 32,
+      "item_semantics": 54,
+      "gold_cost_vs_reward": 10,
+      "clone_vs_duplicator": 5,
+      "reroll_vs_refresh": 36,
+      "other_ambiguous": 0
+    }
   },
   "reviewGroups": {
     "player_vs_unit_health": [
@@ -1765,9 +1777,9 @@
         ],
         "requirementIndex": 0,
         "requirementType": "source_text",
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "gold_requirement_rule",
+        "reason": "当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。",
+        "decision": "确认阈值方向、数值及该条件是否应作为搜索概念。"
       },
       {
         "wispId": "da_18_prolificpower",
@@ -1778,9 +1790,9 @@
         ],
         "requirementIndex": 0,
         "requirementType": "source_text",
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "gold_requirement_rule",
+        "reason": "当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。",
+        "decision": "确认阈值方向、数值及该条件是否应作为搜索概念。"
       },
       {
         "wispId": "da_18_verdantvitality",
@@ -1791,31 +1803,31 @@
         ],
         "requirementIndex": 0,
         "requirementType": "source_text",
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "gold_requirement_rule",
+        "reason": "当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。",
+        "decision": "确认阈值方向、数值及该条件是否应作为搜索概念。"
       },
       {
         "wispId": "da_curiocart18",
         "field": "effects.blossom",
         "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
         "matchedTerms": [
-          "费用在0到15金币"
+          "装备的费用在0到15金币"
         ],
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "shop_price_rule",
+        "reason": "商品价格范围不是玩家已经支付的金币。",
+        "decision": "确认这是可检索的商店售价信息，而非购买 Requirement。"
       },
       {
         "wispId": "da_curiocart18",
         "field": "effects.normal",
         "text": "开启1个装备商店。装备的费用在0到15金币之间。",
         "matchedTerms": [
-          "费用在0到15金币"
+          "装备的费用在0到15金币"
         ],
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "shop_price_rule",
+        "reason": "商品价格范围不是玩家已经支付的金币。",
+        "decision": "确认这是可检索的商店售价信息，而非购买 Requirement。"
       },
       {
         "wispId": "da_curiocart18",
@@ -1826,9 +1838,9 @@
         ],
         "requirementIndex": 0,
         "requirementType": "source_text",
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "gold_requirement_rule",
+        "reason": "当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。",
+        "decision": "确认阈值方向、数值及该条件是否应作为搜索概念。"
       },
       {
         "wispId": "da_heroofprophecy18",
@@ -1839,31 +1851,31 @@
         ],
         "requirementIndex": 0,
         "requirementType": "source_text",
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "gold_requirement_rule",
+        "reason": "当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。",
+        "decision": "确认阈值方向、数值及该条件是否应作为搜索概念。"
       },
       {
         "wispId": "da_peddler18",
         "field": "effects.blossom",
         "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
         "matchedTerms": [
-          "费用在0到14金币"
+          "随机装备的费用在0到14金币"
         ],
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "shop_price_rule",
+        "reason": "商品价格范围不是玩家已经支付的金币。",
+        "decision": "确认这是可检索的商店售价信息，而非购买 Requirement。"
       },
       {
         "wispId": "da_peddler18",
         "field": "effects.normal",
         "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
         "matchedTerms": [
-          "费用在0到14金币"
+          "随机装备的费用在0到14金币"
         ],
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "shop_price_rule",
+        "reason": "商品价格范围不是玩家已经支付的金币。",
+        "decision": "确认这是可检索的商店售价信息，而非购买 Requirement。"
       },
       {
         "wispId": "da_ridethewave18",
@@ -1874,9 +1886,9 @@
         ],
         "requirementIndex": 1,
         "requirementType": "source_text",
-        "rule": "gold_cost_rule",
-        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
-        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+        "rule": "gold_requirement_rule",
+        "reason": "当前金币条件不是支付行为，且部分 source_text 尚不可机器求值。",
+        "decision": "确认阈值方向、数值及该条件是否应作为搜索概念。"
       }
     ],
     "clone_vs_duplicator": [
@@ -2336,85 +2348,26 @@
     ],
     "other_ambiguous": []
   },
-  "synonymCollisions": [
+  "actualAliasCollisions": [],
+  "intrinsicAliasRisks": [
     {
-      "alias": "d",
-      "groupKeys": [
-        "reroll_terms"
-      ],
-      "conceptKeys": [
-        "free_reroll",
-        "shop_reroll"
-      ],
+      "groupKey": "champion_duplicator_terms",
+      "risk": "clone_vs_duplicator",
       "reviewStatus": "needs_review"
     },
     {
-      "alias": "hp",
-      "groupKeys": [
-        "health_terms"
-      ],
-      "conceptKeys": [
-        "player_health_gain",
-        "player_health_loss",
-        "player_health_threshold"
-      ],
+      "groupKey": "health_terms",
+      "risk": "player_vs_unit_health",
       "reviewStatus": "needs_review"
     },
     {
-      "alias": "reroll",
-      "groupKeys": [
-        "reroll_terms"
-      ],
-      "conceptKeys": [
-        "free_reroll",
-        "shop_reroll"
-      ],
+      "groupKey": "reroll_terms",
+      "risk": "single_letter_alias:D",
       "reviewStatus": "needs_review"
     },
     {
-      "alias": "roll",
-      "groupKeys": [
-        "reroll_terms"
-      ],
-      "conceptKeys": [
-        "free_reroll",
-        "shop_reroll"
-      ],
-      "reviewStatus": "needs_review"
-    },
-    {
-      "alias": "刷新",
-      "groupKeys": [
-        "reroll_terms"
-      ],
-      "conceptKeys": [
-        "free_reroll",
-        "shop_reroll"
-      ],
-      "reviewStatus": "needs_review"
-    },
-    {
-      "alias": "生命值",
-      "groupKeys": [
-        "health_terms"
-      ],
-      "conceptKeys": [
-        "player_health_gain",
-        "player_health_loss",
-        "player_health_threshold"
-      ],
-      "reviewStatus": "needs_review"
-    },
-    {
-      "alias": "血量",
-      "groupKeys": [
-        "health_terms"
-      ],
-      "conceptKeys": [
-        "player_health_gain",
-        "player_health_loss",
-        "player_health_threshold"
-      ],
+      "groupKey": "reroll_terms",
+      "risk": "reroll_vs_refresh",
       "reviewStatus": "needs_review"
     }
   ]
