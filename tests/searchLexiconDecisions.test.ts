@@ -6,6 +6,12 @@ import { BASE_SYNONYMS, normalizeSearchText } from '../src/search/searchEngine';
 const decisions = JSON.parse(readFileSync('data/reviews/18.1/search-lexicon-decisions.json', 'utf8')) as DecisionOverlay;
 const concepts = JSON.parse(readFileSync('data/overrides/18.1/search-concepts.draft.json', 'utf8'));
 const synonyms = JSON.parse(readFileSync('data/overrides/18.1/synonyms.draft.json', 'utf8'));
+const normalizeAlias = (alias: string) => normalizeSearchText(alias).trim();
+const canonicalGroups = (groups: readonly (readonly string[])[]) => groups
+  .map(group => [...new Set(group.map(normalizeAlias))].sort())
+  .sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b)));
+const flattenedAliases = (groups: readonly (readonly string[])[]) =>
+  [...new Set(groups.flat().map(normalizeAlias))].sort();
 
 describe('manual search lexicon decision overlay', () => {
   it('matches current generated metadata and approved aliases', () => {
@@ -28,12 +34,19 @@ describe('manual search lexicon decision overlay', () => {
       `duplicate query expansion group decision: ${duplicate.queryExpansionDecisions[0]!.groupKey}`,
     );
   });
-  it('keeps runtime bootstrap aliases exactly equal to manually approved aliases', () => {
-    const normalize = (alias: string) => normalizeSearchText(alias).trim();
-    const approved = [...new Set(decisions.queryExpansionDecisions.flatMap(group => group.approved).map(normalize))].sort();
-    const runtime = [...new Set(BASE_SYNONYMS.flat().map(normalize))].sort();
-    expect(runtime).toEqual(approved);
-    for (const rejected of ['d', 'roll', '妮蔻', 'ap', 'ad', 'as', 'cc']) expect(runtime).not.toContain(rejected);
+  it('keeps runtime bootstrap synonym groups exactly equal to manually approved groups', () => {
+    const approvedGroups = decisions.queryExpansionDecisions.map(group => group.approved);
+    expect(canonicalGroups(BASE_SYNONYMS)).toEqual(canonicalGroups(approvedGroups));
+    expect(flattenedAliases(BASE_SYNONYMS)).toEqual(flattenedAliases(approvedGroups));
+    for (const rejected of ['d', 'roll', '妮蔻', 'ap', 'ad', 'as', 'cc']) expect(flattenedAliases(BASE_SYNONYMS)).not.toContain(rejected);
+  });
+  it('detects semantic regrouping even when the flattened vocabulary is unchanged', () => {
+    const approvedGroups = decisions.queryExpansionDecisions.map(group => group.approved);
+    const regrouped = BASE_SYNONYMS.map(group => [...group]);
+    [regrouped[0]![0], regrouped[1]![0]] = [regrouped[1]![0]!, regrouped[0]![0]!];
+
+    expect(flattenedAliases(regrouped)).toEqual(flattenedAliases(approvedGroups));
+    expect(canonicalGroups(regrouped)).not.toEqual(canonicalGroups(approvedGroups));
   });
   it('generator does not target the manually maintained decisions file', () => {
     const generatorEntry = readFileSync('scripts/data/generate-search-lexicon-18.1.ts', 'utf8');
