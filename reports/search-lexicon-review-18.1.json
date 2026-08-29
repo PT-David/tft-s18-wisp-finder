@@ -1,0 +1,2421 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "generatorVersion": "c2.1-v1",
+  "input": {
+    "path": "data/normalized/wisps_18.1.json",
+    "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+    "recordCount": 169
+  },
+  "summary": {
+    "recordsScanned": 169,
+    "conceptCandidateAssignments": 273,
+    "conceptKeysUsed": 34,
+    "queryExpansionGroups": 4,
+    "recordAliases": 0,
+    "highConfidenceCandidates": 258,
+    "needsReviewCandidates": 15,
+    "collisionRiskItems": 10
+  },
+  "reviewGroups": {
+    "player_vs_unit_health": [
+      {
+        "wispId": "da_18_fellowship",
+        "field": "effects.blossom",
+        "text": "每有1名相邻的友军，弈子们就会获得6%最大生命值护盾和6%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_fellowship",
+        "field": "effects.normal",
+        "text": "每有1名相邻的友军，弈子们就会获得4%最大生命值护盾和4%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_giantgrowth",
+        "field": "effects.blossom",
+        "text": "你生命值最高的2个单位成长，获得750生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_giantgrowth",
+        "field": "effects.normal",
+        "text": "你生命值最高的那个单位成长，获得750生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_killingfrenzy",
+        "field": "effects.blossom",
+        "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_killingfrenzy",
+        "field": "effects.normal",
+        "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lifedebt",
+        "field": "effects.blossom",
+        "text": "每失去12玩家生命值，获得1金币。然后治疗3生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lifedebt",
+        "field": "effects.blossom",
+        "text": "每失去12玩家生命值，获得1金币。然后治疗3生命值。",
+        "matchedTerms": [
+          "治疗3生命值"
+        ],
+        "rule": "player_health_gain_rule",
+        "reason": "“治疗生命值”未显式写明玩家，需避免与弈子治疗混淆。",
+        "decision": "确认治疗对象是否为玩家/Little Legend。"
+      },
+      {
+        "wispId": "da_18_lifedebt",
+        "field": "effects.normal",
+        "text": "每失去12玩家生命值，获得1金币。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lifedebt",
+        "field": "requirements[0].textZh",
+        "text": "已损失至少10点生命值",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lifedebt",
+        "field": "requirements[0].textZh",
+        "text": "已损失至少10点生命值",
+        "matchedTerms": [
+          "已损失至少10点生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "player_health_threshold_rule",
+        "reason": "Requirement 的文本或类型未始终明确写出玩家。",
+        "decision": "确认该阈值检查玩家生命而非弈子生命。"
+      },
+      {
+        "wispId": "da_18_lightningstorm",
+        "field": "effects.blossom",
+        "text": "每过1秒，对1名敌人造成7%最大生命值真实伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lightningstorm",
+        "field": "effects.normal",
+        "text": "每过1秒，对1名敌人造成5%最大生命值真实伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lightningstorm",
+        "field": "effects.prismatic",
+        "text": "每过0.15秒，对1名敌人造成5%最大生命值真实伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lightningstrike",
+        "field": "effects.blossom",
+        "text": "对所有敌人造成18%最大生命值真实伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_lightningstrike",
+        "field": "effects.normal",
+        "text": "对所有敌人造成10%最大生命值真实伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_verdantvitality",
+        "field": "effects.blossom",
+        "text": "你的弈子们获得75生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_18_verdantvitality",
+        "field": "effects.normal",
+        "text": "你的弈子们获得50生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_bigboom18",
+        "field": "effects.blossom",
+        "text": "最先阵亡的2名友军会产生爆炸，造成25%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_bigboom18",
+        "field": "effects.normal",
+        "text": "第一名阵亡的友军会产生爆炸，造成25%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_borrowedgear18",
+        "field": "effects.blossom",
+        "text": "1个弈子获得1件临时推荐装备和250生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_bulwark18",
+        "field": "effects.blossom",
+        "text": "你的【坦克】在生命值降至50%时，会获得30%最大生命值护盾。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_bulwark18",
+        "field": "effects.normal",
+        "text": "你的【坦克】在生命值降至50%时，会获得20%最大生命值护盾。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_combust18",
+        "field": "effects.blossom",
+        "text": "你的弈子们在阵亡时产生爆炸，造成22%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_combust18",
+        "field": "effects.normal",
+        "text": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_combust18",
+        "field": "effects.prismatic",
+        "text": "你的弈子们在阵亡时产生爆炸，造成100%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_diversified18",
+        "field": "effects.blossom",
+        "text": "每有1个已激活的非唯一羁绊，你的队伍获得45生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_diversified18",
+        "field": "effects.normal",
+        "text": "每有1个已激活的非唯一羁绊，你的队伍获得30生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_doodadbag18",
+        "field": "effects.blossom",
+        "text": "获得3个消耗品，其能提供永久的护甲与魔抗或生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_doodadbag18",
+        "field": "effects.normal",
+        "text": "获得2个消耗品，其能提供永久的护甲与魔抗或生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_doodadjar18",
+        "field": "effects.blossom",
+        "text": "获得2个消耗品，其能提供永久的护甲与魔抗或生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_doodadjar18",
+        "field": "effects.normal",
+        "text": "获得1个消耗品，其能提供永久的护甲与魔抗或生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_doodadsack18",
+        "field": "effects.blossom",
+        "text": "获得4个消耗品，其能提供永久的护甲与魔抗或生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_doodadsack18",
+        "field": "effects.normal",
+        "text": "获得3个消耗品，其能提供永久的护甲与魔抗或生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_giantsaura18",
+        "field": "effects.blossom",
+        "text": "你生命值最高的那名友军，每秒在一片区域内造成3%最大生命值伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_giantsaura18",
+        "field": "effects.normal",
+        "text": "你生命值最高的那名友军，每秒在一片区域内造成2%最大生命值伤害。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_giantsaura18",
+        "field": "effects.prismatic",
+        "text": "你生命值最高的那名友军，成为了一名极其危险的人物。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_heroofprophecy18",
+        "field": "requirements[1].textZh",
+        "text": "生命值高于50",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_heroofprophecy18",
+        "field": "requirements[1].textZh",
+        "text": "生命值高于50",
+        "matchedTerms": [
+          "生命值高于50"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "player_health_threshold_rule",
+        "reason": "Requirement 的文本或类型未始终明确写出玩家。",
+        "decision": "确认该阈值检查玩家生命而非弈子生命。"
+      },
+      {
+        "wispId": "da_hugify18",
+        "field": "effects.blossom",
+        "text": "你生命值最高的那个单位成长，获得600生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_hugify18",
+        "field": "effects.normal",
+        "text": "你生命值最高的那个单位成长，获得350生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_hugify18",
+        "field": "effects.prismatic",
+        "text": "你生命值最高的10个单位成长，获得2500生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_ironcore18",
+        "field": "effects.blossom",
+        "text": "每有1个位于前排的单位，你前排中心的那个弈子就会获得8%最大生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_ironcore18",
+        "field": "effects.normal",
+        "text": "每有1个位于前排的单位，你前排中心的那个弈子就会获得6%最大生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_ironwood18",
+        "field": "effects.blossom",
+        "text": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低20%。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_ironwood18",
+        "field": "effects.normal",
+        "text": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低14%。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_petrifieddummy18",
+        "field": "effects.blossom",
+        "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_petrifieddummy18",
+        "field": "effects.normal",
+        "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_solitudescloak18",
+        "field": "effects.blossom",
+        "text": "邻格无友军的弈子们获得15%最大生命值和15%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_solitudescloak18",
+        "field": "effects.normal",
+        "text": "邻格无友军的弈子们获得10%最大生命值和10%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_standalone18",
+        "field": "effects.blossom",
+        "text": "独自处于所在排的弈子们获得22%生命值和22%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_standalone18",
+        "field": "effects.normal",
+        "text": "独自处于所在排的弈子们获得15%生命值和15%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "da_standalone18",
+        "field": "effects.prismatic",
+        "text": "独自处于所在排的弈子们获得100%生命值和150%伤害增幅。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_022_fc7538964718",
+        "field": "effects.normal",
+        "text": "失去4玩家生命值。获得2金币。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_022_fc7538964718",
+        "field": "requirements[0].textZh",
+        "text": "处于高生命值",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_022_fc7538964718",
+        "field": "requirements[0].textZh",
+        "text": "处于高生命值",
+        "matchedTerms": [
+          "处于高生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "player_health_threshold_rule",
+        "reason": "Requirement 的文本或类型未始终明确写出玩家。",
+        "decision": "确认该阈值检查玩家生命而非弈子生命。"
+      },
+      {
+        "wispId": "snapshot_085_b53a01d778ee",
+        "field": "effects.normal",
+        "text": "获得5玩家生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_085_b53a01d778ee",
+        "field": "effects.normal",
+        "text": "获得5玩家生命值。",
+        "matchedTerms": [
+          "获得5玩家生命值"
+        ],
+        "rule": "player_health_gain_rule",
+        "reason": "“治疗生命值”未显式写明玩家，需避免与弈子治疗混淆。",
+        "decision": "确认治疗对象是否为玩家/Little Legend。"
+      },
+      {
+        "wispId": "snapshot_085_b53a01d778ee",
+        "field": "requirements[0].textZh",
+        "text": "已损失至少10点生命值",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_085_b53a01d778ee",
+        "field": "requirements[0].textZh",
+        "text": "已损失至少10点生命值",
+        "matchedTerms": [
+          "已损失至少10点生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "player_health_threshold_rule",
+        "reason": "Requirement 的文本或类型未始终明确写出玩家。",
+        "decision": "确认该阈值检查玩家生命而非弈子生命。"
+      },
+      {
+        "wispId": "snapshot_090_cf945e21ddef",
+        "field": "effects.normal",
+        "text": "你的队伍每秒治疗1%最大生命值。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_120_cf0b477ffe00",
+        "field": "effects.normal",
+        "text": "失去3玩家生命值。获得1个【次级英雄复制器】。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_120_cf0b477ffe00",
+        "field": "requirements[0].textZh",
+        "text": "处于高生命值",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_120_cf0b477ffe00",
+        "field": "requirements[0].textZh",
+        "text": "处于高生命值",
+        "matchedTerms": [
+          "处于高生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "player_health_threshold_rule",
+        "reason": "Requirement 的文本或类型未始终明确写出玩家。",
+        "decision": "确认该阈值检查玩家生命而非弈子生命。"
+      },
+      {
+        "wispId": "snapshot_157_3ed870773960",
+        "field": "effects.normal",
+        "text": "失去10玩家生命值。获得1个【英雄复制器】。",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_157_3ed870773960",
+        "field": "requirements[0].textZh",
+        "text": "处于高生命值",
+        "matchedTerms": [
+          "生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "bare_health_guard",
+        "reason": "裸“生命值/health”不能判定为玩家生命；它也常描述弈子或单位。",
+        "decision": "判断生命值主体；仅在主体为玩家时批准 player_health 概念。"
+      },
+      {
+        "wispId": "snapshot_157_3ed870773960",
+        "field": "requirements[0].textZh",
+        "text": "处于高生命值",
+        "matchedTerms": [
+          "处于高生命值"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "player_health_threshold_rule",
+        "reason": "Requirement 的文本或类型未始终明确写出玩家。",
+        "decision": "确认该阈值检查玩家生命而非弈子生命。"
+      }
+    ],
+    "death_kill_execute": [
+      {
+        "wispId": "da_18_bloodmoney",
+        "field": "effects.blossom",
+        "text": "每击杀1个弈子，获得1金币。获得1金币。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_bloodmoney",
+        "field": "effects.normal",
+        "text": "每击杀1个弈子，获得1金币。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_fertilize",
+        "field": "effects.blossom",
+        "text": "每有1名阵亡的敌人，获得1经验值。获得2经验值。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_fertilize",
+        "field": "effects.normal",
+        "text": "每有1名阵亡的敌人，获得1经验值。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_heatedrivalry",
+        "field": "effects.blossom",
+        "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+7参与击杀数。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_heatedrivalry",
+        "field": "effects.normal",
+        "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+3参与击杀数。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_killingfrenzy",
+        "field": "effects.blossom",
+        "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。",
+        "matchedTerms": [
+          "处决"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_killingfrenzy",
+        "field": "effects.normal",
+        "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。",
+        "matchedTerms": [
+          "处决"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_pocketchange",
+        "field": "effects.blossom",
+        "text": "你的1星弈子们在阵亡时掉落1金币。获得1金币。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_pocketchange",
+        "field": "effects.normal",
+        "text": "你的1星弈子们在阵亡时掉落1金币。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_18_propagate",
+        "field": "effects.normal",
+        "text": "获得第1名阵亡的友军的1个复制体。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_bigboom18",
+        "field": "effects.blossom",
+        "text": "最先阵亡的2名友军会产生爆炸，造成25%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_bigboom18",
+        "field": "effects.normal",
+        "text": "第一名阵亡的友军会产生爆炸，造成25%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_bloodandiron18",
+        "field": "effects.blossom",
+        "text": "在16个弈子阵亡后，获得1个【基础装备锻造器】。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_bloodandiron18",
+        "field": "effects.normal",
+        "text": "在20个弈子阵亡后，获得1个【基础装备锻造器】。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_combust18",
+        "field": "effects.blossom",
+        "text": "你的弈子们在阵亡时产生爆炸，造成22%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_combust18",
+        "field": "effects.normal",
+        "text": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_combust18",
+        "field": "effects.prismatic",
+        "text": "你的弈子们在阵亡时产生爆炸，造成100%最大生命值魔法伤害。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_killersregret18",
+        "field": "effects.blossom",
+        "text": "你最先阵亡的4个弈子会将其击杀者晕眩1.75秒。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_killersregret18",
+        "field": "effects.normal",
+        "text": "你最先阵亡的3个弈子会将其击杀者晕眩1.5秒。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_naturesally18",
+        "field": "effects.blossom",
+        "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】 有时会召唤出2星的版本。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_naturesally18",
+        "field": "effects.normal",
+        "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_natureswrath18",
+        "field": "effects.blossom",
+        "text": "在8秒后，将所有未携带装备的单位击杀。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_natureswrath18",
+        "field": "effects.normal",
+        "text": "在10秒后，将所有未携带装备的单位击杀。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_petrifieddummy18",
+        "field": "effects.blossom",
+        "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_petrifieddummy18",
+        "field": "effects.normal",
+        "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_revenge18",
+        "field": "effects.blossom",
+        "text": "每当1名友军阵亡时，你的弈子们获得6%可叠加的伤害增幅。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_revenge18",
+        "field": "effects.normal",
+        "text": "每当1名友军阵亡时，你的弈子们获得4%可叠加的伤害增幅。",
+        "matchedTerms": [
+          "阵亡"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_rollingbones18",
+        "field": "effects.blossom",
+        "text": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_rollingbones18",
+        "field": "effects.normal",
+        "text": "每获得1次击杀，你都有50%几率获得1次免费刷新。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "da_trophyhunter18",
+        "field": "effects.normal",
+        "text": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      },
+      {
+        "wispId": "snapshot_048_cbc77e083fc2",
+        "field": "effects.normal",
+        "text": "如果你失败但至少击杀了1名敌人，获得4经验值。",
+        "matchedTerms": [
+          "击杀"
+        ],
+        "rule": "death_kill_execute_guard",
+        "reason": "阵亡、击杀奖励和阈值处决是不同触发语义。",
+        "decision": "确认主体与触发类型，不得把这些概念无条件合并。"
+      }
+    ],
+    "item_semantics": [
+      {
+        "wispId": "da_18_earlyfix",
+        "field": "effects.blossom",
+        "text": "获得2个【装备重铸器】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_earlyfix",
+        "field": "effects.normal",
+        "text": "获得1个【装备重铸器】",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_heroicsacrifice",
+        "field": "requirements[0].textZh",
+        "text": "拥有携带装备的弈子",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_heroicsacrifice",
+        "field": "requirements[1].textZh",
+        "text": "满装备单位少于4个",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_killingfrenzy",
+        "field": "requirements[0].textZh",
+        "text": "拥有1个带装备的战士",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_preppers",
+        "field": "effects.blossom",
+        "text": "你的叠层型装备在下次战斗开始时，拥有额外初始层数。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_preppers",
+        "field": "effects.normal",
+        "text": "你的叠层型装备在下次战斗开始时，拥有部分初始层数。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_radiantize",
+        "field": "effects.blossom",
+        "text": "在5秒后，1件被携带着的随机装备暂时变为光明版。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_18_radiantize",
+        "field": "effects.normal",
+        "text": "在8秒后，1件被携带着的随机装备暂时变为光明版。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_artifactinate18",
+        "field": "effects.blossom",
+        "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】和1个【装备重铸器】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_artifactinate18",
+        "field": "effects.normal",
+        "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_artifactinate18",
+        "field": "requirements[0].textZh",
+        "text": "至少拥有3件基础装备",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_blastpotion18_charm",
+        "field": "effects.blossom",
+        "text": "获得1个临时的、可装备的【光明版爆炸药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_blastpotion18_charm",
+        "field": "effects.normal",
+        "text": "获得1个临时的、可装备的【爆炸药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_bloodandiron18",
+        "field": "effects.blossom",
+        "text": "在16个弈子阵亡后，获得1个【基础装备锻造器】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_bloodandiron18",
+        "field": "effects.normal",
+        "text": "在20个弈子阵亡后，获得1个【基础装备锻造器】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_boostershot18",
+        "field": "requirements[0].textZh",
+        "text": "拥有2个1星弈子，或1个满装备的5费弈子",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_borrowedgear18",
+        "field": "effects.blossom",
+        "text": "1个弈子获得1件临时推荐装备和250生命值。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_borrowedgear18",
+        "field": "effects.normal",
+        "text": "1个弈子获得1件临时推荐装备。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_borrowedgear18",
+        "field": "nameZh",
+        "text": "借来的装备",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_curiocart18",
+        "field": "effects.blossom",
+        "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_curiocart18",
+        "field": "effects.normal",
+        "text": "开启1个装备商店。装备的费用在0到15金币之间。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_healthpotion18_charm",
+        "field": "effects.blossom",
+        "text": "获得1个临时的、可装备的【光明版生命药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_healthpotion18_charm",
+        "field": "effects.normal",
+        "text": "获得1个临时的、可装备的【生命药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_herosentrance18",
+        "field": "effects.blossom",
+        "text": "在5秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_herosentrance18",
+        "field": "effects.normal",
+        "text": "在8秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_hireling18",
+        "field": "effects.blossom",
+        "text": "1个携带着2件推荐装备的临时1星5费弈子加入你的队伍。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_hireling18",
+        "field": "effects.normal",
+        "text": "1个携带着1件推荐装备的临时5星1费弈子加入你的队伍。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_hireling18",
+        "field": "effects.prismatic",
+        "text": "3个临时的、携带着2件推荐装备的2星5费弈子加入你的队伍。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_idlecraftsman18",
+        "field": "effects.normal",
+        "text": "将你备战席的1件基础装备转化为它可合成的1件成装。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_idlecraftsman18",
+        "field": "requirements[0].textZh",
+        "text": "备战席上至少有1件基础装备",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_improvedreach18",
+        "field": "requirements[1].textZh",
+        "text": "拥有1个带装备的战士",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_latebloomer18",
+        "field": "effects.blossom",
+        "text": "一名携带着 1件推荐装备的临时3星1费弈子加入己方队伍。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_manapotion18_charm",
+        "field": "effects.blossom",
+        "text": "获得1个临时的、可装备的【光明版法力药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_manapotion18_charm",
+        "field": "effects.normal",
+        "text": "获得1个临时的、可装备的【法力药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_manarichsoil18",
+        "field": "requirements[1].textZh",
+        "text": "拥有1个带装备的术师",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_marksmensgale18",
+        "field": "requirements[1].textZh",
+        "text": "拥有1个带装备的射手",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_natureswrath18",
+        "field": "effects.blossom",
+        "text": "在8秒后，将所有未携带装备的单位击杀。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_natureswrath18",
+        "field": "effects.normal",
+        "text": "在10秒后，将所有未携带装备的单位击杀。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_natureswrath18",
+        "field": "requirements[0].textZh",
+        "text": "拥有携带装备的弈子",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_peddler18",
+        "field": "effects.blossom",
+        "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_peddler18",
+        "field": "effects.normal",
+        "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_phantomarmor18",
+        "field": "effects.prismatic",
+        "text": "获得6个临时的【光明版狂徒铠甲】和5个【装备拆卸器】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_potioncraft18",
+        "field": "effects.blossom",
+        "text": "获得3个临时的、可装备的【光明版药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_potioncraft18",
+        "field": "effects.normal",
+        "text": "获得3个临时的、可装备的【药水】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_quicken18",
+        "field": "requirements[0].textZh",
+        "text": "不适用于满装备的无蓝弈子",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_salvager18",
+        "field": "effects.blossom",
+        "text": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。获得2金币。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_salvager18",
+        "field": "effects.normal",
+        "text": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_scrappy18",
+        "field": "effects.blossom",
+        "text": "战斗开始时：未携带任何装备的3个弈子会获得1件临时的推荐装备。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_scrappy18",
+        "field": "effects.normal",
+        "text": "战斗开始时：未携带任何装备的2个弈子会获得1件临时的推荐装备。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_trainingyard18",
+        "field": "effects.blossom",
+        "text": "获得3个携带着1件随机坦克装备的【训练假人】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "da_trainingyard18",
+        "field": "effects.normal",
+        "text": "获得2个携带着1件随机坦克装备的【训练假人】。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "snapshot_106_1bce73a8632c",
+        "field": "requirements[1].textZh",
+        "text": "拥有1个带装备的射手",
+        "matchedTerms": [
+          "装备"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      },
+      {
+        "wispId": "snapshot_136_c467ccd546d7",
+        "field": "effects.normal",
+        "text": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
+        "matchedTerms": [
+          "装备"
+        ],
+        "rule": "generic_item_guard",
+        "reason": "“装备”可能表示获得、条件、临时装备、组件、成装或商店。",
+        "decision": "选择精确装备 concept，或确认无需分配。"
+      }
+    ],
+    "gold_cost_vs_reward": [
+      {
+        "wispId": "da_18_mercenaryforce",
+        "field": "requirements[0].textZh",
+        "text": "至少拥有30金币",
+        "matchedTerms": [
+          "至少拥有30金币"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_18_prolificpower",
+        "field": "requirements[0].textZh",
+        "text": "金币少于10",
+        "matchedTerms": [
+          "金币少于10"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_18_verdantvitality",
+        "field": "requirements[0].textZh",
+        "text": "金币少于10",
+        "matchedTerms": [
+          "金币少于10"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_curiocart18",
+        "field": "effects.blossom",
+        "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
+        "matchedTerms": [
+          "费用在0到15金币"
+        ],
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_curiocart18",
+        "field": "effects.normal",
+        "text": "开启1个装备商店。装备的费用在0到15金币之间。",
+        "matchedTerms": [
+          "费用在0到15金币"
+        ],
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_curiocart18",
+        "field": "requirements[0].textZh",
+        "text": "拥有足够的金币",
+        "matchedTerms": [
+          "拥有足够的金币"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_heroofprophecy18",
+        "field": "requirements[0].textZh",
+        "text": "至少拥有35金币",
+        "matchedTerms": [
+          "至少拥有35金币"
+        ],
+        "requirementIndex": 0,
+        "requirementType": "source_text",
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_peddler18",
+        "field": "effects.blossom",
+        "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
+        "matchedTerms": [
+          "费用在0到14金币"
+        ],
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_peddler18",
+        "field": "effects.normal",
+        "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
+        "matchedTerms": [
+          "费用在0到14金币"
+        ],
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      },
+      {
+        "wispId": "da_ridethewave18",
+        "field": "requirements[1].textZh",
+        "text": "至少拥有20金币",
+        "matchedTerms": [
+          "至少拥有20金币"
+        ],
+        "requirementIndex": 1,
+        "requirementType": "source_text",
+        "rule": "gold_cost_rule",
+        "reason": "持有条件、售价和实际支付可能是不同的金币语义。",
+        "decision": "确认应归入金币花费，还是仅保留为持有/售价条件。"
+      }
+    ],
+    "clone_vs_duplicator": [
+      {
+        "wispId": "da_18_propagate",
+        "field": "effects.normal",
+        "text": "获得第1名阵亡的友军的1个复制体。",
+        "matchedTerms": [
+          "复制体"
+        ],
+        "rule": "generic_copy_guard",
+        "reason": "普通复制机制不是英雄复制器道具。",
+        "decision": "判断是否明确指向 Champion Duplicator 道具；否则不得批准 champion_duplicator。"
+      },
+      {
+        "wispId": "da_foresttwins18",
+        "field": "effects.blossom",
+        "text": "获得3个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+        "matchedTerms": [
+          "复制体"
+        ],
+        "rule": "generic_copy_guard",
+        "reason": "普通复制机制不是英雄复制器道具。",
+        "decision": "判断是否明确指向 Champion Duplicator 道具；否则不得批准 champion_duplicator。"
+      },
+      {
+        "wispId": "da_foresttwins18",
+        "field": "effects.normal",
+        "text": "获得2个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+        "matchedTerms": [
+          "复制体"
+        ],
+        "rule": "generic_copy_guard",
+        "reason": "普通复制机制不是英雄复制器道具。",
+        "decision": "判断是否明确指向 Champion Duplicator 道具；否则不得批准 champion_duplicator。"
+      },
+      {
+        "wispId": "snapshot_139_6fda4e76a4da",
+        "field": "effects.normal",
+        "text": "复制你伤害最高的弈子。复制体造成20%伤害。",
+        "matchedTerms": [
+          "复制你"
+        ],
+        "rule": "generic_copy_guard",
+        "reason": "普通复制机制不是英雄复制器道具。",
+        "decision": "判断是否明确指向 Champion Duplicator 道具；否则不得批准 champion_duplicator。"
+      },
+      {
+        "wispId": "snapshot_139_6fda4e76a4da",
+        "field": "effects.prismatic",
+        "text": "复制你伤害最高的弈子。复制体造成100%伤害。",
+        "matchedTerms": [
+          "复制你"
+        ],
+        "rule": "generic_copy_guard",
+        "reason": "普通复制机制不是英雄复制器道具。",
+        "decision": "判断是否明确指向 Champion Duplicator 道具；否则不得批准 champion_duplicator。"
+      }
+    ],
+    "reroll_vs_refresh": [
+      {
+        "wispId": "da_18_allfives",
+        "field": "effects.blossom",
+        "text": "刷新你的商店，使其充满5费弈子。获得5金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allfives",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满5费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allfours",
+        "field": "effects.blossom",
+        "text": "刷新你的商店，使其充满4费弈子。获得2金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allfours",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满4费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allones",
+        "field": "effects.blossom",
+        "text": "刷新你的商店，使其充满1费弈子。获得1金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allones",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满1费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allthrees",
+        "field": "effects.blossom",
+        "text": "刷新你的商店，使其充满3费弈子。获得2金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_allthrees",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满3费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_alltwos",
+        "field": "effects.blossom",
+        "text": "刷新你的商店，使其充满2费弈子。获得1金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_alltwos",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满2费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_freeroller",
+        "field": "effects.blossom",
+        "text": "获得3次刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_freeroller",
+        "field": "effects.normal",
+        "text": "获得2次刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_freeroller",
+        "field": "nameZh",
+        "text": "免费刷新术",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_starfall",
+        "field": "effects.blossom",
+        "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_18_starfall",
+        "field": "effects.normal",
+        "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_abandonship18",
+        "field": "effects.blossom",
+        "text": "出售你棋盘上和备战席的所有弈子，获得10金币和10次刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_abandonship18",
+        "field": "effects.normal",
+        "text": "出售你棋盘上和备战席的所有弈子，获得6金币和8次刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_animateshop18",
+        "field": "effects.blossom",
+        "text": "在26秒的持续时间里，你的商店每2秒免费刷新一次。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_animateshop18",
+        "field": "effects.normal",
+        "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_beggarswisp18",
+        "field": "effects.blossom",
+        "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得5金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_beggarswisp18",
+        "field": "effects.normal",
+        "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_bordervillage18",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满2星2费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_flashfire18",
+        "field": "effects.blossom",
+        "text": "刷新你的商店。【地狱火】引燃3个商店栏位，将其升级。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_flashfire18",
+        "field": "effects.normal",
+        "text": "刷新你的商店。【地狱火】引燃2个商店栏位，将其升级。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_lucky718",
+        "field": "effects.blossom",
+        "text": "获得10次商店刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_lucky718",
+        "field": "effects.normal",
+        "text": "获得7次商店刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_lucky718",
+        "field": "effects.prismatic",
+        "text": "获得777次商店刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_middlepath18",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满2星3费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_ridethewave18",
+        "field": "effects.blossom",
+        "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_ridethewave18",
+        "field": "effects.normal",
+        "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_rollingbones18",
+        "field": "effects.blossom",
+        "text": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_rollingbones18",
+        "field": "effects.normal",
+        "text": "每获得1次击杀，你都有50%几率获得1次免费刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_rolypolys18",
+        "field": "effects.blossom",
+        "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_rolypolys18",
+        "field": "effects.normal",
+        "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_searchparty18",
+        "field": "effects.normal",
+        "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      },
+      {
+        "wispId": "da_startingtown18",
+        "field": "effects.normal",
+        "text": "刷新你的商店，使其充满2星1费弈子。",
+        "matchedTerms": [
+          "刷新"
+        ],
+        "rule": "refresh_context_guard",
+        "reason": "刷新只有明确指向 TFT 商店或刷新次数时才是 reroll。",
+        "decision": "确认这是商店 reroll，而非普通更新/重置。"
+      }
+    ],
+    "other_ambiguous": []
+  },
+  "synonymCollisions": [
+    {
+      "alias": "d",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "hp",
+      "groupKeys": [
+        "health_terms"
+      ],
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "reroll",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "roll",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "刷新",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "生命值",
+      "groupKeys": [
+        "health_terms"
+      ],
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "血量",
+      "groupKeys": [
+        "health_terms"
+      ],
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "reviewStatus": "needs_review"
+    }
+  ]
+}

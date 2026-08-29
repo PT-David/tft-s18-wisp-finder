@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "generatorVersion": "c2.1-v1",
+  "input": {
+    "path": "data/normalized/wisps_18.1.json",
+    "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+    "recordCount": 169
+  },
+  "queryExpansionGroups": [
+    {
+      "key": "champion_duplicator_terms",
+      "canonicalTerm": "Champion Duplicator",
+      "conceptKeys": [
+        "champion_duplicator"
+      ],
+      "aliases": [
+        {
+          "term": "Champion Duplicator",
+          "language": "en"
+        },
+        {
+          "term": "复制器",
+          "language": "zh"
+        },
+        {
+          "term": "妮蔻",
+          "language": "game_slang"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "collisionRisk": [
+        "clone_vs_duplicator"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "key": "experience_terms",
+      "canonicalTerm": "经验",
+      "conceptKeys": [
+        "xp_gain"
+      ],
+      "aliases": [
+        {
+          "term": "XP",
+          "language": "en"
+        },
+        {
+          "term": "经验",
+          "language": "zh"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "collisionRisk": [],
+      "reviewStatus": "draft_candidate"
+    },
+    {
+      "key": "health_terms",
+      "canonicalTerm": "生命值",
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "aliases": [
+        {
+          "term": "HP",
+          "language": "en"
+        },
+        {
+          "term": "生命值",
+          "language": "zh"
+        },
+        {
+          "term": "血量",
+          "language": "game_slang"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "collisionRisk": [
+        "player_vs_unit_health"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "key": "reroll_terms",
+      "canonicalTerm": "刷新",
+      "conceptKeys": [
+        "shop_reroll",
+        "free_reroll"
+      ],
+      "aliases": [
+        {
+          "term": "D",
+          "language": "game_slang"
+        },
+        {
+          "term": "reroll",
+          "language": "en"
+        },
+        {
+          "term": "roll",
+          "language": "game_slang"
+        },
+        {
+          "term": "刷新",
+          "language": "zh"
+        }
+      ],
+      "evidence": "C2 canonical query vocabulary rule",
+      "collisionRisk": [
+        "reroll_vs_refresh",
+        "single_letter_alias"
+      ],
+      "reviewStatus": "needs_review"
+    }
+  ],
+  "recordAliases": [],
+  "collisions": [
+    {
+      "alias": "d",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "hp",
+      "groupKeys": [
+        "health_terms"
+      ],
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "reroll",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "roll",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "刷新",
+      "groupKeys": [
+        "reroll_terms"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "生命值",
+      "groupKeys": [
+        "health_terms"
+      ],
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "reviewStatus": "needs_review"
+    },
+    {
+      "alias": "血量",
+      "groupKeys": [
+        "health_terms"
+      ],
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
+      "reviewStatus": "needs_review"
+    }
+  ]
+}

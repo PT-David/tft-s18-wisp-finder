@@ -75,7 +75,18 @@
 - 分字段打分，不只做全文 contains。
 - 结果顶部可根据 concept 动态生成二级建议。
 
-## 4. 下一轮工作
+## 4. Stage C2.1 候选数据层
+
+运行 `npm run data:lexicon:18.1`，仅以 `data/normalized/wisps_18.1.json` 为输入，
+确定性生成 concept draft、synonym draft 与人工审核报告。生成物中的
+`candidate_high_confidence` 仍是候选，不代表批准，也不会写回 normalized 或 public
+production 数据；人工完成语义、碰撞及证据审核后，才能在 C2.2 决定哪些内容上线。
+
+`queryExpansionGroups` 是全局“查询表达 → 等价查询表达”，`recordAliases` 则只表示
+某个具体 Wisp 的可靠名称别称。效果相似不构成 record alias；没有可靠证据时该数组
+应保持为空。完整短语（例如 `Champion Duplicator`）作为一个 alias 保存，不拆词。
+
+## 5. 后续工作
 
 使用完整 18.1 仙灵文本实际生成第一版：
 
@@ -83,4 +94,4 @@
 - `synonyms.json`
 - 每个仙灵的 `searchConcepts[]`
 
-Codex 当前只需要实现读取和索引这些字段的能力，不应自行创建完整词库。
+C2.1 draft 经人工审核后再进入 C2.2；不得直接把自动候选灌入 production 字段。

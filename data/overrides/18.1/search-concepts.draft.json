@@ -1,0 +1,5669 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "generatorVersion": "c2.1-v1",
+  "input": {
+    "path": "data/normalized/wisps_18.1.json",
+    "sha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+    "recordCount": 169
+  },
+  "taxonomy": [
+    {
+      "key": "ability_power",
+      "labelZh": "法术强度",
+      "description": "改变弈子的法术强度。"
+    },
+    {
+      "key": "ally_death",
+      "labelZh": "友军阵亡",
+      "description": "由友军或己方弈子阵亡触发。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "artifact_item",
+      "labelZh": "神器",
+      "description": "获得、转化或使用神器装备。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "attack_damage",
+      "labelZh": "攻击力",
+      "description": "改变弈子的攻击力。"
+    },
+    {
+      "key": "attack_speed",
+      "labelZh": "攻击速度",
+      "description": "改变弈子的攻击速度。"
+    },
+    {
+      "key": "board_composition",
+      "labelZh": "阵容条件",
+      "description": "由棋盘或备战席阵容构成决定。"
+    },
+    {
+      "key": "champion_cost_tier",
+      "labelZh": "弈子费用等级",
+      "description": "指向特定费用等级的弈子。"
+    },
+    {
+      "key": "champion_duplicator",
+      "labelZh": "英雄复制器",
+      "description": "明确获得或使用英雄复制器道具。",
+      "riskGroup": "clone_vs_duplicator"
+    },
+    {
+      "key": "champion_obtain",
+      "labelZh": "获得弈子",
+      "description": "直接获得弈子或使弈子加入队伍。"
+    },
+    {
+      "key": "champion_star_up",
+      "labelZh": "弈子升星",
+      "description": "提升或指定弈子星级。"
+    },
+    {
+      "key": "champion_transform",
+      "labelZh": "弈子转化",
+      "description": "将弈子转换为另一形态或对象。"
+    },
+    {
+      "key": "completed_item",
+      "labelZh": "成装",
+      "description": "明确涉及完整装备或成装。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "crowd_control",
+      "labelZh": "控制",
+      "description": "施加眩晕等群体控制。"
+    },
+    {
+      "key": "enemy_death",
+      "labelZh": "敌方阵亡",
+      "description": "由敌方单位阵亡触发。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "execute_threshold",
+      "labelZh": "处决阈值",
+      "description": "在目标低于生命阈值时处决。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "free_reroll",
+      "labelZh": "免费刷新",
+      "description": "明确提供免费商店刷新。",
+      "riskGroup": "reroll_vs_refresh"
+    },
+    {
+      "key": "gold_cost",
+      "labelZh": "金币花费",
+      "description": "支付、失去或要求持有金币。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "gold_gain",
+      "labelZh": "获得金币",
+      "description": "奖励或产出金币。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "item_component",
+      "labelZh": "基础装备",
+      "description": "明确涉及基础装备或散件。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "item_requirement",
+      "labelZh": "装备条件",
+      "description": "Requirement 明确要求已持有或携带装备。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "item_shop",
+      "labelZh": "装备商店",
+      "description": "开启或使用装备商店。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "kill_takedown",
+      "labelZh": "击杀或参与击杀",
+      "description": "明确的击杀、击倒或参与击杀语义。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "loss_streak",
+      "labelZh": "连败",
+      "description": "由连败状态决定。"
+    },
+    {
+      "key": "player_health_gain",
+      "labelZh": "玩家生命恢复",
+      "description": "明确增加或治疗玩家生命。",
+      "riskGroup": "player_vs_unit_health"
+    },
+    {
+      "key": "player_health_loss",
+      "labelZh": "玩家生命损失",
+      "description": "明确失去玩家生命。",
+      "riskGroup": "player_vs_unit_health"
+    },
+    {
+      "key": "player_health_threshold",
+      "labelZh": "玩家生命阈值",
+      "description": "Requirement 或文本明确检查玩家生命。",
+      "riskGroup": "player_vs_unit_health"
+    },
+    {
+      "key": "reforger",
+      "labelZh": "重铸器",
+      "description": "明确涉及装备重铸器。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "shield",
+      "labelZh": "护盾",
+      "description": "为弈子提供护盾。"
+    },
+    {
+      "key": "shop_reroll",
+      "labelZh": "商店刷新",
+      "description": "明确刷新 TFT 商店。",
+      "riskGroup": "reroll_vs_refresh"
+    },
+    {
+      "key": "survival_duration",
+      "labelZh": "存活持续时间",
+      "description": "按存活或持续秒数触发。",
+      "riskGroup": "survival_vs_once_per_game"
+    },
+    {
+      "key": "temporary_item",
+      "labelZh": "临时装备",
+      "description": "明确为临时且可装备或明确是装备的对象。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "time_stage",
+      "labelZh": "时间或阶段",
+      "description": "由回合、阶段或战斗时间决定。"
+    },
+    {
+      "key": "trait_active",
+      "labelZh": "羁绊激活",
+      "description": "由羁绊激活状态决定。"
+    },
+    {
+      "key": "true_damage",
+      "labelZh": "真实伤害",
+      "description": "造成真实伤害。"
+    },
+    {
+      "key": "win_streak",
+      "labelZh": "连胜",
+      "description": "由连胜状态决定。"
+    },
+    {
+      "key": "xp_gain",
+      "labelZh": "获得经验",
+      "description": "奖励经验值。"
+    }
+  ],
+  "assignments": [
+    {
+      "wispId": "da_18_aftershock",
+      "conceptKey": "crowd_control",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8和18秒后，晕眩所有敌人1.5秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，晕眩所有敌人1.5秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_aftershock",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，晕眩所有敌人1.5秒。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_aftershock",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8和18秒后，晕眩所有敌人1.5秒。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，晕眩所有敌人1.5秒。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满5费弈子。获得5金币。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满5费弈子。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满5费弈子。获得5金币。",
+          "matchedTerms": [
+            "获得5金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满5费弈子。获得5金币。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满5费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满4费弈子。获得2金币。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满4费弈子。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满4费弈子。获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满4费弈子。获得2金币。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满4费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满1费弈子。获得1金币。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满1费弈子。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满1费弈子。获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满1费弈子。获得1金币。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满1费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满3费弈子。获得2金币。",
+          "matchedTerms": [
+            "3费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满3费弈子。",
+          "matchedTerms": [
+            "3费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满3费弈子。获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满3费弈子。获得2金币。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满3费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满2费弈子。获得1金币。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2费弈子。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满2费弈子。获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店，使其充满2费弈子。获得1金币。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_backrowstar",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "1个随机后排弈子获得115%攻击速度，持续8秒。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "1个随机后排弈子获得85%攻击速度，持续7秒。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_backrowstar",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "1个随机后排弈子获得115%攻击速度，持续8秒。",
+          "matchedTerms": [
+            "持续8秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "1个随机后排弈子获得85%攻击速度，持续7秒。",
+          "matchedTerms": [
+            "持续7秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_barkarmor",
+      "conceptKey": "shield",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们获得225护盾值，持续10秒。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们获得150护盾值，持续10秒。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_barkarmor",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们获得225护盾值，持续10秒。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们获得150护盾值，持续10秒。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_bloodmoney",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每击杀1个弈子，获得1金币。获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每击杀1个弈子，获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_bloodmoney",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每击杀1个弈子，获得1金币。获得1金币。",
+          "matchedTerms": [
+            "每击杀"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每击杀1个弈子，获得1金币。",
+          "matchedTerms": [
+            "每击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_bronzespoon",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得4经验值。",
+          "matchedTerms": [
+            "获得4经验值"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得4经验值。",
+          "matchedTerms": [
+            "获得4经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_circleofelders",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得每个5费弈子各1个。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_earlyfix",
+      "conceptKey": "reforger",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得2个【装备重铸器】。",
+          "matchedTerms": [
+            "装备重铸器"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个【装备重铸器】",
+          "matchedTerms": [
+            "装备重铸器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_experienced",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得2经验值。",
+          "matchedTerms": [
+            "获得2经验值"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2经验值。",
+          "matchedTerms": [
+            "获得2经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fellowship",
+      "conceptKey": "shield",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有1名相邻的友军，弈子们就会获得6%最大生命值护盾和6%伤害增幅。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每有1名相邻的友军，弈子们就会获得4%最大生命值护盾和4%伤害增幅。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fertilize",
+      "conceptKey": "enemy_death",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有1名阵亡的敌人，获得1经验值。获得2经验值。",
+          "matchedTerms": [
+            "阵亡的敌人"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每有1名阵亡的敌人，获得1经验值。",
+          "matchedTerms": [
+            "阵亡的敌人"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fertilize",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有1名阵亡的敌人，获得1经验值。获得2经验值。",
+          "matchedTerms": [
+            "获得1经验值"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每有1名阵亡的敌人，获得1经验值。",
+          "matchedTerms": [
+            "获得1经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "上一场战斗中上阵了5个1费弈子",
+          "matchedTerms": [
+            "上阵了"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "上一场战斗中上阵了5个1费弈子",
+          "matchedTerms": [
+            "1费弈子"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "champion_duplicator",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。",
+          "matchedTerms": [
+            "微型英雄复制器"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
+          "matchedTerms": [
+            "微型英雄复制器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】和1金币。",
+          "matchedTerms": [
+            "回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "上回合每登场1个不同的1费弈子，获得1个【微型英雄复制器】。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_forestmage",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "准备阶段的前8秒内",
+          "matchedTerms": [
+            "准备阶段"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_freeroller",
+      "conceptKey": "free_reroll",
+      "evidence": [
+        {
+          "field": "nameZh",
+          "text": "免费刷新术",
+          "matchedTerms": [
+            "免费刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_freeroller",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3次刷新。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2次刷新。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_heatedrivalry",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+7参与击杀数。",
+          "matchedTerms": [
+            "参与击杀"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个【雷恩加尔】或1个【卡兹克】。其获得+3参与击杀数。",
+          "matchedTerms": [
+            "参与击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_heroicsacrifice",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有携带装备的弈子",
+          "matchedTerms": [
+            "拥有携带装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        },
+        {
+          "field": "requirements[1].textZh",
+          "text": "满装备单位少于4个",
+          "matchedTerms": [
+            "满装备"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_hummingbird",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你攻击速度最高的那个单位变小，获得35%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你攻击速度最高的那个单位变小，获得20%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "你攻击速度最高的10个单位变小，获得100%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_infliction",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "对所有敌人施加持续12秒的缓速、灼烧、魔抗击碎与护甲击碎效果。",
+          "matchedTerms": [
+            "持续12秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "对所有敌人施加持续8秒的缓速、灼烧、魔抗击碎与护甲击碎效果。",
+          "matchedTerms": [
+            "持续8秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_infliction",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "尚未对敌人施加【灼烧】或【重伤】，除非已激活【炼狱】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "execute_threshold",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。",
+          "matchedTerms": [
+            "处决生命值低于15%"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。",
+          "matchedTerms": [
+            "处决生命值低于12%"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有1个带装备的战士",
+          "matchedTerms": [
+            "拥有1个带装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "【战士】会处决生命值低于15%的目标。他们在完成击杀时获得40%攻击速度。",
+          "matchedTerms": [
+            "完成击杀"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "【战士】会处决生命值低于12%的目标。他们在完成击杀时获得15%攻击速度。",
+          "matchedTerms": [
+            "完成击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每失去12玩家生命值，获得1金币。然后治疗3生命值。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每失去12玩家生命值，获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "player_health_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每失去12玩家生命值，获得1金币。然后治疗3生命值。",
+          "matchedTerms": [
+            "治疗3生命值"
+          ]
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "player_health_loss",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每失去12玩家生命值，获得1金币。然后治疗3生命值。",
+          "matchedTerms": [
+            "每失去12玩家生命值"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每失去12玩家生命值，获得1金币。",
+          "matchedTerms": [
+            "每失去12玩家生命值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "player_health_threshold",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已损失至少10点生命值",
+          "matchedTerms": [
+            "已损失至少10点生命值"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "da_18_lightningstorm",
+      "conceptKey": "true_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每过1秒，对1名敌人造成7%最大生命值真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每过1秒，对1名敌人造成5%最大生命值真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "每过0.15秒，对1名敌人造成5%最大生命值真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_lightningstrike",
+      "conceptKey": "true_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "对所有敌人造成18%最大生命值真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "对所有敌人造成10%最大生命值真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的4费弈子永久变形为1个5费弈子。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你拥有的1个随机4费弈子会永久变形为1个5费弈子。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_mercenaryforce",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "至少拥有30金币",
+          "matchedTerms": [
+            "至少拥有30金币"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的1费弈子永久变形为1个2费弈子。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你拥有的1个随机1费弈子永久变形为1个2费弈子。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_mitosis",
+      "conceptKey": "champion_duplicator",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个【微型英雄复制器】。",
+          "matchedTerms": [
+            "微型英雄复制器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_moonrise",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8秒后，提升175%【月蚀骑士】羁绊效果。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，提升100%【月蚀骑士】羁绊效果。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_moonrise",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8秒后，提升175%【月蚀骑士】羁绊效果。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，提升100%【月蚀骑士】羁绊效果。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_moonrise",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【月光射线】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_payday",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有1个己方弈子在战斗中存活，获得3金币。",
+          "matchedTerms": [
+            "获得3金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每有1个己方弈子在战斗中存活，获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_payday",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有1个己方弈子在战斗中存活，获得3金币。",
+          "matchedTerms": [
+            "弈子在战斗中存活"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每有1个己方弈子在战斗中存活，获得2金币。",
+          "matchedTerms": [
+            "弈子在战斗中存活"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_pocketchange",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的1星弈子们在阵亡时掉落1金币。获得1金币。",
+          "matchedTerms": [
+            "掉落1金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的1星弈子们在阵亡时掉落1金币。",
+          "matchedTerms": [
+            "掉落1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你拥有的那个星级最高的2费弈子永久变形为1个3费弈子。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你拥有的1个随机2费弈子永久变形为1个3费弈子。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "金币少于10",
+          "matchedTerms": [
+            "金币少于10"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_18_radiantize",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在5秒后，1件被携带着的随机装备暂时变为光明版。",
+          "matchedTerms": [
+            "在5秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，1件被携带着的随机装备暂时变为光明版。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_radiantize",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在5秒后，1件被携带着的随机装备暂时变为光明版。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，1件被携带着的随机装备暂时变为光明版。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "变为2星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "变为2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "这回合你前8次刷新商店时，费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "这回合你前6次刷新商店时，会使费用最低的那个弈子会变为2星。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_sunfiresorcery",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "对敌人施加持续15秒的灼烧和重伤效果。",
+          "matchedTerms": [
+            "持续15秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "对敌人施加持续10秒的灼烧和重伤效果。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_sunfiresorcery",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "尚未对敌人施加【灼烧】或【重伤】，除非已激活【炼狱】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_tatteredarmor",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "对敌人施加30%魔抗击碎与护甲击碎，持续15秒。",
+          "matchedTerms": [
+            "持续15秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "对敌人施加30%魔抗击碎与护甲击碎，持续10秒。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "对敌人施加90%魔抗击碎与护甲击碎，持续45秒。",
+          "matchedTerms": [
+            "持续45秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_tremors",
+      "conceptKey": "crowd_control",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每8秒，晕眩敌人1.5秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每8秒，晕眩敌人1秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "每3秒，晕眩敌人1.5秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_ultraascension",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在23秒后，友军获得300%伤害增幅。",
+          "matchedTerms": [
+            "在23秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在25秒后，友军获得300%伤害增幅。",
+          "matchedTerms": [
+            "在25秒后"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "在12秒后，友军获得300%伤害增幅。",
+          "matchedTerms": [
+            "在12秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_ultraascension",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在23秒后，友军获得300%伤害增幅。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在25秒后，友军获得300%伤害增幅。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "在12秒后，友军获得300%伤害增幅。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_18_verdantvitality",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "金币少于10",
+          "matchedTerms": [
+            "金币少于10"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_18_yordlespirit",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "友军有99%几率闪避攻击，持续5秒。",
+          "matchedTerms": [
+            "持续5秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "友军有99%几率闪避攻击，持续4秒。",
+          "matchedTerms": [
+            "持续4秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "棋盘价值在12到20之间",
+          "matchedTerms": [
+            "棋盘"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "没有3星弈子",
+          "matchedTerms": [
+            "3星"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "出售你棋盘上和备战席的所有弈子，获得10金币和10次刷新。",
+          "matchedTerms": [
+            "获得10金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "出售你棋盘上和备战席的所有弈子，获得6金币和8次刷新。",
+          "matchedTerms": [
+            "获得6金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "出售你棋盘上和备战席的所有弈子，获得10金币和10次刷新。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "出售你棋盘上和备战席的所有弈子，获得6金币和8次刷新。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "requirements[3].textZh",
+          "text": "准备阶段的前15秒内",
+          "matchedTerms": [
+            "准备阶段"
+          ],
+          "requirementIndex": 3,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "win_streak",
+      "evidence": [
+        {
+          "field": "requirements[2].textZh",
+          "text": "处于短连胜中",
+          "matchedTerms": [
+            "连胜"
+          ],
+          "requirementIndex": 2,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_animateshop18",
+      "conceptKey": "free_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在26秒的持续时间里，你的商店每2秒免费刷新一次。",
+          "matchedTerms": [
+            "免费刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
+          "matchedTerms": [
+            "免费刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_animateshop18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在26秒的持续时间里，你的商店每2秒免费刷新一次。",
+          "matchedTerms": [
+            "商店每2秒免费刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
+          "matchedTerms": [
+            "商店每2秒免费刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_animateshop18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在26秒的持续时间里，你的商店每2秒免费刷新一次。",
+          "matchedTerms": [
+            "持续时间"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒的持续时间内，你的商店每2秒免费刷新1次。",
+          "matchedTerms": [
+            "持续时间"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星1费弈子。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星1费弈子。",
+          "matchedTerms": [
+            "获得1个随机2星1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星1费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "artifact_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】和1个【装备重铸器】。",
+          "matchedTerms": [
+            "神器锻造器"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】。",
+          "matchedTerms": [
+            "神器锻造器"
+          ]
+        },
+        {
+          "field": "nameZh",
+          "text": "神器化",
+          "matchedTerms": [
+            "神器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "completed_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】和1个【装备重铸器】。",
+          "matchedTerms": [
+            "成装"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】。",
+          "matchedTerms": [
+            "成装"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "item_component",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】和1个【装备重铸器】。",
+          "matchedTerms": [
+            "基础装备"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】。",
+          "matchedTerms": [
+            "基础装备"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "至少拥有3件基础装备",
+          "matchedTerms": [
+            "基础装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "至少拥有3件基础装备",
+          "matchedTerms": [
+            "拥有3件基础装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "reforger",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "失去3个基础装备，包括已合成为成装的基础装备。获得1个【神器锻造器】和1个【装备重铸器】。",
+          "matchedTerms": [
+            "装备重铸器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_barrier18",
+      "conceptKey": "shield",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "友军获得1250护盾值，在9秒内持续衰减。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "友军获得1250护盾值，在6秒内持续衰减。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "友军获得7500护盾值，在30秒内持续衰减。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_barter18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在本回合内，你下次出售的弈子将以250%金币卖出。",
+          "matchedTerms": [
+            "金币卖出"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你下次出售的弈子将以200%金币卖出。",
+          "matchedTerms": [
+            "金币卖出"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_barter18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在本回合内，你下次出售的弈子将以250%金币卖出。",
+          "matchedTerms": [
+            "回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你下次出售的弈子将以200%金币卖出。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_beggarswisp18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得5金币。",
+          "matchedTerms": [
+            "获得5金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "matchedTerms": [
+            "获得3金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_beggarswisp18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得5金币。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得2个随机1星4费弈子。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得2个随机1星4费弈子。",
+          "matchedTerms": [
+            "获得2个随机1星4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_blastpotion18_charm",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个临时的、可装备的【光明版爆炸药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【光明版爆炸药水"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个临时的、可装备的【爆炸药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【爆炸药水"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_blaze18",
+      "conceptKey": "true_damage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "火焰席卷整个棋盘，对敌人造成更高的真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "火焰席卷整个棋盘，对敌人造成持续递增的真实伤害。",
+          "matchedTerms": [
+            "真实伤害"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bloodandiron18",
+      "conceptKey": "item_component",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在16个弈子阵亡后，获得1个【基础装备锻造器】。",
+          "matchedTerms": [
+            "基础装备"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在20个弈子阵亡后，获得1个【基础装备锻造器】。",
+          "matchedTerms": [
+            "基础装备"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有2个1星弈子，或1个满装备的5费弈子",
+          "matchedTerms": [
+            "5费弈子"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "至多3个1星弈子会在战斗期间暂时升星。",
+          "matchedTerms": [
+            "升星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "至多2个1星弈子会在战斗期间暂时升星。",
+          "matchedTerms": [
+            "升星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有2个1星弈子，或1个满装备的5费弈子",
+          "matchedTerms": [
+            "拥有2个1星弈子，或1个满装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星2费弈子。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星2费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星2费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_borrowedgear18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "1个弈子获得1件临时推荐装备和250生命值。",
+          "matchedTerms": [
+            "临时推荐装备"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "1个弈子获得1件临时推荐装备。",
+          "matchedTerms": [
+            "临时推荐装备"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bulwark18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "场上至少有2个坦克",
+          "matchedTerms": [
+            "场上至少"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bulwark18",
+      "conceptKey": "shield",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的【坦克】在生命值降至50%时，会获得30%最大生命值护盾。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的【坦克】在生命值降至50%时，会获得20%最大生命值护盾。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_bunchobelts18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的友军获得10个无法移除的临时【巨人腰带】。",
+          "matchedTerms": [
+            "临时【巨人腰带"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的友军获得7个无法移除的临时【巨人腰带】。",
+          "matchedTerms": [
+            "临时【巨人腰带"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_coinflip18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "抛掷2枚硬币，如果硬币正面朝上，获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "抛掷1枚硬币，如果硬币正面朝上，获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_combust18",
+      "conceptKey": "ally_death",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们在阵亡时产生爆炸，造成22%最大生命值魔法伤害。",
+          "matchedTerms": [
+            "你的弈子们在阵亡"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。",
+          "matchedTerms": [
+            "你的弈子们在阵亡"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "你的弈子们在阵亡时产生爆炸，造成100%最大生命值魔法伤害。",
+          "matchedTerms": [
+            "你的弈子们在阵亡"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
+          "matchedTerms": [
+            "费用在0到15金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "matchedTerms": [
+            "费用在0到15金币"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有足够的金币",
+          "matchedTerms": [
+            "拥有足够的金币"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "item_shop",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。获得2金币。",
+          "matchedTerms": [
+            "装备商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "matchedTerms": [
+            "装备商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_cutpurse18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每过4秒，你的弈子们就有15%几率掉落1金币。",
+          "matchedTerms": [
+            "掉落1金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每过5秒，你的弈子们就有15%几率掉落1金币。",
+          "matchedTerms": [
+            "掉落1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_dieroll18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "投掷2个6面体骰子。获得相当于结果点数的金币。",
+          "matchedTerms": [
+            "获得相当于结果点数的金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "投掷1个6面体骰子。获得相当于结果点数的金币。",
+          "matchedTerms": [
+            "获得相当于结果点数的金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_diversified18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活至少5个羁绊",
+          "matchedTerms": [
+            "激活至少5个羁绊"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_flashfire18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "刷新你的商店。【地狱火】引燃3个商店栏位，将其升级。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店。【地狱火】引燃2个商店栏位，将其升级。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_flashfire18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【炼狱】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_flipfrenzy18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "抛掷1枚硬币，如果硬币正面朝上，获得1金币。重复抛掷，直至你抛掷的硬币反面朝上。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_flow18",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们获得持续15秒的不可阻挡效果和15%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们获得持续10秒的不可阻挡效果和15%攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_flow18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你的弈子们获得持续15秒的不可阻挡效果和15%攻击速度。",
+          "matchedTerms": [
+            "持续15秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你的弈子们获得持续10秒的不可阻挡效果和15%攻击速度。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_forestguide18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机4费弈子。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_forestguide18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机4费弈子。",
+          "matchedTerms": [
+            "获得1个随机4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_foresttwins18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_foresttwins18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+          "matchedTerms": [
+            "获得3个相同的弈子，他们是你尚未拥有的2费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2个相同的弈子，他们是你尚未拥有的2费弈子的其中一个的复制体。",
+          "matchedTerms": [
+            "获得2个相同的弈子，他们是你尚未拥有的2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_goldengoose18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你造成伤害最高的那个弈子，每造成1000伤害，获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你造成伤害最高的那个弈子，每造成1700伤害，获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星5费弈子。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星5费弈子。",
+          "matchedTerms": [
+            "获得1个随机2星5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星5费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_growup18",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得12经验值。",
+          "matchedTerms": [
+            "获得12经验值"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得10经验值。",
+          "matchedTerms": [
+            "获得10经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_handofbaron18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【峡谷怪物】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_healthpotion18_charm",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个临时的、可装备的【光明版生命药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【光明版生命药水"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个临时的、可装备的【生命药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【生命药水"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个5费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个5费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
+          "matchedTerms": [
+            "获得1个5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "至少拥有35金币",
+          "matchedTerms": [
+            "至少拥有35金币"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "player_health_threshold",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "生命值高于50",
+          "matchedTerms": [
+            "生命值高于50"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个5费弈子。每回合都会再获得1个该弈子(永远！直至游戏结束)。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_herosentrance18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "备战席上有弈子",
+          "matchedTerms": [
+            "备战席"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_herosentrance18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在5秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+          "matchedTerms": [
+            "在5秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_herosentrance18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在5秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在8秒后，备战席最左侧的弈子加入战斗，并获得2件推荐装备。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "1个携带着2件推荐装备的临时1星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "1个携带着1件推荐装备的临时5星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "3个临时的、携带着2件推荐装备的2星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "1个携带着2件推荐装备的临时1星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "弈子加入你的队伍"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "1个携带着1件推荐装备的临时5星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "弈子加入你的队伍"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "3个临时的、携带着2件推荐装备的2星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "弈子加入你的队伍"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "1个携带着1件推荐装备的临时5星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "5星"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "3个临时的、携带着2件推荐装备的2星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.prismatic",
+          "text": "3个临时的、携带着2件推荐装备的2星5费弈子加入你的队伍。",
+          "matchedTerms": [
+            "临时的、携带着2件推荐装备"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_homingfireflies18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "场上至少有2个术师",
+          "matchedTerms": [
+            "场上至少"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "备战席上至少有1件基础装备",
+          "matchedTerms": [
+            "备战席"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKey": "completed_item",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "将你备战席的1件基础装备转化为它可合成的1件成装。",
+          "matchedTerms": [
+            "成装"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKey": "item_component",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "将你备战席的1件基础装备转化为它可合成的1件成装。",
+          "matchedTerms": [
+            "基础装备"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "备战席上至少有1件基础装备",
+          "matchedTerms": [
+            "基础装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_improvedreach18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "场上至少有2个战士",
+          "matchedTerms": [
+            "场上至少"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_improvedreach18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "拥有1个带装备的战士",
+          "matchedTerms": [
+            "拥有1个带装备"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星2费弈子。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星2费弈子。",
+          "matchedTerms": [
+            "获得1个随机2星2费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星2费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_jungling18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【峡谷怪物】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_killersregret18",
+      "conceptKey": "ally_death",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你最先阵亡的4个弈子会将其击杀者晕眩1.75秒。",
+          "matchedTerms": [
+            "最先阵亡的4个弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你最先阵亡的3个弈子会将其击杀者晕眩1.5秒。",
+          "matchedTerms": [
+            "最先阵亡的3个弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_killersregret18",
+      "conceptKey": "crowd_control",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你最先阵亡的4个弈子会将其击杀者晕眩1.75秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你最先阵亡的3个弈子会将其击杀者晕眩1.5秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_knickknackbag18",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_knickknackjar18",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得2个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_knickknacksack18",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得4个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得3个消耗品，其能提供永久的物理加成或攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "一名携带着 1件推荐装备的临时3星1费弈子加入己方队伍。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "一个临时的3星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "一队(包含5个)临时的4星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "一名携带着 1件推荐装备的临时3星1费弈子加入己方队伍。",
+          "matchedTerms": [
+            "弈子加入己方队伍"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "一个临时的3星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "弈子加入你的队伍"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "一队(包含5个)临时的4星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "弈子加入你的队伍"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "一名携带着 1件推荐装备的临时3星1费弈子加入己方队伍。",
+          "matchedTerms": [
+            "3星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "一个临时的3星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "3星"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "一队(包含5个)临时的4星1费弈子加入你的队伍。",
+          "matchedTerms": [
+            "4星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_livingsoil18",
+      "conceptKey": "crowd_control",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每过4秒，根须会晕眩2名敌人1秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每过4秒，根须会晕眩1名敌人1秒。",
+          "matchedTerms": [
+            "晕眩"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_lucky718",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得10次商店刷新。",
+          "matchedTerms": [
+            "商店刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得7次商店刷新。",
+          "matchedTerms": [
+            "商店刷新"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "获得777次商店刷新。",
+          "matchedTerms": [
+            "商店刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_manapotion18_charm",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个临时的、可装备的【光明版法力药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【光明版法力药水"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个临时的、可装备的【法力药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【法力药水"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_manarichsoil18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "场上至少有2个术师",
+          "matchedTerms": [
+            "场上至少"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_manarichsoil18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "拥有1个带装备的术师",
+          "matchedTerms": [
+            "拥有1个带装备"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你【射手】的攻击提供5%可叠加的攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你【射手】的攻击提供3%可叠加的攻击速度。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "场上至少有2个射手",
+          "matchedTerms": [
+            "场上至少"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "拥有1个带装备的射手",
+          "matchedTerms": [
+            "拥有1个带装备"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星3费弈子。",
+          "matchedTerms": [
+            "3费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星3费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星3费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在战斗期间，你最低星级的2个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "2费弈子"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有1个2星1费或2费弈子",
+          "matchedTerms": [
+            "2费弈子"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在战斗期间，你最低星级的2个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "升星"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在战斗期间，你最低星级的那个1费或2费弈子将会升星。",
+          "matchedTerms": [
+            "升星"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有1个2星1费或2费弈子",
+          "matchedTerms": [
+            "2星"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_naturesally18",
+      "conceptKey": "ally_death",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】 有时会召唤出2星的版本。",
+          "matchedTerms": [
+            "友军阵亡"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】。",
+          "matchedTerms": [
+            "友军阵亡"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_naturesally18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每有3名友军阵亡，召唤1个随机【峡谷野怪】 有时会召唤出2星的版本。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "拥有携带装备的弈子",
+          "matchedTerms": [
+            "拥有携带装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "将所有未携带装备的单位击杀"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在10秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "将所有未携带装备的单位击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "在8秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在10秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "在10秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在8秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在10秒后，将所有未携带装备的单位击杀。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
+          "matchedTerms": [
+            "费用在0到14金币"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
+          "matchedTerms": [
+            "费用在0到14金币"
+          ]
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "item_shop",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。获得2金币。",
+          "matchedTerms": [
+            "装备商店"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "开启1个随机装备商店。随机装备的费用在0到14金币之间。",
+          "matchedTerms": [
+            "装备商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_petrifieddummy18",
+      "conceptKey": "ally_death",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。",
+          "matchedTerms": [
+            "第1个阵亡的弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+          "matchedTerms": [
+            "第1个阵亡的弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_petrifieddummy18",
+      "conceptKey": "champion_transform",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和1350生命值的【训练假人】。",
+          "matchedTerms": [
+            "弈子在阵亡时，会转化为"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+          "matchedTerms": [
+            "弈子在阵亡时，会转化为"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_petrifyshields18",
+      "conceptKey": "shield",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "使敌人缓速10%，并将其护盾值削减0.7，持续10秒。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "使敌人缓速10%，并将其护盾值削减0.8，持续10秒。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_petrifyshields18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "使敌人缓速10%，并将其护盾值削减0.7，持续10秒。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "使敌人缓速10%，并将其护盾值削减0.8，持续10秒。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_phantomarmor18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个临时的【狂徒铠甲】。",
+          "matchedTerms": [
+            "临时的【狂徒铠甲"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "获得6个临时的【光明版狂徒铠甲】和5个【装备拆卸器】。",
+          "matchedTerms": [
+            "临时的【光明版狂徒铠甲】和5个【装备"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_phantomemblem18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个你层级最高羁绊的临时的纹章。",
+          "matchedTerms": [
+            "临时的纹章"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_phantomgloves18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个临时的【窃贼手套】。",
+          "matchedTerms": [
+            "临时的【窃贼手套"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_phantomvest18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个临时的【棘刺背心】。",
+          "matchedTerms": [
+            "临时的【棘刺背心"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_platedshields18",
+      "conceptKey": "shield",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "护盾强度提升20%。友军获得持续10秒的300护盾值。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "护盾强度提升15%。友军获得持续10秒的150护盾值。",
+          "matchedTerms": [
+            "护盾"
+          ]
+        },
+        {
+          "field": "nameZh",
+          "text": "镀板护盾",
+          "matchedTerms": [
+            "护盾"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_platedshields18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "护盾强度提升20%。友军获得持续10秒的300护盾值。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "护盾强度提升15%。友军获得持续10秒的150护盾值。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_potioncraft18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得3个临时的、可装备的【光明版药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【光明版药水"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得3个临时的、可装备的【药水】。",
+          "matchedTerms": [
+            "临时的、可装备的【药水"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_quicken18",
+      "conceptKey": "attack_speed",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "施放技能时，你的弈子们获得40%攻击速度，持续5秒。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "施放技能时，你的弈子们获得30%攻击速度，持续4秒。",
+          "matchedTerms": [
+            "攻击速度"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_quicken18",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "不适用于满装备的无蓝弈子",
+          "matchedTerms": [
+            "满装备"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_quicken18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "施放技能时，你的弈子们获得40%攻击速度，持续5秒。",
+          "matchedTerms": [
+            "持续5秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "施放技能时，你的弈子们获得30%攻击速度，持续4秒。",
+          "matchedTerms": [
+            "持续4秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【日光射线】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_revenge18",
+      "conceptKey": "ally_death",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每当1名友军阵亡时，你的弈子们获得6%可叠加的伤害增幅。",
+          "matchedTerms": [
+            "友军阵亡"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每当1名友军阵亡时，你的弈子们获得4%可叠加的伤害增幅。",
+          "matchedTerms": [
+            "友军阵亡"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKey": "gold_cost",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "至少拥有20金币",
+          "matchedTerms": [
+            "至少拥有20金币"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "gold_cost_vs_reward"
+      ]
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下3次刷新的商店中。",
+          "matchedTerms": [
+            "回合"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，在上场对战中登场的2+个弈子会出现在你的下2次刷新的商店中。",
+          "matchedTerms": [
+            "回合"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "准备阶段的前20秒内",
+          "matchedTerms": [
+            "准备阶段"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKey": "free_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "每获得1次击杀，你都有50%几率获得1次免费刷新。",
+          "matchedTerms": [
+            "免费刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。",
+          "matchedTerms": [
+            "每获得1次击杀"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "每获得1次击杀，你都有50%几率获得1次免费刷新。",
+          "matchedTerms": [
+            "每获得1次击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "每获得1次击杀，你都有60%几率获得1次刷新，如果获胜该几率提升1。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "在16秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "在18秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在16秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在18秒后，每有1名存活的友军，获得1次刷新。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_salvager18",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你备战席的任何弈子都会被移除装备，且这些装备会被拆解。获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_scrappy18",
+      "conceptKey": "temporary_item",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "战斗开始时：未携带任何装备的3个弈子会获得1件临时的推荐装备。",
+          "matchedTerms": [
+            "临时的推荐装备"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "战斗开始时：未携带任何装备的2个弈子会获得1件临时的推荐装备。",
+          "matchedTerms": [
+            "临时的推荐装备"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+          "matchedTerms": [
+            "4费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+          "matchedTerms": [
+            "次刷新"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在本回合内，你每次刷新商店都会出现1个4费弈子，直到你购买其中一名为止。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在12秒后，每有1名存活的友军，获得2经验值。",
+          "matchedTerms": [
+            "在12秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在15秒后，每有1名存活的友军，获得2经验值。",
+          "matchedTerms": [
+            "在15秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在12秒后，每有1名存活的友军，获得2经验值。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在15秒后，每有1名存活的友军，获得2经验值。",
+          "matchedTerms": [
+            "秒后"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "在12秒后，每有1名存活的友军，获得2经验值。",
+          "matchedTerms": [
+            "获得2经验值"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "在15秒后，每有1名存活的友军，获得2经验值。",
+          "matchedTerms": [
+            "获得2经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_smurfing18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个随机5费弈子。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机5费弈子。",
+          "matchedTerms": [
+            "5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_smurfing18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "获得1个随机5费弈子。",
+          "matchedTerms": [
+            "获得1个随机5费弈子"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机5费弈子。",
+          "matchedTerms": [
+            "获得1个随机5费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_solargift18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【日光射线】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_standalone18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "未激活【永恒之森】",
+          "matchedTerms": [
+            "未激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        },
+        {
+          "field": "requirements[1].textZh",
+          "text": "未激活【月光射线】",
+          "matchedTerms": [
+            "未激活【"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        },
+        {
+          "field": "requirements[2].textZh",
+          "text": "未激活【翠神】",
+          "matchedTerms": [
+            "未激活【"
+          ],
+          "requirementIndex": 2,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星1费弈子。",
+          "matchedTerms": [
+            "1费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星1费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKey": "shop_reroll",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "刷新你的商店，使其充满2星1费弈子。",
+          "matchedTerms": [
+            "刷新你的商店"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_stealthy18",
+      "conceptKey": "survival_duration",
+      "evidence": [
+        {
+          "field": "effects.blossom",
+          "text": "你后排的2个随机弈子获得持续10秒的不可被选取效果。",
+          "matchedTerms": [
+            "持续10秒"
+          ]
+        },
+        {
+          "field": "effects.normal",
+          "text": "你最强大的2个【战士】或【刺客】获得持续6秒的不可被选取效果。",
+          "matchedTerms": [
+            "持续6秒"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_terraforming18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【翠神】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKey": "champion_cost_tier",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星3费弈子。",
+          "matchedTerms": [
+            "3费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKey": "champion_obtain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星3费弈子。",
+          "matchedTerms": [
+            "获得1个随机2星3费弈子"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKey": "champion_star_up",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1个随机2星3费弈子。",
+          "matchedTerms": [
+            "2星"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_trophyhunter18",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "下一场玩家对战，你的【宿敌】获得双倍参与击杀数。",
+          "matchedTerms": [
+            "参与击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "da_trophyhunter18",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【宿敌】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_021_534324382164",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得1金币。你的对手获得1金币。",
+          "matchedTerms": [
+            "获得1金币"
+          ]
+        },
+        {
+          "field": "effects.prismatic",
+          "text": "获得100金币。你的对手获得1金币。",
+          "matchedTerms": [
+            "获得100金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "失去4玩家生命值。获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKey": "player_health_loss",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "失去4玩家生命值。获得2金币。",
+          "matchedTerms": [
+            "失去4玩家生命值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKey": "player_health_threshold",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于高生命值",
+          "matchedTerms": [
+            "处于高生命值"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "snapshot_036_f484358ea1e5",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已激活【魔女】",
+          "matchedTerms": [
+            "已激活【"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKey": "kill_takedown",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你失败但至少击杀了1名敌人，获得4经验值。",
+          "matchedTerms": [
+            "至少击杀"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKey": "win_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于短连胜中",
+          "matchedTerms": [
+            "连胜"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你失败但至少击杀了1名敌人，获得4经验值。",
+          "matchedTerms": [
+            "获得4经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你赢得下一场玩家对战，获得2金币。",
+          "matchedTerms": [
+            "获得2金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "loss_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于短连败中",
+          "matchedTerms": [
+            "连败"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "trait_active",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "未激活【魔女】",
+          "matchedTerms": [
+            "未激活【"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_050_770e0f5d1043",
+      "conceptKey": "loss_streak",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "你的连败数加2。",
+          "matchedTerms": [
+            "连败"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于连胜或连败中",
+          "matchedTerms": [
+            "连败"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_050_770e0f5d1043",
+      "conceptKey": "win_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于连胜或连败中",
+          "matchedTerms": [
+            "连胜"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_051_e06d127b43f9",
+      "conceptKey": "loss_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于连胜或连败中",
+          "matchedTerms": [
+            "连败"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_051_e06d127b43f9",
+      "conceptKey": "win_streak",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "你的连胜数加1。",
+          "matchedTerms": [
+            "连胜"
+          ]
+        },
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于连胜或连败中",
+          "matchedTerms": [
+            "连胜"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_085_b53a01d778ee",
+      "conceptKey": "player_health_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "获得5玩家生命值。",
+          "matchedTerms": [
+            "获得5玩家生命值"
+          ]
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "snapshot_085_b53a01d778ee",
+      "conceptKey": "player_health_threshold",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "已损失至少10点生命值",
+          "matchedTerms": [
+            "已损失至少10点生命值"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "snapshot_086_d83df5e4cd8a",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在3场玩家对战后，获得2x期间胜场数的金币。",
+          "matchedTerms": [
+            "获得2x期间胜场数的金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_086_d83df5e4cd8a",
+      "conceptKey": "loss_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于短连败中",
+          "matchedTerms": [
+            "连败"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_106_1bce73a8632c",
+      "conceptKey": "board_composition",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "场上至少有2个射手",
+          "matchedTerms": [
+            "场上至少"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_106_1bce73a8632c",
+      "conceptKey": "item_requirement",
+      "evidence": [
+        {
+          "field": "requirements[1].textZh",
+          "text": "拥有1个带装备的射手",
+          "matchedTerms": [
+            "拥有1个带装备"
+          ],
+          "requirementIndex": 1,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKey": "champion_duplicator",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "失去3玩家生命值。获得1个【次级英雄复制器】。",
+          "matchedTerms": [
+            "次级英雄复制器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKey": "player_health_loss",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "失去3玩家生命值。获得1个【次级英雄复制器】。",
+          "matchedTerms": [
+            "失去3玩家生命值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKey": "player_health_threshold",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于高生命值",
+          "matchedTerms": [
+            "处于高生命值"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    },
+    {
+      "wispId": "snapshot_121_1899d3fe4c61",
+      "conceptKey": "gold_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你赢得下一场玩家对战，获得8金币。",
+          "matchedTerms": [
+            "获得8金币"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_121_1899d3fe4c61",
+      "conceptKey": "loss_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于短连败中",
+          "matchedTerms": [
+            "连败"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "item_component",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
+          "matchedTerms": [
+            "基础装备"
+          ]
+        },
+        {
+          "field": "nameZh",
+          "text": "散件赏金",
+          "matchedTerms": [
+            "散件"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "loss_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于短连败中",
+          "matchedTerms": [
+            "连败"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "如果你赢得下一个玩家对战回合，获得1个随机基础装备。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "time_stage",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
+          "matchedTerms": [
+            "回合"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "win_streak",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于短连胜中",
+          "matchedTerms": [
+            "连胜"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "xp_gain",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "在接下来的3场玩家对战回合，你每输掉一场就会获得4经验值。",
+          "matchedTerms": [
+            "获得4经验值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKey": "champion_duplicator",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "失去10玩家生命值。获得1个【英雄复制器】。",
+          "matchedTerms": [
+            "英雄复制器"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKey": "player_health_loss",
+      "evidence": [
+        {
+          "field": "effects.normal",
+          "text": "失去10玩家生命值。获得1个【英雄复制器】。",
+          "matchedTerms": [
+            "失去10玩家生命值"
+          ]
+        }
+      ],
+      "confidence": "candidate_high_confidence",
+      "reviewFlags": []
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKey": "player_health_threshold",
+      "evidence": [
+        {
+          "field": "requirements[0].textZh",
+          "text": "处于高生命值",
+          "matchedTerms": [
+            "处于高生命值"
+          ],
+          "requirementIndex": 0,
+          "requirementType": "source_text"
+        }
+      ],
+      "confidence": "needs_review",
+      "reviewFlags": [
+        "player_vs_unit_health"
+      ]
+    }
+  ]
+}
