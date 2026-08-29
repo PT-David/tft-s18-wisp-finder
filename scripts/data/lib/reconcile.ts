@@ -1,4 +1,4 @@
-export type MatchMethod = 'exact_client_key' | 'exact_english_name' | 'exact_chinese_name' | 'reviewed_alias';
+export type MatchMethod = 'exact_client_key' | 'exact_english_name' | 'exact_chinese_name' | 'reviewed_cross_source_identity';
 
 export interface ReconcileRecord {
   id: string; riotId?: string | null; nameEn: string; nameZh: string; category?: string; cost?: number;
@@ -96,7 +96,7 @@ export function reconcileRecords(opgg: OpggRecord[], production: ReconcileRecord
   }
   opgg.forEach((row, index) => confirm(index, english.get(normalizedName(row.sourceKey)), 'exact_english_name', { normalizedEnglishName: normalizedName(row.sourceKey), unique: true }));
   opgg.forEach((row, index) => confirm(index, chinese.get(normalizedName(row.name)), 'exact_chinese_name', { normalizedChineseName: normalizedName(row.name), unique: true }));
-  opgg.forEach((row, index) => confirm(index, productionById.get(reviewedAliases[String(row.sourceKey)] ?? ''), 'reviewed_alias', { aliasTableKey: row.sourceKey, reviewed: true }));
+  opgg.forEach((row, index) => confirm(index, productionById.get(reviewedAliases[String(row.sourceKey)] ?? ''), 'reviewed_cross_source_identity', { mappingTableKey: row.sourceKey, reviewed: true }));
 
   const remainingProduction = production.filter(({ id }) => !matchedProduction.has(id));
   const candidateMatches = opgg.flatMap((row, index) => {

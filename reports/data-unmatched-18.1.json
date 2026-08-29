@@ -1,5 +1,5 @@
 {
-  "lolchessOnly": [],
+  "lolchessIdentityUnresolved": [],
   "communityDragonOnly": [
     "再生",
     "复制同伴",
@@ -14,7 +14,7 @@
     "蛮熊降临",
     "衣冠冢"
   ],
-  "dataTftOnly": [
+  "dataTftUnmatched": [
     {
       "id": "snapshot_021_534324382164",
       "nameZh": "休战",

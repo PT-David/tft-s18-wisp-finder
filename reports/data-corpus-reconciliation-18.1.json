@@ -1,39 +1,48 @@
 {
   "corpusDefinition": "All live-patch Wisps actually offered in a normal or rules-authorized Wisp slot. Conditional appearance does not exclude a Wisp; only inactive/internal/non-offerable records, variants, and aliases are excluded with evidence.",
-  "confirmedCorpusMinimum": 169,
+  "exactCorpusSize": "unresolved",
+  "confirmedCorpusMinimum": 174,
+  "confirmedCorpusMinimumReason": "normalizedProductionCount + max(0, confirmedCorpusButIncompleteCount - dataTftUnmatchedCount)",
   "normalizedProductionCount": 169,
   "productionReady": false,
+  "stageC1EngineeringExit": {
+    "status": "complete",
+    "remainingWork": "data_curation_and_review",
+    "structuralBlockingBug": false
+  },
   "matching": {
-    "confirmedIntersection": 152,
+    "confirmedSharedIdentities": 168,
     "methodCounts": {
       "exact_client_key": 144,
-      "exact_english_name": 3,
-      "exact_chinese_name": 5,
-      "reviewed_alias": 0
+      "exact_english_name": 15,
+      "exact_chinese_name": 4,
+      "reviewed_cross_source_identity": 3
     },
-    "candidateCount": 48,
-    "ambiguousCount": 27,
-    "unresolvedOpggCount": 48,
-    "dataTftOnlyCount": 17
+    "reviewedCrossSourceIdentityCount": 17,
+    "candidateCount": 34,
+    "ambiguousCount": 21,
+    "unresolvedOpggCount": 34,
+    "dataTftUnmatchedCount": 1
   },
   "duplicateAuditMatchingDiff": {
     "before": {
+      "status": "historical_superseded",
       "confirmedIntersection": 152,
       "exactClientKey": 144,
       "candidateCount": 48,
       "ambiguousCount": 27,
       "unresolvedOpggCount": 48,
-      "dataTftOnlyCount": 17,
+      "dataTftUnmatchedCount": 17,
       "confirmedCorpusButIncomplete": 8
     },
     "after": {
-      "confirmedIntersection": 152,
+      "confirmedIntersection": 166,
       "exactClientKey": 144,
-      "candidateCount": 48,
-      "ambiguousCount": 27,
-      "unresolvedOpggCount": 48,
-      "dataTftOnlyCount": 17,
-      "confirmedCorpusButIncomplete": 8
+      "candidateCount": 34,
+      "ambiguousCount": 21,
+      "unresolvedOpggCount": 34,
+      "dataTftUnmatchedCount": 1,
+      "confirmedCorpusButIncomplete": 6
     },
     "promotedToExactClientKey": 0
   },
@@ -54,26 +63,6 @@
         "opggCurrentCatalog": true,
         "canonicalClientKey": "clonecompanion",
         "communityDragonApiName": "DA_CloneCompanion18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "Regeneration",
-        "name": "再生",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "你的团队每秒治疗 1% 最大生命值。",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "regeneration",
-        "communityDragonApiName": "DA_Regeneration18",
         "communityDragonVariantKind": "base"
       },
       "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
@@ -143,27 +132,6 @@
     },
     {
       "record": {
-        "sourceKey": "EssenceTheft",
-        "name": "精华盗窃",
-        "category": "Risky",
-        "cost": 1,
-        "effect": "本场战斗获得50%额外魔女精华。",
-        "appearanceCondition": "已激活魔女羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "essencetheft",
-        "communityDragonApiName": "DA_EssenceTheft18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
         "sourceKey": "MemorialDummy",
         "name": "纪念假人",
         "category": "Combat",
@@ -205,6 +173,17 @@
       "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
     }
   ],
+  "acquisition": {
+    "cloudFetch": {
+      "status": "blocked_by_source_protection",
+      "httpStatus": 202
+    },
+    "browserSnapshot": {
+      "status": "browser_snapshot_imported",
+      "recordCount": 174,
+      "pageUpdatedAt": "August 28, 2026"
+    }
+  },
   "sources": [
     {
       "source": "communitydragon",
@@ -223,15 +202,22 @@
     {
       "source": "opgg",
       "rawCount": 200,
-      "confirmedMatched": 152,
+      "confirmedMatched": 166,
       "confirmedDistinctOnly": 0,
-      "clientSupportedUnlinked": 8,
-      "unresolved": 48
+      "clientSupportedUnlinked": 6,
+      "unresolved": 34
     },
     {
       "source": "lolchess",
-      "rawCount": 0,
-      "fetchStatus": "blocked_by_source_protection"
+      "cloudFetch": {
+        "status": "blocked_by_source_protection",
+        "httpStatus": 202
+      },
+      "browserSnapshot": {
+        "status": "browser_snapshot_imported",
+        "rawCount": 174,
+        "pageUpdatedAt": "August 28, 2026"
+      }
     }
   ]
 }
