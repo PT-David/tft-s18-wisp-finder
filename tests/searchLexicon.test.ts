@@ -276,6 +276,7 @@ describe('Stage C2.1 search lexicon generation', () => {
     expect(dataset.records).toHaveLength(169);
     expect(dataset.records.every(w => w.searchConcepts.length === 0 && w.synonyms.length === 0)).toBe(true);
     const publicDataset = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as WispDataset;
-    expect(publicDataset.records.every(w => w.searchConcepts.length === 0 && w.synonyms.length === 0)).toBe(true);
+    expect(publicDataset.records.reduce((sum, w) => sum + w.searchConcepts.length, 0)).toBe(289);
+    expect(publicDataset.records.every(w => w.synonyms.length === 0)).toBe(true);
   });
 });

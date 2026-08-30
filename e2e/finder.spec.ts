@@ -1,15 +1,31 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+
+const productionConcepts = JSON.parse(readFileSync('public/data/search-concepts.json', 'utf8'));
+const productionSynonyms = JSON.parse(readFileSync('public/data/search-synonyms.json', 'utf8'));
+const runtimeUrls = ['**/data/wisps.json', '**/data/search-concepts.json', '**/data/search-synonyms.json'] as const;
+
+async function routeRuntimeFixture(page: Page, dataset: { patch: string; records: Array<{ id: string; searchConcepts: string[]; synonyms: string[] }> }): Promise<void> {
+  for (const url of runtimeUrls) await page.unroute(url);
+  const metadata = { patch: dataset.patch, normalizedRecordCount: dataset.records.length, sourceGeneratorVersion: 'e2e-fixture', reviewedAgainstInputSha256: 'e2e-fixture' };
+  const concepts = { ...productionConcepts, ...metadata, assignmentCount: dataset.records.reduce((sum, record) => sum + record.searchConcepts.length, 0), records: dataset.records.map(record => ({ wispId: record.id, conceptKeys: record.searchConcepts })) };
+  const synonyms = { ...productionSynonyms, ...metadata, recordAliases: dataset.records.filter(record => record.synonyms.length).map(record => ({ wispId: record.id, aliases: record.synonyms })) };
+  await page.route(runtimeUrls[0], route => route.fulfill({ json: dataset }));
+  await page.route(runtimeUrls[1], route => route.fulfill({ json: concepts }));
+  await page.route(runtimeUrls[2], route => route.fulfill({ json: synonyms }));
+}
+
+async function useProductionRuntime(page: Page): Promise<void> { for (const url of runtimeUrls) await page.unroute(url); }
 
 test.beforeEach(async ({ page }) => {
   const seed = JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8'));
-  await page.route('**/data/wisps.json', (route) => route.fulfill({ json: seed }));
+  await routeRuntimeFixture(page, seed);
   await page.goto('/');
   await expect(page.locator('#resultCount')).toHaveText('10 个结果');
 });
 
 test('production corpus smoke: 完整数据可加载且 reference autocomplete 可用', async ({ page }) => {
-  await page.unroute('**/data/wisps.json');
+  await useProductionRuntime(page);
   await page.reload();
   const production = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: unknown[] };
   expect(production.records.length).toBeGreaterThan(10);
@@ -190,16 +206,16 @@ test('patch 切换隔离卡片缓存、reference 与 excluded', async ({ page })
   const fixture = {
     ...source,
     records: [
-      { ...base, id: 'shared', nameZh: '共享仙灵', nameEn: 'Shared Wisp', patch: '18.1', effects: { normal: '18.1 旧效果' } },
-      { ...base, id: 'shared', nameZh: '共享仙灵', nameEn: 'Shared Wisp', patch: '18.2', effects: { normal: '18.2 新效果' } },
+      { ...base, id: 'shared-18-1', nameZh: '共享仙灵', nameEn: 'Shared Wisp', patch: '18.1', effects: { normal: '18.1 旧效果' } },
+      { ...base, id: 'shared-18-2', nameZh: '共享仙灵', nameEn: 'Shared Wisp', patch: '18.2', effects: { normal: '18.2 新效果' } },
     ],
   };
-  await page.route('**/data/wisps.json', (route) => route.fulfill({ json: fixture }));
+  await routeRuntimeFixture(page, fixture);
   await page.reload();
   await expect(page.locator('.normal-effect')).toContainText('18.1 旧效果');
-  await page.locator('[data-set-reference="shared"]').click();
+  await page.locator('[data-set-reference="shared-18-1"]').click();
   await page.locator('#probabilityMode').check();
-  await page.locator('[data-exclude="shared"]').click();
+  await page.locator('[data-exclude="shared-18-1"]').click();
   await expect(page.locator('#excludedRegion')).toContainText('已排除 1 个');
   await page.locator('#patch').selectOption('18.2');
   await expect(page.locator('.normal-effect')).toContainText('18.2 新效果');
@@ -209,22 +225,65 @@ test('patch 切换隔离卡片缓存、reference 与 excluded', async ({ page })
   await expect(page.locator('[data-stat="n"]').first()).toHaveText('1');
 });
 
-test('直接切换 patch 时同 ID 只保留一张新版本卡片', async ({ page }) => {
+test('直接切换 patch 时只保留当前版本卡片', async ({ page }) => {
   const source = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: Array<Record<string, unknown>> };
   const base = source.records[0]!;
   const fixture = {
     ...source,
     records: [
-      { ...base, id: 'shared-direct', patch: '18.1', effects: { normal: '直接切换旧效果' } },
-      { ...base, id: 'shared-direct', patch: '18.2', effects: { normal: '直接切换新效果' } },
+      { ...base, id: 'shared-direct-old', patch: '18.1', effects: { normal: '直接切换旧效果' } },
+      { ...base, id: 'shared-direct-new', patch: '18.2', effects: { normal: '直接切换新效果' } },
     ],
   };
-  await page.route('**/data/wisps.json', (route) => route.fulfill({ json: fixture }));
+  await routeRuntimeFixture(page, fixture);
   await page.reload();
-  await expect(page.locator('[data-wisp-id="shared-direct"]')).toHaveCount(1);
+  await expect(page.locator('.card')).toHaveCount(1);
   await expect(page.locator('.normal-effect')).toContainText('直接切换旧效果');
   await page.locator('#patch').selectOption('18.2');
-  await expect(page.locator('[data-wisp-id="shared-direct"]')).toHaveCount(1);
+  await expect(page.locator('.card')).toHaveCount(1);
   await expect(page.locator('.normal-effect')).toContainText('直接切换新效果');
   await expect(page.locator('.normal-effect')).not.toContainText('直接切换旧效果');
+});
+
+test('reviewed runtime synonyms, concepts, AND, and probability denominator work in the browser', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  const search = page.locator('#query');
+  await search.fill('重随');
+  await expect(page.locator('.card')).toHaveCount(20);
+  await expect(page.locator('[data-wisp-id="da_refreshinglight18"]')).toBeVisible();
+  await search.fill('弈子转化');
+  await expect(page.locator('.card')).toHaveCount(4);
+  await expect(page.locator('[data-wisp-id="da_18_majorpolymorph"]')).toBeVisible();
+  await search.fill('重随 金币');
+  await expect(page.locator('.card')).toHaveCount(8);
+  await page.locator('#probabilityMode').check();
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
+  await search.fill('弈子星级');
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
+  await expect(page.locator('[data-stat="k"]').first()).toHaveText('19');
+});
+
+test('missing reviewed runtime lexicon fails initialization instead of falling back', async ({ page }) => {
+  await page.route('**/data/search-synonyms.json', route => route.fulfill({ status: 404 }));
+  await page.reload();
+  await expect(page.locator('.loading.error')).toContainText('搜索同义词数据 加载失败 (404)');
+  await expect(page.locator('#query')).toHaveCount(0);
+});
+
+test('Wisp dataset 与 reviewed membership 不一致时浏览器初始化 fail-closed', async ({ page }) => {
+  const seed = JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8')) as { patch: string; records: Array<{ id: string; searchConcepts: string[] }> };
+  const incompatibleConcepts = {
+    ...productionConcepts,
+    patch: seed.patch,
+    normalizedRecordCount: seed.records.length,
+    sourceGeneratorVersion: 'e2e-fixture',
+    reviewedAgainstInputSha256: 'e2e-fixture',
+    assignmentCount: 1,
+    records: seed.records.map((record, index) => ({ wispId: record.id, conceptKeys: index === 0 ? ['champion_transform'] : record.searchConcepts })),
+  };
+  await page.route('**/data/search-concepts.json', route => route.fulfill({ json: incompatibleConcepts }));
+  await page.reload();
+  await expect(page.locator('.loading.error')).toContainText('reviewed concept membership 不一致');
+  await expect(page.locator('#query')).toHaveCount(0);
 });

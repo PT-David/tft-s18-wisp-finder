@@ -112,8 +112,9 @@ query expansion 与全部 assignment 的人工审核。当前 generated assignme
 或重复 decision 仅通过更新 metadata 绕过审核。
 
 这一审核完成状态仍属于 C2.1 review overlay，不表示 reviewed concepts 已写入 production。
-`data/normalized/wisps_18.1.json` 与 `public/data/wisps.json` 中的 `searchConcepts[]`、`synonyms[]`
-继续保持为空；将审核结果 materialize 到 production search pipeline 是 Stage C2.2 的职责。
+C2.1 完成时，`data/normalized/wisps_18.1.json` 与当时的 `public/data/wisps.json` 中
+`searchConcepts[]`、`synonyms[]` 均保持为空；之后由 Stage C2.2A materialize、C2.2B1 publish。
+normalized 目前仍保持空 search-derived fields，public 则是 reviewed materialized runtime copy。
 
 使用完整 18.1 仙灵文本实际生成第一版：
 
@@ -148,5 +149,26 @@ artifacts**，不是与 normalized 竞争的原始 source of truth。`npm run va
 metadata、完整 effective assignment key set、批准 alias exact set、record alias 隔离、稳定顺序和 core-data
 不变式。
 
-C2.2A 尚未接入 runtime，也没有修改 `public/data/wisps.json`、structured `SearchHit` 或 search
-highlighting。这些属于后续 C2.2B；因此 C2.2A 不改变用户可见搜索行为。
+C2.2A 合并时尚未接入 runtime，也没有修改当时的 `public/data/wisps.json`、structured `SearchHit` 或
+search highlighting；其 artifacts 现在由下述 C2.2B1 publication 接入 runtime。
+
+## 7. Stage C2.2B1 — reviewed runtime publication（已完成）
+
+`npm run data:publish-search:18.1` 只把 C2.2A reviewed artifacts 确定性、逐字节发布为
+`public/data/wisps.json`、`public/data/search-concepts.json` 和
+`public/data/search-synonyms.json`。C1 builder 不再写 public；`normalized` 仍是 C1 core / C2.1
+review source，`materialized` 仍是 reviewed derived source，public 只是其 runtime publication，
+不是新的人工 source of truth。
+
+前端初始化同时加载 reviewed Wisp dataset 与两份 reviewed lexicon artifact，并验证 schema、patch、
+生成器版本、review input SHA、record count 及 taxonomy key 唯一性。加载或 metadata 验证失败会终止
+初始化，不会回退到 hard-coded 或空词库。运行时保留 query group 的 aliases 与 conceptKeys，直接使用
+reviewed taxonomy label 建立 concept clause，并以 canonical key 精确匹配 materialized
+`searchConcepts[]`；同 phrase 的 taxonomy 与 synonym semantics 会合并。
+
+初始化还会把 Wisp dataset 与 `search-concepts.json` 的 reviewed membership 精确绑定：record count、
+完整且无重复的 Wisp ID set、逐 Wisp canonical concept set、assignmentCount、taxonomy references 与
+reviewed record aliases 任一不一致都会 fail-closed，runtime 不会修补或覆盖任一 artifact。
+
+C2.2B1 没有开始 structured `SearchHit`、match reason、安全 ranges、highlighting 或 C2.3 UI enhancements；
+这些仍属于 C2.2B2 及后续阶段。
