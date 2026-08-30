@@ -104,6 +104,17 @@ Requirement，以及直接获得或召唤指定星级弈子的表达使用 `cham
 
 ## 5. 后续工作
 
+Stage C2.1 已针对 `generatorVersion = c2.1-v8` 和 normalized input SHA-256
+`a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7` 完成 taxonomy、
+query expansion 与全部 assignment 的人工审核。当前 generated assignment 与 manual decision
+为完整的一一对应关系，最终人工结果为 289/289 approved、0 rejected、0 modified。Validator
+会双向检查 generated assignment 和 manual decision key set，防止未审核 assignment、过期 decision
+或重复 decision 仅通过更新 metadata 绕过审核。
+
+这一审核完成状态仍属于 C2.1 review overlay，不表示 reviewed concepts 已写入 production。
+`data/normalized/wisps_18.1.json` 与 `public/data/wisps.json` 中的 `searchConcepts[]`、`synonyms[]`
+继续保持为空；将审核结果 materialize 到 production search pipeline 是 Stage C2.2 的职责。
+
 使用完整 18.1 仙灵文本实际生成第一版：
 
 - `search-concepts.json`
@@ -116,7 +127,8 @@ C2.1 draft 经人工审核后再进入 C2.2；不得直接把自动候选灌入 
 validator 将其 generator version 与 normalized input SHA 和当前 draft 对齐，过期结论必须重新确认。
 每个 generated query expansion group 必须恰好对应一条人工 decision。后续 assignment 审核记录使用
 `wispId`、`conceptKey`、`action`（approved / rejected / modified）和非空 `reason`；modified 还必须提供
-不同且合法的 `replacementConceptKey`。未实际审核 assignment 时数组保持为空。
+不同且合法的 `replacementConceptKey`。C2.1 review 完成后，assignment decision key set 必须与
+generated assignment key set 完全相等；generator confidence 与人工 action 是相互独立的状态。
 报告中的 `taxonomyDefinitions` 是完整 canonical key 定义数，`conceptKeysUsed` 仅是当前 production
 文本实际命中的 key 数，两者不得混用。`assignmentsByConcept` 按 concept key 稳定排序，供人工逐项
 审核时直接核对各 concept 的 assignment 数量。

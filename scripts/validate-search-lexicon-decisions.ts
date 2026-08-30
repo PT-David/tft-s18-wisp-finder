@@ -14,7 +14,34 @@ export interface AssignmentDecision {
   reason: string;
   replacementConceptKey?: string;
 }
-interface Draft { patch: string; generatorVersion: string; input: { sha256: string }; taxonomy?: { key: string }[]; assignments?: { wispId: string; conceptKey: string }[]; queryExpansionGroups?: { key: string; aliases: { term: string }[] }[] }
+interface Draft { patch: string; generatorVersion: string; input: { sha256: string }; taxonomy?: { key: string }[]; assignments?: { wispId: string; conceptKey: string; confidence?: string }[]; queryExpansionGroups?: { key: string; aliases: { term: string }[] }[] }
+
+export interface AssignmentReviewSummary {
+  generatedAssignments: number;
+  assignmentDecisions: number;
+  approved: number;
+  rejected: number;
+  modified: number;
+  unreviewed: number;
+  staleDecisions: number;
+}
+
+const assignmentKey = ({ wispId, conceptKey }: { wispId: string; conceptKey: string }) => `${wispId}\0${conceptKey}`;
+
+export function summarizeAssignmentReview(decisions: DecisionOverlay, concepts: Draft): AssignmentReviewSummary {
+  const generatedKeys = new Set((concepts.assignments ?? []).map(assignmentKey));
+  const decisionKeys = new Set((decisions.assignmentDecisions ?? []).map(assignmentKey));
+  const actionCount = (action: AssignmentDecision['action']) => decisions.assignmentDecisions.filter(item => item.action === action).length;
+  return {
+    generatedAssignments: concepts.assignments?.length ?? 0,
+    assignmentDecisions: decisions.assignmentDecisions?.length ?? 0,
+    approved: actionCount('approved'),
+    rejected: actionCount('rejected'),
+    modified: actionCount('modified'),
+    unreviewed: [...generatedKeys].filter(key => !decisionKeys.has(key)).length,
+    staleDecisions: [...decisionKeys].filter(key => !generatedKeys.has(key)).length,
+  };
+}
 
 export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Draft, synonyms: Draft): string[] {
   const errors: string[] = [];
@@ -59,13 +86,16 @@ export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Dr
     if (approved.size !== draftAliases.size) errors.push(`draft group contains alias not approved by decisions: ${decision.groupKey}`);
     if (rejected.size !== decision.rejected.length) errors.push(`duplicate rejected alias: ${decision.groupKey}`);
   }
-  const assignments = new Set(concepts.assignments?.map(x => `${x.wispId}\0${x.conceptKey}`));
+  const assignments = new Set(concepts.assignments?.map(assignmentKey));
+  const generatedWispIds = new Set(concepts.assignments?.map(item => item.wispId));
   const assignmentDecisionKeys = new Set<string>();
   for (const item of decisions.assignmentDecisions ?? []) {
     const key = `${item.wispId}\0${item.conceptKey}`;
     if (assignmentDecisionKeys.has(key)) errors.push(`duplicate assignment decision: ${item.wispId}/${item.conceptKey}`);
     assignmentDecisionKeys.add(key);
     if (!assignments.has(key)) errors.push(`assignment decision not found in draft: ${item.wispId}/${item.conceptKey}`);
+    if (!generatedWispIds.has(item.wispId)) errors.push(`unknown Wisp in assignment decision: ${item.wispId}`);
+    if (!taxonomy.has(item.conceptKey)) errors.push(`unknown concept in assignment decision: ${item.conceptKey}`);
     if (!['approved', 'rejected', 'modified'].includes(item.action)) errors.push(`invalid assignment decision action: ${item.wispId}/${item.conceptKey}/${String(item.action)}`);
     if (!item.reason?.trim()) errors.push(`assignment decision lacks reason: ${item.wispId}/${item.conceptKey}`);
     if (item.action === 'modified') {
@@ -78,6 +108,10 @@ export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Dr
       errors.push(`${item.action} assignment decision must not have replacementConceptKey: ${item.wispId}/${item.conceptKey}`);
     }
   }
+  for (const item of concepts.assignments ?? []) {
+    const key = assignmentKey(item);
+    if (!assignmentDecisionKeys.has(key)) errors.push(`generated assignment has no manual review decision: ${item.wispId}/${item.conceptKey}`);
+  }
   return errors;
 }
 
@@ -87,5 +121,9 @@ if (process.argv[1]?.endsWith('validate-search-lexicon-decisions.ts')) {
   const synonyms = JSON.parse(readFileSync('data/overrides/18.1/synonyms.draft.json', 'utf8')) as Draft;
   const errors = validateDecisionOverlay(decisions, concepts, synonyms);
   if (errors.length) { console.error(errors.map(error => `- ${error}`).join('\n')); process.exitCode = 1; }
-  else console.log(`Search lexicon decisions valid for ${concepts.patch} / ${concepts.generatorVersion} / ${concepts.input.sha256}.`);
+  else {
+    const summary = summarizeAssignmentReview(decisions, concepts);
+    console.log(`Search lexicon decisions valid for ${concepts.patch} / ${concepts.generatorVersion} / ${concepts.input.sha256}.`);
+    console.log(`Assignment review: ${JSON.stringify(summary)}`);
+  }
 }
