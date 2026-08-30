@@ -35,7 +35,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "crowd_control",
+        "delayed_trigger"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -132,7 +135,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -229,7 +236,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -326,7 +337,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -423,7 +438,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -520,7 +539,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -617,7 +640,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_speed"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -714,7 +739,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shield"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -811,7 +838,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "kill_takedown"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -908,7 +938,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1005,7 +1037,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1199,7 +1234,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "reforger"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1296,7 +1333,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1393,7 +1432,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shield"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1490,7 +1531,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "enemy_death",
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1593,7 +1637,13 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "champion_cost_tier",
+        "champion_duplicator",
+        "gold_gain",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1696,7 +1746,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1793,7 +1845,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "free_reroll",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -1987,7 +2042,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_obtain",
+        "kill_takedown"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2095,7 +2153,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2192,7 +2252,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_speed"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2300,7 +2362,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2403,7 +2467,12 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_speed",
+        "execute_threshold",
+        "item_requirement",
+        "kill_takedown"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2506,7 +2575,12 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2603,7 +2677,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "true_damage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2700,7 +2776,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "true_damage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2797,7 +2875,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_obtain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -2900,7 +2980,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_transform"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3003,7 +3087,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3106,7 +3192,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_transform"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3203,7 +3293,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_duplicator"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3306,7 +3398,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "delayed_trigger",
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3403,7 +3498,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "survival_condition"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3506,7 +3604,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death",
+        "champion_star_level",
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3609,7 +3711,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_transform"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3809,7 +3915,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ability_power",
+        "attack_damage",
+        "gold_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -3906,7 +4016,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death",
+        "champion_obtain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -4003,7 +4116,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "delayed_trigger"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -4197,7 +4312,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_star_up",
+        "shop_reroll",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -4300,7 +4419,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -4603,7 +4724,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "crowd_control"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -4700,7 +4823,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "delayed_trigger"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -4803,7 +4928,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5018,7 +5145,14 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "champion_star_level",
+        "gold_gain",
+        "shop_reroll",
+        "time_stage",
+        "win_streak"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5115,7 +5249,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "free_reroll",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5212,7 +5349,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5315,7 +5456,13 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "artifact_item",
+        "completed_item",
+        "item_component",
+        "item_requirement",
+        "reforger"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5412,7 +5559,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shield"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5509,7 +5658,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5606,7 +5758,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5703,7 +5857,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5800,7 +5956,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5897,7 +6057,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -5994,7 +6156,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "true_damage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6091,7 +6255,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "item_component"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6194,7 +6360,12 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_star_up",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6291,7 +6462,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6388,7 +6563,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6491,7 +6668,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "shield"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6588,7 +6768,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6685,7 +6867,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6782,7 +6966,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6885,7 +7071,12 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "gold_requirement",
+        "item_shop",
+        "shop_price"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -6982,7 +7173,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -7079,7 +7272,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -7182,7 +7377,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -7673,7 +7870,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shop_reroll",
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -7770,7 +7970,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -7867,7 +8069,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_speed"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -7964,7 +8168,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8061,7 +8268,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8352,7 +8562,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8449,7 +8661,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8643,7 +8859,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8746,7 +8964,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8843,7 +9063,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -8957,7 +9179,13 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "gold_requirement",
+        "player_health_threshold",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9060,7 +9288,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "delayed_trigger"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9157,7 +9388,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9260,7 +9495,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9460,7 +9697,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "completed_item",
+        "item_component",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9568,7 +9809,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9859,7 +10103,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -9962,7 +10210,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10059,7 +10309,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death",
+        "crowd_control"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10156,7 +10409,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_damage",
+        "attack_speed"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10253,7 +10509,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_damage",
+        "attack_speed"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10350,7 +10609,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_damage",
+        "attack_speed"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10447,7 +10709,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10641,7 +10907,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "crowd_control"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10738,7 +11006,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10835,7 +11105,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -10943,7 +11215,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11051,7 +11326,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_speed",
+        "board_composition",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11148,7 +11427,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11251,7 +11534,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_star_up"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11348,7 +11635,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11451,7 +11741,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "delayed_trigger",
+        "item_requirement",
+        "kill_takedown"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11548,7 +11842,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "item_shop",
+        "shop_price"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11645,7 +11943,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death",
+        "champion_transform"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11752,7 +12053,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shield"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11849,7 +12152,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -11946,7 +12251,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12043,7 +12350,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12140,7 +12449,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12237,7 +12548,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12334,7 +12647,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "shield"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12431,7 +12746,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12534,7 +12851,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "attack_speed",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12734,7 +13054,12 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_star_level",
+        "free_reroll",
+        "shop_reroll",
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12831,7 +13156,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ally_death"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -12939,7 +13266,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_requirement",
+        "shop_reroll",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13036,7 +13367,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "free_reroll",
+        "kill_takedown",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13133,7 +13468,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "delayed_trigger",
+        "shop_reroll",
+        "survival_condition"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13230,7 +13569,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13327,7 +13668,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "temporary_item"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13424,7 +13767,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "shop_reroll",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13521,7 +13868,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "delayed_trigger",
+        "survival_condition",
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13618,7 +13969,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13721,7 +14075,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_obtain",
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -13931,7 +14288,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14028,7 +14387,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "shop_reroll"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14228,7 +14591,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14325,7 +14690,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ability_power"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14422,7 +14789,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ability_power"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14519,7 +14888,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "ability_power"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14616,7 +14987,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -14913,7 +15288,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "kill_takedown",
+        "time_stage",
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15107,7 +15486,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15210,7 +15591,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15313,7 +15698,9 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15416,7 +15803,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "kill_takedown",
+        "win_streak",
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15524,7 +15915,12 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "loss_streak",
+        "time_stage",
+        "trait_active"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15627,7 +16023,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "loss_streak",
+        "win_streak"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15730,7 +16129,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "loss_streak",
+        "win_streak"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15833,7 +16235,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "player_health_gain",
+        "player_health_threshold"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -15936,7 +16341,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "loss_streak",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -16141,7 +16550,10 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "board_composition",
+        "item_requirement"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -16244,7 +16656,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_duplicator",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -16347,7 +16763,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "gold_gain",
+        "loss_streak",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -16450,7 +16870,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "item_component",
+        "loss_streak",
+        "time_stage"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -16650,7 +17074,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "time_stage",
+        "win_streak",
+        "xp_gain"
+      ],
       "synonyms": [],
       "sources": {
         "id": {
@@ -16754,7 +17182,11 @@
       "reofferCooldownShops": {
         "status": "unknown"
       },
-      "searchConcepts": [],
+      "searchConcepts": [
+        "champion_duplicator",
+        "player_health_loss",
+        "player_health_threshold"
+      ],
       "synonyms": [],
       "sources": {
         "id": {

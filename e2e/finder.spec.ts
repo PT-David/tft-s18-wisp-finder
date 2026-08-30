@@ -228,3 +228,29 @@ test('直接切换 patch 时同 ID 只保留一张新版本卡片', async ({ pag
   await expect(page.locator('.normal-effect')).toContainText('直接切换新效果');
   await expect(page.locator('.normal-effect')).not.toContainText('直接切换旧效果');
 });
+
+test('reviewed runtime synonyms, concepts, AND, and probability denominator work in the browser', async ({ page }) => {
+  await page.unroute('**/data/wisps.json');
+  await page.reload();
+  const search = page.locator('#query');
+  await search.fill('重随');
+  await expect(page.locator('.card')).toHaveCount(20);
+  await expect(page.locator('[data-wisp-id="da_refreshinglight18"]')).toBeVisible();
+  await search.fill('弈子转化');
+  await expect(page.locator('.card')).toHaveCount(4);
+  await expect(page.locator('[data-wisp-id="da_18_majorpolymorph"]')).toBeVisible();
+  await search.fill('重随 金币');
+  await expect(page.locator('.card')).toHaveCount(8);
+  await page.locator('#probabilityMode').check();
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
+  await search.fill('弈子星级');
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
+  await expect(page.locator('[data-stat="k"]').first()).toHaveText('19');
+});
+
+test('missing reviewed runtime lexicon fails initialization instead of falling back', async ({ page }) => {
+  await page.route('**/data/search-synonyms.json', route => route.fulfill({ status: 404 }));
+  await page.reload();
+  await expect(page.locator('.loading.error')).toContainText('搜索同义词数据 加载失败 (404)');
+  await expect(page.locator('#query')).toHaveCount(0);
+});

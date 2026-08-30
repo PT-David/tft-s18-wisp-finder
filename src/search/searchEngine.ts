@@ -1,22 +1,7 @@
-import type { Wisp } from '../domain/types';
+import type { RuntimeSearchLexicon, Wisp } from '../domain/types';
 
 export type SearchField = 'nameExact' | 'namePrefix' | 'name' | 'effect' | 'requirement' | 'synonym' | 'concept';
 export interface SearchHit { wisp: Wisp; score: number; matchedFields: readonly SearchField[] }
-export type SynonymGroups = readonly (readonly string[])[];
-
-// A deliberately small bootstrap vocabulary. The complete reviewed lexicon is a data-stage deliverable.
-export const BASE_SYNONYMS: SynonymGroups = [
-  ['生命值', '血量', 'hp', 'health'],
-  ['阵亡', '死亡'],
-  ['击杀', 'takedown'],
-  ['刷新', '重随', 'reroll'],
-  ['经验', '经验值', 'xp', 'experience'],
-  ['复制器', '英雄复制器', 'champion duplicator'],
-  ['法术强度', '法术加成', '法强'],
-  ['攻击力', '物理加成'],
-  ['攻击速度', '攻速'],
-  ['真实伤害', '真伤'],
-];
 
 export function normalizeSearchText(value: string): string {
   return value.normalize('NFKC').toLocaleLowerCase()
@@ -29,15 +14,24 @@ export function tokenizeQuery(query: string): string[] {
   return [...new Set(normalizeSearchText(query).split(' ').filter(Boolean))];
 }
 
-export interface QueryClause { source: string; expansions: readonly string[] }
+export interface QueryClause { source: string; expansions: readonly string[]; conceptKeys: readonly string[] }
 const phraseTokens = (value: string): string[] => normalizeSearchText(value).split(' ').filter(Boolean);
 
 /** Groups the longest matching synonym phrases into one AND clause. */
-export function buildQueryClauses(query: string, groups: SynonymGroups = BASE_SYNONYMS): QueryClause[] {
+export function buildQueryClauses(query: string, lexicon: RuntimeSearchLexicon): QueryClause[] {
   const tokens = phraseTokens(query);
-  const aliases = groups.flatMap((group) => group.map((item) => ({
-    phrase: normalizeSearchText(item), group: [...new Set(group.map(normalizeSearchText).filter(Boolean))],
-  }))).sort((a, b) => phraseTokens(b.phrase).length - phraseTokens(a.phrase).length);
+  const semantics = new Map<string, { expansions: Set<string>; conceptKeys: Set<string> }>();
+  const add = (phrase: string, expansions: readonly string[], conceptKeys: readonly string[]) => {
+    const normalized = normalizeSearchText(phrase); if (!normalized) return;
+    const current = semantics.get(normalized) ?? { expansions: new Set<string>(), conceptKeys: new Set<string>() };
+    expansions.map(normalizeSearchText).filter(Boolean).forEach(item => current.expansions.add(item));
+    conceptKeys.map(normalizeSearchText).filter(Boolean).forEach(item => current.conceptKeys.add(item));
+    semantics.set(normalized, current);
+  };
+  for (const group of lexicon.queryExpansionGroups) for (const alias of group.aliases) add(alias, group.aliases, group.conceptKeys);
+  for (const concept of lexicon.concepts) add(concept.labelZh, [concept.labelZh], [concept.key]);
+  const aliases = [...semantics].map(([phrase, value]) => ({ phrase, expansions: [...value.expansions].sort(), conceptKeys: [...value.conceptKeys].sort() }))
+    .sort((a, b) => phraseTokens(b.phrase).length - phraseTokens(a.phrase).length || a.phrase.localeCompare(b.phrase, 'en'));
   const clauses: QueryClause[] = [];
   for (let index = 0; index < tokens.length;) {
     const match = aliases.find(({ phrase }) => {
@@ -45,10 +39,10 @@ export function buildQueryClauses(query: string, groups: SynonymGroups = BASE_SY
       return tokensInPhrase.every((token, offset) => tokens[index + offset] === token);
     });
     if (match) {
-      clauses.push({ source: match.phrase, expansions: match.group });
+      clauses.push({ source: match.phrase, expansions: match.expansions, conceptKeys: match.conceptKeys });
       index += phraseTokens(match.phrase).length;
     } else {
-      clauses.push({ source: tokens[index]!, expansions: [tokens[index]!] });
+      clauses.push({ source: tokens[index]!, expansions: [tokens[index]!], conceptKeys: [] });
       index += 1;
     }
   }
@@ -74,16 +68,16 @@ function scoreClause(clause: QueryClause, fields: IndexFields): { score: number;
   if (fields.effects.some((text) => text.includes(source))) return { score: 300, field: 'effect' };
   if (fields.requirements.some((text) => text.includes(source))) return { score: 220, field: 'requirement' };
   if (fields.synonyms.some((text) => text.includes(source))) return { score: 140, field: 'synonym' };
-  if (fields.concepts.some((text) => text.includes(source))) return { score: 100, field: 'concept' };
   const alternatives = expansions.filter((term) => term !== source);
   if (alternatives.some((term) => [...fields.names, ...fields.effects, ...fields.requirements, ...fields.synonyms].some((text) => text.includes(term)))) return { score: 140, field: 'synonym' };
-  if (alternatives.some((term) => fields.concepts.some((text) => text.includes(term)))) return { score: 100, field: 'concept' };
+  const conceptSet = new Set(fields.concepts);
+  if (clause.conceptKeys.some((key) => conceptSet.has(normalizeSearchText(key)))) return { score: 100, field: 'concept' };
   return { score: 0 };
 }
 
 /** Searches without mutating/filtering the caller's Candidate Pool. Query tokens use AND semantics. */
-export function searchWisps(pool: readonly Wisp[], query: string, synonymGroups: SynonymGroups = BASE_SYNONYMS): SearchHit[] {
-  const clauses = buildQueryClauses(query, synonymGroups);
+export function searchWisps(pool: readonly Wisp[], query: string, lexicon: RuntimeSearchLexicon): SearchHit[] {
+  const clauses = buildQueryClauses(query, lexicon);
   if (!clauses.length) return pool.map((wisp) => ({ wisp, score: 0, matchedFields: [] }));
   return pool.flatMap((wisp, order) => {
     const fields = indexWisp(wisp);

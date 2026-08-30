@@ -16,11 +16,14 @@ export function validateProvenanceSources(dataset: { records: Array<Record<strin
 
 if (process.argv[1] && import.meta.url === new URL(`file://${resolve(process.argv[1])}`).href) {
   const file = resolve(process.argv[2] ?? 'data/wisps_18.1.json');
-  Promise.all([validateFile(file), readFile(file, 'utf8'), readFile(resolve('public/data/wisps.json'), 'utf8'), readFile(resolve('reports/data-conflicts-18.1.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-en.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-zh.json'), 'utf8'), readFile(resolve('data/raw/18.1/datatft-wisps-zh.json'), 'utf8'), readFile(resolve('data/source_manifest_18.1.json'), 'utf8')]).then(([baseErrors, normalizedText, publicText, conflictText, cdEnText, cdZhText, dtText, manifestText]) => {
+  Promise.all([validateFile(file), readFile(file, 'utf8'), readFile(resolve('public/data/wisps.json'), 'utf8'), readFile(resolve('data/materialized/18.1/wisps.json'), 'utf8'), readFile(resolve('reports/data-conflicts-18.1.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-en.json'), 'utf8'), readFile(resolve('data/raw/18.1/communitydragon-wisps-zh.json'), 'utf8'), readFile(resolve('data/raw/18.1/datatft-wisps-zh.json'), 'utf8'), readFile(resolve('data/source_manifest_18.1.json'), 'utf8')]).then(([baseErrors, normalizedText, publicText, materializedText, conflictText, cdEnText, cdZhText, dtText, manifestText]) => {
     const errors = [...baseErrors];
     if (process.argv.includes('--production')) {
       const dataset = JSON.parse(normalizedText) as { productionReady?: boolean; datasetStatus?: string; records: Array<Record<string, unknown>> };
-      if (normalizedText !== publicText) errors.push('production: normalized 与 public 输出不一致');
+      if (publicText !== materializedText) errors.push('production: public Wisp 与 materialized artifact 不一致');
+      const publicDataset = JSON.parse(publicText) as { records: Array<Record<string, unknown>> };
+      const stripSearch = (value: { records: Array<Record<string, unknown>> }) => ({ ...value, records: value.records.map(({ searchConcepts: _a, synonyms: _b, ...record }) => record) });
+      if (JSON.stringify(stripSearch(dataset)) !== JSON.stringify(stripSearch(publicDataset))) errors.push('production: public Wisp core 与 normalized 不一致');
       const riotIds = new Set<string>();
       const cdEn = (JSON.parse(cdEnText) as { records: Array<Record<string, unknown>> }).records;
       const cdZh = (JSON.parse(cdZhText) as { records: Array<Record<string, unknown>> }).records;

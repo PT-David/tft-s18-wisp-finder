@@ -66,7 +66,7 @@ describe('reviewed search materialization', () => {
     const strip = (data: WispDataset) => ({ ...data, records: data.records.map(({ searchConcepts: _a, synonyms: _b, ...record }) => record) });
     expect(strip(result.wisps)).toEqual(strip(dataset));
     expect(sha256(files.bytes)).toBe('a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7');
-    expect(readFileSync('public/data/wisps.json', 'utf8')).toBe(files.bytes.toString());
+    expect(readFileSync('public/data/wisps.json', 'utf8')).toBe(readFileSync('data/materialized/18.1/wisps.json', 'utf8'));
     const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase().trim();
     const groupKeys = result.synonyms.queryExpansionGroups.map(group => normalize(group.groupKey));
     expect(new Set(groupKeys).size).toBe(groupKeys.length);

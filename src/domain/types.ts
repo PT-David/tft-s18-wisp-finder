@@ -26,3 +26,11 @@ export interface Wisp {
 export interface WispDataset {
   patch: string; datasetStatus?: string; warning?: string; verifiedAt?: string; records: Wisp[];
 }
+export interface RuntimeQueryExpansionGroup {
+  groupKey: string; canonicalTerm: string; aliases: readonly string[]; conceptKeys: readonly string[];
+}
+export interface RuntimeConceptDefinition { key: string; labelZh: string }
+export interface RuntimeSearchLexicon {
+  patch: string; sourceGeneratorVersion: string; reviewedAgainstInputSha256: string; normalizedRecordCount: number;
+  queryExpansionGroups: readonly RuntimeQueryExpansionGroup[]; concepts: readonly RuntimeConceptDefinition[];
+}

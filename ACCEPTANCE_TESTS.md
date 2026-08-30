@@ -53,6 +53,9 @@
 7. 法强必须同时命中 production 使用的“法术加成”；攻击力必须命中“物理加成”。AP / AD 不作为同义词扩展。
 8. 免费重随同时属于免费刷新与商店刷新概念；普通“重新”或页面刷新不得被泛化为商店刷新。
 9. 实际升星动作与静态 N 星分属 `champion_star_up` / `champion_star_level`；裸 N 星不得产生升星动作。
+10. Production 必须显式加载 reviewed query expansion 与 taxonomy artifacts；缺失、非法或 metadata 不一致时初始化失败，不得回退到硬编码词库。
+11. taxonomy 中文 label 可通过 canonical `searchConcepts[]` 精确 key membership 命中；同 clause 同时命中文本与 concept 时只计最高字段分数。
+12. reviewed synonym/concept 搜索仍只作用于 Displayed Results；Candidate Pool 与概率分母 N 不变。
 
 ## F. 概率
 

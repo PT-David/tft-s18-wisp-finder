@@ -1,11 +1,12 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { summarizeAssignmentReview, validateDecisionOverlay, type DecisionOverlay } from '../scripts/validate-search-lexicon-decisions';
-import { BASE_SYNONYMS, normalizeSearchText } from '../src/search/searchEngine';
+import { normalizeSearchText } from '../src/search/searchEngine';
 
 const decisions = JSON.parse(readFileSync('data/reviews/18.1/search-lexicon-decisions.json', 'utf8')) as DecisionOverlay;
 const concepts = JSON.parse(readFileSync('data/overrides/18.1/search-concepts.draft.json', 'utf8'));
 const synonyms = JSON.parse(readFileSync('data/overrides/18.1/synonyms.draft.json', 'utf8'));
+const runtimeGroups = JSON.parse(readFileSync('data/materialized/18.1/synonyms.json', 'utf8')).queryExpansionGroups.map((group: { aliases: string[] }) => group.aliases) as string[][];
 const normalizeAlias = (alias: string) => normalizeSearchText(alias).trim();
 const canonicalGroups = (groups: readonly (readonly string[])[]) => groups
   .map(group => [...new Set(group.map(normalizeAlias))].sort())
@@ -56,13 +57,13 @@ describe('manual search lexicon decision overlay', () => {
   });
   it('keeps runtime bootstrap synonym groups exactly equal to manually approved groups', () => {
     const approvedGroups = decisions.queryExpansionDecisions.map(group => group.approved);
-    expect(canonicalGroups(BASE_SYNONYMS)).toEqual(canonicalGroups(approvedGroups));
-    expect(flattenedAliases(BASE_SYNONYMS)).toEqual(flattenedAliases(approvedGroups));
-    for (const rejected of ['d', 'roll', '妮蔻', 'ap', 'ad', 'as', 'cc']) expect(flattenedAliases(BASE_SYNONYMS)).not.toContain(rejected);
+    expect(canonicalGroups(runtimeGroups)).toEqual(canonicalGroups(approvedGroups));
+    expect(flattenedAliases(runtimeGroups)).toEqual(flattenedAliases(approvedGroups));
+    for (const rejected of ['d', 'roll', '妮蔻', 'ap', 'ad', 'as', 'cc']) expect(flattenedAliases(runtimeGroups)).not.toContain(rejected);
   });
   it('detects semantic regrouping even when the flattened vocabulary is unchanged', () => {
     const approvedGroups = decisions.queryExpansionDecisions.map(group => group.approved);
-    const regrouped = BASE_SYNONYMS.map(group => [...group]);
+    const regrouped = runtimeGroups.map(group => [...group]);
     [regrouped[0]![0], regrouped[1]![0]] = [regrouped[1]![0]!, regrouped[0]![0]!];
 
     expect(flattenedAliases(regrouped)).toEqual(flattenedAliases(approvedGroups));
