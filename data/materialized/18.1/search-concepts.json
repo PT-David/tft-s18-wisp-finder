@@ -1,0 +1,1342 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "sourceGeneratorVersion": "c2.1-v8",
+  "reviewedAgainstInputSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+  "normalizedRecordCount": 169,
+  "assignmentCount": 289,
+  "taxonomy": [
+    {
+      "key": "ability_power",
+      "labelZh": "法术强度",
+      "description": "改变弈子的法术强度。"
+    },
+    {
+      "key": "ally_death",
+      "labelZh": "友军阵亡",
+      "description": "由友军或己方弈子阵亡触发。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "artifact_item",
+      "labelZh": "神器",
+      "description": "获得、转化或使用神器装备。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "attack_damage",
+      "labelZh": "攻击力",
+      "description": "改变弈子的攻击力。"
+    },
+    {
+      "key": "attack_speed",
+      "labelZh": "攻击速度",
+      "description": "改变弈子的攻击速度。"
+    },
+    {
+      "key": "board_composition",
+      "labelZh": "阵容条件",
+      "description": "由棋盘或备战席阵容构成决定。"
+    },
+    {
+      "key": "champion_cost_tier",
+      "labelZh": "弈子费用等级",
+      "description": "指向特定费用等级的弈子。"
+    },
+    {
+      "key": "champion_duplicator",
+      "labelZh": "英雄复制器",
+      "description": "明确获得或使用英雄复制器道具。",
+      "riskGroup": "clone_vs_duplicator"
+    },
+    {
+      "key": "champion_obtain",
+      "labelZh": "获得弈子",
+      "description": "直接获得弈子或使弈子加入队伍。"
+    },
+    {
+      "key": "champion_star_level",
+      "labelZh": "弈子星级",
+      "description": "涉及弈子的当前或指定星级、星级 Requirement、星级比较、按星级选择或计数，以及直接获得或召唤指定星级弈子。"
+    },
+    {
+      "key": "champion_star_up",
+      "labelZh": "弈子升星",
+      "description": "现有弈子实际发生升星或星级提升动作。"
+    },
+    {
+      "key": "champion_transform",
+      "labelZh": "弈子转化",
+      "description": "将弈子转换为另一形态或对象。"
+    },
+    {
+      "key": "completed_item",
+      "labelZh": "成装",
+      "description": "明确涉及完整装备或成装。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "crowd_control",
+      "labelZh": "控制",
+      "description": "施加眩晕等控制效果。"
+    },
+    {
+      "key": "delayed_trigger",
+      "labelZh": "延迟触发",
+      "description": "在战斗开始后的明确时间点触发效果；不表示普通持续时间或存活奖励。"
+    },
+    {
+      "key": "enemy_death",
+      "labelZh": "敌方阵亡",
+      "description": "由敌方单位阵亡触发。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "execute_threshold",
+      "labelZh": "处决阈值",
+      "description": "在目标低于生命阈值时处决。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "free_reroll",
+      "labelZh": "免费刷新",
+      "description": "明确提供免费商店刷新。",
+      "riskGroup": "reroll_vs_refresh"
+    },
+    {
+      "key": "gold_gain",
+      "labelZh": "获得金币",
+      "description": "奖励或产出金币。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "gold_payment",
+      "labelZh": "支付或失去金币",
+      "description": "效果明确要求实际支付、花费或失去金币。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "gold_requirement",
+      "labelZh": "金币条件",
+      "description": "明确检查当前持有金币阈值。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "item_component",
+      "labelZh": "基础装备",
+      "description": "明确涉及基础装备或散件。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "item_requirement",
+      "labelZh": "装备条件",
+      "description": "Requirement 对装备的持有、携带、数量或满装状态施加条件或限制。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "item_shop",
+      "labelZh": "装备商店",
+      "description": "开启或使用装备商店。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "kill_takedown",
+      "labelZh": "击杀或参与击杀",
+      "description": "明确的击杀或参与击杀语义。",
+      "riskGroup": "death_kill_execute"
+    },
+    {
+      "key": "loss_streak",
+      "labelZh": "连败",
+      "description": "涉及连败状态或连败计数。"
+    },
+    {
+      "key": "player_health_gain",
+      "labelZh": "玩家生命恢复",
+      "description": "明确增加或治疗玩家生命。",
+      "riskGroup": "player_vs_unit_health"
+    },
+    {
+      "key": "player_health_loss",
+      "labelZh": "玩家生命损失",
+      "description": "明确失去玩家生命。",
+      "riskGroup": "player_vs_unit_health"
+    },
+    {
+      "key": "player_health_threshold",
+      "labelZh": "玩家生命阈值",
+      "description": "Requirement 或文本明确检查玩家生命。",
+      "riskGroup": "player_vs_unit_health"
+    },
+    {
+      "key": "reforger",
+      "labelZh": "重铸器",
+      "description": "明确涉及装备重铸器。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "shield",
+      "labelZh": "护盾",
+      "description": "涉及提供、提升、削减护盾，或以护盾为作用对象。"
+    },
+    {
+      "key": "shop_price",
+      "labelZh": "商店价格",
+      "description": "商店中商品的金币购买价格或价格范围。",
+      "riskGroup": "gold_cost_vs_reward"
+    },
+    {
+      "key": "shop_reroll",
+      "labelZh": "商店刷新",
+      "description": "明确刷新 TFT 商店。",
+      "riskGroup": "reroll_vs_refresh"
+    },
+    {
+      "key": "survival_condition",
+      "labelZh": "存活结算",
+      "description": "明确以单位是否存活、存活时间或存活友军数量作为效果触发或结算依据。",
+      "riskGroup": "survival_vs_once_per_game"
+    },
+    {
+      "key": "temporary_item",
+      "labelZh": "临时装备",
+      "description": "明确为临时且可装备或明确是装备的对象。",
+      "riskGroup": "item_semantics"
+    },
+    {
+      "key": "time_stage",
+      "labelZh": "回合或阶段时机/条件",
+      "description": "描述回合、阶段或准备阶段的时机或条件；不包含普通效果持续时间。"
+    },
+    {
+      "key": "trait_active",
+      "labelZh": "羁绊激活",
+      "description": "涉及羁绊处于激活或未激活状态，或使羁绊激活。"
+    },
+    {
+      "key": "true_damage",
+      "labelZh": "真实伤害",
+      "description": "造成真实伤害。"
+    },
+    {
+      "key": "win_streak",
+      "labelZh": "连胜",
+      "description": "涉及连胜状态或连胜计数。"
+    },
+    {
+      "key": "xp_gain",
+      "labelZh": "获得经验",
+      "description": "奖励经验值。"
+    }
+  ],
+  "records": [
+    {
+      "wispId": "da_18_aftershock",
+      "conceptKeys": [
+        "crowd_control",
+        "delayed_trigger"
+      ]
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "gold_gain",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_18_backrowstar",
+      "conceptKeys": [
+        "attack_speed"
+      ]
+    },
+    {
+      "wispId": "da_18_barkarmor",
+      "conceptKeys": [
+        "shield"
+      ]
+    },
+    {
+      "wispId": "da_18_bloodmoney",
+      "conceptKeys": [
+        "gold_gain",
+        "kill_takedown"
+      ]
+    },
+    {
+      "wispId": "da_18_bronzespoon",
+      "conceptKeys": [
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "da_18_circleofelders",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ]
+    },
+    {
+      "wispId": "da_18_counterspell",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_18_earlyfix",
+      "conceptKeys": [
+        "reforger"
+      ]
+    },
+    {
+      "wispId": "da_18_experienced",
+      "conceptKeys": [
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "da_18_fellowship",
+      "conceptKeys": [
+        "shield"
+      ]
+    },
+    {
+      "wispId": "da_18_fertilize",
+      "conceptKeys": [
+        "enemy_death",
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKeys": [
+        "board_composition",
+        "champion_cost_tier",
+        "champion_duplicator",
+        "gold_gain",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_18_forestmage",
+      "conceptKeys": [
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_18_freeroller",
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_18_giantgrowth",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_18_heatedrivalry",
+      "conceptKeys": [
+        "champion_obtain",
+        "kill_takedown"
+      ]
+    },
+    {
+      "wispId": "da_18_heroicsacrifice",
+      "conceptKeys": [
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_18_hummingbird",
+      "conceptKeys": [
+        "attack_speed"
+      ]
+    },
+    {
+      "wispId": "da_18_infliction",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKeys": [
+        "attack_speed",
+        "execute_threshold",
+        "item_requirement",
+        "kill_takedown"
+      ]
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKeys": [
+        "gold_gain",
+        "player_health_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ]
+    },
+    {
+      "wispId": "da_18_lightningstorm",
+      "conceptKeys": [
+        "true_damage"
+      ]
+    },
+    {
+      "wispId": "da_18_lightningstrike",
+      "conceptKeys": [
+        "true_damage"
+      ]
+    },
+    {
+      "wispId": "da_18_losttravelers",
+      "conceptKeys": [
+        "champion_obtain"
+      ]
+    },
+    {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_transform"
+      ]
+    },
+    {
+      "wispId": "da_18_mercenaryforce",
+      "conceptKeys": [
+        "gold_requirement"
+      ]
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_transform"
+      ]
+    },
+    {
+      "wispId": "da_18_mitosis",
+      "conceptKeys": [
+        "champion_duplicator"
+      ]
+    },
+    {
+      "wispId": "da_18_moonrise",
+      "conceptKeys": [
+        "delayed_trigger",
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_18_payday",
+      "conceptKeys": [
+        "gold_gain",
+        "survival_condition"
+      ]
+    },
+    {
+      "wispId": "da_18_pocketchange",
+      "conceptKeys": [
+        "ally_death",
+        "champion_star_level",
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_transform"
+      ]
+    },
+    {
+      "wispId": "da_18_preppers",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKeys": [
+        "ability_power",
+        "attack_damage",
+        "gold_requirement"
+      ]
+    },
+    {
+      "wispId": "da_18_propagate",
+      "conceptKeys": [
+        "ally_death",
+        "champion_obtain"
+      ]
+    },
+    {
+      "wispId": "da_18_radiantize",
+      "conceptKeys": [
+        "delayed_trigger"
+      ]
+    },
+    {
+      "wispId": "da_18_resistant",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKeys": [
+        "champion_star_up",
+        "shop_reroll",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_18_sunfiresorcery",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_18_supercritical",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_18_tatteredarmor",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_18_tremors",
+      "conceptKeys": [
+        "crowd_control"
+      ]
+    },
+    {
+      "wispId": "da_18_ultraascension",
+      "conceptKeys": [
+        "delayed_trigger"
+      ]
+    },
+    {
+      "wispId": "da_18_verdantvitality",
+      "conceptKeys": [
+        "gold_requirement"
+      ]
+    },
+    {
+      "wispId": "da_18_yordlespirit",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKeys": [
+        "board_composition",
+        "champion_star_level",
+        "gold_gain",
+        "shop_reroll",
+        "time_stage",
+        "win_streak"
+      ]
+    },
+    {
+      "wispId": "da_animateshop18",
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKeys": [
+        "artifact_item",
+        "completed_item",
+        "item_component",
+        "item_requirement",
+        "reforger"
+      ]
+    },
+    {
+      "wispId": "da_barrier18",
+      "conceptKeys": [
+        "shield"
+      ]
+    },
+    {
+      "wispId": "da_barter18",
+      "conceptKeys": [
+        "gold_gain",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_beggarswisp18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_bigboom18",
+      "conceptKeys": [
+        "ally_death"
+      ]
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_blastpotion18_charm",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_blaze18",
+      "conceptKeys": [
+        "true_damage"
+      ]
+    },
+    {
+      "wispId": "da_bloodandiron18",
+      "conceptKeys": [
+        "item_component"
+      ]
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_star_up",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_borrowedgear18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_bulwark18",
+      "conceptKeys": [
+        "board_composition",
+        "shield"
+      ]
+    },
+    {
+      "wispId": "da_bunchobelts18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_coinflip18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_combust18",
+      "conceptKeys": [
+        "ally_death"
+      ]
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKeys": [
+        "gold_gain",
+        "gold_requirement",
+        "item_shop",
+        "shop_price"
+      ]
+    },
+    {
+      "wispId": "da_cutpurse18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_dieroll18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_diversified18",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_doodadbag18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_doodadjar18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_doodadsack18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_downpour18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_flashfire18",
+      "conceptKeys": [
+        "shop_reroll",
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_flipfrenzy18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_flow18",
+      "conceptKeys": [
+        "attack_speed"
+      ]
+    },
+    {
+      "wispId": "da_forestguide18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ]
+    },
+    {
+      "wispId": "da_foresttwins18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ]
+    },
+    {
+      "wispId": "da_foundfriend18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_giantsaura18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_goldengoose18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_greaterchaos18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_growup18",
+      "conceptKeys": [
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "da_handofbaron18",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_healthpotion18_charm",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "gold_requirement",
+        "player_health_threshold",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_herosentrance18",
+      "conceptKeys": [
+        "board_composition",
+        "delayed_trigger"
+      ]
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_homingfireflies18",
+      "conceptKeys": [
+        "board_composition"
+      ]
+    },
+    {
+      "wispId": "da_hugify18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKeys": [
+        "completed_item",
+        "item_component",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_improvedreach18",
+      "conceptKeys": [
+        "board_composition",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_ironcore18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_ironwood18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_jungling18",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_killersregret18",
+      "conceptKeys": [
+        "ally_death",
+        "crowd_control"
+      ]
+    },
+    {
+      "wispId": "da_knickknackbag18",
+      "conceptKeys": [
+        "attack_damage",
+        "attack_speed"
+      ]
+    },
+    {
+      "wispId": "da_knickknackjar18",
+      "conceptKeys": [
+        "attack_damage",
+        "attack_speed"
+      ]
+    },
+    {
+      "wispId": "da_knickknacksack18",
+      "conceptKeys": [
+        "attack_damage",
+        "attack_speed"
+      ]
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_lesserchaos18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_livingsoil18",
+      "conceptKeys": [
+        "crowd_control"
+      ]
+    },
+    {
+      "wispId": "da_lucky718",
+      "conceptKeys": [
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_manapotion18_charm",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_manarichsoil18",
+      "conceptKeys": [
+        "board_composition",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKeys": [
+        "attack_speed",
+        "board_composition",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "champion_star_up"
+      ]
+    },
+    {
+      "wispId": "da_naturesally18",
+      "conceptKeys": [
+        "ally_death",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKeys": [
+        "delayed_trigger",
+        "item_requirement",
+        "kill_takedown"
+      ]
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKeys": [
+        "gold_gain",
+        "item_shop",
+        "shop_price"
+      ]
+    },
+    {
+      "wispId": "da_petrifieddummy18",
+      "conceptKeys": [
+        "ally_death",
+        "champion_transform"
+      ]
+    },
+    {
+      "wispId": "da_petrifyshields18",
+      "conceptKeys": [
+        "shield"
+      ]
+    },
+    {
+      "wispId": "da_phantomarmor18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_phantomemblem18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_phantomgloves18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_phantomsplash18",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_phantomvest18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_platedshields18",
+      "conceptKeys": [
+        "shield"
+      ]
+    },
+    {
+      "wispId": "da_potioncraft18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_quicken18",
+      "conceptKeys": [
+        "attack_speed",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "da_rain18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKeys": [
+        "champion_star_level",
+        "free_reroll",
+        "shop_reroll",
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_revenge18",
+      "conceptKeys": [
+        "ally_death"
+      ]
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKeys": [
+        "gold_requirement",
+        "shop_reroll",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKeys": [
+        "free_reroll",
+        "kill_takedown",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKeys": [
+        "delayed_trigger",
+        "shop_reroll",
+        "survival_condition"
+      ]
+    },
+    {
+      "wispId": "da_salvager18",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "da_scrappy18",
+      "conceptKeys": [
+        "temporary_item"
+      ]
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "shop_reroll",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKeys": [
+        "delayed_trigger",
+        "survival_condition",
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "da_smurfing18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain"
+      ]
+    },
+    {
+      "wispId": "da_solargift18",
+      "conceptKeys": [
+        "champion_obtain",
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_solitudescloak18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_standalone18",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_star_level",
+        "shop_reroll"
+      ]
+    },
+    {
+      "wispId": "da_stealthy18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_terraforming18",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_thingamajigbag18",
+      "conceptKeys": [
+        "ability_power"
+      ]
+    },
+    {
+      "wispId": "da_thingamajigjar18",
+      "conceptKeys": [
+        "ability_power"
+      ]
+    },
+    {
+      "wispId": "da_thingamajigsack18",
+      "conceptKeys": [
+        "ability_power"
+      ]
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKeys": [
+        "champion_cost_tier",
+        "champion_obtain",
+        "champion_star_level"
+      ]
+    },
+    {
+      "wispId": "da_trainingyard18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_treetoparchers",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_trophyhunter18",
+      "conceptKeys": [
+        "kill_takedown",
+        "time_stage",
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "da_wrappedinthorns18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "snapshot_021_534324382164",
+      "conceptKeys": [
+        "gold_gain"
+      ]
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKeys": [
+        "gold_gain",
+        "player_health_loss",
+        "player_health_threshold"
+      ]
+    },
+    {
+      "wispId": "snapshot_036_f484358ea1e5",
+      "conceptKeys": [
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKeys": [
+        "kill_takedown",
+        "win_streak",
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKeys": [
+        "gold_gain",
+        "loss_streak",
+        "time_stage",
+        "trait_active"
+      ]
+    },
+    {
+      "wispId": "snapshot_050_770e0f5d1043",
+      "conceptKeys": [
+        "loss_streak",
+        "win_streak"
+      ]
+    },
+    {
+      "wispId": "snapshot_051_e06d127b43f9",
+      "conceptKeys": [
+        "loss_streak",
+        "win_streak"
+      ]
+    },
+    {
+      "wispId": "snapshot_085_b53a01d778ee",
+      "conceptKeys": [
+        "player_health_gain",
+        "player_health_threshold"
+      ]
+    },
+    {
+      "wispId": "snapshot_086_d83df5e4cd8a",
+      "conceptKeys": [
+        "gold_gain",
+        "loss_streak",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "snapshot_090_cf945e21ddef",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "snapshot_106_1bce73a8632c",
+      "conceptKeys": [
+        "board_composition",
+        "item_requirement"
+      ]
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKeys": [
+        "champion_duplicator",
+        "player_health_loss",
+        "player_health_threshold"
+      ]
+    },
+    {
+      "wispId": "snapshot_121_1899d3fe4c61",
+      "conceptKeys": [
+        "gold_gain",
+        "loss_streak",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKeys": [
+        "item_component",
+        "loss_streak",
+        "time_stage"
+      ]
+    },
+    {
+      "wispId": "snapshot_139_6fda4e76a4da",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKeys": [
+        "time_stage",
+        "win_streak",
+        "xp_gain"
+      ]
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKeys": [
+        "champion_duplicator",
+        "player_health_loss",
+        "player_health_threshold"
+      ]
+    }
+  ]
+}

@@ -14,10 +14,12 @@
     "data:build:18.1": "tsx scripts/data/build-18.1.ts",
     "data:audit:18.1": "tsx scripts/data/build-18.1.ts",
     "data:lexicon:18.1": "tsx scripts/data/generate-search-lexicon-18.1.ts",
+    "data:materialize-search:18.1": "tsx scripts/data/materialize-reviewed-search-18.1.ts",
     "validate:seed": "tsx scripts/validate-data.ts data/wisps_18.1.json",
     "validate:data": "tsx scripts/validate-data.ts data/normalized/wisps_18.1.json --production",
     "diff:data": "tsx scripts/diff-data.ts",
-    "validate:lexicon-decisions": "tsx scripts/validate-search-lexicon-decisions.ts"
+    "validate:lexicon-decisions": "tsx scripts/validate-search-lexicon-decisions.ts",
+    "validate:materialized-search": "tsx scripts/validate-materialized-search.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0",

@@ -102,7 +102,7 @@ Requirement，以及直接获得或召唤指定星级弈子的表达使用 `cham
 `shield` 是泛化的护盾相关概念，覆盖提供、提升、削减护盾以及以护盾为作用对象；
 `win_streak` 与 `loss_streak` 分别覆盖对应状态和计数，不只表示由状态决定的条件。
 
-## 5. 后续工作
+## 5. C2.1 人工审核完成状态
 
 Stage C2.1 已针对 `generatorVersion = c2.1-v8` 和 normalized input SHA-256
 `a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7` 完成 taxonomy、
@@ -132,3 +132,21 @@ generated assignment key set 完全相等；generator confidence 与人工 actio
 报告中的 `taxonomyDefinitions` 是完整 canonical key 定义数，`conceptKeysUsed` 仅是当前 production
 文本实际命中的 key 数，两者不得混用。`assignmentsByConcept` 按 concept key 稳定排序，供人工逐项
 审核时直接核对各 concept 的 assignment 数量。
+
+## 6. Stage C2.2A — reviewed materialization
+
+运行 `npm run data:materialize-search:18.1` 会先复用 C2.1 overlay validator，随后只从
+normalized snapshot、两个 reviewed draft 与人工 decisions 确定性生成：
+
+- `data/materialized/18.1/search-concepts.json`：完整 canonical taxonomy 与逐 Wisp reviewed concept membership；
+- `data/materialized/18.1/synonyms.json`：人工批准的全局 query-expansion groups，与 record aliases 分层保存；
+- `data/materialized/18.1/wisps.json`：保留 normalized core data、仅填充 reviewed search-derived fields 的派生数据集。
+
+`data/normalized/wisps_18.1.json` 始终是 **C1 normalized / C2.1 review source snapshot**；反写它会改变
+人工审核所绑定的 SHA 并形成自引用。`data/materialized/18.1/...` 是 **C2.2 reviewed derived search
+artifacts**，不是与 normalized 竞争的原始 source of truth。`npm run validate:materialized-search` 会验证
+metadata、完整 effective assignment key set、批准 alias exact set、record alias 隔离、稳定顺序和 core-data
+不变式。
+
+C2.2A 尚未接入 runtime，也没有修改 `public/data/wisps.json`、structured `SearchHit` 或 search
+highlighting。这些属于后续 C2.2B；因此 C2.2A 不改变用户可见搜索行为。

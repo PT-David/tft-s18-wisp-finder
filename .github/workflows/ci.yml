@@ -19,6 +19,8 @@ jobs:
       - run: npm run data:audit:18.1
       - run: npm run data:lexicon:18.1
       - run: npm run validate:lexicon-decisions
+      - run: npm run data:materialize-search:18.1
+      - run: npm run validate:materialized-search
       - run: npm run validate:seed
       - run: npm run validate:data
       - run: npm test
