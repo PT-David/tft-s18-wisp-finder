@@ -1,7 +1,7 @@
 import './style.css';
 import rules from '../rules/wisp_rules_18.1.json';
 import { JsonWispRepository, loadWispDataset } from './data/wispRepository';
-import { loadRuntimeSearchLexicon } from './data/searchLexiconRepository';
+import { assertRuntimeSearchCompatibility, loadRuntimeSearchLexicon } from './data/searchLexiconRepository';
 import type { RuntimeSearchLexicon, Wisp, WispCategory } from './domain/types';
 import { WISP_CATEGORIES } from './domain/types';
 import { calculateStageFive, probabilityForWisp, type StageFiveSlot } from './probability/equalWeight';
@@ -225,7 +225,7 @@ function initialize(): void {
 
 app.innerHTML = '<div class="loading">正在读取开发种子数据…</div>';
 Promise.all([loadWispDataset(), loadRuntimeSearchLexicon()]).then(([dataset, lexicon]) => {
-  if (dataset.patch !== lexicon.patch) throw new Error('仙灵数据与搜索词库 metadata 不一致');
+  assertRuntimeSearchCompatibility(dataset, lexicon);
   wisps = new JsonWispRepository(dataset).getAll(); searchLexicon = lexicon; initialize();
 }).catch((error: unknown) => {
   app.innerHTML = `<div class="loading error">${esc(error instanceof Error ? error.message : '数据加载失败')}</div>`;

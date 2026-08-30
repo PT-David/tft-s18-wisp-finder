@@ -6,7 +6,7 @@ import { buildQueryClauses, normalizeSearchText, searchWisps, tokenizeQuery } fr
 
 const conceptsArtifact = JSON.parse(readFileSync('data/materialized/18.1/search-concepts.json', 'utf8'));
 const synonymsArtifact = JSON.parse(readFileSync('data/materialized/18.1/synonyms.json', 'utf8'));
-const lexicon: RuntimeSearchLexicon = { patch: conceptsArtifact.patch, sourceGeneratorVersion: conceptsArtifact.sourceGeneratorVersion, reviewedAgainstInputSha256: conceptsArtifact.reviewedAgainstInputSha256, normalizedRecordCount: conceptsArtifact.normalizedRecordCount, concepts: conceptsArtifact.taxonomy, queryExpansionGroups: synonymsArtifact.queryExpansionGroups };
+const lexicon: RuntimeSearchLexicon = { patch: conceptsArtifact.patch, sourceGeneratorVersion: conceptsArtifact.sourceGeneratorVersion, reviewedAgainstInputSha256: conceptsArtifact.reviewedAgainstInputSha256, normalizedRecordCount: conceptsArtifact.normalizedRecordCount, assignmentCount: conceptsArtifact.assignmentCount, concepts: conceptsArtifact.taxonomy, conceptMembership: conceptsArtifact.records, queryExpansionGroups: synonymsArtifact.queryExpansionGroups, recordAliases: synonymsArtifact.recordAliases };
 const seed = (JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8')) as WispDataset).records[0]!;
 const fixture = (id: string, changes: Partial<Wisp>): Wisp => ({ ...seed, id, nameZh: id, nameEn: id, effects: { normal: '普通效果' }, requirements: [], searchConcepts: [], synonyms: [], ...changes });
 

@@ -166,5 +166,9 @@ review source，`materialized` 仍是 reviewed derived source，public 只是其
 reviewed taxonomy label 建立 concept clause，并以 canonical key 精确匹配 materialized
 `searchConcepts[]`；同 phrase 的 taxonomy 与 synonym semantics 会合并。
 
+初始化还会把 Wisp dataset 与 `search-concepts.json` 的 reviewed membership 精确绑定：record count、
+完整且无重复的 Wisp ID set、逐 Wisp canonical concept set、assignmentCount、taxonomy references 与
+reviewed record aliases 任一不一致都会 fail-closed，runtime 不会修补或覆盖任一 artifact。
+
 C2.2B1 没有开始 structured `SearchHit`、match reason、安全 ranges、highlighting 或 C2.3 UI enhancements；
 这些仍属于 C2.2B2 及后续阶段。

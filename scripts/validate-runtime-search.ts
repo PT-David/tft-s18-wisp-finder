@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import type { WispDataset } from '../src/domain/types';
-import { parseRuntimeSearchLexicon } from '../src/data/searchLexiconRepository';
+import { assertRuntimeSearchCompatibility, parseRuntimeSearchLexicon } from '../src/data/searchLexiconRepository';
 const pairs = [['data/materialized/18.1/wisps.json', 'public/data/wisps.json'], ['data/materialized/18.1/search-concepts.json', 'public/data/search-concepts.json'], ['data/materialized/18.1/synonyms.json', 'public/data/search-synonyms.json']] as const;
 const errors: string[] = [];
 for (const [source, target] of pairs) if (!(await readFile(source)).equals(await readFile(target))) errors.push(`${target} is not byte-for-byte equal to ${source}`);
@@ -8,6 +8,7 @@ const dataset = JSON.parse(await readFile(pairs[0][1], 'utf8')) as WispDataset;
 const concepts = JSON.parse(await readFile(pairs[1][1], 'utf8')); const synonyms = JSON.parse(await readFile(pairs[2][1], 'utf8'));
 try {
   const lexicon = parseRuntimeSearchLexicon(concepts, synonyms, dataset.patch);
+  assertRuntimeSearchCompatibility(dataset, lexicon);
   const assignmentCount = dataset.records.reduce((sum, record) => sum + record.searchConcepts.length, 0);
   const aliases = lexicon.queryExpansionGroups.reduce((sum, group) => sum + group.aliases.length, 0);
   const recordAliases = dataset.records.reduce((sum, record) => sum + record.synonyms.length, 0);
