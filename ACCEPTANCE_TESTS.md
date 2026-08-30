@@ -13,7 +13,8 @@
 9. 版本只在查询上下文选择器显示，卡片内不重复。
 10. 搜索框只显示弱化的 AND 说明，不出现伪按钮；搜索图标使用垂直居中的 SVG。
 11. 参考仙灵可按中英文名搜索、选择、清除，也可从卡片直接设置。
-12. Stage C2 计划：可选搜索高亮默认关闭；未来实现必须使用结构化匹配范围安全渲染，不得拼接用户输入到 `innerHTML`。
+12. Stage C2.2B2 搜索基础设施：`SearchHit` 为每个成功 clause 提供且只提供一个 winning structured match；direct、query expansion、concept 可区分，surface match 携带实际 `fieldPath` 与安全的原始 UTF-16 `[start,end)` 范围，concept-only 不伪造范围；`matchedFields` 从 matches 派生，且 metadata 不改变结果、score、Candidate Pool 或 probability。
+13. 搜索高亮仍未实现；未来可选高亮默认关闭，必须使用 structured match ranges 安全渲染，不得拼接用户 input 到 `innerHTML`，也不得自行重新搜索文本位置。
 
 ## B. 阶段
 

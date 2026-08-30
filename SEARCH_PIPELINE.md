@@ -170,5 +170,26 @@ reviewed taxonomy label 建立 concept clause，并以 canonical key 精确匹�
 完整且无重复的 Wisp ID set、逐 Wisp canonical concept set、assignmentCount、taxonomy references 与
 reviewed record aliases 任一不一致都会 fail-closed，runtime 不会修补或覆盖任一 artifact。
 
-C2.2B1 没有开始 structured `SearchHit`、match reason、安全 ranges、highlighting 或 C2.3 UI enhancements；
-这些仍属于 C2.2B2 及后续阶段。
+C2.2B1 当时没有开始 structured `SearchHit`；该 runtime 基础现已由下述 C2.2B2 完成。
+
+## 8. Stage C2.2B2 — structured SearchHit（已完成）
+
+每个非空 query clause 现在恰好产生一个 winning `SearchMatch`，并明确区分 source 自身命中
+(`direct`)、reviewed group 中其它 surface term 命中 (`queryExpansion`) 与 canonical membership
+命中 (`concept`)。短路优先级、每 clause 只取最高分、AND、结果排序和 `- order / 10000` 均保持
+C2.2B1 行为；clause match 的 `score` 不包含该稳定排序 penalty。兼容字段 `matchedFields` 不维护
+第二份事实，而是按 clause 顺序从 winning matches 的 `scoreField` 去重派生。
+
+`scoreField` 表示旧有 scoring bucket，`fieldPath` 则无歧义定位实际原始字段：中英文名称、三种
+effect、带 array index 与 locale 的 requirement，或带 index 的 record alias。因此 expansion 落到
+`effects.normal` 时仍可保持 `synonym = 140`，同时准确报告 surface 来源。
+
+Surface ranges 是原始字段的 UTF-16 offset、使用 half-open `[start,end)`，语义与 JavaScript
+`String.prototype.slice(start,end)` 完全一致。Normalization-aware index 将 NFKC、大小写、标点/符号
+空格化及 whitespace collapse 后的命中映射回原文；normalized index 绝不能直接作为 raw range。
+实现会再次归一化 raw slice 作安全校验，不能可靠映射的极端输入宁可不给 range，也不返回错误位置。
+Concept-only match 没有 surface field，因而不伪造 `matchedTerm`、`fieldPath` 或 range。
+
+本阶段只提供未来安全渲染需要的 runtime metadata。UI 不得通过 query string 搜索或 replace 原文来
+重算位置，而应只消费 structured match ranges。Match reason UI、highlighting、highlight toggle、
+CSS/DOM range rendering 与 C2.3 均尚未开始。
