@@ -2,7 +2,7 @@
   "metadata": {
     "schemaVersion": 1,
     "patch": "18.1",
-    "reviewedAgainstGeneratorVersion": "c2.1-v6",
+    "reviewedAgainstGeneratorVersion": "c2.1-v8",
     "reviewedAgainstInputSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7"
   },
   "policy": {
@@ -203,5 +203,1740 @@
       "status": "needs_corpus_and_semantic_review"
     }
   ],
-  "assignmentDecisions": []
+  "assignmentDecisions": [
+    {
+      "wispId": "da_18_aftershock",
+      "conceptKey": "crowd_control",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_aftershock",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allfives",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allfours",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allones",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_allthrees",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_alltwos",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_backrowstar",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_barkarmor",
+      "conceptKey": "shield",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_bloodmoney",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_bloodmoney",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_bronzespoon",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_circleofelders",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_circleofelders",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_earlyfix",
+      "conceptKey": "reforger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_experienced",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fellowship",
+      "conceptKey": "shield",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fertilize",
+      "conceptKey": "enemy_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fertilize",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "champion_duplicator",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_fieldofmice",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_forestmage",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_freeroller",
+      "conceptKey": "free_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_freeroller",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_heatedrivalry",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_heatedrivalry",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_heroicsacrifice",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_hummingbird",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_infliction",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "execute_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_killingfrenzy",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "player_health_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "player_health_loss",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_lifedebt",
+      "conceptKey": "player_health_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_lightningstorm",
+      "conceptKey": "true_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_lightningstrike",
+      "conceptKey": "true_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_losttravelers",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_majorpolymorph",
+      "conceptKey": "champion_transform",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_mercenaryforce",
+      "conceptKey": "gold_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_minorpolymorph",
+      "conceptKey": "champion_transform",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_mitosis",
+      "conceptKey": "champion_duplicator",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_moonrise",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_moonrise",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_payday",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_payday",
+      "conceptKey": "survival_condition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_pocketchange",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_pocketchange",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_pocketchange",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_polymorph",
+      "conceptKey": "champion_transform",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKey": "ability_power",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKey": "attack_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_prolificpower",
+      "conceptKey": "gold_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_propagate",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_propagate",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_radiantize",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "champion_star_up",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_starfall",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_sunfiresorcery",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_tremors",
+      "conceptKey": "crowd_control",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_ultraascension",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_18_verdantvitality",
+      "conceptKey": "gold_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_abandonship18",
+      "conceptKey": "win_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_animateshop18",
+      "conceptKey": "free_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_animateshop18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_apprentice18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "artifact_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "completed_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "item_component",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_artifactinate18",
+      "conceptKey": "reforger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_barrier18",
+      "conceptKey": "shield",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_barter18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_barter18",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_beggarswisp18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bigboom18",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bigguns18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_blastpotion18_charm",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_blaze18",
+      "conceptKey": "true_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bloodandiron18",
+      "conceptKey": "item_component",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "champion_star_up",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_boostershot18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bordervillage18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_borrowedgear18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bulwark18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bulwark18",
+      "conceptKey": "shield",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_bunchobelts18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_coinflip18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_combust18",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "gold_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "item_shop",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_curiocart18",
+      "conceptKey": "shop_price",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_cutpurse18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_dieroll18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_diversified18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_flashfire18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_flashfire18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_flipfrenzy18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_flow18",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_forestguide18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_forestguide18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_foresttwins18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_foresttwins18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_goldengoose18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_grandmaster18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_growup18",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_handofbaron18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_healthpotion18_charm",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "gold_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "player_health_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_heroofprophecy18",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_herosentrance18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_herosentrance18",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_hireling18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_homingfireflies18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKey": "completed_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKey": "item_component",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_idlecraftsman18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_improvedreach18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_improvedreach18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_journeyman18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_jungling18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_killersregret18",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_killersregret18",
+      "conceptKey": "crowd_control",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_knickknackbag18",
+      "conceptKey": "attack_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_knickknackbag18",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_knickknackjar18",
+      "conceptKey": "attack_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_knickknackjar18",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_knickknacksack18",
+      "conceptKey": "attack_damage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_knickknacksack18",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_latebloomer18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_livingsoil18",
+      "conceptKey": "crowd_control",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_lucky718",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_manapotion18_charm",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_manarichsoil18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_manarichsoil18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_marksmensgale18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_middlepath18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_moonlightritual18",
+      "conceptKey": "champion_star_up",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_naturesally18",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_naturesally18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_natureswrath18",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "item_shop",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_peddler18",
+      "conceptKey": "shop_price",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_petrifieddummy18",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_petrifieddummy18",
+      "conceptKey": "champion_transform",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_petrifyshields18",
+      "conceptKey": "shield",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_phantomarmor18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_phantomemblem18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_phantomgloves18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_phantomsplash18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_phantomvest18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_platedshields18",
+      "conceptKey": "shield",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_potioncraft18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_quicken18",
+      "conceptKey": "attack_speed",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_quicken18",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "free_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_refreshinglight18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_revenge18",
+      "conceptKey": "ally_death",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKey": "gold_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_ridethewave18",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKey": "free_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_rollingbones18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_rolypolys18",
+      "conceptKey": "survival_condition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_salvager18",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_scrappy18",
+      "conceptKey": "temporary_item",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_searchparty18",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKey": "delayed_trigger",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKey": "survival_condition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_slowstudy18",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_smurfing18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_smurfing18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_solargift18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_solargift18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_standalone18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_startingtown18",
+      "conceptKey": "shop_reroll",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_terraforming18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_thingamajigbag18",
+      "conceptKey": "ability_power",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_thingamajigjar18",
+      "conceptKey": "ability_power",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_thingamajigsack18",
+      "conceptKey": "ability_power",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKey": "champion_cost_tier",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKey": "champion_obtain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_threeme18",
+      "conceptKey": "champion_star_level",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_trophyhunter18",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_trophyhunter18",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "da_trophyhunter18",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_021_534324382164",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKey": "player_health_loss",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_022_fc7538964718",
+      "conceptKey": "player_health_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_036_f484358ea1e5",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKey": "kill_takedown",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKey": "win_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_048_cbc77e083fc2",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "loss_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_049_d60aa5ac9feb",
+      "conceptKey": "trait_active",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_050_770e0f5d1043",
+      "conceptKey": "loss_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_050_770e0f5d1043",
+      "conceptKey": "win_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_051_e06d127b43f9",
+      "conceptKey": "loss_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_051_e06d127b43f9",
+      "conceptKey": "win_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_085_b53a01d778ee",
+      "conceptKey": "player_health_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_085_b53a01d778ee",
+      "conceptKey": "player_health_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_086_d83df5e4cd8a",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_086_d83df5e4cd8a",
+      "conceptKey": "loss_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_086_d83df5e4cd8a",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_106_1bce73a8632c",
+      "conceptKey": "board_composition",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_106_1bce73a8632c",
+      "conceptKey": "item_requirement",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKey": "champion_duplicator",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKey": "player_health_loss",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_120_cf0b477ffe00",
+      "conceptKey": "player_health_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_121_1899d3fe4c61",
+      "conceptKey": "gold_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_121_1899d3fe4c61",
+      "conceptKey": "loss_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_121_1899d3fe4c61",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "item_component",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "loss_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_136_c467ccd546d7",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "time_stage",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "win_streak",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_147_2dc94df4e3a5",
+      "conceptKey": "xp_gain",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKey": "champion_duplicator",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKey": "player_health_loss",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    },
+    {
+      "wispId": "snapshot_157_3ed870773960",
+      "conceptKey": "player_health_threshold",
+      "action": "approved",
+      "reason": "已完成 C2.1 全量人工语义审核，确认该 Wisp 与 concept 的关联正确。"
+    }
+  ]
 }

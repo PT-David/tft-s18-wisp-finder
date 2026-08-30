@@ -90,7 +90,66 @@ describe('Stage C2.1 search lexicon generation', () => {
   it('assigns reroll only to explicit TFT reroll wording and still queues context review', () => {
     expect(assignment('da_18_allfives', 'shop_reroll')).toBeDefined();
     expect(assignment('da_18_freeroller', 'shop_reroll')).toBeDefined();
+    expect(assignment('da_beggarswisp18', 'shop_reroll')).toBeUndefined();
     expect(generated.report.reviewGroups.reroll_vs_refresh.some(x => x.wispId === 'da_18_freeroller')).toBe(true);
+  });
+
+  it.each([
+    ['刷新你的商店', true],
+    ['商店刷新', true],
+    ['免费商店刷新', true],
+    ['获得2次免费刷新。', true],
+    ['本次刷新未能使你在自然奇境中寻找到【自然仙灵】。', false],
+    ['刷新任务列表。', false],
+  ])('guards shop reroll context for %s', (text, expected) => {
+    const fixture = structuredClone(dataset.records[0]!);
+    fixture.id = 'synthetic_reroll_context';
+    fixture.effects = { normal: text, blossom: null, prismatic: null };
+    fixture.requirements = [];
+    const result = generateSearchLexicon({ ...dataset, records: [fixture] }, Buffer.from(text));
+    expect(result.conceptDraft.assignments.some(x => x.conceptKey === 'shop_reroll')).toBe(expected);
+  });
+
+  it.each([
+    ['Hireling', 'combat', '3个临时弈子携带着2件推荐装备。', false],
+    ['Potted Stonebark', 'combat', '获得1颗临时的【石皮树】。', false],
+    ['Potted Lifebloom', 'combat', '获得1株临时的【生命花】。', false],
+    ['Temporary Armor', 'item', '获得1个临时的【狂徒铠甲】。', true],
+    ['Mana Potion', 'combat', '获得1个临时的、可装备的【法力药水】。', true],
+    ['Recommended Gear', 'combat', '弈子获得1件临时推荐装备。', true],
+    ['Explicit Item', 'combat', '获得临时的某装备。', true],
+  ] as const)('keeps temporary-item syntax attached to the item for %s', (name, category, text, expected) => {
+    const fixture = structuredClone(dataset.records[0]!);
+    fixture.id = 'synthetic_temporary_item';
+    fixture.nameEn = name;
+    fixture.nameZh = name;
+    fixture.category = category;
+    fixture.effects = { normal: text, blossom: null, prismatic: null };
+    fixture.requirements = [];
+    const result = generateSearchLexicon({ ...dataset, records: [fixture] }, Buffer.from(text));
+    expect(result.conceptDraft.assignments.some(x => x.conceptKey === 'temporary_item')).toBe(expected);
+  });
+
+  it('applies all final manual-audit assignment corrections', () => {
+    const expectedPresent: [string, string][] = [
+      ...['da_18_majorpolymorph', 'da_18_minorpolymorph', 'da_18_polymorph'].map(id => [id, 'champion_transform'] as [string, string]),
+      ...['da_18_circleofelders', 'da_18_losttravelers', 'da_18_propagate'].map(id => [id, 'champion_obtain'] as [string, string]),
+      ...['da_18_propagate', 'da_18_pocketchange', 'da_bigboom18'].map(id => [id, 'ally_death'] as [string, string]),
+      ...['da_trophyhunter18', 'snapshot_049_d60aa5ac9feb', 'snapshot_121_1899d3fe4c61', 'snapshot_086_d83df5e4cd8a'].map(id => [id, 'time_stage'] as [string, string]),
+      ['da_idlecraftsman18', 'item_requirement'],
+      ['da_18_fieldofmice', 'gold_gain'],
+      ['da_phantomsplash18', 'trait_active'],
+    ];
+    for (const [id, concept] of expectedPresent) expect(assignment(id, concept), `${id}/${concept}`).toBeDefined();
+
+    const expectedAbsent: [string, string][] = [
+      ['da_beggarswisp18', 'shop_reroll'],
+      ['da_hireling18', 'temporary_item'],
+      ['da_idlecraftsman18', 'board_composition'],
+      ['da_18_losttravelers', 'gold_gain'],
+      ['da_18_propagate', 'champion_duplicator'],
+    ];
+    for (const [id, concept] of expectedAbsent) expect(assignment(id, concept), `${id}/${concept}`).toBeUndefined();
   });
 
   it('recognizes current Set 18 AP and AD terminology', () => {
