@@ -28,6 +28,19 @@ describe('reviewed search materialization', () => {
     expect(() => materializeReviewedSearch(dataset, files.bytes, concepts, files.synonyms, files.decisions)).toThrow(/no manual review/);
   });
 
+  it.each([
+    ['a duplicate generated group key', (synonyms: SynonymDraft, _decisions: DecisionOverlay) => synonyms.queryExpansionGroups.push({ ...structuredClone(synonyms.queryExpansionGroups[0]!), key: ` ${synonyms.queryExpansionGroups[0]!.key.toUpperCase()} ` })],
+    ['a duplicate approved alias', (_synonyms: SynonymDraft, decisions: DecisionOverlay) => decisions.queryExpansionDecisions[0]!.approved.push(` ${decisions.queryExpansionDecisions[0]!.approved[0]!.toUpperCase()} `)],
+    ['an unknown synonym concept key', (synonyms: SynonymDraft, _decisions: DecisionOverlay) => synonyms.queryExpansionGroups[0]!.conceptKeys!.push('unknown_concept')],
+    ['a duplicate synonym concept key', (synonyms: SynonymDraft, _decisions: DecisionOverlay) => synonyms.queryExpansionGroups[0]!.conceptKeys!.push(synonyms.queryExpansionGroups[0]!.conceptKeys![0]!)],
+    ['an unreviewed record alias', (synonyms: SynonymDraft, _decisions: DecisionOverlay) => synonyms.recordAliases.push({ wispId: dataset.records[0]!.id, aliases: ['synthetic alias'] })],
+  ])('refuses %s', (_, mutate) => {
+    const synonyms = structuredClone(files.synonyms);
+    const decisions = structuredClone(files.decisions);
+    mutate(synonyms, decisions);
+    expect(() => materializeReviewedSearch(dataset, files.bytes, files.concepts, synonyms, decisions)).toThrow();
+  });
+
   it('implements approved, rejected, and modified actions', () => {
     const base = files.decisions.assignmentDecisions.slice(0, 3).map(item => ({ ...item }));
     base[0]!.action = 'approved'; base[1]!.action = 'rejected';
@@ -54,6 +67,15 @@ describe('reviewed search materialization', () => {
     expect(strip(result.wisps)).toEqual(strip(dataset));
     expect(sha256(files.bytes)).toBe('a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7');
     expect(readFileSync('public/data/wisps.json', 'utf8')).toBe(files.bytes.toString());
+    const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase().trim();
+    const groupKeys = result.synonyms.queryExpansionGroups.map(group => normalize(group.groupKey));
+    expect(new Set(groupKeys).size).toBe(groupKeys.length);
+    const taxonomy = new Set(result.searchConcepts.taxonomy.map(item => item.key));
+    for (const group of result.synonyms.queryExpansionGroups) {
+      expect(new Set(group.aliases.map(normalize)).size).toBe(group.aliases.length);
+      expect(new Set(group.conceptKeys).size).toBe(group.conceptKeys.length);
+      expect(group.conceptKeys.every(key => taxonomy.has(key))).toBe(true);
+    }
   });
 
   it('is byte-for-byte deterministic', () => {

@@ -14,7 +14,7 @@ export interface AssignmentDecision {
   reason: string;
   replacementConceptKey?: string;
 }
-interface Draft { patch: string; generatorVersion: string; input: { sha256: string }; taxonomy?: { key: string }[]; assignments?: { wispId: string; conceptKey: string; confidence?: string }[]; queryExpansionGroups?: { key: string; aliases: { term: string }[] }[] }
+interface Draft { patch: string; generatorVersion: string; input: { sha256: string }; taxonomy?: { key: string }[]; assignments?: { wispId: string; conceptKey: string; confidence?: string }[]; queryExpansionGroups?: { key: string; conceptKeys?: string[]; aliases: { term: string }[] }[]; recordAliases?: unknown[] }
 
 export interface AssignmentReviewSummary {
   generatedAssignments: number;
@@ -56,7 +56,21 @@ export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Dr
     if (!item.reason) errors.push(`taxonomy decision lacks reason: ${item.key}`);
   }
   const normalizeGroupKey = (key: string) => key.normalize('NFKC').toLocaleLowerCase().trim();
+  const normalizeAlias = (alias: string) => alias.normalize('NFKC').toLocaleLowerCase().trim();
   const generatedGroups = synonyms.queryExpansionGroups ?? [];
+  const generatedGroupCounts = new Map<string, number>();
+  for (const group of generatedGroups) {
+    const groupKey = normalizeGroupKey(group.key);
+    generatedGroupCounts.set(groupKey, (generatedGroupCounts.get(groupKey) ?? 0) + 1);
+    const conceptKeys = new Set<string>();
+    for (const conceptKey of group.conceptKeys ?? []) {
+      if (conceptKeys.has(conceptKey)) errors.push(`duplicate query expansion concept key: ${group.key}/${conceptKey}`);
+      conceptKeys.add(conceptKey);
+      if (!taxonomy.has(conceptKey)) errors.push(`unknown query expansion concept key: ${group.key}/${conceptKey}`);
+    }
+  }
+  for (const [groupKey, count] of generatedGroupCounts) if (count > 1) errors.push(`duplicate generated query expansion group: ${groupKey}`);
+  if ((synonyms.recordAliases?.length ?? 0) !== 0) errors.push('record aliases require explicit manual review before materialization');
   const groups = new Map(generatedGroups.map(group => [normalizeGroupKey(group.key), group]));
   const decisionGroupCounts = new Map<string, number>();
   for (const decision of decisions.queryExpansionDecisions ?? []) {
@@ -73,15 +87,20 @@ export function validateDecisionOverlay(decisions: DecisionOverlay, concepts: Dr
   for (const decision of decisions.queryExpansionDecisions ?? []) {
     const group = groups.get(normalizeGroupKey(decision.groupKey));
     if (!group) continue;
-    const approved = new Set(decision.approved.map(x => x.normalize('NFKC').toLocaleLowerCase()));
+    const approved = new Set<string>();
+    for (const alias of decision.approved) {
+      const normalized = normalizeAlias(alias);
+      if (approved.has(normalized)) errors.push(`duplicate approved alias: ${decision.groupKey}/${alias}`);
+      approved.add(normalized);
+    }
     const rejected = new Set<string>();
     for (const item of decision.rejected) {
-      const alias = item.alias.normalize('NFKC').toLocaleLowerCase();
+      const alias = normalizeAlias(item.alias);
       if (!item.reason) errors.push(`rejected alias lacks reason: ${decision.groupKey}/${item.alias}`);
       if (approved.has(alias)) errors.push(`alias is both approved and rejected: ${decision.groupKey}/${item.alias}`);
       rejected.add(alias);
     }
-    const draftAliases = new Set(group.aliases.map(x => x.term.normalize('NFKC').toLocaleLowerCase()));
+    const draftAliases = new Set(group.aliases.map(x => normalizeAlias(x.term)));
     for (const alias of approved) if (!draftAliases.has(alias)) errors.push(`approved alias missing from draft: ${decision.groupKey}/${alias}`);
     if (approved.size !== draftAliases.size) errors.push(`draft group contains alias not approved by decisions: ${decision.groupKey}`);
     if (rejected.size !== decision.rejected.length) errors.push(`duplicate rejected alias: ${decision.groupKey}`);
