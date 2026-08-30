@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "sourceGeneratorVersion": "c2.1-v8",
+  "reviewedAgainstInputSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+  "normalizedRecordCount": 169,
+  "queryExpansionGroups": [
+    {
+      "groupKey": "ability_power_terms",
+      "canonicalTerm": "法术强度",
+      "aliases": [
+        "法强",
+        "法术加成",
+        "法术强度"
+      ],
+      "conceptKeys": [
+        "ability_power"
+      ]
+    },
+    {
+      "groupKey": "attack_damage_terms",
+      "canonicalTerm": "攻击力",
+      "aliases": [
+        "攻击力",
+        "物理加成"
+      ],
+      "conceptKeys": [
+        "attack_damage"
+      ]
+    },
+    {
+      "groupKey": "attack_speed_terms",
+      "canonicalTerm": "攻击速度",
+      "aliases": [
+        "攻击速度",
+        "攻速"
+      ],
+      "conceptKeys": [
+        "attack_speed"
+      ]
+    },
+    {
+      "groupKey": "champion_duplicator_terms",
+      "canonicalTerm": "Champion Duplicator",
+      "aliases": [
+        "Champion Duplicator",
+        "复制器",
+        "英雄复制器"
+      ],
+      "conceptKeys": [
+        "champion_duplicator"
+      ]
+    },
+    {
+      "groupKey": "death_terms",
+      "canonicalTerm": "阵亡",
+      "aliases": [
+        "死亡",
+        "阵亡"
+      ],
+      "conceptKeys": []
+    },
+    {
+      "groupKey": "experience_terms",
+      "canonicalTerm": "经验",
+      "aliases": [
+        "experience",
+        "XP",
+        "经验",
+        "经验值"
+      ],
+      "conceptKeys": [
+        "xp_gain"
+      ]
+    },
+    {
+      "groupKey": "health_terms",
+      "canonicalTerm": "生命值",
+      "aliases": [
+        "health",
+        "HP",
+        "生命值",
+        "血量"
+      ],
+      "conceptKeys": []
+    },
+    {
+      "groupKey": "kill_terms",
+      "canonicalTerm": "击杀",
+      "aliases": [
+        "takedown",
+        "击杀"
+      ],
+      "conceptKeys": [
+        "kill_takedown"
+      ]
+    },
+    {
+      "groupKey": "reroll_terms",
+      "canonicalTerm": "刷新",
+      "aliases": [
+        "reroll",
+        "刷新",
+        "重随"
+      ],
+      "conceptKeys": [
+        "free_reroll",
+        "shop_reroll"
+      ]
+    },
+    {
+      "groupKey": "true_damage_terms",
+      "canonicalTerm": "真实伤害",
+      "aliases": [
+        "真伤",
+        "真实伤害"
+      ],
+      "conceptKeys": [
+        "true_damage"
+      ]
+    }
+  ],
+  "recordAliases": []
+}
