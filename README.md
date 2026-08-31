@@ -49,6 +49,11 @@ Riot 18.1 正式补丁已上线，但 Riot 官方补丁没有逐条公开全部�
 
 因此完整数据集必须保留字段级来源和核验时间，不能把任一第三方页面直接写死到前端组件中。
 
-## 5. 当前故意暂缓的部分
+## 5. 搜索数据状态
 
-完整 `search_concepts` / `synonyms` 词库将在下一轮基于全集说明文本生成。V1 架构必须先支持这些字段，但本开发包不要求 Codex 自行凭感觉创造完整语义分类。
+Stage C2 已完成 reviewed search semantics、materialization、runtime publication、structured match
+metadata、Match Reason 与可选安全高亮。Production runtime 只消费由 normalized source、
+machine-generated draft 和 manual review decisions 确定性生成并发布的 reviewed artifacts；
+`public/data` 是 runtime publication，不是人工 source of truth。完整 ownership 与 closeout 证据见
+`SEARCH_PIPELINE.md` 和 `reports/stage-c2-final-audit.md`。这不代表整个项目已完成；后续仍应回到 roadmap
+选择下一个主功能阶段。
