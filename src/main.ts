@@ -8,6 +8,7 @@ import { calculateStageFive, probabilityForWisp, type StageFiveSlot } from './pr
 import { runQuery } from './query/queryModel';
 import { normalizeSearchText } from './search/searchEngine';
 import { criteriaFromUI, validationMessage, type QueryUIState } from './ui/queryState';
+import { toSearchMatchReasonView } from './ui/searchMatchReason';
 import { CATEGORY_LABELS, EFFECT_LABELS, slotLabel, toCardViewModel, type EffectMode } from './ui/viewModels';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -62,6 +63,7 @@ function createCard(wisp: Wisp): HTMLElement {
   node.dataset.cardKey = `${wisp.patch}:${wisp.id}`;
   node.innerHTML = `<div class="card-top"><span class="category-pill category-${vm.category}">${vm.categoryLabel}</span><span class="cost">◈ ${vm.cost}</span></div>
     <h3>${esc(vm.nameZh)}</h3><p class="name-en">${esc(vm.nameEn)}</p><p class="stages">◷ ${vm.stageText}</p>
+    <div class="match-reasons" data-match-reasons hidden></div>
     <div class="effect normal-effect"><b>普通</b><span>${esc(vm.normal)}</span></div>
     ${vm.blossom ? `<div class="effect blossom-effect"><b>✦ Blossom</b><span>${esc(vm.blossom)}</span></div>` : ''}
     ${vm.requirements.length ? `<div class="requirements"><b>出现条件</b>${vm.requirements.map((text) => `<span>${esc(text)}</span>`).join('')}</div>` : ''}
@@ -71,6 +73,30 @@ function createCard(wisp: Wisp): HTMLElement {
     <div class="card-actions"><button type="button" data-set-reference="${vm.id}">设为阶段参考</button></div>
     <details class="mini-details source-details"><summary>数据来源</summary><p>${sourceRows.map(esc).join('<br>')}</p></details>`;
   return node;
+}
+
+function updateCardMatchReasons(node: HTMLElement, hit: ReturnType<typeof runQuery>['displayedResults'][number]): void {
+  const container = node.querySelector<HTMLElement>('[data-match-reasons]')!;
+  const matches = [...hit.matches].sort((a, b) => a.clauseIndex - b.clauseIndex);
+  if (!matches.length) {
+    container.replaceChildren();
+    container.hidden = true;
+    return;
+  }
+  const label = document.createElement('span');
+  label.className = 'match-reasons-label';
+  label.textContent = '匹配';
+  const reasons = matches.map((match) => {
+    const view = toSearchMatchReasonView(hit.wisp, match, searchLexicon);
+    const chip = document.createElement('span');
+    chip.className = 'match-reason';
+    chip.dataset.matchReason = '';
+    chip.dataset.matchType = view.matchType;
+    chip.textContent = view.text;
+    return chip;
+  });
+  container.replaceChildren(label, ...reasons);
+  container.hidden = false;
 }
 
 function updateExcluded(): void {
@@ -92,10 +118,12 @@ function updateResults(): void {
   const targetIds = new Set(query.displayedResults.map(({ wisp }) => wisp.id));
   const cards = byId<HTMLElement>('cards');
   const visible = new Set<string>();
-  for (const { wisp } of query.displayedResults) {
+  for (const hit of query.displayedResults) {
+    const { wisp } = hit;
     const cacheKey = `${wisp.patch}:${wisp.id}`;
     let node = cardNodes.get(cacheKey);
     if (!node) { node = createCard(wisp); cardNodes.set(cacheKey, node); }
+    updateCardMatchReasons(node, hit);
     visible.add(cacheKey);
     const probability = node.querySelector<HTMLElement>('[data-card-prob]')!;
     const slot = state.slot === 'uncertain' ? 'ordinary' : state.slot;
@@ -195,7 +223,7 @@ function initialize(): void {
   const patches = [...new Set(wisps.map(({ patch }) => patch))];
   state.patch = patches[0] || '18.1';
   app.innerHTML = `<header><a class="brand" href="#" data-tab="finder"><span>✦</span><b>WISP FINDER</b><small>SET 18</small></a><nav><button data-tab="finder" class="active">仙灵查询</button><button data-tab="rules">刷新规律</button></nav><label class="header-patch">版本<select id="patch">${patches.map((patch) => `<option value="${esc(patch)}">${esc(patch)}</option>`).join('')}</select></label></header>
-    <main><section id="finderPage">${controlsHtml()}<div class="content"><section class="probability" id="probability" hidden></section><section class="excluded" id="excludedRegion" hidden></section><div class="result-heading"><div><p class="eyebrow">DISPLAYED RESULTS</p><h2 id="resultCount"></h2></div><p id="poolSummary"></p></div><section class="cards" id="cards"></section><div class="empty" id="empty" hidden><b>没有匹配结果</b><span>请调整搜索词或公共筛选。</span></div></div></section><section class="rules-page content" id="rulesPage" hidden>${rulesHtml()}</section></main><footer>当前为部分核验种子数据，并非完整仙灵全集。</footer>`;
+    <main><section id="finderPage">${controlsHtml()}<div class="content"><section class="probability" id="probability" hidden></section><section class="excluded" id="excludedRegion" hidden></section><div class="result-heading"><div><p class="eyebrow">DISPLAYED RESULTS</p><h2 id="resultCount" aria-live="polite" aria-atomic="true"></h2></div><p id="poolSummary"></p></div><section class="cards" id="cards"></section><div class="empty" id="empty" hidden><b>没有匹配结果</b><span>请调整搜索词或公共筛选。</span></div></div></section><section class="rules-page content" id="rulesPage" hidden>${rulesHtml()}</section></main><footer>当前为部分核验种子数据，并非完整仙灵全集。</footer>`;
   bindControls();
   app.addEventListener('change', (event) => {
     if ((event.target as HTMLElement).id === 'slot') { state.slot = (event.target as HTMLSelectElement).value as StageFiveSlot; updateResults(); }

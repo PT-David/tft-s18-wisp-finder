@@ -178,7 +178,14 @@ Prismatic Blossom 存在时放在紧凑的独立折叠区，不存在时不显�
 
 每条规则显示可信度。
 
-## 10. Stage C2 待办：可选搜索命中高亮（本阶段不实现）
+## 10. Stage C2 搜索匹配解释
+
+Stage C2.3A 已在结果卡片阶段之后、效果之前显示低干扰的匹配原因：每个 structured query clause
+恰好对应一个 chip。直接匹配显示字段与原始命中文字，同义扩展显示实际 surface term，concept-only
+匹配显示正式 taxonomy 中文 label。原因只消费 `SearchHit.matches[]` 的字段路径与 raw range，不重新搜索
+文本，不显示内部 score/key，也不改变候选池、概率或效果强调模式。
+
+Stage C2.3B 的可选搜索命中高亮仍未实现：
 
 - 默认关闭，由用户显式开启。
 - 直接文本命中返回并高亮结构化字符范围；同义词命中尽量指向实际可见对应词。
