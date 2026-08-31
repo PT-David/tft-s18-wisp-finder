@@ -194,4 +194,5 @@ Stage C2.3B 的可选搜索命中高亮已实现：
 - API 不支持时隐藏 toggle，搜索、Match Reason、Candidate Pool 与 probability 保持可用。
 - query、cached card、patch、页面切换与 card removal 生命周期会清理或重建 ranges，Prismatic 不会自动展开。
 
-Stage C2 搜索语义与搜索体验主线实现完成，下一步为 Stage C2 Final Audit / Closeout；本阶段不代表整个项目开发完成。
+**Stage C2 — COMPLETE。** Final Audit / Closeout 已验证搜索数据、runtime、UI、测试、CI 与文档的
+一致性；本阶段不代表整个项目开发完成。下一步应回到项目 roadmap 选择下一个主功能阶段。

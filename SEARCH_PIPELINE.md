@@ -216,4 +216,36 @@ expansion 因而高亮真正的 surface term；concept-only、record alias、不
 没有 `<mark>` 或其他 fallback。每次 query/results/card cache/patch 变化先清理旧 registry，toggle off、清空
 query 与进入规则页也立即清理；返回查询页且仍开启时从当前 cached cards 重建。Prismatic 折叠状态不改变。
 
-Stage C2 搜索语义与搜索体验主线实现完成，等待 Stage C2 Final Audit / Closeout。
+## 11. Stage C2 Final Closeout
+
+**Stage C2 — COMPLETE**
+
+```text
+C2.1     COMPLETE
+C2.2A    COMPLETE
+C2.2B1   COMPLETE
+C2.2B2   COMPLETE
+C2.3A    COMPLETE
+C2.3B    COMPLETE
+```
+
+Final audit 从当前 artifacts 和 validators 重新确认了 169 条 production records、289 个 reviewed
+concept assignments、40 个 taxonomy definitions、10 个 query groups、27 个 approved global aliases、
+0 个 record aliases、0 个 unreviewed assignments 和 0 个 stale decisions。唯一合法 ownership 链为：
+
+```text
+C1 normalized source
+  → C2.1 machine-generated draft
+  → manual review decisions
+  → C2.2A reviewed materialized artifacts
+  → C2.2B1 deterministic public publication
+  → fail-closed runtime loader
+  → search / UI
+```
+
+Generator 不写 manual decisions；public 不是人工 source of truth；materialized 与 public 三对文件逐字节
+一致。Runtime 保持 Candidate Pool / probability 与 Displayed Results 分层，并提供每 clause 一个
+structured match、Match Reason 与默认关闭的 progressive-enhancement highlighting。完整证据、
+artifact SHA 和已知设计限制记录在 `reports/stage-c2-final-audit.md`。
+
+Stage C2 closeout 不表示整个项目完成；下一步应回到项目 roadmap 选择下一个主功能阶段。
