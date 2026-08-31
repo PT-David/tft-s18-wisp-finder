@@ -204,5 +204,16 @@ Surface reason 通过 `fieldPath` 安全读取单个原始字段，并只用第�
 `indexOf` 重新搜索/推断文本位置。Cached card 在每次 `updateResults()` 都 replace reason children，
 因此 query 切换与清空不会留下 stale reason。
 
-本阶段没有高亮、highlight toggle、DOM `Range` 或 CSS Custom Highlight API，也不会改变 effect/details
-折叠状态。C2.3B 仍未完成，其范围是 optional highlighting、highlight toggle 与 DOM/CSS range rendering。
+## 10. Stage C2.3B — Optional Safe Highlighting（已完成）
+
+搜索辅助区提供默认关闭且不持久化的“高亮匹配”checkbox。实现只消费 C2.2B2 的 `fieldPath` 与全部 raw
+UTF-16 half-open ranges，通过固定的 `wisp-search-match` registry entry、DOM `Range` 和 CSS Custom
+Highlight API 定位原始 name/effect/requirement 单一文本节点，不重新搜索 query 或修正 offset。Query
+expansion 因而高亮真正的 surface term；concept-only、record alias、不可见字段、DOM/raw 不一致及无效范围
+均安全跳过，Match Reason 仍负责解释原因。
+
+这是 progressive enhancement：支持 API 时显示 toggle，不支持时隐藏 toggle，搜索与 Match Reason 继续工作；
+没有 `<mark>` 或其他 fallback。每次 query/results/card cache/patch 变化先清理旧 registry，toggle off、清空
+query 与进入规则页也立即清理；返回查询页且仍开启时从当前 cached cards 重建。Prismatic 折叠状态不改变。
+
+Stage C2 搜索语义与搜索体验主线实现完成，等待 Stage C2 Final Audit / Closeout。

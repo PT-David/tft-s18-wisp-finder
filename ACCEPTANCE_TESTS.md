@@ -19,8 +19,16 @@
 15. Multi-clause 显示全部原因；phrase clause 只显示一个原因。清空搜索或仅使用筛选时原因区域隐藏且清空。
 16. Cached card 必须在每次结果更新时替换原因，不得保留上一 query 的 stale reason。
 17. Match reason 不使用 live region；结果数量保留原生 `h2` heading 语义并使用 polite/atomic live 属性，搜索输入的 focus、caret 与 IME 行为不变。
-18. Stage C2.3A 不生成 `mark`、highlight toggle 或 DOM/CSS highlight；长 reason 在桌面和移动端换行且不产生横向 overflow。
+18. Stage C2.3B toggle 默认关闭；支持 CSS Custom Highlight API 时显示，不支持时隐藏且 Match Reason/搜索正常；不提供 `<mark>` fallback。
 19. 搜索原因只消费 Displayed Results 的 structured metadata，Candidate Pool、K/N probability、result IDs/order/score/matches 均不改变。
+20. “法强”等 query expansion 高亮实际“法术加成”surface；direct 使用 structured range；concept-only 与不可见 alias 不伪造高亮。
+21. Multi-clause 的所有 winning surface 与单 match 的全部 occurrence 都进入同一个固定 registry entry；invalid range、未知字段或 DOM/raw 不一致安全跳过。
+22. Query change、clear query、toggle off、cached card 更新、patch/card removal 与进入规则页不会保留 stale ranges；返回 Finder 时按当前 hits 重建。
+23. Prismatic range 可在 collapsed 内容注册但不得自动展开；Match Reason 保持可见，highlight 不改变 accessibility DOM tree。
+24. 高亮实现不得拆分正文 Text node、插入包装 span、执行 `innerHTML.replace`、按 query `indexOf` 或重新 normalization 定位。
+25. Toggle 只刷新 highlights，不重跑或修改 query/filter，不改变 result IDs/order/score/matches、Candidate Pool N、Displayed K 或 probability。
+26. 名称、normal/blossom/prismatic 与 requirement index 使用稳定 field hook 映射单一原始 Text node；record alias 无正文时跳过。
+27. 桌面与移动端开启高亮后无横向 overflow 或 layout shift，reason chip 继续正常换行。
 
 ## B. 阶段
 
