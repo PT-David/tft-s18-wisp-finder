@@ -14,7 +14,13 @@
 10. 搜索框只显示弱化的 AND 说明，不出现伪按钮；搜索图标使用垂直居中的 SVG。
 11. 参考仙灵可按中英文名搜索、选择、清除，也可从卡片直接设置。
 12. Stage C2.2B2 搜索基础设施：`SearchHit` 为每个成功 clause 提供且只提供一个 winning structured match；direct、query expansion、concept 可区分，surface match 携带实际 `fieldPath` 与安全的原始 UTF-16 `[start,end)` 范围，concept-only 不伪造范围；`matchedFields` 从 matches 派生，且 metadata 不改变结果、score、Candidate Pool 或 probability。
-13. 搜索高亮仍未实现；未来可选高亮默认关闭，必须使用 structured match ranges 安全渲染，不得拼接用户 input 到 `innerHTML`，也不得自行重新搜索文本位置。
+13. 非空搜索时，每张结果卡在阶段之后显示每个 structured query clause 的 compact match reason；顺序与 clause 一致。
+14. Query expansion 原因显示实际 raw surface term；concept-only 原因显示 taxonomy 中文 label，不显示内部 score 或 concept key。
+15. Multi-clause 显示全部原因；phrase clause 只显示一个原因。清空搜索或仅使用筛选时原因区域隐藏且清空。
+16. Cached card 必须在每次结果更新时替换原因，不得保留上一 query 的 stale reason。
+17. Match reason 不使用 live region；结果数量使用 polite/atomic status，搜索输入的 focus、caret 与 IME 行为不变。
+18. Stage C2.3A 不生成 `mark`、highlight toggle 或 DOM/CSS highlight；长 reason 在桌面和移动端换行且不产生横向 overflow。
+19. 搜索原因只消费 Displayed Results 的 structured metadata，Candidate Pool、K/N probability、result IDs/order/score/matches 均不改变。
 
 ## B. 阶段
 

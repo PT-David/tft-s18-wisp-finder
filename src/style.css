@@ -60,6 +60,11 @@ main { min-height: calc(100vh - 100px); }
 .card h3 { font-family: Georgia, "Noto Sans SC", serif; color: #f3dda8; font-size: 1.12rem; margin: 10px 0 1px; line-height: 1.4; }
 .name-en { color: #71818a; font-size: .72rem; margin: 0 0 8px; }
 .stages { font-size: .82rem; color: #a5b1b8; margin: 7px 0; }
+.match-reasons { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin: 5px 0 2px; min-width: 0; }
+.match-reasons-label { color: var(--muted); font-size: .62rem; }
+.match-reason { max-width: 100%; padding: 2px 6px; border: 1px solid #34434d; border-radius: 99px; color: #aeb9bf; background: #111a21; font-size: .64rem; line-height: 1.35; overflow-wrap: anywhere; }
+.match-reason[data-match-type="queryExpansion"] { border-color: #365950; color: #9bc9be; background: #10201d; }
+.match-reason[data-match-type="concept"] { border-color: #5b4d31; color: #d2bb89; background: #211b12; }
 .effect { display: grid; gap: 2px; margin-top: 8px; padding: 4px 5px; font-size: .9rem; line-height: 1.58; border-radius: 4px; }
 .effect b { color: #7d8b94; font-size: .7rem; text-transform: uppercase; }
 .blossom-effect { border-left: 2px solid #4e8b7e; padding-left: 8px; } .blossom-effect b { color: #8edacb; }

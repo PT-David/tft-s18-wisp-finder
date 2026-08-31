@@ -191,5 +191,18 @@ Surface ranges 是原始字段的 UTF-16 offset、使用 half-open `[start,end)`
 Concept-only match 没有 surface field，因而不伪造 `matchedTerm`、`fieldPath` 或 range。
 
 本阶段只提供未来安全渲染需要的 runtime metadata。UI 不得通过 query string 搜索或 replace 原文来
-重算位置，而应只消费 structured match ranges。Match reason UI、highlighting、highlight toggle、
-CSS/DOM range rendering 与 C2.3 均尚未开始。
+重算位置，而应只消费 structured match ranges。
+
+## 9. Stage C2.3A — Match Reason UI（已完成）
+
+结果卡片现在直接消费 structured `SearchHit.matches[]`，按 `clauseIndex` 顺序为每个 clause 显示一个
+compact reason。Direct 显示用户可理解的字段标签和实际原文，query expansion 使用“同义·字段”及
+实际匹配 surface term，concept-only 则按 `conceptKey` 从 reviewed runtime taxonomy 读取正式中文 label。
+
+Surface reason 通过 `fieldPath` 安全读取单个原始字段，并只用第一个 raw UTF-16 range 的
+`slice(start, end)`；空 range 或无效路径安全 fallback 到 structured `matchedTerm`，不通过 query 或
+`indexOf` 重新搜索/推断文本位置。Cached card 在每次 `updateResults()` 都 replace reason children，
+因此 query 切换与清空不会留下 stale reason。
+
+本阶段没有高亮、highlight toggle、DOM `Range` 或 CSS Custom Highlight API，也不会改变 effect/details
+折叠状态。C2.3B 仍未完成，其范围是 optional highlighting、highlight toggle 与 DOM/CSS range rendering。

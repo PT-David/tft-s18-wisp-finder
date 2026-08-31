@@ -252,16 +252,55 @@ test('reviewed runtime synonyms, concepts, AND, and probability denominator work
   await search.fill('重随');
   await expect(page.locator('.card')).toHaveCount(20);
   await expect(page.locator('[data-wisp-id="da_refreshinglight18"]')).toBeVisible();
+  await expect(page.locator('[data-wisp-id="da_refreshinglight18"] [data-match-reason]')).toContainText('重随');
   await search.fill('弈子转化');
   await expect(page.locator('.card')).toHaveCount(4);
   await expect(page.locator('[data-wisp-id="da_18_majorpolymorph"]')).toBeVisible();
+  await expect(page.locator('[data-wisp-id="da_18_majorpolymorph"] [data-match-reason]')).toHaveText('概念：弈子转化');
+  await expect(page.locator('.cards')).not.toContainText('champion_transform');
   await search.fill('重随 金币');
   await expect(page.locator('.card')).toHaveCount(8);
+  const multiReasons = page.locator('.card').first().locator('[data-match-reason]');
+  await expect(multiReasons).toHaveCount(2);
+  await expect(multiReasons.nth(0)).toHaveText('同义·普通：刷新');
+  await expect(multiReasons.nth(1)).toContainText('金币');
   await page.locator('#probabilityMode').check();
   await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
   await search.fill('弈子星级');
   await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
   await expect(page.locator('[data-stat="k"]').first()).toHaveText('19');
+});
+
+test('match reasons update cached cards, clear cleanly, preserve phrases, and never highlight', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  const search = page.locator('#query');
+  const happy = page.locator('.card', { hasText: '元气满满' });
+  await search.fill('法强');
+  await expect(happy.locator('[data-match-reason]')).toHaveText('同义·普通：法术加成');
+  const original = await happy.evaluateHandle(node => node);
+  await search.fill('攻击力');
+  await expect(happy.locator('[data-match-reason]')).toHaveText('同义·普通：物理加成');
+  expect(await happy.evaluate((node, cached) => node === cached, original)).toBe(true);
+  await expect(happy.locator('[data-match-reasons]')).not.toContainText('法术加成');
+  await search.fill('Champion Duplicator');
+  await expect(page.locator('.card').first().locator('[data-match-reason]')).toHaveCount(1);
+  await expect(page.locator('mark')).toHaveCount(0);
+  await search.fill('');
+  await expect(page.locator('[data-match-reasons]:visible')).toHaveCount(0);
+  await expect(page.locator('[data-match-reason]')).toHaveCount(0);
+  await expect(search).toBeFocused();
+});
+
+test('match reason chips wrap without card overflow on desktop and mobile', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await page.locator('#query').fill('重随 金币');
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 844 });
+    const overflows = await page.locator('.card').evaluateAll(cards => cards.map(card => card.scrollWidth > card.clientWidth));
+    expect(overflows).not.toContain(true);
+  }
 });
 
 test('missing reviewed runtime lexicon fails initialization instead of falling back', async ({ page }) => {
