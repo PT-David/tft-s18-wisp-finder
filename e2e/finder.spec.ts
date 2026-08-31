@@ -17,6 +17,16 @@ async function routeRuntimeFixture(page: Page, dataset: { patch: string; records
 
 async function useProductionRuntime(page: Page): Promise<void> { for (const url of runtimeUrls) await page.unroute(url); }
 
+async function searchHighlightRanges(page: Page): Promise<Array<{ text: string; wispId: string | null; field: string | null }>> {
+  return page.evaluate(() => {
+    const highlight = CSS.highlights.get('wisp-search-match');
+    return highlight ? [...highlight].map((range) => {
+      const parent = range.startContainer.parentElement;
+      return { text: range.toString(), wispId: parent?.closest<HTMLElement>('[data-wisp-id]')?.dataset.wispId ?? null, field: parent?.dataset.searchField ?? null };
+    }) : [];
+  });
+}
+
 test.beforeEach(async ({ page }) => {
   const seed = JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8'));
   await routeRuntimeFixture(page, seed);
@@ -303,6 +313,86 @@ test('match reasons update cached cards, clear cleanly, preserve phrases, and ne
   await expect(page.locator('[data-match-reasons]:visible')).toHaveCount(0);
   await expect(page.locator('[data-match-reason]')).toHaveCount(0);
   await expect(search).toBeFocused();
+});
+
+test('optional structured highlights default off, refresh cached cards, and preserve K/N', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await expect.poll(() => page.evaluate(() => typeof Highlight !== 'undefined' && typeof CSS !== 'undefined' && 'highlights' in CSS)).toBe(true);
+  const toggle = page.getByLabel('高亮匹配');
+  await expect(toggle).toBeVisible();
+  await expect(toggle).not.toBeChecked();
+  const search = page.locator('#query');
+  await search.fill('法强');
+  await expect(page.locator('.card')).toHaveCount(4);
+  await expect(page.locator('.card', { hasText: '元气满满' }).locator('[data-match-reason]')).toHaveText('同义·普通：法术加成');
+  expect(await searchHighlightRanges(page)).toEqual([]);
+  await page.locator('#probabilityMode').check();
+  const before = await page.locator('.prob-block').first().innerText();
+  await toggle.check();
+  const ranges = await searchHighlightRanges(page);
+  expect(ranges.some(({ text, field }) => text === '法术加成' && field === 'effects.normal')).toBe(true);
+  expect(ranges.every(({ field }) => field !== null)).toBe(true);
+  expect(await page.locator('.prob-block').first().innerText()).toBe(before);
+  await expect(page.locator('.card')).toHaveCount(4);
+  await expect(page.locator('mark')).toHaveCount(0);
+
+  await search.fill('攻击力');
+  const updated = await searchHighlightRanges(page);
+  expect(updated.some(({ text }) => text === '物理加成')).toBe(true);
+  expect(updated.some(({ text }) => text === '法术加成')).toBe(false);
+  await search.fill('');
+  expect(await searchHighlightRanges(page)).toEqual([]);
+  await expect(toggle).toBeChecked();
+  await search.fill('法强');
+  expect((await searchHighlightRanges(page)).length).toBeGreaterThan(0);
+  await toggle.uncheck();
+  expect(await searchHighlightRanges(page)).toEqual([]);
+  await expect(page.locator('[data-match-reason]')).not.toHaveCount(0);
+});
+
+test('direct, concept-only, multi-clause, and collapsed Prismatic ranges use structured targets', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  const search = page.locator('#query');
+  await page.getByLabel('高亮匹配').check();
+  await search.fill('重随');
+  await expect(page.locator('.card')).toHaveCount(20);
+  expect((await searchHighlightRanges(page)).some(({ text, wispId, field }) => text === '重随' && wispId === 'da_refreshinglight18' && field === 'effects.normal')).toBe(true);
+
+  await search.fill('弈子转化');
+  await expect(page.locator('.card')).toHaveCount(4);
+  await expect(page.locator('[data-wisp-id="da_18_majorpolymorph"] [data-match-reason]')).toHaveText('概念：弈子转化');
+  expect((await searchHighlightRanges(page)).filter(({ wispId }) => wispId === 'da_18_majorpolymorph')).toEqual([]);
+
+  await search.fill('重随 金币');
+  await expect(page.locator('.card')).toHaveCount(8);
+  const multi = await searchHighlightRanges(page);
+  expect(new Set(multi.map(({ text }) => text)).has('刷新')).toBe(true);
+  expect(multi.some(({ text }) => text.includes('金币'))).toBe(true);
+  await expect(page.locator('.card').first().locator('[data-match-reason]')).toHaveCount(2);
+
+  await search.fill('提高150');
+  const prismatic = page.locator('[data-wisp-id="da_18_counterspell"] .prismatic-details');
+  await expect(prismatic).toBeVisible();
+  await expect(prismatic).not.toHaveAttribute('open', '');
+  expect((await searchHighlightRanges(page)).some(({ text, field }) => text === '提高150' && field === 'effects.prismatic')).toBe(true);
+  await prismatic.locator('summary').click();
+  await expect(prismatic).toHaveAttribute('open', '');
+});
+
+test('all structured occurrences share one registry entry and tabs clear/rebuild it', async ({ page }) => {
+  const source = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: Array<Record<string, unknown>> };
+  const fixture = { ...source, records: [{ ...source.records[0], id: 'repeated', nameZh: '重复测试', nameEn: 'Repeated', effects: { normal: '生命值……生命值', blossom: null, prismatic: null }, searchConcepts: [], synonyms: [] }] };
+  await routeRuntimeFixture(page, fixture as Parameters<typeof routeRuntimeFixture>[1]);
+  await page.reload();
+  await page.locator('#query').fill('生命值');
+  await page.getByLabel('高亮匹配').check();
+  expect((await searchHighlightRanges(page)).map(({ text }) => text).filter(text => text === '生命值')).toHaveLength(2);
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  expect(await searchHighlightRanges(page)).toEqual([]);
+  await page.getByRole('button', { name: '仙灵查询' }).click();
+  expect((await searchHighlightRanges(page)).map(({ text }) => text).filter(text => text === '生命值')).toHaveLength(2);
 });
 
 test('match reason chips wrap without card overflow on desktop and mobile', async ({ page }) => {

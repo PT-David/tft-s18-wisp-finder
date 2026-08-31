@@ -185,9 +185,13 @@ Stage C2.3A 已在结果卡片阶段之后、效果之前显示低干扰的匹�
 匹配显示正式 taxonomy 中文 label。原因只消费 `SearchHit.matches[]` 的字段路径与 raw range，不重新搜索
 文本，不显示内部 score/key，也不改变候选池、概率或效果强调模式。
 
-Stage C2.3B 的可选搜索命中高亮仍未实现：
+Stage C2.3B 的可选搜索命中高亮已实现：
 
-- 默认关闭，由用户显式开启。
-- 直接文本命中返回并高亮结构化字符范围；同义词命中尽量指向实际可见对应词。
-- concept 命中而无字面范围时，显示轻量“匹配原因”。
-- 搜索引擎必须返回 structured match metadata/ranges，由 UI 通过文本节点安全渲染；禁止对用户输入执行 `innerHTML.replace(...)`。
+- 搜索辅助区提供默认关闭、不持久化的“高亮匹配”toggle；开关仅刷新 highlight registry。
+- direct 与 query expansion 只通过 structured raw UTF-16 ranges 高亮实际可见 surface，不重新搜索文本。
+- concept-only 只保留 Match Reason，不伪造字面高亮；不可见 alias 同样安全跳过。
+- UI 使用固定 registry key 的 CSS Custom Highlight API 与 DOM `Range`，不拆分文本节点、不使用 `<mark>` fallback。
+- API 不支持时隐藏 toggle，搜索、Match Reason、Candidate Pool 与 probability 保持可用。
+- query、cached card、patch、页面切换与 card removal 生命周期会清理或重建 ranges，Prismatic 不会自动展开。
+
+Stage C2 搜索语义与搜索体验主线实现完成，下一步为 Stage C2 Final Audit / Closeout；本阶段不代表整个项目开发完成。

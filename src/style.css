@@ -20,6 +20,9 @@ main { min-height: calc(100vh - 100px); }
 .search input { width: 100%; height: 46px; padding: 0 14px 0 42px; border-color: #4c675f; background: #08100f; font-size: 1rem; }
 .search-icon { position: absolute; left: 15px; top: 50%; width: 17px; height: 17px; transform: translateY(-50%); fill: none; stroke: currentColor; stroke-width: 1.8; color: var(--teal); pointer-events: none; }
 .search-help { color: #718089; font-size: .7rem; white-space: nowrap; }
+.search-aids { display: flex; align-items: center; gap: 10px; color: #9da9af; font-size: .76rem; white-space: nowrap; }
+.search-aids label { display: inline-flex; align-items: center; gap: 4px; }
+::highlight(wisp-search-match) { background-color: rgba(214, 157, 49, .32); }
 .filters { display: grid; grid-template-columns: repeat(5, minmax(112px, 1fr)); gap: 8px; }
 .filters label, .prob-head label { font-size: .67rem; color: #96a5ae; }
 .filters input, .filters select, .prob-head select { display: block; width: 100%; height: 30px; padding: 3px 8px; margin-top: 3px; }

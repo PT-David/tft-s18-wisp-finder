@@ -9,6 +9,7 @@ import { runQuery } from './query/queryModel';
 import { normalizeSearchText } from './search/searchEngine';
 import { criteriaFromUI, validationMessage, type QueryUIState } from './ui/queryState';
 import { toSearchMatchReasonView } from './ui/searchMatchReason';
+import { createSearchHighlightController } from './ui/searchHighlight';
 import { CATEGORY_LABELS, EFFECT_LABELS, slotLabel, toCardViewModel, type EffectMode } from './ui/viewModels';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -19,7 +20,11 @@ const byId = <T extends HTMLElement>(id: string): T => document.getElementById(i
 let wisps: readonly Wisp[] = [];
 let searchLexicon: RuntimeSearchLexicon;
 let composing = false;
+let highlightMatches = false;
+let finderVisible = true;
+let currentDisplayedResults: ReturnType<typeof runQuery>['displayedResults'] = [];
 const cardNodes = new Map<string, HTMLElement>();
+const searchHighlightController = createSearchHighlightController();
 const state: QueryUIState = {
   query: '', exactStage: '', rangeStart: '', rangeEnd: '', gold: '', affordableOnly: true,
   categories: new Set(), prismaticOnly: false, effectMode: 'normal', probabilityMode: false,
@@ -31,7 +36,7 @@ const activeWisps = (): readonly Wisp[] => wisps.filter((wisp) => wisp.patch ===
 function controlsHtml(): string {
   return `<section class="query-panel" id="queryPanel" aria-label="查询条件">
     <div class="search-row"><label class="search"><span>搜索</span><svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input id="query" type="search" placeholder="搜索仙灵名称或效果……" autocomplete="off"></label>
-      <span class="search-help">多关键词同时满足</span></div>
+      <div class="search-aids"><span class="search-help">多关键词同时满足</span><label id="highlightMatchesLabel" ${searchHighlightController.supported ? '' : 'hidden'}><input id="highlightMatches" type="checkbox"> 高亮匹配</label></div></div>
     <div class="filters primary-filters">
       <label>精确回合<input id="exactStage" placeholder="如 4-3"></label><label>范围开始<input id="rangeStart" placeholder="如 3-1"></label>
       <label>范围结束<input id="rangeEnd" placeholder="如 4-7"></label><label>当前金币<input id="gold" inputmode="numeric" placeholder="不限"></label>
@@ -62,13 +67,13 @@ function createCard(wisp: Wisp): HTMLElement {
   node.dataset.wispId = vm.id;
   node.dataset.cardKey = `${wisp.patch}:${wisp.id}`;
   node.innerHTML = `<div class="card-top"><span class="category-pill category-${vm.category}">${vm.categoryLabel}</span><span class="cost">◈ ${vm.cost}</span></div>
-    <h3>${esc(vm.nameZh)}</h3><p class="name-en">${esc(vm.nameEn)}</p><p class="stages">◷ ${vm.stageText}</p>
+    <h3 data-search-field="nameZh">${esc(vm.nameZh)}</h3><p class="name-en" data-search-field="nameEn">${esc(vm.nameEn)}</p><p class="stages">◷ ${vm.stageText}</p>
     <div class="match-reasons" data-match-reasons hidden></div>
-    <div class="effect normal-effect"><b>普通</b><span>${esc(vm.normal)}</span></div>
-    ${vm.blossom ? `<div class="effect blossom-effect"><b>✦ Blossom</b><span>${esc(vm.blossom)}</span></div>` : ''}
-    ${vm.requirements.length ? `<div class="requirements"><b>出现条件</b>${vm.requirements.map((text) => `<span>${esc(text)}</span>`).join('')}</div>` : ''}
+    <div class="effect normal-effect"><b>普通</b><span data-search-field="effects.normal">${esc(vm.normal)}</span></div>
+    ${vm.blossom ? `<div class="effect blossom-effect"><b>✦ Blossom</b><span data-search-field="effects.blossom">${esc(vm.blossom)}</span></div>` : ''}
+    ${vm.requirements.length ? `<div class="requirements"><b>出现条件</b>${vm.requirements.map((text, index) => `<span data-requirement-index="${index}" data-search-field="requirements.${index}.textZh">${esc(text)}</span>`).join('')}</div>` : ''}
     ${(vm.oncePerGame || vm.cooldown !== undefined) ? `<div class="limits">${vm.oncePerGame ? '<span>每局仅一次</span>' : ''}${vm.cooldown !== undefined ? `<span>冷却 ${vm.cooldown} 商店</span>` : ''}</div>` : ''}
-    ${vm.prismatic ? `<details class="mini-details prismatic-details"><summary>✧ Prismatic Blossom</summary><p>${esc(vm.prismatic)}</p></details>` : ''}
+    ${vm.prismatic ? `<details class="mini-details prismatic-details"><summary>✧ Prismatic Blossom</summary><p data-search-field="effects.prismatic">${esc(vm.prismatic)}</p></details>` : ''}
     <div class="card-prob" hidden><span>此仙灵：<b data-card-prob>0%</b></span><button type="button" data-exclude="${vm.id}">排除此仙灵</button></div>
     <div class="card-actions"><button type="button" data-set-reference="${vm.id}">设为阶段参考</button></div>
     <details class="mini-details source-details"><summary>数据来源</summary><p>${sourceRows.map(esc).join('<br>')}</p></details>`;
@@ -111,6 +116,7 @@ function updateExcluded(): void {
 }
 
 function updateResults(): void {
+  searchHighlightController.clear();
   const message = validationMessage(state);
   byId('formError').textContent = message;
   const patchWisps = activeWisps();
@@ -142,6 +148,8 @@ function updateResults(): void {
   probability.hidden = !state.probabilityMode;
   if (state.probabilityMode) probability.innerHTML = probabilityHtml(query.candidatePool, targetIds);
   updateExcluded();
+  currentDisplayedResults = query.displayedResults;
+  if (highlightMatches && finderVisible) searchHighlightController.update(currentDisplayedResults, cardNodes);
 }
 
 function updateReferenceHint(): void {
@@ -199,6 +207,10 @@ function bindControls(): void {
   byId<HTMLSelectElement>('affordableOnly').addEventListener('change', (event) => { state.affordableOnly = (event.currentTarget as HTMLSelectElement).value === 'true'; updateResults(); });
   byId<HTMLInputElement>('prismaticOnly').addEventListener('change', (event) => { state.prismaticOnly = (event.currentTarget as HTMLInputElement).checked; updateResults(); });
   byId<HTMLInputElement>('probabilityMode').addEventListener('change', (event) => { state.probabilityMode = (event.currentTarget as HTMLInputElement).checked; updateResults(); });
+  byId<HTMLInputElement>('highlightMatches').addEventListener('change', (event) => {
+    highlightMatches = (event.currentTarget as HTMLInputElement).checked;
+    highlightMatches && finderVisible ? searchHighlightController.update(currentDisplayedResults, cardNodes) : searchHighlightController.clear();
+  });
   byId<HTMLInputElement>('referenceQuery').addEventListener('input', (event) => renderReferenceOptions((event.currentTarget as HTMLInputElement).value));
   byId<HTMLSelectElement>('patch').addEventListener('change', (event) => {
     state.patch = (event.currentTarget as HTMLSelectElement).value;
@@ -235,6 +247,8 @@ function initialize(): void {
       event.preventDefault();
       byId('finderPage').hidden = tab !== 'finder'; byId('rulesPage').hidden = tab !== 'rules';
       document.querySelectorAll('[data-tab]').forEach((item) => item.classList.toggle('active', (item as HTMLElement).dataset.tab === tab));
+      finderVisible = tab === 'finder';
+      finderVisible && highlightMatches ? searchHighlightController.update(currentDisplayedResults, cardNodes) : searchHighlightController.clear();
       return;
     }
     const exclude = target.closest<HTMLElement>('[data-exclude]')?.dataset.exclude;
