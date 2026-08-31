@@ -24,6 +24,19 @@ test.beforeEach(async ({ page }) => {
   await expect(page.locator('#resultCount')).toHaveText('10 个结果');
 });
 
+test('结果数量保留二级标题语义与 polite announcement，搜索不抢 focus', async ({ page }) => {
+  const resultHeading = page.getByRole('heading', { level: 2, name: /个结果/ });
+  await expect(resultHeading).toHaveText('10 个结果');
+  await expect(resultHeading).toHaveAttribute('aria-live', 'polite');
+  await expect(resultHeading).toHaveAttribute('aria-atomic', 'true');
+  await expect(resultHeading).not.toHaveAttribute('role', 'status');
+
+  const search = page.locator('#query');
+  await search.fill('Mitosis');
+  await expect(resultHeading).toHaveText('1 个结果');
+  await expect(search).toBeFocused();
+});
+
 test('production corpus smoke: 完整数据可加载且 reference autocomplete 可用', async ({ page }) => {
   await useProductionRuntime(page);
   await page.reload();

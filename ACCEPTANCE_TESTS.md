@@ -18,7 +18,7 @@
 14. Query expansion 原因显示实际 raw surface term；concept-only 原因显示 taxonomy 中文 label，不显示内部 score 或 concept key。
 15. Multi-clause 显示全部原因；phrase clause 只显示一个原因。清空搜索或仅使用筛选时原因区域隐藏且清空。
 16. Cached card 必须在每次结果更新时替换原因，不得保留上一 query 的 stale reason。
-17. Match reason 不使用 live region；结果数量使用 polite/atomic status，搜索输入的 focus、caret 与 IME 行为不变。
+17. Match reason 不使用 live region；结果数量保留原生 `h2` heading 语义并使用 polite/atomic live 属性，搜索输入的 focus、caret 与 IME 行为不变。
 18. Stage C2.3A 不生成 `mark`、highlight toggle 或 DOM/CSS highlight；长 reason 在桌面和移动端换行且不产生横向 overflow。
 19. 搜索原因只消费 Displayed Results 的 structured metadata，Candidate Pool、K/N probability、result IDs/order/score/matches 均不改变。
 
