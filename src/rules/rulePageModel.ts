@@ -53,7 +53,7 @@ export function buildRulesPageModel(rules: WispRuleDataset, wisps: readonly Wisp
     const cooldown = knownValue(wisp.reofferCooldownShops);
     return {
       id: wisp.id, nameZh: wisp.nameZh, nameEn: wisp.nameEn, category: wisp.category, categoryLabel: CATEGORY_LABELS[wisp.category],
-      hasSpecialRules: wisp.requirements.length > 0 || once !== undefined || cooldown !== undefined || wisp.minimumAffordableGold !== undefined,
+      hasSpecialRules: wisp.requirements.length > 0 || once === true || typeof cooldown === 'number' || wisp.minimumAffordableGold != null,
       stageRanges: { value: formatStageRangeList(wisp), confidence: confidenceFor(wisp.sources, 'stageRanges') },
       requirements: { value: wisp.requirements.map(({ textZh }) => textZh), confidence: confidenceFor(wisp.sources, 'requirements') },
       ...(once === true ? { oncePerGame: { value: true as const, confidence: confidenceFor(wisp.sources, 'oncePerGame') } } : {}),
