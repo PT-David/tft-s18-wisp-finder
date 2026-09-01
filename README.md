@@ -68,3 +68,10 @@ Stage C3 完成的是“规则页数据基础 + 最终可用 UX”，不表示�
 **Release Data Audit**：审查 18.1 production 数据完整性、provenance、field gaps、剩余 unknown / unverified
 与 release readiness。现有 dependency audit warning 记录为 **Release / dependency audit follow-up**，不在
 C3.2 中强制升级依赖。
+
+## 7. Release Data Audit 阶段状态
+
+**Stage C4 — IN PROGRESS；C4.1 Release Data Audit。** 当前审计结论仍为 productionReady=false：
+各来源 catalog 口径不同，精确 corpus 边界及有限 identity / critical-field 人工审核队列尚未解决。
+运行 `npm run data:release-audit:18.1` 可确定性重建机器报告与人工入口，
+`npm run validate:release-audit` 只校验报告是否 stale/inconsistent，不会因为已知 blocker 本身使 CI 失败。

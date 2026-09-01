@@ -26,6 +26,8 @@ jobs:
       - run: npm run validate:seed
       - run: npm run validate:data
       - run: npm run validate:rules
+      - run: npm run data:release-audit:18.1
+      - run: npm run validate:release-audit
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
