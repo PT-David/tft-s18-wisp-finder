@@ -4,13 +4,18 @@
   "currentProductionReady": false,
   "releaseCriteria": {
     "exactCorpusBoundaryProven": false,
-    "noUnresolvedConfirmedMissingCorpusMembers": false,
-    "noUnresolvedCriticalFieldConflicts": false,
-    "noInvalidProvenance": false,
+    "identityReviewQueueEmpty": false,
+    "dataTftUnmatchedEmpty": false,
+    "communityDragonConfirmedUnlinkedEmpty": false,
+    "criticalFieldReviewQueueEmpty": false,
+    "provenanceBlockersEmpty": false,
     "noStalePbeOverride": true,
-    "allRequiredSchemaFieldsValid": true,
-    "allKnownCriticalValuesHaveAcceptedProvenance": false,
-    "manualIdentityBlockerQueueEmpty": false
+    "allRequiredSchemaFieldsValid": true
+  },
+  "upstreamValidation": {
+    "validateDataRequired": true,
+    "schemaValidationImplementation": "scripts/validation.ts#validateDataset",
+    "stalePbeAuditMethod": "Production field provenance is checked against manifest sourceId, URL, and warning labels containing PBE."
   },
   "normalizedCount": 169,
   "normalizedSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -534,6 +539,7 @@
           "requirement": "已激活魔女羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -611,6 +617,7 @@
           "requirement": "已激活魔女羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -688,6 +695,7 @@
           "requirement": "尚未达到10级"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -766,7 +774,8 @@
           "requirement": null
         },
         "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedHumanAction": "same_identity"
+        "recommendedProductionId": null,
+        "recommendedHumanAction": "insufficient_evidence"
       },
       {
         "candidateIdentity": "AllIn",
@@ -844,6 +853,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -920,6 +930,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -996,6 +1007,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1073,6 +1085,7 @@
           "requirement": "已激活致命花卉羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1149,6 +1162,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1225,6 +1239,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1302,6 +1317,7 @@
           "requirement": "拥有至少30金币"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1378,6 +1394,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1455,6 +1472,7 @@
           "requirement": "至少上场1名3星非坦克弈子"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1532,6 +1550,7 @@
           "requirement": "已激活灵巧精羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1611,6 +1630,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1688,6 +1708,7 @@
           "requirement": "剩余至少4名玩家"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1765,7 +1786,8 @@
           "requirement": "已激活原始羁绊，且尚未选择乌龟"
         },
         "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedHumanAction": "same_identity"
+        "recommendedProductionId": null,
+        "recommendedHumanAction": "insufficient_evidence"
       },
       {
         "candidateIdentity": "ConsumableShop",
@@ -1841,6 +1863,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1918,6 +1941,7 @@
           "requirement": "地狱特质活跃"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -1995,7 +2019,8 @@
           "requirement": "已激活永恒之森羁绊"
         },
         "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedHumanAction": "same_identity"
+        "recommendedProductionId": null,
+        "recommendedHumanAction": "insufficient_evidence"
       },
       {
         "candidateIdentity": "PottedStonebark",
@@ -2072,7 +2097,8 @@
           "requirement": "已激活永恒之森羁绊"
         },
         "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedHumanAction": "same_identity"
+        "recommendedProductionId": null,
+        "recommendedHumanAction": "insufficient_evidence"
       },
       {
         "candidateIdentity": "GuildofThieves",
@@ -2148,6 +2174,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2225,6 +2252,7 @@
           "requirement": "已激活仙灵羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2302,6 +2330,7 @@
           "requirement": "已激活仙灵羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2379,7 +2408,8 @@
           "requirement": "战场上有至少1名携带装备的坦克"
         },
         "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedHumanAction": "same_identity"
+        "recommendedProductionId": null,
+        "recommendedHumanAction": "insufficient_evidence"
       },
       {
         "candidateIdentity": "TigersVisit",
@@ -2456,6 +2486,7 @@
           "requirement": "已激活原始羁绊，且尚未选择老虎"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2532,6 +2563,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2609,6 +2641,7 @@
           "requirement": "已激活宿敌羁绊，且至少1名宿敌携带装备"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2689,6 +2722,7 @@
           "requirement": "回合开始刷新时，或备战阶段开始后的前2秒"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2769,6 +2803,7 @@
           "requirement": "已激活怪诞羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -2846,7 +2881,8 @@
           "requirement": "已激活灵巧精羁绊"
         },
         "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedHumanAction": "same_identity"
+        "recommendedProductionId": null,
+        "recommendedHumanAction": "insufficient_evidence"
       },
       {
         "candidateIdentity": "HorsesVisit",
@@ -2923,6 +2959,7 @@
           "requirement": "原始特质活跃，未选择马"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -3003,6 +3040,7 @@
           "requirement": "拥有1名3星弈子"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
       {
@@ -3079,6 +3117,7 @@
           "requirement": null
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
+        "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       }
     ]
@@ -4285,9 +4324,1539 @@
           ],
           "status": "semantic_review_required"
         }
+      ],
+      "manualReviewQueue": [
+        {
+          "row": {
+            "identity": "da_18_allfives",
+            "nameEn": "All Fives",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 15
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_allfours",
+            "nameEn": "All Fours",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 8
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_allones",
+            "nameEn": "All Ones",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 5
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_allthrees",
+            "nameEn": "All Threes",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 5
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_alltwos",
+            "nameEn": "All Twos",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 5
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_infliction",
+            "nameEn": "Infliction",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_majorpolymorph",
+            "nameEn": "Major Polymorph",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_minorpolymorph",
+            "nameEn": "Minor Polymorph",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_pocketchange",
+            "nameEn": "Pocket Change",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [
+              {
+                "type": "board_count",
+                "operator": ">=",
+                "value": 2
+              }
+            ],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_polymorph",
+            "nameEn": "Polymorph",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_preppers",
+            "nameEn": "Preppers",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_prolificpower",
+            "nameEn": "Prolific Power",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_starfall",
+            "nameEn": "Starfall",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 10
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_sunfiresorcery",
+            "nameEn": "Sunfire Sorcery",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_tatteredarmor",
+            "nameEn": "Tattered Armor",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_animateshop18",
+            "nameEn": "Animate Shop",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 12
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_giantsaura18",
+            "nameEn": "Giant's Aura",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "board_count",
+                "operator": ">=",
+                "value": 1
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_peddler18",
+            "nameEn": "Peddler",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 10
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_quicken18",
+            "nameEn": "Quicken",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_searchparty18",
+            "nameEn": "Search Party",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 10
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_solitudescloak18",
+            "nameEn": "Solitude's Cloak",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_stealthy18",
+            "nameEn": "Stealthy",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_wrappedinthorns18",
+            "nameEn": "Wrapped In Thorns",
+            "productionHasRequirements": false,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_048_cbc77e083fc2",
+            "nameEn": "Take One With Ya",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_051_e06d127b43f9",
+            "nameEn": "Flood",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_121_1899d3fe4c61",
+            "nameEn": "Major Gambit",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_136_c467ccd546d7",
+            "nameEn": "Component Bounty",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_147_2dc94df4e3a5",
+            "nameEn": "Good Loss",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": false,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "presence_conflict",
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_fieldofmice",
+            "nameEn": "Field of Mice",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_forestmage",
+            "nameEn": "Forest Mage",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_heroicsacrifice",
+            "nameEn": "Heroic Sacrifice",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_killingfrenzy",
+            "nameEn": "Killing Frenzy",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "board_count",
+                "operator": ">=",
+                "value": 1
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_lifedebt",
+            "nameEn": "Life Debt",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_moonrise",
+            "nameEn": "Moonrise",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_supercritical",
+            "nameEn": "Supercritical",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_18_verdantvitality",
+            "nameEn": "Verdant Vitality",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 10
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_abandonship18",
+            "nameEn": "Abandon Ship",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_artifactinate18",
+            "nameEn": "Artifactinate",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_boostershot18",
+            "nameEn": "Booster Shot",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_bulwark18",
+            "nameEn": "Bulwark",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_curiocart18",
+            "nameEn": "Curio Cart",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "gold",
+                "operator": ">=",
+                "value": 10
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_diversified18",
+            "nameEn": "Diversified",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_flashfire18",
+            "nameEn": "Flash Fire",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_handofbaron18",
+            "nameEn": "Hand Of Baron",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_herosentrance18",
+            "nameEn": "Hero's Entrance",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_homingfireflies18",
+            "nameEn": "Homing Fireflies",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_idlecraftsman18",
+            "nameEn": "Idle Craftsman",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_improvedreach18",
+            "nameEn": "Improved Reach",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "board_count",
+                "operator": ">=",
+                "value": 1
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_jungling18",
+            "nameEn": "Jungling",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_manarichsoil18",
+            "nameEn": "Mana-Rich Soil",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "board_count",
+                "operator": ">=",
+                "value": 1
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_marksmensgale18",
+            "nameEn": "Marksmen's Gale",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "board_count",
+                "operator": ">=",
+                "value": 1
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_moonlightritual18",
+            "nameEn": "Moonlight Ritual",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_natureswrath18",
+            "nameEn": "Nature's Wrath",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_refreshinglight18",
+            "nameEn": "Refreshing Light",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_solargift18",
+            "nameEn": "Solar Gift",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_standalone18",
+            "nameEn": "Stand Alone",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_terraforming18",
+            "nameEn": "Terraforming",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "da_trophyhunter18",
+            "nameEn": "Trophy Hunter",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_022_fc7538964718",
+            "nameEn": "Sinister Deal",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "player_health",
+                "operator": ">=",
+                "value": 4
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_036_f484358ea1e5",
+            "nameEn": "Essence Theft",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_049_d60aa5ac9feb",
+            "nameEn": "Minor Gambit",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_120_cf0b477ffe00",
+            "nameEn": "Minor Blood Ritual",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "player_health",
+                "operator": ">=",
+                "value": 3
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
+            "identity": "snapshot_157_3ed870773960",
+            "nameEn": "Blood Ritual",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "player_health",
+                "operator": ">=",
+                "value": 10
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        }
       ]
     }
   },
+  "criticalFieldReviewQueue": [
+    {
+      "identity": "da_18_allfives",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_allfours",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_allones",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_allthrees",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_alltwos",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_bronzespoon",
+      "reviewReasons": [
+        "blossom_presence"
+      ]
+    },
+    {
+      "identity": "da_18_experienced",
+      "reviewReasons": [
+        "blossom_presence"
+      ]
+    },
+    {
+      "identity": "da_18_fieldofmice",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_forestmage",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_heroicsacrifice",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_infliction",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_killingfrenzy",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_lifedebt",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_majorpolymorph",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_minorpolymorph",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_moonrise",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_pocketchange",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_polymorph",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_preppers",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_prolificpower",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_starfall",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_sunfiresorcery",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_supercritical",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_tatteredarmor",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_18_verdantvitality",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_abandonship18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_animateshop18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_artifactinate18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_boostershot18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_bulwark18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_curiocart18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_diversified18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_flashfire18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_giantsaura18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_handofbaron18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_herosentrance18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_homingfireflies18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_idlecraftsman18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_improvedreach18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_jungling18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_manarichsoil18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_marksmensgale18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_moonlightritual18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_natureswrath18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_peddler18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_quicken18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_refreshinglight18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_searchparty18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_solargift18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_solitudescloak18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_standalone18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_stealthy18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_terraforming18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_trophyhunter18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_wrappedinthorns18",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_021_534324382164",
+      "reviewReasons": [
+        "blossom_presence",
+        "prismatic"
+      ]
+    },
+    {
+      "identity": "snapshot_022_fc7538964718",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_036_f484358ea1e5",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_048_cbc77e083fc2",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_049_d60aa5ac9feb",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_051_e06d127b43f9",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_090_cf945e21ddef",
+      "reviewReasons": [
+        "blossom_presence"
+      ]
+    },
+    {
+      "identity": "snapshot_120_cf0b477ffe00",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_121_1899d3fe4c61",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_136_c467ccd546d7",
+      "reviewReasons": [
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_139_6fda4e76a4da",
+      "reviewReasons": [
+        "prismatic"
+      ]
+    },
+    {
+      "identity": "snapshot_147_2dc94df4e3a5",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:presence_conflict",
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "snapshot_157_3ed870773960",
+      "reviewReasons": [
+        "blossom_presence",
+        "requirements:semantic_review_required"
+      ]
+    }
+  ],
   "provenance": {
     "confidenceDistribution": {
       "official": 0,
@@ -4460,7 +6029,15 @@
       "value": "克隆弈子"
     }
   ],
-  "blockerCount": 52,
+  "blockerSummary": {
+    "corpusCompletenessGroups": 1,
+    "identityBlockerGroups": 3,
+    "identityReviewItems": 41,
+    "requirementUniqueReviewIdentities": 63,
+    "otherFieldConflictItems": 15,
+    "criticalFieldReviewIdentities": 68,
+    "provenanceItems": 5
+  },
   "acceptedUnknowns": [
     {
       "field": "oncePerGame",

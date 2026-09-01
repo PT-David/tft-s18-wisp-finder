@@ -1,6 +1,8 @@
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { requirementsManualReview } from './lib/audit';
+import { validateDataset } from '../validation';
 
 type Json = Record<string, any>;
 const root = resolve(import.meta.dirname, '../..');
@@ -26,8 +28,19 @@ export const knowledgeCounts = (records: Json[], field: string, nullable = false
   return counts;
 };
 
-export function recommendation(blockerCount: number, exactCorpusSizeStatus: string) {
-  return blockerCount === 0 && exactCorpusSizeStatus === 'proven' ? true : false;
+export type ReleaseCriteria = {
+  exactCorpusBoundaryProven: boolean;
+  identityReviewQueueEmpty: boolean;
+  dataTftUnmatchedEmpty: boolean;
+  communityDragonConfirmedUnlinkedEmpty: boolean;
+  criticalFieldReviewQueueEmpty: boolean;
+  provenanceBlockersEmpty: boolean;
+  noStalePbeOverride: boolean;
+  allRequiredSchemaFieldsValid: boolean;
+};
+
+export function recommendation(criteria: ReleaseCriteria) {
+  return Object.values(criteria).every(Boolean);
 }
 
 async function build() {
@@ -54,6 +67,7 @@ async function build() {
     requirements: ['requirements', 'requirements_cross_check'], oncePerGame: ['oncePerGame', 'display_skeleton'], reofferCooldownShops: ['reofferCooldownShops', 'display_skeleton'], patch: ['display_skeleton', 'patch_status'], minimumAffordableGold: ['minimumAffordableGold'],
   };
   const provenanceConfidence: Record<string, number> = { official: 0, client_data: 0, verified_third_party: 0, community_high_confidence: 0, unverified: 0 };
+  const stalePbeOverrides: Json[] = [];
   for (const record of records) for (const [fieldName, ref] of Object.entries(record.sources as Json)) {
     provenanceConfidence[ref.confidence] = (provenanceConfidence[ref.confidence] ?? 0) + 1;
     const source = sourceById.get(ref.sourceId);
@@ -64,6 +78,7 @@ async function build() {
       if (!permitted.some((use) => (source.useFor as string[]).includes(use))) incompatibleUseForRefs.push({ productionId: record.id, field: fieldName, sourceId: ref.sourceId, sourceUseFor: source.useFor });
       if (fieldName === 'nameEn' && source.locale && !String(source.locale).startsWith('en')) incompatibleLocaleRefs.push({ productionId: record.id, field: fieldName, sourceId: ref.sourceId, locale: source.locale, value: record.nameEn });
       if (fieldName === 'nameZh' && source.locale && !String(source.locale).startsWith('zh')) incompatibleLocaleRefs.push({ productionId: record.id, field: fieldName, sourceId: ref.sourceId, locale: source.locale, value: record.nameZh });
+      if (/pbe/i.test(`${source.sourceId} ${source.url ?? ''} ${source.warning ?? ''}`)) stalePbeOverrides.push({ productionId: record.id, field: fieldName, sourceId: ref.sourceId, reason: 'Production provenance references a PBE-labelled source.' });
     }
   }
 
@@ -87,7 +102,8 @@ async function build() {
       possibleLolchessIdentities: possibleLol,
       evidence: { exactName: false, clientKey: clientEvidence?.canonicalClientKey ?? null, reviewedAlias: false, stage: null, cost: candidate?.topCandidates?.filter((row: Json) => row.costMatch).map((row: Json) => row.productionId) ?? [], effect: candidate?.topCandidates?.map((row: Json) => ({ productionId: row.productionId, similarity: row.effectSimilarity })) ?? [], requirement: item.record.appearanceCondition ?? null },
       reasonUnresolved: item.reason,
-      recommendedHumanAction: clientEvidence ? 'same_identity' : 'insufficient_evidence',
+      recommendedProductionId: null,
+      recommendedHumanAction: 'insufficient_evidence',
     };
   });
   const missingRiotId = records.filter((record) => !record.riotId).map((record) => ({
@@ -111,33 +127,65 @@ async function build() {
     stageRanges: field.stageRanges.mismatches,
     blossomPresence: field.blossom.presenceConflict,
     prismatic: prismatic.fieldConflict,
-    requirements: { presence: field.requirements.presenceConflict, structured: field.requirements.structuredConflict, semanticReviewRequired: field.requirements.semanticReviewRequired },
+    requirements: { presence: field.requirements.presenceConflict, structured: field.requirements.structuredConflict, semanticReviewRequired: field.requirements.semanticReviewRequired, manualReviewQueue: requirementsManualReview(field.requirements.presenceConflict, field.requirements.structuredConflict, field.requirements.semanticReviewRequired) },
   };
-  const fieldConflictCount = fieldConflictBlockers.category.length + fieldConflictBlockers.cost.length + fieldConflictBlockers.stageRanges.length + fieldConflictBlockers.blossomPresence.length + fieldConflictBlockers.prismatic.length + fieldConflictBlockers.requirements.presence.length;
-  const blockerCount = identityBlockers.length + fieldConflictCount + provenanceBlockers.length;
+  const otherFieldQueues = [
+    ['category', fieldConflictBlockers.category], ['cost', fieldConflictBlockers.cost], ['stage_ranges', fieldConflictBlockers.stageRanges],
+    ['blossom_presence', fieldConflictBlockers.blossomPresence], ['prismatic', fieldConflictBlockers.prismatic],
+  ] as const;
+  const criticalByIdentity = new Map<string, { identity: string; reviewReasons: string[] }>();
+  const addCritical = (identity: string, reason: string) => {
+    const item = criticalByIdentity.get(identity) ?? { identity, reviewReasons: [] };
+    if (!item.reviewReasons.includes(reason)) item.reviewReasons.push(reason);
+    criticalByIdentity.set(identity, item);
+  };
+  for (const [reason, rows] of otherFieldQueues) for (const row of rows as Json[]) addCritical(String(row.identity ?? row.productionId ?? row.nameEn), reason);
+  for (const item of fieldConflictBlockers.requirements.manualReviewQueue) for (const reason of item.reviewReasons) addCritical(item.row.identity, `requirements:${reason}`);
+  const criticalFieldReviewQueue = [...criticalByIdentity.values()].sort((a, b) => a.identity.localeCompare(b.identity, 'en'));
+  const identityReviewItems = identityReviewQueue.length + corpus.dataTftUnmatched.length + corpus.confirmedCorpusButIncomplete.length;
+  const blockerSummary = {
+    corpusCompletenessGroups: identityBlockers.filter((item) => item.kind === 'corpus_completeness').length,
+    identityBlockerGroups: identityBlockers.filter((item) => item.kind === 'identity' && Number(item.count) > 0).length,
+    identityReviewItems,
+    requirementUniqueReviewIdentities: fieldConflictBlockers.requirements.manualReviewQueue.length,
+    otherFieldConflictItems: otherFieldQueues.reduce((sum, [, rows]) => sum + rows.length, 0),
+    criticalFieldReviewIdentities: criticalFieldReviewQueue.length,
+    provenanceItems: provenanceBlockers.length,
+  };
   const artifactPaths = [
     'data/normalized/wisps_18.1.json', 'data/materialized/18.1/search-concepts.json', 'data/materialized/18.1/synonyms.json', 'data/materialized/18.1/wisps.json',
     'public/data/search-concepts.json', 'public/data/search-synonyms.json', 'public/data/wisps.json', 'rules/wisp_rules_18.1.json',
   ];
   const artifactShas = Object.fromEntries(await Promise.all(artifactPaths.map(async (path) => [path, await sha256(path)])));
   const sourceInventory = await Promise.all((manifest.sources as Json[]).map(async (source) => ({ ...source, snapshot: source.sourceId === datatft.sourceId ? 'data/raw/18.1/datatft-wisps-zh.json' : source.sourceId === opgg.sourceId ? 'data/raw/18.1/opgg-wisps-corpus.json' : source.sourceId === lol.sourceId ? 'data/raw/18.1/lolchess-wisps.json' : null, recordCount: source.recordCount ?? (source.sourceId === datatft.sourceId ? datatft.records.length : null) })));
+  const releaseCriteria: ReleaseCriteria = {
+    exactCorpusBoundaryProven: corpus.exactCorpusSizeStatus === 'proven' || corpus.exactCorpusSize?.status === 'proven',
+    identityReviewQueueEmpty: identityReviewQueue.length === 0,
+    dataTftUnmatchedEmpty: corpus.dataTftUnmatched.length === 0,
+    communityDragonConfirmedUnlinkedEmpty: corpus.confirmedCorpusButIncomplete.length === 0,
+    criticalFieldReviewQueueEmpty: criticalFieldReviewQueue.length === 0,
+    provenanceBlockersEmpty: provenanceBlockers.length === 0,
+    noStalePbeOverride: stalePbeOverrides.length === 0,
+    allRequiredSchemaFieldsValid: validateDataset(production).length === 0,
+  };
   const output = {
     patch: '18.1', generatedFromCommittedEvidence: true,
     currentProductionReady: production.productionReady,
-    releaseCriteria: { exactCorpusBoundaryProven: false, noUnresolvedConfirmedMissingCorpusMembers: false, noUnresolvedCriticalFieldConflicts: fieldConflictCount === 0, noInvalidProvenance: provenanceBlockers.length === 0, noStalePbeOverride: true, allRequiredSchemaFieldsValid: true, allKnownCriticalValuesHaveAcceptedProvenance: provenanceBlockers.length === 0, manualIdentityBlockerQueueEmpty: identityReviewQueue.length === 0 },
+    releaseCriteria,
+    upstreamValidation: { validateDataRequired: true, schemaValidationImplementation: 'scripts/validation.ts#validateDataset', stalePbeAuditMethod: 'Production field provenance is checked against manifest sourceId, URL, and warning labels containing PBE.' },
     normalizedCount: records.length, normalizedSha256: artifactShas['data/normalized/wisps_18.1.json'], uniqueIdCount: new Set(records.map((row) => row.id)).size,
     sourceCounts: { dataTft: datatft.records.length, communityDragonCanonicalBase: client.uniqueCanonicalBaseIdentities, lolchess: lol.records.length, opgg: opgg.recordCount },
     sourceInventory, confirmedIdentityIntersection: corpus.confirmedIntersection, confirmedCorpusMinimum: minimum, exactCorpusSizeStatus: 'unresolved',
     identity: { opggCandidateGroups: corpus.candidateMatches.length, ambiguousCandidates: corpus.ambiguous.length, dataTftUnmatched: corpus.dataTftUnmatched, communityDragonConfirmedUnlinked: corpus.confirmedCorpusButIncomplete, missingRiotId, reviewQueue: identityReviewQueue },
-    fieldConflictBlockers, provenance: { confidenceDistribution: provenanceConfidence, danglingSourceRefs, confidenceMismatches, incompatibleLocaleRefs, incompatibleUseForRefs, stalePbeOverrides: [], criticalGaps: provenanceBlockers },
+    fieldConflictBlockers, criticalFieldReviewQueue, provenance: { confidenceDistribution: provenanceConfidence, danglingSourceRefs, confidenceMismatches, incompatibleLocaleRefs, incompatibleUseForRefs, stalePbeOverrides, criticalGaps: provenanceBlockers },
     knowledge: { oncePerGame: knowledgeCounts(records, 'oncePerGame'), reofferCooldownShops: knowledgeCounts(records, 'reofferCooldownShops', true), minimumAffordableGold: { nonNull: records.filter((row) => typeof row.minimumAffordableGold === 'number').length, null: records.filter((row) => row.minimumAffordableGold === null).length, absent: records.filter((row) => !Object.hasOwn(row, 'minimumAffordableGold')).length, independentlySourced: records.filter((row) => row.sources.minimumAffordableGold).length } },
-    identityBlockers, provenanceBlockers, blockerCount,
+    identityBlockers, provenanceBlockers, blockerSummary,
     acceptedUnknowns: [{ field: 'oncePerGame', count: knowledgeCounts(records, 'oncePerGame').unknown, reason: 'Absence from a third-party page is not confirmed false.' }, { field: 'reofferCooldownShops', count: knowledgeCounts(records, 'reofferCooldownShops', true).unknown, reason: 'No reliable committed evidence confirms a number or null.' }],
     nonBlockingDebt: [{ id: 'missing-riot-id', count: missingRiotId.length, reason: 'Optional internal identity is not guessed; unresolved corpus links remain separately blocking.' }, { id: 'dependency-audit-follow-up', reason: 'npm audit endpoint returned HTTP 403 in this environment; no force fix was attempted.' }],
-    artifactShas, recommendedProductionReady: recommendation(blockerCount, 'unresolved'),
+    artifactShas, recommendedProductionReady: recommendation(releaseCriteria),
     verdict: 'NOT READY — CORPUS COMPLETENESS UNRESOLVED; TARGETED HUMAN REVIEW REQUIRED',
   };
-  const report = `# Patch 18.1 Release Data Audit\n\n## Executive verdict\n\n**${output.verdict}** Current productionReady: **${output.currentProductionReady}**; recommendedProductionReady: **${output.recommendedProductionReady}**. This audit does not edit production data.\n\n## Corpus completeness\n\nCommitted catalogs: DataTFT ${output.sourceCounts.dataTft}, CommunityDragon canonical base ${output.sourceCounts.communityDragonCanonicalBase}, LoLCHESS ${output.sourceCounts.lolchess}, OP.GG ${output.sourceCounts.opgg}. Confirmed OP.GG/production intersection: ${output.confirmedIdentityIntersection}; conservative confirmed minimum: ${minimum}; exact size: **unresolved**. Catalog count is not corpus membership.\n\n## Source freshness\n\nEvery source is identified in \`data/source_manifest_18.1.json\` by sourceId, exact URL, locale, retrieval/upstream time, SHA-256, tier, and useFor. The audit uses committed snapshots only; it does not promote a live page. See \`sourceInventory\` in the machine report.\n\n## Identity blockers\n\n- ${identityReviewQueue.length} OP.GG candidate groups (${corpus.ambiguous.length} ambiguous), with a complete evidence/action queue in \`identity.reviewQueue\`.\n- ${corpus.dataTftUnmatched.length} DataTFT unmatched row; ${corpus.confirmedCorpusButIncomplete.length} client-confirmed but unlinked identities. These sets may overlap and are not added together as missing records.\n- ${missingRiotId.length} production rows lack riotId; none was guessed.\n\n## Critical field conflicts\n\n- Category ${fieldConflictBlockers.category.length}; cost ${costConflicts.length}; stage range ${fieldConflictBlockers.stageRanges.length}.\n- Blossom presence ${fieldConflictBlockers.blossomPresence.length}; Prismatic identity/field ${fieldConflictBlockers.prismatic.length}. Mitosis Upgrade remains representation evidence, not automatic Blossom evidence.\n- Requirements presence ${fieldConflictBlockers.requirements.presence.length}, structured ${fieldConflictBlockers.requirements.structured.length}, semantic review ${fieldConflictBlockers.requirements.semanticReviewRequired.length}. appearanceCondition is requirement evidence only, never membership evidence.\n\n## Provenance\n\nDangling source references: ${danglingSourceRefs.length}; manifest-confidence mismatches: ${confidenceMismatches.length}; incompatible locale references: ${incompatibleLocaleRefs.length}; incompatible useFor references: ${incompatibleUseForRefs.length}; stale PBE overrides found: 0. Confidence distribution is recorded field-by-field in the machine report.\n\n## Unknown knowledge\n\nOnce-per-game: ${JSON.stringify(output.knowledge.oncePerGame)}. Reoffer cooldown: ${JSON.stringify(output.knowledge.reofferCooldownShops)}. minimumAffordableGold: ${JSON.stringify(output.knowledge.minimumAffordableGold)}. Unknown is preserved rather than converted to false/null.\n\n## Accepted uncertainties\n\nThe ${output.knowledge.oncePerGame.unknown} once-per-game and ${output.knowledge.reofferCooldownShops.unknown} cooldown unknown states are accepted unknowns, not blockers by themselves.\n\n## Release blockers\n\nExact corpus boundary, ${identityReviewQueue.length} OP.GG identity decisions, the DataTFT/client overlap decision, and record-level critical conflicts listed above remain unresolved. Machine-readable blocker count: ${blockerCount}.\n\n## Human review queue\n\nUse \`identity.reviewQueue\` in \`release-readiness-18.1.json\`; allowed recommendations are same_identity, distinct_identity, insufficient_evidence, source_variant, and obsolete_or_non_live_candidate. C4.1 does not execute them. Existing detailed field queues remain in \`data-lolchess-field-audit-18.1.json\`, \`data-prismatic-audit-18.1.json\`, and \`data-manual-review-18.1.json\`.\n\n## Release / dependency follow-up\n\n\`npm audit --json\` was attempted on 2026-09-01, but the registry audit endpoint returned HTTP 403. No \`npm audit fix --force\` or dependency upgrade was performed; advisory/package/path details could not be freshly verified in this environment.\n\n## Recommended next step\n\nC4.2 priority 1: resolve identity queue and prove corpus boundary; priority 2: adjudicate Blossom/Prismatic/Requirements and numeric conflicts; priority 3: apply reviewed corrections; priority 4: rebuild derived C2 artifacts only after approved production changes.\n`;
+  const report = `# Patch 18.1 Release Data Audit\n\n## Executive verdict\n\n**${output.verdict}** Current productionReady: **${output.currentProductionReady}**; recommendedProductionReady: **${output.recommendedProductionReady}**. This audit does not edit production data.\n\n## Corpus completeness\n\nCommitted catalogs: DataTFT ${output.sourceCounts.dataTft}, CommunityDragon canonical base ${output.sourceCounts.communityDragonCanonicalBase}, LoLCHESS ${output.sourceCounts.lolchess}, OP.GG ${output.sourceCounts.opgg}. Confirmed OP.GG/production intersection: ${output.confirmedIdentityIntersection}; conservative confirmed minimum: ${minimum}; exact size: **unresolved**. Catalog count is not corpus membership.\n\n## Source freshness\n\nEvery source is identified in \`data/source_manifest_18.1.json\` by sourceId, exact URL, locale, retrieval/upstream time, SHA-256, tier, and useFor. The audit uses committed snapshots only; it does not promote a live page. See \`sourceInventory\` in the machine report.\n\n## Identity blockers\n\n- ${identityReviewQueue.length} OP.GG candidate groups (${corpus.ambiguous.length} ambiguous), with a complete evidence/action queue in \`identity.reviewQueue\`.\n- ${corpus.dataTftUnmatched.length} DataTFT unmatched row; ${corpus.confirmedCorpusButIncomplete.length} client-confirmed but unlinked identities. These sets may overlap and are not added together as missing records.\n- ${missingRiotId.length} production rows lack riotId; none was guessed. Client corpus membership without a proven production target recommends \`insufficient_evidence\`, never \`same_identity\`.\n\n## Critical field conflicts\n\n- Category ${fieldConflictBlockers.category.length}; cost ${costConflicts.length}; stage range ${fieldConflictBlockers.stageRanges.length}.\n- Blossom presence ${fieldConflictBlockers.blossomPresence.length}; Prismatic identity/field ${fieldConflictBlockers.prismatic.length}. Mitosis Upgrade remains representation evidence, not automatic Blossom evidence.\n- Requirements presence ${fieldConflictBlockers.requirements.presence.length}, structured ${fieldConflictBlockers.requirements.structured.length}, semantic review ${fieldConflictBlockers.requirements.semanticReviewRequired.length}; merged unique manual-review identities ${fieldConflictBlockers.requirements.manualReviewQueue.length}. appearanceCondition is requirement evidence only, never membership evidence.\n\n## Provenance\n\nDangling source references: ${danglingSourceRefs.length}; manifest-confidence mismatches: ${confidenceMismatches.length}; incompatible locale references: ${incompatibleLocaleRefs.length}; incompatible useFor references: ${incompatibleUseForRefs.length}; stale PBE overrides found: ${stalePbeOverrides.length}. Schema validity reuses \`scripts/validation.ts#validateDataset\`; CI still requires the full \`validate:data\` gate. Confidence distribution is recorded field-by-field in the machine report.\n\n## Unknown knowledge\n\nOnce-per-game: ${JSON.stringify(output.knowledge.oncePerGame)}. Reoffer cooldown: ${JSON.stringify(output.knowledge.reofferCooldownShops)}. minimumAffordableGold: ${JSON.stringify(output.knowledge.minimumAffordableGold)}. Unknown is preserved rather than converted to false/null.\n\n## Accepted uncertainties\n\nThe ${output.knowledge.oncePerGame.unknown} once-per-game and ${output.knowledge.reofferCooldownShops.unknown} cooldown unknown states are accepted unknowns, not blockers by themselves.\n\n## Release blockers\n\nExact corpus boundary and the review queues remain unresolved. Accounting uses separate units: corpus-completeness groups ${blockerSummary.corpusCompletenessGroups}; identity blocker groups ${blockerSummary.identityBlockerGroups}; identity review items ${blockerSummary.identityReviewItems}; Requirement unique review identities ${blockerSummary.requirementUniqueReviewIdentities}; other field conflict items ${blockerSummary.otherFieldConflictItems}; deduplicated critical-field review identities ${blockerSummary.criticalFieldReviewIdentities}; provenance items ${blockerSummary.provenanceItems}. No mixed-unit total is reported.\n\nReadiness is the conjunction of the explicit \`releaseCriteria\`: proven corpus boundary; empty OP.GG identity, DataTFT unmatched, client-confirmed-unlinked, deduplicated critical-field, provenance, and stale-PBE queues; and successful required-schema validation.\n\n## Human review queue\n\nUse \`identity.reviewQueue\` and \`criticalFieldReviewQueue\` in \`release-readiness-18.1.json\`. C4.1 does not execute review actions. Existing detailed field queues remain in \`data-lolchess-field-audit-18.1.json\`, \`data-prismatic-audit-18.1.json\`, and \`data-manual-review-18.1.json\`.\n\n## Release / dependency follow-up\n\n\`npm audit --json\` was attempted on 2026-09-01, but the registry audit endpoint returned HTTP 403. No \`npm audit fix --force\` or dependency upgrade was performed; advisory/package/path details could not be freshly verified in this environment.\n\n## Recommended next step\n\nC4.2 priority 1: resolve identity queue and prove corpus boundary; priority 2: adjudicate Blossom/Prismatic/Requirements and numeric conflicts; priority 3: apply reviewed corrections; priority 4: rebuild derived C2 artifacts only after approved production changes.\n`;
   return { output, report };
 }
 

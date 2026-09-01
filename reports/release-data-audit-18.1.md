@@ -16,17 +16,17 @@ Every source is identified in `data/source_manifest_18.1.json` by sourceId, exac
 
 - 34 OP.GG candidate groups (21 ambiguous), with a complete evidence/action queue in `identity.reviewQueue`.
 - 1 DataTFT unmatched row; 6 client-confirmed but unlinked identities. These sets may overlap and are not added together as missing records.
-- 17 production rows lack riotId; none was guessed.
+- 17 production rows lack riotId; none was guessed. Client corpus membership without a proven production target recommends `insufficient_evidence`, never `same_identity`.
 
 ## Critical field conflicts
 
 - Category 0; cost 0; stage range 0.
 - Blossom presence 13; Prismatic identity/field 2. Mitosis Upgrade remains representation evidence, not automatic Blossom evidence.
-- Requirements presence 28, structured 0, semantic review 63. appearanceCondition is requirement evidence only, never membership evidence.
+- Requirements presence 28, structured 0, semantic review 63; merged unique manual-review identities 63. appearanceCondition is requirement evidence only, never membership evidence.
 
 ## Provenance
 
-Dangling source references: 0; manifest-confidence mismatches: 0; incompatible locale references: 5; incompatible useFor references: 0; stale PBE overrides found: 0. Confidence distribution is recorded field-by-field in the machine report.
+Dangling source references: 0; manifest-confidence mismatches: 0; incompatible locale references: 5; incompatible useFor references: 0; stale PBE overrides found: 0. Schema validity reuses `scripts/validation.ts#validateDataset`; CI still requires the full `validate:data` gate. Confidence distribution is recorded field-by-field in the machine report.
 
 ## Unknown knowledge
 
@@ -38,11 +38,13 @@ The 167 once-per-game and 169 cooldown unknown states are accepted unknowns, not
 
 ## Release blockers
 
-Exact corpus boundary, 34 OP.GG identity decisions, the DataTFT/client overlap decision, and record-level critical conflicts listed above remain unresolved. Machine-readable blocker count: 52.
+Exact corpus boundary and the review queues remain unresolved. Accounting uses separate units: corpus-completeness groups 1; identity blocker groups 3; identity review items 41; Requirement unique review identities 63; other field conflict items 15; deduplicated critical-field review identities 68; provenance items 5. No mixed-unit total is reported.
+
+Readiness is the conjunction of the explicit `releaseCriteria`: proven corpus boundary; empty OP.GG identity, DataTFT unmatched, client-confirmed-unlinked, deduplicated critical-field, provenance, and stale-PBE queues; and successful required-schema validation.
 
 ## Human review queue
 
-Use `identity.reviewQueue` in `release-readiness-18.1.json`; allowed recommendations are same_identity, distinct_identity, insufficient_evidence, source_variant, and obsolete_or_non_live_candidate. C4.1 does not execute them. Existing detailed field queues remain in `data-lolchess-field-audit-18.1.json`, `data-prismatic-audit-18.1.json`, and `data-manual-review-18.1.json`.
+Use `identity.reviewQueue` and `criticalFieldReviewQueue` in `release-readiness-18.1.json`. C4.1 does not execute review actions. Existing detailed field queues remain in `data-lolchess-field-audit-18.1.json`, `data-prismatic-audit-18.1.json`, and `data-manual-review-18.1.json`.
 
 ## Release / dependency follow-up
 

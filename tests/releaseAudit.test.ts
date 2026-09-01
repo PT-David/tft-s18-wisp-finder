@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { knowledgeCounts, recommendation } from '../scripts/data/release-audit-18.1';
+import { knowledgeCounts, recommendation, type ReleaseCriteria } from '../scripts/data/release-audit-18.1';
 
 const root = resolve(import.meta.dirname, '..');
 const load = async (path: string) => JSON.parse(await readFile(resolve(root, path), 'utf8'));
@@ -18,10 +18,16 @@ describe('release readiness audit', () => {
     expect(report.identity.reviewQueue).toHaveLength(report.identity.opggCandidateGroups);
   });
 
-  it('never recommends readiness with blockers or an unresolved corpus', () => {
-    expect(recommendation(1, 'proven')).toBe(false);
-    expect(recommendation(0, 'unresolved')).toBe(false);
-    expect(recommendation(0, 'proven')).toBe(true);
+  it('recommends readiness only when every explicit criterion is satisfied', () => {
+    const allClear: ReleaseCriteria = {
+      exactCorpusBoundaryProven: true, identityReviewQueueEmpty: true, dataTftUnmatchedEmpty: true,
+      communityDragonConfirmedUnlinkedEmpty: true, criticalFieldReviewQueueEmpty: true,
+      provenanceBlockersEmpty: true, noStalePbeOverride: true, allRequiredSchemaFieldsValid: true,
+    };
+    expect(recommendation(allClear)).toBe(true);
+    for (const criterion of Object.keys(allClear) as Array<keyof ReleaseCriteria>) {
+      expect(recommendation({ ...allClear, [criterion]: false }), criterion).toBe(false);
+    }
   });
 
   it('does not confuse confirmed false/null, unknown, and legacy input', () => {
@@ -36,10 +42,29 @@ describe('release readiness audit', () => {
     expect(report.exactCorpusSizeStatus).toBe('unresolved');
   });
 
+  it('does not turn client corpus membership into a same-identity recommendation', async () => {
+    const report = await load('reports/release-readiness-18.1.json');
+    const clientSupported = report.identity.reviewQueue.filter((row: any) => row.evidence.clientKey);
+    expect(clientSupported).toHaveLength(6);
+    expect(clientSupported.every((row: any) => row.recommendedHumanAction === 'insufficient_evidence' && row.recommendedProductionId === null)).toBe(true);
+    expect(report.identity.reviewQueue.filter((row: any) => row.recommendedHumanAction === 'same_identity').every((row: any) => Boolean(row.recommendedProductionId))).toBe(true);
+  });
+
+  it('deduplicates requirement reasons into one release review identity queue', async () => {
+    const report = await load('reports/release-readiness-18.1.json');
+    const requirements = report.fieldConflictBlockers.requirements;
+    const identities = requirements.manualReviewQueue.map((item: any) => item.row.identity);
+    expect(new Set(identities).size).toBe(identities.length);
+    expect(report.blockerSummary.requirementUniqueReviewIdentities).toBe(identities.length);
+    expect(identities.length).toBeLessThan(requirements.presence.length + requirements.semanticReviewRequired.length);
+  });
+
   it('has no dangling manifest source IDs and preserves accepted unknowns', async () => {
     const report = await load('reports/release-readiness-18.1.json');
     expect(report.provenance.danglingSourceRefs).toEqual([]);
     expect(report.acceptedUnknowns.reduce((sum: number, row: any) => sum + row.count, 0)).toBeGreaterThan(0);
-    expect(report.blockerCount).toBe(report.identityBlockers.length + report.provenanceBlockers.length + report.fieldConflictBlockers.category.length + report.fieldConflictBlockers.cost.length + report.fieldConflictBlockers.stageRanges.length + report.fieldConflictBlockers.blossomPresence.length + report.fieldConflictBlockers.prismatic.length + report.fieldConflictBlockers.requirements.presence.length);
+    expect(report).not.toHaveProperty('blockerCount');
+    expect(report.blockerSummary.provenanceItems).toBe(report.provenanceBlockers.length);
+    expect(report.recommendedProductionReady).toBe(recommendation(report.releaseCriteria));
   });
 });
