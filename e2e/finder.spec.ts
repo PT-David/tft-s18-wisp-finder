@@ -71,7 +71,7 @@ test('刷新规律显示 data-driven sections、中文可信度与 production �
   await expect(rulesPage.getByText('高置信观察').first()).toBeVisible();
   await expect(rulesPage.getByText('未确认').first()).toBeVisible();
   await expect(rulesPage.getByText('PATCH 18.1 · RULES')).toBeVisible();
-  await expect(rulesPage.locator('.wisp-rule-index > summary')).toHaveText('逐仙灵规则索引 · 169');
+  await expect(rulesPage.locator('.wisp-rule-index > summary')).toContainText('逐仙灵规则索引 · 169');
 });
 
 test('逐仙灵规则行保留多阶段、Requirements 与 confirmed once-per-game', async ({ page }) => {
@@ -474,4 +474,78 @@ test('Wisp dataset 与 reviewed membership 不一致时浏览器初始化 fail-c
   await page.reload();
   await expect(page.locator('.loading.error')).toContainText('reviewed concept membership 不一致');
   await expect(page.locator('#query')).toHaveCount(0);
+});
+
+test('规则索引原生 disclosure、名称定位、组合筛选、空态与清除均可用', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  const details = page.locator('.wisp-rule-index');
+  const summary = details.locator('> summary');
+  await expect(summary).toHaveText(/逐仙灵规则索引 · 169/);
+  await expect(details).not.toHaveAttribute('role');
+  await summary.focus();
+  await summary.press('Enter');
+  await expect(details).toHaveJSProperty('open', true);
+
+  const query = page.getByLabel('定位仙灵');
+  await query.fill('petrify');
+  await expect(query).toBeFocused();
+  await expect(page.locator('.wisp-rule-row')).toHaveCount(1);
+  await expect(page.locator('[data-wisp-rule-id="da_petrifyshields18"]')).toBeVisible();
+  await expect(page.locator('.rule-index-status')).toHaveText('显示 1 / 169');
+
+  const production = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: Array<{ id: string; category: string; nameEn: string; requirements: unknown[]; oncePerGame?: unknown; reofferCooldownShops?: unknown; minimumAffordableGold?: number }> };
+  const prophecy = production.records.find(record => record.id === 'da_heroofprophecy18')!;
+  const expectedCategoryCount = production.records.filter(record => record.category === prophecy.category).length;
+  await query.fill('');
+  await page.getByLabel('类别').selectOption(prophecy.category);
+  await expect(page.locator('.wisp-rule-row')).toHaveCount(expectedCategoryCount);
+  expect(await page.locator('.wisp-rule-row').evaluateAll(nodes => nodes.every(node => (node as HTMLElement).dataset.category === nodes[0]?.getAttribute('data-category')))).toBe(true);
+
+  await query.fill('Hero');
+  await page.getByLabel('仅显示有特殊规则').check();
+  await expect(page.locator('[data-wisp-rule-id="da_heroofprophecy18"]')).toBeVisible();
+  await expect(page.locator('.wisp-rule-row')).toHaveCount(1);
+  await query.fill('不存在');
+  await expect(page.getByText('没有符合条件的仙灵规则')).toBeVisible();
+  await page.locator('.rule-index-empty').getByRole('button', { name: '清除筛选' }).click();
+  await expect(page.locator('.wisp-rule-row')).toHaveCount(production.records.length);
+  await expect(details).toHaveJSProperty('open', true);
+});
+
+test('Rules 筛选与 Finder query、概率和 tab 状态完全隔离', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await page.locator('#query').fill('重随');
+  await page.locator('#probabilityMode').check();
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  await page.locator('.wisp-rule-index > summary').click();
+  await page.getByLabel('定位仙灵').fill('Hero');
+  await page.getByLabel('仅显示有特殊规则').check();
+  await page.getByRole('button', { name: '仙灵查询' }).click();
+  await expect(page.locator('#query')).toHaveValue('重随');
+  await expect(page.locator('#probabilityMode')).toBeChecked();
+  await expect(page.locator('.card')).toHaveCount(20);
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  await expect(page.getByLabel('定位仙灵')).toHaveValue('Hero');
+  await expect(page.getByLabel('仅显示有特殊规则')).toBeChecked();
+  await expect(page.locator('.wisp-rule-index')).toHaveJSProperty('open', true);
+});
+
+test('390px 规则索引 controls、长要求与多阶段行无横向溢出且可键盘操作', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.reload();
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  const summary = page.locator('.wisp-rule-index > summary');
+  await summary.focus(); await summary.press('Space');
+  const query = page.getByLabel('定位仙灵');
+  await query.fill('Hero Of Prophecy');
+  await expect(query).toBeFocused();
+  await expect(page.locator('[data-wisp-rule-id="da_heroofprophecy18"] .requirement-text')).toHaveCount(3);
+  await query.fill('Petrify Shields');
+  await expect(page.locator('[data-wisp-rule-id="da_petrifyshields18"] .stage-window')).toHaveCount(2);
+  const overflow = await page.evaluate(() => ({ document: document.documentElement.scrollWidth > document.documentElement.clientWidth, rows: [...document.querySelectorAll<HTMLElement>('.wisp-rule-row')].some(row => row.scrollWidth > row.clientWidth), controls: document.querySelector<HTMLElement>('.rule-index-controls')!.scrollWidth > document.querySelector<HTMLElement>('.rule-index-controls')!.clientWidth }));
+  expect(overflow).toEqual({ document: false, rows: false, controls: false });
 });

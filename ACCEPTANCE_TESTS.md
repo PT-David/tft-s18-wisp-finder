@@ -1,7 +1,9 @@
 # 验收测试 ACCEPTANCE_TESTS
 
-> Stage C3.1：刷新规律页必须从匹配 patch 的 rules dataset 与 production Wisp records 派生，覆盖官方机制、
-> Blossom、高置信观察、未确认概率机制和 169 条逐仙灵规则索引；未知 once-per-game / cooldown 不得伪装为否、0 或默认值。
+> Stage C3 — COMPLETE（C3.1 COMPLETE；C3.2 COMPLETE）：刷新规律页必须从匹配 patch 的 rules dataset
+> 与 production Wisp records 派生，覆盖官方机制、Blossom、高置信观察、未确认概率机制和 169 条逐仙灵
+> 规则索引；未知 once-per-game / cooldown 不得伪装为否、0 或默认值。完成状态表示数据基础与最终可用 UX，
+> 不表示规则事实永远完全验证；下一步为 Release Data Audit。
 
 ## A. UI
 
@@ -32,6 +34,12 @@
 25. Toggle 只刷新 highlights，不重跑或修改 query/filter，不改变 result IDs/order/score/matches、Candidate Pool N、Displayed K 或 probability。
 26. 名称、normal/blossom/prismatic 与 requirement index 使用稳定 field hook 映射单一原始 Text node；record alias 无正文时跳过。
 27. 桌面与移动端开启高亮后无横向 overflow 或 layout shift，reason chip 继续正常换行。
+28. 刷新规律页提供原生 anchor 章节导航；逐仙灵索引保持 native `<details>/<summary>`，初始可折叠且键盘可展开。
+29. 索引名称定位只对 `nameZh` / `nameEn` 作 NFKC、安全且大小写无关的 substring 匹配，不调用 Finder semantic search、synonyms 或 concepts。
+30. 类别选项使用正式 category key 与共享 `CATEGORY_LABELS`；“仅显示有特殊规则”只认 requirements、once-per-game、cooldown、minimum affordable gold 四类字段。
+31. 名称、类别与特殊规则使用 AND；结果数以 polite/atomic live region 显示，零结果提供明确空态及“清除筛选”，清除后恢复全部 169 条且不关闭 disclosure。
+32. Rules filter 与 Finder query、公共筛选、概率模式及 Candidate Pool 完全隔离；Finder / Rules tab 往返分别保留各自状态，patch change 可重置 Rules filter。
+33. 390px 移动端 controls 纵向堆叠且可触控，stage chips、长出现要求和 compact confidence 可换行；document、controls 与索引行均无横向 overflow。
 
 ## B. 阶段
 

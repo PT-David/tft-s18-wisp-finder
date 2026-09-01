@@ -39,16 +39,29 @@ describe('rules page model', () => {
   test('Knowledge unknown/false/null stays absent and no general default is copied into rows', () => {
     const base = dataset.records[0]!;
     const fixtures: Wisp[] = [
-      { ...base, id: 'unknown', oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'unknown' }, minimumAffordableGold: undefined },
-      { ...base, id: 'false-null', oncePerGame: { status: 'confirmed', value: false }, reofferCooldownShops: { status: 'confirmed', value: null } },
-      { ...base, id: 'confirmed', oncePerGame: { status: 'confirmed', value: true }, reofferCooldownShops: { status: 'confirmed', value: 8 }, requirements: [...base.requirements, { type: 'special', textZh: '第一项', machineEvaluable: false }, { type: 'special', textZh: '第二项', machineEvaluable: false }] },
+      { ...base, id: 'unknown', requirements: [], oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'unknown' }, minimumAffordableGold: undefined },
+      { ...base, id: 'false-null', requirements: [], oncePerGame: { status: 'confirmed', value: false }, reofferCooldownShops: { status: 'confirmed', value: null }, minimumAffordableGold: undefined },
+      { ...base, id: 'minimum-null', requirements: [], oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'unknown' }, minimumAffordableGold: null },
+      { ...base, id: 'requirements-special', requirements: [{ type: 'special', textZh: '第一项', machineEvaluable: false }], oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'unknown' }, minimumAffordableGold: undefined },
+      { ...base, id: 'once-special', requirements: [], oncePerGame: { status: 'confirmed', value: true }, reofferCooldownShops: { status: 'unknown' }, minimumAffordableGold: undefined },
+      { ...base, id: 'cooldown-special', requirements: [], oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'confirmed', value: 8 }, minimumAffordableGold: undefined },
+      { ...base, id: 'minimum-special', requirements: [], oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'unknown' }, minimumAffordableGold: 35 },
     ];
     const rows = buildRulesPageModel(rules, fixtures, '18.1').wisps;
-    expect(rows.find(row => row.id === 'unknown')).not.toMatchObject({ oncePerGame: expect.anything(), reofferCooldownShops: expect.anything(), minimumAffordableGold: expect.anything() });
-    expect(rows.find(row => row.id === 'false-null')?.oncePerGame).toBeUndefined();
-    expect(rows.find(row => row.id === 'false-null')?.reofferCooldownShops).toBeUndefined();
-    expect(rows.find(row => row.id === 'confirmed')?.reofferCooldownShops?.value).toBe(8);
-    expect(rows.find(row => row.id === 'confirmed')?.requirements.value.slice(-2)).toEqual(['第一项', '第二项']);
+    const unknown = rows.find(row => row.id === 'unknown')!;
+    const falseNull = rows.find(row => row.id === 'false-null')!;
+    const minimumNull = rows.find(row => row.id === 'minimum-null')!;
+    expect(unknown).not.toMatchObject({ oncePerGame: expect.anything(), reofferCooldownShops: expect.anything(), minimumAffordableGold: expect.anything() });
+    expect(unknown.hasSpecialRules).toBe(false);
+    expect(falseNull.oncePerGame).toBeUndefined();
+    expect(falseNull.reofferCooldownShops).toBeUndefined();
+    expect(falseNull.hasSpecialRules).toBe(false);
+    expect(minimumNull.minimumAffordableGold).toBeUndefined();
+    expect(minimumNull.hasSpecialRules).toBe(false);
+    expect(rows.find(row => row.id === 'requirements-special')?.hasSpecialRules).toBe(true);
+    expect(rows.find(row => row.id === 'once-special')?.hasSpecialRules).toBe(true);
+    expect(rows.find(row => row.id === 'cooldown-special')?.hasSpecialRules).toBe(true);
+    expect(rows.find(row => row.id === 'minimum-special')?.hasSpecialRules).toBe(true);
   });
 
   test('patch mismatch fails clearly', () => {
