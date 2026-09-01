@@ -58,6 +58,52 @@ test('production corpus smoke: 完整数据可加载且 reference autocomplete �
   await expect(page.locator('[data-reference-option]')).not.toHaveCount(0);
 });
 
+test('刷新规律显示 data-driven sections、中文可信度与 production 索引', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  const rulesPage = page.locator('#rulesPage');
+  await expect(rulesPage.getByRole('heading', { name: '官方机制' })).toBeVisible();
+  await expect(rulesPage.getByRole('heading', { name: 'Blossom 里程碑' })).toBeVisible();
+  await expect(rulesPage.getByRole('heading', { name: '高置信观察（非官方）' })).toBeVisible();
+  await expect(rulesPage.getByRole('heading', { name: '未确认' })).toBeVisible();
+  await expect(rulesPage.getByText('官方确认').first()).toBeVisible();
+  await expect(rulesPage.getByText('高置信观察').first()).toBeVisible();
+  await expect(rulesPage.getByText('未确认').first()).toBeVisible();
+  await expect(rulesPage.getByText('PATCH 18.1 · RULES')).toBeVisible();
+  await expect(rulesPage.locator('.wisp-rule-index > summary')).toHaveText('逐仙灵规则索引 · 169');
+});
+
+test('逐仙灵规则行保留多阶段、Requirements 与 confirmed once-per-game', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  await page.locator('.wisp-rule-index > summary').click();
+  const petrify = page.locator('[data-wisp-rule-id="da_petrifyshields18"]');
+  await expect(petrify).toContainText('Petrify Shields');
+  await expect(petrify.locator('.stage-window')).toHaveText(['4-2 ～ 4-7', '6-1 ～ 10-1']);
+  await expect(petrify).not.toContainText('冷却 5 个商店');
+  const prophecy = page.locator('[data-wisp-rule-id="da_heroofprophecy18"]');
+  await expect(prophecy).toContainText('Hero Of Prophecy');
+  await expect(prophecy.locator('.requirement-text')).toHaveText(['至少拥有35金币', '生命值高于50', '等级达到10级或以上']);
+  await expect(prophecy).toContainText('每局仅一次');
+});
+
+test('Finder 状态跨规则页切换保持且移动端规则页不产生整页横向溢出', async ({ page }) => {
+  await useProductionRuntime(page);
+  await page.reload();
+  await page.locator('#query').fill('重随');
+  await page.locator('#probabilityMode').check();
+  await page.getByRole('button', { name: '刷新规律' }).click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator('.wisp-rule-index > summary').click();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
+  await page.getByRole('button', { name: '仙灵查询' }).click();
+  await expect(page.locator('#query')).toHaveValue('重随');
+  await expect(page.locator('#probabilityMode')).toBeChecked();
+  await expect(page.locator('.card')).toHaveCount(20);
+});
+
 test('逐字输入、caret 编辑与连续 Backspace 保持原生行为', async ({ page }) => {
   const search = page.locator('#query');
   await search.pressSequentially('hero');

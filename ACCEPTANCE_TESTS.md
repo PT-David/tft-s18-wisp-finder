@@ -1,5 +1,8 @@
 # 验收测试 ACCEPTANCE_TESTS
 
+> Stage C3.1：刷新规律页必须从匹配 patch 的 rules dataset 与 production Wisp records 派生，覆盖官方机制、
+> Blossom、高置信观察、未确认概率机制和 169 条逐仙灵规则索引；未知 once-per-game / cooldown 不得伪装为否、0 或默认值。
+
 ## A. UI
 
 1. 搜索结果不得分页；所有结果在单页连续滚动。

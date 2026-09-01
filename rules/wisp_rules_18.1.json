@@ -29,6 +29,11 @@
     "v1": "equal_weight_among_currently_eligible_wisps",
     "isClaimedRealGameProbability": false,
     "autoTracksRecentShopCooldowns": false,
-    "manualExclusionSupported": true
+    "manualExclusionSupported": true,
+    "unconfirmedRealModels": [
+      "category_then_wisp",
+      "equal_weight_all_eligible",
+      "fixed_hidden_weight_per_wisp"
+    ]
   }
 }
