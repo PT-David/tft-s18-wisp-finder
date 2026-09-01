@@ -1,5 +1,4 @@
 import './style.css';
-import rules from '../rules/wisp_rules_18.1.json';
 import { JsonWispRepository, loadWispDataset } from './data/wispRepository';
 import { assertRuntimeSearchCompatibility, loadRuntimeSearchLexicon } from './data/searchLexiconRepository';
 import type { RuntimeSearchLexicon, Wisp, WispCategory } from './domain/types';
@@ -10,6 +9,9 @@ import { normalizeSearchText } from './search/searchEngine';
 import { criteriaFromUI, validationMessage, type QueryUIState } from './ui/queryState';
 import { toSearchMatchReasonView } from './ui/searchMatchReason';
 import { createSearchHighlightController } from './ui/searchHighlight';
+import { ruleDatasetForPatch } from './rules/ruleData';
+import { buildRulesPageModel } from './rules/rulePageModel';
+import { renderRulesPage, renderRulesUnavailable } from './ui/rulesPage';
 import { CATEGORY_LABELS, EFFECT_LABELS, slotLabel, toCardViewModel, type EffectMode } from './ui/viewModels';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
@@ -215,6 +217,7 @@ function bindControls(): void {
   byId<HTMLSelectElement>('patch').addEventListener('change', (event) => {
     state.patch = (event.currentTarget as HTMLSelectElement).value;
     state.excluded.clear();
+    updateRulesPage();
     clearReference();
   });
   byId<HTMLSelectElement>('effectMode').addEventListener('change', (event) => { state.effectMode = (event.currentTarget as HTMLSelectElement).value as EffectMode; document.documentElement.dataset.effectMode = state.effectMode; });
@@ -226,16 +229,18 @@ function bindControls(): void {
   byId<HTMLInputElement>('exactStage').addEventListener('input', updateReferenceHint);
 }
 
-function rulesHtml(): string {
-  const official = [['购买时机', '仅可在备战阶段购买'], ['商店位置', '正常每隔一个商店出现，位于最右侧'], ['每回合购买', `${rules.official.defaultPurchasesPerRound} 个`], ['Stage 5+', '每隔一个仙灵位保证为 Combat；普通位仍可出现 Combat']];
-  return `<p class="eyebrow">PATCH 18.1 · RULES</p><h1>刷新规律</h1><p class="lead">只展示项目现有规则数据，并明确区分官方机制、观察结论与未知项。</p><section><h2>官方机制</h2><div class="rule-grid">${official.map(([title, text]) => `<article><span class="confidence">official</span><h3>${title}</h3><p>${text}</p></article>`).join('')}</div></section><section><h2>Blossom 里程碑</h2><div class="timeline">${Object.entries(rules.official.blossom).map(([level, effect]) => `<div><b>${level}</b><span>${effect.replaceAll('_', ' ')}</span></div>`).join('')}</div></section><section><h2>高置信观察（非官方）</h2><div class="rule-grid"><article><span class="confidence observed">community observation</span><h3>再次出现冷却</h3><p>常见约 ${rules.observedNotOfficial.defaultReofferCooldownShops} 个商店；装备类约 ${rules.observedNotOfficial.itemWispReofferCooldownShops} 个商店。</p></article><article><span class="confidence observed">community observation</span><h3>可负担观察</h3><p>可能排除当前无法负担的仙灵，完整公式尚未公开。</p></article></div></section><section><h2>概率边界</h2><p class="notice">V1 只提供“当前合资格仙灵等权”的工具模型。真实抽取机制仍未确认。</p></section>`;
+function updateRulesPage(): void {
+  const page = byId<HTMLElement>('rulesPage');
+  const ruleDataset = ruleDatasetForPatch(state.patch);
+  page.replaceChildren(ruleDataset ? renderRulesPage(buildRulesPageModel(ruleDataset, activeWisps(), state.patch)) : renderRulesUnavailable(state.patch));
 }
 
 function initialize(): void {
   const patches = [...new Set(wisps.map(({ patch }) => patch))];
   state.patch = patches[0] || '18.1';
   app.innerHTML = `<header><a class="brand" href="#" data-tab="finder"><span>✦</span><b>WISP FINDER</b><small>SET 18</small></a><nav><button data-tab="finder" class="active">仙灵查询</button><button data-tab="rules">刷新规律</button></nav><label class="header-patch">版本<select id="patch">${patches.map((patch) => `<option value="${esc(patch)}">${esc(patch)}</option>`).join('')}</select></label></header>
-    <main><section id="finderPage">${controlsHtml()}<div class="content"><section class="probability" id="probability" hidden></section><section class="excluded" id="excludedRegion" hidden></section><div class="result-heading"><div><p class="eyebrow">DISPLAYED RESULTS</p><h2 id="resultCount" aria-live="polite" aria-atomic="true"></h2></div><p id="poolSummary"></p></div><section class="cards" id="cards"></section><div class="empty" id="empty" hidden><b>没有匹配结果</b><span>请调整搜索词或公共筛选。</span></div></div></section><section class="rules-page content" id="rulesPage" hidden>${rulesHtml()}</section></main><footer>当前为部分核验种子数据，并非完整仙灵全集。</footer>`;
+    <main><section id="finderPage">${controlsHtml()}<div class="content"><section class="probability" id="probability" hidden></section><section class="excluded" id="excludedRegion" hidden></section><div class="result-heading"><div><p class="eyebrow">DISPLAYED RESULTS</p><h2 id="resultCount" aria-live="polite" aria-atomic="true"></h2></div><p id="poolSummary"></p></div><section class="cards" id="cards"></section><div class="empty" id="empty" hidden><b>没有匹配结果</b><span>请调整搜索词或公共筛选。</span></div></div></section><section class="rules-page content" id="rulesPage" hidden></section></main><footer>当前为部分核验种子数据，并非完整仙灵全集。</footer>`;
+  updateRulesPage();
   bindControls();
   app.addEventListener('change', (event) => {
     if ((event.target as HTMLElement).id === 'slot') { state.slot = (event.target as HTMLSelectElement).value as StageFiveSlot; updateResults(); }

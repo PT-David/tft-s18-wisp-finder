@@ -57,3 +57,9 @@ machine-generated draft 和 manual review decisions 确定性生成并发布的 
 `public/data` 是 runtime publication，不是人工 source of truth。完整 ownership 与 closeout 证据见
 `SEARCH_PIPELINE.md` 和 `reports/stage-c2-final-audit.md`。这不代表整个项目已完成；后续仍应回到 roadmap
 选择下一个主功能阶段。
+
+## 6. Refresh Rules 阶段状态
+
+Stage C3 已开始。C3.1 已完成版本化 typed rules data、跨 production Wisp 数据校验、data-driven
+规则页 view model、SPEC 所列规则内容覆盖，以及逐仙灵规则索引基础。Stage C3 尚未 COMPLETE；C3.2
+仍负责最终规则页 UX / 视觉优化，并在确有需要时补充更丰富的导航或筛选。
