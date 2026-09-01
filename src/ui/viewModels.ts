@@ -13,8 +13,10 @@ export interface WispCardViewModel {
   normal: string; blossom?: string; prismatic?: string; oncePerGame: boolean; cooldown?: number; sources: FieldSource[];
 }
 
-export const formatStageRanges = (wisp: Wisp): string => wisp.stageRanges
-  .map(({ start, end }) => `${start.stage}-${start.round} ～ ${end.stage}-${end.round}`).join(' · ');
+export const formatStageRangeList = (wisp: Wisp): string[] => wisp.stageRanges
+  .map(({ start, end }) => `${start.stage}-${start.round} ～ ${end.stage}-${end.round}`);
+
+export const formatStageRanges = (wisp: Wisp): string => formatStageRangeList(wisp).join(' · ');
 
 export function toCardViewModel(wisp: Wisp): WispCardViewModel {
   return {

@@ -1,19 +1,19 @@
-import { knownValue, type Confidence, type FieldSource, type Wisp } from '../domain/types';
+import { knownValue, type Confidence, type FieldSource, type Wisp, type WispCategory } from '../domain/types';
 import { compareStagePoints } from './stages';
 import type { BlossomEffect, UnconfirmedRealModel, WispRuleDataset } from './types';
-import { CATEGORY_LABELS, formatStageRanges } from '../ui/viewModels';
+import { CATEGORY_LABELS, formatStageRangeList } from '../ui/viewModels';
 
 export interface GeneralRuleView { id: string; title: string; text: string; confidence: Confidence }
 export interface BlossomView { level: number; effect: BlossomEffect; label: string }
 export interface WispRuleField<T> { value: T; confidence?: Confidence }
 export interface WispRuleRow {
-  id: string; nameZh: string; nameEn: string; categoryLabel: string;
+  id: string; nameZh: string; nameEn: string; category: WispCategory; categoryLabel: string; hasSpecialRules: boolean;
   stageRanges: WispRuleField<string[]>; requirements: WispRuleField<string[]>;
   oncePerGame?: WispRuleField<true>; reofferCooldownShops?: WispRuleField<number>;
   minimumAffordableGold?: number;
 }
 export interface RulesPageViewModel {
-  patch: string; officialRules: GeneralRuleView[]; blossomMilestones: BlossomView[];
+  patch: string; summary: { wispCount: number; categoryCount: number }; officialRules: GeneralRuleView[]; blossomMilestones: BlossomView[];
   observedRules: GeneralRuleView[]; unknownRules: GeneralRuleView[]; wisps: WispRuleRow[];
 }
 
@@ -52,8 +52,9 @@ export function buildRulesPageModel(rules: WispRuleDataset, wisps: readonly Wisp
     const once = knownValue(wisp.oncePerGame);
     const cooldown = knownValue(wisp.reofferCooldownShops);
     return {
-      id: wisp.id, nameZh: wisp.nameZh, nameEn: wisp.nameEn, categoryLabel: CATEGORY_LABELS[wisp.category],
-      stageRanges: { value: formatStageRanges(wisp).split(' · '), confidence: confidenceFor(wisp.sources, 'stageRanges') },
+      id: wisp.id, nameZh: wisp.nameZh, nameEn: wisp.nameEn, category: wisp.category, categoryLabel: CATEGORY_LABELS[wisp.category],
+      hasSpecialRules: wisp.requirements.length > 0 || once !== undefined || cooldown !== undefined || wisp.minimumAffordableGold !== undefined,
+      stageRanges: { value: formatStageRangeList(wisp), confidence: confidenceFor(wisp.sources, 'stageRanges') },
       requirements: { value: wisp.requirements.map(({ textZh }) => textZh), confidence: confidenceFor(wisp.sources, 'requirements') },
       ...(once === true ? { oncePerGame: { value: true as const, confidence: confidenceFor(wisp.sources, 'oncePerGame') } } : {}),
       ...(typeof cooldown === 'number' ? { reofferCooldownShops: { value: cooldown, confidence: confidenceFor(wisp.sources, 'reofferCooldownShops') } } : {}),
@@ -63,5 +64,5 @@ export function buildRulesPageModel(rules: WispRuleDataset, wisps: readonly Wisp
     const wa = wisps.find(({ id }) => id === a.id)!; const wb = wisps.find(({ id }) => id === b.id)!;
     return compareStagePoints(wa.stageRanges[0]!.start, wb.stageRanges[0]!.start) || a.nameZh.localeCompare(b.nameZh, 'zh-CN') || a.id.localeCompare(b.id);
   });
-  return { patch: rules.patch, officialRules: official, blossomMilestones: Object.entries(rules.official.blossom).map(([level, effect]) => ({ level: Number(level), effect, label: blossomLabels[effect] })).sort((a, b) => a.level - b.level), observedRules: observed, unknownRules: unknown, wisps: rows };
+  return { patch: rules.patch, summary: { wispCount: rows.length, categoryCount: rules.official.categories.length }, officialRules: official, blossomMilestones: Object.entries(rules.official.blossom).map(([level, effect]) => ({ level: Number(level), effect, label: blossomLabels[effect] })).sort((a, b) => a.level - b.level), observedRules: observed, unknownRules: unknown, wisps: rows };
 }

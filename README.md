@@ -60,6 +60,11 @@ machine-generated draft 和 manual review decisions 确定性生成并发布的 
 
 ## 6. Refresh Rules 阶段状态
 
-Stage C3 已开始。C3.1 已完成版本化 typed rules data、跨 production Wisp 数据校验、data-driven
-规则页 view model、SPEC 所列规则内容覆盖，以及逐仙灵规则索引基础。Stage C3 尚未 COMPLETE；C3.2
-仍负责最终规则页 UX / 视觉优化，并在确有需要时补充更丰富的导航或筛选。
+**Stage C3 — COMPLETE。** C3.1 已完成版本化 typed rules data、跨 production Wisp 数据校验、
+data-driven 规则页 view model、SPEC 所列规则内容覆盖及逐仙灵规则索引基础；C3.2 已完成章节导航、
+原生 disclosure 内的中英文名称定位、类别与特殊规则筛选、独立状态、响应式信息层级及无障碍收口。
+
+Stage C3 完成的是“规则页数据基础 + 最终可用 UX”，不表示游戏规则事实已经永远完全验证。下一步为
+**Release Data Audit**：审查 18.1 production 数据完整性、provenance、field gaps、剩余 unknown / unverified
+与 release readiness。现有 dependency audit warning 记录为 **Release / dependency audit follow-up**，不在
+C3.2 中强制升级依赖。

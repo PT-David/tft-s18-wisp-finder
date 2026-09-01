@@ -178,6 +178,18 @@ Prismatic Blossom 存在时放在紧凑的独立折叠区，不存在时不显�
 
 每条规则显示可信度。
 
+### 9.1 实现状态（Stage C3）
+
+**Stage C3 — COMPLETE（C3.1 COMPLETE；C3.2 COMPLETE）。** 页面使用 patch-matched typed rules dataset
+展示一般规则，并从 production Wisp data 派生逐仙灵索引；C3.2 增加轻量章节 anchor、保留 native
+`<details>/<summary>`、提供仅匹配中英文名称的定位、共享类别标签、固定特殊规则筛选、AND 组合、结果计数、
+空态和清除动作。Rules UI state 只控制 presentation，与 Finder query、Candidate Pool、probability、
+synonyms、concepts 及 search engine 隔离，tab 往返保留而 patch change 可重置。
+
+该完成状态指“规则页数据基础 + 最终可用 UX”，不声明事实已经永久完全验证。下一阶段为
+**Release Data Audit**，再审 production 数据完整性、provenance、field gaps、remaining unverified / unknown
+及 release readiness。
+
 ## 10. Stage C2 搜索匹配解释
 
 Stage C2.3A 已在结果卡片阶段之后、效果之前显示低干扰的匹配原因：每个 structured query clause
