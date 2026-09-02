@@ -4,11 +4,6 @@
   "reviewMetadata": {
     "reviewStage": "C4.2A4",
     "reviewedAt": "2026-09-02",
-    "evidenceBindings": {
-      "identityPacketSha256": "8564f48e57dd60c44dac4e7feb43eb17ae0652b02aab8b16410369692c55406a",
-      "priorityProposalSha256": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",
-      "catalogDeltaSha256": "c7c30eea8bd95682ce9c972d819208a4a439b732af9d2f506a1351e02ee1036f"
-    },
     "policy": "manual_project_review",
     "decisionBaseline": {
       "productionSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -16,6 +11,9 @@
       "reviewedMappingsSha256": "4e937a761bc5c471e9dbc8625527c60f23fffdfab7d93ea1ba2a400d041c37ad",
       "releaseReadinessSha256": "7f58276ef680e0c179c091b94667c32c425e60a5e0d240f83eaffe69c28386c6",
       "recommendedProductionReady": false
+    },
+    "evidenceBinding": {
+      "c4a4EvidenceBundleSha256": "e28f9f4dbc5388a346adaf078f25ce4cf4efabd3505d6927558919fa6a5187c9"
     }
   },
   "decisions": [

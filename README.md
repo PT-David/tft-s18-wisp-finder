@@ -79,6 +79,8 @@ C3.2 中强制升级依赖。
 **Stage C4.2 — IN PROGRESS。C4.2A identity evidence review — COMPLETE；C4.2A4 formal identity
 decisions — COMPLETE。** A1–A3 的 committed evidence、proposal 与 reconciliation 已由 C4.2A4 人工
 decision overlay 正式裁决为 1 项 same identity 和 7 项 missing base identity；production 尚未 apply，字段审核
-仍留待 C4.2B，因此 production readiness 继续为 false。运行 `npm run validate:c4.2a-identity-decisions` 校验
-manual overlay 与 reviewed evidence 的绑定、完整覆盖及 identity governance；运行
+仍留待 C4.2B，因此 production readiness 继续为 false。Decision-time evidence 冻结在人工维护的
+`data/reviews/18.1/c4.2a4-identity-evidence.json`，不会被 current A1–A3 regeneration 覆盖。运行
+`npm run validate:c4.2a-identity-decisions` 校验 manual overlay 与 frozen evidence 的绑定、完整覆盖、
+current apply fulfillment 及 identity governance；运行
 `npm run data:c4.2a-identity-decision-report:18.1` 只从 manual overlay 确定性派生 Markdown 报告。

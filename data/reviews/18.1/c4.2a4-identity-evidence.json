@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "reviewStage": "C4.2A4",
+  "sourceArtifactHashes": {
+    "a1": "8564f48e57dd60c44dac4e7feb43eb17ae0652b02aab8b16410369692c55406a",
+    "a2": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",
+    "a3": "c7c30eea8bd95682ce9c972d819208a4a439b732af9d2f506a1351e02ee1036f"
+  },
+  "decisionBaseline": {
+    "productionSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+    "productionRecordCount": 169,
+    "reviewedMappingsSha256": "4e937a761bc5c471e9dbc8625527c60f23fffdfab7d93ea1ba2a400d041c37ad",
+    "releaseReadinessSha256": "7f58276ef680e0c179c091b94667c32c425e60a5e0d240f83eaffe69c28386c6",
+    "recommendedProductionReady": false
+  },
+  "identities": [
+    {
+      "communityDragonId": "DA_CloneCompanion18",
+      "canonicalNameEn": "Clone Companion",
+      "canonicalNameZh": "克隆弈子",
+      "clusterId": "C4I-001",
+      "evidenceRefs": [
+        "A1:C4I-001",
+        "A2:C4I-001",
+        "A3:C4I-001",
+        "DataTFT:old-row-139",
+        "DataTFT:fresh-row-139",
+        "CommunityDragon:DA_CloneCompanion18"
+      ],
+      "historicalAdmissibility": {
+        "kind": "same_identity",
+        "a2ProposedAction": "same_identity",
+        "approvedProductionId": "snapshot_139_6fda4e76a4da",
+        "policyCompliantTargets": [
+          "snapshot_139_6fda4e76a4da"
+        ],
+        "a3ContinuityImpact": "supported",
+        "oldIndex": 139,
+        "freshIndex": 139,
+        "baseApiName": "DA_CloneCompanion18"
+      }
+    },
+    {
+      "communityDragonId": "DA_BearsVisit18",
+      "canonicalNameEn": "Bear's Visit",
+      "canonicalNameZh": "蛮熊降临",
+      "evidenceRefs": [
+        "A3:freshIndex-169",
+        "CommunityDragon:DA_BearsVisit18"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_BearsVisit18",
+        "upgradeApiNames": [
+          "DA_BearsVisit18_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 169
+      }
+    },
+    {
+      "communityDragonId": "DA_MemorialDummy18",
+      "canonicalNameEn": "Memorial Dummy",
+      "canonicalNameZh": "衣冠冢",
+      "clusterId": "C4I-002",
+      "evidenceRefs": [
+        "A2:C4I-002",
+        "A3:freshIndex-170"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_MemorialDummy18",
+        "upgradeApiNames": [
+          "DA_MemorialDummy18_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 170
+      }
+    },
+    {
+      "communityDragonId": "DA_PottedLifebloom18",
+      "canonicalNameEn": "Potted Lifebloom",
+      "canonicalNameZh": "盆栽生命花",
+      "clusterId": "C4I-003",
+      "evidenceRefs": [
+        "A2:C4I-003",
+        "A3:freshIndex-171"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_PottedLifebloom18",
+        "upgradeApiNames": [
+          "DA_PottedLifebloom18_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 171
+      }
+    },
+    {
+      "communityDragonId": "DA_PottedStonebark18",
+      "canonicalNameEn": "Potted Stonebark",
+      "canonicalNameZh": "盆栽石皮树",
+      "clusterId": "C4I-004",
+      "evidenceRefs": [
+        "A2:C4I-004",
+        "A3:freshIndex-172"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_PottedStonebark18",
+        "upgradeApiNames": [
+          "DA_PottedStonebark18_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 172
+      }
+    },
+    {
+      "communityDragonId": "DA_Snacktime18",
+      "canonicalNameEn": "Snacktime!",
+      "canonicalNameZh": "点心时间到！",
+      "clusterId": "C4I-005",
+      "evidenceRefs": [
+        "A2:C4I-005",
+        "A3:freshIndex-173"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_Snacktime18",
+        "upgradeApiNames": [
+          "DA_Snacktime18_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 173
+      }
+    },
+    {
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "canonicalNameEn": "Tiger's Visit",
+      "canonicalNameZh": "战马降临",
+      "evidenceRefs": [
+        "A3:freshIndex-174",
+        "CommunityDragon:bear-tiger-focused-evidence"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_TigersVisit18_Wisp",
+        "upgradeApiNames": [
+          "DA_TigersVisit18_Wisp_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 174
+      }
+    },
+    {
+      "communityDragonId": "DA_TurtlesVisit18",
+      "canonicalNameEn": "Turtle's Visit",
+      "canonicalNameZh": "灵龟降临",
+      "clusterId": "C4I-006",
+      "evidenceRefs": [
+        "A2:C4I-006",
+        "A3:freshIndex-175"
+      ],
+      "historicalAdmissibility": {
+        "kind": "missing_base_identity",
+        "a3Classification": "missing_base_identity_candidate",
+        "productionTargetCount": 0,
+        "reviewedMappingTargetCount": 0,
+        "baseApiName": "DA_TurtlesVisit18",
+        "upgradeApiNames": [
+          "DA_TurtlesVisit18_Upgrade"
+        ],
+        "prismaticApiNames": [],
+        "freshIndex": 175
+      }
+    }
+  ]
+}
