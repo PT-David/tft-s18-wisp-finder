@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { addLolchessIdentityEvidence, clusterIdentityReviewItems, type ReviewItem } from '../scripts/data/lib/identity-review';
-import { createDataTftReviewItem } from '../scripts/data/identity-review-packet-18.1';
+import { buildIdentityReviewPacket, createDataTftReviewItem, DETERMINISTIC_METHOD } from '../scripts/data/identity-review-packet-18.1';
 
 const item = (values: Partial<ReviewItem> & Pick<ReviewItem, 'itemId' | 'source' | 'sourceKey'>): ReviewItem => ({ name: values.sourceKey, ...values });
 
@@ -39,6 +39,15 @@ describe('identity review clustering governance', () => {
     expect(cluster.recommendedHumanAction).toBe('insufficient_evidence');
     expect(cluster.productionIdentityLink.status).toBe('unresolved');
     expect(cluster.conflictingEvidence).toContainEqual(expect.stringContaining('Multiple strong'));
+    expect(cluster.strongProductionCandidates).toHaveLength(2);
+  });
+
+  it('keeps one strong candidate as support without describing a conflict', () => {
+    const [cluster] = clusterIdentityReviewItems([item({ itemId: 'opgg:a', source: 'opgg', sourceKey: 'A', productionCandidates: [{ productionId: 'one', score: 1 }, { productionId: 'weak', score: 0.1 }] })]);
+    expect(cluster.strongProductionCandidates).toHaveLength(1);
+    expect(cluster.conflictingEvidence).toEqual(['No policy-compliant production identity link exists.']);
+    expect(cluster.productionIdentityLink.status).toBe('unresolved');
+    expect(cluster.recommendedHumanAction).toBe('insufficient_evidence');
   });
 
   it('does not present zero-score ranked candidates as review-relevant or plausible', () => {
@@ -73,6 +82,22 @@ describe('identity review clustering governance', () => {
       item({ itemId: 'opgg:b', source: 'opgg', sourceKey: 'B', productionCandidates: [{ productionId: 'prod', score: 0.88 }] }),
     ];
     expect(createDataTftReviewItem({ id: 'prod', nameZh: 'P' }, { effects: { normal: 'X' } }, candidates).overlapKeys).toEqual([]);
+  });
+
+  it('keeps generated deterministic-method metadata aligned with overlap governance', async () => {
+    const output = await buildIdentityReviewPacket();
+    const packet = JSON.parse(output.json);
+    expect(packet.deterministicMethod).toBe(DETERMINISTIC_METHOD);
+    expect(packet.deterministicMethod).toContain('top score >= 0.8');
+    expect(packet.deterministicMethod).toContain('exceed second score by more than 0.05');
+    expect(packet.deterministicMethod).toContain('never confirms identity');
+    expect(output.markdown).toContain(DETERMINISTIC_METHOD);
+    const cloneCluster = packet.clusters.find((cluster: any) => cluster.sourceItems.some((source: any) => source.sourceKey === 'CloneCompanion'));
+    expect(cloneCluster.strongProductionCandidates).toHaveLength(1);
+    expect(cloneCluster.strongProductionCandidates[0].productionId).toBe('snapshot_139_6fda4e76a4da');
+    expect(cloneCluster.conflictingEvidence).not.toContainEqual(expect.stringContaining('Multiple strong'));
+    expect(cloneCluster.productionIdentityLink.status).toBe('unresolved');
+    expect(cloneCluster.recommendedHumanAction).toBe('insufficient_evidence');
   });
 
   it('separates LoLCHESS identity support from field follow-up', () => {

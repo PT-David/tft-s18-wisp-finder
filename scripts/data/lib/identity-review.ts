@@ -26,7 +26,7 @@ export type IdentityReviewCluster = {
   sourceItems: ReviewItem[];
   rankedProductionCandidates: Array<{ productionId: string; name?: string; score?: number; evidence?: string[] }>;
   reviewRelevantProductionCandidates: Array<{ productionId: string; name?: string; score?: number; evidence?: string[] }>;
-  conflictingStrongProductionCandidates: Array<{ productionId: string; name?: string; score?: number; evidence?: string[] }>;
+  strongProductionCandidates: Array<{ productionId: string; name?: string; score?: number; evidence?: string[] }>;
   corpusMembership: { status: 'confirmed' | 'unresolved'; evidence: string[] };
   productionIdentityLink: { status: 'confirmed' | 'unresolved'; productionId?: string; confirmingEvidence: string[] };
   exactEvidence: string[];
@@ -86,7 +86,7 @@ function makeCluster(sourceItems: ReviewItem[], clusterId: string): IdentityRevi
   const rankedCandidates = [...candidateMap.values()].sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || a.productionId.localeCompare(b.productionId, 'en'));
   // This threshold controls review presentation only; it can never confirm an identity.
   const reviewRelevantCandidates = rankedCandidates.filter((candidate) => (candidate.score ?? 0) >= 0.2);
-  const conflictingStrongCandidates = reviewRelevantCandidates.filter((candidate) => (candidate.score ?? 0) >= 0.8);
+  const strongCandidates = reviewRelevantCandidates.filter((candidate) => (candidate.score ?? 0) >= 0.8);
   const membershipConfirmed = sourceItems.some((row) => row.corpusMembershipConfirmed);
   let action: ReviewAction = 'insufficient_evidence';
   let recommendedProductionId: string | undefined;
@@ -105,11 +105,11 @@ function makeCluster(sourceItems: ReviewItem[], clusterId: string): IdentityRevi
   const genuine = priority === 'P0' || priority === 'P1' || action !== 'insufficient_evidence';
   return {
     clusterId, priority, currentQuestion: question, sourceItems,
-    rankedProductionCandidates: rankedCandidates, reviewRelevantProductionCandidates: reviewRelevantCandidates, conflictingStrongProductionCandidates: conflictingStrongCandidates,
+    rankedProductionCandidates: rankedCandidates, reviewRelevantProductionCandidates: reviewRelevantCandidates, strongProductionCandidates: strongCandidates,
     corpusMembership: { status: membershipConfirmed ? 'confirmed' : 'unresolved', evidence: sourceItems.filter((row) => row.corpusMembershipConfirmed).map((row) => `${row.source}:${row.sourceKey} has committed OP.GG + canonical client base evidence.`) },
     productionIdentityLink: { status: action === 'same_identity' ? 'confirmed' : 'unresolved', ...(recommendedProductionId ? { productionId: recommendedProductionId } : {}), confirmingEvidence },
     exactEvidence: confirmingEvidence, supportingEvidence,
-    conflictingEvidence: exactTargets.length > 1 ? [`Conflicting exact targets: ${exactTargets.join(', ')}`] : conflictingStrongCandidates.length > 1 ? ['Multiple strong, review-relevant production targets remain; ranking cannot confirm identity.'] : ['No policy-compliant production identity link exists.'],
+    conflictingEvidence: exactTargets.length > 1 ? [`Conflicting exact targets: ${exactTargets.join(', ')}`] : strongCandidates.length > 1 ? ['Multiple strong, review-relevant production targets remain; ranking cannot confirm identity.'] : ['No policy-compliant production identity link exists.'],
     fieldReviewFollowUps: [],
     recommendedHumanAction: action, ...(recommendedProductionId ? { recommendedProductionId } : {}), ...(variant ? { variant } : {}),
     confidence: action === 'same_identity' || action === 'source_variant' ? 'strong' : supportingEvidence.length ? 'supporting_only' : 'low',

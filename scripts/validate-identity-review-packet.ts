@@ -22,6 +22,8 @@ const expectedIds = [
 if (ids.length !== new Set(ids).size) errors.push('A source review item occurs in more than one cluster.');
 if (JSON.stringify([...ids].sort()) !== JSON.stringify(expectedIds)) errors.push('Current source queues do not appear exactly once.');
 if (packet.summary.rawReviewItemsBeforeClustering !== expectedIds.length || packet.summary.uniqueClustersAfterClustering !== packet.clusters.length) errors.push('Raw/cluster summary counts do not reconcile.');
+if (!packet.deterministicMethod.includes('top score >= 0.8') || !packet.deterministicMethod.includes('exceed second score by more than 0.05') || !packet.deterministicMethod.includes('never confirms identity')) errors.push('Deterministic method metadata does not describe DataTFT overlap governance.');
+if (!actualMarkdown.includes(packet.deterministicMethod)) errors.push('Markdown does not expose the machine packet deterministic method.');
 packet.clusters.forEach((cluster: any, index: number) => {
   if (cluster.clusterId !== `C4I-${String(index + 1).padStart(3, '0')}`) errors.push(`Non-deterministic cluster ID at index ${index}.`);
   if (cluster.recommendedHumanAction === 'same_identity' && (!cluster.recommendedProductionId || !cluster.productionIdentityLink.confirmingEvidence.length)) errors.push(`${cluster.clusterId}: same_identity lacks a production ID or confirming evidence.`);
@@ -40,5 +42,8 @@ packet.clusters.forEach((cluster: any, index: number) => {
     if (cluster.productionIdentityLink.confirmingEvidence.includes(followUp)) errors.push(`${cluster.clusterId}: field conflict was used as identity-confirming evidence.`);
   }
 });
+const cloneCluster = packet.clusters.find((cluster: any) => cluster.sourceItems.some((item: any) => item.sourceKey === 'CloneCompanion'));
+if (!cloneCluster || cloneCluster.strongProductionCandidates.length !== 1 || cloneCluster.strongProductionCandidates[0].productionId !== 'snapshot_139_6fda4e76a4da') errors.push('C4I CloneCompanion must retain exactly one strong supporting production candidate.');
+if (cloneCluster?.conflictingEvidence.some((evidence: string) => evidence.includes('Multiple strong')) || cloneCluster?.productionIdentityLink.status !== 'unresolved' || cloneCluster?.recommendedHumanAction !== 'insufficient_evidence') errors.push('C4I CloneCompanion must not describe its single strong candidate as a conflict or resolve identity.');
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`Identity review packet valid: ${expectedIds.length} raw items in ${packet.clusters.length} deterministic clusters.`);

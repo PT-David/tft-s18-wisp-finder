@@ -12,7 +12,7 @@
     "fuzzyEvidenceMayOnlyGenerateOrRankCandidates": true,
     "recommendationsAreNotDecisions": true
   },
-  "deterministicMethod": "Stable source item IDs; exact source/client/API overlap keys; plus a bounded highest-score DataTFT review-neighborhood edge (score >= 0.8) that is explicitly supporting-only; priority then lexical ordering; sequential cluster IDs.",
+  "deterministicMethod": "Stable source item IDs; exact source/client/API overlap keys; DataTFT review-neighborhood edge requires top score >= 0.8 and, when a second candidate exists, top score must exceed second score by more than 0.05. This edge is supporting-only and never confirms identity; priority then lexical ordering; sequential cluster IDs.",
   "summary": {
     "rawReviewItemsBeforeClustering": 41,
     "rawQueues": {
@@ -170,7 +170,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [
+      "strongProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -316,7 +316,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -448,7 +448,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -584,7 +584,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -718,7 +718,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -854,7 +854,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -976,7 +976,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1093,7 +1093,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1222,7 +1222,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1341,7 +1341,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1470,7 +1470,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1589,7 +1589,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1706,7 +1706,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1823,7 +1823,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1940,7 +1940,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2069,7 +2069,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2200,7 +2200,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2319,7 +2319,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2436,7 +2436,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2553,7 +2553,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2693,7 +2693,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2813,7 +2813,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2930,7 +2930,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3047,7 +3047,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3164,7 +3164,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3281,7 +3281,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3421,7 +3421,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3541,7 +3541,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3658,7 +3658,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3775,7 +3775,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3915,7 +3915,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -4035,7 +4035,7 @@
         }
       ],
       "reviewRelevantProductionCandidates": [],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -4166,7 +4166,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -4297,7 +4297,7 @@
           ]
         }
       ],
-      "conflictingStrongProductionCandidates": [],
+      "strongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
