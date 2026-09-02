@@ -1,0 +1,3238 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "reviewStage": "C4.2B2",
+  "ownership": "manual_overlay_do_not_regenerate",
+  "reviewedAt": "2026-09-02",
+  "evidenceBinding": {
+    "frozenEvidenceSha256": "e54d96ecd5b80d21b1eb866a6115d2cf71b05ce516458d2f9dfbb877c0c8b873"
+  },
+  "decisions": [
+    {
+      "decisionId": "C4B2-0001",
+      "reviewId": "C42B1-04c58932019492ba-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_moonrise",
+        "nameEn": "Moonrise",
+        "nameZh": "皓月当空"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-04c58932019492ba-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-04c58932019492ba-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0002",
+      "reviewId": "C42B1-0c27c5b5e790e39b-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "da_18_experienced",
+        "nameEn": "Experienced",
+        "nameZh": "老练"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-0c27c5b5e790e39b-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-0c27c5b5e790e39b-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-0c27c5b5e790e39b-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0003",
+      "reviewId": "C42B1-0e8bdc56aa926ba3-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_terraforming18",
+        "nameEn": "Terraforming",
+        "nameZh": "生态改造"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-0e8bdc56aa926ba3-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-0e8bdc56aa926ba3-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0004",
+      "reviewId": "C42B1-141d55213c601895-5c29b35b5d72ab74-8000d7a78ebe23d9",
+      "identity": {
+        "productionId": "snapshot_050_770e0f5d1043",
+        "nameEn": "干旱",
+        "nameZh": "干旱"
+      },
+      "field": "nameEn",
+      "propositionKey": "locale-source-compatibility",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-141d55213c601895-5c29b35b5d72ab74-8000d7a78ebe23d9:E01"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0005",
+      "reviewId": "C42B1-14f9be3936573dfc-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_quicken18",
+        "nameEn": "Quicken",
+        "nameZh": "加速"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-14f9be3936573dfc-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-14f9be3936573dfc-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0006",
+      "reviewId": "C42B1-17ff322db425c8cf-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_sunfiresorcery",
+        "nameEn": "Sunfire Sorcery",
+        "nameZh": "日炎巫术"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-17ff322db425c8cf-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-17ff322db425c8cf-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0007",
+      "reviewId": "C42B1-1a01599d3bde43bb-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_allthrees",
+        "nameEn": "All Threes",
+        "nameZh": "全3费商店"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-1a01599d3bde43bb-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-1a01599d3bde43bb-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0008",
+      "reviewId": "C42B1-1bc968aef35a51ef-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_moonlightritual18",
+        "nameEn": "Moonlight Ritual",
+        "nameZh": "月光仪式"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-1bc968aef35a51ef-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-1bc968aef35a51ef-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0009",
+      "reviewId": "C42B1-1cbb759bca2d1ded-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_090_cf945e21ddef",
+        "nameEn": "Regeneration",
+        "nameZh": "回复"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-1cbb759bca2d1ded-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-1cbb759bca2d1ded-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-1cbb759bca2d1ded-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0010",
+      "reviewId": "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "requirements",
+      "propositionKey": "text-28eb12497083f553",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textEn": "Primal trait active",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0011",
+      "reviewId": "C42B1-1e29d926b4d5cb16-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_TigersVisit18_Wisp",
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0012",
+      "reviewId": "C42B1-1e29d926b4d5cb16-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0013",
+      "reviewId": "C42B1-1e29d926b4d5cb16-474c91c627b347cf-435964e390dc385a",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "effects.normal",
+      "propositionKey": "complete-effect-text",
+      "action": "approve_proposal",
+      "approvedValue": "Gain the Tiger Primal buff for this combat.",
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-474c91c627b347cf-435964e390dc385a:E01",
+        "C42B1-1e29d926b4d5cb16-474c91c627b347cf-435964e390dc385a:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0014",
+      "reviewId": "C42B1-1e29d926b4d5cb16-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Tiger's Visit",
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0015",
+      "reviewId": "C42B1-1e29d926b4d5cb16-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0016",
+      "reviewId": "C42B1-1e29d926b4d5cb16-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-6c26a21cee1c40ab-6c26a21cee1c40ab:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0017",
+      "reviewId": "C42B1-1e29d926b4d5cb16-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "approve_proposal",
+      "approvedValue": 3,
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0018",
+      "reviewId": "C42B1-1e29d926b4d5cb16-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "战马降临",
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0019",
+      "reviewId": "C42B1-1e29d926b4d5cb16-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0020",
+      "reviewId": "C42B1-1e29d926b4d5cb16-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0021",
+      "reviewId": "C42B1-1e29d926b4d5cb16-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "unresolved",
+      "evidenceRefs": [],
+      "reason": "Frozen evidence does not reliably resolve this production-required field, so it remains a C4.2C blocker.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0022",
+      "reviewId": "C42B1-1e29d926b4d5cb16-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_TigersVisit18_Wisp",
+        "nameEn": "Tiger's Visit",
+        "nameZh": "战马降临"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-1e29d926b4d5cb16-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
+        "C42B1-1e29d926b4d5cb16-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0023",
+      "reviewId": "C42B1-1fbf628f3a02e38c-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "da_18_bronzespoon",
+        "nameEn": "Bronze Spoon",
+        "nameZh": "铜汤匙"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-1fbf628f3a02e38c-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-1fbf628f3a02e38c-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-1fbf628f3a02e38c-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0024",
+      "reviewId": "C42B1-221af1ad82a07f34-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_supercritical",
+        "nameEn": "Supercritical",
+        "nameZh": "超级暴击"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-221af1ad82a07f34-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-221af1ad82a07f34-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0025",
+      "reviewId": "C42B1-243b2d63a5b3d044-5c29b35b5d72ab74-8000d7a78ebe23d9",
+      "identity": {
+        "productionId": "snapshot_139_6fda4e76a4da",
+        "nameEn": "克隆弈子",
+        "nameZh": "克隆弈子"
+      },
+      "field": "nameEn",
+      "propositionKey": "locale-source-compatibility",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-243b2d63a5b3d044-5c29b35b5d72ab74-8000d7a78ebe23d9:E01"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0026",
+      "reviewId": "C42B1-243b2d63a5b3d044-c1953d7f5a150a59-279938d14fc47a15",
+      "identity": {
+        "productionId": "snapshot_139_6fda4e76a4da",
+        "nameEn": "克隆弈子",
+        "nameZh": "克隆弈子"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "production-prismatic-semantics",
+      "action": "approve_proposal",
+      "approvedValue": "复制你伤害最高的弈子。复制体造成100%伤害。",
+      "evidenceRefs": [
+        "C42B1-243b2d63a5b3d044-c1953d7f5a150a59-279938d14fc47a15:E01",
+        "C42B1-243b2d63a5b3d044-c1953d7f5a150a59-279938d14fc47a15:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0027",
+      "reviewId": "C42B1-2d0068157dd535c7-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_flashfire18",
+        "nameEn": "Flash Fire",
+        "nameZh": "爆燃"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-2d0068157dd535c7-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-2d0068157dd535c7-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0028",
+      "reviewId": "C42B1-2e2be922dcbe062b-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_infliction",
+        "nameEn": "Infliction",
+        "nameZh": "折磨"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-2e2be922dcbe062b-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-2e2be922dcbe062b-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0029",
+      "reviewId": "C42B1-3149d885ad5877c3-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "approve_explicit_value",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textEn": "Elderwood trait active",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-3149d885ad5877c3-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0030",
+      "reviewId": "C42B1-3149d885ad5877c3-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_PottedLifebloom18",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0031",
+      "reviewId": "C42B1-3149d885ad5877c3-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0032",
+      "reviewId": "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "effects.normal",
+      "propositionKey": "complete-effect-text",
+      "action": "approve_explicit_value",
+      "approvedValue": "Gain a temporary Lifeblossom.",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E01",
+        "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E02",
+        "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E03",
+        "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E04"
+      ],
+      "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0033",
+      "reviewId": "C42B1-3149d885ad5877c3-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Potted Lifebloom",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0034",
+      "reviewId": "C42B1-3149d885ad5877c3-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0035",
+      "reviewId": "C42B1-3149d885ad5877c3-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-6c26a21cee1c40ab-6c26a21cee1c40ab:E01",
+        "C42B1-3149d885ad5877c3-6c26a21cee1c40ab-6c26a21cee1c40ab:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0036",
+      "reviewId": "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
+        "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
+        "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+      ],
+      "reason": "Frozen evidence does not reliably resolve this production-required field, so it remains a C4.2C blocker.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0037",
+      "reviewId": "C42B1-3149d885ad5877c3-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "盆栽生命花",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0038",
+      "reviewId": "C42B1-3149d885ad5877c3-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0039",
+      "reviewId": "C42B1-3149d885ad5877c3-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0040",
+      "reviewId": "C42B1-3149d885ad5877c3-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "approve_explicit_value",
+      "approvedValue": "combat",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-edb2cd3b74c999af-edb2cd3b74c999af:E01",
+        "C42B1-3149d885ad5877c3-edb2cd3b74c999af-edb2cd3b74c999af:E02"
+      ],
+      "reason": "Manual taxonomy adjudication applies the general case-normalization rule to the frozen Combat category evidence.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0041",
+      "reviewId": "C42B1-3149d885ad5877c3-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_PottedLifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "nameZh": "盆栽生命花"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-3149d885ad5877c3-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
+        "C42B1-3149d885ad5877c3-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0042",
+      "reviewId": "C42B1-41198f1488eff97d-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_minorpolymorph",
+        "nameEn": "Minor Polymorph",
+        "nameZh": "低阶变形术"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-41198f1488eff97d-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-41198f1488eff97d-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0043",
+      "reviewId": "C42B1-492c06b2497070f5-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_standalone18",
+        "nameEn": "Stand Alone",
+        "nameZh": "孤身站场"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-492c06b2497070f5-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-492c06b2497070f5-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0044",
+      "reviewId": "C42B1-4b442444df636451-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_solargift18",
+        "nameEn": "Solar Gift",
+        "nameZh": "日蚀之礼"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-4b442444df636451-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-4b442444df636451-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0045",
+      "reviewId": "C42B1-4d158511496fb467-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_animateshop18",
+        "nameEn": "Animate Shop",
+        "nameZh": "活体商店"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-4d158511496fb467-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-4d158511496fb467-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0046",
+      "reviewId": "C42B1-4d63aff6a7ec2ac7-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_diversified18",
+        "nameEn": "Diversified",
+        "nameZh": "多样化"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-4d63aff6a7ec2ac7-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-4d63aff6a7ec2ac7-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0047",
+      "reviewId": "C42B1-4df24d923b305499-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_handofbaron18",
+        "nameEn": "Hand Of Baron",
+        "nameZh": "男爵之手"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-4df24d923b305499-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-4df24d923b305499-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0048",
+      "reviewId": "C42B1-5358719db2659d53-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_heroicsacrifice",
+        "nameEn": "Heroic Sacrifice",
+        "nameZh": "英勇就义"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-5358719db2659d53-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-5358719db2659d53-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0049",
+      "reviewId": "C42B1-5c19583bbd56b03d-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_searchparty18",
+        "nameEn": "Search Party",
+        "nameZh": "搜查队"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-5c19583bbd56b03d-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-5c19583bbd56b03d-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0050",
+      "reviewId": "C42B1-5d11e507a4aabbfe-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_stealthy18",
+        "nameEn": "Stealthy",
+        "nameZh": "鬼鬼祟祟"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-5d11e507a4aabbfe-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-5d11e507a4aabbfe-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0051",
+      "reviewId": "C42B1-5d219043ae3fa7f1-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_036_f484358ea1e5",
+        "nameEn": "Essence Theft",
+        "nameZh": "摄魂夺魄"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-5d219043ae3fa7f1-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-5d219043ae3fa7f1-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0052",
+      "reviewId": "C42B1-5d219043ae3fa7f1-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_036_f484358ea1e5",
+        "nameEn": "Essence Theft",
+        "nameZh": "摄魂夺魄"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-5d219043ae3fa7f1-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-5d219043ae3fa7f1-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-5d219043ae3fa7f1-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0053",
+      "reviewId": "C42B1-60c53dd61f97eec2-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_049_d60aa5ac9feb",
+        "nameEn": "Minor Gambit",
+        "nameZh": "低阶胜负手"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-60c53dd61f97eec2-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-60c53dd61f97eec2-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0054",
+      "reviewId": "C42B1-60c53dd61f97eec2-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_049_d60aa5ac9feb",
+        "nameEn": "Minor Gambit",
+        "nameZh": "低阶胜负手"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-60c53dd61f97eec2-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-60c53dd61f97eec2-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-60c53dd61f97eec2-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0055",
+      "reviewId": "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "requirements",
+      "propositionKey": "text-28eb12497083f553",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textEn": "Primal trait active",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0056",
+      "reviewId": "C42B1-61adda104b1b8139-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_BearsVisit18",
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0057",
+      "reviewId": "C42B1-61adda104b1b8139-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0058",
+      "reviewId": "C42B1-61adda104b1b8139-474c91c627b347cf-435964e390dc385a",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "effects.normal",
+      "propositionKey": "complete-effect-text",
+      "action": "approve_proposal",
+      "approvedValue": "Gain the Bear Primal buff for this combat.",
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-474c91c627b347cf-435964e390dc385a:E01",
+        "C42B1-61adda104b1b8139-474c91c627b347cf-435964e390dc385a:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0059",
+      "reviewId": "C42B1-61adda104b1b8139-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Bear's Visit",
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0060",
+      "reviewId": "C42B1-61adda104b1b8139-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0061",
+      "reviewId": "C42B1-61adda104b1b8139-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-6c26a21cee1c40ab-6c26a21cee1c40ab:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0062",
+      "reviewId": "C42B1-61adda104b1b8139-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "approve_proposal",
+      "approvedValue": 3,
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0063",
+      "reviewId": "C42B1-61adda104b1b8139-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "蛮熊降临",
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0064",
+      "reviewId": "C42B1-61adda104b1b8139-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0065",
+      "reviewId": "C42B1-61adda104b1b8139-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0066",
+      "reviewId": "C42B1-61adda104b1b8139-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "unresolved",
+      "evidenceRefs": [],
+      "reason": "Frozen evidence does not reliably resolve this production-required field, so it remains a C4.2C blocker.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0067",
+      "reviewId": "C42B1-61adda104b1b8139-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_BearsVisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "approve_proposal",
+      "approvedValue": "Gain the Tiger Primal buff for this combat.",
+      "evidenceRefs": [
+        "C42B1-61adda104b1b8139-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
+        "C42B1-61adda104b1b8139-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0068",
+      "reviewId": "C42B1-663c8330b87c508d-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_curiocart18",
+        "nameEn": "Curio Cart",
+        "nameZh": "珍品摆摊车"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-663c8330b87c508d-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-663c8330b87c508d-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0069",
+      "reviewId": "C42B1-688a6f8e75b5f8b6-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_lifedebt",
+        "nameEn": "Life Debt",
+        "nameZh": "以命为注"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-688a6f8e75b5f8b6-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-688a6f8e75b5f8b6-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0070",
+      "reviewId": "C42B1-6b9156cec7d39857-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_157_3ed870773960",
+        "nameEn": "Blood Ritual",
+        "nameZh": "血祭"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-6b9156cec7d39857-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-6b9156cec7d39857-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0071",
+      "reviewId": "C42B1-6b9156cec7d39857-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_157_3ed870773960",
+        "nameEn": "Blood Ritual",
+        "nameZh": "血祭"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-6b9156cec7d39857-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-6b9156cec7d39857-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-6b9156cec7d39857-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0072",
+      "reviewId": "C42B1-6e4293567854b7f5-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_121_1899d3fe4c61",
+        "nameEn": "Major Gambit",
+        "nameZh": "高阶胜负手"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-6e4293567854b7f5-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-6e4293567854b7f5-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0073",
+      "reviewId": "C42B1-6e4293567854b7f5-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_121_1899d3fe4c61",
+        "nameEn": "Major Gambit",
+        "nameZh": "高阶胜负手"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-6e4293567854b7f5-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-6e4293567854b7f5-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-6e4293567854b7f5-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0074",
+      "reviewId": "C42B1-71546de6e520d72d-c1953d7f5a150a59-279938d14fc47a15",
+      "identity": {
+        "productionId": "snapshot_021_534324382164",
+        "nameEn": "Truce",
+        "nameZh": "休战"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "production-prismatic-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-71546de6e520d72d-c1953d7f5a150a59-279938d14fc47a15:E01",
+        "C42B1-71546de6e520d72d-c1953d7f5a150a59-279938d14fc47a15:E02",
+        "C42B1-71546de6e520d72d-c1953d7f5a150a59-279938d14fc47a15:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0075",
+      "reviewId": "C42B1-71546de6e520d72d-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_021_534324382164",
+        "nameEn": "Truce",
+        "nameZh": "休战"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-71546de6e520d72d-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-71546de6e520d72d-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-71546de6e520d72d-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0076",
+      "reviewId": "C42B1-756d47408835e3ee-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_starfall",
+        "nameEn": "Starfall",
+        "nameZh": "星落"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-756d47408835e3ee-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-756d47408835e3ee-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0077",
+      "reviewId": "C42B1-7b0686898fcb8f64-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_051_e06d127b43f9",
+        "nameEn": "Flood",
+        "nameZh": "洪涝"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-7b0686898fcb8f64-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-7b0686898fcb8f64-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0078",
+      "reviewId": "C42B1-7b0686898fcb8f64-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_051_e06d127b43f9",
+        "nameEn": "Flood",
+        "nameZh": "洪涝"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-7b0686898fcb8f64-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-7b0686898fcb8f64-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-7b0686898fcb8f64-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0079",
+      "reviewId": "C42B1-889d50de77350bb7-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_majorpolymorph",
+        "nameEn": "Major Polymorph",
+        "nameZh": "高阶变形术"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-889d50de77350bb7-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-889d50de77350bb7-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0080",
+      "reviewId": "C42B1-8d5cfa1c2e05aa24-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_preppers",
+        "nameEn": "Preppers",
+        "nameZh": "未雨绸缪"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-8d5cfa1c2e05aa24-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-8d5cfa1c2e05aa24-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0081",
+      "reviewId": "C42B1-8eb276e8d7001658-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textZh": "战场上有至少1名携带装备的坦克",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-8eb276e8d7001658-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0082",
+      "reviewId": "C42B1-8eb276e8d7001658-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_MemorialDummy18",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0083",
+      "reviewId": "C42B1-8eb276e8d7001658-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0084",
+      "reviewId": "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "effects.normal",
+      "propositionKey": "complete-effect-text",
+      "action": "approve_explicit_value",
+      "approvedValue": "Your first itemized tank spawns a Dummy with their items on death.",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E01",
+        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E02",
+        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E03",
+        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E04"
+      ],
+      "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0085",
+      "reviewId": "C42B1-8eb276e8d7001658-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Memorial Dummy",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0086",
+      "reviewId": "C42B1-8eb276e8d7001658-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0087",
+      "reviewId": "C42B1-8eb276e8d7001658-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-6c26a21cee1c40ab-6c26a21cee1c40ab:E01",
+        "C42B1-8eb276e8d7001658-6c26a21cee1c40ab-6c26a21cee1c40ab:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0088",
+      "reviewId": "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "approve_proposal",
+      "approvedValue": 3,
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
+        "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
+        "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0089",
+      "reviewId": "C42B1-8eb276e8d7001658-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "衣冠冢",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0090",
+      "reviewId": "C42B1-8eb276e8d7001658-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0091",
+      "reviewId": "C42B1-8eb276e8d7001658-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0092",
+      "reviewId": "C42B1-8eb276e8d7001658-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "approve_explicit_value",
+      "approvedValue": "combat",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-edb2cd3b74c999af-edb2cd3b74c999af:E01",
+        "C42B1-8eb276e8d7001658-edb2cd3b74c999af-edb2cd3b74c999af:E02"
+      ],
+      "reason": "Manual taxonomy adjudication applies the general case-normalization rule to the frozen Combat category evidence.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0093",
+      "reviewId": "C42B1-8eb276e8d7001658-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_MemorialDummy18",
+        "nameEn": "Memorial Dummy",
+        "nameZh": "衣冠冢"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-8eb276e8d7001658-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0094",
+      "reviewId": "C42B1-969bd109c4491386-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_147_2dc94df4e3a5",
+        "nameEn": "Good Loss",
+        "nameZh": "输得漂亮"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-969bd109c4491386-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-969bd109c4491386-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0095",
+      "reviewId": "C42B1-969bd109c4491386-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_147_2dc94df4e3a5",
+        "nameEn": "Good Loss",
+        "nameZh": "输得漂亮"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-969bd109c4491386-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-969bd109c4491386-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-969bd109c4491386-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0096",
+      "reviewId": "C42B1-97607f1abf9b80bc-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_allfours",
+        "nameEn": "All Fours",
+        "nameZh": "全4费商店"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-97607f1abf9b80bc-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-97607f1abf9b80bc-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0097",
+      "reviewId": "C42B1-97d13664a8c88086-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_killingfrenzy",
+        "nameEn": "Killing Frenzy",
+        "nameZh": "屠戮狂暴"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-97d13664a8c88086-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-97d13664a8c88086-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0098",
+      "reviewId": "C42B1-9fc932bfcf446006-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_peddler18",
+        "nameEn": "Peddler",
+        "nameZh": "小贩"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-9fc932bfcf446006-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-9fc932bfcf446006-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0099",
+      "reviewId": "C42B1-a9c8ae04360baa8e-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_jungling18",
+        "nameEn": "Jungling",
+        "nameZh": "野区"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-a9c8ae04360baa8e-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-a9c8ae04360baa8e-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0100",
+      "reviewId": "C42B1-a9c944e104b0f5f4-5c29b35b5d72ab74-8000d7a78ebe23d9",
+      "identity": {
+        "productionId": "snapshot_106_1bce73a8632c",
+        "nameEn": "射手标记",
+        "nameZh": "射手标记"
+      },
+      "field": "nameEn",
+      "propositionKey": "locale-source-compatibility",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-a9c944e104b0f5f4-5c29b35b5d72ab74-8000d7a78ebe23d9:E01"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0101",
+      "reviewId": "C42B1-ae4c64f43e35dca6-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_solitudescloak18",
+        "nameEn": "Solitude's Cloak",
+        "nameZh": "独行斗篷"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-ae4c64f43e35dca6-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-ae4c64f43e35dca6-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0102",
+      "reviewId": "C42B1-b04cfba8f3f5c23e-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_wrappedinthorns18",
+        "nameEn": "Wrapped In Thorns",
+        "nameZh": "荆棘环身"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-b04cfba8f3f5c23e-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-b04cfba8f3f5c23e-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0103",
+      "reviewId": "C42B1-b411c18774fb938b-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_trophyhunter18",
+        "nameEn": "Trophy Hunter",
+        "nameZh": "猎手的黄金之路"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-b411c18774fb938b-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-b411c18774fb938b-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0104",
+      "reviewId": "C42B1-b8f04e7f75a0fbbf-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_alltwos",
+        "nameEn": "All Twos",
+        "nameZh": "全2费商店"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-b8f04e7f75a0fbbf-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-b8f04e7f75a0fbbf-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0105",
+      "reviewId": "C42B1-b946a119b622ba3f-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_manarichsoil18",
+        "nameEn": "Mana-Rich Soil",
+        "nameZh": "富魔之壤"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-b946a119b622ba3f-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-b946a119b622ba3f-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0106",
+      "reviewId": "C42B1-b9de5415b0dbebaf-5c29b35b5d72ab74-8000d7a78ebe23d9",
+      "identity": {
+        "productionId": "snapshot_085_b53a01d778ee",
+        "nameEn": "治疗池",
+        "nameZh": "治疗池"
+      },
+      "field": "nameEn",
+      "propositionKey": "locale-source-compatibility",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-b9de5415b0dbebaf-5c29b35b5d72ab74-8000d7a78ebe23d9:E01"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0107",
+      "reviewId": "C42B1-bbbecf24acf3681f-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "approve_explicit_value",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textEn": "Elderwood trait active",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-bbbecf24acf3681f-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0108",
+      "reviewId": "C42B1-bbbecf24acf3681f-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_PottedStonebark18",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0109",
+      "reviewId": "C42B1-bbbecf24acf3681f-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0110",
+      "reviewId": "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "effects.normal",
+      "propositionKey": "complete-effect-text",
+      "action": "approve_explicit_value",
+      "approvedValue": "Gain a temporary Stonebark Tree.",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E01",
+        "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E02",
+        "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E03",
+        "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E04"
+      ],
+      "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0111",
+      "reviewId": "C42B1-bbbecf24acf3681f-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Potted Stonebark",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0112",
+      "reviewId": "C42B1-bbbecf24acf3681f-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0113",
+      "reviewId": "C42B1-bbbecf24acf3681f-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-6c26a21cee1c40ab-6c26a21cee1c40ab:E01",
+        "C42B1-bbbecf24acf3681f-6c26a21cee1c40ab-6c26a21cee1c40ab:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0114",
+      "reviewId": "C42B1-bbbecf24acf3681f-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "approve_proposal",
+      "approvedValue": 2,
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
+        "C42B1-bbbecf24acf3681f-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
+        "C42B1-bbbecf24acf3681f-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0115",
+      "reviewId": "C42B1-bbbecf24acf3681f-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "盆栽石皮树",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0116",
+      "reviewId": "C42B1-bbbecf24acf3681f-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0117",
+      "reviewId": "C42B1-bbbecf24acf3681f-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0118",
+      "reviewId": "C42B1-bbbecf24acf3681f-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "approve_explicit_value",
+      "approvedValue": "combat",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-edb2cd3b74c999af-edb2cd3b74c999af:E01",
+        "C42B1-bbbecf24acf3681f-edb2cd3b74c999af-edb2cd3b74c999af:E02"
+      ],
+      "reason": "Manual taxonomy adjudication applies the general case-normalization rule to the frozen Combat category evidence.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0119",
+      "reviewId": "C42B1-bbbecf24acf3681f-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_PottedStonebark18",
+        "nameEn": "Potted Stonebark",
+        "nameZh": "盆栽石皮树"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-bbbecf24acf3681f-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
+        "C42B1-bbbecf24acf3681f-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0120",
+      "reviewId": "C42B1-bcefdf67d05cebbd-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_022_fc7538964718",
+        "nameEn": "Sinister Deal",
+        "nameZh": "不祥交易"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-bcefdf67d05cebbd-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-bcefdf67d05cebbd-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0121",
+      "reviewId": "C42B1-bcefdf67d05cebbd-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_022_fc7538964718",
+        "nameEn": "Sinister Deal",
+        "nameZh": "不祥交易"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-bcefdf67d05cebbd-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-bcefdf67d05cebbd-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-bcefdf67d05cebbd-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0122",
+      "reviewId": "C42B1-bf8fcb1f8880f5bd-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_marksmensgale18",
+        "nameEn": "Marksmen's Gale",
+        "nameZh": "射手狂风"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-bf8fcb1f8880f5bd-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-bf8fcb1f8880f5bd-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0123",
+      "reviewId": "C42B1-c04fda4d78921c08-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_improvedreach18",
+        "nameEn": "Improved Reach",
+        "nameZh": "瞄准镜"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-c04fda4d78921c08-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-c04fda4d78921c08-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0124",
+      "reviewId": "C42B1-c2b19aadf385c138-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_natureswrath18",
+        "nameEn": "Nature's Wrath",
+        "nameZh": "自然之怒"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-c2b19aadf385c138-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-c2b19aadf385c138-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0125",
+      "reviewId": "C42B1-c3ae6ceeb957ec88-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_048_cbc77e083fc2",
+        "nameEn": "Take One With Ya",
+        "nameZh": "带一个走"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-c3ae6ceeb957ec88-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-c3ae6ceeb957ec88-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0126",
+      "reviewId": "C42B1-c3ae6ceeb957ec88-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_048_cbc77e083fc2",
+        "nameEn": "Take One With Ya",
+        "nameZh": "带一个走"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-c3ae6ceeb957ec88-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-c3ae6ceeb957ec88-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-c3ae6ceeb957ec88-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0127",
+      "reviewId": "C42B1-c915fb91e4aeec4e-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_artifactinate18",
+        "nameEn": "Artifactinate",
+        "nameZh": "神器化"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-c915fb91e4aeec4e-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-c915fb91e4aeec4e-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0128",
+      "reviewId": "C42B1-cb8c524f24a0727c-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_bulwark18",
+        "nameEn": "Bulwark",
+        "nameZh": "壁垒"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-cb8c524f24a0727c-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-cb8c524f24a0727c-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0129",
+      "reviewId": "C42B1-cb930f4de6a3e761-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_boostershot18",
+        "nameEn": "Booster Shot",
+        "nameZh": "强化激素"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-cb930f4de6a3e761-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-cb930f4de6a3e761-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0130",
+      "reviewId": "C42B1-cca77b72bd5a0d62-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_fieldofmice",
+        "nameEn": "Field of Mice",
+        "nameZh": "小人国"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-cca77b72bd5a0d62-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-cca77b72bd5a0d62-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0131",
+      "reviewId": "C42B1-d1bed026cb65e904-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_120_cf0b477ffe00",
+        "nameEn": "Minor Blood Ritual",
+        "nameZh": "小型血祭"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-d1bed026cb65e904-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-d1bed026cb65e904-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0132",
+      "reviewId": "C42B1-d1bed026cb65e904-ff0b7ab51a68bba3-cca2ada2d952ab78",
+      "identity": {
+        "productionId": "snapshot_120_cf0b477ffe00",
+        "nameEn": "Minor Blood Ritual",
+        "nameZh": "小型血祭"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "production-blossom-semantics",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-d1bed026cb65e904-ff0b7ab51a68bba3-cca2ada2d952ab78:E01",
+        "C42B1-d1bed026cb65e904-ff0b7ab51a68bba3-cca2ada2d952ab78:E02",
+        "C42B1-d1bed026cb65e904-ff0b7ab51a68bba3-cca2ada2d952ab78:E03"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0133",
+      "reviewId": "C42B1-d4f0807ceeb6cc23-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_prolificpower",
+        "nameEn": "Prolific Power",
+        "nameZh": "元气满满"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-d4f0807ceeb6cc23-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-d4f0807ceeb6cc23-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0134",
+      "reviewId": "C42B1-d5645cd0909aeafa-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "approve_explicit_value",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textEn": "Sprykin trait active",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-d5645cd0909aeafa-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0135",
+      "reviewId": "C42B1-d5645cd0909aeafa-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_Snacktime18",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0136",
+      "reviewId": "C42B1-d5645cd0909aeafa-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0137",
+      "reviewId": "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "effects.normal",
+      "propositionKey": "client-variable-executethreshold",
+      "action": "approve_explicit_value",
+      "approvedValue": "The BFF eats enemies he damages under @ExecuteThreshold*100@% Max Health.",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E01",
+        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E02",
+        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E03",
+        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E04"
+      ],
+      "reason": "Manual review approves the frozen English complete effect resolving the client ExecuteThreshold proposition to 15%; the numeric proposition is not used as the entire effect.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0138",
+      "reviewId": "C42B1-d5645cd0909aeafa-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Snacktime!",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0139",
+      "reviewId": "C42B1-d5645cd0909aeafa-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0140",
+      "reviewId": "C42B1-d5645cd0909aeafa-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-6c26a21cee1c40ab-6c26a21cee1c40ab:E01",
+        "C42B1-d5645cd0909aeafa-6c26a21cee1c40ab-6c26a21cee1c40ab:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0141",
+      "reviewId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
+        "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
+        "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+      ],
+      "reason": "Frozen evidence does not reliably resolve this production-required field, so it remains a C4.2C blocker.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0142",
+      "reviewId": "C42B1-d5645cd0909aeafa-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "点心时间到！",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0143",
+      "reviewId": "C42B1-d5645cd0909aeafa-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0144",
+      "reviewId": "C42B1-d5645cd0909aeafa-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0145",
+      "reviewId": "C42B1-d5645cd0909aeafa-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "approve_explicit_value",
+      "approvedValue": "combat",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-edb2cd3b74c999af-edb2cd3b74c999af:E01",
+        "C42B1-d5645cd0909aeafa-edb2cd3b74c999af-edb2cd3b74c999af:E02"
+      ],
+      "reason": "Manual taxonomy adjudication applies the general case-normalization rule to the frozen Combat category evidence.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0146",
+      "reviewId": "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_Snacktime18",
+        "nameEn": "Snacktime!",
+        "nameZh": "点心时间到！"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "approve_proposal",
+      "approvedValue": "The BFF eats enemies he damages under 22% Max Health.",
+      "evidenceRefs": [
+        "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
+        "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0147",
+      "reviewId": "C42B1-d6b0fc95931e4827-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "approve_explicit_value",
+      "approvedValue": [
+        {
+          "type": "source_text",
+          "textEn": "Primal trait active",
+          "machineEvaluable": false
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-d6b0fc95931e4827-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0148",
+      "reviewId": "C42B1-d6b0fc95931e4827-1cf429eb8c681c46-1cf429eb8c681c46",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "riotId",
+      "propositionKey": "riotId",
+      "action": "approve_proposal",
+      "approvedValue": "DA_TurtlesVisit18",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-1cf429eb8c681c46-1cf429eb8c681c46:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0149",
+      "reviewId": "C42B1-d6b0fc95931e4827-309c4ae2e3468872-309c4ae2e3468872",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "minimumAffordableGold",
+      "propositionKey": "minimumAffordableGold",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0150",
+      "reviewId": "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "effects.normal",
+      "propositionKey": "complete-effect-text",
+      "action": "approve_explicit_value",
+      "approvedValue": "Gain the Turtle Primal buff for this combat.",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E01",
+        "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E02",
+        "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E03",
+        "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E04"
+      ],
+      "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0151",
+      "reviewId": "C42B1-d6b0fc95931e4827-5c29b35b5d72ab74-5c29b35b5d72ab74",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "nameEn",
+      "propositionKey": "nameEn",
+      "action": "approve_proposal",
+      "approvedValue": "Turtle's Visit",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-5c29b35b5d72ab74-5c29b35b5d72ab74:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0152",
+      "reviewId": "C42B1-d6b0fc95931e4827-6b6e7c24377cf0a5-6b6e7c24377cf0a5",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "oncePerGame",
+      "propositionKey": "oncePerGame",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0153",
+      "reviewId": "C42B1-d6b0fc95931e4827-6c26a21cee1c40ab-6c26a21cee1c40ab",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "stageRanges",
+      "propositionKey": "stageRanges",
+      "action": "approve_proposal",
+      "approvedValue": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-6c26a21cee1c40ab-6c26a21cee1c40ab:E01",
+        "C42B1-d6b0fc95931e4827-6c26a21cee1c40ab-6c26a21cee1c40ab:E02"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0154",
+      "reviewId": "C42B1-d6b0fc95931e4827-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "cost",
+      "propositionKey": "cost",
+      "action": "approve_proposal",
+      "approvedValue": 3,
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
+        "C42B1-d6b0fc95931e4827-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
+        "C42B1-d6b0fc95931e4827-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0155",
+      "reviewId": "C42B1-d6b0fc95931e4827-aa204468beecfc64-aa204468beecfc64",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "nameZh",
+      "propositionKey": "nameZh",
+      "action": "approve_proposal",
+      "approvedValue": "灵龟降临",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-aa204468beecfc64-aa204468beecfc64:E01"
+      ],
+      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0156",
+      "reviewId": "C42B1-d6b0fc95931e4827-c1953d7f5a150a59-c1953d7f5a150a59",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "effects.prismatic",
+      "propositionKey": "effects.prismatic",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-c1953d7f5a150a59-c1953d7f5a150a59:E01"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0157",
+      "reviewId": "C42B1-d6b0fc95931e4827-e836891d674365cc-e836891d674365cc",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "reofferCooldownShops",
+      "propositionKey": "reofferCooldownShops",
+      "action": "accepted_unknown",
+      "evidenceRefs": [],
+      "reason": "This optional knowledge field has no reliable value; preserve omission rather than materializing false, null, or zero.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0158",
+      "reviewId": "C42B1-d6b0fc95931e4827-edb2cd3b74c999af-edb2cd3b74c999af",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "category",
+      "propositionKey": "category",
+      "action": "approve_explicit_value",
+      "approvedValue": "combat",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-edb2cd3b74c999af-edb2cd3b74c999af:E01",
+        "C42B1-d6b0fc95931e4827-edb2cd3b74c999af-edb2cd3b74c999af:E02"
+      ],
+      "reason": "Manual taxonomy adjudication applies the general case-normalization rule to the frozen Combat category evidence.",
+      "applyPolicy": "apply"
+    },
+    {
+      "decisionId": "C4B2-0159",
+      "reviewId": "C42B1-d6b0fc95931e4827-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
+      "identity": {
+        "communityDragonId": "DA_TurtlesVisit18",
+        "nameEn": "Turtle's Visit",
+        "nameZh": "灵龟降临"
+      },
+      "field": "effects.blossom",
+      "propositionKey": "effects.blossom",
+      "action": "accepted_unknown",
+      "evidenceRefs": [
+        "C42B1-d6b0fc95931e4827-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
+        "C42B1-d6b0fc95931e4827-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+      ],
+      "reason": "Optional representation is not established by positive evidence; absence is not inferred from non-observation.",
+      "applyPolicy": "defer"
+    },
+    {
+      "decisionId": "C4B2-0160",
+      "reviewId": "C42B1-d85b2be4fa69255e-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_verdantvitality",
+        "nameEn": "Verdant Vitality",
+        "nameZh": "绿意盎然"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-d85b2be4fa69255e-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-d85b2be4fa69255e-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0161",
+      "reviewId": "C42B1-dba3eb7987339ce0-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_refreshinglight18",
+        "nameEn": "Refreshing Light",
+        "nameZh": "焕新之光"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-dba3eb7987339ce0-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-dba3eb7987339ce0-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0162",
+      "reviewId": "C42B1-dd5ac3021e0e99e0-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_herosentrance18",
+        "nameEn": "Hero's Entrance",
+        "nameZh": "英雄登场"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-dd5ac3021e0e99e0-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-dd5ac3021e0e99e0-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0163",
+      "reviewId": "C42B1-dd9edf2b3bbb110d-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_tatteredarmor",
+        "nameEn": "Tattered Armor",
+        "nameZh": "衣衫褴褛"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-dd9edf2b3bbb110d-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-dd9edf2b3bbb110d-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0164",
+      "reviewId": "C42B1-de9ee8b40be6df42-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_abandonship18",
+        "nameEn": "Abandon Ship",
+        "nameZh": "弃船"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-de9ee8b40be6df42-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-de9ee8b40be6df42-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0165",
+      "reviewId": "C42B1-e3be0fe8345be415-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_forestmage",
+        "nameEn": "Forest Mage",
+        "nameZh": "森林魔法师"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-e3be0fe8345be415-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-e3be0fe8345be415-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0166",
+      "reviewId": "C42B1-e82ec8709ee47222-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_homingfireflies18",
+        "nameEn": "Homing Fireflies",
+        "nameZh": "萤火虫之家"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-e82ec8709ee47222-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-e82ec8709ee47222-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0167",
+      "reviewId": "C42B1-e8c6ec2de7b1a2b0-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_allfives",
+        "nameEn": "All Fives",
+        "nameZh": "全5费商店"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-e8c6ec2de7b1a2b0-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-e8c6ec2de7b1a2b0-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0168",
+      "reviewId": "C42B1-e8e469bdefea273c-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_allones",
+        "nameEn": "All Ones",
+        "nameZh": "全1费商店"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-e8e469bdefea273c-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-e8e469bdefea273c-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0169",
+      "reviewId": "C42B1-e948845c2c7e546a-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_giantsaura18",
+        "nameEn": "Giant's Aura",
+        "nameZh": "巨人光环"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-e948845c2c7e546a-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-e948845c2c7e546a-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0170",
+      "reviewId": "C42B1-e94c11898ef31246-5c29b35b5d72ab74-8000d7a78ebe23d9",
+      "identity": {
+        "productionId": "snapshot_086_d83df5e4cd8a",
+        "nameEn": "黄金之路",
+        "nameZh": "黄金之路"
+      },
+      "field": "nameEn",
+      "propositionKey": "locale-source-compatibility",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-e94c11898ef31246-5c29b35b5d72ab74-8000d7a78ebe23d9:E01"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0171",
+      "reviewId": "C42B1-edd168953cdcd3a4-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_polymorph",
+        "nameEn": "Polymorph",
+        "nameZh": "变形术"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-edd168953cdcd3a4-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-edd168953cdcd3a4-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0172",
+      "reviewId": "C42B1-f9e56a6a8c2409bf-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_idlecraftsman18",
+        "nameEn": "Idle Craftsman",
+        "nameZh": "闲散工匠"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-f9e56a6a8c2409bf-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-f9e56a6a8c2409bf-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0173",
+      "reviewId": "C42B1-fd65c9726b693d79-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "da_18_pocketchange",
+        "nameEn": "Pocket Change",
+        "nameZh": "零花钱"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-fd65c9726b693d79-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-fd65c9726b693d79-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    },
+    {
+      "decisionId": "C4B2-0174",
+      "reviewId": "C42B1-ff5bef34a8bac33c-10762e1094dbeeab-60243de4dc2ce66d",
+      "identity": {
+        "productionId": "snapshot_136_c467ccd546d7",
+        "nameEn": "Component Bounty",
+        "nameZh": "散件赏金"
+      },
+      "field": "requirements",
+      "propositionKey": "unresolved-set-level-semantic-comparison",
+      "action": "unresolved",
+      "evidenceRefs": [
+        "C42B1-ff5bef34a8bac33c-10762e1094dbeeab-60243de4dc2ce66d:E01",
+        "C42B1-ff5bef34a8bac33c-10762e1094dbeeab-60243de4dc2ce66d:E02"
+      ],
+      "reason": "Human review acknowledges conflicting or insufficient evidence without confirming the current production value; Apply must leave it unchanged.",
+      "applyPolicy": "no_change"
+    }
+  ]
+}
