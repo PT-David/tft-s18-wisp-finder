@@ -240,7 +240,8 @@
         "identity_review",
         "riotId",
         "canonical_client_key",
-        "display_name_cross_check"
+        "display_name_cross_check",
+        "effect_cross_check"
       ],
       "confidence": "client_data",
       "relevantRecordCount": 8,
@@ -270,6 +271,8 @@
       "fetchStatus": "browser_snapshot_imported",
       "useFor": [
         "identity_cross_check",
+        "cost_cross_check",
+        "effect_cross_check",
         "stageRanges_cross_check",
         "blossom_cross_check",
         "prismatic_cross_check",

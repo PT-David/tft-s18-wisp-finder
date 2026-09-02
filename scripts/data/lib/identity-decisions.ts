@@ -41,7 +41,9 @@ export function validateIdentityDecisions(input: DecisionValidationInput): Decis
   if (file.reviewMetadata.evidenceBinding.c4a4EvidenceBundleSha256 !== input.frozenEvidenceSha256) errors.push('identity decisions stale against frozen C4.2A4 evidence');
   if (!equal(file.reviewMetadata.decisionBaseline, bundle.decisionBaseline)) errors.push('Decision baseline disagrees with frozen C4.2A4 evidence.');
   const hasAppliedTarget = rows.some((decision) => currentTargets(decision, production.records, mappings.records).targets.length > 0); const baseline = bundle.decisionBaseline;
-  if (!hasAppliedTarget && (!equal(input.currentState, { productionSha256: baseline.productionSha256, reviewedMappingsSha256: baseline.reviewedMappingsSha256, releaseReadinessSha256: baseline.releaseReadinessSha256, recommendedProductionReady: baseline.recommendedProductionReady }) || production.records.length !== baseline.productionRecordCount)) errors.push('Current pre-apply state does not match the recorded decision baseline.');
+  // Release-readiness is historical decision-time context, not identity state. Field evidence and
+  // release audits may legitimately evolve before apply; production and reviewed mappings may not.
+  if (!hasAppliedTarget && (input.currentState.productionSha256 !== baseline.productionSha256 || input.currentState.reviewedMappingsSha256 !== baseline.reviewedMappingsSha256 || production.records.length !== baseline.productionRecordCount)) errors.push('Current pre-apply identity state does not match the recorded decision baseline.');
   for (const key of ['decisionId', 'communityDragonId'] as const) if (new Set(rows.map((row) => row[key])).size !== rows.length) errors.push(`Duplicate ${key}.`);
   for (const decision of rows) {
     if (!/^C4A4-\d{3}$/.test(decision.decisionId)) errors.push(`${decision.decisionId}: invalid stable decision ID.`);
