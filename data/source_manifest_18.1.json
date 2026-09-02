@@ -1,6 +1,6 @@
 {
   "patch": "18.1",
-  "snapshotAt": "2026-09-02T05:27:39Z",
+  "snapshotAt": "2026-09-02T11:16:11Z",
   "sources": [
     {
       "sourceId": "riot_patch_18_1_20260828",
@@ -224,6 +224,28 @@
       "relevantRecordCount": 0,
       "warning": "Ordinary GET returned an AWS WAF challenge; no new record evidence was consumed.",
       "scope": "c4.2a2_identity_review"
+    },
+    {
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "tier": "B",
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
+      "retrievedAt": "2026-09-02T11:16:11Z",
+      "upstreamModifiedAt": "2026-08-29T00:53:26Z / 2026-08-29T00:53:30Z",
+      "httpStatus": 200,
+      "fetchStatus": "fetched_and_extracted",
+      "sha256": "67abcb0d6f11b020c2f413cb759d17442df62ad31026b4e62bd9493837087193",
+      "snapshotPath": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
+      "locale": "multi",
+      "useFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "display_name_cross_check"
+      ],
+      "confidence": "client_data",
+      "relevantRecordCount": 8,
+      "relevantUniqueApiNameCount": 4,
+      "scope": "c4.2a3_catalog_delta"
     },
     {
       "sourceId": "lolchess_set18_wisps_browser_import",

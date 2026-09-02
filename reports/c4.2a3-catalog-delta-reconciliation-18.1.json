@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "patch": "18.1",
   "purpose": "catalog_delta_reconciliation_audit_only",
   "baseline": {
@@ -11,11 +11,18 @@
   },
   "oldCatalog": {
     "recordCount": 169,
+    "localeCoverage": [
+      "zh_cn"
+    ],
     "snapshotPath": "data/raw/18.1/datatft-wisps-zh.json",
     "snapshotSha256": "a35d3a2506f033349654ca9c91cad14dcf6d563e54238969c9d4332b9d609d26"
   },
   "freshCatalog": {
     "recordCount": 176,
+    "localeCoverage": [
+      "en_us",
+      "zh_cn"
+    ],
     "snapshotPaths": [
       "data/raw/18.1/20260902/datatft-rendered-en-us.html",
       "data/raw/18.1/20260902/datatft-rendered.html"
@@ -25,10 +32,48 @@
       "zh": "5a468e47e75720b448730090526643501a7d1dcf990f7c98bf765d48b2eba3aa"
     }
   },
+  "freshBearTigerClientEvidence": {
+    "snapshotPath": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
+    "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+    "retrievedAt": "2026-09-02T11:16:11Z",
+    "upstreamModifiedAt": "2026-08-29T00:53:30Z / 2026-08-29T00:53:26Z",
+    "snapshotSha256": "67abcb0d6f11b020c2f413cb759d17442df62ad31026b4e62bd9493837087193",
+    "locales": {
+      "en_us": {
+        "url": "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
+        "retrievedAt": "2026-09-02T11:16:11Z",
+        "upstreamModifiedAt": "2026-08-29T00:53:30Z",
+        "rawSha256": "d91ba4ad7db5a6d896132ba3df8da0a2092ed13855f1a9660dbe7e12bdcd77f5",
+        "extractedSha256": "70415cdd4c2c0a0024d6467c3d06f25ad657ff715c9e820327deecf2e5510921",
+        "recordCount": 4
+      },
+      "zh_cn": {
+        "url": "https://raw.communitydragon.org/latest/cdragon/tft/zh_cn.json",
+        "retrievedAt": "2026-09-02T11:16:11Z",
+        "upstreamModifiedAt": "2026-08-29T00:53:26Z",
+        "rawSha256": "8f23126c271b4acfde58e566677cbfacf0421f9ff9035acb9e9f60722b49306e",
+        "extractedSha256": "42497e8f6e86d7c7ab14c517b449c8c6ddcd1f5e10fcff5a645fd199ce1c8994",
+        "recordCount": 4
+      }
+    }
+  },
   "sourceIndexGovernance": {
     "semantics": "zero_based_rendered_catalog_ordinal_not_stable_identity",
     "usedAsStableIdentity": false,
-    "warning": "Position supports sequence audit only; index equality or index >= 169 cannot establish identity."
+    "warning": "Position supports sequence audit only; index equality or index >= old count cannot establish identity."
+  },
+  "alignmentEvidenceScope": {
+    "proven": "All old Chinese DataTFT display-name rows align one-to-one at the same ordinal in the fresh Chinese catalog.",
+    "notProven": "The old snapshot contains no English names, so this audit does not claim bilingual identity equality or re-audit all fields.",
+    "sharedLocaleNameUniqueness": {
+      "locale": "zh",
+      "oldUniqueKeys": 169,
+      "oldRowCount": 169,
+      "freshUniqueKeys": 176,
+      "freshRowCount": 176,
+      "allOldKeysUnique": true,
+      "allFreshKeysUnique": true
+    }
   },
   "alignmentSummary": {
     "unchangedRows": 169,
@@ -36,8 +81,8 @@
     "shiftedRows": 0,
     "oldOnlyRows": 0,
     "freshOnlyRows": 7,
-    "variantSplitRows": 0,
-    "ambiguousRows": 0
+    "ambiguousRows": 0,
+    "variantSplitRows": 0
   },
   "rowMappings": [
     {
@@ -45,7 +90,7 @@
       "oldIndex": 0,
       "freshIndex": 0,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -53,7 +98,7 @@
       "oldIndex": 1,
       "freshIndex": 1,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -61,7 +106,7 @@
       "oldIndex": 2,
       "freshIndex": 2,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -69,7 +114,7 @@
       "oldIndex": 3,
       "freshIndex": 3,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -77,7 +122,7 @@
       "oldIndex": 4,
       "freshIndex": 4,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -85,7 +130,7 @@
       "oldIndex": 5,
       "freshIndex": 5,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -93,7 +138,7 @@
       "oldIndex": 6,
       "freshIndex": 6,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -101,7 +146,7 @@
       "oldIndex": 7,
       "freshIndex": 7,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -109,7 +154,7 @@
       "oldIndex": 8,
       "freshIndex": 8,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -117,7 +162,7 @@
       "oldIndex": 9,
       "freshIndex": 9,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -125,7 +170,7 @@
       "oldIndex": 10,
       "freshIndex": 10,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -133,7 +178,7 @@
       "oldIndex": 11,
       "freshIndex": 11,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -141,7 +186,7 @@
       "oldIndex": 12,
       "freshIndex": 12,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -149,7 +194,7 @@
       "oldIndex": 13,
       "freshIndex": 13,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -157,7 +202,7 @@
       "oldIndex": 14,
       "freshIndex": 14,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -165,7 +210,7 @@
       "oldIndex": 15,
       "freshIndex": 15,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -173,7 +218,7 @@
       "oldIndex": 16,
       "freshIndex": 16,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -181,7 +226,7 @@
       "oldIndex": 17,
       "freshIndex": 17,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -189,7 +234,7 @@
       "oldIndex": 18,
       "freshIndex": 18,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -197,7 +242,7 @@
       "oldIndex": 19,
       "freshIndex": 19,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -205,7 +250,7 @@
       "oldIndex": 20,
       "freshIndex": 20,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -213,7 +258,7 @@
       "oldIndex": 21,
       "freshIndex": 21,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -221,7 +266,7 @@
       "oldIndex": 22,
       "freshIndex": 22,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -229,7 +274,7 @@
       "oldIndex": 23,
       "freshIndex": 23,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -237,7 +282,7 @@
       "oldIndex": 24,
       "freshIndex": 24,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -245,7 +290,7 @@
       "oldIndex": 25,
       "freshIndex": 25,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -253,7 +298,7 @@
       "oldIndex": 26,
       "freshIndex": 26,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -261,7 +306,7 @@
       "oldIndex": 27,
       "freshIndex": 27,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -269,7 +314,7 @@
       "oldIndex": 28,
       "freshIndex": 28,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -277,7 +322,7 @@
       "oldIndex": 29,
       "freshIndex": 29,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -285,7 +330,7 @@
       "oldIndex": 30,
       "freshIndex": 30,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -293,7 +338,7 @@
       "oldIndex": 31,
       "freshIndex": 31,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -301,7 +346,7 @@
       "oldIndex": 32,
       "freshIndex": 32,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -309,7 +354,7 @@
       "oldIndex": 33,
       "freshIndex": 33,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -317,7 +362,7 @@
       "oldIndex": 34,
       "freshIndex": 34,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -325,7 +370,7 @@
       "oldIndex": 35,
       "freshIndex": 35,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -333,7 +378,7 @@
       "oldIndex": 36,
       "freshIndex": 36,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -341,7 +386,7 @@
       "oldIndex": 37,
       "freshIndex": 37,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -349,7 +394,7 @@
       "oldIndex": 38,
       "freshIndex": 38,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -357,7 +402,7 @@
       "oldIndex": 39,
       "freshIndex": 39,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -365,7 +410,7 @@
       "oldIndex": 40,
       "freshIndex": 40,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -373,7 +418,7 @@
       "oldIndex": 41,
       "freshIndex": 41,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -381,7 +426,7 @@
       "oldIndex": 42,
       "freshIndex": 42,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -389,7 +434,7 @@
       "oldIndex": 43,
       "freshIndex": 43,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -397,7 +442,7 @@
       "oldIndex": 44,
       "freshIndex": 44,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -405,7 +450,7 @@
       "oldIndex": 45,
       "freshIndex": 45,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -413,7 +458,7 @@
       "oldIndex": 46,
       "freshIndex": 46,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -421,7 +466,7 @@
       "oldIndex": 47,
       "freshIndex": 47,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -429,7 +474,7 @@
       "oldIndex": 48,
       "freshIndex": 48,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -437,7 +482,7 @@
       "oldIndex": 49,
       "freshIndex": 49,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -445,7 +490,7 @@
       "oldIndex": 50,
       "freshIndex": 50,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -453,7 +498,7 @@
       "oldIndex": 51,
       "freshIndex": 51,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -461,7 +506,7 @@
       "oldIndex": 52,
       "freshIndex": 52,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -469,7 +514,7 @@
       "oldIndex": 53,
       "freshIndex": 53,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -477,7 +522,7 @@
       "oldIndex": 54,
       "freshIndex": 54,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -485,7 +530,7 @@
       "oldIndex": 55,
       "freshIndex": 55,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -493,7 +538,7 @@
       "oldIndex": 56,
       "freshIndex": 56,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -501,7 +546,7 @@
       "oldIndex": 57,
       "freshIndex": 57,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -509,7 +554,7 @@
       "oldIndex": 58,
       "freshIndex": 58,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -517,7 +562,7 @@
       "oldIndex": 59,
       "freshIndex": 59,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -525,7 +570,7 @@
       "oldIndex": 60,
       "freshIndex": 60,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -533,7 +578,7 @@
       "oldIndex": 61,
       "freshIndex": 61,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -541,7 +586,7 @@
       "oldIndex": 62,
       "freshIndex": 62,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -549,7 +594,7 @@
       "oldIndex": 63,
       "freshIndex": 63,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -557,7 +602,7 @@
       "oldIndex": 64,
       "freshIndex": 64,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -565,7 +610,7 @@
       "oldIndex": 65,
       "freshIndex": 65,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -573,7 +618,7 @@
       "oldIndex": 66,
       "freshIndex": 66,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -581,7 +626,7 @@
       "oldIndex": 67,
       "freshIndex": 67,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -589,7 +634,7 @@
       "oldIndex": 68,
       "freshIndex": 68,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -597,7 +642,7 @@
       "oldIndex": 69,
       "freshIndex": 69,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -605,7 +650,7 @@
       "oldIndex": 70,
       "freshIndex": 70,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -613,7 +658,7 @@
       "oldIndex": 71,
       "freshIndex": 71,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -621,7 +666,7 @@
       "oldIndex": 72,
       "freshIndex": 72,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -629,7 +674,7 @@
       "oldIndex": 73,
       "freshIndex": 73,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -637,7 +682,7 @@
       "oldIndex": 74,
       "freshIndex": 74,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -645,7 +690,7 @@
       "oldIndex": 75,
       "freshIndex": 75,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -653,7 +698,7 @@
       "oldIndex": 76,
       "freshIndex": 76,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -661,7 +706,7 @@
       "oldIndex": 77,
       "freshIndex": 77,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -669,7 +714,7 @@
       "oldIndex": 78,
       "freshIndex": 78,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -677,7 +722,7 @@
       "oldIndex": 79,
       "freshIndex": 79,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -685,7 +730,7 @@
       "oldIndex": 80,
       "freshIndex": 80,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -693,7 +738,7 @@
       "oldIndex": 81,
       "freshIndex": 81,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -701,7 +746,7 @@
       "oldIndex": 82,
       "freshIndex": 82,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -709,7 +754,7 @@
       "oldIndex": 83,
       "freshIndex": 83,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -717,7 +762,7 @@
       "oldIndex": 84,
       "freshIndex": 84,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -725,7 +770,7 @@
       "oldIndex": 85,
       "freshIndex": 85,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -733,7 +778,7 @@
       "oldIndex": 86,
       "freshIndex": 86,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -741,7 +786,7 @@
       "oldIndex": 87,
       "freshIndex": 87,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -749,7 +794,7 @@
       "oldIndex": 88,
       "freshIndex": 88,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -757,7 +802,7 @@
       "oldIndex": 89,
       "freshIndex": 89,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -765,7 +810,7 @@
       "oldIndex": 90,
       "freshIndex": 90,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -773,7 +818,7 @@
       "oldIndex": 91,
       "freshIndex": 91,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -781,7 +826,7 @@
       "oldIndex": 92,
       "freshIndex": 92,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -789,7 +834,7 @@
       "oldIndex": 93,
       "freshIndex": 93,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -797,7 +842,7 @@
       "oldIndex": 94,
       "freshIndex": 94,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -805,7 +850,7 @@
       "oldIndex": 95,
       "freshIndex": 95,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -813,7 +858,7 @@
       "oldIndex": 96,
       "freshIndex": 96,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -821,7 +866,7 @@
       "oldIndex": 97,
       "freshIndex": 97,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -829,7 +874,7 @@
       "oldIndex": 98,
       "freshIndex": 98,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -837,7 +882,7 @@
       "oldIndex": 99,
       "freshIndex": 99,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -845,7 +890,7 @@
       "oldIndex": 100,
       "freshIndex": 100,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -853,7 +898,7 @@
       "oldIndex": 101,
       "freshIndex": 101,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -861,7 +906,7 @@
       "oldIndex": 102,
       "freshIndex": 102,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -869,7 +914,7 @@
       "oldIndex": 103,
       "freshIndex": 103,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -877,7 +922,7 @@
       "oldIndex": 104,
       "freshIndex": 104,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -885,7 +930,7 @@
       "oldIndex": 105,
       "freshIndex": 105,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -893,7 +938,7 @@
       "oldIndex": 106,
       "freshIndex": 106,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -901,7 +946,7 @@
       "oldIndex": 107,
       "freshIndex": 107,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -909,7 +954,7 @@
       "oldIndex": 108,
       "freshIndex": 108,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -917,7 +962,7 @@
       "oldIndex": 109,
       "freshIndex": 109,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -925,7 +970,7 @@
       "oldIndex": 110,
       "freshIndex": 110,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -933,7 +978,7 @@
       "oldIndex": 111,
       "freshIndex": 111,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -941,7 +986,7 @@
       "oldIndex": 112,
       "freshIndex": 112,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -949,7 +994,7 @@
       "oldIndex": 113,
       "freshIndex": 113,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -957,7 +1002,7 @@
       "oldIndex": 114,
       "freshIndex": 114,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -965,7 +1010,7 @@
       "oldIndex": 115,
       "freshIndex": 115,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -973,7 +1018,7 @@
       "oldIndex": 116,
       "freshIndex": 116,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -981,7 +1026,7 @@
       "oldIndex": 117,
       "freshIndex": 117,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -989,7 +1034,7 @@
       "oldIndex": 118,
       "freshIndex": 118,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -997,7 +1042,7 @@
       "oldIndex": 119,
       "freshIndex": 119,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1005,7 +1050,7 @@
       "oldIndex": 120,
       "freshIndex": 120,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1013,7 +1058,7 @@
       "oldIndex": 121,
       "freshIndex": 121,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1021,7 +1066,7 @@
       "oldIndex": 122,
       "freshIndex": 122,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1029,7 +1074,7 @@
       "oldIndex": 123,
       "freshIndex": 123,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1037,7 +1082,7 @@
       "oldIndex": 124,
       "freshIndex": 124,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1045,7 +1090,7 @@
       "oldIndex": 125,
       "freshIndex": 125,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1053,7 +1098,7 @@
       "oldIndex": 126,
       "freshIndex": 126,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1061,7 +1106,7 @@
       "oldIndex": 127,
       "freshIndex": 127,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1069,7 +1114,7 @@
       "oldIndex": 128,
       "freshIndex": 128,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1077,7 +1122,7 @@
       "oldIndex": 129,
       "freshIndex": 129,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1085,7 +1130,7 @@
       "oldIndex": 130,
       "freshIndex": 130,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1093,7 +1138,7 @@
       "oldIndex": 131,
       "freshIndex": 131,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1101,7 +1146,7 @@
       "oldIndex": 132,
       "freshIndex": 132,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1109,7 +1154,7 @@
       "oldIndex": 133,
       "freshIndex": 133,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1117,7 +1162,7 @@
       "oldIndex": 134,
       "freshIndex": 134,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1125,7 +1170,7 @@
       "oldIndex": 135,
       "freshIndex": 135,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1133,7 +1178,7 @@
       "oldIndex": 136,
       "freshIndex": 136,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1141,7 +1186,7 @@
       "oldIndex": 137,
       "freshIndex": 137,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1149,7 +1194,7 @@
       "oldIndex": 138,
       "freshIndex": 138,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1157,7 +1202,7 @@
       "oldIndex": 139,
       "freshIndex": 139,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1165,7 +1210,7 @@
       "oldIndex": 140,
       "freshIndex": 140,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1173,7 +1218,7 @@
       "oldIndex": 141,
       "freshIndex": 141,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1181,7 +1226,7 @@
       "oldIndex": 142,
       "freshIndex": 142,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1189,7 +1234,7 @@
       "oldIndex": 143,
       "freshIndex": 143,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1197,7 +1242,7 @@
       "oldIndex": 144,
       "freshIndex": 144,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1205,7 +1250,7 @@
       "oldIndex": 145,
       "freshIndex": 145,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1213,7 +1258,7 @@
       "oldIndex": 146,
       "freshIndex": 146,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1221,7 +1266,7 @@
       "oldIndex": 147,
       "freshIndex": 147,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1229,7 +1274,7 @@
       "oldIndex": 148,
       "freshIndex": 148,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1237,7 +1282,7 @@
       "oldIndex": 149,
       "freshIndex": 149,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1245,7 +1290,7 @@
       "oldIndex": 150,
       "freshIndex": 150,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1253,7 +1298,7 @@
       "oldIndex": 151,
       "freshIndex": 151,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1261,7 +1306,7 @@
       "oldIndex": 152,
       "freshIndex": 152,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1269,7 +1314,7 @@
       "oldIndex": 153,
       "freshIndex": 153,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1277,7 +1322,7 @@
       "oldIndex": 154,
       "freshIndex": 154,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1285,7 +1330,7 @@
       "oldIndex": 155,
       "freshIndex": 155,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1293,7 +1338,7 @@
       "oldIndex": 156,
       "freshIndex": 156,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1301,7 +1346,7 @@
       "oldIndex": 157,
       "freshIndex": 157,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1309,7 +1354,7 @@
       "oldIndex": 158,
       "freshIndex": 158,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1317,7 +1362,7 @@
       "oldIndex": 159,
       "freshIndex": 159,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1325,7 +1370,7 @@
       "oldIndex": 160,
       "freshIndex": 160,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1333,7 +1378,7 @@
       "oldIndex": 161,
       "freshIndex": 161,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1341,7 +1386,7 @@
       "oldIndex": 162,
       "freshIndex": 162,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1349,7 +1394,7 @@
       "oldIndex": 163,
       "freshIndex": 163,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1357,7 +1402,7 @@
       "oldIndex": 164,
       "freshIndex": 164,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1365,7 +1410,7 @@
       "oldIndex": 165,
       "freshIndex": 165,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1373,7 +1418,7 @@
       "oldIndex": 166,
       "freshIndex": 166,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1381,7 +1426,7 @@
       "oldIndex": 167,
       "freshIndex": 167,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     },
     {
@@ -1389,10 +1434,11 @@
       "oldIndex": 168,
       "freshIndex": 168,
       "evidence": [
-        "Exact bilingual/normalized display-name relation matches."
+        "Normalized Chinese display-name key is unique in both old and fresh catalogs and matches exactly."
       ]
     }
   ],
+  "ambiguousFreshRows": [],
   "freshOnlyOrChangedRows": [
     {
       "freshIndex": 169,
@@ -1404,6 +1450,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
         "baseApiName": "DA_BearsVisit18",
         "upgradeApiNames": [
           "DA_BearsVisit18_Upgrade"
@@ -1415,6 +1462,8 @@
             "nameEn": "Bear's Visit",
             "nameZh": "蛮熊降临",
             "effectEn": "Gain the Bear Primal buff for this combat.",
+            "effectZh": "本场对战获得【野兽之灵】的【蛮熊】增益。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1425,6 +1474,8 @@
             "nameEn": "Tiger's Visit",
             "nameZh": "猛虎降临",
             "effectEn": "Gain the Tiger Primal buff for this combat.",
+            "effectZh": "本场对战获得【野兽之灵】的【猛虎】增益。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1433,15 +1484,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_BearsVisit18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_BearsVisit18 has display name Bear's Visit."
+        "CommunityDragon DA_BearsVisit18 has the exact bilingual display relation Bear's Visit / 蛮熊降临."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 169: Bear's Visit / 蛮熊降临."
+        "Fresh DataTFT rendered row 169: Bear's Visit / 蛮熊降临."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": null,
@@ -1457,6 +1509,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
         "baseApiName": "DA_MemorialDummy18",
         "upgradeApiNames": [
           "DA_MemorialDummy18_Upgrade"
@@ -1468,6 +1521,8 @@
             "nameEn": "Memorial Dummy",
             "nameZh": "衣冠冢",
             "effectEn": "Your first itemized tank spawns a Dummy with their items on death.",
+            "effectZh": "你最先阵亡的携带着装备的那个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1478,6 +1533,10 @@
             "nameEn": "Memorial Dummy",
             "nameZh": "衣冠冢",
             "effectEn": "The first @Upgrade_DummyAmount@ tanks that die spawns a Training Dummy with their items.",
+            "effectZh": "你最先阵亡的@Upgrade_DummyAmount@个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+            "effects": {
+              "{2f6ceba8}": 2
+            },
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1486,15 +1545,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_MemorialDummy18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_MemorialDummy18 has display name Memorial Dummy."
+        "CommunityDragon DA_MemorialDummy18 has the exact bilingual display relation Memorial Dummy / 衣冠冢."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 170: Memorial Dummy / 衣冠冢."
+        "Fresh DataTFT rendered row 170: Memorial Dummy / 衣冠冢."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-002",
@@ -1510,6 +1570,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
         "baseApiName": "DA_PottedLifebloom18",
         "upgradeApiNames": [
           "DA_PottedLifebloom18_Upgrade"
@@ -1521,6 +1582,8 @@
             "nameEn": "Potted Lifebloom",
             "nameZh": "盆栽生命花",
             "effectEn": "Gain a temporary Lifeblossom.",
+            "effectZh": "获得1株临时的【生命花】。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1531,6 +1594,8 @@
             "nameEn": "Potted Lifebloom",
             "nameZh": "盆栽生命花",
             "effectEn": "Gain a temporary Lifeblossom.",
+            "effectZh": "获得1株临时的【生命花】。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1539,15 +1604,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_PottedLifebloom18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_PottedLifebloom18 has display name Potted Lifebloom."
+        "CommunityDragon DA_PottedLifebloom18 has the exact bilingual display relation Potted Lifebloom / 盆栽生命花."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 171: Potted Lifebloom / 盆栽生命花."
+        "Fresh DataTFT rendered row 171: Potted Lifebloom / 盆栽生命花."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-003",
@@ -1563,6 +1629,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
         "baseApiName": "DA_PottedStonebark18",
         "upgradeApiNames": [
           "DA_PottedStonebark18_Upgrade"
@@ -1574,6 +1641,8 @@
             "nameEn": "Potted Stonebark",
             "nameZh": "盆栽石皮树",
             "effectEn": "Gain a temporary Stonebark Tree.",
+            "effectZh": "获得1颗临时的【石皮树】。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1584,6 +1653,8 @@
             "nameEn": "Potted Stonebark",
             "nameZh": "盆栽石皮树",
             "effectEn": "Gain a temporary Stonebark Tree.",
+            "effectZh": "获得1颗临时的【石皮树】。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1592,15 +1663,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_PottedStonebark18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_PottedStonebark18 has display name Potted Stonebark."
+        "CommunityDragon DA_PottedStonebark18 has the exact bilingual display relation Potted Stonebark / 盆栽石皮树."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 172: Potted Stonebark / 盆栽石皮树."
+        "Fresh DataTFT rendered row 172: Potted Stonebark / 盆栽石皮树."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-004",
@@ -1616,6 +1688,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
         "baseApiName": "DA_Snacktime18",
         "upgradeApiNames": [
           "DA_Snacktime18_Upgrade"
@@ -1627,6 +1700,10 @@
             "nameEn": "Snacktime!",
             "nameZh": "点心时间到！",
             "effectEn": "The BFF eats enemies he damages under @ExecuteThresholdUpgrade*100@% Max Health.",
+            "effectZh": "【毛茸茸大朋友】会吃掉最大生命值低于@ExecuteThresholdUpgrade*100@%且受过其伤害的敌人。",
+            "effects": {
+              "{0f6cb861}": 0.20000000298023224
+            },
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1637,6 +1714,10 @@
             "nameEn": "Snacktime!",
             "nameZh": "点心时间到！",
             "effectEn": "The BFF eats enemies he damages under @ExecuteThreshold*100@% Max Health.",
+            "effectZh": "【毛茸茸大朋友】会吃掉最大生命值低于@ExecuteThreshold*100@%且受过其伤害的敌人。",
+            "effects": {
+              "ExecuteThreshold": 0.15000000596046448
+            },
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1645,15 +1726,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_Snacktime18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_Snacktime18 has display name Snacktime!."
+        "CommunityDragon DA_Snacktime18 has the exact bilingual display relation Snacktime! / 点心时间到！."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 173: Snacktime! / 点心时间到！."
+        "Fresh DataTFT rendered row 173: Snacktime! / 点心时间到！."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-005",
@@ -1669,6 +1751,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
         "baseApiName": "DA_TigersVisit18_Wisp",
         "upgradeApiNames": [
           "DA_TigersVisit18_Wisp_Upgrade"
@@ -1676,20 +1759,24 @@
         "prismaticApiNames": [],
         "relatedDisplayNames": [
           {
-            "apiName": "DA_TigersVisit18_Wisp_Upgrade",
+            "apiName": "DA_TigersVisit18_Wisp",
             "nameEn": "Tiger's Visit",
-            "nameZh": "猛虎降临",
+            "nameZh": "战马降临",
             "effectEn": "Gain the Tiger Primal buff for this combat.",
+            "effectZh": "本场对战获得【野兽之灵】的【战马】增益。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
             ]
           },
           {
-            "apiName": "DA_TigersVisit18_Wisp",
+            "apiName": "DA_TigersVisit18_Wisp_Upgrade",
             "nameEn": "Tiger's Visit",
-            "nameZh": "战马降临",
+            "nameZh": "猛虎降临",
             "effectEn": "Gain the Tiger Primal buff for this combat.",
+            "effectZh": "本场对战获得【野兽之灵】的【猛虎】增益。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1698,15 +1785,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_TigersVisit18_Wisp",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_TigersVisit18_Wisp has display name Tiger's Visit."
+        "CommunityDragon DA_TigersVisit18_Wisp has the exact bilingual display relation Tiger's Visit / 战马降临."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 174: Tiger's Visit / 战马降临."
+        "Fresh DataTFT rendered row 174: Tiger's Visit / 战马降临."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": null,
@@ -1722,6 +1810,7 @@
         "ordinalSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity"
       },
       "communityDragon": {
+        "evidenceSnapshot": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
         "baseApiName": "DA_TurtlesVisit18",
         "upgradeApiNames": [
           "DA_TurtlesVisit18_Upgrade"
@@ -1733,6 +1822,8 @@
             "nameEn": "Turtle's Visit",
             "nameZh": "灵龟降临",
             "effectEn": "Gain the Turtle Primal buff for this combat.",
+            "effectZh": "本场对战获得【野兽之灵】的【灵龟】增益。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1743,6 +1834,8 @@
             "nameEn": "Turtle's Visit",
             "nameZh": "灵龟降临",
             "effectEn": "Gain the Turtle Primal buff for this combat.",
+            "effectZh": "本场对战获得【野兽之灵】的【灵龟】增益。",
+            "effects": {},
             "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
             "tags": [
               "{5b609ae2}"
@@ -1751,15 +1844,16 @@
         ]
       },
       "productionMatches": [],
-      "productionRelation": "No exact riotId/client apiName, English name, Chinese name, or reviewed stable target in 169 production records.",
+      "reviewedMappingMatches": [],
+      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
       "classification": "missing_base_identity_candidate",
       "baseIdentityKey": "DA_TurtlesVisit18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
-        "CommunityDragon DA_TurtlesVisit18 has display name Turtle's Visit."
+        "CommunityDragon DA_TurtlesVisit18 has the exact bilingual display relation Turtle's Visit / 灵龟降临."
       ],
       "supportingEvidence": [
-        "Fresh DataTFT bilingual rendered row 175: Turtle's Visit / 灵龟降临."
+        "Fresh DataTFT rendered row 175: Turtle's Visit / 灵龟降临."
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-006",
@@ -1776,68 +1870,56 @@
   },
   "catalogRepresentationSummary": {
     "equation": "+7 catalog rows = 7 missing base identity candidates + 0 upgrade/variant rows + 0 already-production identities + 0 renames + 0 unresolved",
-    "catalogRepresentationDoesNotEqualBaseIdentityCount": true,
-    "bearTigerAudit": {
-      "bearBaseApiName": "DA_BearsVisit18",
-      "bearBaseDisplayNames": {
-        "en": "Bear's Visit",
-        "zh": "蛮熊降临"
-      },
-      "bearUpgradeApiName": "DA_BearsVisit18_Upgrade",
-      "bearUpgradeDisplayNames": {
-        "en": "Tiger's Visit",
-        "zh": "猛虎降临"
-      },
-      "renderedTigerBaseApiName": "DA_TigersVisit18_Wisp",
-      "renderedTigerDisplayNames": {
-        "en": "Tiger's Visit",
-        "zh": "战马降临"
-      },
-      "conclusion": "The English names collide, but committed bilingual client evidence maps the rendered 战马降临 row to the independent unsuffixed DA_TigersVisit18_Wisp base, not to DA_BearsVisit18_Upgrade."
-    }
+    "catalogRepresentationDoesNotProveExactCorpusSize": true
+  },
+  "reviewedMappingsAudit": {
+    "snapshotPath": "data/overrides/18.1/reviewed-identity-mappings.json",
+    "reviewedMappingCount": 17,
+    "freshDeltaReviewedTargets": [],
+    "conclusion": "No row 169–175 base identity has an existing reviewed production target."
   },
   "c4PriorityImpact": [
     {
       "clusterId": "C4I-001",
       "sourceIdentity": "CloneCompanion",
       "impact": "supported",
-      "note": "The unchanged row 139 supports the same-source continuity used by A2; A2 remains proposal-only."
+      "note": "Old Chinese row 139 maps uniquely to fresh Chinese row 139, preserving the A2 same-source continuity premise."
     },
     {
       "clusterId": "C4I-002",
       "sourceIdentity": "MemorialDummy",
       "impact": "supported",
-      "note": "Fresh-only DataTFT row plus explicit CommunityDragon base apiName supports the A2 missing-production hypothesis; no identity decision is applied."
+      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
     },
     {
       "clusterId": "C4I-003",
       "sourceIdentity": "PottedLifebloom",
       "impact": "supported",
-      "note": "Fresh-only DataTFT row plus explicit CommunityDragon base apiName supports the A2 missing-production hypothesis; no identity decision is applied."
+      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
     },
     {
       "clusterId": "C4I-004",
       "sourceIdentity": "PottedStonebark",
       "impact": "supported",
-      "note": "Fresh-only DataTFT row plus explicit CommunityDragon base apiName supports the A2 missing-production hypothesis; no identity decision is applied."
+      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
     },
     {
       "clusterId": "C4I-005",
       "sourceIdentity": "Snacktime",
       "impact": "supported",
-      "note": "Fresh-only DataTFT row plus explicit CommunityDragon base apiName supports the A2 missing-production hypothesis; no identity decision is applied."
+      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
     },
     {
       "clusterId": "C4I-006",
       "sourceIdentity": "TurtlesVisit",
       "impact": "supported",
-      "note": "Fresh-only DataTFT row plus explicit CommunityDragon base apiName supports the A2 missing-production hypothesis; no identity decision is applied."
+      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
     }
   ],
   "readinessImpact": {
     "exactCorpusSizeStatus": "unresolved",
     "recommendedProductionReady": false,
-    "reason": "Rendered catalog rows are not a base-identity census; other source-corpus identities remain outside this delta audit.",
+    "reason": "Rendered catalog rows are not a complete base-identity census; other source-corpus identities remain outside this delta audit.",
     "humanDecisionsApplied": 0
   },
   "artifactBoundary": {
@@ -1849,7 +1931,11 @@
       "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
       "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
       "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-      "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e"
+      "data/reviews/18.1/search-lexicon-decisions.json": "9f67e0754df1b31085d8f9f76555fb3d26761a510401f3f62c190a0a50d8d120",
+      "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e",
+      "reports/c4.2a-identity-review-packet-18.1.json": "8564f48e57dd60c44dac4e7feb43eb17ae0652b02aab8b16410369692c55406a",
+      "reports/c4.2a2-priority-identity-proposals-18.1.json": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",
+      "reports/c4.2a2-priority-identity-proposals-18.1.md": "42411439608dff4eea9f11656272a748f60261574dd4f478aa144bbbcd81f6a9"
     },
     "after": {
       "data/normalized/wisps_18.1.json": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
@@ -1859,7 +1945,11 @@
       "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
       "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
       "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-      "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e"
+      "data/reviews/18.1/search-lexicon-decisions.json": "9f67e0754df1b31085d8f9f76555fb3d26761a510401f3f62c190a0a50d8d120",
+      "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e",
+      "reports/c4.2a-identity-review-packet-18.1.json": "8564f48e57dd60c44dac4e7feb43eb17ae0652b02aab8b16410369692c55406a",
+      "reports/c4.2a2-priority-identity-proposals-18.1.json": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",
+      "reports/c4.2a2-priority-identity-proposals-18.1.md": "42411439608dff4eea9f11656272a748f60261574dd4f478aa144bbbcd81f6a9"
     }
   }
 }
