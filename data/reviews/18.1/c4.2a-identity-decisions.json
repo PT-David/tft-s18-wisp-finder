@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "reviewMetadata": {
+    "reviewStage": "C4.2A4",
+    "reviewedAt": "2026-09-02",
+    "evidenceBindings": {
+      "identityPacketSha256": "8564f48e57dd60c44dac4e7feb43eb17ae0652b02aab8b16410369692c55406a",
+      "priorityProposalSha256": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",
+      "catalogDeltaSha256": "c7c30eea8bd95682ce9c972d819208a4a439b732af9d2f506a1351e02ee1036f"
+    },
+    "policy": "manual_project_review"
+  },
+  "decisions": [
+    {
+      "decisionId": "C4A4-001", "clusterId": "C4I-001", "communityDragonId": "DA_CloneCompanion18",
+      "canonicalNameEn": "Clone Companion", "canonicalNameZh": "克隆弈子", "action": "same_identity",
+      "productionId": "snapshot_139_6fda4e76a4da", "productionRecordCreationRequired": false,
+      "evidenceRefs": ["A1:C4I-001", "A2:C4I-001", "A3:C4I-001", "DataTFT:old-row-139", "DataTFT:fresh-row-139", "CommunityDragon:DA_CloneCompanion18"],
+      "reason": "Old and fresh DataTFT row 139 preserve same-row continuity and the bilingual Clone Companion / 克隆弈子 identity; CommunityDragon identifies DA_CloneCompanion18, current production has exactly one policy-compliant target, A2 strongly proposes that target, and A3 marks continuity supported.",
+      "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-002", "communityDragonId": "DA_BearsVisit18", "canonicalNameEn": "Bear's Visit", "canonicalNameZh": "蛮熊降临", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A3:freshIndex-169", "CommunityDragon:DA_BearsVisit18"],
+      "reason": "A3 classifies fresh DataTFT row 169 as an independent unsuffixed base identity absent from the 169-record production corpus.", "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-003", "clusterId": "C4I-002", "communityDragonId": "DA_MemorialDummy18", "canonicalNameEn": "Memorial Dummy", "canonicalNameZh": "衣冠冢", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A2:C4I-002", "A3:freshIndex-170"], "reason": "A2 records a strong missing-production hypothesis and A3 supports classification as a missing base identity candidate.", "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-004", "clusterId": "C4I-003", "communityDragonId": "DA_PottedLifebloom18", "canonicalNameEn": "Potted Lifebloom", "canonicalNameZh": "盆栽生命花", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A2:C4I-003", "A3:freshIndex-171"], "reason": "A2 and A3 support this unsuffixed client base as a missing production identity; cost, requirement, and effect truth remain outside this decision.", "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-005", "clusterId": "C4I-004", "communityDragonId": "DA_PottedStonebark18", "canonicalNameEn": "Potted Stonebark", "canonicalNameZh": "盆栽石皮树", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A2:C4I-004", "A3:freshIndex-172"], "reason": "A2 and A3 support this unsuffixed client base as a missing production identity while all field conclusions remain pending.", "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-006", "clusterId": "C4I-005", "communityDragonId": "DA_Snacktime18", "canonicalNameEn": "Snacktime!", "canonicalNameZh": "点心时间到！", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A2:C4I-005", "A3:freshIndex-173"], "reason": "The identity is supported as an unsuffixed missing base; cost, effect, and Requirement differences are identity-irrelevant conflicts deferred to C4.2B.", "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-007", "communityDragonId": "DA_TigersVisit18_Wisp", "canonicalNameEn": "Tiger's Visit", "canonicalNameZh": "战马降临", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A3:freshIndex-174", "CommunityDragon:bear-tiger-focused-evidence"], "reason": "Fresh bilingual client evidence binds 战马降临 to DA_TigersVisit18_Wisp as an independent base, distinct from DA_BearsVisit18_Upgrade and DA_TigersVisit18_Wisp_Upgrade, whose Chinese display is 猛虎降临.", "fieldResolutionStatus": "pending_c4.2b"
+    },
+    {
+      "decisionId": "C4A4-008", "clusterId": "C4I-006", "communityDragonId": "DA_TurtlesVisit18", "canonicalNameEn": "Turtle's Visit", "canonicalNameZh": "灵龟降临", "action": "missing_base_identity",
+      "productionRecordCreationRequired": true, "evidenceRefs": ["A2:C4I-006", "A3:freshIndex-175"], "reason": "A2 and A3 support the client API base identity; punctuation normalization is display-only and does not establish identity.", "fieldResolutionStatus": "pending_c4.2b"
+    }
+  ]
+}

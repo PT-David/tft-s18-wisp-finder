@@ -76,8 +76,9 @@ C3.2 中强制升级依赖。
 运行 `npm run data:release-audit:18.1` 可确定性重建机器报告与人工入口，
 `npm run validate:release-audit` 只校验报告是否 stale/inconsistent，不会因为已知 blocker 本身使 CI 失败。
 
-**Stage C4.2 — IN PROGRESS；C4.2A identity review preparation。** C4.2A 将 C4.1 的 OP.GG、
-DataTFT 与 CommunityDragon identity queues 聚为跨来源人工审核问题；packet 只整理证据与推荐，不代表
-identity review complete，也不应用 decisions 或修改 production。运行
-`npm run data:identity-review-packet:18.1` 重建 packet，`npm run validate:identity-review-packet` 校验 stale、
-覆盖、去重与 identity governance 约束。
+**Stage C4.2 — IN PROGRESS。C4.2A identity evidence review — COMPLETE；C4.2A4 formal identity
+decisions — COMPLETE。** A1–A3 的 committed evidence、proposal 与 reconciliation 已由 C4.2A4 人工
+decision overlay 正式裁决为 1 项 same identity 和 7 项 missing base identity；production 尚未 apply，字段审核
+仍留待 C4.2B，因此 production readiness 继续为 false。运行 `npm run validate:c4.2a-identity-decisions` 校验
+manual overlay 与 reviewed evidence 的绑定、完整覆盖及 identity governance；运行
+`npm run data:c4.2a-identity-decision-report:18.1` 只从 manual overlay 确定性派生 Markdown 报告。
