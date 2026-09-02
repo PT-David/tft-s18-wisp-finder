@@ -28,7 +28,9 @@
     "data:identity-review-packet:18.1": "tsx scripts/data/identity-review-packet-18.1.ts",
     "validate:identity-review-packet": "tsx scripts/validate-identity-review-packet.ts",
     "data:priority-identity-proposals:18.1": "tsx scripts/data/priority-identity-proposals-18.1.ts",
-    "validate:priority-identity-proposals": "tsx scripts/validate-priority-identity-proposals.ts"
+    "validate:priority-identity-proposals": "tsx scripts/validate-priority-identity-proposals.ts",
+    "data:catalog-delta-reconciliation:18.1": "tsx scripts/data/catalog-delta-reconciliation-18.1.ts",
+    "validate:catalog-delta-reconciliation": "tsx scripts/validate-catalog-delta-reconciliation.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0",
