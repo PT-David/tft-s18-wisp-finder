@@ -32,7 +32,9 @@
     "data:catalog-delta-reconciliation:18.1": "tsx scripts/data/catalog-delta-reconciliation-18.1.ts",
     "validate:catalog-delta-reconciliation": "tsx scripts/validate-catalog-delta-reconciliation.ts",
     "validate:c4.2a-identity-decisions": "tsx scripts/validate-c4.2a-identity-decisions.ts",
-    "data:c4.2a-identity-decision-report:18.1": "tsx scripts/data/c4.2a-identity-decision-report-18.1.ts"
+    "data:c4.2a-identity-decision-report:18.1": "tsx scripts/data/c4.2a-identity-decision-report-18.1.ts",
+    "data:c4.2b-field-review-packet:18.1": "tsx scripts/data/field-review-packet-18.1.ts",
+    "validate:c4.2b-field-review-packet": "tsx scripts/validate-c4.2b-field-review-packet.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0",

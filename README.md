@@ -1,5 +1,7 @@
 # TFT S18 仙灵快速检索器 — Codex 开发包 v1
 
+> **Stage C4.2B — IN PROGRESS.** C4.2B1 field evidence consolidation / review packet 已准备；formal field decisions 仍待 C4.2B2，production apply 仍待 C4.2C。
+
 版本日期：2026-08-26  
 目标版本：TFT Set 18 / Patch 18.1（Enchanted Wilds 正式服）
 
