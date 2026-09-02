@@ -75,3 +75,9 @@ C3.2 中强制升级依赖。
 各来源 catalog 口径不同，精确 corpus 边界及有限 identity / critical-field 人工审核队列尚未解决。
 运行 `npm run data:release-audit:18.1` 可确定性重建机器报告与人工入口，
 `npm run validate:release-audit` 只校验报告是否 stale/inconsistent，不会因为已知 blocker 本身使 CI 失败。
+
+**Stage C4.2 — IN PROGRESS；C4.2A identity review preparation。** C4.2A 将 C4.1 的 OP.GG、
+DataTFT 与 CommunityDragon identity queues 聚为跨来源人工审核问题；packet 只整理证据与推荐，不代表
+identity review complete，也不应用 decisions 或修改 production。运行
+`npm run data:identity-review-packet:18.1` 重建 packet，`npm run validate:identity-review-packet` 校验 stale、
+覆盖、去重与 identity governance 约束。
