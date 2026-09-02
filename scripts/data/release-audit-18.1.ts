@@ -180,7 +180,9 @@ async function build() {
     'public/data/search-concepts.json', 'public/data/search-synonyms.json', 'public/data/wisps.json', 'rules/wisp_rules_18.1.json',
   ];
   const artifactShas = Object.fromEntries(await Promise.all(artifactPaths.map(async (path) => [path, await sha256(path)])));
-  const sourceInventory = await Promise.all((manifest.sources as Json[]).map(async (source) => ({ ...source, snapshot: source.sourceId === datatft.sourceId ? 'data/raw/18.1/datatft-wisps-zh.json' : source.sourceId === opgg.sourceId ? 'data/raw/18.1/opgg-wisps-corpus.json' : source.sourceId === lol.sourceId ? 'data/raw/18.1/lolchess-wisps.json' : null, recordCount: source.recordCount ?? (source.sourceId === datatft.sourceId ? datatft.records.length : null) })));
+  // C4.2 identity-review-only acquisitions are governed by their own proposal validator and must not rewrite the committed C4.1 source inventory.
+  const releaseSources = (manifest.sources as Json[]).filter((source) => source.scope !== 'c4.2a2_identity_review');
+  const sourceInventory = await Promise.all(releaseSources.map(async (source) => ({ ...source, snapshot: source.sourceId === datatft.sourceId ? 'data/raw/18.1/datatft-wisps-zh.json' : source.sourceId === opgg.sourceId ? 'data/raw/18.1/opgg-wisps-corpus.json' : source.sourceId === lol.sourceId ? 'data/raw/18.1/lolchess-wisps.json' : null, recordCount: source.recordCount ?? (source.sourceId === datatft.sourceId ? datatft.records.length : null) })));
   const state = releaseReportState({
     exactCorpusSizeStatus: exactCorpusStatus(corpus, corpusReconciliation), identityReviewItemCount: identityReviewQueue.length,
     dataTftUnmatchedCount: corpus.dataTftUnmatched.length, communityDragonConfirmedUnlinkedCount: corpus.confirmedCorpusButIncomplete.length,

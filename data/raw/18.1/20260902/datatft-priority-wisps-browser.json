@@ -1,0 +1,219 @@
+{
+  "sourceId": "datatft_18_1_20260902_priority_browser",
+  "url": "https://www.datatft.com/database#charm",
+  "retrievedAt": "2026-09-02T05:26:21Z",
+  "pageUpdatedAt": "2026/09/01 03:18",
+  "fetchStatus": "browser_snapshot_extracted",
+  "httpStatus": 200,
+  "locales": [
+    "zh_cn",
+    "en_us"
+  ],
+  "recordCount": 6,
+  "records": [
+    {
+      "sourceIndex": 139,
+      "en": {
+        "sourceIndex": 139,
+        "name": "Clone Companion",
+        "category": "combat",
+        "cost": 5,
+        "effect": "Clone your highest damage champion. The clone deals 20% damage.",
+        "labels": [
+          "回合：5-1 ~ 10-1"
+        ],
+        "upgrade": {
+          "cost": 5,
+          "effect": "Clone your highest damage champion. The clone deals 30% damage."
+        },
+        "prismatic": {
+          "cost": 0,
+          "effect": "Clone your highest damage champion. The clone deals 100% damage."
+        }
+      },
+      "zh": {
+        "sourceIndex": 139,
+        "name": "克隆弈子",
+        "category": "combat",
+        "cost": 5,
+        "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+        "labels": [
+          "回合：5-1 ~ 10-1"
+        ],
+        "upgrade": {
+          "cost": 5,
+          "effect": "复制你伤害最高的弈子。复制体造成30%伤害。"
+        },
+        "prismatic": {
+          "cost": 0,
+          "effect": "复制你伤害最高的弈子。复制体造成100%伤害。"
+        }
+      }
+    },
+    {
+      "sourceIndex": 170,
+      "en": {
+        "sourceIndex": 170,
+        "name": "Memorial Dummy",
+        "category": "combat",
+        "cost": 3,
+        "effect": "Your first itemized tank spawns a Dummy with their items on death.",
+        "labels": [
+          "回合：3-5 ~ 10-1"
+        ],
+        "upgrade": {
+          "cost": 3,
+          "effect": "The first 2 tanks that die spawns a Training Dummy with their items."
+        },
+        "prismatic": null
+      },
+      "zh": {
+        "sourceIndex": 170,
+        "name": "衣冠冢",
+        "category": "combat",
+        "cost": 3,
+        "effect": "你最先阵亡的携带着装备的那个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+        "labels": [
+          "回合：3-5 ~ 10-1"
+        ],
+        "upgrade": {
+          "cost": 3,
+          "effect": "你最先阵亡的2个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。"
+        },
+        "prismatic": null
+      }
+    },
+    {
+      "sourceIndex": 171,
+      "en": {
+        "sourceIndex": 171,
+        "name": "Potted Lifebloom",
+        "category": "combat",
+        "cost": 2,
+        "effect": "Gain a temporary Lifeblossom.",
+        "labels": [
+          "回合：3-1 ~ 4-7"
+        ],
+        "upgrade": {
+          "cost": 1,
+          "effect": "Gain a temporary Lifeblossom."
+        },
+        "prismatic": null
+      },
+      "zh": {
+        "sourceIndex": 171,
+        "name": "盆栽生命花",
+        "category": "combat",
+        "cost": 2,
+        "effect": "获得1株临时的【生命花】。",
+        "labels": [
+          "回合：3-1 ~ 4-7"
+        ],
+        "upgrade": {
+          "cost": 1,
+          "effect": "获得1株临时的【生命花】。"
+        },
+        "prismatic": null
+      }
+    },
+    {
+      "sourceIndex": 172,
+      "en": {
+        "sourceIndex": 172,
+        "name": "Potted Stonebark",
+        "category": "combat",
+        "cost": 2,
+        "effect": "Gain a temporary Stonebark Tree.",
+        "labels": [
+          "回合：3-1 ~ 4-7"
+        ],
+        "upgrade": {
+          "cost": 1,
+          "effect": "Gain a temporary Stonebark Tree."
+        },
+        "prismatic": null
+      },
+      "zh": {
+        "sourceIndex": 172,
+        "name": "盆栽石皮树",
+        "category": "combat",
+        "cost": 2,
+        "effect": "获得1颗临时的【石皮树】。",
+        "labels": [
+          "回合：3-1 ~ 4-7"
+        ],
+        "upgrade": {
+          "cost": 1,
+          "effect": "获得1颗临时的【石皮树】。"
+        },
+        "prismatic": null
+      }
+    },
+    {
+      "sourceIndex": 173,
+      "en": {
+        "sourceIndex": 173,
+        "name": "Snacktime!",
+        "category": "combat",
+        "cost": 3,
+        "effect": "The BFF eats enemies he damages under 15% Max Health.",
+        "labels": [
+          "回合：4-2 ~ 10-1"
+        ],
+        "upgrade": {
+          "cost": 3,
+          "effect": "The BFF eats enemies he damages under 20% Max Health."
+        },
+        "prismatic": null
+      },
+      "zh": {
+        "sourceIndex": 173,
+        "name": "点心时间到！",
+        "category": "combat",
+        "cost": 3,
+        "effect": "【毛茸茸大朋友】会吃掉最大生命值低于15%且受过其伤害的敌人。",
+        "labels": [
+          "回合：4-2 ~ 10-1"
+        ],
+        "upgrade": {
+          "cost": 3,
+          "effect": "【毛茸茸大朋友】会吃掉最大生命值低于20%且受过其伤害的敌人。"
+        },
+        "prismatic": null
+      }
+    },
+    {
+      "sourceIndex": 175,
+      "en": {
+        "sourceIndex": 175,
+        "name": "Turtle's Visit",
+        "category": "combat",
+        "cost": 3,
+        "effect": "Gain the Turtle Primal buff for this combat.",
+        "labels": [
+          "回合：3-5 ~ 5-7"
+        ],
+        "upgrade": {
+          "cost": 2,
+          "effect": "Gain the Turtle Primal buff for this combat."
+        },
+        "prismatic": null
+      },
+      "zh": {
+        "sourceIndex": 175,
+        "name": "灵龟降临",
+        "category": "combat",
+        "cost": 3,
+        "effect": "本场对战获得【野兽之灵】的【灵龟】增益。",
+        "labels": [
+          "回合：3-5 ~ 5-7"
+        ],
+        "upgrade": {
+          "cost": 2,
+          "effect": "本场对战获得【野兽之灵】的【灵龟】增益。"
+        },
+        "prismatic": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import {describe,expect,it} from 'vitest';import {readFile} from 'node:fs/promises';import {buildPriorityIdentityProposals} from '../scripts/data/priority-identity-proposals-18.1';
+const load=async()=>JSON.parse((await buildPriorityIdentityProposals()).json);
+describe('C4.2A2 priority identity governance',()=>{
+ it('fresh source presence never automatically makes every identity same_identity',async()=>{const r=await load();expect(r.proposals.every((p:any)=>p.freshSourcePresence.DataTFT)).toBe(true);expect(r.proposals.filter((p:any)=>p.proposedAction==='same_identity')).toHaveLength(1)});
+ it('requires an exact identity-confirming path and target for same_identity',async()=>{const [p]= (await load()).proposals;expect(p.proposedProductionId).toBe('snapshot_139_6fda4e76a4da');expect(p.confirmingEvidence.some((e:any)=>e.evidenceClass==='identity_confirming')).toBe(true)});
+ it('turns exact live identities with exhaustive no-target searches into pending missing proposals',async()=>{const ps=(await load()).proposals.slice(1);expect(ps.every((p:any)=>p.proposedAction==='distinct_identity'&&p.productionMissingCandidate&&p.productionSearch.productionRecordCount===169)).toBe(true)});
+ it('keeps field conflicts separate from identity confirmation',async()=>{const snack=(await load()).proposals[4];expect(snack.fieldReviewFollowUps.some((f:any)=>f.field==='cost')).toBe(true);expect(snack.confirmingEvidence.some((e:any)=>e.evidenceClass==='field_conflict')).toBe(false)});
+ it("treats TurtlesVisit / Turtle's Visit normalization as supporting, not confirming",async()=>{const turtle=(await load()).proposals[5];expect(turtle.supportingEvidence.some((e:any)=>e.note.includes("Turtle's Visit"))).toBe(true);expect(turtle.confirmingEvidence.every((e:any)=>!e.note.includes('punctuation'))).toBe(true)});
+ it('is byte deterministic',async()=>{const a=await buildPriorityIdentityProposals(),b=await buildPriorityIdentityProposals();expect(a).toEqual(b);expect(await readFile('reports/c4.2a2-priority-identity-proposals-18.1.json','utf8')).toBe(a.json)});
+});

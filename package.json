@@ -26,7 +26,9 @@
     "data:release-audit:18.1": "tsx scripts/data/release-audit-18.1.ts",
     "validate:release-audit": "tsx scripts/validate-release-audit.ts",
     "data:identity-review-packet:18.1": "tsx scripts/data/identity-review-packet-18.1.ts",
-    "validate:identity-review-packet": "tsx scripts/validate-identity-review-packet.ts"
+    "validate:identity-review-packet": "tsx scripts/validate-identity-review-packet.ts",
+    "data:priority-identity-proposals:18.1": "tsx scripts/data/priority-identity-proposals-18.1.ts",
+    "validate:priority-identity-proposals": "tsx scripts/validate-priority-identity-proposals.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0",

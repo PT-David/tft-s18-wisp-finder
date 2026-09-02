@@ -1,0 +1,307 @@
+{
+  "sourceId": "communitydragon_live_18_1_20260902_priority",
+  "urlTemplate": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
+  "retrievedAt": "2026-09-02T05:27:37Z",
+  "upstreamModifiedAt": {
+    "en_us": "2026-08-29T00:53:30Z",
+    "zh_cn": "2026-08-29T00:53:26Z"
+  },
+  "httpStatus": 200,
+  "fetchStatus": "fetched_and_extracted",
+  "locales": {
+    "en_us": {
+      "rawSha256": "d91ba4ad7db5a6d896132ba3df8da0a2092ed13855f1a9660dbe7e12bdcd77f5",
+      "records": [
+        {
+          "apiName": "DA_PottedStonebark18_Upgrade",
+          "name": "Potted Stonebark",
+          "desc": "Gain a temporary Stonebark Tree.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_PottedStonebark18",
+          "name": "Potted Stonebark",
+          "desc": "Gain a temporary Stonebark Tree.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_MemorialDummy18",
+          "name": "Memorial Dummy",
+          "desc": "Your first itemized tank spawns a Dummy with their items on death.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_MemorialDummy18_Upgrade",
+          "name": "Memorial Dummy",
+          "desc": "The first @Upgrade_DummyAmount@ tanks that die spawns a Training Dummy with their items.",
+          "effects": {
+            "{2f6ceba8}": 2
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_PottedLifebloom18",
+          "name": "Potted Lifebloom",
+          "desc": "Gain a temporary Lifeblossom.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_CloneCompanion18_Prismatic",
+          "name": "Clone Companion",
+          "desc": "Clone your highest damage champion. The clone deals @CloneDamageMultiplierPrismatic*100@% damage.",
+          "effects": {
+            "{9c2aef6c}": 1
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_Snacktime18_Upgrade",
+          "name": "Snacktime!",
+          "desc": "The BFF eats enemies he damages under @ExecuteThresholdUpgrade*100@% Max Health.",
+          "effects": {
+            "{0f6cb861}": 0.20000000298023224
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_CloneCompanionUpgrade18",
+          "name": "Clone Companion",
+          "desc": "Clone your highest damage champion. The clone deals @CloneDamageMultiplierUpgrade*100@% damage.",
+          "effects": {
+            "{23437198}": 0.30000001192092896
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_CloneCompanion18",
+          "name": "Clone Companion",
+          "desc": "Clone your highest damage champion. The clone deals @CloneDamageMultiplier*100@% damage.",
+          "effects": {
+            "CloneDamageMultiplier": 0.20000000298023224
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TurtlesVisit18_Upgrade",
+          "name": "Turtle's Visit",
+          "desc": "Gain the Turtle Primal buff for this combat.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_Snacktime18",
+          "name": "Snacktime!",
+          "desc": "The BFF eats enemies he damages under @ExecuteThreshold*100@% Max Health.",
+          "effects": {
+            "ExecuteThreshold": 0.15000000596046448
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_PottedLifebloom18_Upgrade",
+          "name": "Potted Lifebloom",
+          "desc": "Gain a temporary Lifeblossom.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TurtlesVisit18",
+          "name": "Turtle's Visit",
+          "desc": "Gain the Turtle Primal buff for this combat.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        }
+      ]
+    },
+    "zh_cn": {
+      "rawSha256": "8f23126c271b4acfde58e566677cbfacf0421f9ff9035acb9e9f60722b49306e",
+      "records": [
+        {
+          "apiName": "DA_PottedStonebark18_Upgrade",
+          "name": "盆栽石皮树",
+          "desc": "获得1颗临时的【石皮树】。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_PottedStonebark18",
+          "name": "盆栽石皮树",
+          "desc": "获得1颗临时的【石皮树】。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_MemorialDummy18",
+          "name": "衣冠冢",
+          "desc": "你最先阵亡的携带着装备的那个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_MemorialDummy18_Upgrade",
+          "name": "衣冠冢",
+          "desc": "你最先阵亡的@Upgrade_DummyAmount@个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+          "effects": {
+            "{2f6ceba8}": 2
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_PottedLifebloom18",
+          "name": "盆栽生命花",
+          "desc": "获得1株临时的【生命花】。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_CloneCompanion18_Prismatic",
+          "name": "复制同伴",
+          "desc": "复制你伤害最高的那个弈子。复制体造成@CloneDamageMultiplierPrismatic*100@%伤害。",
+          "effects": {
+            "{9c2aef6c}": 1
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_Snacktime18_Upgrade",
+          "name": "点心时间到！",
+          "desc": "【毛茸茸大朋友】会吃掉最大生命值低于@ExecuteThresholdUpgrade*100@%且受过其伤害的敌人。",
+          "effects": {
+            "{0f6cb861}": 0.20000000298023224
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_CloneCompanionUpgrade18",
+          "name": "复制同伴",
+          "desc": "复制你伤害最高的那个弈子。复制体造成@CloneDamageMultiplierUpgrade*100@%伤害。",
+          "effects": {
+            "{23437198}": 0.30000001192092896
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_CloneCompanion18",
+          "name": "复制同伴",
+          "desc": "复制你伤害最高的那个弈子。复制体造成@CloneDamageMultiplier*100@%伤害。",
+          "effects": {
+            "CloneDamageMultiplier": 0.20000000298023224
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TurtlesVisit18_Upgrade",
+          "name": "灵龟降临",
+          "desc": "本场对战获得【野兽之灵】的【灵龟】增益。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_Snacktime18",
+          "name": "点心时间到！",
+          "desc": "【毛茸茸大朋友】会吃掉最大生命值低于@ExecuteThreshold*100@%且受过其伤害的敌人。",
+          "effects": {
+            "ExecuteThreshold": 0.15000000596046448
+          },
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_PottedLifebloom18_Upgrade",
+          "name": "盆栽生命花",
+          "desc": "获得1株临时的【生命花】。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TurtlesVisit18",
+          "name": "灵龟降临",
+          "desc": "本场对战获得【野兽之灵】的【灵龟】增益。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        }
+      ]
+    }
+  }
+}

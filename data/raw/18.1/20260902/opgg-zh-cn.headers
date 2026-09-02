@@ -1,0 +1,28 @@
+HTTP/1.1 200 OK
+date: Wed, 02 Sep 2026 05:27:38 GMT
+server: envoy
+
+HTTP/1.1 200 OK
+content-type: text/html; charset=utf-8
+date: Wed, 02 Sep 2026 05:27:39 GMT
+referrer-policy: no-referrer-when-downgrade
+content-encoding: br
+server: envoy
+set-cookie: _ol=zh_CN; Path=/; Expires=Thu, 02 Sep 2027 05:27:38 GMT; Max-Age=31536000; Domain=.op.gg
+x-pathname: /set/18
+x-middleware-rewrite: /zh-cn/tft/set/18
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+link: <https://c-tft-web.op.gg/_next/static/media/02743a8d10a3d186-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", <https://c-tft-web.op.gg/_next/static/media/1e41be92c43b3255-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", <https://c-tft-web.op.gg/_next/static/css/e77a762cc18413e3.css>; rel=preload; as="style", <https://c-tft-web.op.gg/_next/static/css/8979a963e1deceaa.css>; rel=preload; as="style", <https://c-tft-web.op.gg/_next/static/css/89f851554870575c.css>; rel=preload; as="style", <https://c-tft-web.op.gg/_next/static/css/6b44d3213d25a233.css>; rel=preload; as="style"
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-download-options: noopen
+x-xss-protection: 1; mode=block
+x-cache: Miss from cloudfront
+via: 1.1 645e6d47c657d2e5f64af7aa55f91a06.cloudfront.net (CloudFront)
+x-amz-cf-pop: ORD56-P14
+x-amz-cf-id: AYYiaOMAlL1l4-_7tzbB0_JOKHa6FF0cKEWBj-bX0Z5bRN1RoOky3g==
+x-envoy-upstream-service-time: 339
+transfer-encoding: chunked
+
