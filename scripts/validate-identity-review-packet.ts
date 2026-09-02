@@ -12,6 +12,7 @@ if (actualJson !== expected.json) errors.push('JSON packet is stale or non-deter
 if (actualMarkdown !== expected.markdown) errors.push('Markdown packet is stale or non-deterministic.');
 const packet = JSON.parse(actualJson);
 const readiness = JSON.parse(await readFile(resolve(root, 'reports/release-readiness-18.1.json'), 'utf8'));
+const production = JSON.parse(await readFile(resolve(root, 'data/normalized/wisps_18.1.json'), 'utf8'));
 const ids = packet.clusters.flatMap((cluster: any) => cluster.sourceItems.map((item: any) => item.itemId));
 const expectedIds = [
   ...readiness.identity.reviewQueue.map((row: any) => `opgg:${row.candidateIdentity}`),
@@ -27,6 +28,17 @@ packet.clusters.forEach((cluster: any, index: number) => {
   if (cluster.productionIdentityLink.status === 'confirmed' && !cluster.productionIdentityLink.confirmingEvidence.length) errors.push(`${cluster.clusterId}: fuzzy evidence was silently promoted to confirmed.`);
   if (cluster.recommendedHumanAction === 'source_variant' && (!cluster.variant?.baseProductionId || !cluster.variant?.type || !cluster.variant?.reason)) errors.push(`${cluster.clusterId}: source_variant lacks base/type/reason.`);
   if (cluster.recommendedHumanAction === 'distinct_identity' && (!cluster.corpusMembership?.status || !cluster.conflictingEvidence.length)) errors.push(`${cluster.clusterId}: distinct_identity lacks membership/exclusion evidence.`);
+  if (cluster.priority === 'P0' && !cluster.currentQuestion.startsWith('DataTFT')) errors.push(`${cluster.clusterId}: P0 question must focus on the DataTFT unmatched identity.`);
+  if (cluster.priority === 'P1' && !cluster.currentQuestion.startsWith('已确认的')) errors.push(`${cluster.clusterId}: P1 question must ask for the production link of an already-confirmed identity.`);
+  if (cluster.priority === 'P3' && !cluster.currentQuestion.startsWith('OP.GG')) errors.push(`${cluster.clusterId}: P3 question must classify the OP.GG-only candidate.`);
+  for (const item of cluster.sourceItems.filter((row: any) => row.source === 'datatft')) {
+    const productionRow = production.records.find((row: any) => row.id === item.sourceKey);
+    if (item.effect !== productionRow?.effects?.normal) errors.push(`${cluster.clusterId}: DataTFT effect does not match production effects.normal.`);
+  }
+  for (const followUp of cluster.fieldReviewFollowUps) {
+    if (!followUp.startsWith('Defer to C4.2B field review:')) errors.push(`${cluster.clusterId}: field follow-up is not explicitly deferred to C4.2B.`);
+    if (cluster.productionIdentityLink.confirmingEvidence.includes(followUp)) errors.push(`${cluster.clusterId}: field conflict was used as identity-confirming evidence.`);
+  }
 });
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 console.log(`Identity review packet valid: ${expectedIds.length} raw items in ${packet.clusters.length} deterministic clusters.`);

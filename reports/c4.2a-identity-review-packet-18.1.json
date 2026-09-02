@@ -37,13 +37,13 @@
     },
     "clustersWithStrongSingleRecommendation": 0,
     "clustersRequiringGenuineHumanJudgement": 6,
-    "clustersStillInsufficientEvenForHumanDecision": 28
+    "clustersNotCurrentlyActionableFromCommittedEvidence": 28
   },
   "clusters": [
     {
       "clusterId": "C4I-001",
       "priority": "P0",
-      "currentQuestion": "communitydragon「克隆伴侣」、datatft「克隆弈子」、opgg「克隆伴侣」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "DataTFT「克隆弈子」是否就是 OP.GG / CommunityDragon 已确认的 CloneCompanion；如果不是，CloneCompanion 是否代表 production 缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "communitydragon:DA_CloneCompanion18",
@@ -64,6 +64,7 @@
           "name": "克隆弈子",
           "category": "combat",
           "cost": 5,
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "corpusMembershipConfirmed": false,
           "productionCandidates": [],
           "overlapKeys": [
@@ -121,7 +122,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -156,6 +157,32 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "name": "克隆弈子",
+          "score": 1.2365591397849462,
+          "evidence": [
+            "effectSimilarity=0.9032258064516129",
+            "nameSimilarity=0.3333333333333333",
+            "categoryMatch=true",
+            "costMatch=true"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "name": "克隆弈子",
+          "score": 1.2365591397849462,
+          "evidence": [
+            "effectSimilarity=0.9032258064516129",
+            "nameSimilarity=0.3333333333333333",
+            "categoryMatch=true",
+            "costMatch=true"
+          ]
+        }
+      ],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -169,17 +196,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:CloneCompanion ranks snapshot_139_6fda4e76a4da at 1.2365591397849462; ranking is supporting evidence only.",
-        "opgg:CloneCompanion ranks da_curiocart18 at 0.025; ranking is supporting evidence only.",
-        "opgg:CloneCompanion ranks da_beggarswisp18 at 0; ranking is supporting evidence only."
+        "Ranked candidate snapshot_139_6fda4e76a4da scores 1.2365591397849462; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": true,
-      "insufficientEvenForHumanDecision": false,
+      "notCurrentlyActionableFromCommittedEvidence": false,
       "reasonHumanReviewRequired": "Corpus membership is confirmed, but no policy-compliant production identity link exists.",
       "allowedChoices": [
         "same_identity",
@@ -192,7 +218,7 @@
     {
       "clusterId": "C4I-002",
       "priority": "P1",
-      "currentQuestion": "communitydragon「纪念假人」、opgg「纪念假人」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "已确认的 MemorialDummy live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
       "sourceItems": [
         {
           "itemId": "communitydragon:DA_MemorialDummy18",
@@ -254,7 +280,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -289,6 +315,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -301,18 +329,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:MemorialDummy ranks da_curiocart18 at 0.16785714285714284; ranking is supporting evidence only.",
-        "opgg:MemorialDummy ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:MemorialDummy ranks da_beggarswisp18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": true,
-      "insufficientEvenForHumanDecision": false,
+      "notCurrentlyActionableFromCommittedEvidence": false,
       "reasonHumanReviewRequired": "Corpus membership is confirmed, but no policy-compliant production identity link exists.",
       "allowedChoices": [
         "same_identity",
@@ -325,7 +350,7 @@
     {
       "clusterId": "C4I-003",
       "priority": "P1",
-      "currentQuestion": "communitydragon「盆栽生命绽放」、opgg「盆栽生命绽放」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "已确认的 PottedLifebloom live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
       "sourceItems": [
         {
           "itemId": "communitydragon:DA_PottedLifebloom18",
@@ -387,7 +412,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -422,6 +447,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -435,18 +462,18 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:PottedLifebloom ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:PottedLifebloom ranks da_beggarswisp18 at 0.0625; ranking is supporting evidence only.",
-        "opgg:PottedLifebloom ranks da_curiocart18 at 0; ranking is supporting evidence only.",
-        "LoLCHESS exact displayed-name support: Potted Lifebloom (cost 2); this is not an identity confirmation."
+        "LoLCHESS exact displayed-name identity support: Potted Lifebloom; this does not confirm the production link."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
+      ],
+      "fieldReviewFollowUps": [
+        "Defer to C4.2B field review: LoLCHESS cost 2 conflicts with OP.GG/CommunityDragon cost 3."
       ],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": true,
-      "insufficientEvenForHumanDecision": false,
+      "notCurrentlyActionableFromCommittedEvidence": false,
       "reasonHumanReviewRequired": "Corpus membership is confirmed, but no policy-compliant production identity link exists.",
       "allowedChoices": [
         "same_identity",
@@ -459,7 +486,7 @@
     {
       "clusterId": "C4I-004",
       "priority": "P1",
-      "currentQuestion": "communitydragon「盆栽石皮树」、opgg「盆栽石皮树」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "已确认的 PottedStonebark live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
       "sourceItems": [
         {
           "itemId": "communitydragon:DA_PottedStonebark18",
@@ -521,7 +548,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -556,6 +583,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -569,18 +598,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:PottedStonebark ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:PottedStonebark ranks da_beggarswisp18 at 0.08333333333333333; ranking is supporting evidence only.",
-        "opgg:PottedStonebark ranks da_curiocart18 at 0.022727272727272728; ranking is supporting evidence only.",
-        "LoLCHESS exact displayed-name support: Potted Stonebark (cost 2); this is not an identity confirmation."
+        "LoLCHESS exact displayed-name identity support: Potted Stonebark; this does not confirm the production link."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": true,
-      "insufficientEvenForHumanDecision": false,
+      "notCurrentlyActionableFromCommittedEvidence": false,
       "reasonHumanReviewRequired": "Corpus membership is confirmed, but no policy-compliant production identity link exists.",
       "allowedChoices": [
         "same_identity",
@@ -593,7 +620,7 @@
     {
       "clusterId": "C4I-005",
       "priority": "P1",
-      "currentQuestion": "communitydragon「零食时间！」、opgg「零食时间！」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "已确认的 Snacktime live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
       "sourceItems": [
         {
           "itemId": "communitydragon:DA_Snacktime18",
@@ -655,7 +682,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -690,6 +717,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -703,18 +732,18 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:Snacktime ranks snapshot_139_6fda4e76a4da at 0.19545454545454544; ranking is supporting evidence only.",
-        "opgg:Snacktime ranks da_beggarswisp18 at 0; ranking is supporting evidence only.",
-        "opgg:Snacktime ranks da_curiocart18 at 0; ranking is supporting evidence only.",
-        "LoLCHESS exact displayed-name support: Snacktime! (cost 2); this is not an identity confirmation."
+        "LoLCHESS exact displayed-name identity support: Snacktime!; this does not confirm the production link."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
+      ],
+      "fieldReviewFollowUps": [
+        "Defer to C4.2B field review: LoLCHESS cost 2 conflicts with OP.GG/CommunityDragon cost 4."
       ],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": true,
-      "insufficientEvenForHumanDecision": false,
+      "notCurrentlyActionableFromCommittedEvidence": false,
       "reasonHumanReviewRequired": "Corpus membership is confirmed, but no policy-compliant production identity link exists.",
       "allowedChoices": [
         "same_identity",
@@ -727,7 +756,7 @@
     {
       "clusterId": "C4I-006",
       "priority": "P1",
-      "currentQuestion": "communitydragon「海龟来访」、opgg「海龟来访」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "已确认的 TurtlesVisit live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
       "sourceItems": [
         {
           "itemId": "communitydragon:DA_TurtlesVisit18",
@@ -789,7 +818,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -824,6 +853,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "confirmed",
         "evidence": [
@@ -837,18 +868,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:TurtlesVisit ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:TurtlesVisit ranks da_beggarswisp18 at 0.08095238095238094; ranking is supporting evidence only.",
-        "opgg:TurtlesVisit ranks da_curiocart18 at 0.05263157894736842; ranking is supporting evidence only.",
-        "LoLCHESS exact displayed-name support: Turtle's Visit (cost 3); this is not an identity confirmation."
+        "LoLCHESS exact displayed-name identity support: Turtle's Visit; this does not confirm the production link."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": true,
-      "insufficientEvenForHumanDecision": false,
+      "notCurrentlyActionableFromCommittedEvidence": false,
       "reasonHumanReviewRequired": "Corpus membership is confirmed, but no policy-compliant production identity link exists.",
       "allowedChoices": [
         "same_identity",
@@ -861,7 +890,7 @@
     {
       "clusterId": "C4I-007",
       "priority": "P3",
-      "currentQuestion": "opgg「全部投入」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG AllIn 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:AllIn",
@@ -911,7 +940,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -946,6 +975,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -955,18 +986,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:AllIn ranks snapshot_139_6fda4e76a4da at 0.1; ranking is supporting evidence only.",
-        "opgg:AllIn ranks da_beggarswisp18 at 0; ranking is supporting evidence only.",
-        "opgg:AllIn ranks da_curiocart18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -979,7 +1007,7 @@
     {
       "clusterId": "C4I-008",
       "priority": "P3",
-      "currentQuestion": "opgg「更好的闺蜜」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG BetterBestie 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:BetterBestie",
@@ -1029,7 +1057,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -1064,6 +1092,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1073,18 +1103,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:BetterBestie ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:BetterBestie ranks da_beggarswisp18 at 0.0675531914893617; ranking is supporting evidence only.",
-        "opgg:BetterBestie ranks da_curiocart18 at 0.046511627906976744; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1097,7 +1124,7 @@
     {
       "clusterId": "C4I-009",
       "priority": "P3",
-      "currentQuestion": "opgg「血猎」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG BloodHunt 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:BloodHunt",
@@ -1147,7 +1174,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -1182,6 +1209,20 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "name": "克隆弈子",
+          "score": 0.25810810810810814,
+          "evidence": [
+            "effectSimilarity=0.10810810810810811",
+            "nameSimilarity=0",
+            "categoryMatch=true",
+            "costMatch=false"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1192,17 +1233,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:BloodHunt ranks snapshot_139_6fda4e76a4da at 0.25810810810810814; ranking is supporting evidence only.",
-        "opgg:BloodHunt ranks da_curiocart18 at 0.04878048780487805; ranking is supporting evidence only.",
-        "opgg:BloodHunt ranks da_beggarswisp18 at 0; ranking is supporting evidence only."
+        "Ranked candidate snapshot_139_6fda4e76a4da scores 0.25810810810810814; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1215,7 +1255,7 @@
     {
       "clusterId": "C4I-010",
       "priority": "P3",
-      "currentQuestion": "opgg「微风」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG Breeze 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:Breeze",
@@ -1265,7 +1305,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -1300,6 +1340,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1309,18 +1351,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:Breeze ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:Breeze ranks da_beggarswisp18 at 0.05714285714285714; ranking is supporting evidence only.",
-        "opgg:Breeze ranks da_curiocart18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1333,7 +1372,7 @@
     {
       "clusterId": "C4I-011",
       "priority": "P3",
-      "currentQuestion": "opgg「残酷的讨价还价」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG BrutalBargain 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:BrutalBargain",
@@ -1383,7 +1422,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -1418,6 +1457,20 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "name": "珍品摆摊车",
+          "score": 0.37756410256410255,
+          "evidence": [
+            "effectSimilarity=0.10256410256410256",
+            "nameSimilarity=0.1",
+            "categoryMatch=true",
+            "costMatch=true"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1428,17 +1481,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:BrutalBargain ranks da_curiocart18 at 0.37756410256410255; ranking is supporting evidence only.",
-        "opgg:BrutalBargain ranks da_beggarswisp18 at 0.19196617336152222; ranking is supporting evidence only.",
-        "opgg:BrutalBargain ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
+        "Ranked candidate da_curiocart18 scores 0.37756410256410255; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1451,7 +1503,7 @@
     {
       "clusterId": "C4I-012",
       "priority": "P3",
-      "currentQuestion": "opgg「舒适食品」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG ComfortFood 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:ComfortFood",
@@ -1501,7 +1553,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_beggarswisp18",
           "name": "仙灵的怜悯",
@@ -1536,6 +1588,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1545,18 +1599,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:ComfortFood ranks da_beggarswisp18 at 0.046511627906976744; ranking is supporting evidence only.",
-        "opgg:ComfortFood ranks da_curiocart18 at 0.029411764705882353; ranking is supporting evidence only.",
-        "opgg:ComfortFood ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1569,7 +1620,7 @@
     {
       "clusterId": "C4I-013",
       "priority": "P3",
-      "currentQuestion": "opgg「消耗品」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG ConsumableShop 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:ConsumableShop",
@@ -1619,7 +1670,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -1654,6 +1705,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1663,18 +1716,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:ConsumableShop ranks da_curiocart18 at 0.1; ranking is supporting evidence only.",
-        "opgg:ConsumableShop ranks da_beggarswisp18 at 0.045454545454545456; ranking is supporting evidence only.",
-        "opgg:ConsumableShop ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1687,7 +1737,7 @@
     {
       "clusterId": "C4I-014",
       "priority": "P3",
-      "currentQuestion": "opgg「水晶球」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG CrystalBall 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:CrystalBall",
@@ -1737,7 +1787,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -1772,6 +1822,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1781,18 +1833,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:CrystalBall ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:CrystalBall ranks da_beggarswisp18 at 0.046511627906976744; ranking is supporting evidence only.",
-        "opgg:CrystalBall ranks da_curiocart18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1805,7 +1854,7 @@
     {
       "clusterId": "C4I-015",
       "priority": "P3",
-      "currentQuestion": "opgg「加倍」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG DoubleUp 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:DoubleUp",
@@ -1855,7 +1904,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -1890,6 +1939,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -1899,18 +1950,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:DoubleUp ranks da_curiocart18 at 0.05263157894736842; ranking is supporting evidence only.",
-        "opgg:DoubleUp ranks da_beggarswisp18 at 0; ranking is supporting evidence only.",
-        "opgg:DoubleUp ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -1923,7 +1971,7 @@
     {
       "clusterId": "C4I-016",
       "priority": "P3",
-      "currentQuestion": "opgg「升级」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG Escalation 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:Escalation",
@@ -1973,7 +2021,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -2008,6 +2056,20 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "name": "克隆弈子",
+          "score": 0.27121212121212124,
+          "evidence": [
+            "effectSimilarity=0.12121212121212122",
+            "nameSimilarity=0",
+            "categoryMatch=true",
+            "costMatch=false"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2018,17 +2080,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:Escalation ranks snapshot_139_6fda4e76a4da at 0.27121212121212124; ranking is supporting evidence only.",
-        "opgg:Escalation ranks da_curiocart18 at 0.11287758346581876; ranking is supporting evidence only.",
-        "opgg:Escalation ranks da_beggarswisp18 at 0.0975609756097561; ranking is supporting evidence only."
+        "Ranked candidate snapshot_139_6fda4e76a4da scores 0.27121212121212124; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2041,7 +2102,7 @@
     {
       "clusterId": "C4I-017",
       "priority": "P3",
-      "currentQuestion": "opgg「精灵联邦」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG FaeFederation 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:FaeFederation",
@@ -2091,7 +2152,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -2126,6 +2187,20 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "name": "克隆弈子",
+          "score": 0.21666666666666667,
+          "evidence": [
+            "effectSimilarity=0.06666666666666667",
+            "nameSimilarity=0",
+            "categoryMatch=true",
+            "costMatch=false"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2136,17 +2211,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:FaeFederation ranks snapshot_139_6fda4e76a4da at 0.21666666666666667; ranking is supporting evidence only.",
-        "opgg:FaeFederation ranks da_beggarswisp18 at 0.10526315789473684; ranking is supporting evidence only.",
-        "opgg:FaeFederation ranks da_curiocart18 at 0.025; ranking is supporting evidence only."
+        "Ranked candidate snapshot_139_6fda4e76a4da scores 0.21666666666666667; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2159,7 +2233,7 @@
     {
       "clusterId": "C4I-018",
       "priority": "P3",
-      "currentQuestion": "opgg「精灵飞行」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG FaerieFlight 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:FaerieFlight",
@@ -2209,7 +2283,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_beggarswisp18",
           "name": "仙灵的怜悯",
@@ -2244,6 +2318,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2253,18 +2329,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:FaerieFlight ranks da_beggarswisp18 at 0.05128205128205128; ranking is supporting evidence only.",
-        "opgg:FaerieFlight ranks da_curiocart18 at 0.02631578947368421; ranking is supporting evidence only.",
-        "opgg:FaerieFlight ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2277,7 +2350,7 @@
     {
       "clusterId": "C4I-019",
       "priority": "P3",
-      "currentQuestion": "opgg「假关卡」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG FakeLevel 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:FakeLevel",
@@ -2327,7 +2400,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -2362,6 +2435,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2371,18 +2446,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:FakeLevel ranks da_curiocart18 at 0.07407407407407407; ranking is supporting evidence only.",
-        "opgg:FakeLevel ranks da_beggarswisp18 at 0; ranking is supporting evidence only.",
-        "opgg:FakeLevel ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2395,7 +2467,7 @@
     {
       "clusterId": "C4I-020",
       "priority": "P3",
-      "currentQuestion": "opgg「友好的植物群」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG FriendlyFlora 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:FriendlyFlora",
@@ -2445,7 +2517,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -2480,6 +2552,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2489,18 +2563,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:FriendlyFlora ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:FriendlyFlora ranks da_beggarswisp18 at 0.05; ranking is supporting evidence only.",
-        "opgg:FriendlyFlora ranks da_curiocart18 at 0.025; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2513,7 +2584,7 @@
     {
       "clusterId": "C4I-021",
       "priority": "P3",
-      "currentQuestion": "opgg「金色祭坛」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG GoldenAltar 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:GoldenAltar",
@@ -2563,7 +2634,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_beggarswisp18",
           "name": "仙灵的怜悯",
@@ -2598,6 +2669,31 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "da_beggarswisp18",
+          "name": "仙灵的怜悯",
+          "score": 0.37756410256410255,
+          "evidence": [
+            "effectSimilarity=0.10256410256410256",
+            "nameSimilarity=0.1",
+            "categoryMatch=true",
+            "costMatch=true"
+          ]
+        },
+        {
+          "productionId": "da_curiocart18",
+          "name": "珍品摆摊车",
+          "score": 0.29920634920634925,
+          "evidence": [
+            "effectSimilarity=0.17142857142857143",
+            "nameSimilarity=0.1111111111111111",
+            "categoryMatch=false",
+            "costMatch=true"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2608,17 +2704,17 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:GoldenAltar ranks da_beggarswisp18 at 0.37756410256410255; ranking is supporting evidence only.",
-        "opgg:GoldenAltar ranks da_curiocart18 at 0.29920634920634925; ranking is supporting evidence only.",
-        "opgg:GoldenAltar ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
+        "Ranked candidate da_beggarswisp18 scores 0.37756410256410255; this is review-relevant supporting evidence only.",
+        "Ranked candidate da_curiocart18 scores 0.29920634920634925; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2631,7 +2727,7 @@
     {
       "clusterId": "C4I-022",
       "priority": "P3",
-      "currentQuestion": "opgg「盗贼公会」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG GuildofThieves 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:GuildofThieves",
@@ -2681,7 +2777,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -2716,6 +2812,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2725,18 +2823,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:GuildofThieves ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:GuildofThieves ranks da_beggarswisp18 at 0.06060606060606061; ranking is supporting evidence only.",
-        "opgg:GuildofThieves ranks da_curiocart18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2749,7 +2844,7 @@
     {
       "clusterId": "C4I-023",
       "priority": "P3",
-      "currentQuestion": "opgg「马来访」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG HorsesVisit 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:HorsesVisit",
@@ -2799,7 +2894,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -2834,6 +2929,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2843,18 +2940,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:HorsesVisit ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:HorsesVisit ranks da_beggarswisp18 at 0.10555555555555556; ranking is supporting evidence only.",
-        "opgg:HorsesVisit ranks da_curiocart18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2867,7 +2961,7 @@
     {
       "clusterId": "C4I-024",
       "priority": "P3",
-      "currentQuestion": "opgg「熔化抗蚀剂」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG MeltingResists 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:MeltingResists",
@@ -2917,7 +3011,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -2952,6 +3046,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -2961,18 +3057,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:MeltingResists ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:MeltingResists ranks da_beggarswisp18 at 0.021739130434782608; ranking is supporting evidence only.",
-        "opgg:MeltingResists ranks da_curiocart18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -2985,7 +3078,7 @@
     {
       "clusterId": "C4I-025",
       "priority": "P3",
-      "currentQuestion": "opgg「小黄人部落」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG MinionHorde 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:MinionHorde",
@@ -3035,7 +3128,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -3070,6 +3163,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3079,18 +3174,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:MinionHorde ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:MinionHorde ranks da_curiocart18 at 0.027777777777777776; ranking is supporting evidence only.",
-        "opgg:MinionHorde ranks da_beggarswisp18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3103,7 +3195,7 @@
     {
       "clusterId": "C4I-026",
       "priority": "P3",
-      "currentQuestion": "opgg「新增和改进」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG NewandImproved 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:NewandImproved",
@@ -3153,7 +3245,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_beggarswisp18",
           "name": "仙灵的怜悯",
@@ -3188,6 +3280,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3197,18 +3291,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:NewandImproved ranks da_beggarswisp18 at 0.0625; ranking is supporting evidence only.",
-        "opgg:NewandImproved ranks da_curiocart18 at 0; ranking is supporting evidence only.",
-        "opgg:NewandImproved ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3221,7 +3312,7 @@
     {
       "clusterId": "C4I-027",
       "priority": "P3",
-      "currentQuestion": "opgg「高级互换见面会」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG PremiumSwapMeet 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:PremiumSwapMeet",
@@ -3271,7 +3362,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -3306,6 +3397,31 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "name": "珍品摆摊车",
+          "score": 0.38636363636363635,
+          "evidence": [
+            "effectSimilarity=0.13636363636363635",
+            "nameSimilarity=0",
+            "categoryMatch=true",
+            "costMatch=true"
+          ]
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "name": "仙灵的怜悯",
+          "score": 0.24583333333333335,
+          "evidence": [
+            "effectSimilarity=0.125",
+            "nameSimilarity=0.08333333333333333",
+            "categoryMatch=false",
+            "costMatch=true"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3316,17 +3432,17 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:PremiumSwapMeet ranks da_curiocart18 at 0.38636363636363635; ranking is supporting evidence only.",
-        "opgg:PremiumSwapMeet ranks da_beggarswisp18 at 0.24583333333333335; ranking is supporting evidence only.",
-        "opgg:PremiumSwapMeet ranks snapshot_139_6fda4e76a4da at 0.05; ranking is supporting evidence only."
+        "Ranked candidate da_curiocart18 scores 0.38636363636363635; this is review-relevant supporting evidence only.",
+        "Ranked candidate da_beggarswisp18 scores 0.24583333333333335; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3339,7 +3455,7 @@
     {
       "clusterId": "C4I-028",
       "priority": "P3",
-      "currentQuestion": "opgg「保护仪式」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG ProtectiveRitual 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:ProtectiveRitual",
@@ -3389,7 +3505,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -3424,6 +3540,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3433,18 +3551,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:ProtectiveRitual ranks snapshot_139_6fda4e76a4da at 0.06666666666666667; ranking is supporting evidence only.",
-        "opgg:ProtectiveRitual ranks da_curiocart18 at 0.021739130434782608; ranking is supporting evidence only.",
-        "opgg:ProtectiveRitual ranks da_beggarswisp18 at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3457,7 +3572,7 @@
     {
       "clusterId": "C4I-029",
       "priority": "P3",
-      "currentQuestion": "opgg「仪式完成」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG RitualComplete 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:RitualComplete",
@@ -3507,7 +3622,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -3542,6 +3657,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3551,18 +3668,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:RitualComplete ranks da_curiocart18 at 0.023809523809523808; ranking is supporting evidence only.",
-        "opgg:RitualComplete ranks da_beggarswisp18 at 0; ranking is supporting evidence only.",
-        "opgg:RitualComplete ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3575,7 +3689,7 @@
     {
       "clusterId": "C4I-030",
       "priority": "P3",
-      "currentQuestion": "opgg「星力」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG StarPower 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:StarPower",
@@ -3625,7 +3739,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -3660,6 +3774,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3669,18 +3785,15 @@
         "confirmingEvidence": []
       },
       "exactEvidence": [],
-      "supportingEvidence": [
-        "opgg:StarPower ranks snapshot_139_6fda4e76a4da at 0.19878048780487806; ranking is supporting evidence only.",
-        "opgg:StarPower ranks da_beggarswisp18 at 0.06859410430839002; ranking is supporting evidence only.",
-        "opgg:StarPower ranks da_curiocart18 at 0.03125; ranking is supporting evidence only."
-      ],
+      "supportingEvidence": [],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3693,7 +3806,7 @@
     {
       "clusterId": "C4I-031",
       "priority": "P3",
-      "currentQuestion": "opgg「战车」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG TheChariot 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:TheChariot",
@@ -3743,7 +3856,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -3778,6 +3891,31 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "name": "珍品摆摊车",
+          "score": 0.2647058823529412,
+          "evidence": [
+            "effectSimilarity=0.17647058823529413",
+            "nameSimilarity=0.35294117647058826",
+            "categoryMatch=false",
+            "costMatch=false"
+          ]
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "name": "仙灵的怜悯",
+          "score": 0.22894736842105262,
+          "evidence": [
+            "effectSimilarity=0.05263157894736842",
+            "nameSimilarity=0.10526315789473684",
+            "categoryMatch=true",
+            "costMatch=false"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3788,17 +3926,17 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:TheChariot ranks da_curiocart18 at 0.2647058823529412; ranking is supporting evidence only.",
-        "opgg:TheChariot ranks da_beggarswisp18 at 0.22894736842105262; ranking is supporting evidence only.",
-        "opgg:TheChariot ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
+        "Ranked candidate da_curiocart18 scores 0.2647058823529412; this is review-relevant supporting evidence only.",
+        "Ranked candidate da_beggarswisp18 scores 0.22894736842105262; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3811,7 +3949,7 @@
     {
       "clusterId": "C4I-032",
       "priority": "P3",
-      "currentQuestion": "opgg「老虎来访」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG TigersVisit 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:TigersVisit",
@@ -3861,7 +3999,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -3896,6 +4034,8 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -3906,18 +4046,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:TigersVisit ranks snapshot_139_6fda4e76a4da at 0.15; ranking is supporting evidence only.",
-        "opgg:TigersVisit ranks da_beggarswisp18 at 0.10405405405405406; ranking is supporting evidence only.",
-        "opgg:TigersVisit ranks da_curiocart18 at 0; ranking is supporting evidence only.",
-        "LoLCHESS exact displayed-name support: Tiger's Visit (cost 3); this is not an identity confirmation."
+        "LoLCHESS exact displayed-name identity support: Tiger's Visit; this does not confirm the production link."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
-      "confidence": "supporting_only",
+      "confidence": "low",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -3930,7 +4068,7 @@
     {
       "clusterId": "C4I-033",
       "priority": "P3",
-      "currentQuestion": "opgg「龙卷风」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG Tornado 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:Tornado",
@@ -3980,7 +4118,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "name": "克隆弈子",
@@ -4015,6 +4153,20 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "name": "克隆弈子",
+          "score": 0.2642857142857143,
+          "evidence": [
+            "effectSimilarity=0.11428571428571428",
+            "nameSimilarity=0",
+            "categoryMatch=true",
+            "costMatch=false"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -4025,17 +4177,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:Tornado ranks snapshot_139_6fda4e76a4da at 0.2642857142857143; ranking is supporting evidence only.",
-        "opgg:Tornado ranks da_beggarswisp18 at 0; ranking is supporting evidence only.",
-        "opgg:Tornado ranks da_curiocart18 at 0; ranking is supporting evidence only."
+        "Ranked candidate snapshot_139_6fda4e76a4da scores 0.2642857142857143; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",
@@ -4048,7 +4199,7 @@
     {
       "clusterId": "C4I-034",
       "priority": "P3",
-      "currentQuestion": "opgg「触摸草」 是否属于同一个真实 Wisp；若不是，是否表明 production 缺少 live 18.1 Wisp？",
+      "currentQuestion": "OP.GG TouchGrass 是否对应现有 production Wisp、属于 source variant / obsolete/non-live row，还是可能代表缺失的 live Wisp？",
       "sourceItems": [
         {
           "itemId": "opgg:TouchGrass",
@@ -4098,7 +4249,7 @@
           ]
         }
       ],
-      "productionCandidates": [
+      "rankedProductionCandidates": [
         {
           "productionId": "da_curiocart18",
           "name": "珍品摆摊车",
@@ -4133,6 +4284,20 @@
           ]
         }
       ],
+      "reviewRelevantProductionCandidates": [
+        {
+          "productionId": "da_curiocart18",
+          "name": "珍品摆摊车",
+          "score": 0.24634146341463414,
+          "evidence": [
+            "effectSimilarity=0.14634146341463414",
+            "nameSimilarity=0",
+            "categoryMatch=false",
+            "costMatch=true"
+          ]
+        }
+      ],
+      "conflictingStrongProductionCandidates": [],
       "corpusMembership": {
         "status": "unresolved",
         "evidence": []
@@ -4143,17 +4308,16 @@
       },
       "exactEvidence": [],
       "supportingEvidence": [
-        "opgg:TouchGrass ranks da_curiocart18 at 0.24634146341463414; ranking is supporting evidence only.",
-        "opgg:TouchGrass ranks da_beggarswisp18 at 0.18888888888888888; ranking is supporting evidence only.",
-        "opgg:TouchGrass ranks snapshot_139_6fda4e76a4da at 0; ranking is supporting evidence only."
+        "Ranked candidate da_curiocart18 scores 0.24634146341463414; this is review-relevant supporting evidence only."
       ],
       "conflictingEvidence": [
-        "Multiple production candidates remain plausible; similarity ranking cannot confirm identity."
+        "No policy-compliant production identity link exists."
       ],
+      "fieldReviewFollowUps": [],
       "recommendedHumanAction": "insufficient_evidence",
       "confidence": "supporting_only",
       "requiresGenuineHumanJudgement": false,
-      "insufficientEvenForHumanDecision": true,
+      "notCurrentlyActionableFromCommittedEvidence": true,
       "reasonHumanReviewRequired": "Only candidate-generating or fuzzy evidence exists; it cannot confirm membership or identity.",
       "allowedChoices": [
         "same_identity",

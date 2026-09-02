@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { clusterIdentityReviewItems, type ReviewItem } from './lib/identity-review';
+import { addLolchessIdentityEvidence, clusterIdentityReviewItems, type ReviewItem } from './lib/identity-review';
 
 type Json = Record<string, any>;
 const root = resolve(import.meta.dirname, '../..');
@@ -25,17 +25,7 @@ export async function buildIdentityReviewPacket() {
   }));
   const dataTftItems: ReviewItem[] = readiness.identity.dataTftUnmatched.map((row: Json) => {
     const productionRow = (production.records as Json[]).find((record) => record.id === row.id);
-    const ranked = opggItems.map((item) => ({ item, candidate: item.productionCandidates?.find((candidate) => candidate.productionId === row.id) }))
-      .filter((entry) => entry.candidate).sort((a, b) => (b.candidate!.score ?? 0) - (a.candidate!.score ?? 0));
-    const best = ranked[0];
-    // This overlap key creates a review neighborhood only. The score never confirms an identity.
-    const overlapKeys = best && (best.candidate!.score ?? 0) >= 0.8 ? [`candidate-production:${row.id}`] : [];
-    if (overlapKeys.length) best.item.overlapKeys = [...(best.item.overlapKeys ?? []), ...overlapKeys];
-    return {
-      itemId: `datatft:${row.id}`, source: 'datatft', sourceKey: row.id, name: row.nameZh ?? row.nameEn,
-      category: productionRow?.category, cost: productionRow?.cost, effect: productionRow?.effects?.base,
-      corpusMembershipConfirmed: false, productionCandidates: [], overlapKeys,
-    };
+    return createDataTftReviewItem(row, productionRow, opggItems);
   });
   const clientItems: ReviewItem[] = readiness.identity.communityDragonConfirmedUnlinked.map((row: Json) => ({
     itemId: `communitydragon:${row.evidence.communityDragonApiName}`, source: 'communitydragon', sourceKey: row.record.sourceKey,
@@ -46,7 +36,7 @@ export async function buildIdentityReviewPacket() {
   for (const cluster of clusters) {
     const names = new Set(cluster.sourceItems.flatMap((item) => [norm(item.sourceKey), norm(item.name)]));
     const matches = (lolchess.records as Json[]).filter((row) => names.has(norm(row.nameEn ?? row.name)) || names.has(norm(row.nameZh)));
-    for (const row of matches) cluster.supportingEvidence.push(`LoLCHESS exact displayed-name support: ${row.nameEn ?? row.name} (cost ${row.cost ?? 'unknown'}); this is not an identity confirmation.`);
+    for (const row of matches) addLolchessIdentityEvidence(cluster, row);
   }
   const priorities = Object.fromEntries(['P0', 'P1', 'P2', 'P3'].map((priority) => [priority, clusters.filter((cluster) => cluster.priority === priority).length]));
   const actions = Object.fromEntries(['same_identity', 'distinct_identity', 'source_variant', 'obsolete_or_non_live_candidate', 'insufficient_evidence'].map((action) => [action, clusters.filter((cluster) => cluster.recommendedHumanAction === action).length]));
@@ -57,7 +47,7 @@ export async function buildIdentityReviewPacket() {
     priorities, recommendations: actions,
     clustersWithStrongSingleRecommendation: clusters.filter((cluster) => cluster.confidence === 'strong').length,
     clustersRequiringGenuineHumanJudgement: clusters.filter((cluster) => cluster.requiresGenuineHumanJudgement).length,
-    clustersStillInsufficientEvenForHumanDecision: clusters.filter((cluster) => cluster.insufficientEvenForHumanDecision).length,
+    clustersNotCurrentlyActionableFromCommittedEvidence: clusters.filter((cluster) => cluster.notCurrentlyActionableFromCommittedEvidence).length,
   };
   const packet = {
     schemaVersion: 1, patch: '18.1', purpose: 'identity_review_preparation_only', readinessSource: 'reports/release-readiness-18.1.json',
@@ -74,12 +64,31 @@ function renderMarkdown(packet: Json) {
   const summary = packet.summary;
   const sections = packet.clusters.map((cluster: Json) => {
     const rows = cluster.sourceItems.map((item: Json) => `| ${item.source} | ${item.name} (\`${item.sourceKey}\`) | ${item.category ?? '—'} | ${item.cost ?? '—'} | ${item.canonicalClientKey ?? item.apiName ?? '—'} | ${item.corpusMembershipConfirmed ? 'corpus confirmed' : 'candidate only'} |`).join('\n');
-    const candidates = cluster.productionCandidates.slice(0, 3).map((candidate: Json) => `- \`${candidate.productionId}\` ${candidate.name ?? ''} — score ${candidate.score ?? 'n/a'}（仅排序证据）`).join('\n') || '- 无。';
+    const effects = cluster.sourceItems.filter((item: Json) => item.effect).map((item: Json) => `- **${item.source}:${item.sourceKey}:** ${item.effect}`).join('\n') || '- 无 committed effect evidence。';
+    const candidates = cluster.reviewRelevantProductionCandidates.slice(0, 3).map((candidate: Json) => `- \`${candidate.productionId}\` ${candidate.name ?? ''} — score ${candidate.score ?? 'n/a'}（仅展示/排序，不确认 identity）`).join('\n') || '- 当前没有有意义的 production identity candidate。';
     const same = [...cluster.exactEvidence, ...cluster.supportingEvidence].slice(0, 5).map((item: string) => `- ${item}`).join('\n') || '- 无 identity-confirming evidence。';
     const against = cluster.conflictingEvidence.map((item: string) => `- ${item}`).join('\n') || '- 尚无确定性排除证据；缺少证据本身不证明 distinct。';
-    return `## ${cluster.clusterId} — Priority ${cluster.priority}\n\n**Current question:** ${cluster.currentQuestion}\n\n| source | identity/name | category | cost | key | key evidence |\n|---|---|---:|---:|---|---|\n${rows}\n\n### Production candidates\n\n${candidates}\n\n### Evidence for same\n\n${same}\n\n### Evidence against same\n\n${against}\n\n### Recommendation\n\n\`${cluster.recommendedHumanAction}\`${cluster.recommendedProductionId ? ` → \`${cluster.recommendedProductionId}\`` : ''}. Corpus membership: **${cluster.corpusMembership.status}**; production identity link: **${cluster.productionIdentityLink.status}**.\n\n### Why human decision is still needed\n\n${cluster.reasonHumanReviewRequired}\n\n### Allowed choices\n\n${cluster.allowedChoices.map((choice: string) => `\`${choice}\``).join(' · ')}\n`;
+    const followUps = cluster.fieldReviewFollowUps.map((item: string) => `- ${item}`).join('\n') || '- 无；本 packet 不裁决字段。';
+    return `## ${cluster.clusterId} — Priority ${cluster.priority}\n\n**Current question:** ${cluster.currentQuestion}\n\n| source | identity/name | category | cost | key | key evidence |\n|---|---|---:|---:|---|---|\n${rows}\n\n### Effect evidence\n\n${effects}\n\n### Production candidates\n\n${candidates}\n\n### Identity evidence for association\n\n${same}\n\n### Identity-link limitations / conflicts\n\n${against}\n\n### Field-review follow-ups\n\n${followUps}\n\n### Recommendation\n\n\`${cluster.recommendedHumanAction}\`${cluster.recommendedProductionId ? ` → \`${cluster.recommendedProductionId}\`` : ''}. Corpus membership: **${cluster.corpusMembership.status}**; production identity link: **${cluster.productionIdentityLink.status}**.\n\n### Why human decision is still needed\n\n${cluster.reasonHumanReviewRequired}\n\n### Allowed choices\n\n${cluster.allowedChoices.map((choice: string) => `\`${choice}\``).join(' · ')}\n`;
   }).join('\n---\n\n');
-  return `# C4.2A Corpus Identity Review Packet — Patch 18.1\n\n> Review preparation only. Clustering means “review together,” not “same identity.” No decision or production correction is applied. C4.1 remains the readiness source.\n\n## Review burden\n\n- Raw items: **${summary.rawReviewItemsBeforeClustering}** (${summary.rawQueues.opggCandidateGroups} OP.GG + ${summary.rawQueues.dataTftUnmatched} DataTFT + ${summary.rawQueues.communityDragonConfirmedUnlinked} client-confirmed/unlinked).\n- Unique clusters: **${summary.uniqueClustersAfterClustering}**; duplicate-review reduction: **${summary.overlapReduction}**.\n- Priority: P0 ${summary.priorities.P0}, P1 ${summary.priorities.P1}, P2 ${summary.priorities.P2}, P3 ${summary.priorities.P3}.\n- Strong single recommendation: ${summary.clustersWithStrongSingleRecommendation}; genuine human judgement: ${summary.clustersRequiringGenuineHumanJudgement}; insufficient even for a decision now: ${summary.clustersStillInsufficientEvenForHumanDecision}.\n\n## Semantic boundary\n\n**Corpus membership confirmed** means committed sources support a live base identity. **Production identity link confirmed** additionally requires a concrete production ID and governance-compliant exact evidence. Similar category/cost/effect or fuzzy names only rank candidates.\n\n${sections}`;
+  return `# C4.2A Corpus Identity Review Packet — Patch 18.1\n\n> Review preparation only. Clustering means “review together,” not “same identity.” No decision or production correction is applied. C4.1 remains the readiness source.\n\n## Review burden\n\n- Raw items: **${summary.rawReviewItemsBeforeClustering}** (${summary.rawQueues.opggCandidateGroups} OP.GG + ${summary.rawQueues.dataTftUnmatched} DataTFT + ${summary.rawQueues.communityDragonConfirmedUnlinked} client-confirmed/unlinked).\n- Unique clusters: **${summary.uniqueClustersAfterClustering}**; duplicate-review reduction: **${summary.overlapReduction}**.\n- Priority: P0 ${summary.priorities.P0}, P1 ${summary.priorities.P1}, P2 ${summary.priorities.P2}, P3 ${summary.priorities.P3}.\n- Strong single recommendation: ${summary.clustersWithStrongSingleRecommendation}; genuine human judgement: ${summary.clustersRequiringGenuineHumanJudgement}; 当前 committed evidence 尚不足以形成正式裁决: ${summary.clustersNotCurrentlyActionableFromCommittedEvidence}.\n\n## Semantic boundary\n\n**Corpus membership confirmed** means committed sources support a live base identity. **Production identity link confirmed** additionally requires a concrete production ID and governance-compliant exact evidence. Similar category/cost/effect or fuzzy names only rank candidates. Field conflicts are deferred to C4.2B and never alter identity status here.\n\n${sections}`;
+}
+
+export function createDataTftReviewItem(row: Json, productionRow: Json | undefined, opggItems: ReviewItem[]): ReviewItem {
+  const ranked = opggItems.map((item) => ({ item, candidate: item.productionCandidates?.find((candidate) => candidate.productionId === row.id) }))
+    .filter((entry) => entry.candidate)
+    .sort((a, b) => (b.candidate!.score ?? 0) - (a.candidate!.score ?? 0) || a.item.itemId.localeCompare(b.item.itemId, 'en'));
+  const best = ranked[0];
+  const next = ranked[1];
+  const uniqueHighest = best && (!next || (best.candidate!.score ?? 0) - (next.candidate!.score ?? 0) > 0.05);
+  // This supporting-only edge changes the review neighborhood, never identity confirmation.
+  const overlapKeys = uniqueHighest && (best.candidate!.score ?? 0) >= 0.8 ? [`candidate-production:${row.id}`] : [];
+  if (overlapKeys.length) best.item.overlapKeys = [...(best.item.overlapKeys ?? []), ...overlapKeys];
+  return {
+    itemId: `datatft:${row.id}`, source: 'datatft', sourceKey: row.id, name: row.nameZh ?? row.nameEn,
+    category: productionRow?.category, cost: productionRow?.cost, effect: productionRow?.effects?.normal,
+    corpusMembershipConfirmed: false, productionCandidates: [], overlapKeys,
+  };
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename)) {
