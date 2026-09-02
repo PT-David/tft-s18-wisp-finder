@@ -1,45 +1,20 @@
 import { createHash } from 'node:crypto';
-
 export type Json = Record<string, any>;
 export const REQUIRED_FIELDS = ['riotId','nameEn','nameZh','category','cost','stageRanges','effects.normal','effects.blossom','effects.prismatic','requirements','oncePerGame','reofferCooldownShops','minimumAffordableGold'] as const;
-export const sha256 = (text: string) => createHash('sha256').update(text).digest('hex');
-export const stableJson = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`;
-export const slug = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-
-export function logicalField(reason: string) {
-  if (reason.startsWith('requirements:')) return 'requirements';
-  if (reason === 'blossom_presence') return 'effects.blossom';
-  if (reason === 'prismatic') return 'effects.prismatic';
-  return reason;
+export const sha256=(s:string)=>createHash('sha256').update(s).digest('hex');
+export const stableJson=(v:unknown)=>`${JSON.stringify(v,null,2)}\n`;
+export const canonicalText=(v:string)=>v.normalize('NFKC').trim().toLocaleLowerCase('und').replace(/[\p{P}\p{S}\s]+/gu,'');
+export const stableKey=(v:string)=>createHash('sha256').update(v.normalize('NFKC').trim().replace(/\s+/gu,' ').toLocaleLowerCase('und')).digest('hex').slice(0,16);
+export const slug=(v:string)=>canonicalText(v).replace(/[^\p{L}\p{N}]+/gu,'-').replace(/^-|-$/g,'');
+export function requirementPropositionKey(r:Json|string){
+ if(typeof r==='string') return `text-${stableKey(r)}`;
+ const structured=['type','operator','value','trait','unit','count'].filter(k=>r[k]!==undefined).map(k=>`${k}=${stableJson(r[k]).trim()}`).join('|');
+ return structured?`structured-${stableKey(structured)}`:`text-${stableKey(r.textEn??r.textZh??stableJson(r))}`;
 }
-
-export function consolidateRawIssues(rows: Json[]) {
-  const units = new Map<string, Json>();
-  for (const row of rows) for (const reason of row.reviewReasons) {
-    const field = logicalField(reason);
-    const propositionKey = field === 'requirements' ? requirementKey(row.requirements) : field === 'effects.blossom' ? 'production-blossom-semantics' : 'production-prismatic-semantics';
-    const key = `${row.productionId}|${field}|${propositionKey}`;
-    const unit = units.get(key) ?? { productionId: row.productionId, field, propositionKey, rawReasons: [] };
-    if (!unit.rawReasons.includes(reason)) unit.rawReasons.push(reason);
-    units.set(key, unit);
-  }
-  return [...units.values()].sort((a,b) => `${a.productionId}|${a.field}|${a.propositionKey}`.localeCompare(`${b.productionId}|${b.field}|${b.propositionKey}`, 'en'));
-}
-
-export function requirementKey(requirements: unknown) {
-  if (!Array.isArray(requirements) || !requirements.length) return 'requirement-presence-or-wording';
-  return requirements.map((r: Json) => slug(r.textEn ?? r.textZh ?? r.type ?? 'requirement')).sort().join('+') || 'requirement-presence-or-wording';
-}
-
-export function classifyValues(values: unknown[]) {
-  const observed = values.filter((v) => v !== undefined);
-  const normalized = new Set(observed.map((v) => stableJson(v)));
-  if (!observed.length) return { evidenceState: 'unknown', reviewClass: 'insufficient_evidence', conflictType: 'missing_value' };
-  if (normalized.size > 1) return { evidenceState: 'conflicting', reviewClass: 'human_conflict', conflictType: observed.every((v) => typeof v === 'number') ? 'numeric' : 'semantic' };
-  return { evidenceState: 'supported', reviewClass: 'decision_ready', conflictType: 'none' };
-}
-
-export const representationDoesNotProveField = (_kind: 'upgrade'|'prismatic') => false;
-export const historicalBaselineValid = (packet: Json, inputHashes: Record<string,string>) =>
-  packet.reviewBaseline.inputArtifacts.every((a: Json) => inputHashes[a.path] === a.sha256);
-
+export function expandRequirementPropositions(requirements:unknown){return Array.isArray(requirements)&&requirements.length?requirements.map((r:Json|string)=>({key:requirementPropositionKey(r),value:r})):[{key:'set-presence',value:[]}];}
+export function logicalField(reason:string){if(reason.startsWith('requirements:'))return'requirements';if(reason==='blossom_presence')return'effects.blossom';if(reason==='prismatic')return'effects.prismatic';return reason;}
+export function consolidateRawIssues(rows:Json[]){const m=new Map<string,Json>();for(const row of rows)for(const reason of row.reviewReasons){const field=logicalField(reason);const props=field==='requirements'?expandRequirementPropositions(row.requirements):[{key:field==='effects.blossom'?'production-blossom-semantics':'production-prismatic-semantics'}];for(const prop of props){const key=`${row.productionId}|${field}|${prop.key}`;const u=m.get(key)??{productionId:row.productionId,field,propositionKey:prop.key,rawReasons:[]};if(!u.rawReasons.includes(reason))u.rawReasons.push(reason);m.set(key,u)}}return[...m.values()].sort((a,b)=>stableJson(a).localeCompare(stableJson(b),'en'));}
+export function resolveClientVariables(description:string,effects:Json){const resolved:Json[]=[];for(const match of description.matchAll(/@([A-Za-z][A-Za-z0-9_]*)\s*(\*\s*100)?@/g)){const variable=match[1],raw=effects[variable];if(typeof raw==='number'){const calculated=match[2]?raw*100:raw,displayValue=Math.abs(calculated-Math.round(calculated))<.0001?Math.round(calculated):Number(calculated.toFixed(6));resolved.push({variable,rawValue:raw,displayValue,unit:match[2]?'percent':'number'});}}return resolved;}
+export function extractStructuredNumbers(text:string){return[...text.matchAll(/(-?\d+(?:\.\d+)?)\s*%/g)].map(m=>({value:Number(m[1]),unit:'percent'}));}
+export function compareEvidence(evidence:Json[]){const observed=evidence.filter(e=>e.observationState!=='not_observed'&&e.normalizedInterpretation!==undefined);const candidates=[...new Map(observed.map(e=>[stableJson(e.normalizedInterpretation),e.normalizedInterpretation])).values()];if(!observed.length)return{candidateValues:[],conflictType:'missing_value',evidenceState:evidence.some(e=>e.observationState==='not_observed')?'not_observed':'unknown',proposedDisposition:'preserve_unknown',proposalConfidence:'insufficient',reviewClass:'insufficient_evidence',humanJudgmentRequired:true};if(candidates.length===1)return{candidateValues:candidates,recommendedValue:candidates[0],proposedValue:candidates[0],conflictType:'none',evidenceState:'supported',proposedDisposition:'add',proposalConfidence:'strong',reviewClass:'decision_ready',humanJudgmentRequired:false};return{candidateValues:candidates,conflictType:candidates.every(v=>typeof v==='number')?'numeric':'semantic',evidenceState:'conflicting',proposedDisposition:'needs_human_review',proposalConfidence:'insufficient',reviewClass:'human_conflict',humanJudgmentRequired:true};}
+export function validateEvidenceMetadata(e:Json,manifest:Json,field:string){const errors:string[]=[];const s=manifest.sources.find((x:Json)=>x.sourceId===e.sourceId);if(!s)return[`unknown sourceId ${e.sourceId}`];for(const k of ['tier','confidence'])if(e[k]!==s[k])errors.push(`${e.sourceId} ${k} drift`);if(stableJson(e.sourceLocaleCoverage)!==stableJson(s.locale??'unspecified'))errors.push(`${e.sourceId} locale coverage drift`);if(['nameEn','effects.normal','effects.blossom','effects.prismatic'].includes(field)&&e.valueLocale==='multi')errors.push(`${e.sourceId} imprecise localized value locale`);const allowed:Record<string,string[]>={riotId:['riotId','identity_review','identity_cross_check'],nameEn:['display_name_cross_check','nameEn','identity_cross_check','identity_review'],nameZh:['display_name_cross_check','nameZh','identity_review'],category:['category','field_conflict_detection'],cost:['cost','cost_cross_check','field_conflict_detection'],stageRanges:['stageRanges','stageRanges_cross_check','field_conflict_detection'],requirements:['requirements','requirements_cross_check','field_conflict_detection'],oncePerGame:['oncePerGame'],reofferCooldownShops:['reofferCooldownShops'],'effects.normal':['effectsZh','effect_cross_check','field_conflict_detection'],'effects.blossom':['effectsZh','blossom_cross_check','effect_cross_check','field_conflict_detection'],'effects.prismatic':['effectsZh','prismatic_cross_check','effect_cross_check','field_conflict_detection']};if(!(allowed[field]??[]).some(x=>(s.useFor??[]).includes(x)))errors.push(`${e.sourceId} useFor incompatible with ${field}`);return errors;}

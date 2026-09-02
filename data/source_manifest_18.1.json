@@ -240,7 +240,8 @@
         "identity_review",
         "riotId",
         "canonical_client_key",
-        "display_name_cross_check"
+        "display_name_cross_check",
+        "effect_cross_check"
       ],
       "confidence": "client_data",
       "relevantRecordCount": 8,
@@ -275,7 +276,9 @@
         "prismatic_cross_check",
         "requirements_cross_check",
         "oncePerGame",
-        "reofferCooldownShops"
+        "reofferCooldownShops",
+        "cost_cross_check",
+        "effect_cross_check"
       ],
       "confidence": "verified_third_party"
     }
