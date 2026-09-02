@@ -22,7 +22,9 @@
     "validate:materialized-search": "tsx scripts/validate-materialized-search.ts",
     "data:publish-search:18.1": "tsx scripts/data/publish-reviewed-search-18.1.ts",
     "validate:runtime-search": "tsx scripts/validate-runtime-search.ts",
-    "validate:rules": "tsx scripts/validate-rules.ts"
+    "validate:rules": "tsx scripts/validate-rules.ts",
+    "data:release-audit:18.1": "tsx scripts/data/release-audit-18.1.ts",
+    "validate:release-audit": "tsx scripts/validate-release-audit.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0",
