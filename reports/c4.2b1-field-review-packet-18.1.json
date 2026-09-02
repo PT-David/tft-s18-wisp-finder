@@ -81,7 +81,7 @@
       },
       {
         "path": "reports/c4.2a3-catalog-delta-reconciliation-18.1.json",
-        "sha256": "c7c30eea8bd95682ce9c972d819208a4a439b732af9d2f506a1351e02ee1036f"
+        "sha256": "ec0a0854d97b5735120e683b16fb6ccbdb3cdd79fa0edcc7e4197e020824290f"
       },
       {
         "path": "reports/data-lolchess-field-audit-18.1.json",
@@ -97,7 +97,7 @@
       },
       {
         "path": "reports/release-readiness-18.1.json",
-        "sha256": "7f58276ef680e0c179c091b94667c32c425e60a5e0d240f83eaffe69c28386c6"
+        "sha256": "7161c514cb778e1fbca30d9c939608a1310abfd0cce6c7138422576caf341b2d"
       }
     ]
   },
@@ -143,11 +143,11 @@
         "nameEn",
         "stageRanges",
         "cost",
-        "nameZh",
-        "category"
+        "nameZh"
       ],
       "humanConflicts": [
-        "effects.normal"
+        "effects.normal",
+        "category"
       ],
       "insufficientEvidence": [
         "effects.prismatic",
@@ -161,6 +161,7 @@
       "highPriorityBlockers": [
         "effects.normal",
         "effects.prismatic",
+        "category",
         "effects.blossom"
       ]
     },
@@ -173,13 +174,13 @@
         "riotId",
         "nameEn",
         "stageRanges",
-        "nameZh",
-        "category"
+        "nameZh"
       ],
       "humanConflicts": [
         "requirements",
         "effects.normal",
-        "cost"
+        "cost",
+        "category"
       ],
       "insufficientEvidence": [
         "effects.prismatic",
@@ -195,6 +196,7 @@
         "effects.normal",
         "cost",
         "effects.prismatic",
+        "category",
         "effects.blossom"
       ]
     },
@@ -208,12 +210,12 @@
         "nameEn",
         "stageRanges",
         "cost",
-        "nameZh",
-        "category"
+        "nameZh"
       ],
       "humanConflicts": [
         "requirements",
-        "effects.normal"
+        "effects.normal",
+        "category"
       ],
       "insufficientEvidence": [
         "effects.prismatic",
@@ -228,6 +230,7 @@
         "requirements",
         "effects.normal",
         "effects.prismatic",
+        "category",
         "effects.blossom"
       ]
     },
@@ -241,13 +244,13 @@
         "nameEn",
         "stageRanges",
         "nameZh",
-        "category",
         "effects.blossom"
       ],
       "humanConflicts": [
         "requirements",
         "effects.normal",
-        "cost"
+        "cost",
+        "category"
       ],
       "insufficientEvidence": [
         "effects.prismatic"
@@ -261,7 +264,8 @@
         "requirements",
         "effects.normal",
         "cost",
-        "effects.prismatic"
+        "effects.prismatic",
+        "category"
       ]
     },
     {
@@ -305,12 +309,12 @@
         "nameEn",
         "stageRanges",
         "cost",
-        "nameZh",
-        "category"
+        "nameZh"
       ],
       "humanConflicts": [
         "requirements",
-        "effects.normal"
+        "effects.normal",
+        "category"
       ],
       "insufficientEvidence": [
         "effects.prismatic",
@@ -325,6 +329,7 @@
         "requirements",
         "effects.normal",
         "effects.prismatic",
+        "category",
         "effects.blossom"
       ]
     }
@@ -579,22 +584,20 @@
           "rawValue": true,
           "normalizedInterpretation": true,
           "comparisonValue": true,
-          "proposedProductionValue": true,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         "获得2经验值。",
-        null,
-        true
+        null
       ],
       "productionCandidateValues": [
         "获得2经验值。",
-        null,
-        true
+        null
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -1483,22 +1486,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Your team heals 2% max Health per second.",
-        false
+        "Your team heals 2% max Health per second."
       ],
       "productionCandidateValues": [
         null,
-        "Your team heals 2% max Health per second.",
-        false
+        "Your team heals 2% max Health per second."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -2116,7 +2117,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.prismatic",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed"
@@ -2204,7 +2204,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.blossom",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed",
@@ -2227,9 +2226,6 @@
           "sourceArtifact": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
           "field": "effects.blossom",
           "rawValue": [
-            "DA_TigersVisit18_Wisp_Upgrade"
-          ],
-          "proposedProductionValue": [
             "DA_TigersVisit18_Wisp_Upgrade"
           ],
           "supports": [],
@@ -2329,22 +2325,20 @@
           "rawValue": true,
           "normalizedInterpretation": true,
           "comparisonValue": true,
-          "proposedProductionValue": true,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         "获得4经验值。",
-        null,
-        true
+        null
       ],
       "productionCandidateValues": [
         "获得4经验值。",
-        null,
-        true
+        null
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -2630,27 +2624,27 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-prismatic-audit-18.1.json",
           "representationKind": "client_prismatic_representation"
         }
       ],
       "candidateValues": [
-        "复制你伤害最高的弈子。复制体造成100%伤害。",
-        false
+        "复制你伤害最高的弈子。复制体造成100%伤害。"
       ],
       "productionCandidateValues": [
-        "复制你伤害最高的弈子。复制体造成100%伤害。",
-        false
+        "复制你伤害最高的弈子。复制体造成100%伤害。"
       ],
-      "conflictType": "semantic",
-      "evidenceState": "conflicting",
-      "proposedDisposition": "needs_human_review",
-      "proposalConfidence": "insufficient",
-      "reviewClass": "human_conflict",
-      "humanJudgmentRequired": true,
+      "recommendedValue": "复制你伤害最高的弈子。复制体造成100%伤害。",
+      "proposedProductionValue": "复制你伤害最高的弈子。复制体造成100%伤害。",
+      "conflictType": "none",
+      "evidenceState": "supported",
+      "proposedDisposition": "add",
+      "proposalConfidence": "strong",
+      "reviewClass": "decision_ready",
+      "humanJudgmentRequired": false,
       "currentProductionValue": "复制你伤害最高的弈子。复制体造成100%伤害。",
       "queueReasons": [
         "prismatic"
@@ -2663,7 +2657,7 @@
         "communityDragon": false,
         "lolchess": false
       },
-      "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
+      "reason": "Evidence-derived candidate value is explicit; this remains a B1 proposal pending B2 confirmation."
     },
     {
       "reviewId": "C42B1-2d0068157dd535c7-10762e1094dbeeab-60243de4dc2ce66d",
@@ -3812,7 +3806,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.prismatic",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed"
@@ -3910,15 +3903,13 @@
         "combat",
         "Combat"
       ],
-      "recommendedValue": "combat",
-      "proposedProductionValue": "combat",
-      "conflictType": "none",
-      "evidenceState": "supported",
-      "proposedDisposition": "add",
-      "proposalConfidence": "strong",
-      "reviewClass": "decision_ready",
-      "humanJudgmentRequired": false,
-      "reason": "Evidence-derived candidate value is explicit; this remains a B1 proposal pending B2 confirmation."
+      "conflictType": "target_selection",
+      "evidenceState": "conflicting",
+      "proposedDisposition": "needs_human_review",
+      "proposalConfidence": "insufficient",
+      "reviewClass": "human_conflict",
+      "humanJudgmentRequired": true,
+      "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
     },
     {
       "reviewId": "C42B1-3149d885ad5877c3-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
@@ -3952,7 +3943,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.blossom",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed",
@@ -3975,9 +3965,6 @@
           "sourceArtifact": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
           "field": "effects.blossom",
           "rawValue": [
-            "DA_PottedLifebloom18_Upgrade"
-          ],
-          "proposedProductionValue": [
             "DA_PottedLifebloom18_Upgrade"
           ],
           "supports": [],
@@ -5679,22 +5666,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Gain 90% bonus Coven Essence this combat.",
-        false
+        "Gain 90% bonus Coven Essence this combat."
       ],
       "productionCandidateValues": [
         null,
-        "Gain 90% bonus Coven Essence this combat.",
-        false
+        "Gain 90% bonus Coven Essence this combat."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -5989,22 +5974,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "If you win the next player combat, gain 3 Gold.",
-        false
+        "If you win the next player combat, gain 3 Gold."
       ],
       "productionCandidateValues": [
         null,
-        "If you win the next player combat, gain 3 Gold.",
-        false
+        "If you win the next player combat, gain 3 Gold."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -6622,7 +6605,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.prismatic",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed"
@@ -6742,9 +6724,6 @@
           "sourceArtifact": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
           "field": "effects.blossom",
           "rawValue": [
-            "DA_BearsVisit18_Upgrade"
-          ],
-          "proposedProductionValue": [
             "DA_BearsVisit18_Upgrade"
           ],
           "supports": [],
@@ -7352,22 +7331,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Lose 8 Player Health. Gain a Champion Duplicator.",
-        false
+        "Lose 8 Player Health. Gain a Champion Duplicator."
       ],
       "productionCandidateValues": [
         null,
-        "Lose 8 Player Health. Gain a Champion Duplicator.",
-        false
+        "Lose 8 Player Health. Gain a Champion Duplicator."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -7608,22 +7585,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "If you win next combat, gain 10 Gold.",
-        false
+        "If you win next combat, gain 10 Gold."
       ],
       "productionCandidateValues": [
         null,
-        "If you win next combat, gain 10 Gold.",
-        false
+        "If you win next combat, gain 10 Gold."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -7726,22 +7701,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-prismatic-audit-18.1.json",
           "representationKind": "client_prismatic_representation"
         }
       ],
       "candidateValues": [
         "获得100金币。你的对手获得1金币。",
-        "Gain 100 gold. Your opponent gains 1 gold.",
-        false
+        "Gain 100 gold. Your opponent gains 1 gold."
       ],
       "productionCandidateValues": [
         "获得100金币。你的对手获得1金币。",
-        "Gain 100 gold. Your opponent gains 1 gold.",
-        false
+        "Gain 100 gold. Your opponent gains 1 gold."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -7844,22 +7817,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Gain 2 gold. Your opponent gains 1 gold.",
-        false
+        "Gain 2 gold. Your opponent gains 1 gold."
       ],
       "productionCandidateValues": [
         null,
-        "Gain 2 gold. Your opponent gains 1 gold.",
-        false
+        "Gain 2 gold. Your opponent gains 1 gold."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -8229,22 +8200,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Add 2 to your win streak.",
-        false
+        "Add 2 to your win streak."
       ],
       "productionCandidateValues": [
         null,
-        "Add 2 to your win streak.",
-        false
+        "Add 2 to your win streak."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -9355,15 +9324,13 @@
         "combat",
         "Combat"
       ],
-      "recommendedValue": "combat",
-      "proposedProductionValue": "combat",
-      "conflictType": "none",
-      "evidenceState": "supported",
-      "proposedDisposition": "add",
-      "proposalConfidence": "strong",
-      "reviewClass": "decision_ready",
-      "humanJudgmentRequired": false,
-      "reason": "Evidence-derived candidate value is explicit; this remains a B1 proposal pending B2 confirmation."
+      "conflictType": "target_selection",
+      "evidenceState": "conflicting",
+      "proposedDisposition": "needs_human_review",
+      "proposalConfidence": "insufficient",
+      "reviewClass": "human_conflict",
+      "humanJudgmentRequired": true,
+      "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
     },
     {
       "reviewId": "C42B1-8eb276e8d7001658-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
@@ -9632,22 +9599,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "For the next 3 player combats, gain 6 XP if you lose.",
-        false
+        "For the next 3 player combats, gain 6 XP if you lose."
       ],
       "productionCandidateValues": [
         null,
-        "For the next 3 player combats, gain 6 XP if you lose.",
-        false
+        "For the next 3 player combats, gain 6 XP if you lose."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -11913,7 +11878,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.prismatic",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed"
@@ -12011,15 +11975,13 @@
         "combat",
         "Combat"
       ],
-      "recommendedValue": "combat",
-      "proposedProductionValue": "combat",
-      "conflictType": "none",
-      "evidenceState": "supported",
-      "proposedDisposition": "add",
-      "proposalConfidence": "strong",
-      "reviewClass": "decision_ready",
-      "humanJudgmentRequired": false,
-      "reason": "Evidence-derived candidate value is explicit; this remains a B1 proposal pending B2 confirmation."
+      "conflictType": "target_selection",
+      "evidenceState": "conflicting",
+      "proposedDisposition": "needs_human_review",
+      "proposalConfidence": "insufficient",
+      "reviewClass": "human_conflict",
+      "humanJudgmentRequired": true,
+      "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
     },
     {
       "reviewId": "C42B1-bbbecf24acf3681f-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
@@ -12053,7 +12015,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.blossom",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed",
@@ -12076,9 +12037,6 @@
           "sourceArtifact": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
           "field": "effects.blossom",
           "rawValue": [
-            "DA_PottedStonebark18_Upgrade"
-          ],
-          "proposedProductionValue": [
             "DA_PottedStonebark18_Upgrade"
           ],
           "supports": [],
@@ -12348,22 +12306,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Lose 3 Player Health. Gain 3 Gold.",
-        false
+        "Lose 3 Player Health. Gain 3 Gold."
       ],
       "productionCandidateValues": [
         null,
-        "Lose 3 Player Health. Gain 3 Gold.",
-        false
+        "Lose 3 Player Health. Gain 3 Gold."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -13172,22 +13128,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "If you lose and kill at least one enemy, gain 6 XP.",
-        false
+        "If you lose and kill at least one enemy, gain 6 XP."
       ],
       "productionCandidateValues": [
         null,
-        "If you lose and kill at least one enemy, gain 6 XP.",
-        false
+        "If you lose and kill at least one enemy, gain 6 XP."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -14091,22 +14045,20 @@
           "rawValue": false,
           "normalizedInterpretation": false,
           "comparisonValue": false,
-          "proposedProductionValue": false,
           "supports": [],
           "conflictsWith": [],
+          "observationState": "representation_only",
           "derivedArtifact": "reports/data-lolchess-field-audit-18.1.json",
           "representationKind": "client_upgrade_does_not_prove_blossom"
         }
       ],
       "candidateValues": [
         null,
-        "Lose 1 Player Health. Gain a Lesser Champion Duplicator.",
-        false
+        "Lose 1 Player Health. Gain a Lesser Champion Duplicator."
       ],
       "productionCandidateValues": [
         null,
-        "Lose 1 Player Health. Gain a Lesser Champion Duplicator.",
-        false
+        "Lose 1 Player Health. Gain a Lesser Champion Duplicator."
       ],
       "conflictType": "semantic",
       "evidenceState": "conflicting",
@@ -15042,7 +14994,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.prismatic",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed"
@@ -15140,15 +15091,13 @@
         "combat",
         "Combat"
       ],
-      "recommendedValue": "combat",
-      "proposedProductionValue": "combat",
-      "conflictType": "none",
-      "evidenceState": "supported",
-      "proposedDisposition": "add",
-      "proposalConfidence": "strong",
-      "reviewClass": "decision_ready",
-      "humanJudgmentRequired": false,
-      "reason": "Evidence-derived candidate value is explicit; this remains a B1 proposal pending B2 confirmation."
+      "conflictType": "target_selection",
+      "evidenceState": "conflicting",
+      "proposedDisposition": "needs_human_review",
+      "proposalConfidence": "insufficient",
+      "reviewClass": "human_conflict",
+      "humanJudgmentRequired": true,
+      "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
     },
     {
       "reviewId": "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
@@ -15214,9 +15163,6 @@
           "sourceArtifact": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
           "field": "effects.blossom",
           "rawValue": [
-            "DA_Snacktime18_Upgrade"
-          ],
-          "proposedProductionValue": [
             "DA_Snacktime18_Upgrade"
           ],
           "supports": [],
@@ -16050,7 +15996,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.prismatic",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed"
@@ -16148,15 +16093,13 @@
         "combat",
         "Combat"
       ],
-      "recommendedValue": "combat",
-      "proposedProductionValue": "combat",
-      "conflictType": "none",
-      "evidenceState": "supported",
-      "proposedDisposition": "add",
-      "proposalConfidence": "strong",
-      "reviewClass": "decision_ready",
-      "humanJudgmentRequired": false,
-      "reason": "Evidence-derived candidate value is explicit; this remains a B1 proposal pending B2 confirmation."
+      "conflictType": "target_selection",
+      "evidenceState": "conflicting",
+      "proposedDisposition": "needs_human_review",
+      "proposalConfidence": "insufficient",
+      "reviewClass": "human_conflict",
+      "humanJudgmentRequired": true,
+      "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
     },
     {
       "reviewId": "C42B1-d6b0fc95931e4827-ff0b7ab51a68bba3-ff0b7ab51a68bba3",
@@ -16190,7 +16133,6 @@
           "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
           "field": "effects.blossom",
           "rawValue": null,
-          "proposedProductionValue": null,
           "supports": [],
           "conflictsWith": [],
           "observationState": "not_observed",
@@ -16213,9 +16155,6 @@
           "sourceArtifact": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
           "field": "effects.blossom",
           "rawValue": [
-            "DA_TurtlesVisit18_Upgrade"
-          ],
-          "proposedProductionValue": [
             "DA_TurtlesVisit18_Upgrade"
           ],
           "supports": [],
@@ -18476,11 +18415,11 @@
     "rawIdentityCount": 72,
     "logicalReviewUnitCount": 174,
     "existingLogicalReviewUnitCount": 83,
-    "existingDecisionReady": 0,
-    "existingHumanConflict": 83,
+    "existingDecisionReady": 1,
+    "existingHumanConflict": 82,
     "existingInsufficientEvidence": 0,
-    "decisionReady": 45,
-    "humanConflict": 94,
+    "decisionReady": 41,
+    "humanConflict": 98,
     "insufficientEvidence": 14,
     "acceptedUnknown": 21
   }
