@@ -5983,7 +5983,7 @@
       "id": "datatft-unmatched",
       "kind": "identity",
       "count": 1,
-      "detail": "DataTFT row has no confirmed OP.GG identity link."
+      "detail": "DataTFT rows have no confirmed OP.GG identity link."
     },
     {
       "id": "client-confirmed-unlinked",

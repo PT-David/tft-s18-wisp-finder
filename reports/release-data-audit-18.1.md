@@ -38,7 +38,7 @@ The 167 once-per-game and 169 cooldown unknown states are accepted unknowns, not
 
 ## Release blockers
 
-Exact corpus boundary and the review queues remain unresolved. Accounting uses separate units: corpus-completeness groups 1; identity blocker groups 3; identity review items 41; Requirement unique review identities 63; other field conflict items 15; deduplicated critical-field review identities 68; provenance items 5. No mixed-unit total is reported.
+Release state: **NOT READY — CORPUS COMPLETENESS UNRESOLVED; TARGETED HUMAN REVIEW REQUIRED**. Accounting uses separate units: corpus-completeness groups 1; identity blocker groups 3; identity review items 41; Requirement unique review identities 63; other field conflict items 15; deduplicated critical-field review identities 68; provenance items 5. No mixed-unit total is reported.
 
 Readiness is the conjunction of the explicit `releaseCriteria`: proven corpus boundary; empty OP.GG identity, DataTFT unmatched, client-confirmed-unlinked, deduplicated critical-field, provenance, and stale-PBE queues; and successful required-schema validation.
 
