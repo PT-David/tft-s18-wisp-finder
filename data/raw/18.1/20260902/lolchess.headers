@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+date: Wed, 02 Sep 2026 05:27:39 GMT
+server: envoy
+
+HTTP/1.1 202 Accepted
+server: envoy
+date: Wed, 02 Sep 2026 05:27:39 GMT
+content-length: 0
+x-amzn-waf-action: challenge
+cache-control: no-store, max-age=0
+content-type: text/html; charset=UTF-8
+access-control-allow-origin: *
+access-control-max-age: 86400
+access-control-allow-methods: OPTIONS,GET,POST
+access-control-expose-headers: x-amzn-waf-action
+x-cache: Error from cloudfront
+via: 1.1 00b9fc0dd481b22c424c0108047e86c4.cloudfront.net (CloudFront)
+x-amz-cf-pop: ORD56-P17
+x-amz-cf-id: CqT2rojHN4kwAt-9OADvD8EUXsQWcSYhLGFKGT_pTsR-PQNBMGxBMA==
+strict-transport-security: max-age=31536000
+x-envoy-upstream-service-time: 43
+

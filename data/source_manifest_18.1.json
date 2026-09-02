@@ -1,6 +1,6 @@
 {
   "patch": "18.1",
-  "snapshotAt": "2026-08-29T11:22:31.117Z",
+  "snapshotAt": "2026-09-02T05:27:39Z",
   "sources": [
     {
       "sourceId": "riot_patch_18_1_20260828",
@@ -128,6 +128,102 @@
       },
       "declaredRecordCount": 200,
       "parsedRecordCount": 200
+    },
+    {
+      "sourceId": "datatft_18_1_20260902_priority_browser",
+      "tier": "D",
+      "url": "https://www.datatft.com/database#charm",
+      "retrievedAt": "2026-09-02T05:26:21Z",
+      "pageUpdatedAt": "2026/09/01 03:18",
+      "upstreamModifiedAt": "unknown",
+      "httpStatus": 200,
+      "fetchStatus": "browser_snapshot_extracted",
+      "sha256": "f82ad6da383d725dfa44746a8b04579e752b3525aa6389b1439e43ac8d51fed9",
+      "rawSnapshots": [
+        {
+          "path": "data/raw/18.1/20260902/datatft-rendered.html",
+          "locale": "zh_cn",
+          "sha256": "5a468e47e75720b448730090526643501a7d1dcf990f7c98bf765d48b2eba3aa"
+        },
+        {
+          "path": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+          "locale": "en_us",
+          "sha256": "940285607c7588593d780ad6ca283612d28c2c372f32c2b35f71d7d87c0b4cfa"
+        }
+      ],
+      "locale": "multi",
+      "useFor": [
+        "identity_review",
+        "display_name_cross_check",
+        "field_conflict_detection"
+      ],
+      "confidence": "community_high_confidence",
+      "relevantRecordCount": 6,
+      "scope": "c4.2a2_identity_review"
+    },
+    {
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "tier": "B",
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
+      "retrievedAt": "2026-09-02T05:27:37Z",
+      "upstreamModifiedAt": "2026-08-29T00:53:26Z / 2026-08-29T00:53:30Z",
+      "httpStatus": 200,
+      "fetchStatus": "fetched_and_extracted",
+      "sha256": "77b6622edcd155abfd10e056f1b5766e01aa10bce7ab84f34c7124fbc9e22678",
+      "locale": "multi",
+      "useFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "field_conflict_detection"
+      ],
+      "confidence": "client_data",
+      "relevantBaseRecordCount": 6,
+      "scope": "c4.2a2_identity_review"
+    },
+    {
+      "sourceId": "opgg_set18_wisps_20260902",
+      "tier": "C",
+      "url": "https://op.gg/zh-cn/tft/set/18",
+      "retrievedAt": "2026-09-02T05:27:39Z",
+      "upstreamModifiedAt": "unknown",
+      "pageUpdatedAt": "unknown",
+      "httpStatus": 200,
+      "fetchStatus": "fetched_and_extracted",
+      "sha256": "5b59771244aa69ecdaf147988fa276f5085802bf99f8072a23982b73805602a7",
+      "rawSnapshot": {
+        "path": "data/raw/18.1/20260902/opgg-zh-cn.html",
+        "sha256": "46ec8492150550658b998de8a23579bb4074705cd7f928e9347a04d73faddd35"
+      },
+      "locale": "zh_cn",
+      "useFor": [
+        "identity_review",
+        "corpus_membership_cross_check",
+        "field_conflict_detection"
+      ],
+      "confidence": "community_high_confidence",
+      "relevantRecordCount": 6,
+      "scope": "c4.2a2_identity_review"
+    },
+    {
+      "sourceId": "lolchess_wisps_18_1_20260902_attempt",
+      "tier": "C",
+      "url": "https://lolchess.gg/rewards/set18/wisps",
+      "retrievedAt": "2026-09-02T05:27:39Z",
+      "upstreamModifiedAt": "unknown",
+      "pageUpdatedAt": "unknown",
+      "httpStatus": 202,
+      "fetchStatus": "blocked_by_source_protection",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "locale": "en",
+      "useFor": [
+        "acquisition_history"
+      ],
+      "confidence": "unverified",
+      "relevantRecordCount": 0,
+      "warning": "Ordinary GET returned an AWS WAF challenge; no new record evidence was consumed.",
+      "scope": "c4.2a2_identity_review"
     },
     {
       "sourceId": "lolchess_set18_wisps_browser_import",

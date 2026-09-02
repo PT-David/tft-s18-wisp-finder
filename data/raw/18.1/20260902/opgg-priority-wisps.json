@@ -1,0 +1,72 @@
+{
+  "sourceId": "opgg_set18_wisps_20260902",
+  "url": "https://op.gg/zh-cn/tft/set/18",
+  "retrievedAt": "2026-09-02T05:27:39Z",
+  "httpStatus": 200,
+  "fetchStatus": "fetched_and_extracted",
+  "locale": "zh_cn",
+  "declaredRecordCount": 200,
+  "parsedRecordCount": 200,
+  "relevantRecordCount": 6,
+  "records": [
+    {
+      "sourceKey": "CloneCompanion",
+      "name": "克隆伴侣",
+      "category": "Combat",
+      "cost": 5,
+      "effect": "复制伤害最高的弈子。复制体造成20%伤害。",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "TurtlesVisit",
+      "name": "海龟来访",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "本场战斗获得乌龟原始增益。",
+      "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PottedLifebloom",
+      "name": "盆栽生命绽放",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "获得1朵临时生命花。",
+      "appearanceCondition": "已激活永恒之森羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "PottedStonebark",
+      "name": "盆栽石皮树",
+      "category": "Combat",
+      "cost": 2,
+      "effect": "获得一棵临时石皮树。",
+      "appearanceCondition": "已激活永恒之森羁绊",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "MemorialDummy",
+      "name": "纪念假人",
+      "category": "Combat",
+      "cost": 3,
+      "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+      "appearanceCondition": "战场上有至少1名携带装备的坦克",
+      "blossom": null,
+      "prismatic": null
+    },
+    {
+      "sourceKey": "Snacktime",
+      "name": "零食时间！",
+      "category": "Combat",
+      "cost": 4,
+      "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+      "appearanceCondition": "已激活灵巧精羁绊",
+      "blossom": null,
+      "prismatic": null
+    }
+  ]
+}

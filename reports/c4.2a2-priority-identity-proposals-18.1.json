@@ -1,0 +1,1652 @@
+{
+  "schemaVersion": 2,
+  "patch": "18.1",
+  "purpose": "priority_identity_adjudication_proposals_only",
+  "baseline": {
+    "actualMainSha": "d2519c7dba46b06d760a49cc565ccdf4c58222b8",
+    "recommendedProductionReady": false,
+    "c4_2a1PacketState": {
+      "rawReviewItemsBeforeClustering": 41,
+      "rawQueues": {
+        "opggCandidateGroups": 34,
+        "dataTftUnmatched": 1,
+        "communityDragonConfirmedUnlinked": 6
+      },
+      "uniqueClustersAfterClustering": 34,
+      "overlapReduction": 7,
+      "priorities": {
+        "P0": 1,
+        "P1": 5,
+        "P2": 0,
+        "P3": 28
+      },
+      "recommendations": {
+        "same_identity": 0,
+        "distinct_identity": 0,
+        "source_variant": 0,
+        "obsolete_or_non_live_candidate": 0,
+        "insufficient_evidence": 34
+      },
+      "clustersWithStrongSingleRecommendation": 0,
+      "clustersRequiringGenuineHumanJudgement": 6,
+      "clustersNotCurrentlyActionableFromCommittedEvidence": 28
+    }
+  },
+  "semantics": {
+    "proposalsAreNotDecisions": true,
+    "humanDecisionsApplied": 0,
+    "fieldConflictsNeverConfirmIdentity": true,
+    "fuzzyEvidenceOnlyGeneratesCandidates": true,
+    "missingHypothesisIsNotDistinctDecision": true
+  },
+  "dataTftSourceIndexAudit": {
+    "indexSemantics": "zero_based_rendered_catalog_ordinal_not_stable_identity",
+    "oldSnapshotRecordCount": 169,
+    "oldSnapshotContiguousIndices": true,
+    "freshRenderedRecordCount": 176,
+    "freshPriorityIndices": [
+      139,
+      170,
+      171,
+      172,
+      173,
+      175
+    ],
+    "interveningIndex174": "Tiger's Visit",
+    "conclusion": "The browser extractor assigns sourceIndex from evaluateAll DOM order. Old snapshot is contiguous 0..168; fresh rendered catalog is contiguous 0..175. Rows 170..175 are beyond the old catalog boundary, but sourceIndex is supporting catalog-position evidence, never a stable identity key."
+  },
+  "freshAcquisitionStatus": {
+    "datatft_18_1_20260902_priority_browser": "browser_snapshot_extracted",
+    "communitydragon_live_18_1_20260902_priority": "fetched_and_extracted",
+    "opgg_set18_wisps_20260902": "fetched_and_extracted",
+    "lolchess_wisps_18_1_20260902_attempt": "blocked_by_source_protection"
+  },
+  "artifactBoundary": {
+    "before": {
+      "data/normalized/wisps_18.1.json": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+      "data/materialized/18.1/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
+      "data/materialized/18.1/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
+      "data/materialized/18.1/synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
+      "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
+      "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
+      "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
+      "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e"
+    },
+    "after": {
+      "data/normalized/wisps_18.1.json": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
+      "data/materialized/18.1/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
+      "data/materialized/18.1/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
+      "data/materialized/18.1/synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
+      "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
+      "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
+      "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
+      "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e"
+    },
+    "productionSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7"
+  },
+  "totals": {
+    "sameIdentity": 1,
+    "missingProduction": 5,
+    "strongMissingHypotheses": 5,
+    "sourceVariant": 0,
+    "obsoleteOrNonLive": 0,
+    "insufficient": 5
+  },
+  "proposals": [
+    {
+      "clusterId": "C4I-001",
+      "sourceIdentity": "CloneCompanion",
+      "oldCommittedState": {
+        "priority": "P0",
+        "question": "DataTFT「克隆弈子」是否就是 OP.GG / CommunityDragon 已确认的 CloneCompanion；如果不是，CloneCompanion 是否代表 production 缺失的 live Wisp？",
+        "corpusMembership": "confirmed",
+        "productionIdentityLink": "unresolved",
+        "recommendation": "insufficient_evidence"
+      },
+      "freshSourcePresence": {
+        "DataTFT": true,
+        "CommunityDragon": true,
+        "OPGG": true,
+        "LoLCHESS": {
+          "status": "blocked_by_source_protection",
+          "newEvidence": false
+        }
+      },
+      "corpusMembership": "confirmed",
+      "productionIdentity": "existing_confirmed",
+      "proposedAction": "same_identity",
+      "proposedProductionId": "snapshot_139_6fda4e76a4da",
+      "productionMissingCandidate": false,
+      "missingProductionHypothesis": "none",
+      "proposalConfidence": "strong",
+      "confirmingEvidence": [
+        {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "snapshotPath": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
+          "selector": "locales.en_us.records[apiName=DA_CloneCompanion18]",
+          "evidenceClass": "identity_confirming",
+          "note": "Live client base apiName DA_CloneCompanion18."
+        },
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=139] + old DataTFT row",
+          "evidenceClass": "identity_confirming",
+          "note": "Reviewed same-source row continuity preserves Chinese name, cost, effect, and production stage ranges for snapshot_139_6fda4e76a4da.",
+          "productionId": "snapshot_139_6fda4e76a4da"
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=139]",
+          "evidenceClass": "supporting_only",
+          "note": "Fresh DataTFT bilingual catalog row 139: Clone Companion / 克隆弈子."
+        },
+        {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "snapshotPath": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "selector": "records[sourceKey=CloneCompanion]",
+          "evidenceClass": "supporting_only",
+          "note": "OP.GG stable catalog key CloneCompanion."
+        }
+      ],
+      "conflictingEvidence": [],
+      "productionSearch": {
+        "productionRecordCount": 169,
+        "queryNames": [
+          "Clone Companion",
+          "CloneCompanion",
+          "克隆伴侣",
+          "克隆弈子",
+          "复制同伴"
+        ],
+        "exactIdOrKeyMatches": [],
+        "exactEnglishNameMatches": [],
+        "exactChineseNameMatches": [
+          "snapshot_139_6fda4e76a4da"
+        ],
+        "normalizedNameMatches": [
+          "snapshot_139_6fda4e76a4da"
+        ],
+        "reviewedMappingMatches": [],
+        "sourceRowContinuityMatches": [
+          "snapshot_139_6fda4e76a4da"
+        ],
+        "policyCompliantTargets": [
+          "snapshot_139_6fda4e76a4da"
+        ],
+        "unresolvedReviewRelevantCandidates": [],
+        "topFuzzyCandidates": [
+          {
+            "productionId": "snapshot_139_6fda4e76a4da",
+            "nameEn": "克隆弈子",
+            "nameZh": "克隆弈子",
+            "nameSimilarity": 1,
+            "effectSimilarity": 1,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.9500000000000001,
+            "category": "combat",
+            "cost": 5,
+            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_ironwood18",
+            "nameEn": "Ironwood",
+            "nameZh": "坚硬木材",
+            "nameSimilarity": 0.2857142857142857,
+            "effectSimilarity": 0.28,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.3271428571428572,
+            "category": "combat",
+            "cost": 3,
+            "effect": "敌人攻击你生命值最高的那个弈子时，造成的伤害降低14%。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomarmor18",
+            "nameEn": "Phantom Armor",
+            "nameZh": "幻影护甲",
+            "nameSimilarity": 0.3571428571428571,
+            "effectSimilarity": 0.052631578947368474,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.3095864661654135,
+            "category": "combat",
+            "cost": 2,
+            "effect": "获得1个临时的【狂徒铠甲】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "snapshot_090_cf945e21ddef",
+            "nameEn": "Regeneration",
+            "nameZh": "回复",
+            "nameSimilarity": 0.3571428571428571,
+            "effectSimilarity": 0.052631578947368474,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.3095864661654135,
+            "category": "combat",
+            "cost": 3,
+            "effect": "你的队伍每秒治疗1%最大生命值。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 5
+                },
+                "end": {
+                  "stage": 4,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_combust18",
+            "nameEn": "Combust",
+            "nameZh": "易燃物",
+            "nameSimilarity": 0.2142857142857143,
+            "effectSimilarity": 0.15384615384615385,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3063186813186813,
+            "category": "combat",
+            "cost": 5,
+            "effect": "你的弈子们在阵亡时产生爆炸，造成15%最大生命值魔法伤害。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          }
+        ],
+        "exclusionEvidence": [],
+        "exhaustiveConclusion": "Exactly one governance-compliant target is established by stable/reviewed identity evidence."
+      },
+      "fieldReviewFollowUps": [
+        {
+          "reviewStage": "C4.2B",
+          "field": "effect",
+          "values": {
+            "DataTFT": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "OPGG": "复制伤害最高的弈子。复制体造成20%伤害。",
+            "CommunityDragon": "Clone your highest damage champion. The clone deals @CloneDamageMultiplier*100@% damage."
+          },
+          "identityUseProhibited": true
+        }
+      ],
+      "humanDecisionRequired": true,
+      "reason": "Evidence-derived same-source continuity establishes exactly one production target, snapshot_139_6fda4e76a4da; human approval remains required."
+    },
+    {
+      "clusterId": "C4I-002",
+      "sourceIdentity": "MemorialDummy",
+      "oldCommittedState": {
+        "priority": "P1",
+        "question": "已确认的 MemorialDummy live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
+        "corpusMembership": "confirmed",
+        "productionIdentityLink": "unresolved",
+        "recommendation": "insufficient_evidence"
+      },
+      "freshSourcePresence": {
+        "DataTFT": true,
+        "CommunityDragon": true,
+        "OPGG": true,
+        "LoLCHESS": {
+          "status": "blocked_by_source_protection",
+          "newEvidence": false
+        }
+      },
+      "corpusMembership": "confirmed",
+      "productionIdentity": "missing_candidate",
+      "proposedAction": "insufficient_evidence",
+      "productionMissingCandidate": true,
+      "missingProductionHypothesis": "strong",
+      "proposalConfidence": "strong",
+      "confirmingEvidence": [
+        {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "snapshotPath": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
+          "selector": "locales.en_us.records[apiName=DA_MemorialDummy18]",
+          "evidenceClass": "identity_confirming",
+          "note": "Live client base apiName DA_MemorialDummy18."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=170]",
+          "evidenceClass": "supporting_only",
+          "note": "Fresh DataTFT bilingual catalog row 170: Memorial Dummy / 衣冠冢."
+        },
+        {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "snapshotPath": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "selector": "records[sourceKey=MemorialDummy]",
+          "evidenceClass": "supporting_only",
+          "note": "OP.GG stable catalog key MemorialDummy."
+        },
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+          "selector": "catalog[170]",
+          "evidenceClass": "exclusion",
+          "note": "Rendered catalog ordinal 170 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+        }
+      ],
+      "conflictingEvidence": [],
+      "productionSearch": {
+        "productionRecordCount": 169,
+        "queryNames": [
+          "Memorial Dummy",
+          "MemorialDummy",
+          "纪念假人",
+          "衣冠冢"
+        ],
+        "exactIdOrKeyMatches": [],
+        "exactEnglishNameMatches": [],
+        "exactChineseNameMatches": [],
+        "normalizedNameMatches": [],
+        "reviewedMappingMatches": [],
+        "sourceRowContinuityMatches": [],
+        "policyCompliantTargets": [],
+        "unresolvedReviewRelevantCandidates": [],
+        "topFuzzyCandidates": [
+          {
+            "productionId": "da_petrifieddummy18",
+            "nameEn": "Petrified Dummy",
+            "nameZh": "石化术",
+            "nameSimilarity": 0.5,
+            "effectSimilarity": 0.23684210526315785,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.4342105263157895,
+            "category": "combat",
+            "cost": 2,
+            "effect": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 4,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_scrappy18",
+            "nameEn": "Scrappy",
+            "nameZh": "零碎",
+            "nameSimilarity": 0.23076923076923073,
+            "effectSimilarity": 0.2222222222222222,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.33247863247863246,
+            "category": "combat",
+            "cost": 3,
+            "effect": "战斗开始时：未携带任何装备的2个弈子会获得1件临时的推荐装备。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_manarichsoil18",
+            "nameEn": "Mana-Rich Soil",
+            "nameZh": "富魔之壤",
+            "nameSimilarity": 0.23076923076923073,
+            "effectSimilarity": 0.05555555555555558,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.29081196581196583,
+            "category": "combat",
+            "cost": 3,
+            "effect": "你的【术师】最大法力值减少0.82。",
+            "requirements": [
+              {
+                "type": "source_text",
+                "textZh": "场上至少有2个术师",
+                "machineEvaluable": false
+              },
+              {
+                "type": "source_text",
+                "textZh": "拥有1个带装备的术师",
+                "machineEvaluable": false
+              }
+            ],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_trainingyard18",
+            "nameEn": "Training Yard",
+            "nameZh": "训练场",
+            "nameSimilarity": 0.07692307692307687,
+            "effectSimilarity": 0.33333333333333337,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.27564102564102566,
+            "category": "combat",
+            "cost": 3,
+            "effect": "获得2个携带着1件随机坦克装备的【训练假人】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_18_mercenaryforce",
+            "nameEn": "Mercenary Force",
+            "nameZh": "金钱之力",
+            "nameSimilarity": 0.2142857142857143,
+            "effectSimilarity": 0.02777777777777779,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.2748015873015873,
+            "category": "combat",
+            "cost": 3,
+            "effect": "每拥有10金币，获得3%伤害增幅。",
+            "requirements": [
+              {
+                "type": "source_text",
+                "textZh": "至少拥有30金币",
+                "machineEvaluable": false
+              }
+            ],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          }
+        ],
+        "exclusionEvidence": [
+          {
+            "sourceId": "datatft_18_1_20260902_priority_browser",
+            "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+            "selector": "catalog[170]",
+            "evidenceClass": "exclusion",
+            "note": "Rendered catalog ordinal 170 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+          }
+        ],
+        "exhaustiveConclusion": "No policy-compliant target or unresolved review-relevant candidate remains after deterministic review; missing production is a hypothesis, not an applied distinct decision."
+      },
+      "fieldReviewFollowUps": [
+        {
+          "reviewStage": "C4.2B",
+          "field": "effect",
+          "values": {
+            "DataTFT": "你最先阵亡的携带着装备的那个坦克，在阵亡时会召唤1个携带着其装备的【训练假人】。",
+            "OPGG": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
+            "CommunityDragon": "Your first itemized tank spawns a Dummy with their items on death."
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "requirement",
+          "values": {
+            "DataTFT": [
+              "回合：3-5 ~ 10-1"
+            ],
+            "OPGG": "战场上有至少1名携带装备的坦克"
+          },
+          "identityUseProhibited": true
+        }
+      ],
+      "humanDecisionRequired": true,
+      "reason": "Live corpus evidence and catalog-boundary evidence support a strong missing-production hypothesis. Formal distinct_identity is withheld because the proposal is not an approved decision."
+    },
+    {
+      "clusterId": "C4I-003",
+      "sourceIdentity": "PottedLifebloom",
+      "oldCommittedState": {
+        "priority": "P1",
+        "question": "已确认的 PottedLifebloom live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
+        "corpusMembership": "confirmed",
+        "productionIdentityLink": "unresolved",
+        "recommendation": "insufficient_evidence"
+      },
+      "freshSourcePresence": {
+        "DataTFT": true,
+        "CommunityDragon": true,
+        "OPGG": true,
+        "LoLCHESS": {
+          "status": "blocked_by_source_protection",
+          "newEvidence": false
+        }
+      },
+      "corpusMembership": "confirmed",
+      "productionIdentity": "missing_candidate",
+      "proposedAction": "insufficient_evidence",
+      "productionMissingCandidate": true,
+      "missingProductionHypothesis": "strong",
+      "proposalConfidence": "strong",
+      "confirmingEvidence": [
+        {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "snapshotPath": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
+          "selector": "locales.en_us.records[apiName=DA_PottedLifebloom18]",
+          "evidenceClass": "identity_confirming",
+          "note": "Live client base apiName DA_PottedLifebloom18."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=171]",
+          "evidenceClass": "supporting_only",
+          "note": "Fresh DataTFT bilingual catalog row 171: Potted Lifebloom / 盆栽生命花."
+        },
+        {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "snapshotPath": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "selector": "records[sourceKey=PottedLifebloom]",
+          "evidenceClass": "supporting_only",
+          "note": "OP.GG stable catalog key PottedLifebloom."
+        },
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+          "selector": "catalog[171]",
+          "evidenceClass": "exclusion",
+          "note": "Rendered catalog ordinal 171 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+        }
+      ],
+      "conflictingEvidence": [],
+      "productionSearch": {
+        "productionRecordCount": 169,
+        "queryNames": [
+          "Potted Lifebloom",
+          "PottedLifebloom",
+          "盆栽生命绽放",
+          "盆栽生命花"
+        ],
+        "exactIdOrKeyMatches": [],
+        "exactEnglishNameMatches": [],
+        "exactChineseNameMatches": [],
+        "normalizedNameMatches": [],
+        "reviewedMappingMatches": [],
+        "sourceRowContinuityMatches": [],
+        "policyCompliantTargets": [],
+        "unresolvedReviewRelevantCandidates": [],
+        "topFuzzyCandidates": [
+          {
+            "productionId": "da_platedshields18",
+            "nameEn": "Plated Shields",
+            "nameZh": "镀板护盾",
+            "nameSimilarity": 0.4,
+            "effectSimilarity": 0.125,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.40125000000000005,
+            "category": "combat",
+            "cost": 2,
+            "effect": "护盾强度提升15%。友军获得持续10秒的150护盾值。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomarmor18",
+            "nameEn": "Phantom Armor",
+            "nameZh": "幻影护甲",
+            "nameSimilarity": 0.1333333333333333,
+            "effectSimilarity": 0.5454545454545454,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3596969696969697,
+            "category": "combat",
+            "cost": 2,
+            "effect": "获得1个临时的【狂徒铠甲】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomvest18",
+            "nameEn": "Phantom Vest",
+            "nameZh": "幻影背心",
+            "nameSimilarity": 0.1333333333333333,
+            "effectSimilarity": 0.5454545454545454,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3596969696969697,
+            "category": "combat",
+            "cost": 2,
+            "effect": "获得1个临时的【棘刺背心】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_petrifieddummy18",
+            "nameEn": "Petrified Dummy",
+            "nameZh": "石化术",
+            "nameSimilarity": 0.2666666666666667,
+            "effectSimilarity": 0.10526315789473684,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.32298245614035087,
+            "category": "combat",
+            "cost": 2,
+            "effect": "你第1个阵亡的弈子在阵亡时，会转化为1个拥有其防御属性和900生命值的【训练假人】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 4,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomemblem18",
+            "nameEn": "Phantom Emblem",
+            "nameZh": "幻影纹章",
+            "nameSimilarity": 0.2666666666666667,
+            "effectSimilarity": 0.2941176470588235,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.32019607843137254,
+            "category": "combat",
+            "cost": 3,
+            "effect": "获得1个你层级最高羁绊的临时的纹章。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          }
+        ],
+        "exclusionEvidence": [
+          {
+            "sourceId": "datatft_18_1_20260902_priority_browser",
+            "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+            "selector": "catalog[171]",
+            "evidenceClass": "exclusion",
+            "note": "Rendered catalog ordinal 171 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+          }
+        ],
+        "exhaustiveConclusion": "No policy-compliant target or unresolved review-relevant candidate remains after deterministic review; missing production is a hypothesis, not an applied distinct decision."
+      },
+      "fieldReviewFollowUps": [
+        {
+          "reviewStage": "C4.2B",
+          "field": "cost",
+          "values": {
+            "DataTFT": 2,
+            "OPGG": 3,
+            "CommunityDragon": "not encoded as offer cost"
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "effect",
+          "values": {
+            "DataTFT": "获得1株临时的【生命花】。",
+            "OPGG": "获得1朵临时生命花。",
+            "CommunityDragon": "Gain a temporary Lifeblossom."
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "requirement",
+          "values": {
+            "DataTFT": [
+              "回合：3-1 ~ 4-7"
+            ],
+            "OPGG": "已激活永恒之森羁绊"
+          },
+          "identityUseProhibited": true
+        }
+      ],
+      "humanDecisionRequired": true,
+      "reason": "Live corpus evidence and catalog-boundary evidence support a strong missing-production hypothesis. Formal distinct_identity is withheld because the proposal is not an approved decision."
+    },
+    {
+      "clusterId": "C4I-004",
+      "sourceIdentity": "PottedStonebark",
+      "oldCommittedState": {
+        "priority": "P1",
+        "question": "已确认的 PottedStonebark live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
+        "corpusMembership": "confirmed",
+        "productionIdentityLink": "unresolved",
+        "recommendation": "insufficient_evidence"
+      },
+      "freshSourcePresence": {
+        "DataTFT": true,
+        "CommunityDragon": true,
+        "OPGG": true,
+        "LoLCHESS": {
+          "status": "blocked_by_source_protection",
+          "newEvidence": false
+        }
+      },
+      "corpusMembership": "confirmed",
+      "productionIdentity": "missing_candidate",
+      "proposedAction": "insufficient_evidence",
+      "productionMissingCandidate": true,
+      "missingProductionHypothesis": "strong",
+      "proposalConfidence": "strong",
+      "confirmingEvidence": [
+        {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "snapshotPath": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
+          "selector": "locales.en_us.records[apiName=DA_PottedStonebark18]",
+          "evidenceClass": "identity_confirming",
+          "note": "Live client base apiName DA_PottedStonebark18."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=172]",
+          "evidenceClass": "supporting_only",
+          "note": "Fresh DataTFT bilingual catalog row 172: Potted Stonebark / 盆栽石皮树."
+        },
+        {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "snapshotPath": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "selector": "records[sourceKey=PottedStonebark]",
+          "evidenceClass": "supporting_only",
+          "note": "OP.GG stable catalog key PottedStonebark."
+        },
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+          "selector": "catalog[172]",
+          "evidenceClass": "exclusion",
+          "note": "Rendered catalog ordinal 172 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+        }
+      ],
+      "conflictingEvidence": [],
+      "productionSearch": {
+        "productionRecordCount": 169,
+        "queryNames": [
+          "Potted Stonebark",
+          "PottedStonebark",
+          "盆栽石皮树"
+        ],
+        "exactIdOrKeyMatches": [],
+        "exactEnglishNameMatches": [],
+        "exactChineseNameMatches": [],
+        "normalizedNameMatches": [],
+        "reviewedMappingMatches": [],
+        "sourceRowContinuityMatches": [],
+        "policyCompliantTargets": [],
+        "unresolvedReviewRelevantCandidates": [],
+        "topFuzzyCandidates": [
+          {
+            "productionId": "da_platedshields18",
+            "nameEn": "Plated Shields",
+            "nameZh": "镀板护盾",
+            "nameSimilarity": 0.4,
+            "effectSimilarity": 0.125,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.40125000000000005,
+            "category": "combat",
+            "cost": 2,
+            "effect": "护盾强度提升15%。友军获得持续10秒的150护盾值。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomarmor18",
+            "nameEn": "Phantom Armor",
+            "nameZh": "幻影护甲",
+            "nameSimilarity": 0.19999999999999996,
+            "effectSimilarity": 0.5454545454545454,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3963636363636363,
+            "category": "combat",
+            "cost": 2,
+            "effect": "获得1个临时的【狂徒铠甲】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomvest18",
+            "nameEn": "Phantom Vest",
+            "nameZh": "幻影背心",
+            "nameSimilarity": 0.19999999999999996,
+            "effectSimilarity": 0.5454545454545454,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3963636363636363,
+            "category": "combat",
+            "cost": 2,
+            "effect": "获得1个临时的【棘刺背心】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomgloves18",
+            "nameEn": "Phantom Gloves",
+            "nameZh": "幻影手套",
+            "nameSimilarity": 0.19999999999999996,
+            "effectSimilarity": 0.5454545454545454,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.3463636363636363,
+            "category": "combat",
+            "cost": 3,
+            "effect": "获得1个临时的【窃贼手套】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_borrowedgear18",
+            "nameEn": "Borrowed Gear",
+            "nameZh": "借来的装备",
+            "nameSimilarity": 0.2666666666666667,
+            "effectSimilarity": 0.3571428571428571,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.335952380952381,
+            "category": "combat",
+            "cost": 1,
+            "effect": "1个弈子获得1件临时推荐装备。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 4,
+                  "round": 7
+                }
+              }
+            ]
+          }
+        ],
+        "exclusionEvidence": [
+          {
+            "sourceId": "datatft_18_1_20260902_priority_browser",
+            "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+            "selector": "catalog[172]",
+            "evidenceClass": "exclusion",
+            "note": "Rendered catalog ordinal 172 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+          }
+        ],
+        "exhaustiveConclusion": "No policy-compliant target or unresolved review-relevant candidate remains after deterministic review; missing production is a hypothesis, not an applied distinct decision."
+      },
+      "fieldReviewFollowUps": [
+        {
+          "reviewStage": "C4.2B",
+          "field": "effect",
+          "values": {
+            "DataTFT": "获得1颗临时的【石皮树】。",
+            "OPGG": "获得一棵临时石皮树。",
+            "CommunityDragon": "Gain a temporary Stonebark Tree."
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "requirement",
+          "values": {
+            "DataTFT": [
+              "回合：3-1 ~ 4-7"
+            ],
+            "OPGG": "已激活永恒之森羁绊"
+          },
+          "identityUseProhibited": true
+        }
+      ],
+      "humanDecisionRequired": true,
+      "reason": "Live corpus evidence and catalog-boundary evidence support a strong missing-production hypothesis. Formal distinct_identity is withheld because the proposal is not an approved decision."
+    },
+    {
+      "clusterId": "C4I-005",
+      "sourceIdentity": "Snacktime",
+      "oldCommittedState": {
+        "priority": "P1",
+        "question": "已确认的 Snacktime live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
+        "corpusMembership": "confirmed",
+        "productionIdentityLink": "unresolved",
+        "recommendation": "insufficient_evidence"
+      },
+      "freshSourcePresence": {
+        "DataTFT": true,
+        "CommunityDragon": true,
+        "OPGG": true,
+        "LoLCHESS": {
+          "status": "blocked_by_source_protection",
+          "newEvidence": false
+        }
+      },
+      "corpusMembership": "confirmed",
+      "productionIdentity": "missing_candidate",
+      "proposedAction": "insufficient_evidence",
+      "productionMissingCandidate": true,
+      "missingProductionHypothesis": "strong",
+      "proposalConfidence": "strong",
+      "confirmingEvidence": [
+        {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "snapshotPath": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
+          "selector": "locales.en_us.records[apiName=DA_Snacktime18]",
+          "evidenceClass": "identity_confirming",
+          "note": "Live client base apiName DA_Snacktime18."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=173]",
+          "evidenceClass": "supporting_only",
+          "note": "Fresh DataTFT bilingual catalog row 173: Snacktime! / 点心时间到！."
+        },
+        {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "snapshotPath": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "selector": "records[sourceKey=Snacktime]",
+          "evidenceClass": "supporting_only",
+          "note": "OP.GG stable catalog key Snacktime."
+        },
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+          "selector": "catalog[173]",
+          "evidenceClass": "exclusion",
+          "note": "Rendered catalog ordinal 173 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+        }
+      ],
+      "conflictingEvidence": [],
+      "productionSearch": {
+        "productionRecordCount": 169,
+        "queryNames": [
+          "Snacktime",
+          "Snacktime!",
+          "点心时间到！",
+          "零食时间！"
+        ],
+        "exactIdOrKeyMatches": [],
+        "exactEnglishNameMatches": [],
+        "exactChineseNameMatches": [],
+        "normalizedNameMatches": [],
+        "reviewedMappingMatches": [],
+        "sourceRowContinuityMatches": [],
+        "policyCompliantTargets": [],
+        "unresolvedReviewRelevantCandidates": [],
+        "topFuzzyCandidates": [
+          {
+            "productionId": "da_18_supercritical",
+            "nameEn": "Supercritical",
+            "nameZh": "超级暴击",
+            "nameSimilarity": 0.3076923076923077,
+            "effectSimilarity": 0.11111111111111116,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.34700854700854705,
+            "category": "combat",
+            "cost": 3,
+            "effect": "拥有【技能暴击】的友军获得25%暴击伤害。",
+            "requirements": [
+              {
+                "type": "source_text",
+                "textZh": "拥有2个具有【技能暴击】的单位",
+                "machineEvaluable": false
+              }
+            ],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_standalone18",
+            "nameEn": "Stand Alone",
+            "nameZh": "孤身站场",
+            "nameSimilarity": 0.30000000000000004,
+            "effectSimilarity": 0.11111111111111116,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3427777777777778,
+            "category": "combat",
+            "cost": 3,
+            "effect": "独自处于所在排的弈子们获得15%生命值和15%伤害增幅。",
+            "requirements": [
+              {
+                "type": "source_text",
+                "textZh": "未激活【永恒之森】",
+                "machineEvaluable": false
+              },
+              {
+                "type": "source_text",
+                "textZh": "未激活【月光射线】",
+                "machineEvaluable": false
+              },
+              {
+                "type": "source_text",
+                "textZh": "未激活【翠神】",
+                "machineEvaluable": false
+              }
+            ],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 5
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "snapshot_090_cf945e21ddef",
+            "nameEn": "Regeneration",
+            "nameZh": "回复",
+            "nameSimilarity": 0.25,
+            "effectSimilarity": 0.18518518518518523,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3337962962962963,
+            "category": "combat",
+            "cost": 3,
+            "effect": "你的队伍每秒治疗1%最大生命值。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 5
+                },
+                "end": {
+                  "stage": 4,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_manarichsoil18",
+            "nameEn": "Mana-Rich Soil",
+            "nameZh": "富魔之壤",
+            "nameSimilarity": 0.25,
+            "effectSimilarity": 0.11111111111111116,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3152777777777778,
+            "category": "combat",
+            "cost": 3,
+            "effect": "你的【术师】最大法力值减少0.82。",
+            "requirements": [
+              {
+                "type": "source_text",
+                "textZh": "场上至少有2个术师",
+                "machineEvaluable": false
+              },
+              {
+                "type": "source_text",
+                "textZh": "拥有1个带装备的术师",
+                "machineEvaluable": false
+              }
+            ],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_18_lightningstrike",
+            "nameEn": "Lightning Strike",
+            "nameZh": "闪电打击",
+            "nameSimilarity": 0.2666666666666667,
+            "effectSimilarity": 0.2592592592592593,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.3114814814814815,
+            "category": "combat",
+            "cost": 2,
+            "effect": "对所有敌人造成10%最大生命值真实伤害。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          }
+        ],
+        "exclusionEvidence": [
+          {
+            "sourceId": "datatft_18_1_20260902_priority_browser",
+            "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+            "selector": "catalog[173]",
+            "evidenceClass": "exclusion",
+            "note": "Rendered catalog ordinal 173 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+          }
+        ],
+        "exhaustiveConclusion": "No policy-compliant target or unresolved review-relevant candidate remains after deterministic review; missing production is a hypothesis, not an applied distinct decision."
+      },
+      "fieldReviewFollowUps": [
+        {
+          "reviewStage": "C4.2B",
+          "field": "cost",
+          "values": {
+            "DataTFT": 3,
+            "OPGG": 4,
+            "CommunityDragon": "not encoded as offer cost"
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "effect",
+          "values": {
+            "DataTFT": "【毛茸茸大朋友】会吃掉最大生命值低于15%且受过其伤害的敌人。",
+            "OPGG": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+            "CommunityDragon": "The BFF eats enemies he damages under @ExecuteThreshold*100@% Max Health."
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "requirement",
+          "values": {
+            "DataTFT": [
+              "回合：4-2 ~ 10-1"
+            ],
+            "OPGG": "已激活灵巧精羁绊"
+          },
+          "identityUseProhibited": true
+        }
+      ],
+      "humanDecisionRequired": true,
+      "reason": "Live corpus evidence and catalog-boundary evidence support a strong missing-production hypothesis. Formal distinct_identity is withheld because the proposal is not an approved decision."
+    },
+    {
+      "clusterId": "C4I-006",
+      "sourceIdentity": "TurtlesVisit",
+      "oldCommittedState": {
+        "priority": "P1",
+        "question": "已确认的 TurtlesVisit live corpus identity 对应当前 production 哪一条；如果没有匹配，是否说明 production 缺少该 Wisp？",
+        "corpusMembership": "confirmed",
+        "productionIdentityLink": "unresolved",
+        "recommendation": "insufficient_evidence"
+      },
+      "freshSourcePresence": {
+        "DataTFT": true,
+        "CommunityDragon": true,
+        "OPGG": true,
+        "LoLCHESS": {
+          "status": "blocked_by_source_protection",
+          "newEvidence": false
+        }
+      },
+      "corpusMembership": "confirmed",
+      "productionIdentity": "missing_candidate",
+      "proposedAction": "insufficient_evidence",
+      "productionMissingCandidate": true,
+      "missingProductionHypothesis": "strong",
+      "proposalConfidence": "strong",
+      "confirmingEvidence": [
+        {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "snapshotPath": "data/raw/18.1/20260902/communitydragon-priority-wisps.json",
+          "selector": "locales.en_us.records[apiName=DA_TurtlesVisit18]",
+          "evidenceClass": "identity_confirming",
+          "note": "Live client base apiName DA_TurtlesVisit18."
+        }
+      ],
+      "supportingEvidence": [
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "selector": "records[sourceIndex=175]",
+          "evidenceClass": "supporting_only",
+          "note": "Fresh DataTFT bilingual catalog row 175: Turtle's Visit / 灵龟降临."
+        },
+        {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "snapshotPath": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "selector": "records[sourceKey=TurtlesVisit]",
+          "evidenceClass": "supporting_only",
+          "note": "OP.GG stable catalog key TurtlesVisit."
+        },
+        {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+          "selector": "catalog[175]",
+          "evidenceClass": "exclusion",
+          "note": "Rendered catalog ordinal 175 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+        }
+      ],
+      "conflictingEvidence": [],
+      "productionSearch": {
+        "productionRecordCount": 169,
+        "queryNames": [
+          "Turtle's Visit",
+          "TurtlesVisit",
+          "海龟来访",
+          "灵龟降临"
+        ],
+        "exactIdOrKeyMatches": [],
+        "exactEnglishNameMatches": [],
+        "exactChineseNameMatches": [],
+        "normalizedNameMatches": [],
+        "reviewedMappingMatches": [],
+        "sourceRowContinuityMatches": [],
+        "policyCompliantTargets": [],
+        "unresolvedReviewRelevantCandidates": [],
+        "topFuzzyCandidates": [
+          {
+            "productionId": "da_18_yordlespirit",
+            "nameEn": "Yordle Spirit",
+            "nameZh": "约德尔之灵",
+            "nameSimilarity": 0.5833333333333333,
+            "effectSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.47083333333333327,
+            "category": "combat",
+            "cost": 3,
+            "effect": "友军有99%几率闪避攻击，持续4秒。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_revenge18",
+            "nameEn": "Revenge",
+            "nameZh": "复仇",
+            "nameSimilarity": 0.25,
+            "effectSimilarity": 0.16000000000000003,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.3275,
+            "category": "combat",
+            "cost": 3,
+            "effect": "每当1名友军阵亡时，你的弈子们获得4%可叠加的伤害增幅。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_18_verdantvitality",
+            "nameEn": "Verdant Vitality",
+            "nameZh": "绿意盎然",
+            "nameSimilarity": 0.33333333333333337,
+            "effectSimilarity": 0.06666666666666665,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.30000000000000004,
+            "category": "combat",
+            "cost": 0,
+            "effect": "你的弈子们获得50生命值。",
+            "requirements": [
+              {
+                "type": "source_text",
+                "textZh": "金币少于10",
+                "machineEvaluable": false
+              }
+            ],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 4,
+                  "round": 2
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_solitudescloak18",
+            "nameEn": "Solitude's Cloak",
+            "nameZh": "独行斗篷",
+            "nameSimilarity": 0.2142857142857143,
+            "effectSimilarity": 0.12,
+            "categoryMatch": true,
+            "costMatch": true,
+            "stageMatch": false,
+            "plausibilityScore": 0.2978571428571429,
+            "category": "combat",
+            "cost": 3,
+            "effect": "邻格无友军的弈子们获得10%最大生命值和10%伤害增幅。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 5,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 10,
+                  "round": 1
+                }
+              }
+            ]
+          },
+          {
+            "productionId": "da_phantomvest18",
+            "nameEn": "Phantom Vest",
+            "nameZh": "幻影背心",
+            "nameSimilarity": 0.25,
+            "effectSimilarity": 0.19999999999999996,
+            "categoryMatch": true,
+            "costMatch": false,
+            "stageMatch": false,
+            "plausibilityScore": 0.2875,
+            "category": "combat",
+            "cost": 2,
+            "effect": "获得1个临时的【棘刺背心】。",
+            "requirements": [],
+            "stageRanges": [
+              {
+                "start": {
+                  "stage": 3,
+                  "round": 1
+                },
+                "end": {
+                  "stage": 5,
+                  "round": 7
+                }
+              }
+            ]
+          }
+        ],
+        "exclusionEvidence": [
+          {
+            "sourceId": "datatft_18_1_20260902_priority_browser",
+            "snapshotPath": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+            "selector": "catalog[175]",
+            "evidenceClass": "exclusion",
+            "note": "Rendered catalog ordinal 175 is beyond the old contiguous 0..168 snapshot boundary; ordinal is supporting boundary evidence, not a stable ID."
+          }
+        ],
+        "exhaustiveConclusion": "No policy-compliant target or unresolved review-relevant candidate remains after deterministic review; missing production is a hypothesis, not an applied distinct decision."
+      },
+      "fieldReviewFollowUps": [
+        {
+          "reviewStage": "C4.2B",
+          "field": "effect",
+          "values": {
+            "DataTFT": "本场对战获得【野兽之灵】的【灵龟】增益。",
+            "OPGG": "本场战斗获得乌龟原始增益。",
+            "CommunityDragon": "Gain the Turtle Primal buff for this combat."
+          },
+          "identityUseProhibited": true
+        },
+        {
+          "reviewStage": "C4.2B",
+          "field": "requirement",
+          "values": {
+            "DataTFT": [
+              "回合：3-5 ~ 5-7"
+            ],
+            "OPGG": "已激活原始羁绊，且尚未选择乌龟"
+          },
+          "identityUseProhibited": true
+        }
+      ],
+      "humanDecisionRequired": true,
+      "reason": "Live corpus evidence and catalog-boundary evidence support a strong missing-production hypothesis. Formal distinct_identity is withheld because the proposal is not an approved decision."
+    }
+  ]
+}
