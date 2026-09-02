@@ -32,6 +32,8 @@ jobs:
       - run: npm run validate:identity-review-packet
       - run: npm run data:priority-identity-proposals:18.1
       - run: npm run validate:priority-identity-proposals
+      - run: npm run data:catalog-delta-reconciliation:18.1
+      - run: npm run validate:catalog-delta-reconciliation
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium

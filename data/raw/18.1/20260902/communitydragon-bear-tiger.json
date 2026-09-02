@@ -1,0 +1,105 @@
+{
+  "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+  "fetchStatus": "fetched_and_extracted",
+  "httpStatus": 200,
+  "locales": {
+    "en_us": {
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
+      "retrievedAt": "2026-09-02T11:16:11Z",
+      "upstreamModifiedAt": "2026-08-29T00:53:30Z",
+      "rawSha256": "d91ba4ad7db5a6d896132ba3df8da0a2092ed13855f1a9660dbe7e12bdcd77f5",
+      "extractedSha256": "70415cdd4c2c0a0024d6467c3d06f25ad657ff715c9e820327deecf2e5510921",
+      "records": [
+        {
+          "apiName": "DA_BearsVisit18",
+          "name": "Bear's Visit",
+          "desc": "Gain the Bear Primal buff for this combat.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_BearsVisit18_Upgrade",
+          "name": "Tiger's Visit",
+          "desc": "Gain the Tiger Primal buff for this combat.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TigersVisit18_Wisp",
+          "name": "Tiger's Visit",
+          "desc": "Gain the Tiger Primal buff for this combat.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TigersVisit18_Wisp_Upgrade",
+          "name": "Tiger's Visit",
+          "desc": "Gain the Tiger Primal buff for this combat.",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        }
+      ]
+    },
+    "zh_cn": {
+      "url": "https://raw.communitydragon.org/latest/cdragon/tft/zh_cn.json",
+      "retrievedAt": "2026-09-02T11:16:11Z",
+      "upstreamModifiedAt": "2026-08-29T00:53:26Z",
+      "rawSha256": "8f23126c271b4acfde58e566677cbfacf0421f9ff9035acb9e9f60722b49306e",
+      "extractedSha256": "42497e8f6e86d7c7ab14c517b449c8c6ddcd1f5e10fcff5a645fd199ce1c8994",
+      "records": [
+        {
+          "apiName": "DA_BearsVisit18",
+          "name": "蛮熊降临",
+          "desc": "本场对战获得【野兽之灵】的【蛮熊】增益。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_BearsVisit18_Upgrade",
+          "name": "猛虎降临",
+          "desc": "本场对战获得【野兽之灵】的【猛虎】增益。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TigersVisit18_Wisp",
+          "name": "战马降临",
+          "desc": "本场对战获得【野兽之灵】的【战马】增益。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        },
+        {
+          "apiName": "DA_TigersVisit18_Wisp_Upgrade",
+          "name": "猛虎降临",
+          "desc": "本场对战获得【野兽之灵】的【猛虎】增益。",
+          "effects": {},
+          "icon": "assets/ux/tft/hud/zaps/wands/set18_mechanicicon.tex",
+          "tags": [
+            "{5b609ae2}"
+          ]
+        }
+      ]
+    }
+  }
+}
