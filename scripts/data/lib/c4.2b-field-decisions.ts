@@ -1,61 +1,213 @@
 import { createHash } from 'node:crypto';
+import { productionRecordIdForRiotId, validateProductionFieldValue } from '../../validation';
 
 export type Json = Record<string, any>;
-export const stableJson=(v:unknown)=>`${JSON.stringify(v,null,2)}\n`;
-export const sha256=(s:string)=>createHash('sha256').update(s).digest('hex');
-const same=(a:unknown,b:unknown)=>JSON.stringify(a)===JSON.stringify(b);
-export const REQUIRED_NEW_FIELDS=['riotId','nameEn','nameZh','category','cost','stageRanges','effects.normal','requirements'];
-export const OPTIONAL_FIELDS=['effects.blossom','effects.prismatic','oncePerGame','reofferCooldownShops','minimumAffordableGold'];
-const CATEGORIES=new Set(['champion','combat','misc','shop','gold_xp','risky','item']);
+export const stableJson = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`;
+export const sha256 = (value: string) => createHash('sha256').update(value).digest('hex');
+const same = (left: unknown, right: unknown) => JSON.stringify(left) === JSON.stringify(right);
 
-export function evidenceRefs(item:Json){return (item.evidence??[]).map((e:Json)=>e.evidenceId);}
-export function approvedValue(decision:Json,item:Json){return decision.action==='approve_proposal'?item.proposedProductionValue:decision.approvedValue;}
-export function readiness(frozen:Json,overlay:Json){
- const byReview=new Map<string,Json>(overlay.decisions.map((d:Json)=>[d.reviewId,d]));
- return frozen.missingIdentities.map((identity:Json)=>{
-  const units=frozen.reviewItems.filter((i:Json)=>i.identity.communityDragonId===identity.communityDragonId);
-  const blockers:string[]=[];
-  for(const field of REQUIRED_NEW_FIELDS){const matches=units.filter((i:Json)=>i.field===field), approved=matches.some((i:Json)=>['approve_proposal','approve_explicit_value'].includes(byReview.get(i.reviewId)?.action));if(!approved)blockers.push(field);else {const i=matches.find((x:Json)=>['approve_proposal','approve_explicit_value'].includes(byReview.get(x.reviewId)?.action))!;const v=approvedValue(byReview.get(i.reviewId)!,i);if((field==='stageRanges'&&(!Array.isArray(v)||!v.length))||(field==='effects.normal'&&(typeof v!=='string'||!v.trim()))||(field==='requirements'&&!Array.isArray(v)))blockers.push(field);}}
-  const optionalUnknown=units.filter((i:Json)=>OPTIONAL_FIELDS.includes(i.field)&&['accepted_unknown','unresolved'].includes(byReview.get(i.reviewId)?.action)).map((i:Json)=>i.field);
-  return {...identity,status:blockers.length?'BLOCKED':'READY',requiredApproved:REQUIRED_NEW_FIELDS.filter(f=>!blockers.includes(f)),requiredBlockers:blockers,optionalUnknown:[...new Set(optionalUnknown)]};
- });
+export const REQUIRED_NEW_FIELDS = ['riotId', 'nameEn', 'nameZh', 'category', 'cost', 'stageRanges', 'effects.normal', 'requirements'] as const;
+export const OPTIONAL_FIELDS = ['effects.blossom', 'effects.prismatic', 'oncePerGame', 'reofferCooldownShops', 'minimumAffordableGold'] as const;
+const KNOWLEDGE_FIELDS = new Set(['oncePerGame', 'reofferCooldownShops']);
+const NEW_RECORD_FIELDS = new Set(['id', 'riotId', 'nameEn', 'nameZh', 'category', 'cost', 'minimumAffordableGold', 'stageRanges', 'effects', 'requirements', 'oncePerGame', 'reofferCooldownShops', 'searchConcepts', 'synonyms', 'sources', 'patch']);
+const SOURCE_FIELDS = ['id', 'riotId', 'nameEn', 'nameZh', 'category', 'cost', 'stageRanges', 'effects', 'requirements', 'oncePerGame', 'reofferCooldownShops', 'patch'] as const;
+
+export function approvedValue(decision: Json, item: Json) {
+  return decision.action === 'approve_proposal' ? item.proposedProductionValue : decision.approvedValue;
 }
 
-export function validateDecisions(frozen:Json,overlay:Json,currentProduction?:Json){
- const errors:string[]=[];
- if(frozen.schemaVersion!==1||frozen.patch!=='18.1'||frozen.reviewStage!=='C4.2B2')errors.push('invalid frozen evidence envelope');
- if(overlay.schemaVersion!==1||overlay.patch!==frozen.patch||overlay.reviewStage!=='C4.2B2')errors.push('invalid decision overlay envelope');
- const calculatedFrozenSha=sha256(stableJson({...frozen,bundleSha256:undefined}).replace(/  "bundleSha256": undefined,?\n?/g,''));
- if(overlay.evidenceBinding?.frozenEvidenceSha256!==frozen.bundleSha256)errors.push('manual decisions do not bind frozen evidence SHA');
- if(frozen.bundleSha256!==calculatedFrozenSha)errors.push('frozen evidence self fingerprint mismatch');
- const units=new Map<string,Json>(frozen.reviewItems.map((i:Json)=>[i.reviewId,i])), seen=new Set<string>();
- for(const d of overlay.decisions??[]){
-  if(seen.has(d.reviewId)){errors.push(`duplicate decision ${d.reviewId}`);continue}seen.add(d.reviewId);
-  const i=units.get(d.reviewId);if(!i){errors.push(`orphan decision ${d.reviewId}`);continue}
-  if(d.field!==i.field||d.propositionKey!==i.propositionKey||d.identity.communityDragonId!==i.identity.communityDragonId||d.identity.productionId!==i.identity.productionId)errors.push(`${d.reviewId}: decision target drift`);
-  const refs=new Set((i.evidence??[]).map((e:Json)=>e.evidenceId));for(const ref of d.evidenceRefs??[])if(!refs.has(ref))errors.push(`${d.reviewId}: unbound evidence ref ${ref}`);
-  if(d.action==='approve_proposal'&&(i.reviewClass!=='decision_ready'||i.productionCandidateValues?.length!==1||!same(d.approvedValue,i.proposedProductionValue)))errors.push(`${d.reviewId}: inadmissible approve_proposal`);
-  if(d.action==='approve_explicit_value'&&!(i.productionCandidateValues??[]).some((v:unknown)=>same(v,d.approvedValue)))errors.push(`${d.reviewId}: explicit value is not frozen evidence-derived`);
-  if(d.action==='retain_current'&&!i.identity.productionId)errors.push(`${d.reviewId}: retain_current requires existing identity`);
-  if(d.action==='accepted_unknown'&&(d.approvedValue===false||d.approvedValue===null||d.approvedValue===0||d.approvedValue!==undefined))errors.push(`${d.reviewId}: unknown was materialized`);
-  if(d.action==='confirmed_absent'&&!(i.evidence??[]).some((e:Json)=>e.observationState==='explicit_absence'))errors.push(`${d.reviewId}: absence lacks positive evidence`);
-  if(['approve_proposal','approve_explicit_value'].includes(d.action)&&d.applyPolicy!=='apply')errors.push(`${d.reviewId}: approval must apply`);
-  if(['accepted_unknown','unresolved'].includes(d.action)&&!['defer','no_change'].includes(d.applyPolicy))errors.push(`${d.reviewId}: non-truth disposition cannot apply`);
-  const v=approvedValue(d,i);if(d.action.startsWith('approve_')){if(i.field==='category'&&!CATEGORIES.has(v))errors.push(`${d.reviewId}: invalid category`);if(i.field==='stageRanges'&&(!Array.isArray(v)||!v.length))errors.push(`${d.reviewId}: empty stageRanges`);if(i.field==='effects.normal'&&(typeof v!=='string'||!v.trim()))errors.push(`${d.reviewId}: empty normal effect`);}
- }
- for(const id of units.keys())if(!seen.has(id))errors.push(`missing decision ${id}`);
- if(currentProduction)errors.push(...validateFulfillment(frozen,overlay,currentProduction));
- return errors;
+function getField(record: Json, path: string) {
+  return path.split('.').reduce((value, key) => value?.[key], record);
 }
 
-function getField(record:Json,path:string){return path.split('.').reduce((v,k)=>v?.[k],record)}
-export function validateFulfillment(frozen:Json,overlay:Json,current:Json){
- const errors:string[]=[];const baseline=frozen.productionBaseline.records, now=current.records;
- const oldById=new Map<string,Json>(baseline.map((r:Json)=>[r.id,r])),newById=new Map<string,Json>(now.map((r:Json)=>[r.id,r]));
- const unitByReview=new Map<string,Json>(frozen.reviewItems.map((i:Json)=>[i.reviewId,i]));const decisions=overlay.decisions as Json[];
- const approvedExisting=new Map<string,Json>();for(const d of decisions.filter(d=>d.identity.productionId&&d.action.startsWith('approve_'))){const key=`${d.identity.productionId}|${d.field}`;if(approvedExisting.has(key))errors.push(`duplicate approved target ${key}`);approvedExisting.set(key,{d,i:unitByReview.get(d.reviewId)});}
- for(const [id,old] of oldById){const cur=newById.get(id);if(!cur){errors.push(`unapproved deleted record ${id}`);continue}for(const key of new Set([...Object.keys(old),...Object.keys(cur)])){if(key==='sources')continue;const target=approvedExisting.get(`${id}|${key}`);if(!same(old[key],cur[key])&&!target)errors.push(`unapproved unrelated mutation ${id}.${key}`);if(target&&!same(cur[key],approvedValue(target.d,target.i))&&!same(cur[key],old[key]))errors.push(`wrong approved value ${id}.${key}`);}}
- const permittedNew=new Set(frozen.missingIdentities.map((x:Json)=>x.communityDragonId)),newRiotIds=new Set<string>();for(const r of now.filter((r:Json)=>!oldById.has(r.id))){if(newRiotIds.has(r.riotId))errors.push(`duplicate new identity ${r.riotId}`);newRiotIds.add(r.riotId);if(!permittedNew.has(r.riotId)){errors.push(`unapproved new identity ${r.riotId}`);continue}const identityDecisions=decisions.filter(d=>d.identity.communityDragonId===r.riotId&&d.action.startsWith('approve_'));for(const d of identityDecisions){const i=unitByReview.get(d.reviewId)!;if(!same(getField(r,d.field),approvedValue(d,i)))errors.push(`wrong approved value ${r.riotId}.${d.field}`)}}
- for(const d of decisions.filter(d=>['unresolved','accepted_unknown'].includes(d.action)&&d.identity.productionId)){const old=oldById.get(d.identity.productionId),cur=newById.get(d.identity.productionId);if(old&&cur&&!same(getField(old,d.field),getField(cur,d.field)))errors.push(`${d.action} field modified ${d.identity.productionId}.${d.field}`)}
- return errors;
+function sourceField(path: string) {
+  return path.startsWith('effects.') ? 'effects' : path;
+}
+
+function supportingEvidence(evidence: Json, value: unknown) {
+  return same(evidence.proposedProductionValue, value)
+    || same(evidence.comparisonValue, value)
+    || same(evidence.normalizedInterpretation, value);
+}
+
+function citedEvidence(item: Json, decision: Json) {
+  const cited = new Set(decision.evidenceRefs ?? []);
+  return (item.evidence ?? []).filter((evidence: Json) => cited.has(evidence.evidenceId));
+}
+
+const confidenceRank: Record<string, Record<string, number>> = {
+  localized: { client_data: 0, community_high_confidence: 1, verified_third_party: 2, official: 3, unverified: 4 },
+  structured: { community_high_confidence: 0, verified_third_party: 1, client_data: 2, official: 3, unverified: 4 },
+};
+
+function provenanceClass(field: string) {
+  return ['riotId', 'nameEn', 'nameZh', 'effects.normal', 'effects.blossom', 'effects.prismatic'].includes(field) ? 'localized' : 'structured';
+}
+
+export function deriveDecisionProvenance(item: Json, decision: Json): Json | undefined {
+  const value = approvedValue(decision, item);
+  const supporting = citedEvidence(item, decision).filter((evidence: Json) => supportingEvidence(evidence, value));
+  const rank = confidenceRank[provenanceClass(item.field)]!;
+  const candidates = supporting.filter((evidence: Json) => evidence.sourceId && evidence.retrievedAt && evidence.confidence)
+    .sort((left: Json, right: Json) => (rank[left.confidence] ?? 99) - (rank[right.confidence] ?? 99) || left.sourceId.localeCompare(right.sourceId, 'en'));
+  if (!candidates.length) return undefined;
+  const selected = candidates[0]!;
+  return { sourceId: selected.sourceId, verifiedAt: selected.retrievedAt, confidence: selected.confidence };
+}
+
+function approvedDecisionForField(units: Json[], decisions: Map<string, Json>, field: string): { unit: Json; decision: Json } | undefined {
+  const matches = units.filter((unit) => unit.field === field).map((unit) => ({ unit, decision: decisions.get(unit.reviewId) }))
+    .filter(({ decision }) => decision && ['approve_proposal', 'approve_explicit_value'].includes(decision.action));
+  return matches.length === 1 ? matches[0] as { unit: Json; decision: Json } : undefined;
+}
+
+export function readiness(frozen: Json, overlay: Json) {
+  const decisions = new Map<string, Json>(overlay.decisions.map((decision: Json) => [decision.reviewId, decision]));
+  return frozen.missingIdentities.map((identity: Json) => {
+    const units = frozen.reviewItems.filter((item: Json) => item.identity.communityDragonId === identity.communityDragonId);
+    const blockers: string[] = [];
+    for (const field of REQUIRED_NEW_FIELDS) {
+      const selected = approvedDecisionForField(units, decisions, field);
+      if (!selected || validateProductionFieldValue(field, approvedValue(selected.decision, selected.unit), { required: true }).length) blockers.push(field);
+    }
+    const optionalUnknown = units.filter((item: Json) => OPTIONAL_FIELDS.includes(item.field) && ['accepted_unknown', 'unresolved'].includes(decisions.get(item.reviewId)?.action)).map((item: Json) => item.field);
+    return { ...identity, status: blockers.length ? 'BLOCKED' : 'READY', requiredApproved: REQUIRED_NEW_FIELDS.filter((field) => !blockers.includes(field)), requiredBlockers: blockers, optionalUnknown: [...new Set(optionalUnknown)] };
+  });
+}
+
+export function validateDecisions(frozen: Json, overlay: Json, currentProduction?: Json) {
+  const errors: string[] = [];
+  if (frozen.schemaVersion !== 1 || frozen.patch !== '18.1' || frozen.reviewStage !== 'C4.2B2') errors.push('invalid frozen evidence envelope');
+  if (overlay.schemaVersion !== 1 || overlay.patch !== frozen.patch || overlay.reviewStage !== 'C4.2B2') errors.push('invalid decision overlay envelope');
+  const calculatedFrozenSha = sha256(stableJson({ ...frozen, bundleSha256: undefined }));
+  if (overlay.evidenceBinding?.frozenEvidenceSha256 !== frozen.bundleSha256) errors.push('manual decisions do not bind frozen evidence SHA');
+  if (frozen.bundleSha256 !== calculatedFrozenSha) errors.push('frozen evidence self fingerprint mismatch');
+  const units = new Map<string, Json>(frozen.reviewItems.map((item: Json) => [item.reviewId, item]));
+  const seen = new Set<string>();
+  for (const decision of overlay.decisions ?? []) {
+    if (seen.has(decision.reviewId)) { errors.push(`duplicate decision ${decision.reviewId}`); continue; }
+    seen.add(decision.reviewId);
+    const item = units.get(decision.reviewId);
+    if (!item) { errors.push(`orphan decision ${decision.reviewId}`); continue; }
+    if (decision.field !== item.field || decision.propositionKey !== item.propositionKey || decision.identity.communityDragonId !== item.identity.communityDragonId || decision.identity.productionId !== item.identity.productionId) errors.push(`${decision.reviewId}: decision target drift`);
+    const availableRefs = new Set((item.evidence ?? []).map((evidence: Json) => evidence.evidenceId));
+    for (const ref of decision.evidenceRefs ?? []) if (!availableRefs.has(ref)) errors.push(`${decision.reviewId}: unbound evidence ref ${ref}`);
+    if (decision.action === 'approve_proposal' && (item.reviewClass !== 'decision_ready' || item.productionCandidateValues?.length !== 1 || !same(decision.approvedValue, item.proposedProductionValue))) errors.push(`${decision.reviewId}: inadmissible approve_proposal`);
+    if (decision.action === 'approve_explicit_value' && !(item.productionCandidateValues ?? []).some((value: unknown) => same(value, decision.approvedValue))) errors.push(`${decision.reviewId}: explicit value is not frozen evidence-derived`);
+    if (decision.action === 'retain_current' && !item.identity.productionId) errors.push(`${decision.reviewId}: retain_current requires existing identity`);
+    if (decision.action === 'accepted_unknown' && decision.approvedValue !== undefined) errors.push(`${decision.reviewId}: unknown was materialized in manual truth`);
+    if (decision.action === 'confirmed_absent' && !(item.evidence ?? []).some((evidence: Json) => evidence.observationState === 'explicit_absence')) errors.push(`${decision.reviewId}: absence lacks positive evidence`);
+    if (['approve_proposal', 'approve_explicit_value'].includes(decision.action)) {
+      const value = approvedValue(decision, item);
+      if (!(decision.evidenceRefs?.length > 0)) errors.push(`${decision.reviewId}: approval must cite evidence`);
+      if (!citedEvidence(item, decision).some((evidence: Json) => supportingEvidence(evidence, value))) errors.push(`${decision.reviewId}: cited evidence does not support approved value`);
+      errors.push(...validateProductionFieldValue(item.field, value).map((error) => `${decision.reviewId}: ${error}`));
+      if (!deriveDecisionProvenance(item, decision)) errors.push(`${decision.reviewId}: approved value lacks deterministic provenance`);
+      if (decision.applyPolicy !== 'apply') errors.push(`${decision.reviewId}: approval must apply`);
+      for (const proposition of decision.adjudicatedPropositions ?? []) {
+        if (!proposition.evidenceRefs?.length) errors.push(`${decision.reviewId}: adjudicated proposition must cite evidence`);
+        const propositionRefs = new Set(proposition.evidenceRefs ?? []);
+        const propositionEvidence = (item.evidence ?? []).filter((evidence: Json) => propositionRefs.has(evidence.evidenceId));
+        if (propositionEvidence.length !== propositionRefs.size || !propositionEvidence.every((evidence: Json) => supportingEvidence(evidence, proposition.approvedValue))) errors.push(`${decision.reviewId}: adjudicated proposition evidence does not support approved value`);
+      }
+    }
+    if (['accepted_unknown', 'unresolved'].includes(decision.action) && !['defer', 'no_change'].includes(decision.applyPolicy)) errors.push(`${decision.reviewId}: non-truth disposition cannot apply`);
+  }
+  for (const reviewId of units.keys()) if (!seen.has(reviewId)) errors.push(`missing decision ${reviewId}`);
+  if (currentProduction) errors.push(...validateFulfillment(frozen, overlay, currentProduction));
+  return errors;
+}
+
+function expectedUnknown(field: string) {
+  return KNOWLEDGE_FIELDS.has(field) ? { status: 'unknown' } : undefined;
+}
+
+export function buildNewRecordPlan(frozen: Json, overlay: Json, communityDragonId: string): Json | undefined {
+  const gate = readiness(frozen, overlay).find((entry: Json) => entry.communityDragonId === communityDragonId);
+  if (!gate || gate.status !== 'READY') return undefined;
+  const decisions = new Map<string, Json>(overlay.decisions.map((decision: Json) => [decision.reviewId, decision]));
+  const units = frozen.reviewItems.filter((item: Json) => item.identity.communityDragonId === communityDragonId);
+  const selected = new Map<string, { unit: Json; decision: Json }>();
+  for (const field of REQUIRED_NEW_FIELDS) selected.set(field, approvedDecisionForField(units, decisions, field)!);
+  const record: Json = { id: productionRecordIdForRiotId(communityDragonId), effects: {}, searchConcepts: [], synonyms: [], patch: frozen.patch };
+  for (const [field, pair] of selected) {
+    const parts = field.split('.');
+    if (parts.length === 1) record[field] = approvedValue(pair.decision, pair.unit); else record[parts[0]!]![parts[1]!] = approvedValue(pair.decision, pair.unit);
+  }
+  for (const field of OPTIONAL_FIELDS) {
+    const unit = units.find((candidate: Json) => candidate.field === field);
+    const decision = unit && decisions.get(unit.reviewId);
+    if (decision?.action === 'accepted_unknown' && KNOWLEDGE_FIELDS.has(field)) record[field] = expectedUnknown(field);
+    else if (decision && ['approve_proposal', 'approve_explicit_value', 'confirmed_absent'].includes(decision.action)) {
+      const parts = field.split('.'); const value = decision.action === 'confirmed_absent' ? null : approvedValue(decision, unit);
+      if (parts.length === 1) record[field] = value; else record[parts[0]!]![parts[1]!] = value;
+    }
+  }
+  const fallback = selected.get('stageRanges')!;
+  const sources: Json = {};
+  for (const field of SOURCE_FIELDS) {
+    const truthField = field === 'id' || field === 'patch' || KNOWLEDGE_FIELDS.has(field) ? 'stageRanges' : field === 'effects' ? 'effects.normal' : field;
+    const pair = selected.get(truthField) ?? fallback;
+    sources[field] = deriveDecisionProvenance(pair.unit, pair.decision);
+  }
+  if (record.minimumAffordableGold !== undefined) {
+    const unit = units.find((candidate: Json) => candidate.field === 'minimumAffordableGold')!;
+    sources.minimumAffordableGold = deriveDecisionProvenance(unit, decisions.get(unit.reviewId)!);
+  }
+  record.sources = sources;
+  return record;
+}
+
+function leafPaths(value: unknown, prefix = ''): string[] {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return [prefix];
+  return Object.keys(value as Json).flatMap((key) => leafPaths((value as Json)[key], prefix ? `${prefix}.${key}` : key));
+}
+
+export function validateFulfillment(frozen: Json, overlay: Json, current: Json) {
+  const errors: string[] = [];
+  const baseline = frozen.productionBaseline.records as Json[];
+  const now = current.records as Json[];
+  const oldById = new Map<string, Json>(baseline.map((record) => [record.id, record]));
+  const newById = new Map<string, Json>(now.map((record) => [record.id, record]));
+  const unitByReview = new Map<string, Json>(frozen.reviewItems.map((item: Json) => [item.reviewId, item]));
+  const decisions = overlay.decisions as Json[];
+  const approvedExisting = new Map<string, { decision: Json; item: Json }>();
+  for (const decision of decisions.filter((candidate) => candidate.identity.productionId && candidate.action.startsWith('approve_'))) {
+    const key = `${decision.identity.productionId}|${decision.field}`;
+    if (approvedExisting.has(key)) errors.push(`duplicate approved target ${key}`);
+    approvedExisting.set(key, { decision, item: unitByReview.get(decision.reviewId)! });
+  }
+  for (const [id, oldRecord] of oldById) {
+    const currentRecord = newById.get(id);
+    if (!currentRecord) { errors.push(`unapproved deleted record ${id}`); continue; }
+    const paths = new Set([...leafPaths(oldRecord), ...leafPaths(currentRecord)].filter((path) => path && !path.startsWith('sources.')));
+    for (const path of paths) {
+      const target = approvedExisting.get(`${id}|${path}`);
+      const oldValue = getField(oldRecord, path), currentValue = getField(currentRecord, path);
+      if (!same(oldValue, currentValue) && !target) errors.push(`unapproved unrelated mutation ${id}.${path}`);
+      if (target && !same(currentValue, oldValue) && !same(currentValue, approvedValue(target.decision, target.item))) errors.push(`wrong approved value ${id}.${path}`);
+    }
+    const sourcePaths = new Set([...Object.keys(oldRecord.sources ?? {}), ...Object.keys(currentRecord.sources ?? {})]);
+    for (const source of sourcePaths) {
+      const relevant = [...approvedExisting.entries()].filter(([key]) => key.startsWith(`${id}|`) && sourceField(key.split('|')[1]!) === source);
+      const oldValue = oldRecord.sources?.[source], currentValue = currentRecord.sources?.[source];
+      const changedTruth = relevant.some(([key]) => !same(getField(oldRecord, key.split('|')[1]!), getField(currentRecord, key.split('|')[1]!)));
+      if (!changedTruth && !same(oldValue, currentValue)) errors.push(`unapproved provenance mutation ${id}.sources.${source}`);
+      if (changedTruth && (relevant.length !== 1 || !same(currentValue, deriveDecisionProvenance(relevant[0]![1].item, relevant[0]![1].decision)))) errors.push(`wrong approved provenance ${id}.sources.${source}`);
+    }
+  }
+  const seenRiotIds = new Set<string>();
+  for (const record of now.filter((candidate) => !oldById.has(candidate.id))) {
+    if (seenRiotIds.has(record.riotId)) errors.push(`duplicate new identity ${record.riotId}`);
+    seenRiotIds.add(record.riotId);
+    const plan = buildNewRecordPlan(frozen, overlay, record.riotId);
+    if (!plan) { errors.push(`blocked or unapproved new identity ${record.riotId}`); continue; }
+    for (const field of Object.keys(record)) if (!NEW_RECORD_FIELDS.has(field)) errors.push(`new identity ${record.riotId}: unknown field ${field}`);
+    if (!same(record, plan)) errors.push(`new identity ${record.riotId}: record does not exact-match approved truth, scaffolding, unknown materialization, and provenance plan`);
+  }
+  for (const decision of decisions.filter((candidate) => ['unresolved', 'accepted_unknown'].includes(candidate.action) && candidate.identity.productionId)) {
+    const oldRecord = oldById.get(decision.identity.productionId), currentRecord = newById.get(decision.identity.productionId);
+    if (oldRecord && currentRecord && !same(getField(oldRecord, decision.field), getField(currentRecord, decision.field))) errors.push(`${decision.action} field modified ${decision.identity.productionId}.${decision.field}`);
+  }
+  return errors;
 }

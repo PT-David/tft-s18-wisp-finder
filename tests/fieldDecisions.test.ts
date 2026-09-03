@@ -1,11 +1,120 @@
-import{describe,expect,it}from'vitest';import{readFileSync}from'node:fs';import{readiness,validateDecisions,validateFulfillment}from'../scripts/data/lib/c4.2b-field-decisions';
-const frozen=JSON.parse(readFileSync('data/reviews/18.1/c4.2b2-field-evidence.json','utf8')),overlay=JSON.parse(readFileSync('data/reviews/18.1/c4.2b-field-decisions.json','utf8')),production=JSON.parse(readFileSync('data/normalized/wisps_18.1.json','utf8'));
-const clone=<T>(v:T):T=>JSON.parse(JSON.stringify(v));
-describe('C4.2B2 decision governance',()=>{
- it('binds the exact frozen bundle and validates independently of current B1',()=>{expect(overlay.evidenceBinding.frozenEvidenceSha256).toBe(frozen.bundleSha256);expect(validateDecisions(frozen,overlay,production)).toEqual([])});
- it('detects missing, duplicate, and orphan dispositions',()=>{for(const mutate of [(d:any)=>d.decisions.pop(),(d:any)=>d.decisions.push(clone(d.decisions[0])),(d:any)=>d.decisions[0].reviewId='orphan']){const d=clone(overlay);mutate(d);expect(validateDecisions(frozen,d).length).toBeGreaterThan(0)}});
- it('enforces action admissibility',()=>{const cases:Array<(d:any)=>void>=[d=>{d.action='approve_proposal';d.approvedValue='invented';d.applyPolicy='apply'},d=>{d.action='approve_explicit_value';d.approvedValue=987654;d.applyPolicy='apply'},d=>{d.action='retain_current'},d=>{d.action='accepted_unknown';d.approvedValue=false},d=>{d.action='confirmed_absent'}];for(const mutate of cases){const d=clone(overlay),x=d.decisions.find((v:any)=>!v.identity.productionId&&v.action==='unresolved')!;mutate(x);expect(validateDecisions(frozen,d).length).toBeGreaterThan(0)}});
- it('allows optional unknown without readiness but blocks unresolved required fields',()=>{const rows=readiness(frozen,overlay);expect(rows.find((r:any)=>r.communityDragonId==='DA_BearsVisit18').requiredBlockers).toContain('category');expect(rows.every((r:any)=>r.optionalUnknown.includes('effects.prismatic'))).toBe(true)});
- it('keeps Bear, Tiger, and Bear Upgrade identities distinct',()=>{const ids=frozen.missingIdentities.map((x:any)=>x.communityDragonId);expect(ids).toContain('DA_TigersVisit18_Wisp');expect(ids).toContain('DA_BearsVisit18');expect(ids).not.toContain('DA_BearsVisit18_Upgrade')});
- it('guards future apply lifecycle',()=>{const base={records:[{id:'one',riotId:'R1',cost:1,effects:{normal:'old'}}]},f:any={missingIdentities:[{communityDragonId:'R2'}],reviewItems:[{reviewId:'a',field:'cost',proposedProductionValue:2,identity:{productionId:'one'}},{reviewId:'u',field:'effects.normal',identity:{productionId:'one'}},{reviewId:'n',field:'riotId',proposedProductionValue:'R2',identity:{communityDragonId:'R2'}}],productionBaseline:base},d:any={decisions:[{reviewId:'a',action:'approve_proposal',approvedValue:2,identity:{productionId:'one'},field:'cost'},{reviewId:'u',action:'unresolved',identity:{productionId:'one'},field:'effects.normal'},{reviewId:'n',action:'approve_proposal',approvedValue:'R2',identity:{communityDragonId:'R2'},field:'riotId'}]};expect(validateFulfillment(f,d,{records:[{...base.records[0],cost:2},{id:'two',riotId:'R2'}]})).toEqual([]);expect(validateFulfillment(f,d,{records:[{...base.records[0],cost:9}]}).join()).toContain('wrong approved');expect(validateFulfillment(f,d,{records:[{...base.records[0],nameEn:'mutation'}]}).join()).toContain('unapproved');expect(validateFulfillment(f,d,{records:[{...base.records[0],effects:{normal:'changed'}}]}).join()).toContain('unapproved');expect(validateFulfillment(f,d,{records:[base.records[0],{id:'two',riotId:'WRONG'}]}).join()).toContain('unapproved new identity');expect(validateFulfillment(f,d,{records:[base.records[0],{id:'two',riotId:'R2'},{id:'three',riotId:'R2'}]}).join()).toContain('duplicate new identity')});
+import { describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
+import { buildNewRecordPlan, deriveDecisionProvenance, readiness, validateDecisions, validateFulfillment } from '../scripts/data/lib/c4.2b-field-decisions';
+import { validateDataset, validateProductionFieldValue } from '../scripts/validation';
+
+const frozen = JSON.parse(readFileSync('data/reviews/18.1/c4.2b2-field-evidence.json', 'utf8'));
+const overlay = JSON.parse(readFileSync('data/reviews/18.1/c4.2b-field-decisions.json', 'utf8'));
+const production = JSON.parse(readFileSync('data/normalized/wisps_18.1.json', 'utf8'));
+const clone = <T>(value: T): T => JSON.parse(JSON.stringify(value));
+
+describe('C4.2B2 decision governance', () => {
+  it('binds the exact frozen bundle and validates independently of current B1', () => {
+    expect(overlay.evidenceBinding.frozenEvidenceSha256).toBe(frozen.bundleSha256);
+    expect(validateDecisions(frozen, overlay, production)).toEqual([]);
+  });
+
+  it('detects missing, duplicate, and orphan dispositions', () => {
+    for (const mutate of [(d: any) => d.decisions.pop(), (d: any) => d.decisions.push(clone(d.decisions[0])), (d: any) => { d.decisions[0].reviewId = 'orphan'; }]) {
+      const decisions = clone(overlay); mutate(decisions);
+      expect(validateDecisions(frozen, decisions).length).toBeGreaterThan(0);
+    }
+  });
+
+  it('requires approvals to cite evidence that supports the selected value', () => {
+    const decisions = clone(overlay);
+    const explicit = decisions.decisions.find((decision: any) => decision.action === 'approve_explicit_value');
+    const item = frozen.reviewItems.find((candidate: any) => candidate.reviewId === explicit.reviewId);
+    const unrelated = item.evidence.find((evidence: any) => JSON.stringify(evidence.proposedProductionValue) !== JSON.stringify(explicit.approvedValue));
+    expect(unrelated).toBeTruthy();
+    explicit.evidenceRefs = [unrelated.evidenceId];
+    expect(validateDecisions(frozen, decisions).join('\n')).toContain('does not support approved value');
+  });
+
+  it('enforces action admissibility and positive absence evidence', () => {
+    const cases: Array<(decision: any) => void> = [
+      (decision) => { decision.action = 'approve_proposal'; decision.approvedValue = 'invented'; decision.applyPolicy = 'apply'; },
+      (decision) => { decision.action = 'approve_explicit_value'; decision.approvedValue = 987654; decision.applyPolicy = 'apply'; },
+      (decision) => { decision.action = 'retain_current'; },
+      (decision) => { decision.action = 'accepted_unknown'; decision.approvedValue = false; },
+      (decision) => { decision.action = 'confirmed_absent'; },
+    ];
+    for (const mutate of cases) {
+      const decisions = clone(overlay), target = decisions.decisions.find((value: any) => !value.identity.productionId && value.action === 'unresolved');
+      mutate(target);
+      expect(validateDecisions(frozen, decisions).length).toBeGreaterThan(0);
+    }
+  });
+
+  it('uses the real production shape for Requirements and display-safe effects', () => {
+    expect(validateProductionFieldValue('requirements', [{ type: 'source_text', textEn: 'English only', machineEvaluable: false }])).not.toEqual([]);
+    expect(validateProductionFieldValue('requirements', [{ type: 'source_text', textZh: '已有中文证据', machineEvaluable: false }])).toEqual([]);
+    expect(validateProductionFieldValue('effects.normal', 'Damage under @Threshold*100@%.')).not.toEqual([]);
+    const rows = readiness(frozen, overlay);
+    expect(rows.find((row: any) => row.communityDragonId === 'DA_BearsVisit18').requiredBlockers).toEqual(expect.arrayContaining(['category', 'requirements']));
+    expect(rows.find((row: any) => row.communityDragonId === 'DA_TigersVisit18_Wisp').requiredBlockers).toEqual(expect.arrayContaining(['category', 'requirements']));
+    const snack = overlay.decisions.find((decision: any) => decision.identity.communityDragonId === 'DA_Snacktime18' && decision.field === 'effects.normal');
+    expect(snack.approvedValue).toBe('The BFF eats enemies he damages under 15% Max Health.');
+    expect(snack.adjudicatedPropositions).toEqual([expect.objectContaining({ propositionKey: 'client-variable-executethreshold', approvedValue: 15 })]);
+  });
+
+  it('keeps Bear, Tiger, and Bear Upgrade identities distinct', () => {
+    const ids = frozen.missingIdentities.map((identity: any) => identity.communityDragonId);
+    expect(ids).toContain('DA_TigersVisit18_Wisp'); expect(ids).toContain('DA_BearsVisit18'); expect(ids).not.toContain('DA_BearsVisit18_Upgrade');
+  });
+
+  it('blocks Bear and Tiger creation but permits an exact READY Memorial record', () => {
+    expect(buildNewRecordPlan(frozen, overlay, 'DA_BearsVisit18')).toBeUndefined();
+    expect(buildNewRecordPlan(frozen, overlay, 'DA_TigersVisit18_Wisp')).toBeUndefined();
+    const memorial = buildNewRecordPlan(frozen, overlay, 'DA_MemorialDummy18');
+    expect(memorial).toBeTruthy();
+    expect(validateDataset({ patch: '18.1', records: [memorial] })).toEqual([]);
+    expect(validateFulfillment(frozen, overlay, { records: [...production.records, memorial] })).toEqual([]);
+    const bear = { ...memorial, id: 'da_bearsvisit18', riotId: 'DA_BearsVisit18', category: 'combat' };
+    expect(validateFulfillment(frozen, overlay, { records: [...production.records, bear] }).join('\n')).toContain('blocked or unapproved new identity');
+  });
+
+  it('enforces every required field, scaffolding, and field-specific unknown materialization', () => {
+    const memorial = buildNewRecordPlan(frozen, overlay, 'DA_MemorialDummy18')!;
+    expect(memorial.oncePerGame).toEqual({ status: 'unknown' });
+    expect(memorial.reofferCooldownShops).toEqual({ status: 'unknown' });
+    expect(memorial.minimumAffordableGold).toBeUndefined();
+    expect(memorial.effects.prismatic).toBeUndefined();
+    for (const mutate of [
+      (record: any) => { delete record.category; },
+      (record: any) => { record.oncePerGame = false; },
+      (record: any) => { delete record.oncePerGame; },
+      (record: any) => { record.effects.prismatic = null; },
+      (record: any) => { record.patch = 'arbitrary'; },
+      (record: any) => { record.extra = true; },
+    ]) {
+      const record = clone(memorial); mutate(record);
+      expect(validateFulfillment(frozen, overlay, { records: [...production.records, record] })).not.toEqual([]);
+    }
+  });
+
+  it('compares nested approved fields without permitting sibling mutation', () => {
+    const item = { reviewId: 'normal', field: 'effects.normal', proposedProductionValue: 'new', identity: { productionId: 'one' }, evidence: [{ evidenceId: 'normal:E1', sourceId: 'source', retrievedAt: '2026-09-02T00:00:00Z', confidence: 'client_data', proposedProductionValue: 'new' }] };
+    const decision = { reviewId: 'normal', action: 'approve_proposal', approvedValue: 'new', identity: { productionId: 'one' }, field: 'effects.normal', evidenceRefs: ['normal:E1'] };
+    const base = { records: [{ id: 'one', effects: { normal: 'old', blossom: 'old blossom', prismatic: 'old prismatic' }, sources: { effects: { sourceId: 'old', verifiedAt: 'old', confidence: 'unverified' } } }] };
+    const fixture: any = { missingIdentities: [], reviewItems: [item], productionBaseline: base };
+    const decisions: any = { decisions: [decision] };
+    const provenance = deriveDecisionProvenance(item, decision);
+    expect(validateFulfillment(fixture, decisions, { records: [{ ...base.records[0], effects: { ...base.records[0].effects, normal: 'new' }, sources: { effects: provenance } }] })).toEqual([]);
+    expect(validateFulfillment(fixture, decisions, { records: [{ ...base.records[0], effects: { ...base.records[0].effects, normal: 'wrong' } }] }).join('\n')).toContain('wrong approved value');
+    expect(validateFulfillment(fixture, decisions, { records: [{ ...base.records[0], effects: { ...base.records[0].effects, prismatic: 'changed' } }] }).join('\n')).toContain('unapproved unrelated mutation');
+    expect(validateFulfillment(fixture, decisions, { records: [{ ...base.records[0], sources: { effects: { sourceId: 'arbitrary' } } }] }).join('\n')).toContain('unapproved provenance mutation');
+  });
+
+  it('allows approved blossom but rejects unresolved normal changes', () => {
+    const base = { records: [{ id: 'one', effects: { normal: 'old', blossom: 'old' }, sources: { effects: { sourceId: 'old', verifiedAt: 'old', confidence: 'unverified' } } }] };
+    const blossom = { reviewId: 'b', field: 'effects.blossom', proposedProductionValue: 'new blossom', identity: { productionId: 'one' }, evidence: [{ evidenceId: 'b:E1', sourceId: 's', retrievedAt: '2026-09-02', confidence: 'client_data', proposedProductionValue: 'new blossom' }] };
+    const unresolved = { reviewId: 'u', field: 'effects.normal', identity: { productionId: 'one' }, evidence: [] };
+    const bDecision = { reviewId: 'b', action: 'approve_proposal', approvedValue: 'new blossom', identity: { productionId: 'one' }, field: 'effects.blossom', evidenceRefs: ['b:E1'] };
+    const uDecision = { reviewId: 'u', action: 'unresolved', identity: { productionId: 'one' }, field: 'effects.normal', evidenceRefs: [] };
+    const fixture: any = { missingIdentities: [], reviewItems: [blossom, unresolved], productionBaseline: base };
+    const provenance = deriveDecisionProvenance(blossom, bDecision);
+    expect(validateFulfillment(fixture, { decisions: [bDecision, uDecision] }, { records: [{ ...base.records[0], effects: { normal: 'old', blossom: 'new blossom' }, sources: { effects: provenance } }] })).toEqual([]);
+    expect(validateFulfillment(fixture, { decisions: [bDecision, uDecision] }, { records: [{ ...base.records[0], effects: { normal: 'changed', blossom: 'old' } }] }).join('\n')).toContain('unresolved field modified');
+  });
 });

@@ -181,19 +181,12 @@
       },
       "field": "requirements",
       "propositionKey": "text-28eb12497083f553",
-      "action": "approve_proposal",
-      "approvedValue": [
-        {
-          "type": "source_text",
-          "textEn": "Primal trait active",
-          "machineEvaluable": false
-        }
-      ],
+      "action": "unresolved",
       "evidenceRefs": [
         "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d:E01"
       ],
-      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
-      "applyPolicy": "apply"
+      "reason": "Frozen evidence has no production-valid Requirement candidate with textZh; no translation is invented, so this required field remains a C4.2C blocker.",
+      "applyPolicy": "defer"
     },
     {
       "decisionId": "C4B2-0011",
@@ -477,8 +470,7 @@
       "action": "approve_proposal",
       "approvedValue": "复制你伤害最高的弈子。复制体造成100%伤害。",
       "evidenceRefs": [
-        "C42B1-243b2d63a5b3d044-c1953d7f5a150a59-279938d14fc47a15:E01",
-        "C42B1-243b2d63a5b3d044-c1953d7f5a150a59-279938d14fc47a15:E02"
+        "C42B1-243b2d63a5b3d044-c1953d7f5a150a59-279938d14fc47a15:E01"
       ],
       "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
       "applyPolicy": "apply"
@@ -533,15 +525,14 @@
       "approvedValue": [
         {
           "type": "source_text",
-          "textEn": "Elderwood trait active",
+          "textZh": "已激活永恒之森羁绊",
           "machineEvaluable": false
         }
       ],
       "evidenceRefs": [
-        "C42B1-3149d885ad5877c3-10762e1094dbeeab-60243de4dc2ce66d:E01",
-        "C42B1-3149d885ad5877c3-10762e1094dbeeab-60243de4dc2ce66d:E02"
+        "C42B1-3149d885ad5877c3-10762e1094dbeeab-60243de4dc2ce66d:E01"
       ],
-      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "reason": "Manual production-shape review selects the frozen Chinese source-text candidate; it preserves source wording and remains explicitly non-machine-evaluable.",
       "applyPolicy": "apply"
     },
     {
@@ -592,7 +583,6 @@
       "evidenceRefs": [
         "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E01",
         "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E02",
-        "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E03",
         "C42B1-3149d885ad5877c3-474c91c627b347cf-435964e390dc385a:E04"
       ],
       "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
@@ -1013,19 +1003,12 @@
       },
       "field": "requirements",
       "propositionKey": "text-28eb12497083f553",
-      "action": "approve_proposal",
-      "approvedValue": [
-        {
-          "type": "source_text",
-          "textEn": "Primal trait active",
-          "machineEvaluable": false
-        }
-      ],
+      "action": "unresolved",
       "evidenceRefs": [
         "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d:E01"
       ],
-      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
-      "applyPolicy": "apply"
+      "reason": "Frozen evidence has no production-valid Requirement candidate with textZh; no translation is invented, so this required field remains a C4.2C blocker.",
+      "applyPolicy": "defer"
     },
     {
       "decisionId": "C4B2-0056",
@@ -1237,8 +1220,7 @@
       "action": "approve_proposal",
       "approvedValue": "Gain the Tiger Primal buff for this combat.",
       "evidenceRefs": [
-        "C42B1-61adda104b1b8139-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
-        "C42B1-61adda104b1b8139-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+        "C42B1-61adda104b1b8139-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01"
       ],
       "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
       "applyPolicy": "apply"
@@ -1492,7 +1474,7 @@
       },
       "field": "requirements",
       "propositionKey": "unresolved-set-level-semantic-comparison",
-      "action": "approve_proposal",
+      "action": "approve_explicit_value",
       "approvedValue": [
         {
           "type": "source_text",
@@ -1501,10 +1483,9 @@
         }
       ],
       "evidenceRefs": [
-        "C42B1-8eb276e8d7001658-10762e1094dbeeab-60243de4dc2ce66d:E01",
-        "C42B1-8eb276e8d7001658-10762e1094dbeeab-60243de4dc2ce66d:E02"
+        "C42B1-8eb276e8d7001658-10762e1094dbeeab-60243de4dc2ce66d:E01"
       ],
-      "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
+      "reason": "Manual production-shape review selects the frozen Chinese source-text candidate; it preserves source wording and remains explicitly non-machine-evaluable.",
       "applyPolicy": "apply"
     },
     {
@@ -1554,9 +1535,7 @@
       "approvedValue": "Your first itemized tank spawns a Dummy with their items on death.",
       "evidenceRefs": [
         "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E01",
-        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E02",
-        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E03",
-        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E04"
+        "C42B1-8eb276e8d7001658-474c91c627b347cf-435964e390dc385a:E02"
       ],
       "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
       "applyPolicy": "apply"
@@ -1618,8 +1597,7 @@
         }
       ],
       "evidenceRefs": [
-        "C42B1-8eb276e8d7001658-6c26a21cee1c40ab-6c26a21cee1c40ab:E01",
-        "C42B1-8eb276e8d7001658-6c26a21cee1c40ab-6c26a21cee1c40ab:E02"
+        "C42B1-8eb276e8d7001658-6c26a21cee1c40ab-6c26a21cee1c40ab:E01"
       ],
       "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
       "applyPolicy": "apply"
@@ -1638,8 +1616,7 @@
       "approvedValue": 3,
       "evidenceRefs": [
         "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
-        "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
-        "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+        "C42B1-8eb276e8d7001658-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02"
       ],
       "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
       "applyPolicy": "apply"
@@ -1977,15 +1954,14 @@
       "approvedValue": [
         {
           "type": "source_text",
-          "textEn": "Elderwood trait active",
+          "textZh": "已激活永恒之森羁绊",
           "machineEvaluable": false
         }
       ],
       "evidenceRefs": [
-        "C42B1-bbbecf24acf3681f-10762e1094dbeeab-60243de4dc2ce66d:E01",
-        "C42B1-bbbecf24acf3681f-10762e1094dbeeab-60243de4dc2ce66d:E02"
+        "C42B1-bbbecf24acf3681f-10762e1094dbeeab-60243de4dc2ce66d:E01"
       ],
-      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "reason": "Manual production-shape review selects the frozen Chinese source-text candidate; it preserves source wording and remains explicitly non-machine-evaluable.",
       "applyPolicy": "apply"
     },
     {
@@ -2036,7 +2012,6 @@
       "evidenceRefs": [
         "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E01",
         "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E02",
-        "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E03",
         "C42B1-bbbecf24acf3681f-474c91c627b347cf-435964e390dc385a:E04"
       ],
       "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",
@@ -2481,15 +2456,14 @@
       "approvedValue": [
         {
           "type": "source_text",
-          "textEn": "Sprykin trait active",
+          "textZh": "已激活灵巧精羁绊",
           "machineEvaluable": false
         }
       ],
       "evidenceRefs": [
-        "C42B1-d5645cd0909aeafa-10762e1094dbeeab-60243de4dc2ce66d:E01",
-        "C42B1-d5645cd0909aeafa-10762e1094dbeeab-60243de4dc2ce66d:E02"
+        "C42B1-d5645cd0909aeafa-10762e1094dbeeab-60243de4dc2ce66d:E01"
       ],
-      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "reason": "Manual production-shape review selects the frozen Chinese source-text candidate; it preserves source wording and remains explicitly non-machine-evaluable.",
       "applyPolicy": "apply"
     },
     {
@@ -2536,15 +2510,23 @@
       "field": "effects.normal",
       "propositionKey": "client-variable-executethreshold",
       "action": "approve_explicit_value",
-      "approvedValue": "The BFF eats enemies he damages under @ExecuteThreshold*100@% Max Health.",
+      "approvedValue": "The BFF eats enemies he damages under 15% Max Health.",
       "evidenceRefs": [
-        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E01",
         "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E02",
-        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E03",
-        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E04"
+        "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E01"
       ],
-      "reason": "Manual review approves the frozen English complete effect resolving the client ExecuteThreshold proposition to 15%; the numeric proposition is not used as the entire effect.",
-      "applyPolicy": "apply"
+      "reason": "Manual adjudication approves the frozen rendered DataTFT effect and separately approves ExecuteThreshold=15 from matching frozen CommunityDragon client-variable and DataTFT evidence; unresolved client placeholders are not publishable.",
+      "applyPolicy": "apply",
+      "adjudicatedPropositions": [
+        {
+          "propositionKey": "client-variable-executethreshold",
+          "approvedValue": 15,
+          "evidenceRefs": [
+            "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E01",
+            "C42B1-d5645cd0909aeafa-474c91c627b347cf-c442ec969cd18f2c:E02"
+          ]
+        }
+      ]
     },
     {
       "decisionId": "C4B2-0138",
@@ -2710,8 +2692,7 @@
       "action": "approve_proposal",
       "approvedValue": "The BFF eats enemies he damages under 22% Max Health.",
       "evidenceRefs": [
-        "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01",
-        "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E02"
+        "C42B1-d5645cd0909aeafa-ff0b7ab51a68bba3-ff0b7ab51a68bba3:E01"
       ],
       "reason": "Frozen evidence contains exactly one production-shaped candidate; manual review approves that proposal.",
       "applyPolicy": "apply"
@@ -2730,15 +2711,14 @@
       "approvedValue": [
         {
           "type": "source_text",
-          "textEn": "Primal trait active",
+          "textZh": "已激活原始羁绊，且尚未选择乌龟",
           "machineEvaluable": false
         }
       ],
       "evidenceRefs": [
-        "C42B1-d6b0fc95931e4827-10762e1094dbeeab-60243de4dc2ce66d:E01",
-        "C42B1-d6b0fc95931e4827-10762e1094dbeeab-60243de4dc2ce66d:E02"
+        "C42B1-d6b0fc95931e4827-10762e1094dbeeab-60243de4dc2ce66d:E01"
       ],
-      "reason": "Manual semantic review selects a source-text representation from frozen evidence without claiming machine evaluability.",
+      "reason": "Manual production-shape review selects the frozen Chinese source-text candidate; it preserves source wording and remains explicitly non-machine-evaluable.",
       "applyPolicy": "apply"
     },
     {
@@ -2789,7 +2769,6 @@
       "evidenceRefs": [
         "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E01",
         "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E02",
-        "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E03",
         "C42B1-d6b0fc95931e4827-474c91c627b347cf-435964e390dc385a:E04"
       ],
       "reason": "Manual bilingual review selects the frozen English production-shaped effect text.",

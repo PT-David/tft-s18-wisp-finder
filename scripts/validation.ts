@@ -12,7 +12,7 @@ const comparableValue = (value: unknown): value is string | number | boolean =>
 const knowledge = (value: unknown): value is Record<string, unknown> => object(value) &&
   (value.status === 'unknown' || (value.status === 'confirmed' && Object.hasOwn(value, 'value')));
 
-function validateRequirement(requirement: unknown, path: string): string[] {
+export function validateRequirement(requirement: unknown, path: string): string[] {
   if (!object(requirement)) return [`${path}: 必须是对象`];
   const errors: string[] = [];
   if (!text(requirement.type)) errors.push(`${path}.type: 必须是非空字符串`);
@@ -35,6 +35,26 @@ function validateRequirement(requirement: unknown, path: string): string[] {
   }
   return errors;
 }
+
+export function validateProductionFieldValue(field: string, value: unknown, options: { required?: boolean } = {}): string[] {
+  const path = `field.${field}`;
+  if (field === 'riotId' || field === 'nameEn' || field === 'nameZh') return text(value) ? [] : [`${path}: 必须是非空字符串`];
+  if (field === 'category') return typeof value === 'string' && WISP_CATEGORIES.includes(value as never) ? [] : [`${path}: 非法类别`];
+  if (field === 'cost') return finiteNonNegative(value) ? [] : [`${path}: 必须是非负有限数`];
+  if (field === 'stageRanges') {
+    const record = { id: 'shape', nameZh: 'shape', nameEn: 'shape', category: 'misc', cost: 0, stageRanges: value, effects: { normal: 'shape' }, requirements: [], oncePerGame: { status: 'unknown' }, searchConcepts: [], synonyms: [], patch: '18.1' };
+    return validateDataset({ patch: '18.1', records: [record] }).filter((error) => error.includes('.stageRanges')).map((error) => error.replace('records[0].stageRanges', path));
+  }
+  if (field === 'effects.normal') return text(value) && !/@[A-Za-z][A-Za-z0-9_]*(?:\s*\*\s*100)?@/.test(value) ? [] : [`${path}: 必须是非空、无 unresolved client placeholder 的字符串`];
+  if (field === 'effects.blossom' || field === 'effects.prismatic') return typeof value === 'string' && value.trim().length ? [] : [`${path}: approved variant 必须是非空字符串`];
+  if (field === 'requirements') return Array.isArray(value) ? value.flatMap((requirement, index) => validateRequirement(requirement, `${path}[${index}]`)) : [`${path}: 必须是数组`];
+  if (field === 'oncePerGame') return knowledge(value) && value.status === 'unknown' ? [] : [`${path}: unknown 必须 materialize 为 {status:"unknown"}`];
+  if (field === 'reofferCooldownShops') return knowledge(value) && value.status === 'unknown' ? [] : [`${path}: unknown 必须 materialize 为 {status:"unknown"}`];
+  if (field === 'minimumAffordableGold') return value === undefined ? [] : [`${path}: unknown 必须省略`];
+  return options.required ? [`${path}: 未知 required field`] : [];
+}
+
+export const productionRecordIdForRiotId = (riotId: string) => riotId.toLowerCase().replace(/[^a-z0-9]+/g, '_');
 
 export function validateDataset(input: unknown): string[] {
   const errors: string[] = [];
