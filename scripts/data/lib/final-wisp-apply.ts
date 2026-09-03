@@ -1,7 +1,18 @@
 import { buildNewRecordPlan, sha256, stableJson, type Json } from './c4.2b-field-decisions';
 
-const ALLOWED = new Map<string, unknown>([['DA_BearsVisit18:category', 'combat'], ['DA_Snacktime18:cost', 3]]);
-const BEAR_REQUIREMENTS = 'DA_BearsVisit18:requirements';
+const BEAR_REQUIREMENTS_VALUE = [
+  {
+    type: 'source_text',
+    textZh: '已激活【野兽之灵】羁绊，且尚未选择【蛮熊】',
+    textEn: 'Primal active; Bear not already chosen',
+    machineEvaluable: false,
+  },
+];
+const ALLOWED = new Map<string, unknown>([
+  ['DA_BearsVisit18:category', 'combat'],
+  ['DA_BearsVisit18:requirements', BEAR_REQUIREMENTS_VALUE],
+  ['DA_Snacktime18:cost', 3],
+]);
 const same = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b);
 
 export const MANUAL_SOURCE = {
@@ -11,7 +22,7 @@ export const MANUAL_SOURCE = {
 
 export function applyFinalBlockerOverrides(effective: { frozen: Json; overlay: Json }, input: Json) {
   if (input.schemaVersion !== 1 || input.patch !== '18.1' || input.policy !== 'user_approved_manual_override' || !Array.isArray(input.overrides)) throw new Error('Invalid final blocker override envelope.');
-  const expected = new Set([...ALLOWED.keys(), BEAR_REQUIREMENTS]), seen = new Set<string>();
+  const expected = new Set(ALLOWED.keys()), seen = new Set<string>();
   const frozen = structuredClone(effective.frozen), overlay = structuredClone(effective.overlay);
   const decisions = new Map<string, Json>(overlay.decisions.map((decision: Json) => [decision.reviewId, decision]));
   frozen.decisionTimeSourceManifest.sources.push(MANUAL_SOURCE);
@@ -19,9 +30,7 @@ export function applyFinalBlockerOverrides(effective: { frozen: Json; overlay: J
     const key = `${override.riotId}:${override.field}`;
     if (!expected.has(key)) throw new Error(`Manual override target is not allowed: ${key}`);
     if (seen.has(key)) throw new Error(`Duplicate manual override: ${key}`); seen.add(key);
-    if (key === BEAR_REQUIREMENTS) {
-      if (!Array.isArray(override.value) || override.value.length === 0) throw new Error('Bear requirements override must be a non-empty array.');
-    } else if (!same(override.value, ALLOWED.get(key))) throw new Error(`Manual override has unexpected value: ${key}`);
+    if (!same(override.value, ALLOWED.get(key))) throw new Error(`Manual override has unexpected value: ${key}`);
     const item = frozen.reviewItems.find((candidate: Json) => candidate.identity.communityDragonId === override.riotId && candidate.field === override.field);
     const decision = item && decisions.get(item.reviewId);
     if (!item || !decision || decision.action !== 'unresolved') throw new Error(`Manual override does not resolve exactly one unresolved target: ${key}`);
