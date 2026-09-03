@@ -82,7 +82,7 @@ describe('Stage C1 production audit regressions', () => {
     const reconciliation = load<any>('reports/data-corpus-reconciliation-18.1.json');
     expect(reconciliation.matching.reviewedCrossSourceIdentityCount).toBe(17);
     expect(reconciliation.matching.dataTftUnmatchedCount).toBeGreaterThan(0);
-    expect(reconciliation.confirmedCorpusMinimum).toBe(174);
+    expect(reconciliation.confirmedCorpusMinimum).toBe(176);
     expect(reconciliation.exactCorpusSize).toBe('unresolved');
   });
 

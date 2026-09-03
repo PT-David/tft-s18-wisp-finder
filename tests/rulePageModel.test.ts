@@ -23,7 +23,7 @@ describe('rules page model', () => {
 
   test('production index is exact, deterministic, and preserves reviewed per-field facts', () => {
     const model = buildRulesPageModel(rules, dataset.records, dataset.patch);
-    expect(model.wisps).toHaveLength(169);
+    expect(model.wisps).toHaveLength(176);
     expect(new Set(model.wisps.map(row => row.id))).toEqual(new Set(dataset.records.map(wisp => wisp.id)));
     expect(model.wisps.every(row => row.stageRanges.value.length > 0)).toBe(true);
     const petrify = model.wisps.find(row => row.id === 'da_petrifyshields18')!;

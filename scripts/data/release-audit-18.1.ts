@@ -108,6 +108,7 @@ async function build() {
   const provenanceConfidence: Record<string, number> = { official: 0, client_data: 0, verified_third_party: 0, community_high_confidence: 0, unverified: 0 };
   const stalePbeOverrides: Json[] = [];
   for (const record of records) for (const [fieldName, ref] of Object.entries(record.sources as Json)) {
+    if (ref.provenanceKind === 'review_governance') continue;
     provenanceConfidence[ref.confidence] = (provenanceConfidence[ref.confidence] ?? 0) + 1;
     const source = sourceById.get(ref.sourceId);
     if (!source) danglingSourceRefs.push({ productionId: record.id, field: fieldName, sourceId: ref.sourceId });

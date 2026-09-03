@@ -3,6 +3,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { canonicalClientKey, reconcileRecords } from './lib/reconcile';
 import { confirmedCorpusMinimum, requirementFacts, requirementsManualReview } from './lib/audit';
+import { buildFinalAdditions, MANUAL_SOURCE } from './lib/final-wisp-apply';
+import { composeB4Lifecycle } from './lib/c4.2b4-final-fields';
 
 type Raw = Record<string, unknown>;
 const root = resolve(import.meta.dirname, '../..');
@@ -12,6 +14,7 @@ const stable = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`;
 const slug = (value: string) => value.normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
 const hashId = (value: string) => createHash('sha256').update(value).digest('hex').slice(0, 12);
 const stripTags = (value: string) => value.replace(/<[^>]+>/g, '').trim();
+const assertRecordCount = (records: unknown[], expected: number, phase: string) => { if (records.length !== expected) throw new Error(`Expected ${phase} record count of ${expected}, got ${records.length}.`); };
 export const variantKind = (api: string): 'base' | 'upgrade' | 'prismatic' => /prismatic/i.test(api) ? 'prismatic' : /upgrade/i.test(api) ? 'upgrade' : 'base';
 const baseApi = (api: string) => variantKind(api) === 'base';
 
@@ -32,6 +35,8 @@ async function main() {
   const reviewedIdentityFile = await load('data/overrides/18.1/reviewed-identity-mappings.json');
   const seed = await load('data/wisps_18.1.json');
   const sourceManifest = await load('data/source_manifest_18.1.json');
+  const finalOverrides = await load('data/c4_final_three_blocker_overrides_18.1.json');
+  const review = (name: string) => load(`data/reviews/18.1/${name}`);
   const enByApi = new Map((cdEn.records as Raw[]).map((item) => [item.apiName, item]));
   const zhByName = new Map<string, Raw[]>();
   for (const item of cdZh.records as Raw[]) {
@@ -71,7 +76,13 @@ async function main() {
       oncePerGame: { status: 'unknown' }, reofferCooldownShops: { status: 'unknown' },
       searchConcepts: [], synonyms: [], sources, patch: '18.1',
     };
-  }).sort((a, b) => a.id.localeCompare(b.id, 'en'));
+  });
+  assertRecordCount(records, 169, 'pre-Apply production baseline');
+  const [b2f, b2, b3f, b3, b4f, b4] = await Promise.all(['c4.2b2-field-evidence.json', 'c4.2b-field-decisions.json', 'c4.2b3-required-field-evidence.json', 'c4.2b3-required-field-decisions.json', 'c4.2b4-final-field-evidence.json', 'c4.2b4-final-field-decisions.json'].map(review));
+  const effective = composeB4Lifecycle(b2f, b2, b3f, b3, b4f, b4);
+  records.push(...buildFinalAdditions(effective, finalOverrides) as typeof records);
+  records.sort((a, b) => a.id.localeCompare(b.id, 'en'));
+  assertRecordCount(records, 176, 'final production');
 
   const lolchessRows = (lolchessImported?.records ?? lolchess.records) as Raw[];
   const normalizedEnglishName = (value: unknown) => String(value ?? '').normalize('NFKC').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -195,9 +206,10 @@ async function main() {
     headersArtifact: targetedPaths.headers, headersSha256: createHash('sha256').update(targetedHeaders).digest('hex'),
     parsedArtifact: targetedPaths.parsed, parsedSha256: createHash('sha256').update(targetedParsed).digest('hex'),
   };
-  const generatedSourceIds = new Set([manifestBrowserSource.sourceId, targetedOpggSource.sourceId]);
+  const manualSource = { ...MANUAL_SOURCE, sha256: createHash('sha256').update(await readFile(resolve(root, MANUAL_SOURCE.sourceArtifact))).digest('hex') };
+  const generatedSourceIds = new Set([manifestBrowserSource.sourceId, targetedOpggSource.sourceId, manualSource.sourceId]);
   const manifestSources = (sourceManifest.sources as Raw[]).filter((source) => !generatedSourceIds.has(source.sourceId as string)).map((source) => source.sourceId === lolchess.sourceId ? { ...source, useFor: ['acquisition_history'], warning: 'Historical cloud attempt received an AWS WAF challenge (HTTP 202); superseded for record evidence by the browser snapshot channel.' } : source.sourceId === datatft.sourceId ? { ...source, warning: 'Provisional normalized skeleton; fields are cross-checked against the available LoLCHESS browser snapshot and client data.' } : source.sourceId === 'communitydragon_live_18_1_20260902_bear_tiger' ? { ...source, useFor: [...new Set([...((source.useFor as string[] | undefined) ?? []), 'effect_cross_check'])] } : source);
-  const currentSources = [...manifestSources, manifestBrowserSource, targetedOpggSource];
+  const currentSources = [...manifestSources, manifestBrowserSource, targetedOpggSource, manualSource];
   const snapshotAt = currentSources.map((source) => String(source.retrievedAt ?? '')).filter(Boolean).sort((a, b) => Date.parse(a) - Date.parse(b)).at(-1)!;
   const currentSourceManifest = { ...sourceManifest, snapshotAt, sources: currentSources };
   for (const [path, value] of [['data/source_manifest_18.1.json', currentSourceManifest], ['data/normalized/wisps_18.1.json', dataset], ['reports/data-coverage-18.1.json', coverage], ['reports/data-conflicts-18.1.json', conflicts], ['reports/data-unmatched-18.1.json', unmatched], ['reports/data-schema-gaps-18.1.json', schemaGaps], ['reports/seed-regression-18.1.json', seedRegression], ['reports/data-corpus-diff-18.1.json', corpusDiff], ['reports/data-corpus-reconciliation-18.1.json', corpusReconciliation], ['reports/data-match-review-18.1.json', matchReview], ['reports/data-manual-review-18.1.json', manualReview], ['reports/data-communitydragon-identity-audit-18.1.json', clientIdentityAudit], ['reports/data-prismatic-audit-18.1.json', prismaticAudit], ['reports/data-communitydragon-variants-18.1.json', variantAudit], ['reports/data-lolchess-field-audit-18.1.json', lolchessFieldAudit]] as const) await writeFile(resolve(root, path), stable(value));

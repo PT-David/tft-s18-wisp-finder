@@ -75,7 +75,7 @@ describe('release readiness audit', () => {
   it('does not turn client corpus membership into a same-identity recommendation', async () => {
     const report = await load('reports/release-readiness-18.1.json');
     const clientSupported = report.identity.reviewQueue.filter((row: any) => row.evidence.clientKey);
-    expect(clientSupported).toHaveLength(6);
+    expect(clientSupported).toHaveLength(1);
     expect(clientSupported.every((row: any) => row.recommendedHumanAction === 'insufficient_evidence' && row.recommendedProductionId === null)).toBe(true);
     expect(report.identity.reviewQueue.filter((row: any) => row.recommendedHumanAction === 'same_identity').every((row: any) => Boolean(row.recommendedProductionId))).toBe(true);
   });

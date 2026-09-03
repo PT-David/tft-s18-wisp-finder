@@ -31,7 +31,7 @@
     "field": "corpus size",
     "sourceA": "datatft_18_1_20260828",
     "sourceB": "opgg_set18_wisps_20260829",
-    "valueA": 169,
+    "valueA": 176,
     "valueB": 200,
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
@@ -51,7 +51,7 @@
     "sourceB": "opgg_set18_wisps_20260829",
     "valueA": {
       "champion": 16,
-      "combat": 75,
+      "combat": 82,
       "misc": 23,
       "shop": 19,
       "gold_xp": 13,
@@ -84,8 +84,8 @@
     "sourceA": "datatft_18_1_20260828",
     "sourceB": "lolchess_set18_wisps_browser_import",
     "valueA": {
-      "normalizedProduction": 130,
-      "communityDragonDistinctUpgrade": 130
+      "normalizedProduction": 132,
+      "communityDragonDistinctUpgrade": 132
     },
     "valueB": {
       "lolchess": 145
@@ -151,8 +151,8 @@
     "field": "unresolved cross-source identities",
     "sourceA": "datatft_18_1_20260828",
     "sourceB": "opgg_set18_wisps_20260829",
-    "valueA": 1,
-    "valueB": 34,
+    "valueA": 2,
+    "valueB": 28,
     "sourceTimestamps": {
       "sourceA": "2026-08-28T16:49:16Z",
       "sourceB": null

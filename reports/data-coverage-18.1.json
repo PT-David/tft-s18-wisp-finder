@@ -9,15 +9,15 @@
     "opggExtracted": 200,
     "lolchess": 174
   },
-  "unionByAcceptedSkeleton": 169,
-  "intersectionByExactLocalizedName": 152,
-  "normalizedCount": 169,
-  "withRiotId": 152,
-  "withChineseName": 169,
+  "unionByAcceptedSkeleton": 176,
+  "intersectionByExactLocalizedName": 159,
+  "normalizedCount": 176,
+  "withRiotId": 159,
+  "withChineseName": 176,
   "chinesePlaceholderCount": 0,
   "categoryCounts": {
     "champion": 16,
-    "combat": 75,
+    "combat": 82,
     "misc": 23,
     "shop": 19,
     "gold_xp": 13,
@@ -26,20 +26,20 @@
   },
   "startingStageCounts": {
     "2": 39,
-    "3": 55,
-    "4": 35,
+    "3": 61,
+    "4": 36,
     "5": 32,
     "6": 8,
     "7": 0,
     "8": 0
   },
-  "withBlossom": 130,
+  "withBlossom": 132,
   "withPrismatic": 20,
-  "withRequirements": 56,
+  "withRequirements": 63,
   "oncePerGameConfirmedTrue": 2,
-  "oncePerGameUnknown": 167,
+  "oncePerGameUnknown": 174,
   "withReofferCooldownShops": 0,
   "criticalFieldsMissing": 17,
   "unresolvedCriticalConflicts": 5,
-  "unmatchedCount": 35
+  "unmatchedCount": 30
 }

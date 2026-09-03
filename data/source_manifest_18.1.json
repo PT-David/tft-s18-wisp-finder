@@ -314,6 +314,21 @@
       "headersSha256": "0319b755f14b1a320d3264a07e9c1333e95eb5de1a201f38c11839804a785bda",
       "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
       "parsedSha256": "4792568fd1b041890070769d60ee294cda7da007a7abe5186dd36ded60b9dcdb"
+    },
+    {
+      "sourceId": "user_reviewed_c4_final_blockers_18_1",
+      "tier": "E",
+      "locale": "multi",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "confidence": "unverified",
+      "useFor": [
+        "category",
+        "requirements",
+        "cost"
+      ],
+      "sourceArtifact": "data/c4_final_three_blocker_overrides_18.1.json",
+      "provenanceKind": "user_approved_manual_override",
+      "sha256": "fb0cd97f52d912c8ded7df6349a2affc5b0865e31e2518dbf5fcbc62146ec749"
     }
   ]
 }
