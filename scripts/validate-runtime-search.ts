@@ -12,7 +12,7 @@ try {
   const assignmentCount = dataset.records.reduce((sum, record) => sum + record.searchConcepts.length, 0);
   const aliases = lexicon.queryExpansionGroups.reduce((sum, group) => sum + group.aliases.length, 0);
   const recordAliases = dataset.records.reduce((sum, record) => sum + record.synonyms.length, 0);
-  for (const [actual, expected, label] of [[dataset.records.length,169,'records'],[assignmentCount,289,'assignments'],[lexicon.concepts.length,40,'taxonomy'],[lexicon.queryExpansionGroups.length,10,'groups'],[aliases,27,'aliases'],[recordAliases,0,'recordAliases']] as const) if (actual !== expected) errors.push(`expected ${expected} ${label}, got ${actual}`);
+  for (const [actual, expected, label] of [[dataset.records.length,176,'records'],[assignmentCount,289,'assignments'],[lexicon.concepts.length,40,'taxonomy'],[lexicon.queryExpansionGroups.length,10,'groups'],[aliases,27,'aliases'],[recordAliases,0,'recordAliases']] as const) if (actual !== expected) errors.push(`expected ${expected} ${label}, got ${actual}`);
   if (!errors.length) console.log(`Runtime search valid: records=${dataset.records.length}, assignments=${assignmentCount}, taxonomy=${lexicon.concepts.length}, groups=${lexicon.queryExpansionGroups.length}, aliases=${aliases}, recordAliases=${recordAliases}`);
 } catch (error) { errors.push(error instanceof Error ? error.message : String(error)); }
 if (errors.length) { console.error(errors.map(error => `- ${error}`).join('\n')); process.exitCode = 1; }

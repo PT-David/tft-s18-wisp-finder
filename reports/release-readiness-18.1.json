@@ -17,9 +17,9 @@
     "schemaValidationImplementation": "scripts/validation.ts#validateDataset",
     "stalePbeAuditMethod": "Production field provenance is checked against manifest sourceId, URL, and warning labels containing PBE."
   },
-  "normalizedCount": 169,
-  "normalizedSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
-  "uniqueIdCount": 169,
+  "normalizedCount": 176,
+  "normalizedSha256": "8318e2d2ce395fec9996587db8d1ffd3c48caf7c152e57b117412c1d9c0da3cb",
+  "uniqueIdCount": 176,
   "sourceCounts": {
     "dataTft": 169,
     "communityDragonCanonicalBase": 163,
@@ -226,15 +226,38 @@
       "parsedSha256": "4792568fd1b041890070769d60ee294cda7da007a7abe5186dd36ded60b9dcdb",
       "snapshot": null,
       "recordCount": null
+    },
+    {
+      "sourceId": "user_reviewed_c4_final_blockers_18_1",
+      "tier": "E",
+      "locale": "multi",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "confidence": "unverified",
+      "useFor": [
+        "category",
+        "requirements",
+        "cost"
+      ],
+      "sourceArtifact": "data/c4_final_three_blocker_overrides_18.1.json",
+      "provenanceKind": "user_approved_manual_override",
+      "sha256": "fb0cd97f52d912c8ded7df6349a2affc5b0865e31e2518dbf5fcbc62146ec749",
+      "snapshot": null,
+      "recordCount": null
     }
   ],
-  "confirmedIdentityIntersection": 166,
-  "confirmedCorpusMinimum": 174,
+  "confirmedIdentityIntersection": 172,
+  "confirmedCorpusMinimum": 176,
   "exactCorpusSizeStatus": "unresolved",
   "identity": {
-    "opggCandidateGroups": 34,
+    "opggCandidateGroups": 28,
     "ambiguousCandidates": 21,
     "dataTftUnmatched": [
+      {
+        "id": "da_bearsvisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临",
+        "riotId": "DA_BearsVisit18"
+      },
       {
         "id": "snapshot_139_6fda4e76a4da",
         "nameEn": "克隆弈子",
@@ -259,111 +282,6 @@
           "opggCurrentCatalog": true,
           "canonicalClientKey": "clonecompanion",
           "communityDragonApiName": "DA_CloneCompanion18",
-          "communityDragonVariantKind": "base"
-        },
-        "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "TurtlesVisit",
-          "name": "海龟来访",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "本场战斗获得乌龟原始增益。",
-          "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
-          "blossom": null,
-          "prismatic": null
-        },
-        "corpusMembership": "confirmed",
-        "productionRecordStatus": "identity_link_unresolved",
-        "evidence": {
-          "opggCurrentCatalog": true,
-          "canonicalClientKey": "turtlesvisit",
-          "communityDragonApiName": "DA_TurtlesVisit18",
-          "communityDragonVariantKind": "base"
-        },
-        "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "PottedLifebloom",
-          "name": "盆栽生命绽放",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "获得1朵临时生命花。",
-          "appearanceCondition": "已激活永恒之森羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "corpusMembership": "confirmed",
-        "productionRecordStatus": "identity_link_unresolved",
-        "evidence": {
-          "opggCurrentCatalog": true,
-          "canonicalClientKey": "pottedlifebloom",
-          "communityDragonApiName": "DA_PottedLifebloom18",
-          "communityDragonVariantKind": "base"
-        },
-        "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "PottedStonebark",
-          "name": "盆栽石皮树",
-          "category": "Combat",
-          "cost": 2,
-          "effect": "获得一棵临时石皮树。",
-          "appearanceCondition": "已激活永恒之森羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "corpusMembership": "confirmed",
-        "productionRecordStatus": "identity_link_unresolved",
-        "evidence": {
-          "opggCurrentCatalog": true,
-          "canonicalClientKey": "pottedstonebark",
-          "communityDragonApiName": "DA_PottedStonebark18",
-          "communityDragonVariantKind": "base"
-        },
-        "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "MemorialDummy",
-          "name": "纪念假人",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
-          "appearanceCondition": "战场上有至少1名携带装备的坦克",
-          "blossom": null,
-          "prismatic": null
-        },
-        "corpusMembership": "confirmed",
-        "productionRecordStatus": "identity_link_unresolved",
-        "evidence": {
-          "opggCurrentCatalog": true,
-          "canonicalClientKey": "memorialdummy",
-          "communityDragonApiName": "DA_MemorialDummy18",
-          "communityDragonVariantKind": "base"
-        },
-        "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "Snacktime",
-          "name": "零食时间！",
-          "category": "Combat",
-          "cost": 4,
-          "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
-          "appearanceCondition": "已激活灵巧精羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "corpusMembership": "confirmed",
-        "productionRecordStatus": "identity_link_unresolved",
-        "evidence": {
-          "opggCurrentCatalog": true,
-          "canonicalClientKey": "snacktime",
-          "communityDragonApiName": "DA_Snacktime18",
           "communityDragonVariantKind": "base"
         },
         "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
@@ -502,6 +420,19 @@
         },
         "possibleProductionMatches": [
           {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.12272727272727274,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0.09090909090909091,
+            "categoryMatch": false,
+            "costMatch": true
+          },
+          {
             "productionId": "da_curiocart18",
             "nameEn": "Curio Cart",
             "nameZh": "珍品摆摊车",
@@ -526,19 +457,6 @@
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -548,18 +466,20 @@
           "clientKey": null,
           "reviewedAlias": false,
           "stage": null,
-          "cost": [],
+          "cost": [
+            "da_bearsvisit18"
+          ],
           "effect": [
+            {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
             {
               "productionId": "da_curiocart18",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
-              "similarity": 0
-            },
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             }
           ],
@@ -606,15 +526,15 @@
             "costMatch": false
           },
           {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.020833333333333332,
             "effectSimilarity": 0,
-            "nameSimilarity": 0,
+            "nameSimilarity": 0.08333333333333333,
             "categoryMatch": false,
             "costMatch": false
           }
@@ -637,7 +557,7 @@
               "similarity": 0
             },
             {
-              "productionId": "da_beggarswisp18",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
@@ -671,12 +591,12 @@
             "costMatch": false
           },
           {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -684,12 +604,12 @@
             "costMatch": false
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
+            "productionId": "da_beggarswisp18",
+            "nameEn": "Beggar's Wisp",
+            "nameZh": "仙灵的怜悯",
+            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+            "category": "gold_xp",
+            "cost": 0,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -711,11 +631,11 @@
               "similarity": 0.07407407407407407
             },
             {
-              "productionId": "da_beggarswisp18",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_beggarswisp18",
               "similarity": 0
             }
           ],
@@ -748,6 +668,19 @@
             "costMatch": true
           },
           {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
+          {
             "productionId": "da_curiocart18",
             "nameEn": "Curio Cart",
             "nameZh": "珍品摆摊车",
@@ -757,19 +690,6 @@
             "score": 0.025,
             "effectSimilarity": 0,
             "nameSimilarity": 0.1,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
           }
@@ -790,11 +710,11 @@
               "similarity": 0.9032258064516129
             },
             {
-              "productionId": "da_curiocart18",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             },
             {
-              "productionId": "da_beggarswisp18",
+              "productionId": "da_curiocart18",
               "similarity": 0
             }
           ],
@@ -827,12 +747,12 @@
             "costMatch": true
           },
           {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -840,11 +760,11 @@
             "costMatch": false
           },
           {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
+            "productionId": "da_beggarswisp18",
+            "nameEn": "Beggar's Wisp",
+            "nameZh": "仙灵的怜悯",
+            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+            "category": "gold_xp",
             "cost": 0,
             "score": 0,
             "effectSimilarity": 0,
@@ -869,11 +789,11 @@
               "similarity": 0
             },
             {
-              "productionId": "da_beggarswisp18",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             },
             {
-              "productionId": "da_curiocart18",
+              "productionId": "da_beggarswisp18",
               "similarity": 0
             }
           ],
@@ -906,12 +826,12 @@
             "costMatch": false
           },
           {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -919,12 +839,12 @@
             "costMatch": false
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
+            "productionId": "da_beggarswisp18",
+            "nameEn": "Beggar's Wisp",
+            "nameZh": "仙灵的怜悯",
+            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+            "category": "gold_xp",
+            "cost": 0,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -946,11 +866,11 @@
               "similarity": 0.05263157894736842
             },
             {
-              "productionId": "da_beggarswisp18",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_beggarswisp18",
               "similarity": 0
             }
           ],
@@ -983,6 +903,19 @@
             "costMatch": false
           },
           {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.25,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": true
+          },
+          {
             "productionId": "da_curiocart18",
             "nameEn": "Curio Cart",
             "nameZh": "珍品摆摊车",
@@ -994,19 +927,6 @@
             "nameSimilarity": 0.23529411764705882,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0.0975609756097561,
-            "effectSimilarity": 0.0975609756097561,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1016,19 +936,21 @@
           "clientKey": null,
           "reviewedAlias": false,
           "stage": null,
-          "cost": [],
+          "cost": [
+            "da_bearsvisit18"
+          ],
           "effect": [
             {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0.12121212121212122
             },
             {
-              "productionId": "da_curiocart18",
-              "similarity": 0.05405405405405406
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
             },
             {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0.0975609756097561
+              "productionId": "da_curiocart18",
+              "similarity": 0.05405405405405406
             }
           ],
           "requirement": null
@@ -1047,6 +969,19 @@
           "cost": 2
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1072,19 +1007,6 @@
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.025,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0.1,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1097,16 +1019,16 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.05
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
             }
           ],
           "requirement": "已激活致命花卉羁绊"
@@ -1124,6 +1046,19 @@
           "cost": 4
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1149,19 +1084,6 @@
             "nameSimilarity": 0.1111111111111111,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1174,15 +1096,15 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_curiocart18",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_beggarswisp18",
               "similarity": 0
             }
           ],
@@ -1201,6 +1123,19 @@
           "cost": 1
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1226,19 +1161,6 @@
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1251,16 +1173,16 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.05714285714285714
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
             }
           ],
           "requirement": null
@@ -1306,15 +1228,15 @@
             "costMatch": false
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
-            "score": 0,
+            "cost": 3,
+            "score": 0.027777777777777776,
             "effectSimilarity": 0,
-            "nameSimilarity": 0,
+            "nameSimilarity": 0.1111111111111111,
             "categoryMatch": false,
             "costMatch": false
           }
@@ -1337,7 +1259,7 @@
               "similarity": 0.05263157894736842
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
@@ -1356,6 +1278,19 @@
           "cost": 3
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.1,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": false,
+            "costMatch": true
+          },
           {
             "productionId": "da_beggarswisp18",
             "nameEn": "Beggar's Wisp",
@@ -1381,19 +1316,6 @@
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1403,18 +1325,20 @@
           "clientKey": null,
           "reviewedAlias": false,
           "stage": null,
-          "cost": [],
+          "cost": [
+            "da_bearsvisit18"
+          ],
           "effect": [
+            {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.0625
             },
             {
               "productionId": "da_curiocart18",
-              "similarity": 0
-            },
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             }
           ],
@@ -1434,6 +1358,19 @@
           "cost": 3
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.27941176470588236,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0.11764705882352941,
+            "categoryMatch": true,
+            "costMatch": true
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1459,19 +1396,6 @@
             "nameSimilarity": 0.1111111111111111,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.03125,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0.125,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1481,8 +1405,14 @@
           "clientKey": null,
           "reviewedAlias": false,
           "stage": null,
-          "cost": [],
+          "cost": [
+            "da_bearsvisit18"
+          ],
           "effect": [
+            {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
             {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0.04878048780487805
@@ -1490,10 +1420,6 @@
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.04081632653061224
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
             }
           ],
           "requirement": "至少上场1名3星非坦克弈子"
@@ -1512,6 +1438,19 @@
           "cost": 1
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.1763157894736842,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0.10526315789473684,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1537,19 +1476,6 @@
             "nameSimilarity": 0.1,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.046511627906976744,
-            "effectSimilarity": 0.046511627906976744,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1562,16 +1488,16 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.0425531914893617
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0.046511627906976744
             }
           ],
           "requirement": "已激活灵巧精羁绊"
@@ -1616,15 +1542,15 @@
             "costMatch": true
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
-            "score": 0,
+            "cost": 3,
+            "score": 0.023809523809523808,
             "effectSimilarity": 0,
-            "nameSimilarity": 0,
+            "nameSimilarity": 0.09523809523809523,
             "categoryMatch": false,
             "costMatch": false
           }
@@ -1650,7 +1576,7 @@
               "similarity": 0.046511627906976744
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
@@ -1670,6 +1596,19 @@
           "cost": 1
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1695,19 +1634,6 @@
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1720,99 +1646,21 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.046511627906976744
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
             }
           ],
           "requirement": "剩余至少4名玩家"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
-        "recommendedProductionId": null,
-        "recommendedHumanAction": "insufficient_evidence"
-      },
-      {
-        "candidateIdentity": "TurtlesVisit",
-        "opgg": {
-          "name": "海龟来访",
-          "category": "Combat",
-          "effect": "本场战斗获得乌龟原始增益。",
-          "condition": "已激活原始羁绊，且尚未选择乌龟",
-          "cost": 3
-        },
-        "possibleProductionMatches": [
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0.15,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": true,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0.08095238095238094,
-            "effectSimilarity": 0.05714285714285714,
-            "nameSimilarity": 0.09523809523809523,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.05263157894736842,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0.21052631578947367,
-            "categoryMatch": false,
-            "costMatch": false
-          }
-        ],
-        "possibleCommunityDragonIdentity": "DA_TurtlesVisit18",
-        "possibleLolchessIdentities": [],
-        "evidence": {
-          "exactName": false,
-          "clientKey": "turtlesvisit",
-          "reviewedAlias": false,
-          "stage": null,
-          "cost": [],
-          "effect": [
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0.05714285714285714
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
-            }
-          ],
-          "requirement": "已激活原始羁绊，且尚未选择乌龟"
-        },
-        "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
         "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
@@ -1852,12 +1700,12 @@
             "costMatch": false
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -1883,7 +1731,7 @@
               "similarity": 0.045454545454545456
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
@@ -1903,6 +1751,19 @@
           "cost": 4
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.19545454545454544,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0.18181818181818182,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -1928,19 +1789,6 @@
             "nameSimilarity": 0.08695652173913043,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -1953,177 +1801,21 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_curiocart18",
               "similarity": 0
             }
           ],
           "requirement": "地狱特质活跃"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
-        "recommendedProductionId": null,
-        "recommendedHumanAction": "insufficient_evidence"
-      },
-      {
-        "candidateIdentity": "PottedLifebloom",
-        "opgg": {
-          "name": "盆栽生命绽放",
-          "category": "Combat",
-          "effect": "获得1朵临时生命花。",
-          "condition": "已激活永恒之森羁绊",
-          "cost": 3
-        },
-        "possibleProductionMatches": [
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0.15,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": true,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0.0625,
-            "effectSimilarity": 0.0625,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          }
-        ],
-        "possibleCommunityDragonIdentity": "DA_PottedLifebloom18",
-        "possibleLolchessIdentities": [],
-        "evidence": {
-          "exactName": false,
-          "clientKey": "pottedlifebloom",
-          "reviewedAlias": false,
-          "stage": null,
-          "cost": [],
-          "effect": [
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0.0625
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
-            }
-          ],
-          "requirement": "已激活永恒之森羁绊"
-        },
-        "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedProductionId": null,
-        "recommendedHumanAction": "insufficient_evidence"
-      },
-      {
-        "candidateIdentity": "PottedStonebark",
-        "opgg": {
-          "name": "盆栽石皮树",
-          "category": "Combat",
-          "effect": "获得一棵临时石皮树。",
-          "condition": "已激活永恒之森羁绊",
-          "cost": 2
-        },
-        "possibleProductionMatches": [
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0.15,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": true,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0.08333333333333333,
-            "effectSimilarity": 0.0625,
-            "nameSimilarity": 0.08333333333333333,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.022727272727272728,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0.09090909090909091,
-            "categoryMatch": false,
-            "costMatch": false
-          }
-        ],
-        "possibleCommunityDragonIdentity": "DA_PottedStonebark18",
-        "possibleLolchessIdentities": [],
-        "evidence": {
-          "exactName": false,
-          "clientKey": "pottedstonebark",
-          "reviewedAlias": false,
-          "stage": null,
-          "cost": [],
-          "effect": [
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0.0625
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
-            }
-          ],
-          "requirement": "已激活永恒之森羁绊"
-        },
-        "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
         "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
@@ -2136,6 +1828,19 @@
           "cost": 6
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -2161,19 +1866,6 @@
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -2186,16 +1878,16 @@
           "cost": [],
           "effect": [
             {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
+            {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
             },
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.06060606060606061
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
             }
           ],
           "requirement": null
@@ -2228,6 +1920,19 @@
             "costMatch": false
           },
           {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
+          {
             "productionId": "da_beggarswisp18",
             "nameEn": "Beggar's Wisp",
             "nameZh": "仙灵的怜悯",
@@ -2237,19 +1942,6 @@
             "score": 0.10526315789473684,
             "effectSimilarity": 0.10526315789473684,
             "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.025,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0.1,
             "categoryMatch": false,
             "costMatch": false
           }
@@ -2268,12 +1960,12 @@
               "similarity": 0.06666666666666667
             },
             {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0.10526315789473684
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
             },
             {
-              "productionId": "da_curiocart18",
-              "similarity": 0
+              "productionId": "da_beggarswisp18",
+              "similarity": 0.10526315789473684
             }
           ],
           "requirement": "已激活仙灵羁绊"
@@ -2319,12 +2011,12 @@
             "costMatch": false
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -2350,167 +2042,11 @@
               "similarity": 0
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
           "requirement": "已激活仙灵羁绊"
-        },
-        "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
-        "recommendedProductionId": null,
-        "recommendedHumanAction": "insufficient_evidence"
-      },
-      {
-        "candidateIdentity": "MemorialDummy",
-        "opgg": {
-          "name": "纪念假人",
-          "category": "Combat",
-          "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
-          "condition": "战场上有至少1名携带装备的坦克",
-          "cost": 3
-        },
-        "possibleProductionMatches": [
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0.16785714285714284,
-            "effectSimilarity": 0.14285714285714285,
-            "nameSimilarity": 0.1,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0.15,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": true,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          }
-        ],
-        "possibleCommunityDragonIdentity": "DA_MemorialDummy18",
-        "possibleLolchessIdentities": [],
-        "evidence": {
-          "exactName": false,
-          "clientKey": "memorialdummy",
-          "reviewedAlias": false,
-          "stage": null,
-          "cost": [],
-          "effect": [
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0.14285714285714285
-            },
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0
-            }
-          ],
-          "requirement": "战场上有至少1名携带装备的坦克"
-        },
-        "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
-        "recommendedProductionId": null,
-        "recommendedHumanAction": "insufficient_evidence"
-      },
-      {
-        "candidateIdentity": "TigersVisit",
-        "opgg": {
-          "name": "老虎来访",
-          "category": "Combat",
-          "effect": "在这次战斗中获得老虎原始增益。",
-          "condition": "已激活原始羁绊，且尚未选择老虎",
-          "cost": 3
-        },
-        "possibleProductionMatches": [
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0.15,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": true,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0.10405405405405406,
-            "effectSimilarity": 0.05405405405405406,
-            "nameSimilarity": 0.2,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          }
-        ],
-        "possibleCommunityDragonIdentity": null,
-        "possibleLolchessIdentities": [],
-        "evidence": {
-          "exactName": false,
-          "clientKey": null,
-          "reviewedAlias": false,
-          "stage": null,
-          "cost": [],
-          "effect": [
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0.05405405405405406
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
-            }
-          ],
-          "requirement": "已激活原始羁绊，且尚未选择老虎"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
         "recommendedProductionId": null,
@@ -2552,12 +2088,12 @@
             "costMatch": false
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -2583,7 +2119,7 @@
               "similarity": 0
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
@@ -2617,6 +2153,19 @@
             "costMatch": false
           },
           {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
+          {
             "productionId": "da_curiocart18",
             "nameEn": "Curio Cart",
             "nameZh": "珍品摆摊车",
@@ -2625,19 +2174,6 @@
             "cost": 0,
             "score": 0.04878048780487805,
             "effectSimilarity": 0.04878048780487805,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
             "nameSimilarity": 0,
             "categoryMatch": false,
             "costMatch": false
@@ -2657,12 +2193,12 @@
               "similarity": 0.10810810810810811
             },
             {
-              "productionId": "da_curiocart18",
-              "similarity": 0.04878048780487805
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
             },
             {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0
+              "productionId": "da_curiocart18",
+              "similarity": 0.04878048780487805
             }
           ],
           "requirement": "已激活宿敌羁绊，且至少1名宿敌携带装备"
@@ -2708,12 +2244,12 @@
             "costMatch": true
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
+            "cost": 3,
             "score": 0,
             "effectSimilarity": 0,
             "nameSimilarity": 0,
@@ -2742,7 +2278,7 @@
               "similarity": 0.08888888888888889
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
@@ -2789,15 +2325,15 @@
             "costMatch": true
           },
           {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
             "category": "combat",
-            "cost": 5,
-            "score": 0,
+            "cost": 3,
+            "score": 0.02631578947368421,
             "effectSimilarity": 0,
-            "nameSimilarity": 0,
+            "nameSimilarity": 0.10526315789473684,
             "categoryMatch": false,
             "costMatch": false
           }
@@ -2823,91 +2359,13 @@
               "similarity": 0.17142857142857143
             },
             {
-              "productionId": "snapshot_139_6fda4e76a4da",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             }
           ],
           "requirement": "已激活怪诞羁绊"
         },
         "reasonUnresolved": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row.",
-        "recommendedProductionId": null,
-        "recommendedHumanAction": "insufficient_evidence"
-      },
-      {
-        "candidateIdentity": "Snacktime",
-        "opgg": {
-          "name": "零食时间！",
-          "category": "Combat",
-          "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
-          "condition": "已激活灵巧精羁绊",
-          "cost": 4
-        },
-        "possibleProductionMatches": [
-          {
-            "productionId": "snapshot_139_6fda4e76a4da",
-            "nameEn": "克隆弈子",
-            "nameZh": "克隆弈子",
-            "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-            "category": "combat",
-            "cost": 5,
-            "score": 0.19545454545454544,
-            "effectSimilarity": 0.045454545454545456,
-            "nameSimilarity": 0,
-            "categoryMatch": true,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_beggarswisp18",
-            "nameEn": "Beggar's Wisp",
-            "nameZh": "仙灵的怜悯",
-            "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-            "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          }
-        ],
-        "possibleCommunityDragonIdentity": "DA_Snacktime18",
-        "possibleLolchessIdentities": [],
-        "evidence": {
-          "exactName": false,
-          "clientKey": "snacktime",
-          "reviewedAlias": false,
-          "stage": null,
-          "cost": [],
-          "effect": [
-            {
-              "productionId": "snapshot_139_6fda4e76a4da",
-              "similarity": 0.045454545454545456
-            },
-            {
-              "productionId": "da_beggarswisp18",
-              "similarity": 0
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
-            }
-          ],
-          "requirement": "已激活灵巧精羁绊"
-        },
-        "reasonUnresolved": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved.",
         "recommendedProductionId": null,
         "recommendedHumanAction": "insufficient_evidence"
       },
@@ -2921,6 +2379,19 @@
           "cost": 3
         },
         "possibleProductionMatches": [
+          {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.4078947368421052,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0.631578947368421,
+            "categoryMatch": true,
+            "costMatch": true
+          },
           {
             "productionId": "snapshot_139_6fda4e76a4da",
             "nameEn": "克隆弈子",
@@ -2946,19 +2417,6 @@
             "nameSimilarity": 0.2,
             "categoryMatch": false,
             "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
           }
         ],
         "possibleCommunityDragonIdentity": null,
@@ -2968,8 +2426,14 @@
           "clientKey": null,
           "reviewedAlias": false,
           "stage": null,
-          "cost": [],
+          "cost": [
+            "da_bearsvisit18"
+          ],
           "effect": [
+            {
+              "productionId": "da_bearsvisit18",
+              "similarity": 0
+            },
             {
               "productionId": "snapshot_139_6fda4e76a4da",
               "similarity": 0
@@ -2977,10 +2441,6 @@
             {
               "productionId": "da_beggarswisp18",
               "similarity": 0.05555555555555555
-            },
-            {
-              "productionId": "da_curiocart18",
-              "similarity": 0
             }
           ],
           "requirement": "原始特质活跃，未选择马"
@@ -3093,24 +2553,24 @@
             "costMatch": false
           },
           {
+            "productionId": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "nameZh": "蛮熊降临",
+            "effect": "Gain the Bear Primal buff for this combat.",
+            "category": "combat",
+            "cost": 3,
+            "score": 0.15,
+            "effectSimilarity": 0,
+            "nameSimilarity": 0,
+            "categoryMatch": true,
+            "costMatch": false
+          },
+          {
             "productionId": "da_beggarswisp18",
             "nameEn": "Beggar's Wisp",
             "nameZh": "仙灵的怜悯",
             "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
             "category": "gold_xp",
-            "cost": 0,
-            "score": 0,
-            "effectSimilarity": 0,
-            "nameSimilarity": 0,
-            "categoryMatch": false,
-            "costMatch": false
-          },
-          {
-            "productionId": "da_curiocart18",
-            "nameEn": "Curio Cart",
-            "nameZh": "珍品摆摊车",
-            "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-            "category": "item",
             "cost": 0,
             "score": 0,
             "effectSimilarity": 0,
@@ -3133,11 +2593,11 @@
               "similarity": 0.11428571428571428
             },
             {
-              "productionId": "da_beggarswisp18",
+              "productionId": "da_bearsvisit18",
               "similarity": 0
             },
             {
-              "productionId": "da_curiocart18",
+              "productionId": "da_beggarswisp18",
               "similarity": 0
             }
           ],
@@ -3178,7 +2638,14 @@
       }
     ],
     "category": [],
-    "cost": [],
+    "cost": [
+      {
+        "productionId": "da_snacktime18",
+        "nameEn": "Snacktime!",
+        "production": 3,
+        "lolchess": 2
+      }
+    ],
     "stageRanges": [],
     "blossomPresence": [
       {
@@ -3911,6 +3378,20 @@
           "lolchessHasRequirements": true,
           "productionFacts": [],
           "lolchessFacts": [],
+          "status": "semantic_review_required"
+        },
+        {
+          "identity": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "productionHasRequirements": true,
+          "lolchessHasRequirements": true,
+          "productionFacts": [],
+          "lolchessFacts": [
+            {
+              "type": "trait_active",
+              "value": true
+            }
+          ],
           "status": "semantic_review_required"
         },
         {
@@ -4998,6 +4479,25 @@
         },
         {
           "row": {
+            "identity": "da_bearsvisit18",
+            "nameEn": "Bear's Visit",
+            "productionHasRequirements": true,
+            "lolchessHasRequirements": true,
+            "productionFacts": [],
+            "lolchessFacts": [
+              {
+                "type": "trait_active",
+                "value": true
+              }
+            ],
+            "status": "semantic_review_required"
+          },
+          "reviewReasons": [
+            "semantic_review_required"
+          ]
+        },
+        {
+          "row": {
             "identity": "da_boostershot18",
             "nameEn": "Booster Shot",
             "productionHasRequirements": true,
@@ -5622,6 +5122,12 @@
       ]
     },
     {
+      "identity": "da_bearsvisit18",
+      "reviewReasons": [
+        "requirements:semantic_review_required"
+      ]
+    },
+    {
       "identity": "da_boostershot18",
       "reviewReasons": [
         "requirements:semantic_review_required"
@@ -5743,6 +5249,12 @@
       "reviewReasons": [
         "requirements:presence_conflict",
         "requirements:semantic_review_required"
+      ]
+    },
+    {
+      "identity": "da_snacktime18",
+      "reviewReasons": [
+        "cost"
       ]
     },
     {
@@ -5886,15 +5398,113 @@
   ],
   "provenance": {
     "confidenceDistribution": {
-      "official": 0,
-      "client_data": 603,
-      "verified_third_party": 19,
-      "community_high_confidence": 1406,
-      "unverified": 0
+      "official": 7,
+      "client_data": 637,
+      "verified_third_party": 30,
+      "community_high_confidence": 1421,
+      "unverified": 3
     },
     "danglingSourceRefs": [],
     "confidenceMismatches": [],
     "incompatibleLocaleRefs": [
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "Bear's Visit"
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "蛮熊降临"
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Memorial Dummy"
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "衣冠冢"
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Potted Lifebloom"
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "盆栽生命花"
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Potted Stonebark"
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "盆栽石皮树"
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Snacktime!"
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "点心时间到！"
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "Tiger's Visit"
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "战马降临"
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Turtle's Visit"
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "灵龟降临"
+      },
       {
         "productionId": "snapshot_050_770e0f5d1043",
         "field": "nameEn",
@@ -5931,9 +5541,390 @@
         "value": "克隆弈子"
       }
     ],
-    "incompatibleUseForRefs": [],
+    "incompatibleUseForRefs": [
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "cost",
+        "sourceId": "opgg_set18_wisps_20260902",
+        "sourceUseFor": [
+          "identity_review",
+          "corpus_membership_cross_check",
+          "category",
+          "cost_cross_check",
+          "effect_cross_check",
+          "requirements_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      }
+    ],
     "stalePbeOverrides": [],
     "criticalGaps": [
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "Bear's Visit"
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "蛮熊降临"
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Memorial Dummy"
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "衣冠冢"
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Potted Lifebloom"
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "盆栽生命花"
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Potted Stonebark"
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "盆栽石皮树"
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Snacktime!"
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "点心时间到！"
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "Tiger's Visit"
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "locale": "multi",
+        "value": "战马降临"
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "Turtle's Visit"
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "locale": "multi",
+        "value": "灵龟降临"
+      },
       {
         "productionId": "snapshot_050_770e0f5d1043",
         "field": "nameEn",
@@ -5968,6 +5959,288 @@
         "sourceId": "datatft_18_1_20260828",
         "locale": "zh_cn",
         "value": "克隆弈子"
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_bearsvisit18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_memorialdummy18",
+        "field": "cost",
+        "sourceId": "opgg_set18_wisps_20260902",
+        "sourceUseFor": [
+          "identity_review",
+          "corpus_membership_cross_check",
+          "category",
+          "cost_cross_check",
+          "effect_cross_check",
+          "requirements_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedlifebloom18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_pottedstonebark18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_snacktime18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ]
+      },
+      {
+        "productionId": "da_tigersvisit18_wisp",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameEn",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "nameZh",
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "sourceUseFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ]
+      },
+      {
+        "productionId": "da_turtlesvisit18",
+        "field": "cost",
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "sourceUseFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ]
       }
     ]
   },
@@ -5975,21 +6248,21 @@
     "oncePerGame": {
       "confirmedTrue": 2,
       "confirmedFalse": 0,
-      "unknown": 167,
+      "unknown": 174,
       "legacyTrue": 0,
       "legacyFalse": 0
     },
     "reofferCooldownShops": {
       "confirmedNumber": 0,
       "confirmedNull": 0,
-      "unknown": 169,
+      "unknown": 176,
       "legacyNumber": 0,
       "legacyNull": 0
     },
     "minimumAffordableGold": {
       "nonNull": 0,
       "null": 0,
-      "absent": 169,
+      "absent": 176,
       "independentlySourced": 0
     }
   },
@@ -6003,23 +6276,121 @@
     {
       "id": "opgg-identity-review",
       "kind": "identity",
-      "count": 34,
+      "count": 28,
       "detail": "OP.GG groups remain candidates and are not production members."
     },
     {
       "id": "datatft-unmatched",
       "kind": "identity",
-      "count": 1,
+      "count": 2,
       "detail": "DataTFT rows have no confirmed OP.GG identity link."
     },
     {
       "id": "client-confirmed-unlinked",
       "kind": "identity",
-      "count": 6,
+      "count": 1,
       "detail": "Client-supported identities may overlap other unresolved rows and must not be double-counted."
     }
   ],
   "provenanceBlockers": [
+    {
+      "productionId": "da_bearsvisit18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "locale": "multi",
+      "value": "Bear's Visit"
+    },
+    {
+      "productionId": "da_bearsvisit18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "locale": "multi",
+      "value": "蛮熊降临"
+    },
+    {
+      "productionId": "da_memorialdummy18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "Memorial Dummy"
+    },
+    {
+      "productionId": "da_memorialdummy18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "衣冠冢"
+    },
+    {
+      "productionId": "da_pottedlifebloom18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "Potted Lifebloom"
+    },
+    {
+      "productionId": "da_pottedlifebloom18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "盆栽生命花"
+    },
+    {
+      "productionId": "da_pottedstonebark18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "Potted Stonebark"
+    },
+    {
+      "productionId": "da_pottedstonebark18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "盆栽石皮树"
+    },
+    {
+      "productionId": "da_snacktime18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "Snacktime!"
+    },
+    {
+      "productionId": "da_snacktime18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "点心时间到！"
+    },
+    {
+      "productionId": "da_tigersvisit18_wisp",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "locale": "multi",
+      "value": "Tiger's Visit"
+    },
+    {
+      "productionId": "da_tigersvisit18_wisp",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "locale": "multi",
+      "value": "战马降临"
+    },
+    {
+      "productionId": "da_turtlesvisit18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "Turtle's Visit"
+    },
+    {
+      "productionId": "da_turtlesvisit18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "locale": "multi",
+      "value": "灵龟降临"
+    },
     {
       "productionId": "snapshot_050_770e0f5d1043",
       "field": "nameEn",
@@ -6054,26 +6425,308 @@
       "sourceId": "datatft_18_1_20260828",
       "locale": "zh_cn",
       "value": "克隆弈子"
+    },
+    {
+      "productionId": "da_bearsvisit18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "display_name_cross_check",
+        "effect_cross_check"
+      ]
+    },
+    {
+      "productionId": "da_bearsvisit18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "display_name_cross_check",
+        "effect_cross_check"
+      ]
+    },
+    {
+      "productionId": "da_bearsvisit18",
+      "field": "cost",
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "sourceUseFor": [
+        "identity_cross_check",
+        "cost_cross_check",
+        "effect_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ]
+    },
+    {
+      "productionId": "da_memorialdummy18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_memorialdummy18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_memorialdummy18",
+      "field": "cost",
+      "sourceId": "opgg_set18_wisps_20260902",
+      "sourceUseFor": [
+        "identity_review",
+        "corpus_membership_cross_check",
+        "category",
+        "cost_cross_check",
+        "effect_cross_check",
+        "requirements_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_pottedlifebloom18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_pottedlifebloom18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_pottedlifebloom18",
+      "field": "cost",
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "sourceUseFor": [
+        "identity_cross_check",
+        "cost_cross_check",
+        "effect_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ]
+    },
+    {
+      "productionId": "da_pottedstonebark18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_pottedstonebark18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_pottedstonebark18",
+      "field": "cost",
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "sourceUseFor": [
+        "identity_cross_check",
+        "cost_cross_check",
+        "effect_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ]
+    },
+    {
+      "productionId": "da_snacktime18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_snacktime18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_tigersvisit18_wisp",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "display_name_cross_check",
+        "effect_cross_check"
+      ]
+    },
+    {
+      "productionId": "da_tigersvisit18_wisp",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "display_name_cross_check",
+        "effect_cross_check"
+      ]
+    },
+    {
+      "productionId": "da_tigersvisit18_wisp",
+      "field": "cost",
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "sourceUseFor": [
+        "identity_cross_check",
+        "cost_cross_check",
+        "effect_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ]
+    },
+    {
+      "productionId": "da_turtlesvisit18",
+      "field": "nameEn",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_turtlesvisit18",
+      "field": "nameZh",
+      "sourceId": "communitydragon_live_18_1_20260902_priority",
+      "sourceUseFor": [
+        "identity_review",
+        "riotId",
+        "canonical_client_key",
+        "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
+        "field_conflict_detection"
+      ]
+    },
+    {
+      "productionId": "da_turtlesvisit18",
+      "field": "cost",
+      "sourceId": "lolchess_set18_wisps_browser_import",
+      "sourceUseFor": [
+        "identity_cross_check",
+        "cost_cross_check",
+        "effect_cross_check",
+        "stageRanges_cross_check",
+        "blossom_cross_check",
+        "prismatic_cross_check",
+        "requirements_cross_check",
+        "oncePerGame",
+        "reofferCooldownShops"
+      ]
     }
   ],
   "blockerSummary": {
     "corpusCompletenessGroups": 1,
     "identityBlockerGroups": 3,
-    "identityReviewItems": 41,
-    "requirementUniqueReviewIdentities": 63,
-    "otherFieldConflictItems": 15,
-    "criticalFieldReviewIdentities": 68,
-    "provenanceItems": 5
+    "identityReviewItems": 31,
+    "requirementUniqueReviewIdentities": 64,
+    "otherFieldConflictItems": 16,
+    "criticalFieldReviewIdentities": 70,
+    "provenanceItems": 39
   },
   "acceptedUnknowns": [
     {
       "field": "oncePerGame",
-      "count": 167,
+      "count": 174,
       "reason": "Absence from a third-party page is not confirmed false."
     },
     {
       "field": "reofferCooldownShops",
-      "count": 169,
+      "count": 176,
       "reason": "No reliable committed evidence confirms a number or null."
     }
   ],
@@ -6089,13 +6742,13 @@
     }
   ],
   "artifactShas": {
-    "data/normalized/wisps_18.1.json": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
-    "data/materialized/18.1/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
-    "data/materialized/18.1/synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-    "data/materialized/18.1/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
-    "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
-    "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-    "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
+    "data/normalized/wisps_18.1.json": "8318e2d2ce395fec9996587db8d1ffd3c48caf7c152e57b117412c1d9c0da3cb",
+    "data/materialized/18.1/search-concepts.json": "fcb4fb319d12e897e854560affa83e7d7118e7996c979d488a1a5ae4cc58684e",
+    "data/materialized/18.1/synonyms.json": "16d7364a39912dd2835e60ccc926ba03569717cccb78b5ff35e1d8c884ddcce8",
+    "data/materialized/18.1/wisps.json": "364f1700a9ddbc0a35a48873cfd48455c58409f7f70d77f620236f651e152215",
+    "public/data/search-concepts.json": "fcb4fb319d12e897e854560affa83e7d7118e7996c979d488a1a5ae4cc58684e",
+    "public/data/search-synonyms.json": "16d7364a39912dd2835e60ccc926ba03569717cccb78b5ff35e1d8c884ddcce8",
+    "public/data/wisps.json": "364f1700a9ddbc0a35a48873cfd48455c58409f7f70d77f620236f651e152215",
     "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e"
   },
   "recommendedProductionReady": false,

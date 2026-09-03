@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "patch": "18.1",
   "sourceGeneratorVersion": "c2.1-v8",
-  "reviewedAgainstInputSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
-  "normalizedRecordCount": 169,
+  "reviewedAgainstInputSha256": "8318e2d2ce395fec9996587db8d1ffd3c48caf7c152e57b117412c1d9c0da3cb",
+  "normalizedRecordCount": 176,
   "assignmentCount": 289,
   "taxonomy": [
     {
@@ -607,6 +607,10 @@
       ]
     },
     {
+      "wispId": "da_bearsvisit18",
+      "conceptKeys": []
+    },
+    {
       "wispId": "da_beggarswisp18",
       "conceptKeys": [
         "gold_gain"
@@ -958,6 +962,10 @@
       ]
     },
     {
+      "wispId": "da_memorialdummy18",
+      "conceptKeys": []
+    },
+    {
       "wispId": "da_middlepath18",
       "conceptKeys": [
         "champion_cost_tier",
@@ -1052,6 +1060,14 @@
       ]
     },
     {
+      "wispId": "da_pottedlifebloom18",
+      "conceptKeys": []
+    },
+    {
+      "wispId": "da_pottedstonebark18",
+      "conceptKeys": []
+    },
+    {
       "wispId": "da_quicken18",
       "conceptKeys": [
         "attack_speed",
@@ -1137,6 +1153,10 @@
       ]
     },
     {
+      "wispId": "da_snacktime18",
+      "conceptKeys": []
+    },
+    {
       "wispId": "da_solargift18",
       "conceptKeys": [
         "champion_obtain",
@@ -1198,6 +1218,10 @@
       ]
     },
     {
+      "wispId": "da_tigersvisit18_wisp",
+      "conceptKeys": []
+    },
+    {
       "wispId": "da_trainingyard18",
       "conceptKeys": []
     },
@@ -1212,6 +1236,10 @@
         "time_stage",
         "trait_active"
       ]
+    },
+    {
+      "wispId": "da_turtlesvisit18",
+      "conceptKeys": []
     },
     {
       "wispId": "da_wrappedinthorns18",

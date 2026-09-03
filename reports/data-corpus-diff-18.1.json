@@ -1,5 +1,5 @@
 {
-  "confirmedIntersection": 166,
+  "confirmedIntersection": 172,
   "confirmedMatches": [
     {
       "opggSourceKey": "MoonlightRitual",
@@ -128,6 +128,20 @@
       "confidence": "confirmed"
     },
     {
+      "opggSourceKey": "PottedStonebark",
+      "opggName": "盆栽石皮树",
+      "productionId": "da_pottedstonebark18",
+      "nameZh": "盆栽石皮树",
+      "nameEn": "Potted Stonebark",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "pottedstonebark",
+        "communityDragonApiName": "DA_PottedStonebark18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
       "opggSourceKey": "Hugify",
       "opggName": "Hugify",
       "productionId": "da_hugify18",
@@ -221,6 +235,20 @@
       "evidence": {
         "canonicalClientKey": "fellowship",
         "communityDragonApiName": "DA_18_Fellowship",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "MemorialDummy",
+      "opggName": "纪念假人",
+      "productionId": "da_memorialdummy18",
+      "nameZh": "衣冠冢",
+      "nameEn": "Memorial Dummy",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "memorialdummy",
+        "communityDragonApiName": "DA_MemorialDummy18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -571,6 +599,20 @@
       "evidence": {
         "canonicalClientKey": "revenge",
         "communityDragonApiName": "DA_Revenge18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
+      "opggSourceKey": "PottedLifebloom",
+      "opggName": "盆栽生命绽放",
+      "productionId": "da_pottedlifebloom18",
+      "nameZh": "盆栽生命花",
+      "nameEn": "Potted Lifebloom",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "pottedlifebloom",
+        "communityDragonApiName": "DA_PottedLifebloom18",
         "variantKind": "base"
       },
       "confidence": "confirmed"
@@ -1654,6 +1696,20 @@
       "confidence": "confirmed"
     },
     {
+      "opggSourceKey": "Snacktime",
+      "opggName": "零食时间！",
+      "productionId": "da_snacktime18",
+      "nameZh": "点心时间到！",
+      "nameEn": "Snacktime!",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "snacktime",
+        "communityDragonApiName": "DA_Snacktime18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
       "opggSourceKey": "Freeroller",
       "opggName": "自由选手",
       "productionId": "da_18_freeroller",
@@ -1962,6 +2018,20 @@
       "confidence": "confirmed"
     },
     {
+      "opggSourceKey": "TurtlesVisit",
+      "opggName": "海龟来访",
+      "productionId": "da_turtlesvisit18",
+      "nameZh": "灵龟降临",
+      "nameEn": "Turtle's Visit",
+      "matchMethod": "exact_client_key",
+      "evidence": {
+        "canonicalClientKey": "turtlesvisit",
+        "communityDragonApiName": "DA_TurtlesVisit18",
+        "variantKind": "base"
+      },
+      "confidence": "confirmed"
+    },
+    {
       "opggSourceKey": "Downpour",
       "opggName": "倾盆大雨",
       "productionId": "da_downpour18",
@@ -2187,6 +2257,19 @@
       "confidence": "confirmed"
     },
     {
+      "opggSourceKey": "TigersVisit",
+      "opggName": "老虎来访",
+      "productionId": "da_tigersvisit18_wisp",
+      "nameZh": "战马降临",
+      "nameEn": "Tiger's Visit",
+      "matchMethod": "exact_english_name",
+      "evidence": {
+        "normalizedEnglishName": "tigersvisit",
+        "unique": true
+      },
+      "confidence": "confirmed"
+    },
+    {
       "opggSourceKey": "BloodRitual",
       "opggName": "血仪式",
       "productionId": "snapshot_157_3ed870773960",
@@ -2318,6 +2401,19 @@
       },
       "topCandidates": [
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.12272727272727274,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09090909090909091,
+          "categoryMatch": false,
+          "costMatch": true
+        },
+        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -2342,22 +2438,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.023809523809523808,
+      "bestVsSecondMargin": 0.09891774891774893,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2400,15 +2483,15 @@
           "costMatch": false
         },
         {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.020833333333333332,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.08333333333333333,
           "categoryMatch": false,
           "costMatch": false
         }
@@ -2443,12 +2526,12 @@
           "costMatch": false
         },
         {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -2456,12 +2539,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -2498,6 +2581,19 @@
           "costMatch": true
         },
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -2509,22 +2605,9 @@
           "nameSimilarity": 0.1,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 1.2115591397849463,
+      "bestVsSecondMargin": 1.0865591397849463,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2553,12 +2636,12 @@
           "costMatch": true
         },
         {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -2566,11 +2649,11 @@
           "costMatch": false
         },
         {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
           "cost": 0,
           "score": 0,
           "effectSimilarity": 0,
@@ -2608,12 +2691,12 @@
           "costMatch": false
         },
         {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -2621,12 +2704,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -2663,6 +2746,19 @@
           "costMatch": false
         },
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.25,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -2674,23 +2770,10 @@
           "nameSimilarity": 0.23529411764705882,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.0975609756097561,
-          "effectSimilarity": 0.0975609756097561,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.15833453774630246,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.021212121212121238,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -2705,6 +2788,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -2730,22 +2826,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.025,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.1,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.09999999999999999,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2760,6 +2843,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -2785,23 +2881,10 @@
           "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.12222222222222222,
-      "status": "candidate",
+      "bestVsSecondMargin": 0,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -2815,6 +2898,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -2840,22 +2936,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.09285714285714286,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2898,15 +2981,15 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
-          "score": 0,
+          "cost": 3,
+          "score": 0.027777777777777776,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
           "costMatch": false
         }
@@ -2926,6 +3009,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.1,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
         {
           "productionId": "da_beggarswisp18",
           "nameEn": "Beggar's Wisp",
@@ -2951,22 +3047,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.0625,
+      "bestVsSecondMargin": 0.037500000000000006,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -2982,6 +3065,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.27941176470588236,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.11764705882352941,
+          "categoryMatch": true,
+          "costMatch": true
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -3007,23 +3103,10 @@
           "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.03125,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.125,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.13018638349648803,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.0806312769010043,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3038,6 +3121,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.1763157894736842,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -3063,22 +3159,9 @@
           "nameSimilarity": 0.1,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.046511627906976744,
-          "effectSimilarity": 0.046511627906976744,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08244680851063829,
+      "bestVsSecondMargin": 0.02631578947368421,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3120,15 +3203,15 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
-          "score": 0,
+          "cost": 3,
+          "score": 0.023809523809523808,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.09523809523809523,
           "categoryMatch": false,
           "costMatch": false
         }
@@ -3149,6 +3232,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -3174,78 +3270,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.10348837209302325,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "TurtlesVisit",
-        "name": "海龟来访",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "本场战斗获得乌龟原始增益。",
-        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.08095238095238094,
-          "effectSimilarity": 0.05714285714285714,
-          "nameSimilarity": 0.09523809523809523,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.05263157894736842,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.21052631578947367,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.06904761904761905,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3287,12 +3314,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -3316,6 +3343,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.19545454545454544,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.18181818181818182,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -3341,134 +3381,9 @@
           "nameSimilarity": 0.08695652173913043,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.12826086956521737,
-      "status": "candidate",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "PottedLifebloom",
-        "name": "盆栽生命绽放",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "获得1朵临时生命花。",
-        "appearanceCondition": "已激活永恒之森羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.0625,
-          "effectSimilarity": 0.0625,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.0875,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "PottedStonebark",
-        "name": "盆栽石皮树",
-        "category": "Combat",
-        "cost": 2,
-        "effect": "获得一棵临时石皮树。",
-        "appearanceCondition": "已激活永恒之森羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.08333333333333333,
-          "effectSimilarity": 0.0625,
-          "nameSimilarity": 0.08333333333333333,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.022727272727272728,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.09090909090909091,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.06666666666666667,
+      "bestVsSecondMargin": 0.04545454545454544,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3483,6 +3398,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -3508,22 +3436,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08939393939393939,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3553,6 +3468,19 @@
           "costMatch": false
         },
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
           "productionId": "da_beggarswisp18",
           "nameEn": "Beggar's Wisp",
           "nameZh": "仙灵的怜悯",
@@ -3564,23 +3492,10 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.025,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.1,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.11140350877192984,
-      "status": "candidate",
+      "bestVsSecondMargin": 0.06666666666666668,
+      "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -3622,12 +3537,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -3636,118 +3551,6 @@
         }
       ],
       "bestVsSecondMargin": 0.02496626180836707,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MemorialDummy",
-        "name": "纪念假人",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
-        "appearanceCondition": "战场上有至少1名携带装备的坦克",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.16785714285714284,
-          "effectSimilarity": 0.14285714285714285,
-          "nameSimilarity": 0.1,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.01785714285714285,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "TigersVisit",
-        "name": "老虎来访",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "在这次战斗中获得老虎原始增益。",
-        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.10405405405405406,
-          "effectSimilarity": 0.05405405405405406,
-          "nameSimilarity": 0.2,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.045945945945945935,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3789,12 +3592,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -3832,6 +3635,19 @@
           "costMatch": false
         },
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
           "nameZh": "珍品摆摊车",
@@ -3843,22 +3659,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.2093276203032301,
+      "bestVsSecondMargin": 0.10810810810810814,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -3901,12 +3704,12 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -3957,77 +3760,21 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
-          "score": 0,
+          "cost": 3,
+          "score": 0.02631578947368421,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
       "bestVsSecondMargin": 0.0783577533577533,
       "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "Snacktime",
-        "name": "零食时间！",
-        "category": "Combat",
-        "cost": 4,
-        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
-        "appearanceCondition": "已激活灵巧精羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.19545454545454544,
-          "effectSimilarity": 0.045454545454545456,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.19545454545454544,
-      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -4042,6 +3789,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.4078947368421052,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.631578947368421,
+          "categoryMatch": true,
+          "costMatch": true
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4067,23 +3827,10 @@
           "nameSimilarity": 0.2,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.04444444444444444,
-      "status": "ambiguous",
+      "bestVsSecondMargin": 0.2578947368421052,
+      "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
@@ -4167,6 +3914,19 @@
           "costMatch": false
         },
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
           "productionId": "da_beggarswisp18",
           "nameEn": "Beggar's Wisp",
           "nameZh": "仙灵的怜悯",
@@ -4178,28 +3938,21 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.2642857142857143,
+      "bestVsSecondMargin": 0.1142857142857143,
       "status": "candidate",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     }
   ],
   "opggOnlyConfirmed": [],
   "dataTftUnmatched": [
+    {
+      "id": "da_bearsvisit18",
+      "nameEn": "Bear's Visit",
+      "nameZh": "蛮熊降临",
+      "riotId": "DA_BearsVisit18"
+    },
     {
       "id": "snapshot_139_6fda4e76a4da",
       "nameEn": "克隆弈子",
@@ -4220,6 +3973,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.12272727272727274,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.09090909090909091,
+          "categoryMatch": false,
+          "costMatch": true
+        },
         {
           "productionId": "da_curiocart18",
           "nameEn": "Curio Cart",
@@ -4245,22 +4011,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.023809523809523808,
+      "bestVsSecondMargin": 0.09891774891774893,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4303,15 +4056,15 @@
           "costMatch": false
         },
         {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.020833333333333332,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.08333333333333333,
           "categoryMatch": false,
           "costMatch": false
         }
@@ -4346,12 +4099,12 @@
           "costMatch": false
         },
         {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -4359,12 +4112,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -4401,6 +4154,19 @@
           "costMatch": false
         },
         {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": false
+        },
+        {
           "productionId": "da_beggarswisp18",
           "nameEn": "Beggar's Wisp",
           "nameZh": "仙灵的怜悯",
@@ -4412,7 +4178,23 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
+        }
+      ],
+      "bestVsSecondMargin": 0.05263157894736842,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "Escalation",
+        "name": "升级",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "战斗 15 秒后，你的团队获得 30% 伤害增幅。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4420,14 +4202,40 @@
           "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
           "cost": 5,
-          "score": 0,
+          "score": 0.27121212121212124,
+          "effectSimilarity": 0.12121212121212122,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.25,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": true
+        },
+        {
+          "productionId": "da_curiocart18",
+          "nameEn": "Curio Cart",
+          "nameZh": "珍品摆摊车",
+          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
+          "category": "item",
+          "cost": 0,
+          "score": 0.11287758346581876,
+          "effectSimilarity": 0.05405405405405406,
+          "nameSimilarity": 0.23529411764705882,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.05263157894736842,
+      "bestVsSecondMargin": 0.021212121212121238,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4443,6 +4251,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4468,6 +4289,48 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "MinionHorde",
+        "name": "小黄人部落",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "生成 4 个小兵。",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
         },
         {
           "productionId": "da_curiocart18",
@@ -4476,14 +4339,14 @@
           "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
           "category": "item",
           "cost": 0,
-          "score": 0.025,
+          "score": 0.027777777777777776,
           "effectSimilarity": 0,
-          "nameSimilarity": 0.1,
+          "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.09999999999999999,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4498,6 +4361,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4523,22 +4399,9 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.09285714285714286,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4581,15 +4444,15 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
-          "score": 0,
+          "cost": 3,
+          "score": 0.027777777777777776,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
           "costMatch": false
         }
@@ -4609,6 +4472,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.1,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": false,
+          "costMatch": true
+        },
         {
           "productionId": "da_beggarswisp18",
           "nameEn": "Beggar's Wisp",
@@ -4634,6 +4510,36 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0.037500000000000006,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "StarPower",
+        "name": "星力",
+        "category": "Combat",
+        "cost": 3,
+        "effect": "你的队伍获得10%攻击力和法术强度；3星弈子改为获得25%攻击力和法术强度。",
+        "appearanceCondition": "至少上场1名3星非坦克弈子",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.27941176470588236,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.11764705882352941,
+          "categoryMatch": true,
+          "costMatch": true
         },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
@@ -4642,14 +4548,27 @@
           "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
           "category": "combat",
           "cost": 5,
-          "score": 0,
-          "effectSimilarity": 0,
+          "score": 0.19878048780487806,
+          "effectSimilarity": 0.04878048780487805,
           "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.06859410430839002,
+          "effectSimilarity": 0.04081632653061224,
+          "nameSimilarity": 0.1111111111111111,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.0625,
+      "bestVsSecondMargin": 0.0806312769010043,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4665,6 +4584,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.1763157894736842,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4690,37 +4622,37 @@
           "nameSimilarity": 0.1,
           "categoryMatch": false,
           "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.046511627906976744,
-          "effectSimilarity": 0.046511627906976744,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08244680851063829,
+      "bestVsSecondMargin": 0.02631578947368421,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
     {
       "opggRecord": {
-        "sourceKey": "TurtlesVisit",
-        "name": "海龟来访",
+        "sourceKey": "CrystalBall",
+        "name": "水晶球",
         "category": "Combat",
-        "cost": 3,
-        "effect": "本场战斗获得乌龟原始增益。",
-        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
+        "cost": 1,
+        "effect": "显示你的下一名对手。你的队伍获得12%攻击速度。",
+        "appearanceCondition": "剩余至少4名玩家",
         "blossom": null,
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4741,27 +4673,14 @@
           "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
           "category": "gold_xp",
           "cost": 0,
-          "score": 0.08095238095238094,
-          "effectSimilarity": 0.05714285714285714,
-          "nameSimilarity": 0.09523809523809523,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.05263157894736842,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.21052631578947367,
+          "score": 0.046511627906976744,
+          "effectSimilarity": 0.046511627906976744,
+          "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.06904761904761905,
+      "bestVsSecondMargin": 0,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4803,12 +4722,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -4822,16 +4741,29 @@
     },
     {
       "opggRecord": {
-        "sourceKey": "PottedLifebloom",
-        "name": "盆栽生命绽放",
+        "sourceKey": "MeltingResists",
+        "name": "熔化抗蚀剂",
         "category": "Combat",
-        "cost": 3,
-        "effect": "获得1朵临时生命花。",
-        "appearanceCondition": "已激活永恒之森羁绊",
+        "cost": 4,
+        "effect": "燃烧的敌人每秒失去 3 点护甲和魔抗。",
+        "appearanceCondition": "地狱特质活跃",
         "blossom": null,
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.19545454545454544,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0.18181818181818182,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4852,83 +4784,14 @@
           "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
           "category": "gold_xp",
           "cost": 0,
-          "score": 0.0625,
-          "effectSimilarity": 0.0625,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
+          "score": 0.021739130434782608,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.08695652173913043,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.0875,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "PottedStonebark",
-        "name": "盆栽石皮树",
-        "category": "Combat",
-        "cost": 2,
-        "effect": "获得一棵临时石皮树。",
-        "appearanceCondition": "已激活永恒之森羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.08333333333333333,
-          "effectSimilarity": 0.0625,
-          "nameSimilarity": 0.08333333333333333,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.022727272727272728,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0.09090909090909091,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.06666666666666667,
+      "bestVsSecondMargin": 0.04545454545454544,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -4943,6 +4806,19 @@
         "prismatic": null
       },
       "topCandidates": [
+        {
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
+          "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
         {
           "productionId": "snapshot_139_6fda4e76a4da",
           "nameEn": "克隆弈子",
@@ -4968,22 +4844,65 @@
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
+        }
+      ],
+      "bestVsSecondMargin": 0,
+      "status": "ambiguous",
+      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
+    },
+    {
+      "opggRecord": {
+        "sourceKey": "FaeFederation",
+        "name": "精灵联邦",
+        "category": "Combat",
+        "cost": 4,
+        "effect": "本回合你的所有弈子获得2个仙灵。",
+        "appearanceCondition": "已激活仙灵羁绊",
+        "blossom": null,
+        "prismatic": null
+      },
+      "topCandidates": [
+        {
+          "productionId": "snapshot_139_6fda4e76a4da",
+          "nameEn": "克隆弈子",
+          "nameZh": "克隆弈子",
+          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "category": "combat",
+          "cost": 5,
+          "score": 0.21666666666666667,
+          "effectSimilarity": 0.06666666666666667,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
         },
         {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
+          "category": "combat",
+          "cost": 3,
+          "score": 0.15,
           "effectSimilarity": 0,
+          "nameSimilarity": 0,
+          "categoryMatch": true,
+          "costMatch": false
+        },
+        {
+          "productionId": "da_beggarswisp18",
+          "nameEn": "Beggar's Wisp",
+          "nameZh": "仙灵的怜悯",
+          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
+          "category": "gold_xp",
+          "cost": 0,
+          "score": 0.10526315789473684,
+          "effectSimilarity": 0.10526315789473684,
           "nameSimilarity": 0,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
-      "bestVsSecondMargin": 0.08939393939393939,
+      "bestVsSecondMargin": 0.06666666666666668,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5026,12 +4945,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -5040,118 +4959,6 @@
         }
       ],
       "bestVsSecondMargin": 0.02496626180836707,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "MemorialDummy",
-        "name": "纪念假人",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
-        "appearanceCondition": "战场上有至少1名携带装备的坦克",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0.16785714285714284,
-          "effectSimilarity": 0.14285714285714285,
-          "nameSimilarity": 0.1,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.01785714285714285,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "TigersVisit",
-        "name": "老虎来访",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "在这次战斗中获得老虎原始增益。",
-        "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.10405405405405406,
-          "effectSimilarity": 0.05405405405405406,
-          "nameSimilarity": 0.2,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.045945945945945935,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     },
@@ -5193,12 +5000,12 @@
           "costMatch": false
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -5249,12 +5056,12 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
+          "cost": 3,
           "score": 0,
           "effectSimilarity": 0,
           "nameSimilarity": 0,
@@ -5305,76 +5112,20 @@
           "costMatch": true
         },
         {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
+          "productionId": "da_bearsvisit18",
+          "nameEn": "Bear's Visit",
+          "nameZh": "蛮熊降临",
+          "effect": "Gain the Bear Primal buff for this combat.",
           "category": "combat",
-          "cost": 5,
-          "score": 0,
+          "cost": 3,
+          "score": 0.02631578947368421,
           "effectSimilarity": 0,
-          "nameSimilarity": 0,
+          "nameSimilarity": 0.10526315789473684,
           "categoryMatch": false,
           "costMatch": false
         }
       ],
       "bestVsSecondMargin": 0.0783577533577533,
-      "status": "ambiguous",
-      "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
-    },
-    {
-      "opggRecord": {
-        "sourceKey": "HorsesVisit",
-        "name": "马来访",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "在这次战斗中获得马原始增益。",
-        "appearanceCondition": "原始特质活跃，未选择马",
-        "blossom": null,
-        "prismatic": null
-      },
-      "topCandidates": [
-        {
-          "productionId": "snapshot_139_6fda4e76a4da",
-          "nameEn": "克隆弈子",
-          "nameZh": "克隆弈子",
-          "effect": "复制你伤害最高的弈子。复制体造成20%伤害。",
-          "category": "combat",
-          "cost": 5,
-          "score": 0.15,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": true,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_beggarswisp18",
-          "nameEn": "Beggar's Wisp",
-          "nameZh": "仙灵的怜悯",
-          "effect": "本次刷新未能使你在自然奇境中寻找到【自然仙灵】。获得3金币。",
-          "category": "gold_xp",
-          "cost": 0,
-          "score": 0.10555555555555556,
-          "effectSimilarity": 0.05555555555555555,
-          "nameSimilarity": 0.2,
-          "categoryMatch": false,
-          "costMatch": false
-        },
-        {
-          "productionId": "da_curiocart18",
-          "nameEn": "Curio Cart",
-          "nameZh": "珍品摆摊车",
-          "effect": "开启1个装备商店。装备的费用在0到15金币之间。",
-          "category": "item",
-          "cost": 0,
-          "score": 0,
-          "effectSimilarity": 0,
-          "nameSimilarity": 0,
-          "categoryMatch": false,
-          "costMatch": false
-        }
-      ],
-      "bestVsSecondMargin": 0.04444444444444444,
       "status": "ambiguous",
       "reasonNotConfirmed": "Similarity, category, cost, and appearance requirements are discovery evidence only; no strong identity or reviewed alias exists."
     }
@@ -5615,21 +5366,6 @@
       },
       {
         "record": {
-          "sourceKey": "TurtlesVisit",
-          "name": "海龟来访",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "本场战斗获得乌龟原始增益。",
-          "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
-      },
-      {
-        "record": {
           "sourceKey": "ConsumableShop",
           "name": "消耗品",
           "category": "Misc",
@@ -5656,36 +5392,6 @@
         "classification": "F",
         "corpusMembership": "unresolved",
         "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "PottedLifebloom",
-          "name": "盆栽生命绽放",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "获得1朵临时生命花。",
-          "appearanceCondition": "已激活永恒之森羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
-      },
-      {
-        "record": {
-          "sourceKey": "PottedStonebark",
-          "name": "盆栽石皮树",
-          "category": "Combat",
-          "cost": 2,
-          "effect": "获得一棵临时石皮树。",
-          "appearanceCondition": "已激活永恒之森羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
       },
       {
         "record": {
@@ -5724,36 +5430,6 @@
           "cost": 1,
           "effect": "本场战斗吸引的仙灵数量提高100%。",
           "appearanceCondition": "已激活仙灵羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "unresolved",
-        "reason": "No strong cross-source identity establishes whether this is distinct from an unmatched DataTFT row."
-      },
-      {
-        "record": {
-          "sourceKey": "MemorialDummy",
-          "name": "纪念假人",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
-          "appearanceCondition": "战场上有至少1名携带装备的坦克",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
-      },
-      {
-        "record": {
-          "sourceKey": "TigersVisit",
-          "name": "老虎来访",
-          "category": "Combat",
-          "cost": 3,
-          "effect": "在这次战斗中获得老虎原始增益。",
-          "appearanceCondition": "已激活原始羁绊，且尚未选择老虎",
           "blossom": null,
           "prismatic": null
         },
@@ -5822,21 +5498,6 @@
       },
       {
         "record": {
-          "sourceKey": "Snacktime",
-          "name": "零食时间！",
-          "category": "Combat",
-          "cost": 4,
-          "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
-          "appearanceCondition": "已激活灵巧精羁绊",
-          "blossom": null,
-          "prismatic": null
-        },
-        "classification": "F",
-        "corpusMembership": "confirmed_identity_unlinked",
-        "reason": "A CommunityDragon base identity confirms corpus membership, but the DataTFT identity link remains unresolved."
-      },
-      {
-        "record": {
           "sourceKey": "HorsesVisit",
           "name": "马来访",
           "category": "Combat",
@@ -5882,6 +5543,12 @@
     ],
     "dataTft": [
       {
+        "id": "da_bearsvisit18",
+        "nameEn": "Bear's Visit",
+        "nameZh": "蛮熊降临",
+        "riotId": "DA_BearsVisit18"
+      },
+      {
         "id": "snapshot_139_6fda4e76a4da",
         "nameEn": "克隆弈子",
         "nameZh": "克隆弈子",
@@ -5890,12 +5557,12 @@
     ]
   },
   "confirmedCorpusMembership": {
-    "minimum": 174,
+    "minimum": 176,
     "evidenceRule": "Conservative lower bound: normalized production plus confirmed incomplete external identities, allowing every unmatched production identity to overlap at most one external identity."
   },
   "normalizedProductionCompleteness": {
-    "normalizedCount": 169,
-    "criticalMissingIdentityCount": 1,
+    "normalizedCount": 176,
+    "criticalMissingIdentityCount": 2,
     "complete": false
   },
   "confirmedCorpusButIncomplete": [
@@ -5918,118 +5585,13 @@
         "communityDragonVariantKind": "base"
       },
       "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "TurtlesVisit",
-        "name": "海龟来访",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "本场战斗获得乌龟原始增益。",
-        "appearanceCondition": "已激活原始羁绊，且尚未选择乌龟",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "turtlesvisit",
-        "communityDragonApiName": "DA_TurtlesVisit18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "PottedLifebloom",
-        "name": "盆栽生命绽放",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "获得1朵临时生命花。",
-        "appearanceCondition": "已激活永恒之森羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "pottedlifebloom",
-        "communityDragonApiName": "DA_PottedLifebloom18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "PottedStonebark",
-        "name": "盆栽石皮树",
-        "category": "Combat",
-        "cost": 2,
-        "effect": "获得一棵临时石皮树。",
-        "appearanceCondition": "已激活永恒之森羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "pottedstonebark",
-        "communityDragonApiName": "DA_PottedStonebark18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "MemorialDummy",
-        "name": "纪念假人",
-        "category": "Combat",
-        "cost": 3,
-        "effect": "首名携带装备的坦克死亡时，召唤1个携带其装备的训练假人。",
-        "appearanceCondition": "战场上有至少1名携带装备的坦克",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "memorialdummy",
-        "communityDragonApiName": "DA_MemorialDummy18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
-    },
-    {
-      "record": {
-        "sourceKey": "Snacktime",
-        "name": "零食时间！",
-        "category": "Combat",
-        "cost": 4,
-        "effect": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
-        "appearanceCondition": "已激活灵巧精羁绊",
-        "blossom": null,
-        "prismatic": null
-      },
-      "corpusMembership": "confirmed",
-      "productionRecordStatus": "identity_link_unresolved",
-      "evidence": {
-        "opggCurrentCatalog": true,
-        "canonicalClientKey": "snacktime",
-        "communityDragonApiName": "DA_Snacktime18",
-        "communityDragonVariantKind": "base"
-      },
-      "reason": "OP.GG and CommunityDragon confirm this corpus identity, but they do not prove it is distinct from every unmatched DataTFT row."
     }
   ],
   "categoryDiscrepancies": [],
   "categoryCountBySource": {
     "datatft": {
       "champion": 16,
-      "combat": 75,
+      "combat": 82,
       "misc": 23,
       "shop": 19,
       "gold_xp": 13,
@@ -6047,8 +5609,8 @@
     }
   },
   "matchMethodCounts": {
-    "exact_client_key": 144,
-    "exact_english_name": 15,
+    "exact_client_key": 149,
+    "exact_english_name": 16,
     "exact_chinese_name": 4,
     "reviewed_cross_source_identity": 3
   },
@@ -6058,12 +5620,12 @@
     "C": 0,
     "D": 0,
     "E": 0,
-    "F": 34
+    "F": 28
   },
   "corpusEstimate": {
-    "confirmedMinimum": 174,
-    "unresolvedOpgg": 34,
-    "normalizedProductionCount": 169
+    "confirmedMinimum": 176,
+    "unresolvedOpgg": 28,
+    "normalizedProductionCount": 176
   },
   "reason": "Only client identity, unique exact names, or reviewed aliases enter the confirmed intersection. A client-supported unlinked identity is not counted as OP.GG-only because it may alias an unmatched DataTFT row."
 }

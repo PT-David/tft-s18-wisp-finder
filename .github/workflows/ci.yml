@@ -17,7 +17,6 @@ jobs:
       - run: npm ci
       - run: npm run data:build:18.1
       - run: npm run data:audit:18.1
-      - run: npm run data:lexicon:18.1
       - run: npm run validate:lexicon-decisions
       - run: npm run data:materialize-search:18.1
       - run: npm run validate:materialized-search
@@ -28,23 +27,15 @@ jobs:
       - run: npm run validate:rules
       - run: npm run data:release-audit:18.1
       - run: npm run validate:release-audit
-      - run: npm run data:identity-review-packet:18.1
-      - run: npm run validate:identity-review-packet
-      - run: npm run data:priority-identity-proposals:18.1
-      - run: npm run validate:priority-identity-proposals
+      # C4.2A1/A2 and C4.2B1 are frozen pre-Apply review artifacts. Their
+      # internal governance remains covered by unit tests; do not regenerate
+      # them from post-Apply production or enforce their old 169 fingerprints.
       - run: npm run data:catalog-delta-reconciliation:18.1
       - run: npm run validate:catalog-delta-reconciliation
       - run: npm run validate:c4.2a-identity-decisions
-      - run: npm run data:c4.2a-identity-decision-report:18.1
-      - run: npm run data:c4.2b-field-review-packet:18.1
-      - run: npm run validate:c4.2b-field-review-packet
       - run: npm run validate:c4.2b-field-decisions
-      - run: npm run data:c4.2b-field-decision-report:18.1
       - run: npm run validate:c4.2b3-required-fields
-      - run: npm run data:c4.2b3-required-field-report:18.1
-      - run: npm run data:c4.2b4-final-field-evidence:18.1
       - run: npm run validate:c4.2b4-final-fields
-      - run: npm run data:c4.2b4-final-field-report:18.1
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium

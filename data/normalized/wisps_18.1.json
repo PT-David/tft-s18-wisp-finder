@@ -5576,6 +5576,113 @@
       "patch": "18.1"
     },
     {
+      "id": "da_bearsvisit18",
+      "effects": {
+        "normal": "Gain the Bear Primal buff for this combat.",
+        "blossom": "Gain the Tiger Primal buff for this combat."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_BearsVisit18",
+      "nameEn": "Bear's Visit",
+      "nameZh": "蛮熊降临",
+      "category": "combat",
+      "cost": 3,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "source_text",
+          "textZh": "已激活【野兽之灵】羁绊，且尚未选择【蛮熊】",
+          "textEn": "Primal active; Bear not already chosen",
+          "machineEvaluable": false
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "user_reviewed_c4_final_blockers_18_1",
+          "verifiedAt": "2026-09-03T00:00:00Z",
+          "confidence": "unverified"
+        },
+        "cost": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "stageRanges": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "effects": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "requirements": {
+          "sourceId": "user_reviewed_c4_final_blockers_18_1",
+          "verifiedAt": "2026-09-03T00:00:00Z",
+          "confidence": "unverified"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0060",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "89475d9d4835853745b0afad79276df0e70a610e0ffb6b84813583251af9df2c"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0065",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "89475d9d4835853745b0afad79276df0e70a610e0ffb6b84813583251af9df2c"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
+    },
+    {
       "id": "da_beggarswisp18",
       "riotId": "DA_BeggarsWisp18",
       "nameZh": "仙灵的怜悯",
@@ -11118,6 +11225,111 @@
       "patch": "18.1"
     },
     {
+      "id": "da_memorialdummy18",
+      "effects": {
+        "normal": "Your first itemized tank spawns a Dummy with their items on death."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_MemorialDummy18",
+      "nameEn": "Memorial Dummy",
+      "nameZh": "衣冠冢",
+      "category": "combat",
+      "cost": 3,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "source_text",
+          "textZh": "战场上有至少1名携带装备的坦克",
+          "machineEvaluable": false
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "cost": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "stageRanges": {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "verifiedAt": "2026-09-02T05:26:21Z",
+          "confidence": "community_high_confidence"
+        },
+        "effects": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "requirements": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0086",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0091",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
+    },
+    {
       "id": "da_middlepath18",
       "riotId": "DA_MiddlePath18",
       "nameZh": "中央大道",
@@ -12498,6 +12710,216 @@
       "patch": "18.1"
     },
     {
+      "id": "da_pottedlifebloom18",
+      "effects": {
+        "normal": "Gain a temporary Lifeblossom."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_PottedLifebloom18",
+      "nameEn": "Potted Lifebloom",
+      "nameZh": "盆栽生命花",
+      "category": "combat",
+      "cost": 2,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "source_text",
+          "textZh": "已激活永恒之森羁绊",
+          "machineEvaluable": false
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "cost": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "stageRanges": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "effects": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "requirements": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0034",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0039",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
+    },
+    {
+      "id": "da_pottedstonebark18",
+      "effects": {
+        "normal": "Gain a temporary Stonebark Tree."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_PottedStonebark18",
+      "nameEn": "Potted Stonebark",
+      "nameZh": "盆栽石皮树",
+      "category": "combat",
+      "cost": 2,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 1
+          },
+          "end": {
+            "stage": 4,
+            "round": 7
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "source_text",
+          "textZh": "已激活永恒之森羁绊",
+          "machineEvaluable": false
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "cost": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "stageRanges": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "effects": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "requirements": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0112",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0117",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
+    },
+    {
       "id": "da_quicken18",
       "riotId": "DA_Quicken18",
       "nameZh": "加速",
@@ -13685,6 +14107,112 @@
       "patch": "18.1"
     },
     {
+      "id": "da_snacktime18",
+      "effects": {
+        "normal": "The BFF eats enemies he damages under 15% Max Health.",
+        "blossom": "The BFF eats enemies he damages under 22% Max Health."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_Snacktime18",
+      "nameEn": "Snacktime!",
+      "nameZh": "点心时间到！",
+      "category": "combat",
+      "cost": 3,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 4,
+            "round": 2
+          },
+          "end": {
+            "stage": 10,
+            "round": 1
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "source_text",
+          "textZh": "已激活灵巧精羁绊",
+          "machineEvaluable": false
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "cost": {
+          "sourceId": "user_reviewed_c4_final_blockers_18_1",
+          "verifiedAt": "2026-09-03T00:00:00Z",
+          "confidence": "unverified"
+        },
+        "stageRanges": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "effects": {
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "verifiedAt": "2026-09-02T05:26:21Z",
+          "confidence": "community_high_confidence"
+        },
+        "requirements": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0139",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "89475d9d4835853745b0afad79276df0e70a610e0ffb6b84813583251af9df2c"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0144",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "89475d9d4835853745b0afad79276df0e70a610e0ffb6b84813583251af9df2c"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
+    },
+    {
       "id": "da_solargift18",
       "riotId": "DA_SolarGift18",
       "nameZh": "日蚀之礼",
@@ -14683,6 +15211,111 @@
       "patch": "18.1"
     },
     {
+      "id": "da_tigersvisit18_wisp",
+      "effects": {
+        "normal": "Gain the Tiger Primal buff for this combat."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_TigersVisit18_Wisp",
+      "nameEn": "Tiger's Visit",
+      "nameZh": "战马降临",
+      "category": "combat",
+      "cost": 3,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "machineEvaluable": false,
+          "textZh": "已激活原始羁绊，且尚未选择老虎",
+          "type": "source_text"
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "opgg_set18_wisps_20260903_targeted",
+          "verifiedAt": "2026-09-03T11:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "cost": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "stageRanges": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "effects": {
+          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+          "verifiedAt": "2026-09-02T11:16:11Z",
+          "confidence": "client_data"
+        },
+        "requirements": {
+          "sourceId": "opgg_set18_wisps_20260903_targeted",
+          "verifiedAt": "2026-09-03T11:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0015",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0020",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
+    },
+    {
       "id": "da_trainingyard18",
       "riotId": "DA_TrainingYard18",
       "nameZh": "训练场",
@@ -14978,6 +15611,111 @@
         }
       },
       "patch": "18.1"
+    },
+    {
+      "id": "da_turtlesvisit18",
+      "effects": {
+        "normal": "Gain the Turtle Primal buff for this combat."
+      },
+      "searchConcepts": [],
+      "synonyms": [],
+      "patch": "18.1",
+      "riotId": "DA_TurtlesVisit18",
+      "nameEn": "Turtle's Visit",
+      "nameZh": "灵龟降临",
+      "category": "combat",
+      "cost": 3,
+      "stageRanges": [
+        {
+          "start": {
+            "stage": 3,
+            "round": 5
+          },
+          "end": {
+            "stage": 5,
+            "round": 7
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "source_text",
+          "textZh": "已激活原始羁绊，且尚未选择乌龟",
+          "machineEvaluable": false
+        }
+      ],
+      "oncePerGame": {
+        "status": "unknown"
+      },
+      "reofferCooldownShops": {
+        "status": "unknown"
+      },
+      "sources": {
+        "id": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "riotId": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameEn": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "nameZh": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "category": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "cost": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "stageRanges": {
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "verifiedAt": "2026-08-29T11:22:31.117Z",
+          "confidence": "verified_third_party"
+        },
+        "effects": {
+          "sourceId": "communitydragon_live_18_1_20260902_priority",
+          "verifiedAt": "2026-09-02T05:27:37Z",
+          "confidence": "client_data"
+        },
+        "requirements": {
+          "sourceId": "opgg_set18_wisps_20260902",
+          "verifiedAt": "2026-09-02T05:27:39Z",
+          "confidence": "community_high_confidence"
+        },
+        "oncePerGame": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0152",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "reofferCooldownShops": {
+          "provenanceKind": "review_governance",
+          "reviewStage": "C4.2B2",
+          "decisionId": "C4B2-0157",
+          "disposition": "accepted_unknown",
+          "frozenEvidenceSha256": "fd9225572cacd2c5cc93dcf5164b133b1b135b4417f0c900b1faccd7a5f51afd"
+        },
+        "patch": {
+          "sourceId": "riot_patch_18_1_20260828",
+          "verifiedAt": "2026-08-28T16:57:06Z",
+          "confidence": "official"
+        }
+      }
     },
     {
       "id": "da_wrappedinthorns18",

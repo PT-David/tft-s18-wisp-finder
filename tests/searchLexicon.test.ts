@@ -11,7 +11,7 @@ const assignment = (id: string, concept: string) => generated.conceptDraft.assig
 describe('Stage C2.1 search lexicon generation', () => {
   it('is deterministic for a fixed production snapshot', () => {
     expect(JSON.stringify(generateSearchLexicon(dataset, input))).toBe(JSON.stringify(generateSearchLexicon(dataset, input)));
-    expect(generated.conceptDraft.input).toEqual({ path: 'data/normalized/wisps_18.1.json', sha256: expect.stringMatching(/^[a-f0-9]{64}$/), recordCount: 169 });
+    expect(generated.conceptDraft.input).toEqual({ path: 'data/normalized/wisps_18.1.json', sha256: expect.stringMatching(/^[a-f0-9]{64}$/), recordCount: 176 });
   });
 
   it('only emits canonical taxonomy keys and retains exact evidence fields', () => {
@@ -273,7 +273,7 @@ describe('Stage C2.1 search lexicon generation', () => {
   });
 
   it('does not alter production search fields', () => {
-    expect(dataset.records).toHaveLength(169);
+    expect(dataset.records).toHaveLength(176);
     expect(dataset.records.every(w => w.searchConcepts.length === 0 && w.synonyms.length === 0)).toBe(true);
     const publicDataset = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as WispDataset;
     expect(publicDataset.records.reduce((sum, w) => sum + w.searchConcepts.length, 0)).toBe(289);

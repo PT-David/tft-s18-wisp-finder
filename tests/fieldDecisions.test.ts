@@ -6,7 +6,7 @@ import { buildFieldReviewPacket } from '../scripts/data/field-review-packet-18.1
 
 const frozen = JSON.parse(readFileSync('data/reviews/18.1/c4.2b2-field-evidence.json', 'utf8'));
 const overlay = JSON.parse(readFileSync('data/reviews/18.1/c4.2b-field-decisions.json', 'utf8'));
-const production = JSON.parse(readFileSync('data/normalized/wisps_18.1.json', 'utf8'));
+const production = frozen.productionBaseline;
 const clone = <T>(value: T): T => JSON.parse(JSON.stringify(value));
 
 describe('C4.2B2 decision governance', () => {

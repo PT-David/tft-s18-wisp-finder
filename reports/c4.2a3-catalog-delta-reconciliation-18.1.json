@@ -4,7 +4,7 @@
   "purpose": "catalog_delta_reconciliation_audit_only",
   "baseline": {
     "actualMainSha": "d24bb0f14ce4c2f38fb21600323238da30e86135",
-    "productionRecords": 169,
+    "productionRecords": 176,
     "exactCorpusSizeStatus": "unresolved",
     "recommendedProductionReady": false,
     "c4_2a2HumanDecisionsApplied": 0
@@ -1483,10 +1483,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_bearsvisit18"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_bearsvisit18",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_BearsVisit18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1497,7 +1499,7 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": null,
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     },
     {
       "freshIndex": 170,
@@ -1544,10 +1546,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_memorialdummy18"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_memorialdummy18",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_MemorialDummy18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1558,7 +1562,7 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-002",
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     },
     {
       "freshIndex": 171,
@@ -1603,10 +1607,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_pottedlifebloom18"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_pottedlifebloom18",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_PottedLifebloom18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1617,7 +1623,7 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-003",
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     },
     {
       "freshIndex": 172,
@@ -1662,10 +1668,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_pottedstonebark18"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_pottedstonebark18",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_PottedStonebark18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1676,7 +1684,7 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-004",
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     },
     {
       "freshIndex": 173,
@@ -1725,10 +1733,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_snacktime18"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_snacktime18",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_Snacktime18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1739,7 +1749,7 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-005",
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     },
     {
       "freshIndex": 174,
@@ -1784,10 +1794,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_tigersvisit18_wisp"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_tigersvisit18_wisp",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_TigersVisit18_Wisp",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1798,7 +1810,7 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": null,
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     },
     {
       "freshIndex": 175,
@@ -1843,10 +1855,12 @@
           }
         ]
       },
-      "productionMatches": [],
+      "productionMatches": [
+        "da_turtlesvisit18"
+      ],
       "reviewedMappingMatches": [],
-      "productionRelation": "No direct or reviewed identity target in 169 production records and 17 reviewed mappings.",
-      "classification": "missing_base_identity_candidate",
+      "productionRelation": "Exact stable/reviewed target(s): da_turtlesvisit18",
+      "classification": "existing_base_identity_already_in_production",
       "baseIdentityKey": "DA_TurtlesVisit18",
       "confidence": "strong",
       "identityConfirmingEvidence": [
@@ -1857,19 +1871,19 @@
       ],
       "conflictingEvidence": [],
       "affectsC4Cluster": "C4I-006",
-      "humanDecisionRequired": true
+      "humanDecisionRequired": false
     }
   ],
   "baseIdentitySummary": {
     "catalogRowDelta": 7,
-    "missingBaseIdentityCandidates": 7,
+    "missingBaseIdentityCandidates": 0,
     "upgradeOrVariantRows": 0,
-    "existingBaseIdentitiesNewlyExposed": 0,
+    "existingBaseIdentitiesNewlyExposed": 7,
     "renamedOrRelocalizedRows": 0,
     "unresolvedRows": 0
   },
   "catalogRepresentationSummary": {
-    "equation": "+7 catalog rows = 7 missing base identity candidates + 0 upgrade/variant rows + 0 already-production identities + 0 renames + 0 unresolved",
+    "equation": "+7 catalog rows = 0 missing base identity candidates + 0 upgrade/variant rows + 7 already-production identities + 0 renames + 0 unresolved",
     "catalogRepresentationDoesNotProveExactCorpusSize": true
   },
   "reviewedMappingsAudit": {
@@ -1888,32 +1902,32 @@
     {
       "clusterId": "C4I-002",
       "sourceIdentity": "MemorialDummy",
-      "impact": "supported",
-      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
+      "impact": "weakened",
+      "note": "A reviewed or direct production target contradicts the A2 missing-production hypothesis."
     },
     {
       "clusterId": "C4I-003",
       "sourceIdentity": "PottedLifebloom",
-      "impact": "supported",
-      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
+      "impact": "weakened",
+      "note": "A reviewed or direct production target contradicts the A2 missing-production hypothesis."
     },
     {
       "clusterId": "C4I-004",
       "sourceIdentity": "PottedStonebark",
-      "impact": "supported",
-      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
+      "impact": "weakened",
+      "note": "A reviewed or direct production target contradicts the A2 missing-production hypothesis."
     },
     {
       "clusterId": "C4I-005",
       "sourceIdentity": "Snacktime",
-      "impact": "supported",
-      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
+      "impact": "weakened",
+      "note": "A reviewed or direct production target contradicts the A2 missing-production hypothesis."
     },
     {
       "clusterId": "C4I-006",
       "sourceIdentity": "TurtlesVisit",
-      "impact": "supported",
-      "note": "A corresponding fresh-only row resolves to an unsuffixed client base and remains absent from production after reviewed-mapping checks."
+      "impact": "weakened",
+      "note": "A reviewed or direct production target contradicts the A2 missing-production hypothesis."
     }
   ],
   "readinessImpact": {
@@ -1924,28 +1938,28 @@
   },
   "artifactBoundary": {
     "before": {
-      "data/normalized/wisps_18.1.json": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
-      "data/materialized/18.1/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
-      "data/materialized/18.1/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
-      "data/materialized/18.1/synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-      "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
-      "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
-      "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-      "data/reviews/18.1/search-lexicon-decisions.json": "9f67e0754df1b31085d8f9f76555fb3d26761a510401f3f62c190a0a50d8d120",
+      "data/normalized/wisps_18.1.json": "8318e2d2ce395fec9996587db8d1ffd3c48caf7c152e57b117412c1d9c0da3cb",
+      "data/materialized/18.1/wisps.json": "364f1700a9ddbc0a35a48873cfd48455c58409f7f70d77f620236f651e152215",
+      "data/materialized/18.1/search-concepts.json": "fcb4fb319d12e897e854560affa83e7d7118e7996c979d488a1a5ae4cc58684e",
+      "data/materialized/18.1/synonyms.json": "16d7364a39912dd2835e60ccc926ba03569717cccb78b5ff35e1d8c884ddcce8",
+      "public/data/wisps.json": "364f1700a9ddbc0a35a48873cfd48455c58409f7f70d77f620236f651e152215",
+      "public/data/search-concepts.json": "fcb4fb319d12e897e854560affa83e7d7118e7996c979d488a1a5ae4cc58684e",
+      "public/data/search-synonyms.json": "16d7364a39912dd2835e60ccc926ba03569717cccb78b5ff35e1d8c884ddcce8",
+      "data/reviews/18.1/search-lexicon-decisions.json": "e47f515750368c10554a1cbdf1187a2622becf27bcec1079deb39b5809aee94f",
       "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e",
       "reports/c4.2a-identity-review-packet-18.1.json": "6e0b6f55b3fbff5fec19e6761bc20cd4912b9f26052ad1e83abec14afabd8672",
       "reports/c4.2a2-priority-identity-proposals-18.1.json": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",
       "reports/c4.2a2-priority-identity-proposals-18.1.md": "42411439608dff4eea9f11656272a748f60261574dd4f478aa144bbbcd81f6a9"
     },
     "after": {
-      "data/normalized/wisps_18.1.json": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
-      "data/materialized/18.1/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
-      "data/materialized/18.1/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
-      "data/materialized/18.1/synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-      "public/data/wisps.json": "477c394b1c8c3a00ee2ef9e203b6cb228704dfedd2542367e4185b8f5dafe4ec",
-      "public/data/search-concepts.json": "55fc034253c9aac08e2dc012ab647256e84aeab35c669bcb6688184381c1bfc9",
-      "public/data/search-synonyms.json": "bd744050151130f9aad6d2fa145bf4010ef0f96c17fcc25d6f6c7b746d3268d4",
-      "data/reviews/18.1/search-lexicon-decisions.json": "9f67e0754df1b31085d8f9f76555fb3d26761a510401f3f62c190a0a50d8d120",
+      "data/normalized/wisps_18.1.json": "8318e2d2ce395fec9996587db8d1ffd3c48caf7c152e57b117412c1d9c0da3cb",
+      "data/materialized/18.1/wisps.json": "364f1700a9ddbc0a35a48873cfd48455c58409f7f70d77f620236f651e152215",
+      "data/materialized/18.1/search-concepts.json": "fcb4fb319d12e897e854560affa83e7d7118e7996c979d488a1a5ae4cc58684e",
+      "data/materialized/18.1/synonyms.json": "16d7364a39912dd2835e60ccc926ba03569717cccb78b5ff35e1d8c884ddcce8",
+      "public/data/wisps.json": "364f1700a9ddbc0a35a48873cfd48455c58409f7f70d77f620236f651e152215",
+      "public/data/search-concepts.json": "fcb4fb319d12e897e854560affa83e7d7118e7996c979d488a1a5ae4cc58684e",
+      "public/data/search-synonyms.json": "16d7364a39912dd2835e60ccc926ba03569717cccb78b5ff35e1d8c884ddcce8",
+      "data/reviews/18.1/search-lexicon-decisions.json": "e47f515750368c10554a1cbdf1187a2622becf27bcec1079deb39b5809aee94f",
       "rules/wisp_rules_18.1.json": "0dad9eb5c6cee6691358f8a4535302eff31c1842630105a6545f0eccf73cf43e",
       "reports/c4.2a-identity-review-packet-18.1.json": "6e0b6f55b3fbff5fec19e6761bc20cd4912b9f26052ad1e83abec14afabd8672",
       "reports/c4.2a2-priority-identity-proposals-18.1.json": "53319798d609579514314877d0fa99adb103b82e6f0683c004f13aff6cd00540",

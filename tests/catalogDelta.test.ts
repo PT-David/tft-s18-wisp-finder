@@ -41,7 +41,7 @@ describe('catalog delta reconciliation', () => {
     const report = JSON.parse((await buildCatalogDeltaReconciliation()).json);
     expect(focused.locales.en_us.records.find((row: any) => row.apiName === 'DA_BearsVisit18_Upgrade')?.name).toBe("Tiger's Visit");
     expect(focused.locales.zh_cn.records.find((row: any) => row.apiName === 'DA_BearsVisit18_Upgrade')?.name).toBe('猛虎降临');
-    expect(report.freshOnlyOrChangedRows.find((row: any) => row.nameEn === "Tiger's Visit")).toMatchObject({ nameZh: '战马降临', classification: 'missing_base_identity_candidate', baseIdentityKey: 'DA_TigersVisit18_Wisp' });
+    expect(report.freshOnlyOrChangedRows.find((row: any) => row.nameEn === "Tiger's Visit")).toMatchObject({ nameZh: '战马降临', classification: 'existing_base_identity_already_in_production', baseIdentityKey: 'DA_TigersVisit18_Wisp' });
   });
   it('asserts no current delta row has a reviewed production target', async () => {
     const report = JSON.parse((await buildCatalogDeltaReconciliation()).json);

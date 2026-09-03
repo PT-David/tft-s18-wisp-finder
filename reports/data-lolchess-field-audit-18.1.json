@@ -1,20 +1,14 @@
 {
   "sourceCount": 174,
-  "exactEnglishIdentityMatches": 164,
+  "exactEnglishIdentityMatches": 170,
   "unmatchedLolchess": [
-    "Bear's Visit",
     "Drought",
     "Golden Road",
     "Healing Pool",
-    "Marksmen's Marks",
-    "Potted Lifebloom",
-    "Potted Stonebark",
-    "Snacktime!",
-    "Tiger's Visit",
-    "Turtle's Visit"
+    "Marksmen's Marks"
   ],
   "blossom": {
-    "productionCount": 130,
+    "productionCount": 132,
     "lolchessCount": 145,
     "allAgreeAbsent": [
       {
@@ -130,6 +124,20 @@
         "lolchessHasBlossom": false
       },
       {
+        "identity": "da_pottedlifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_pottedstonebark18",
+        "nameEn": "Potted Stonebark",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
         "identity": "da_refreshinglight18",
         "nameEn": "Refreshing Light",
         "productionHasBlossom": false,
@@ -165,8 +173,22 @@
         "lolchessHasBlossom": false
       },
       {
+        "identity": "da_tigersvisit18_wisp",
+        "nameEn": "Tiger's Visit",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
         "identity": "da_trophyhunter18",
         "nameEn": "Trophy Hunter",
+        "productionHasBlossom": false,
+        "communityDragonHasDistinctUpgrade": false,
+        "lolchessHasBlossom": false
+      },
+      {
+        "identity": "da_turtlesvisit18",
+        "nameEn": "Turtle's Visit",
         "productionHasBlossom": false,
         "communityDragonHasDistinctUpgrade": false,
         "lolchessHasBlossom": false
@@ -567,6 +589,14 @@
       {
         "identity": "da_barter18",
         "nameEn": "Barter",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
+        "identity": "da_bearsvisit18",
+        "nameEn": "Bear's Visit",
         "productionHasBlossom": true,
         "communityDragonHasDistinctUpgrade": true,
         "lolchessHasBlossom": true,
@@ -1125,6 +1155,14 @@
         "semanticReviewRequired": true
       },
       {
+        "identity": "da_snacktime18",
+        "nameEn": "Snacktime!",
+        "productionHasBlossom": true,
+        "communityDragonHasDistinctUpgrade": true,
+        "lolchessHasBlossom": true,
+        "semanticReviewRequired": true
+      },
+      {
         "identity": "da_solitudescloak18",
         "nameEn": "Solitude's Cloak",
         "productionHasBlossom": true,
@@ -1299,20 +1337,14 @@
       }
     ],
     "identityUnresolved": [
-      "Bear's Visit",
       "Drought",
       "Golden Road",
       "Healing Pool",
-      "Marksmen's Marks",
-      "Potted Lifebloom",
-      "Potted Stonebark",
-      "Snacktime!",
-      "Tiger's Visit",
-      "Turtle's Visit"
+      "Marksmen's Marks"
     ]
   },
   "requirements": {
-    "productionCount": 56,
+    "productionCount": 63,
     "lolchessCount": 60,
     "presenceAgreement": [
       {
@@ -1702,6 +1734,20 @@
         "lolchessHasRequirements": false,
         "productionFacts": [],
         "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bearsvisit18",
+        "nameEn": "Bear's Visit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
         "status": "semantic_review_required"
       },
       {
@@ -2393,6 +2439,44 @@
         "status": "semantic_review_required"
       },
       {
+        "identity": "da_pottedlifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
+        "identity": "da_pottedstonebark18",
+        "nameEn": "Potted Stonebark",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
         "identity": "da_rain18",
         "nameEn": "Rain",
         "productionHasRequirements": false,
@@ -2500,6 +2584,25 @@
         "status": "semantic_review_required"
       },
       {
+        "identity": "da_snacktime18",
+        "nameEn": "Snacktime!",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
         "identity": "da_solargift18",
         "nameEn": "Solar Gift",
         "productionHasRequirements": true,
@@ -2582,6 +2685,25 @@
         "status": "semantic_review_required"
       },
       {
+        "identity": "da_tigersvisit18_wisp",
+        "nameEn": "Tiger's Visit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
         "identity": "da_trainingyard18",
         "nameEn": "Training Yard",
         "productionHasRequirements": false,
@@ -2612,6 +2734,25 @@
           }
         ],
         "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_turtlesvisit18",
+        "nameEn": "Turtle's Visit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
       },
       {
         "identity": "snapshot_021_534324382164",
@@ -3021,16 +3162,10 @@
       }
     ],
     "identityUnresolved": [
-      "Bear's Visit",
       "Drought",
       "Golden Road",
       "Healing Pool",
-      "Marksmen's Marks",
-      "Potted Lifebloom",
-      "Potted Stonebark",
-      "Snacktime!",
-      "Tiger's Visit",
-      "Turtle's Visit"
+      "Marksmen's Marks"
     ],
     "structuredComparison": [
       {
@@ -3096,6 +3231,44 @@
         "status": "structured_agreement"
       },
       {
+        "identity": "da_pottedlifebloom18",
+        "nameEn": "Potted Lifebloom",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
+        "identity": "da_pottedstonebark18",
+        "nameEn": "Potted Stonebark",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
         "identity": "da_ridethewave18",
         "nameEn": "Ride the Wave",
         "productionHasRequirements": true,
@@ -3112,6 +3285,63 @@
             "type": "gold",
             "operator": ">=",
             "value": 20
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
+        "identity": "da_snacktime18",
+        "nameEn": "Snacktime!",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
+        "identity": "da_tigersvisit18_wisp",
+        "nameEn": "Tiger's Visit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "status": "structured_agreement"
+      },
+      {
+        "identity": "da_turtlesvisit18",
+        "nameEn": "Turtle's Visit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
           }
         ],
         "status": "structured_agreement"
@@ -3416,6 +3646,20 @@
         "lolchessHasRequirements": true,
         "productionFacts": [],
         "lolchessFacts": [],
+        "status": "semantic_review_required"
+      },
+      {
+        "identity": "da_bearsvisit18",
+        "nameEn": "Bear's Visit",
+        "productionHasRequirements": true,
+        "lolchessHasRequirements": true,
+        "productionFacts": [],
+        "lolchessFacts": [
+          {
+            "type": "trait_active",
+            "value": true
+          }
+        ],
         "status": "semantic_review_required"
       },
       {
@@ -3869,8 +4113,8 @@
     ]
   },
   "stageRanges": {
-    "compared": 164,
-    "agreements": 164,
+    "compared": 170,
+    "agreements": 170,
     "mismatches": []
   }
 }

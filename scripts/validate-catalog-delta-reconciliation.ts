@@ -42,7 +42,7 @@ for (const [locale, oldRawPath] of [['en_us', 'data/raw/18.1/communitydragon-wis
   if (metadata.rawSha256 !== oldRawMetadata.rawSha256 && metadata.rawSha256 !== (locale === 'en_us' ? 'd91ba4ad7db5a6d896132ba3df8da0a2092ed13855f1a9660dbe7e12bdcd77f5' : '8f23126c271b4acfde58e566677cbfacf0421f9ff9035acb9e9f60722b49306e')) errors.push(`${locale}: unexpected raw SHA.`);
 }
 const tiger = report.freshOnlyOrChangedRows.find((row: any) => row.nameEn === "Tiger's Visit" && row.nameZh === '战马降临');
-if (tiger?.baseIdentityKey !== 'DA_TigersVisit18_Wisp' || tiger?.communityDragon.evidenceSnapshot !== focusedPath || tiger?.classification !== 'missing_base_identity_candidate') errors.push('Current Tiger bilingual production regression failed.');
+if (tiger?.baseIdentityKey !== 'DA_TigersVisit18_Wisp' || tiger?.communityDragon.evidenceSnapshot !== focusedPath || tiger?.classification !== 'existing_base_identity_already_in_production') errors.push('Current Tiger bilingual production regression failed.');
 for (const impact of report.c4PriorityImpact) if (!['supported', 'weakened', 'unresolved'].includes(impact.impact)) errors.push(`${impact.clusterId}: invalid derived impact.`);
 for (const [path, before] of Object.entries(report.artifactBoundary.before)) if (hash(await read(path)) !== before || report.artifactBoundary.after[path] !== before) errors.push(`${path}: protected artifact changed.`);
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }

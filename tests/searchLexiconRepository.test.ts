@@ -9,8 +9,8 @@ const seedDataset = JSON.parse(readFileSync('data/wisps_18.1.json', 'utf8')) as 
 describe('runtime reviewed search lexicon parsing', () => {
   it('preserves reviewed structured semantics', () => {
     const lexicon = parseRuntimeSearchLexicon(concepts, synonyms);
-    expect(lexicon).toMatchObject({ patch: '18.1', sourceGeneratorVersion: 'c2.1-v8', normalizedRecordCount: 169, assignmentCount: 289 });
-    expect(lexicon.conceptMembership).toHaveLength(169); expect(lexicon.recordAliases).toEqual([]);
+    expect(lexicon).toMatchObject({ patch: '18.1', sourceGeneratorVersion: 'c2.1-v8', normalizedRecordCount: 176, assignmentCount: 289 });
+    expect(lexicon.conceptMembership).toHaveLength(176); expect(lexicon.recordAliases).toEqual([]);
     expect(lexicon.concepts).toHaveLength(40); expect(lexicon.queryExpansionGroups).toHaveLength(10);
     expect(lexicon.queryExpansionGroups.find(group => group.groupKey === 'health_terms')?.conceptKeys).toEqual([]);
     expect(lexicon.queryExpansionGroups.find(group => group.groupKey === 'death_terms')?.conceptKeys).toEqual([]);
@@ -25,7 +25,7 @@ describe('runtime reviewed search lexicon parsing', () => {
   it('accepts the reviewed production dataset and lexicon', () => expect(() => assertRuntimeSearchCompatibility(dataset, parseRuntimeSearchLexicon(concepts, synonyms))).not.toThrow());
 
   it.each([
-    ['10-record seed versus 169-record lexicon', (data: WispDataset, _lexicon: ReturnType<typeof parseRuntimeSearchLexicon>) => { data.records = structuredClone(seedDataset.records); }],
+    ['10-record seed versus 176-record lexicon', (data: WispDataset, _lexicon: ReturnType<typeof parseRuntimeSearchLexicon>) => { data.records = structuredClone(seedDataset.records); }],
     ['Wisp identity mismatch', (_data: WispDataset, lexicon: ReturnType<typeof parseRuntimeSearchLexicon>) => { lexicon.conceptMembership[0]!.wispId = 'different_wisp'; }],
     ['concept membership mismatch', (data: WispDataset, _lexicon: ReturnType<typeof parseRuntimeSearchLexicon>) => { data.records[0]!.searchConcepts = ['champion_star_level']; }],
     ['unknown dataset concept', (data: WispDataset, _lexicon: ReturnType<typeof parseRuntimeSearchLexicon>) => { data.records[0]!.searchConcepts = ['unknown_concept']; }],
