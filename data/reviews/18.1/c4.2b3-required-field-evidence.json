@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "reviewStage": "C4.2B3",
+  "lifecycle": "frozen_supplemental_decision_time_evidence",
+  "frozenFrom": {
+    "b2FrozenPath": "data/reviews/18.1/c4.2b2-field-evidence.json",
+    "b2FrozenSha256": "31ad49f089ed49f4b639d49945b6603cb5e38c3835bb940de5943470b7eef86b",
+    "b2FrozenBundleSha256": "a9a6999980be678d272b7af855864ab1f1e055014fcce8e547fc0acb7dc8f9f4",
+    "b2OverlayPath": "data/reviews/18.1/c4.2b-field-decisions.json",
+    "b2OverlaySha256": "c12f54bb555104e0f93abc1bdef6a6b18e966fc1a5d0623cc9e44a9e0f7e6f89",
+    "productionRecordCount": 169
+  },
+  "acquisition": {
+    "scope": "six_required_blockers_only",
+    "committedSnapshotsFirst": true,
+    "freshAcquisitionAttempt": "unavailable; no live observation admitted without a committed snapshot",
+    "newSources": 0
+  },
+  "reviewTargets": [
+    {
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "nameEn": "Tiger's Visit",
+      "nameZh": "战马降临",
+      "field": "requirements",
+      "b2ReviewId": "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d",
+      "b2DecisionId": "C4B2-0010",
+      "b2Disposition": "unresolved",
+      "evidence": [
+        {
+          "evidenceId": "B3-DA_TigersVisit18_Wisp-requirements-1",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "tier": "C",
+          "confidence": "verified_third_party",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "sourceLocaleCoverage": "en",
+          "valueLocale": "en",
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "pageUpdatedAt": "August 28, 2026",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "field": "requirements",
+          "rawValue": "Primal trait active",
+          "normalizedInterpretation": "Primal trait active",
+          "comparisonValue": "Primal trait active",
+          "proposedProductionValue": [
+            {
+              "type": "source_text",
+              "textEn": "Primal trait active",
+              "machineEvaluable": false
+            }
+          ],
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d:E01"
+        }
+      ],
+      "acquisitionAssessment": "Only credible English requirement evidence is committed; it lacks the additional not-already-chosen condition and production-required Chinese text, so no translation or completion is invented."
+    },
+    {
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "nameEn": "Tiger's Visit",
+      "nameZh": "战马降临",
+      "field": "category",
+      "b2ReviewId": "C42B1-1e29d926b4d5cb16-edb2cd3b74c999af-edb2cd3b74c999af",
+      "b2DecisionId": "C4B2-0021",
+      "b2Disposition": "unresolved",
+      "evidence": [],
+      "acquisitionAssessment": "Committed targeted snapshots contain no field-specific category evidence for this exact base identity; current public observations were not promoted without a committed snapshot."
+    },
+    {
+      "communityDragonId": "DA_PottedLifebloom18",
+      "nameEn": "Potted Lifebloom",
+      "nameZh": "盆栽生命花",
+      "field": "cost",
+      "b2ReviewId": "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "b2DecisionId": "C4B2-0036",
+      "b2Disposition": "unresolved",
+      "evidence": [
+        {
+          "evidenceId": "B3-DA_PottedLifebloom18-cost-1",
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "tier": "D",
+          "confidence": "community_high_confidence",
+          "useFor": [
+            "identity_review",
+            "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
+            "field_conflict_detection"
+          ],
+          "sourceLocaleCoverage": "multi",
+          "valueLocale": "en_us",
+          "retrievedAt": "2026-09-02T05:26:21Z",
+          "pageUpdatedAt": "2026/09/01 03:18",
+          "sourceArtifact": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "field": "cost",
+          "rawValue": 2,
+          "normalizedInterpretation": 2,
+          "comparisonValue": 2,
+          "proposedProductionValue": 2,
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01"
+        },
+        {
+          "evidenceId": "B3-DA_PottedLifebloom18-cost-2",
+          "sourceId": "opgg_set18_wisps_20260902",
+          "tier": "C",
+          "confidence": "community_high_confidence",
+          "useFor": [
+            "identity_review",
+            "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
+            "field_conflict_detection"
+          ],
+          "sourceLocaleCoverage": "zh_cn",
+          "valueLocale": "zh_cn",
+          "retrievedAt": "2026-09-02T05:27:39Z",
+          "pageUpdatedAt": "unknown",
+          "sourceArtifact": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "field": "cost",
+          "rawValue": 3,
+          "normalizedInterpretation": 3,
+          "comparisonValue": 3,
+          "proposedProductionValue": 3,
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02"
+        },
+        {
+          "evidenceId": "B3-DA_PottedLifebloom18-cost-3",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "tier": "C",
+          "confidence": "verified_third_party",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "sourceLocaleCoverage": "en",
+          "valueLocale": "en",
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "pageUpdatedAt": "August 28, 2026",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "field": "cost",
+          "rawValue": 2,
+          "normalizedInterpretation": 2,
+          "comparisonValue": 2,
+          "proposedProductionValue": 2,
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-3149d885ad5877c3-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+        }
+      ],
+      "acquisitionAssessment": "Exact bilingual base record in the freshest timestamped committed snapshot reports 2; the independently parsed current LoLCHESS base record also reports 2. OP.GG reports 3 but has no upstream timestamp, so it may be stale; this is a freshness and exact-identity adjudication, not vote counting."
+    },
+    {
+      "communityDragonId": "DA_BearsVisit18",
+      "nameEn": "Bear's Visit",
+      "nameZh": "蛮熊降临",
+      "field": "requirements",
+      "b2ReviewId": "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d",
+      "b2DecisionId": "C4B2-0055",
+      "b2Disposition": "unresolved",
+      "evidence": [
+        {
+          "evidenceId": "B3-DA_BearsVisit18-requirements-1",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "tier": "C",
+          "confidence": "verified_third_party",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "sourceLocaleCoverage": "en",
+          "valueLocale": "en",
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "pageUpdatedAt": "August 28, 2026",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "field": "requirements",
+          "rawValue": "Primal trait active",
+          "normalizedInterpretation": "Primal trait active",
+          "comparisonValue": "Primal trait active",
+          "proposedProductionValue": [
+            {
+              "type": "source_text",
+              "textEn": "Primal trait active",
+              "machineEvaluable": false
+            }
+          ],
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d:E01"
+        }
+      ],
+      "acquisitionAssessment": "Only credible English requirement evidence is committed; it lacks the additional not-already-chosen condition and production-required Chinese text, so no translation or completion is invented."
+    },
+    {
+      "communityDragonId": "DA_BearsVisit18",
+      "nameEn": "Bear's Visit",
+      "nameZh": "蛮熊降临",
+      "field": "category",
+      "b2ReviewId": "C42B1-61adda104b1b8139-edb2cd3b74c999af-edb2cd3b74c999af",
+      "b2DecisionId": "C4B2-0066",
+      "b2Disposition": "unresolved",
+      "evidence": [],
+      "acquisitionAssessment": "Committed targeted snapshots contain no field-specific category evidence for this exact base identity; current public observations were not promoted without a committed snapshot."
+    },
+    {
+      "communityDragonId": "DA_Snacktime18",
+      "nameEn": "Snacktime!",
+      "nameZh": "点心时间到！",
+      "field": "cost",
+      "b2ReviewId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "b2DecisionId": "C4B2-0141",
+      "b2Disposition": "unresolved",
+      "evidence": [
+        {
+          "evidenceId": "B3-DA_Snacktime18-cost-1",
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "tier": "D",
+          "confidence": "community_high_confidence",
+          "useFor": [
+            "identity_review",
+            "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
+            "field_conflict_detection"
+          ],
+          "sourceLocaleCoverage": "multi",
+          "valueLocale": "en_us",
+          "retrievedAt": "2026-09-02T05:26:21Z",
+          "pageUpdatedAt": "2026/09/01 03:18",
+          "sourceArtifact": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "field": "cost",
+          "rawValue": 3,
+          "normalizedInterpretation": 3,
+          "comparisonValue": 3,
+          "proposedProductionValue": 3,
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01"
+        },
+        {
+          "evidenceId": "B3-DA_Snacktime18-cost-2",
+          "sourceId": "opgg_set18_wisps_20260902",
+          "tier": "C",
+          "confidence": "community_high_confidence",
+          "useFor": [
+            "identity_review",
+            "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
+            "field_conflict_detection"
+          ],
+          "sourceLocaleCoverage": "zh_cn",
+          "valueLocale": "zh_cn",
+          "retrievedAt": "2026-09-02T05:27:39Z",
+          "pageUpdatedAt": "unknown",
+          "sourceArtifact": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "field": "cost",
+          "rawValue": 4,
+          "normalizedInterpretation": 4,
+          "comparisonValue": 4,
+          "proposedProductionValue": 4,
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02"
+        },
+        {
+          "evidenceId": "B3-DA_Snacktime18-cost-3",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "tier": "C",
+          "confidence": "verified_third_party",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "sourceLocaleCoverage": "en",
+          "valueLocale": "en",
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "pageUpdatedAt": "August 28, 2026",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "field": "cost",
+          "rawValue": 2,
+          "normalizedInterpretation": 2,
+          "comparisonValue": 2,
+          "proposedProductionValue": 2,
+          "supports": [],
+          "conflictsWith": [],
+          "originB2EvidenceId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03"
+        }
+      ],
+      "acquisitionAssessment": "Committed sources remain split (3, 4, and 2), while the structured client snapshot exposes effect variables but no offer/shop cost. No source establishes a stronger live/PBE or variant explanation."
+    }
+  ],
+  "sourceCatalogBinding": {
+    "authority": "B2 frozen decisionTimeSourceManifest",
+    "b2DecisionTimeSourceManifestSha256": "a5df5fa1fda8d5376988926fa006b1b1e0628af2586c57c17ff24b26e5a3dec2",
+    "newSources": 0
+  },
+  "bundleSha256": "fbf1cf8244cb25525a89e35160fbbbaa2cee56847b46e03d4591b08a58ddde93"
+}
