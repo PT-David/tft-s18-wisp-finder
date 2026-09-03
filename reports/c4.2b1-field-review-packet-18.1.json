@@ -77,7 +77,7 @@
       },
       {
         "path": "data/source_manifest_18.1.json",
-        "sha256": "388a0f15795263a043dacae8ddfcab0c1e2b2346f36f84bc52ed73287986a14a"
+        "sha256": "5e8debea39f67f53fd89463e005d9e4131274d93131b81c7f65afbf97972ee02"
       },
       {
         "path": "reports/c4.2a3-catalog-delta-reconciliation-18.1.json",
@@ -3018,6 +3018,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -3142,6 +3146,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3212,6 +3218,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3241,6 +3249,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3271,6 +3283,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -3374,6 +3390,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3442,6 +3460,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3642,6 +3664,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3664,6 +3690,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -3743,6 +3773,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3858,6 +3890,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -3880,6 +3916,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -3957,6 +3997,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -8507,6 +8549,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -8621,6 +8667,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -8691,6 +8739,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -8720,6 +8770,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -8750,6 +8804,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -8843,6 +8901,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -8911,6 +8971,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -9065,6 +9129,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -9087,6 +9155,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -9164,6 +9236,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -9279,6 +9353,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -9301,6 +9379,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -11090,6 +11172,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -11214,6 +11300,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11284,6 +11372,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11313,6 +11403,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11343,6 +11437,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -11446,6 +11544,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11514,6 +11614,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11714,6 +11818,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11736,6 +11844,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -11815,6 +11927,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11930,6 +12044,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -11952,6 +12070,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -12029,6 +12151,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14235,6 +14359,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -14359,6 +14487,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14429,6 +14559,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14456,6 +14588,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14478,6 +14614,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -14560,6 +14700,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14628,6 +14770,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14828,6 +14974,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -14850,6 +15000,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -14931,6 +15085,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15046,6 +15202,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15068,6 +15228,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -15155,6 +15319,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15208,6 +15374,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -15332,6 +15502,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15402,6 +15574,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15431,6 +15605,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15461,6 +15639,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -15564,6 +15746,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15632,6 +15816,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15832,6 +16020,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -15854,6 +16046,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -15933,6 +16129,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -16048,6 +16246,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -16070,6 +16272,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -16147,6 +16353,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",

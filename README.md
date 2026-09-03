@@ -86,3 +86,7 @@ decision overlay 正式裁决为 1 项 same identity 和 7 项 missing base iden
 `npm run validate:c4.2a-identity-decisions` 校验 manual overlay 与 frozen evidence 的绑定、完整覆盖、
 current apply fulfillment 及 identity governance；运行
 `npm run data:c4.2a-identity-decision-report:18.1` 只从 manual overlay 确定性派生 Markdown 报告。
+
+**C4.2B2 formal field decision review is in progress.** B1 继续作为可重新生成的 current evidence
+packet；B2 decision-time evidence 已冻结，manual field decision overlay 不由 generator 覆盖。Production
+apply 仍等待 C4.2C，本阶段没有新增或修改 production record。
