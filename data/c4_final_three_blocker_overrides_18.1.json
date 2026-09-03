@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "patch": "18.1",
+  "purpose": "Manual final overrides for only the three unresolved C4.2B blockers",
+  "policy": "user_approved_manual_override",
+  "overrides": [
+    {
+      "riotId": "DA_BearsVisit18",
+      "field": "category",
+      "value": "combat",
+      "reason": "Current Set 18 sources identify Bear's Visit as Combat."
+    },
+    {
+      "riotId": "DA_BearsVisit18",
+      "field": "requirements",
+      "value": [
+        {
+          "type": "source_text",
+          "textZh": "已激活【野兽之灵】羁绊，且尚未选择【蛮熊】",
+          "textEn": "Primal active; Bear not already chosen",
+          "machineEvaluable": false
+        }
+      ],
+      "reason": "English appearance rule is directly supported; Chinese text is a user-accepted faithful localization for production display."
+    },
+    {
+      "riotId": "DA_Snacktime18",
+      "field": "cost",
+      "value": 3,
+      "reason": "User-approved adjudication for TFT PC Set 18. DataTFT/current community sources support 3; OP.GG remains conflicting and is not treated as authoritative for this field."
+    }
+  ],
+  "nonOverrides": {
+    "note": "Do not override any other fields. Tiger and all non-blocker Bear/Snacktime fields must come from the existing effective C4.2B2+B3+B4 decisions."
+  }
+}
