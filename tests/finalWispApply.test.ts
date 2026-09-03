@@ -34,6 +34,8 @@ describe('final Set 18 data Apply', () => {
     expect(mutate((value) => value.overrides.push(structuredClone(value.overrides[0])))).toThrow(/Duplicate/);
     expect(mutate((value) => value.overrides[0].riotId = 'unknown')).toThrow(/not allowed/);
     expect(mutate((value) => value.overrides[2].value = 4)).toThrow(/unexpected value/);
+    expect(mutate((value) => value.overrides[1].value[0].textZh = '错误条件')).toThrow(/unexpected value/);
+    expect(mutate((value) => value.overrides[1].value[0].textEn = 'Wrong requirement')).toThrow(/unexpected value/);
   });
 
   it('finds every addition by Chinese name, English name, and effect text', () => {
