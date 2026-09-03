@@ -93,6 +93,28 @@ describe('C4.2B2 decision governance', () => {
     }
   });
 
+  it('derives id from riotId, patch from Riot, and Knowledge unknowns from review governance', () => {
+    const memorial = buildNewRecordPlan(frozen, overlay, 'DA_MemorialDummy18')!;
+    expect(memorial.sources.id).toEqual(memorial.sources.riotId);
+    expect(memorial.sources.id).not.toEqual(memorial.sources.stageRanges);
+    expect(memorial.sources.patch).toEqual(expect.objectContaining({ sourceId: 'riot_patch_18_1_20260828', confidence: 'official' }));
+    expect(memorial.sources.patch).not.toEqual(memorial.sources.stageRanges);
+    expect(memorial.sources.oncePerGame).toEqual(expect.objectContaining({ provenanceKind: 'review_governance', disposition: 'accepted_unknown' }));
+    expect(memorial.sources.reofferCooldownShops).toEqual(expect.objectContaining({ provenanceKind: 'review_governance', disposition: 'accepted_unknown' }));
+    expect(memorial.sources.oncePerGame.sourceId).toBeUndefined();
+  });
+
+  it('uses field-specific source hierarchy and only then a deterministic tie-break', () => {
+    const evidence = (evidenceId: string, sourceId: string, tier: string, value: unknown, useFor: string[], locale = 'en') => ({ evidenceId, sourceId, tier, confidence: tier === 'A' ? 'official' : tier === 'B' ? 'client_data' : tier === 'C' ? 'verified_third_party' : 'community_high_confidence', retrievedAt: '2026-09-02', sourceLocaleCoverage: locale, valueLocale: locale, useFor, proposedProductionValue: value });
+    const select = (field: string, value: unknown, rows: any[]) => deriveDecisionProvenance({ field, proposedProductionValue: value, evidence: rows }, { action: 'approve_proposal', evidenceRefs: rows.map((row) => row.evidenceId) });
+    expect(select('nameEn', 'Name', [evidence('d', 'display', 'D', 'Name', ['display_name_cross_check']), evidence('a', 'official', 'A', 'Name', ['display_name_cross_check'])])?.sourceId).toBe('official');
+    expect(select('nameEn', 'Name', [evidence('c', 'tier-c', 'C', 'Name', ['display_name_cross_check']), evidence('b', 'client', 'B', 'Name', ['display_name_cross_check'])])?.sourceId).toBe('client');
+    const stages = [{ start: { stage: 3, round: 1 }, end: { stage: 4, round: 7 } }];
+    expect(select('stageRanges', stages, [evidence('d', 'datatft', 'D', stages, ['stageRanges']), evidence('c', 'lolchess', 'C', stages, ['stageRanges_cross_check'])])?.sourceId).toBe('lolchess');
+    expect(select('stageRanges', stages, [evidence('z', 'z-source', 'C', stages, ['stageRanges_cross_check']), evidence('a', 'a-source', 'C', stages, ['stageRanges_cross_check'])])?.sourceId).toBe('a-source');
+    expect(select('stageRanges', stages, [evidence('higher', 'other-truth', 'A', [], ['stageRanges']), evidence('approved', 'approved-truth', 'C', stages, ['stageRanges_cross_check'])])?.sourceId).toBe('approved-truth');
+  });
+
   it('compares nested approved fields without permitting sibling mutation', () => {
     const item = { reviewId: 'normal', field: 'effects.normal', proposedProductionValue: 'new', identity: { productionId: 'one' }, evidence: [{ evidenceId: 'normal:E1', sourceId: 'source', retrievedAt: '2026-09-02T00:00:00Z', confidence: 'client_data', proposedProductionValue: 'new' }] };
     const decision = { reviewId: 'normal', action: 'approve_proposal', approvedValue: 'new', identity: { productionId: 'one' }, field: 'effects.normal', evidenceRefs: ['normal:E1'] };

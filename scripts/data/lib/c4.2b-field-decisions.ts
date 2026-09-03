@@ -35,21 +35,43 @@ function citedEvidence(item: Json, decision: Json) {
   return (item.evidence ?? []).filter((evidence: Json) => cited.has(evidence.evidenceId));
 }
 
-const confidenceRank: Record<string, Record<string, number>> = {
-  localized: { client_data: 0, community_high_confidence: 1, verified_third_party: 2, official: 3, unverified: 4 },
-  structured: { community_high_confidence: 0, verified_third_party: 1, client_data: 2, official: 3, unverified: 4 },
+const fieldUses: Record<string, string[]> = {
+  riotId: ['riotId', 'identity_review', 'identity_cross_check'],
+  nameEn: ['nameEn', 'display_name_cross_check', 'identity_review', 'identity_cross_check'],
+  nameZh: ['nameZh', 'display_name_cross_check', 'identity_review'],
+  category: ['category', 'field_conflict_detection'],
+  cost: ['cost', 'cost_cross_check', 'field_conflict_detection'],
+  stageRanges: ['stageRanges', 'stageRanges_cross_check', 'field_conflict_detection'],
+  requirements: ['requirements', 'requirements_cross_check', 'field_conflict_detection'],
+  'effects.normal': ['effectsZh', 'effect_cross_check', 'field_conflict_detection'],
+  'effects.blossom': ['effectsZh', 'blossom_cross_check', 'effect_cross_check', 'field_conflict_detection'],
+  'effects.prismatic': ['effectsZh', 'prismatic_cross_check', 'effect_cross_check', 'field_conflict_detection'],
+};
+const localizedFields = new Set(['riotId', 'nameEn', 'nameZh', 'effects.normal', 'effects.blossom', 'effects.prismatic']);
+const tierRank: Record<string, Record<string, number>> = {
+  localized: { A: 0, B: 1, C: 2, D: 3, E: 4 },
+  structured: { A: 0, C: 1, B: 2, D: 3, E: 4 },
 };
 
-function provenanceClass(field: string) {
-  return ['riotId', 'nameEn', 'nameZh', 'effects.normal', 'effects.blossom', 'effects.prismatic'].includes(field) ? 'localized' : 'structured';
+function localeAdmissible(field: string, evidence: Json) {
+  if (field === 'nameEn') return ['en', 'en_us'].includes(evidence.valueLocale);
+  if (field === 'nameZh') return evidence.valueLocale === 'zh_cn';
+  if (field.startsWith('effects.')) return ['en', 'en_us', 'zh_cn'].includes(evidence.valueLocale);
+  return true;
+}
+
+function fieldApplicable(field: string, evidence: Json) {
+  return (fieldUses[field] ?? []).some((use) => (evidence.useFor ?? []).includes(use)) && localeAdmissible(field, evidence);
 }
 
 export function deriveDecisionProvenance(item: Json, decision: Json): Json | undefined {
   const value = approvedValue(decision, item);
-  const supporting = citedEvidence(item, decision).filter((evidence: Json) => supportingEvidence(evidence, value));
-  const rank = confidenceRank[provenanceClass(item.field)]!;
+  const supporting = citedEvidence(item, decision).filter((evidence: Json) => supportingEvidence(evidence, value) && fieldApplicable(item.field, evidence));
+  const rank = tierRank[localizedFields.has(item.field) ? 'localized' : 'structured']!;
   const candidates = supporting.filter((evidence: Json) => evidence.sourceId && evidence.retrievedAt && evidence.confidence)
-    .sort((left: Json, right: Json) => (rank[left.confidence] ?? 99) - (rank[right.confidence] ?? 99) || left.sourceId.localeCompare(right.sourceId, 'en'));
+    .sort((left: Json, right: Json) => (rank[left.tier] ?? 99) - (rank[right.tier] ?? 99)
+      || Number(left.sourceLocaleCoverage === 'multi') - Number(right.sourceLocaleCoverage === 'multi')
+      || left.sourceId.localeCompare(right.sourceId, 'en'));
   if (!candidates.length) return undefined;
   const selected = candidates[0]!;
   return { sourceId: selected.sourceId, verifiedAt: selected.retrievedAt, confidence: selected.confidence };
@@ -82,6 +104,12 @@ export function validateDecisions(frozen: Json, overlay: Json, currentProduction
   const calculatedFrozenSha = sha256(stableJson({ ...frozen, bundleSha256: undefined }));
   if (overlay.evidenceBinding?.frozenEvidenceSha256 !== frozen.bundleSha256) errors.push('manual decisions do not bind frozen evidence SHA');
   if (frozen.bundleSha256 !== calculatedFrozenSha) errors.push('frozen evidence self fingerprint mismatch');
+  const patchSource = overlay.provenancePolicy?.patchSource;
+  const sourceCatalog = new Map<string, Json>((overlay.provenancePolicy?.decisionTimeSources ?? []).map((entry: Json) => [entry.source.sourceId, entry]));
+  if (overlay.provenancePolicy?.sourceManifestSha256 !== frozen.frozenFrom.sourceManifestSha256) errors.push('provenance policy is not bound to decision-time source manifest');
+  if (!patchSource || patchSource.sourceId !== 'riot_patch_18_1_20260828' || patchSource.tier !== 'A' || patchSource.confidence !== 'official' || !(patchSource.useFor ?? []).includes('patch_status')) errors.push('invalid official patch provenance policy');
+  else if (overlay.provenancePolicy.patchSourceEntrySha256 !== sha256(stableJson(patchSource))) errors.push('patch provenance entry fingerprint mismatch');
+  for (const entry of sourceCatalog.values()) if (entry.entrySha256 !== sha256(stableJson(entry.source))) errors.push(`decision-time source fingerprint mismatch ${entry.source.sourceId}`);
   const units = new Map<string, Json>(frozen.reviewItems.map((item: Json) => [item.reviewId, item]));
   const seen = new Set<string>();
   for (const decision of overlay.decisions ?? []) {
@@ -103,6 +131,11 @@ export function validateDecisions(frozen: Json, overlay: Json, currentProduction
       if (!citedEvidence(item, decision).some((evidence: Json) => supportingEvidence(evidence, value))) errors.push(`${decision.reviewId}: cited evidence does not support approved value`);
       errors.push(...validateProductionFieldValue(item.field, value).map((error) => `${decision.reviewId}: ${error}`));
       if (!deriveDecisionProvenance(item, decision)) errors.push(`${decision.reviewId}: approved value lacks deterministic provenance`);
+      for (const evidence of citedEvidence(item, decision).filter((candidate: Json) => supportingEvidence(candidate, value))) {
+        const catalog = sourceCatalog.get(evidence.sourceId)?.source;
+        if (!catalog) errors.push(`${decision.reviewId}: source absent from decision-time manifest lineage ${evidence.sourceId}`);
+        else if (catalog.tier !== evidence.tier || catalog.confidence !== evidence.confidence || !same(catalog.useFor, evidence.useFor) || !same(catalog.locale, evidence.sourceLocaleCoverage)) errors.push(`${decision.reviewId}: frozen evidence metadata drifts from decision-time source ${evidence.sourceId}`);
+      }
       if (decision.applyPolicy !== 'apply') errors.push(`${decision.reviewId}: approval must apply`);
       for (const proposition of decision.adjudicatedPropositions ?? []) {
         if (!proposition.evidenceRefs?.length) errors.push(`${decision.reviewId}: adjudicated proposition must cite evidence`);
@@ -120,6 +153,10 @@ export function validateDecisions(frozen: Json, overlay: Json, currentProduction
 
 function expectedUnknown(field: string) {
   return KNOWLEDGE_FIELDS.has(field) ? { status: 'unknown' } : undefined;
+}
+
+function knowledgeGovernanceProvenance(frozen: Json, decision: Json) {
+  return { provenanceKind: 'review_governance', reviewStage: 'C4.2B2', decisionId: decision.decisionId, disposition: 'accepted_unknown', frozenEvidenceSha256: frozen.bundleSha256 };
 }
 
 export function buildNewRecordPlan(frozen: Json, overlay: Json, communityDragonId: string): Json | undefined {
@@ -143,12 +180,20 @@ export function buildNewRecordPlan(frozen: Json, overlay: Json, communityDragonI
       if (parts.length === 1) record[field] = value; else record[parts[0]!]![parts[1]!] = value;
     }
   }
-  const fallback = selected.get('stageRanges')!;
   const sources: Json = {};
   for (const field of SOURCE_FIELDS) {
-    const truthField = field === 'id' || field === 'patch' || KNOWLEDGE_FIELDS.has(field) ? 'stageRanges' : field === 'effects' ? 'effects.normal' : field;
-    const pair = selected.get(truthField) ?? fallback;
-    sources[field] = deriveDecisionProvenance(pair.unit, pair.decision);
+    if (field === 'id') sources.id = deriveDecisionProvenance(selected.get('riotId')!.unit, selected.get('riotId')!.decision);
+    else if (field === 'patch') {
+      const { sourceId, retrievedAt: verifiedAt, confidence } = overlay.provenancePolicy.patchSource;
+      sources.patch = { sourceId, verifiedAt, confidence };
+    } else if (KNOWLEDGE_FIELDS.has(field)) {
+      const unit = units.find((candidate: Json) => candidate.field === field)!;
+      sources[field] = knowledgeGovernanceProvenance(frozen, decisions.get(unit.reviewId)!);
+    } else {
+      const pairField = field === 'effects' ? 'effects.normal' : field;
+      const pair = selected.get(pairField)!;
+      sources[field] = deriveDecisionProvenance(pair.unit, pair.decision);
+    }
   }
   if (record.minimumAffordableGold !== undefined) {
     const unit = units.find((candidate: Json) => candidate.field === 'minimumAffordableGold')!;

@@ -35,6 +35,8 @@ ${['approve_proposal','approve_explicit_value','retain_current','accepted_unknow
 - Validation checks admissibility, binding, shapes, coverage, and lifecycle rather than hard-coding field answers or queue counts.
 - New-record creation is limited to READY identities and must exactly match every approved required field, deterministic scaffolding, and evidence-derived provenance.
 - Accepted unknown Knowledge fields materialize as \`{ "status": "unknown" }\`; unknown variants and \`minimumAffordableGold\` remain omitted.
+- New-record \`id\` provenance inherits the approved \`riotId\` lineage because the ID is deterministically derived; \`patch\` uses the frozen-manifest Riot 18.1 source.
+- Accepted-unknown Knowledge provenance is an explicit B2 review-governance binding, not an unrelated upstream field source.
 - Production remains at ${frozen.frozenFrom.productionRecordCount} records with zero C4.2A/C4.2B decisions applied.
 `}
 if(process.argv[1]===import.meta.filename){const f=await load('data/reviews/18.1/c4.2b2-field-evidence.json'),d=await load('data/reviews/18.1/c4.2b-field-decisions.json');await writeFile(resolve(root,'reports/c4.2b2-field-decisions-18.1.md'),renderDecisionReport(f,d));console.log('Generated C4.2B2 decision report.');}

@@ -11,6 +11,8 @@ const comparableValue = (value: unknown): value is string | number | boolean =>
   typeof value === 'string' || typeof value === 'boolean' || (typeof value === 'number' && Number.isFinite(value));
 const knowledge = (value: unknown): value is Record<string, unknown> => object(value) &&
   (value.status === 'unknown' || (value.status === 'confirmed' && Object.hasOwn(value, 'value')));
+const upstreamProvenance = (value: unknown): value is Record<string, unknown> => object(value) && text(value.sourceId) && text(value.verifiedAt) && typeof value.confidence === 'string' && CONFIDENCES.includes(value.confidence as never);
+const reviewedUnknownProvenance = (value: unknown): value is Record<string, unknown> => object(value) && value.provenanceKind === 'review_governance' && value.reviewStage === 'C4.2B2' && text(value.decisionId) && value.disposition === 'accepted_unknown' && text(value.frozenEvidenceSha256);
 
 export function validateRequirement(requirement: unknown, path: string): string[] {
   if (!object(requirement)) return [`${path}: 必须是对象`];
@@ -102,8 +104,12 @@ export function validateDataset(input: unknown): string[] {
       const sources = record.sources;
       sourceFields.forEach((field) => {
         const source = sources[field];
-        if (!object(source) || !text(source.sourceId) || !text(source.verifiedAt) || typeof source.confidence !== 'string' || !CONFIDENCES.includes(source.confidence as never)) errors.push(`${path}.sources.${field}: 缺失或非法来源元数据`);
+        if (!upstreamProvenance(source)) errors.push(`${path}.sources.${field}: 缺失或非法来源元数据`);
       });
+      for (const field of ['oncePerGame', 'reofferCooldownShops'] as const) if (sources[field] !== undefined) {
+        const knowledgeUnknown = knowledge(record[field]) && record[field].status === 'unknown';
+        if (!upstreamProvenance(sources[field]) && !(knowledgeUnknown && reviewedUnknownProvenance(sources[field]))) errors.push(`${path}.sources.${field}: 缺失或非法来源元数据`);
+      }
     }
   });
   return errors;
