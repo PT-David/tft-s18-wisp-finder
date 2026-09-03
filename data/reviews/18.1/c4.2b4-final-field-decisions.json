@@ -70,14 +70,14 @@
       "reason": "The fresh structured OP.GG row still reports cost 4 and a 10% effect, conflicting with DataTFT 3, LoLCHESS 2, and the client-current 15% effect context. LeagueOfGraphs could not be committed, timestamps do not establish a live/PBE explanation, and effect agreement cannot prove shop cost; no vote is taken."
     }
   ],
-  "decisionSha256": "d2da29dd83f51cf3be4a9199c4b08a974bff90f5c69209d58eae55608c658c69",
   "evidenceBinding": {
-    "frozenEvidenceSha256": "49d45daea140419b451fc86328f5bc0c52781d61d86f84c59d6bbed1c254a02c",
+    "frozenEvidenceSha256": "e4e6a92223b7f4a82cd6d7258ffec0b882ab797f1838ac8b9573dcd5a37149c3",
     "path": "data/reviews/18.1/c4.2b4-final-field-evidence.json"
   },
   "lifecycle": "manual_final_supplemental_amendments",
   "patch": "18.1",
   "precedence": "B4 replaces only the five still-unresolved effective B3 targets; every other effective B2+B3 decision remains unchanged.",
   "reviewStage": "C4.2B4",
-  "schemaVersion": 1
+  "schemaVersion": 1,
+  "decisionSha256": "48ea45302c6f44a7fd84dfe986b8cb218cff5c8e01b7ec6837b2a197c3a0b451"
 }

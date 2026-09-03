@@ -4,7 +4,7 @@
     "newSources": 1,
     "scope": "five_final_blockers_only"
   },
-  "bundleSha256": "49d45daea140419b451fc86328f5bc0c52781d61d86f84c59d6bbed1c254a02c",
+  "bundleSha256": "e4e6a92223b7f4a82cd6d7258ffec0b882ab797f1838ac8b9573dcd5a37149c3",
   "decisionTimeSourceCatalog": {
     "frozenAt": "2026-09-03T11:27:39Z",
     "sources": [
@@ -114,6 +114,8 @@
             }
           ],
           "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+          "parsedField": "condition",
+          "parsedRecordKey": "TigersVisit",
           "proposedProductionValue": [
             {
               "machineEvaluable": false,
@@ -128,7 +130,6 @@
           "sourceLocaleCoverage": "zh_cn",
           "supports": [],
           "tier": "C",
-          "upstreamModifiedAt": "unknown",
           "useFor": [
             "category",
             "category_cross_check",
@@ -158,6 +159,8 @@
           "field": "category",
           "normalizedInterpretation": "combat",
           "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+          "parsedField": "category",
+          "parsedRecordKey": "TigersVisit",
           "proposedProductionValue": "combat",
           "rawValue": {
             "category": "Combat",
@@ -169,7 +172,6 @@
           "sourceLocaleCoverage": "zh_cn",
           "supports": [],
           "tier": "C",
-          "upstreamModifiedAt": "unknown",
           "useFor": [
             "category",
             "category_cross_check",
@@ -346,6 +348,8 @@
           "field": "cost",
           "normalizedInterpretation": 4,
           "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+          "parsedField": "cost",
+          "parsedRecordKey": "Snacktime",
           "proposedProductionValue": 4,
           "rawValue": 4,
           "retrievedAt": "2026-09-03T11:27:39Z",
@@ -354,7 +358,6 @@
           "sourceLocaleCoverage": "zh_cn",
           "supports": [],
           "tier": "C",
-          "upstreamModifiedAt": "unknown",
           "useFor": [
             "category",
             "category_cross_check",
@@ -373,6 +376,8 @@
   ],
   "schemaVersion": 1,
   "sourceCatalogBinding": {
+    "canonicalManifestPath": "data/source_manifest_18.1.json",
+    "canonicalManifestSha256": "5d577597e8528b2ddd3dea1d93ac2e0c1860231c836881191187ed200aa97658",
     "catalogSha256": "9d94a438d67f26d7ec722d2b736c31535e3f93edc28252ad3fef378097e31382"
   }
 }
