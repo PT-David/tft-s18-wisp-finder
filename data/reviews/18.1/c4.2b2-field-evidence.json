@@ -5,13 +5,13 @@
   "lifecycle": "frozen_decision_time_evidence",
   "frozenFrom": {
     "b1PacketPath": "reports/c4.2b1-field-review-packet-18.1.json",
-    "b1PacketSha256": "a472c6935616ee5fc1de53a7288699c88c1f4a7f46b8ce9377aebff524f53037",
+    "b1PacketSha256": "319b765a1658731a9b5f9957899b0953f88d3c7441a3fa545ec99ef490b772a5",
     "productionSha256": "a7fdf375bc36f0f164a36912af4ca22c1671ede0ba94ae3e8ce3c8bbdee9abe7",
     "productionRecordCount": 169,
     "identityDecisionsSha256": "82b17cf258aa90d7994b10d962b56034d76e4ce801842ce383cb04c3c0bde356",
     "identityEvidenceSha256": "e28f9f4dbc5388a346adaf078f25ce4cf4efabd3505d6927558919fa6a5187c9",
     "reviewedMappingsSha256": "4e937a761bc5c471e9dbc8625527c60f23fffdfab7d93ea1ba2a400d041c37ad",
-    "sourceManifestSha256": "388a0f15795263a043dacae8ddfcab0c1e2b2346f36f84bc52ed73287986a14a",
+    "sourceManifestSha256": "5e8debea39f67f53fd89463e005d9e4131274d93131b81c7f65afbf97972ee02",
     "reliedOnArtifacts": [
       {
         "path": "data/normalized/wisps_18.1.json",
@@ -63,7 +63,7 @@
       },
       {
         "path": "data/source_manifest_18.1.json",
-        "sha256": "388a0f15795263a043dacae8ddfcab0c1e2b2346f36f84bc52ed73287986a14a"
+        "sha256": "5e8debea39f67f53fd89463e005d9e4131274d93131b81c7f65afbf97972ee02"
       },
       {
         "path": "reports/c4.2a3-catalog-delta-reconciliation-18.1.json",
@@ -87,6 +87,303 @@
       }
     ]
   },
+  "decisionTimeSourceManifest": {
+    "patch": "18.1",
+    "snapshotAt": "2026-09-02T11:16:11Z",
+    "sources": [
+      {
+        "sourceId": "riot_patch_18_1_20260828",
+        "tier": "A",
+        "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
+        "retrievedAt": "2026-08-28T16:57:06Z",
+        "upstreamModifiedAt": null,
+        "sha256": "d65b555ed03a04a08bb508131e3cbe602bc63fd4a34812f31c34429e3fcd93cc",
+        "locale": "en_us",
+        "useFor": [
+          "patch_status",
+          "official_wisp_rules",
+          "official_categories",
+          "stage5_combat_rule"
+        ],
+        "confidence": "official"
+      },
+      {
+        "sourceId": "riot_enchanted_wilds_overview_20260828",
+        "tier": "A",
+        "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/enchanted-wilds-overview/",
+        "retrievedAt": "2026-08-28T16:57:07Z",
+        "upstreamModifiedAt": null,
+        "sha256": "9b2add9d5e4b50bdc0fed9e66132eef0c1548f5706d4f539b724d7d023901532",
+        "locale": "en_us",
+        "useFor": [
+          "wisp_mechanic",
+          "blossom_breakpoints"
+        ],
+        "confidence": "official"
+      },
+      {
+        "sourceId": "communitydragon_live_18_1_20260827_en_us",
+        "tier": "B",
+        "url": "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
+        "retrievedAt": "2026-08-28T16:49:15Z",
+        "upstreamModifiedAt": "2026-08-27T22:54:07Z",
+        "sha256": "7331be101d2399145c31336b688b95dd7715d51f94851401d5b5b2d8ed2466ec",
+        "extractedSha256": "03baa3b886b987cc255d0c8792de4ec947b96406a23bd5c0b760bdbd675fdafe",
+        "locale": "en_us",
+        "useFor": [
+          "riotId",
+          "nameEn",
+          "effect_cross_check"
+        ],
+        "confidence": "client_data"
+      },
+      {
+        "sourceId": "communitydragon_live_18_1_20260827_zh_cn",
+        "tier": "B",
+        "url": "https://raw.communitydragon.org/latest/cdragon/tft/zh_cn.json",
+        "retrievedAt": "2026-08-28T16:49:15Z",
+        "upstreamModifiedAt": "2026-08-27T22:54:07Z",
+        "sha256": "00f1d78527c9b8302d3d067d665bc40dc3389bff7429f25c9e42aa4ef751b7e8",
+        "extractedSha256": "a9ea1e0689af417ecb33595e1ae715bf68a4ad1d33211ee3ffb1974b79b809ec",
+        "locale": "zh_cn",
+        "useFor": [
+          "nameZh",
+          "localized_effect_cross_check",
+          "cross_source_join"
+        ],
+        "confidence": "client_data"
+      },
+      {
+        "sourceId": "lolchess_wisps_18_1_20260828_attempt",
+        "tier": "C",
+        "url": "https://lolchess.gg/rewards/set18/wisps",
+        "retrievedAt": "2026-08-29T04:32:00Z",
+        "pageUpdatedAt": null,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "useFor": [
+          "acquisition_history"
+        ],
+        "confidence": "unverified",
+        "warning": "Historical cloud attempt received an AWS WAF challenge (HTTP 202); superseded for record evidence by the browser snapshot channel.",
+        "fetchStatus": "blocked_by_source_protection",
+        "httpStatus": 202,
+        "observedPublicIndexUpdated": "2026-08-26"
+      },
+      {
+        "sourceId": "datatft_18_1_20260828",
+        "tier": "D",
+        "url": "https://www.datatft.com/database#charm",
+        "retrievedAt": "2026-08-28T16:49:16Z",
+        "pageUpdatedAt": "2026-08-28T07:40:00+08:00",
+        "sha256": "a35d3a2506f033349654ca9c91cad14dcf6d563e54238969c9d4332b9d609d26",
+        "locale": "zh_cn",
+        "useFor": [
+          "display_skeleton",
+          "nameZh",
+          "effectsZh",
+          "category",
+          "cost",
+          "stageRanges",
+          "requirements"
+        ],
+        "confidence": "community_high_confidence",
+        "warning": "Provisional normalized skeleton; fields are cross-checked against the available LoLCHESS browser snapshot and client data."
+      },
+      {
+        "sourceId": "opgg_set18_wisps_20260829",
+        "tier": "C",
+        "url": "https://op.gg/zh-cn/tft/set/18",
+        "retrievedAt": "2026-08-29T04:15:26Z",
+        "pageUpdatedAt": null,
+        "sha256": "dca16121554a06b6f864da3d85e357375e2a4c8fd3e7def55fb7cb1b92e6e5da",
+        "locale": "zh_cn",
+        "fetchStatus": "fetched_and_extracted",
+        "httpStatus": 200,
+        "useFor": [
+          "corpus_completeness_cross_check",
+          "category_count_cross_check"
+        ],
+        "confidence": "community_high_confidence",
+        "warning": "All 200 record-level rows were parsed from the localized Next.js Flight payload; corpus-only rows still require policy review.",
+        "recordCount": 200,
+        "categoryCounts": {
+          "Combat": 94,
+          "Misc": 30,
+          "Champion": 16,
+          "Shop": 19,
+          "Risky": 21,
+          "GoldXP": 14,
+          "Item": 6
+        },
+        "declaredRecordCount": 200,
+        "parsedRecordCount": 200
+      },
+      {
+        "sourceId": "datatft_18_1_20260902_priority_browser",
+        "tier": "D",
+        "url": "https://www.datatft.com/database#charm",
+        "retrievedAt": "2026-09-02T05:26:21Z",
+        "pageUpdatedAt": "2026/09/01 03:18",
+        "upstreamModifiedAt": "unknown",
+        "httpStatus": 200,
+        "fetchStatus": "browser_snapshot_extracted",
+        "sha256": "f82ad6da383d725dfa44746a8b04579e752b3525aa6389b1439e43ac8d51fed9",
+        "rawSnapshots": [
+          {
+            "path": "data/raw/18.1/20260902/datatft-rendered.html",
+            "locale": "zh_cn",
+            "sha256": "5a468e47e75720b448730090526643501a7d1dcf990f7c98bf765d48b2eba3aa"
+          },
+          {
+            "path": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
+            "locale": "en_us",
+            "sha256": "940285607c7588593d780ad6ca283612d28c2c372f32c2b35f71d7d87c0b4cfa"
+          }
+        ],
+        "locale": "multi",
+        "useFor": [
+          "identity_review",
+          "display_name_cross_check",
+          "category",
+          "cost_cross_check",
+          "stageRanges",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ],
+        "confidence": "community_high_confidence",
+        "relevantRecordCount": 6,
+        "scope": "c4.2a2_identity_review"
+      },
+      {
+        "sourceId": "communitydragon_live_18_1_20260902_priority",
+        "tier": "B",
+        "url": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
+        "retrievedAt": "2026-09-02T05:27:37Z",
+        "upstreamModifiedAt": "2026-08-29T00:53:26Z / 2026-08-29T00:53:30Z",
+        "httpStatus": 200,
+        "fetchStatus": "fetched_and_extracted",
+        "sha256": "77b6622edcd155abfd10e056f1b5766e01aa10bce7ab84f34c7124fbc9e22678",
+        "locale": "multi",
+        "useFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "active_live_cross_check",
+          "display_name_cross_check",
+          "effect_cross_check",
+          "field_conflict_detection"
+        ],
+        "confidence": "client_data",
+        "relevantBaseRecordCount": 6,
+        "scope": "c4.2a2_identity_review"
+      },
+      {
+        "sourceId": "opgg_set18_wisps_20260902",
+        "tier": "C",
+        "url": "https://op.gg/zh-cn/tft/set/18",
+        "retrievedAt": "2026-09-02T05:27:39Z",
+        "upstreamModifiedAt": "unknown",
+        "pageUpdatedAt": "unknown",
+        "httpStatus": 200,
+        "fetchStatus": "fetched_and_extracted",
+        "sha256": "5b59771244aa69ecdaf147988fa276f5085802bf99f8072a23982b73805602a7",
+        "rawSnapshot": {
+          "path": "data/raw/18.1/20260902/opgg-zh-cn.html",
+          "sha256": "46ec8492150550658b998de8a23579bb4074705cd7f928e9347a04d73faddd35"
+        },
+        "locale": "zh_cn",
+        "useFor": [
+          "identity_review",
+          "corpus_membership_cross_check",
+          "category",
+          "cost_cross_check",
+          "effect_cross_check",
+          "requirements_cross_check",
+          "field_conflict_detection"
+        ],
+        "confidence": "community_high_confidence",
+        "relevantRecordCount": 6,
+        "scope": "c4.2a2_identity_review"
+      },
+      {
+        "sourceId": "lolchess_wisps_18_1_20260902_attempt",
+        "tier": "C",
+        "url": "https://lolchess.gg/rewards/set18/wisps",
+        "retrievedAt": "2026-09-02T05:27:39Z",
+        "upstreamModifiedAt": "unknown",
+        "pageUpdatedAt": "unknown",
+        "httpStatus": 202,
+        "fetchStatus": "blocked_by_source_protection",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "locale": "en",
+        "useFor": [
+          "acquisition_history"
+        ],
+        "confidence": "unverified",
+        "relevantRecordCount": 0,
+        "warning": "Ordinary GET returned an AWS WAF challenge; no new record evidence was consumed.",
+        "scope": "c4.2a2_identity_review"
+      },
+      {
+        "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
+        "tier": "B",
+        "url": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
+        "retrievedAt": "2026-09-02T11:16:11Z",
+        "upstreamModifiedAt": "2026-08-29T00:53:26Z / 2026-08-29T00:53:30Z",
+        "httpStatus": 200,
+        "fetchStatus": "fetched_and_extracted",
+        "sha256": "67abcb0d6f11b020c2f413cb759d17442df62ad31026b4e62bd9493837087193",
+        "snapshotPath": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
+        "locale": "multi",
+        "useFor": [
+          "identity_review",
+          "riotId",
+          "canonical_client_key",
+          "display_name_cross_check",
+          "effect_cross_check"
+        ],
+        "confidence": "client_data",
+        "relevantRecordCount": 8,
+        "relevantUniqueApiNameCount": 4,
+        "scope": "c4.2a3_catalog_delta"
+      },
+      {
+        "sourceId": "lolchess_set18_wisps_browser_import",
+        "tier": "C",
+        "url": "https://lolchess.gg/rewards/set18/wisps?utm_source=chatgpt.com",
+        "locale": "en",
+        "retrievedAt": "2026-08-29T11:22:31.117Z",
+        "pageUpdatedAt": "August 28, 2026",
+        "sha256": "d1d6ad0bc28e4ccf5ef4ccb5815ac9effb694ff0b271088776ac08f0870ce2d8",
+        "recordCount": 174,
+        "fieldCoverage": {
+          "name": 174,
+          "cost": 174,
+          "normalEffect": 174,
+          "stageRanges": 174,
+          "blossom": 145,
+          "prismatic": 19,
+          "requirements": 60,
+          "oncePerGameConfirmed": 2,
+          "reofferCooldownShops": 0
+        },
+        "fetchStatus": "browser_snapshot_imported",
+        "useFor": [
+          "identity_cross_check",
+          "cost_cross_check",
+          "effect_cross_check",
+          "stageRanges_cross_check",
+          "blossom_cross_check",
+          "prismatic_cross_check",
+          "requirements_cross_check",
+          "oncePerGame",
+          "reofferCooldownShops"
+        ],
+        "confidence": "verified_third_party"
+      }
+    ]
+  },
+  "patchSourceId": "riot_patch_18_1_20260828",
   "productionBaseline": {
     "records": [
       {
@@ -19678,6 +19975,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -19804,6 +20105,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -19875,6 +20178,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -19905,6 +20210,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -19936,6 +20245,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -20041,6 +20354,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -20110,6 +20425,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -20312,6 +20631,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -20335,6 +20658,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -20416,6 +20743,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -20533,6 +20862,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -20556,6 +20889,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -20635,6 +20972,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25256,6 +25595,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -25372,6 +25715,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25443,6 +25788,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25473,6 +25820,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25504,6 +25855,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -25599,6 +25954,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25668,6 +26025,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25824,6 +26185,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -25847,6 +26212,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -25926,6 +26295,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -26043,6 +26414,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -26066,6 +26441,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -27882,6 +28261,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -28008,6 +28391,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28079,6 +28464,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28109,6 +28496,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28140,6 +28531,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -28245,6 +28640,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28314,6 +28711,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28516,6 +28917,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28539,6 +28944,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -28620,6 +29029,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28737,6 +29148,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -28760,6 +29175,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -28839,6 +29258,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31077,6 +31498,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -31203,6 +31628,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31274,6 +31701,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31302,6 +31731,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31325,6 +31758,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -31409,6 +31846,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31478,6 +31917,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31680,6 +32123,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31703,6 +32150,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -31786,6 +32237,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31903,6 +32356,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -31926,6 +32383,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -32015,6 +32476,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32069,6 +32532,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -32195,6 +32662,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32266,6 +32735,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32296,6 +32767,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32327,6 +32802,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -32432,6 +32911,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32501,6 +32982,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32703,6 +33188,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32726,6 +33215,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -32807,6 +33300,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32924,6 +33419,10 @@
           "useFor": [
             "identity_review",
             "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -32947,6 +33446,10 @@
           "useFor": [
             "identity_review",
             "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "zh_cn",
@@ -33026,6 +33529,8 @@
             "riotId",
             "canonical_client_key",
             "active_live_cross_check",
+            "display_name_cross_check",
+            "effect_cross_check",
             "field_conflict_detection"
           ],
           "sourceLocaleCoverage": "multi",
@@ -35318,5 +35823,5 @@
       "reason": "Committed record-level evidence contains competing candidate values; no final truth is selected."
     }
   ],
-  "bundleSha256": "e54d96ecd5b80d21b1eb866a6115d2cf71b05ce516458d2f9dfbb877c0c8b873"
+  "bundleSha256": "a9a6999980be678d272b7af855864ab1f1e055014fcce8e547fc0acb7dc8f9f4"
 }

@@ -155,6 +155,10 @@
       "useFor": [
         "identity_review",
         "display_name_cross_check",
+        "category",
+        "cost_cross_check",
+        "stageRanges",
+        "effect_cross_check",
         "field_conflict_detection"
       ],
       "confidence": "community_high_confidence",
@@ -176,6 +180,8 @@
         "riotId",
         "canonical_client_key",
         "active_live_cross_check",
+        "display_name_cross_check",
+        "effect_cross_check",
         "field_conflict_detection"
       ],
       "confidence": "client_data",
@@ -200,6 +206,10 @@
       "useFor": [
         "identity_review",
         "corpus_membership_cross_check",
+        "category",
+        "cost_cross_check",
+        "effect_cross_check",
+        "requirements_cross_check",
         "field_conflict_detection"
       ],
       "confidence": "community_high_confidence",

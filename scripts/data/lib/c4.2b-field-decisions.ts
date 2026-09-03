@@ -37,15 +37,15 @@ function citedEvidence(item: Json, decision: Json) {
 
 const fieldUses: Record<string, string[]> = {
   riotId: ['riotId', 'identity_review', 'identity_cross_check'],
-  nameEn: ['nameEn', 'display_name_cross_check', 'identity_review', 'identity_cross_check'],
-  nameZh: ['nameZh', 'display_name_cross_check', 'identity_review'],
-  category: ['category', 'field_conflict_detection'],
-  cost: ['cost', 'cost_cross_check', 'field_conflict_detection'],
-  stageRanges: ['stageRanges', 'stageRanges_cross_check', 'field_conflict_detection'],
-  requirements: ['requirements', 'requirements_cross_check', 'field_conflict_detection'],
-  'effects.normal': ['effectsZh', 'effect_cross_check', 'field_conflict_detection'],
-  'effects.blossom': ['effectsZh', 'blossom_cross_check', 'effect_cross_check', 'field_conflict_detection'],
-  'effects.prismatic': ['effectsZh', 'prismatic_cross_check', 'effect_cross_check', 'field_conflict_detection'],
+  nameEn: ['nameEn', 'display_name_cross_check'],
+  nameZh: ['nameZh', 'display_name_cross_check'],
+  category: ['category', 'category_cross_check'],
+  cost: ['cost', 'cost_cross_check'],
+  stageRanges: ['stageRanges', 'stageRanges_cross_check'],
+  requirements: ['requirements', 'requirements_cross_check'],
+  'effects.normal': ['effectsZh', 'effect_cross_check', 'localized_effect_cross_check'],
+  'effects.blossom': ['effectsZh', 'blossom_cross_check'],
+  'effects.prismatic': ['effectsZh', 'prismatic_cross_check'],
 };
 const localizedFields = new Set(['riotId', 'nameEn', 'nameZh', 'effects.normal', 'effects.blossom', 'effects.prismatic']);
 const tierRank: Record<string, Record<string, number>> = {
@@ -104,12 +104,13 @@ export function validateDecisions(frozen: Json, overlay: Json, currentProduction
   const calculatedFrozenSha = sha256(stableJson({ ...frozen, bundleSha256: undefined }));
   if (overlay.evidenceBinding?.frozenEvidenceSha256 !== frozen.bundleSha256) errors.push('manual decisions do not bind frozen evidence SHA');
   if (frozen.bundleSha256 !== calculatedFrozenSha) errors.push('frozen evidence self fingerprint mismatch');
-  const patchSource = overlay.provenancePolicy?.patchSource;
-  const sourceCatalog = new Map<string, Json>((overlay.provenancePolicy?.decisionTimeSources ?? []).map((entry: Json) => [entry.source.sourceId, entry]));
-  if (overlay.provenancePolicy?.sourceManifestSha256 !== frozen.frozenFrom.sourceManifestSha256) errors.push('provenance policy is not bound to decision-time source manifest');
+  const manifest = frozen.decisionTimeSourceManifest;
+  const sourceCatalog = new Map<string, Json>((manifest?.sources ?? []).map((source: Json) => [source.sourceId, source]));
+  const patchSource = sourceCatalog.get(frozen.patchSourceId);
+  if (overlay.provenancePolicy?.patch?.frozenSourceId !== frozen.patchSourceId) errors.push('manual provenance policy references a source outside the frozen catalog');
+  if (overlay.provenancePolicy?.patchSource || overlay.provenancePolicy?.decisionTimeSources) errors.push('manual overlay must not own decision-time source metadata');
+  if (!manifest || sha256(stableJson(manifest)) !== frozen.frozenFrom.sourceManifestSha256) errors.push('frozen source catalog does not match decision-time source manifest SHA');
   if (!patchSource || patchSource.sourceId !== 'riot_patch_18_1_20260828' || patchSource.tier !== 'A' || patchSource.confidence !== 'official' || !(patchSource.useFor ?? []).includes('patch_status')) errors.push('invalid official patch provenance policy');
-  else if (overlay.provenancePolicy.patchSourceEntrySha256 !== sha256(stableJson(patchSource))) errors.push('patch provenance entry fingerprint mismatch');
-  for (const entry of sourceCatalog.values()) if (entry.entrySha256 !== sha256(stableJson(entry.source))) errors.push(`decision-time source fingerprint mismatch ${entry.source.sourceId}`);
   const units = new Map<string, Json>(frozen.reviewItems.map((item: Json) => [item.reviewId, item]));
   const seen = new Set<string>();
   for (const decision of overlay.decisions ?? []) {
@@ -132,7 +133,7 @@ export function validateDecisions(frozen: Json, overlay: Json, currentProduction
       errors.push(...validateProductionFieldValue(item.field, value).map((error) => `${decision.reviewId}: ${error}`));
       if (!deriveDecisionProvenance(item, decision)) errors.push(`${decision.reviewId}: approved value lacks deterministic provenance`);
       for (const evidence of citedEvidence(item, decision).filter((candidate: Json) => supportingEvidence(candidate, value))) {
-        const catalog = sourceCatalog.get(evidence.sourceId)?.source;
+        const catalog = sourceCatalog.get(evidence.sourceId);
         if (!catalog) errors.push(`${decision.reviewId}: source absent from decision-time manifest lineage ${evidence.sourceId}`);
         else if (catalog.tier !== evidence.tier || catalog.confidence !== evidence.confidence || !same(catalog.useFor, evidence.useFor) || !same(catalog.locale, evidence.sourceLocaleCoverage)) errors.push(`${decision.reviewId}: frozen evidence metadata drifts from decision-time source ${evidence.sourceId}`);
       }
@@ -184,7 +185,8 @@ export function buildNewRecordPlan(frozen: Json, overlay: Json, communityDragonI
   for (const field of SOURCE_FIELDS) {
     if (field === 'id') sources.id = deriveDecisionProvenance(selected.get('riotId')!.unit, selected.get('riotId')!.decision);
     else if (field === 'patch') {
-      const { sourceId, retrievedAt: verifiedAt, confidence } = overlay.provenancePolicy.patchSource;
+      const patchSource = frozen.decisionTimeSourceManifest.sources.find((source: Json) => source.sourceId === frozen.patchSourceId);
+      const { sourceId, retrievedAt: verifiedAt, confidence } = patchSource;
       sources.patch = { sourceId, verifiedAt, confidence };
     } else if (KNOWLEDGE_FIELDS.has(field)) {
       const unit = units.find((candidate: Json) => candidate.field === field)!;

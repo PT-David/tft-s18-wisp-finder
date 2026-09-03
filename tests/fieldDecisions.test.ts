@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { buildNewRecordPlan, deriveDecisionProvenance, readiness, validateDecisions, validateFulfillment } from '../scripts/data/lib/c4.2b-field-decisions';
 import { validateDataset, validateProductionFieldValue } from '../scripts/validation';
+import { buildFieldReviewPacket } from '../scripts/data/field-review-packet-18.1';
 
 const frozen = JSON.parse(readFileSync('data/reviews/18.1/c4.2b2-field-evidence.json', 'utf8'));
 const overlay = JSON.parse(readFileSync('data/reviews/18.1/c4.2b-field-decisions.json', 'utf8'));
@@ -113,6 +114,25 @@ describe('C4.2B2 decision governance', () => {
     expect(select('stageRanges', stages, [evidence('d', 'datatft', 'D', stages, ['stageRanges']), evidence('c', 'lolchess', 'C', stages, ['stageRanges_cross_check'])])?.sourceId).toBe('lolchess');
     expect(select('stageRanges', stages, [evidence('z', 'z-source', 'C', stages, ['stageRanges_cross_check']), evidence('a', 'a-source', 'C', stages, ['stageRanges_cross_check'])])?.sourceId).toBe('a-source');
     expect(select('stageRanges', stages, [evidence('higher', 'other-truth', 'A', [], ['stageRanges']), evidence('approved', 'approved-truth', 'C', stages, ['stageRanges_cross_check'])])?.sourceId).toBe('approved-truth');
+    expect(select('cost', 3, [evidence('conflict', 'discovery-only', 'C', 3, ['field_conflict_detection'])])).toBeUndefined();
+    expect(select('cost', 3, [evidence('cost', 'cost-capable', 'C', 3, ['cost_cross_check'])])?.sourceId).toBe('cost-capable');
+    expect(select('cost', 3, [evidence('both', 'both-capable', 'C', 3, ['field_conflict_detection', 'cost_cross_check'])])?.sourceId).toBe('both-capable');
+  });
+
+  it('binds source truth to the frozen catalog rather than manual self-attestation', () => {
+    const forgedOverlay = clone(overlay);
+    forgedOverlay.provenancePolicy.patch.frozenSourceId = 'invented-source';
+    forgedOverlay.provenancePolicy.patchSource = { sourceId: 'invented-source' };
+    expect(validateDecisions(frozen, forgedOverlay).join('\n')).toContain('outside the frozen catalog');
+    const driftedFrozen = clone(frozen);
+    driftedFrozen.decisionTimeSourceManifest.sources[0].tier = 'invented-tier';
+    expect(validateDecisions(driftedFrozen, overlay).join('\n')).toContain('frozen source catalog does not match');
+  });
+
+  it('preserves field-specific capabilities through current B1 regeneration', async () => {
+    const { packet } = await buildFieldReviewPacket();
+    const costEvidence = packet.reviewItems.flatMap((item: any) => item.field === 'cost' ? item.evidence : []).find((evidence: any) => evidence.sourceId === 'opgg_set18_wisps_20260902');
+    expect(costEvidence.useFor).toContain('cost_cross_check');
   });
 
   it('compares nested approved fields without permitting sibling mutation', () => {

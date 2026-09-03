@@ -5,7 +5,7 @@
   "ownership": "manual_overlay_do_not_regenerate",
   "reviewedAt": "2026-09-02",
   "evidenceBinding": {
-    "frozenEvidenceSha256": "e54d96ecd5b80d21b1eb866a6115d2cf71b05ce516458d2f9dfbb877c0c8b873"
+    "frozenEvidenceSha256": "a9a6999980be678d272b7af855864ab1f1e055014fcce8e547fc0acb7dc8f9f4"
   },
   "decisions": [
     {
@@ -3216,7 +3216,6 @@
   ],
   "provenancePolicy": {
     "schemaVersion": 1,
-    "sourceManifestSha256": "388a0f15795263a043dacae8ddfcab0c1e2b2346f36f84bc52ed73287986a14a",
     "id": {
       "kind": "deterministic_derivation",
       "derivedFrom": "riotId",
@@ -3224,25 +3223,9 @@
     },
     "patch": {
       "kind": "dataset_official_fact",
-      "value": "18.1"
+      "value": "18.1",
+      "frozenSourceId": "riot_patch_18_1_20260828"
     },
-    "patchSource": {
-      "sourceId": "riot_patch_18_1_20260828",
-      "tier": "A",
-      "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
-      "retrievedAt": "2026-08-28T16:57:06Z",
-      "upstreamModifiedAt": null,
-      "sha256": "d65b555ed03a04a08bb508131e3cbe602bc63fd4a34812f31c34429e3fcd93cc",
-      "locale": "en_us",
-      "useFor": [
-        "patch_status",
-        "official_wisp_rules",
-        "official_categories",
-        "stage5_combat_rule"
-      ],
-      "confidence": "official"
-    },
-    "patchSourceEntrySha256": "77da2a744dfb1f283185c21858d810e45c81be7c10bf9fbf6cc00d4e4558c661",
     "acceptedUnknownKnowledge": {
       "kind": "review_governance",
       "upstreamFactClaim": false,
@@ -3254,218 +3237,6 @@
           "status": "unknown"
         }
       }
-    },
-    "decisionTimeSources": [
-      {
-        "source": {
-          "sourceId": "communitydragon_live_18_1_20260827_en_us",
-          "tier": "B",
-          "url": "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
-          "retrievedAt": "2026-08-28T16:49:15Z",
-          "upstreamModifiedAt": "2026-08-27T22:54:07Z",
-          "sha256": "7331be101d2399145c31336b688b95dd7715d51f94851401d5b5b2d8ed2466ec",
-          "extractedSha256": "03baa3b886b987cc255d0c8792de4ec947b96406a23bd5c0b760bdbd675fdafe",
-          "locale": "en_us",
-          "useFor": [
-            "riotId",
-            "nameEn",
-            "effect_cross_check"
-          ],
-          "confidence": "client_data"
-        },
-        "entrySha256": "23aa48c26a59510aa61cacc68bdbca96ba47604a6794eafb7b838815a5c3949e"
-      },
-      {
-        "source": {
-          "sourceId": "communitydragon_live_18_1_20260902_bear_tiger",
-          "tier": "B",
-          "url": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
-          "retrievedAt": "2026-09-02T11:16:11Z",
-          "upstreamModifiedAt": "2026-08-29T00:53:26Z / 2026-08-29T00:53:30Z",
-          "httpStatus": 200,
-          "fetchStatus": "fetched_and_extracted",
-          "sha256": "67abcb0d6f11b020c2f413cb759d17442df62ad31026b4e62bd9493837087193",
-          "snapshotPath": "data/raw/18.1/20260902/communitydragon-bear-tiger.json",
-          "locale": "multi",
-          "useFor": [
-            "identity_review",
-            "riotId",
-            "canonical_client_key",
-            "display_name_cross_check",
-            "effect_cross_check"
-          ],
-          "confidence": "client_data",
-          "relevantRecordCount": 8,
-          "relevantUniqueApiNameCount": 4,
-          "scope": "c4.2a3_catalog_delta"
-        },
-        "entrySha256": "4a258b5c9bf32cc86ef90741c97cb195d1c281944b0888b2b12197fc597d184b"
-      },
-      {
-        "source": {
-          "sourceId": "communitydragon_live_18_1_20260902_priority",
-          "tier": "B",
-          "url": "https://raw.communitydragon.org/latest/cdragon/tft/{locale}.json",
-          "retrievedAt": "2026-09-02T05:27:37Z",
-          "upstreamModifiedAt": "2026-08-29T00:53:26Z / 2026-08-29T00:53:30Z",
-          "httpStatus": 200,
-          "fetchStatus": "fetched_and_extracted",
-          "sha256": "77b6622edcd155abfd10e056f1b5766e01aa10bce7ab84f34c7124fbc9e22678",
-          "locale": "multi",
-          "useFor": [
-            "identity_review",
-            "riotId",
-            "canonical_client_key",
-            "active_live_cross_check",
-            "field_conflict_detection"
-          ],
-          "confidence": "client_data",
-          "relevantBaseRecordCount": 6,
-          "scope": "c4.2a2_identity_review"
-        },
-        "entrySha256": "01beba632fafcd0aeacd429b2af5f41fbeee089238835d6a966ae54c507a0c35"
-      },
-      {
-        "source": {
-          "sourceId": "datatft_18_1_20260828",
-          "tier": "D",
-          "url": "https://www.datatft.com/database#charm",
-          "retrievedAt": "2026-08-28T16:49:16Z",
-          "pageUpdatedAt": "2026-08-28T07:40:00+08:00",
-          "sha256": "a35d3a2506f033349654ca9c91cad14dcf6d563e54238969c9d4332b9d609d26",
-          "locale": "zh_cn",
-          "useFor": [
-            "display_skeleton",
-            "nameZh",
-            "effectsZh",
-            "category",
-            "cost",
-            "stageRanges",
-            "requirements"
-          ],
-          "confidence": "community_high_confidence",
-          "warning": "Provisional normalized skeleton; fields are cross-checked against the available LoLCHESS browser snapshot and client data."
-        },
-        "entrySha256": "ea0d15d0facf51875bc1068ae6204190dc31ccfd8e41ed9969608ec16548e322"
-      },
-      {
-        "source": {
-          "sourceId": "datatft_18_1_20260902_priority_browser",
-          "tier": "D",
-          "url": "https://www.datatft.com/database#charm",
-          "retrievedAt": "2026-09-02T05:26:21Z",
-          "pageUpdatedAt": "2026/09/01 03:18",
-          "upstreamModifiedAt": "unknown",
-          "httpStatus": 200,
-          "fetchStatus": "browser_snapshot_extracted",
-          "sha256": "f82ad6da383d725dfa44746a8b04579e752b3525aa6389b1439e43ac8d51fed9",
-          "rawSnapshots": [
-            {
-              "path": "data/raw/18.1/20260902/datatft-rendered.html",
-              "locale": "zh_cn",
-              "sha256": "5a468e47e75720b448730090526643501a7d1dcf990f7c98bf765d48b2eba3aa"
-            },
-            {
-              "path": "data/raw/18.1/20260902/datatft-rendered-en-us.html",
-              "locale": "en_us",
-              "sha256": "940285607c7588593d780ad6ca283612d28c2c372f32c2b35f71d7d87c0b4cfa"
-            }
-          ],
-          "locale": "multi",
-          "useFor": [
-            "identity_review",
-            "display_name_cross_check",
-            "field_conflict_detection"
-          ],
-          "confidence": "community_high_confidence",
-          "relevantRecordCount": 6,
-          "scope": "c4.2a2_identity_review"
-        },
-        "entrySha256": "359683437b05ea9f7de00c0f445c1eab11556909c40e99df05d98e5c291a1455"
-      },
-      {
-        "source": {
-          "sourceId": "lolchess_set18_wisps_browser_import",
-          "tier": "C",
-          "url": "https://lolchess.gg/rewards/set18/wisps?utm_source=chatgpt.com",
-          "locale": "en",
-          "retrievedAt": "2026-08-29T11:22:31.117Z",
-          "pageUpdatedAt": "August 28, 2026",
-          "sha256": "d1d6ad0bc28e4ccf5ef4ccb5815ac9effb694ff0b271088776ac08f0870ce2d8",
-          "recordCount": 174,
-          "fieldCoverage": {
-            "name": 174,
-            "cost": 174,
-            "normalEffect": 174,
-            "stageRanges": 174,
-            "blossom": 145,
-            "prismatic": 19,
-            "requirements": 60,
-            "oncePerGameConfirmed": 2,
-            "reofferCooldownShops": 0
-          },
-          "fetchStatus": "browser_snapshot_imported",
-          "useFor": [
-            "identity_cross_check",
-            "cost_cross_check",
-            "effect_cross_check",
-            "stageRanges_cross_check",
-            "blossom_cross_check",
-            "prismatic_cross_check",
-            "requirements_cross_check",
-            "oncePerGame",
-            "reofferCooldownShops"
-          ],
-          "confidence": "verified_third_party"
-        },
-        "entrySha256": "faa0947ed8746c1ad562967dc0ce76728931c707bb3433605880930e8e25e5cd"
-      },
-      {
-        "source": {
-          "sourceId": "opgg_set18_wisps_20260902",
-          "tier": "C",
-          "url": "https://op.gg/zh-cn/tft/set/18",
-          "retrievedAt": "2026-09-02T05:27:39Z",
-          "upstreamModifiedAt": "unknown",
-          "pageUpdatedAt": "unknown",
-          "httpStatus": 200,
-          "fetchStatus": "fetched_and_extracted",
-          "sha256": "5b59771244aa69ecdaf147988fa276f5085802bf99f8072a23982b73805602a7",
-          "rawSnapshot": {
-            "path": "data/raw/18.1/20260902/opgg-zh-cn.html",
-            "sha256": "46ec8492150550658b998de8a23579bb4074705cd7f928e9347a04d73faddd35"
-          },
-          "locale": "zh_cn",
-          "useFor": [
-            "identity_review",
-            "corpus_membership_cross_check",
-            "field_conflict_detection"
-          ],
-          "confidence": "community_high_confidence",
-          "relevantRecordCount": 6,
-          "scope": "c4.2a2_identity_review"
-        },
-        "entrySha256": "024d2993fe5bde8bb05c4bacad92a98459498cbbb978f9e9f4b4de5bc1a3cee3"
-      },
-      {
-        "source": {
-          "sourceId": "riot_patch_18_1_20260828",
-          "tier": "A",
-          "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-1/",
-          "retrievedAt": "2026-08-28T16:57:06Z",
-          "upstreamModifiedAt": null,
-          "sha256": "d65b555ed03a04a08bb508131e3cbe602bc63fd4a34812f31c34429e3fcd93cc",
-          "locale": "en_us",
-          "useFor": [
-            "patch_status",
-            "official_wisp_rules",
-            "official_categories",
-            "stage5_combat_rule"
-          ],
-          "confidence": "official"
-        },
-        "entrySha256": "77da2a744dfb1f283185c21858d810e45c81be7c10bf9fbf6cc00d4e4558c661"
-      }
-    ]
+    }
   }
 }
