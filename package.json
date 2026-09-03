@@ -39,7 +39,10 @@
     "validate:c4.2b-field-decisions": "tsx scripts/validate-c4.2b-field-decisions.ts",
     "data:c4.2b-field-decision-report:18.1": "tsx scripts/data/c4.2b-field-decision-report-18.1.ts",
     "validate:c4.2b3-required-fields": "tsx scripts/validate-c4.2b3-required-fields.ts",
-    "data:c4.2b3-required-field-report:18.1": "tsx scripts/data/c4.2b3-required-field-report-18.1.ts"
+    "data:c4.2b3-required-field-report:18.1": "tsx scripts/data/c4.2b3-required-field-report-18.1.ts",
+    "data:c4.2b4-final-field-evidence:18.1": "tsx scripts/data/c4.2b4-final-field-evidence-18.1.ts",
+    "validate:c4.2b4-final-fields": "tsx scripts/validate-c4.2b4-final-fields.ts",
+    "data:c4.2b4-final-field-report:18.1": "tsx scripts/data/c4.2b4-final-field-report-18.1.ts"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0",

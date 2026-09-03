@@ -1,0 +1,31 @@
+{
+  "fetchStatus": "http_200_targeted_parse",
+  "locale": "zh_cn",
+  "records": [
+    {
+      "category": "Combat",
+      "categoryLabel": "战斗",
+      "condition": "已激活原始羁绊，且尚未选择老虎",
+      "cost": 3,
+      "description": "在这次战斗中获得老虎原始增益。",
+      "imageUrl": "https://c-tft-api.op.gg/img/set/18/tft-wisp/creatures.png",
+      "key": "TigersVisit",
+      "name": "老虎来访"
+    },
+    {
+      "category": "Combat",
+      "categoryLabel": "战斗",
+      "condition": "已激活灵巧精羁绊",
+      "cost": 4,
+      "description": "毛茸茸的大朋友会吞食生命值低于10%最大生命值且被其伤害过的敌人。",
+      "imageUrl": "https://c-tft-api.op.gg/img/set/18/tft-wisp/creatures.png",
+      "key": "Snacktime",
+      "name": "零食时间！"
+    }
+  ],
+  "retrievedAt": "2026-09-03T11:27:39Z",
+  "schemaVersion": 1,
+  "sourceId": "opgg_set18_wisps_20260903_targeted",
+  "upstreamModifiedAt": "unknown",
+  "url": "https://op.gg/zh-cn/tft/set/18"
+}

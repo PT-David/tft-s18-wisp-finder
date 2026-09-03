@@ -1,0 +1,83 @@
+{
+  "amendments": [
+    {
+      "action": "approve_explicit_value",
+      "amendmentId": "C4B4-01",
+      "applyPolicy": "apply",
+      "approvedValue": [
+        {
+          "machineEvaluable": false,
+          "textZh": "已激活原始羁绊，且尚未选择老虎",
+          "type": "source_text"
+        }
+      ],
+      "b2ReviewId": "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d",
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "evidenceRefs": [
+        "B4-Tiger-requirements-opgg"
+      ],
+      "field": "requirements",
+      "reason": "Current structured OP.GG zh-CN exact TigersVisit row explicitly states the complete Primal-active and Tiger-not-yet-selected condition; the committed Chinese source text is preserved without translation."
+    },
+    {
+      "action": "approve_explicit_value",
+      "amendmentId": "C4B4-02",
+      "applyPolicy": "apply",
+      "approvedValue": "combat",
+      "b2ReviewId": "C42B1-1e29d926b4d5cb16-edb2cd3b74c999af-edb2cd3b74c999af",
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "evidenceRefs": [
+        "B4-Tiger-category-opgg"
+      ],
+      "field": "category",
+      "reason": "Current structured OP.GG exact TigersVisit base row explicitly exposes category Combat (战斗)."
+    },
+    {
+      "action": "unresolved",
+      "amendmentId": "C4B4-03",
+      "applyPolicy": "defer",
+      "b2ReviewId": "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d",
+      "communityDragonId": "DA_BearsVisit18",
+      "evidenceRefs": [
+        "B4-B3-DA_BearsVisit18-requirements-1"
+      ],
+      "field": "requirements",
+      "reason": "No committed current Chinese source explicitly contains the complete Bear condition; the existing English Primal-only evidence is incomplete, so no Chinese text is invented."
+    },
+    {
+      "action": "unresolved",
+      "amendmentId": "C4B4-04",
+      "applyPolicy": "defer",
+      "b2ReviewId": "C42B1-61adda104b1b8139-edb2cd3b74c999af-edb2cd3b74c999af",
+      "communityDragonId": "DA_BearsVisit18",
+      "evidenceRefs": [],
+      "field": "category",
+      "reason": "Targeted current OP.GG acquisition contains no exact BearsVisit row and LeagueOfGraphs retrieval was blocked; no uncommitted observation is admitted."
+    },
+    {
+      "action": "unresolved",
+      "amendmentId": "C4B4-05",
+      "applyPolicy": "defer",
+      "b2ReviewId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "communityDragonId": "DA_Snacktime18",
+      "evidenceRefs": [
+        "B4-B3-DA_Snacktime18-cost-1",
+        "B4-B3-DA_Snacktime18-cost-2",
+        "B4-B3-DA_Snacktime18-cost-3",
+        "B4-Snacktime-cost-opgg"
+      ],
+      "field": "cost",
+      "reason": "The fresh structured OP.GG row still reports cost 4 and a 10% effect, conflicting with DataTFT 3, LoLCHESS 2, and the client-current 15% effect context. LeagueOfGraphs could not be committed, timestamps do not establish a live/PBE explanation, and effect agreement cannot prove shop cost; no vote is taken."
+    }
+  ],
+  "evidenceBinding": {
+    "frozenEvidenceSha256": "e4e6a92223b7f4a82cd6d7258ffec0b882ab797f1838ac8b9573dcd5a37149c3",
+    "path": "data/reviews/18.1/c4.2b4-final-field-evidence.json"
+  },
+  "lifecycle": "manual_final_supplemental_amendments",
+  "patch": "18.1",
+  "precedence": "B4 replaces only the five still-unresolved effective B3 targets; every other effective B2+B3 decision remains unchanged.",
+  "reviewStage": "C4.2B4",
+  "schemaVersion": 1,
+  "decisionSha256": "48ea45302c6f44a7fd84dfe986b8cb218cff5c8e01b7ec6837b2a197c3a0b451"
+}

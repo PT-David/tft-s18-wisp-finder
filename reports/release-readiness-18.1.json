@@ -201,6 +201,31 @@
       ],
       "confidence": "verified_third_party",
       "snapshot": "data/raw/18.1/lolchess-wisps.json"
+    },
+    {
+      "sourceId": "opgg_set18_wisps_20260903_targeted",
+      "tier": "C",
+      "url": "https://op.gg/zh-cn/tft/set/18",
+      "locale": "zh_cn",
+      "retrievedAt": "2026-09-03T11:27:39Z",
+      "upstreamModifiedAt": "unknown",
+      "confidence": "community_high_confidence",
+      "useFor": [
+        "category",
+        "category_cross_check",
+        "requirements",
+        "requirements_cross_check",
+        "cost",
+        "cost_cross_check"
+      ],
+      "sourceArtifact": "data/raw/18.1/20260903/opgg-zh-cn.html",
+      "sha256": "70eb17c0bf865217d1d6537676e6db30834a9dc7659575e9408b244fda0c100a",
+      "headersArtifact": "data/raw/18.1/20260903/opgg-zh-cn.headers",
+      "headersSha256": "0319b755f14b1a320d3264a07e9c1333e95eb5de1a201f38c11839804a785bda",
+      "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+      "parsedSha256": "4792568fd1b041890070769d60ee294cda7da007a7abe5186dd36ded60b9dcdb",
+      "snapshot": null,
+      "recordCount": null
     }
   ],
   "confirmedIdentityIntersection": 166,

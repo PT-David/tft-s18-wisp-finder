@@ -3,7 +3,7 @@
   "patch": "18.1",
   "purpose": "identity_review_preparation_only",
   "readinessSource": "reports/release-readiness-18.1.json",
-  "readinessSourceSha256": "7161c514cb778e1fbca30d9c939608a1310abfd0cce6c7138422576caf341b2d",
+  "readinessSourceSha256": "0a059391ee1cd61164f7cf73f9946f53e5e137ec8f29364d3c4b3a92fff65643",
   "recommendedProductionReady": false,
   "generatedFromCommittedSnapshotsOnly": true,
   "semantics": {
