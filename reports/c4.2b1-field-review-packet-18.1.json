@@ -81,7 +81,7 @@
       },
       {
         "path": "reports/c4.2a3-catalog-delta-reconciliation-18.1.json",
-        "sha256": "ec0a0854d97b5735120e683b16fb6ccbdb3cdd79fa0edcc7e4197e020824290f"
+        "sha256": "2e27335f51f3ad54681a1a4ecc6fc1252786e7cd10329dc0ba8232b84df2b335"
       },
       {
         "path": "reports/data-lolchess-field-audit-18.1.json",
@@ -97,7 +97,7 @@
       },
       {
         "path": "reports/release-readiness-18.1.json",
-        "sha256": "7161c514cb778e1fbca30d9c939608a1310abfd0cce6c7138422576caf341b2d"
+        "sha256": "0a059391ee1cd61164f7cf73f9946f53e5e137ec8f29364d3c4b3a92fff65643"
       }
     ]
   },
