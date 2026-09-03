@@ -1,0 +1,378 @@
+{
+  "acquisition": {
+    "leagueOfGraphs": "live retrieval blocked by HTTP 403; no observation admitted",
+    "newSources": 1,
+    "scope": "five_final_blockers_only"
+  },
+  "bundleSha256": "49d45daea140419b451fc86328f5bc0c52781d61d86f84c59d6bbed1c254a02c",
+  "decisionTimeSourceCatalog": {
+    "frozenAt": "2026-09-03T11:27:39Z",
+    "sources": [
+      {
+        "confidence": "community_high_confidence",
+        "headersArtifact": "data/raw/18.1/20260903/opgg-zh-cn.headers",
+        "headersSha256": "0319b755f14b1a320d3264a07e9c1333e95eb5de1a201f38c11839804a785bda",
+        "locale": "zh_cn",
+        "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+        "parsedSha256": "4792568fd1b041890070769d60ee294cda7da007a7abe5186dd36ded60b9dcdb",
+        "retrievedAt": "2026-09-03T11:27:39Z",
+        "sha256": "70eb17c0bf865217d1d6537676e6db30834a9dc7659575e9408b244fda0c100a",
+        "sourceArtifact": "data/raw/18.1/20260903/opgg-zh-cn.html",
+        "sourceId": "opgg_set18_wisps_20260903_targeted",
+        "tier": "C",
+        "upstreamModifiedAt": "unknown",
+        "url": "https://op.gg/zh-cn/tft/set/18",
+        "useFor": [
+          "category",
+          "category_cross_check",
+          "requirements",
+          "requirements_cross_check",
+          "cost",
+          "cost_cross_check"
+        ]
+      }
+    ]
+  },
+  "frozenFrom": {
+    "b2FrozenBundleSha256": "a9a6999980be678d272b7af855864ab1f1e055014fcce8e547fc0acb7dc8f9f4",
+    "b2FrozenPath": "data/reviews/18.1/c4.2b2-field-evidence.json",
+    "b2FrozenSha256": "31ad49f089ed49f4b639d49945b6603cb5e38c3835bb940de5943470b7eef86b",
+    "b2OverlayPath": "data/reviews/18.1/c4.2b-field-decisions.json",
+    "b2OverlaySha256": "c12f54bb555104e0f93abc1bdef6a6b18e966fc1a5d0623cc9e44a9e0f7e6f89",
+    "b3DecisionSha256": "1caeab31767eb3bb20b7d80a2fadf275cf9bb2fe501735ecac56b69b6a2ccf6d",
+    "b3FrozenBundleSha256": "fbf1cf8244cb25525a89e35160fbbbaa2cee56847b46e03d4591b08a58ddde93",
+    "b3FrozenPath": "data/reviews/18.1/c4.2b3-required-field-evidence.json",
+    "b3FrozenSha256": "ac0fec950ec22bdf6ae816ad1cef8cde9af379344851b54b4b52946f271396c6",
+    "b3OverlayPath": "data/reviews/18.1/c4.2b3-required-field-decisions.json",
+    "b3OverlaySha256": "188e1b984a268294dee45683de26a4aeabbbef9751bb0d7dcfce370898766550",
+    "productionRecordCount": 169
+  },
+  "lifecycle": "frozen_final_supplemental_decision_time_evidence",
+  "patch": "18.1",
+  "reviewStage": "C4.2B4",
+  "reviewTargets": [
+    {
+      "b2DecisionId": "C4B2-0010",
+      "b2ReviewId": "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d",
+      "b3Disposition": "unresolved",
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "evidence": [
+        {
+          "comparisonValue": "Primal trait active",
+          "confidence": "verified_third_party",
+          "conflictsWith": [],
+          "evidenceId": "B4-B3-DA_TigersVisit18_Wisp-requirements-1",
+          "field": "requirements",
+          "normalizedInterpretation": "Primal trait active",
+          "originB2EvidenceId": "C42B1-1e29d926b4d5cb16-10762e1094dbeeab-6711db8136b82a2d:E01",
+          "originB3EvidenceId": "B3-DA_TigersVisit18_Wisp-requirements-1",
+          "pageUpdatedAt": "August 28, 2026",
+          "proposedProductionValue": [
+            {
+              "machineEvaluable": false,
+              "textEn": "Primal trait active",
+              "type": "source_text"
+            }
+          ],
+          "rawValue": "Primal trait active",
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "sourceLocaleCoverage": "en",
+          "supports": [],
+          "tier": "C",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "valueLocale": "en"
+        },
+        {
+          "comparisonValue": [
+            {
+              "machineEvaluable": false,
+              "textZh": "已激活原始羁绊，且尚未选择老虎",
+              "type": "source_text"
+            }
+          ],
+          "confidence": "community_high_confidence",
+          "conflictsWith": [],
+          "evidenceId": "B4-Tiger-requirements-opgg",
+          "field": "requirements",
+          "normalizedInterpretation": [
+            {
+              "machineEvaluable": false,
+              "textZh": "已激活原始羁绊，且尚未选择老虎",
+              "type": "source_text"
+            }
+          ],
+          "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+          "proposedProductionValue": [
+            {
+              "machineEvaluable": false,
+              "textZh": "已激活原始羁绊，且尚未选择老虎",
+              "type": "source_text"
+            }
+          ],
+          "rawValue": "已激活原始羁绊，且尚未选择老虎",
+          "retrievedAt": "2026-09-03T11:27:39Z",
+          "sourceArtifact": "data/raw/18.1/20260903/opgg-zh-cn.html",
+          "sourceId": "opgg_set18_wisps_20260903_targeted",
+          "sourceLocaleCoverage": "zh_cn",
+          "supports": [],
+          "tier": "C",
+          "upstreamModifiedAt": "unknown",
+          "useFor": [
+            "category",
+            "category_cross_check",
+            "requirements",
+            "requirements_cross_check",
+            "cost",
+            "cost_cross_check"
+          ],
+          "valueLocale": "zh_cn"
+        }
+      ],
+      "field": "requirements",
+      "nameEn": "Tiger's Visit",
+      "nameZh": "战马降临"
+    },
+    {
+      "b2DecisionId": "C4B2-0021",
+      "b2ReviewId": "C42B1-1e29d926b4d5cb16-edb2cd3b74c999af-edb2cd3b74c999af",
+      "b3Disposition": "unresolved",
+      "communityDragonId": "DA_TigersVisit18_Wisp",
+      "evidence": [
+        {
+          "comparisonValue": "combat",
+          "confidence": "community_high_confidence",
+          "conflictsWith": [],
+          "evidenceId": "B4-Tiger-category-opgg",
+          "field": "category",
+          "normalizedInterpretation": "combat",
+          "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+          "proposedProductionValue": "combat",
+          "rawValue": {
+            "category": "Combat",
+            "categoryLabel": "战斗"
+          },
+          "retrievedAt": "2026-09-03T11:27:39Z",
+          "sourceArtifact": "data/raw/18.1/20260903/opgg-zh-cn.html",
+          "sourceId": "opgg_set18_wisps_20260903_targeted",
+          "sourceLocaleCoverage": "zh_cn",
+          "supports": [],
+          "tier": "C",
+          "upstreamModifiedAt": "unknown",
+          "useFor": [
+            "category",
+            "category_cross_check",
+            "requirements",
+            "requirements_cross_check",
+            "cost",
+            "cost_cross_check"
+          ],
+          "valueLocale": "zh_cn"
+        }
+      ],
+      "field": "category",
+      "nameEn": "Tiger's Visit",
+      "nameZh": "战马降临"
+    },
+    {
+      "b2DecisionId": "C4B2-0055",
+      "b2ReviewId": "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d",
+      "b3Disposition": "unresolved",
+      "communityDragonId": "DA_BearsVisit18",
+      "evidence": [
+        {
+          "comparisonValue": "Primal trait active",
+          "confidence": "verified_third_party",
+          "conflictsWith": [],
+          "evidenceId": "B4-B3-DA_BearsVisit18-requirements-1",
+          "field": "requirements",
+          "normalizedInterpretation": "Primal trait active",
+          "originB2EvidenceId": "C42B1-61adda104b1b8139-10762e1094dbeeab-6711db8136b82a2d:E01",
+          "originB3EvidenceId": "B3-DA_BearsVisit18-requirements-1",
+          "pageUpdatedAt": "August 28, 2026",
+          "proposedProductionValue": [
+            {
+              "machineEvaluable": false,
+              "textEn": "Primal trait active",
+              "type": "source_text"
+            }
+          ],
+          "rawValue": "Primal trait active",
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "sourceLocaleCoverage": "en",
+          "supports": [],
+          "tier": "C",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "valueLocale": "en"
+        }
+      ],
+      "field": "requirements",
+      "nameEn": "Bear's Visit",
+      "nameZh": "蛮熊降临"
+    },
+    {
+      "b2DecisionId": "C4B2-0066",
+      "b2ReviewId": "C42B1-61adda104b1b8139-edb2cd3b74c999af-edb2cd3b74c999af",
+      "b3Disposition": "unresolved",
+      "communityDragonId": "DA_BearsVisit18",
+      "evidence": [],
+      "field": "category",
+      "nameEn": "Bear's Visit",
+      "nameZh": "蛮熊降临"
+    },
+    {
+      "b2DecisionId": "C4B2-0141",
+      "b2ReviewId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b",
+      "b3Disposition": "unresolved",
+      "communityDragonId": "DA_Snacktime18",
+      "evidence": [
+        {
+          "comparisonValue": 3,
+          "confidence": "community_high_confidence",
+          "conflictsWith": [],
+          "evidenceId": "B4-B3-DA_Snacktime18-cost-1",
+          "field": "cost",
+          "normalizedInterpretation": 3,
+          "originB2EvidenceId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E01",
+          "originB3EvidenceId": "B3-DA_Snacktime18-cost-1",
+          "pageUpdatedAt": "2026/09/01 03:18",
+          "proposedProductionValue": 3,
+          "rawValue": 3,
+          "retrievedAt": "2026-09-02T05:26:21Z",
+          "sourceArtifact": "data/raw/18.1/20260902/datatft-priority-wisps-browser.json",
+          "sourceId": "datatft_18_1_20260902_priority_browser",
+          "sourceLocaleCoverage": "multi",
+          "supports": [],
+          "tier": "D",
+          "useFor": [
+            "identity_review",
+            "display_name_cross_check",
+            "category",
+            "cost_cross_check",
+            "stageRanges",
+            "effect_cross_check",
+            "field_conflict_detection"
+          ],
+          "valueLocale": "en_us"
+        },
+        {
+          "comparisonValue": 4,
+          "confidence": "community_high_confidence",
+          "conflictsWith": [],
+          "evidenceId": "B4-B3-DA_Snacktime18-cost-2",
+          "field": "cost",
+          "normalizedInterpretation": 4,
+          "originB2EvidenceId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E02",
+          "originB3EvidenceId": "B3-DA_Snacktime18-cost-2",
+          "pageUpdatedAt": "unknown",
+          "proposedProductionValue": 4,
+          "rawValue": 4,
+          "retrievedAt": "2026-09-02T05:27:39Z",
+          "sourceArtifact": "data/raw/18.1/20260902/opgg-priority-wisps.json",
+          "sourceId": "opgg_set18_wisps_20260902",
+          "sourceLocaleCoverage": "zh_cn",
+          "supports": [],
+          "tier": "C",
+          "useFor": [
+            "identity_review",
+            "corpus_membership_cross_check",
+            "category",
+            "cost_cross_check",
+            "effect_cross_check",
+            "requirements_cross_check",
+            "field_conflict_detection"
+          ],
+          "valueLocale": "zh_cn"
+        },
+        {
+          "comparisonValue": 2,
+          "confidence": "verified_third_party",
+          "conflictsWith": [],
+          "evidenceId": "B4-B3-DA_Snacktime18-cost-3",
+          "field": "cost",
+          "normalizedInterpretation": 2,
+          "originB2EvidenceId": "C42B1-d5645cd0909aeafa-9f82f7b375f4aa1b-9f82f7b375f4aa1b:E03",
+          "originB3EvidenceId": "B3-DA_Snacktime18-cost-3",
+          "pageUpdatedAt": "August 28, 2026",
+          "proposedProductionValue": 2,
+          "rawValue": 2,
+          "retrievedAt": "2026-08-29T11:22:31.117Z",
+          "sourceArtifact": "data/raw/18.1/lolchess-wisps.json",
+          "sourceId": "lolchess_set18_wisps_browser_import",
+          "sourceLocaleCoverage": "en",
+          "supports": [],
+          "tier": "C",
+          "useFor": [
+            "identity_cross_check",
+            "cost_cross_check",
+            "effect_cross_check",
+            "stageRanges_cross_check",
+            "blossom_cross_check",
+            "prismatic_cross_check",
+            "requirements_cross_check",
+            "oncePerGame",
+            "reofferCooldownShops"
+          ],
+          "valueLocale": "en"
+        },
+        {
+          "comparisonValue": 4,
+          "confidence": "community_high_confidence",
+          "conflictsWith": [],
+          "evidenceId": "B4-Snacktime-cost-opgg",
+          "field": "cost",
+          "normalizedInterpretation": 4,
+          "parsedArtifact": "data/raw/18.1/20260903/opgg-final-blockers.json",
+          "proposedProductionValue": 4,
+          "rawValue": 4,
+          "retrievedAt": "2026-09-03T11:27:39Z",
+          "sourceArtifact": "data/raw/18.1/20260903/opgg-zh-cn.html",
+          "sourceId": "opgg_set18_wisps_20260903_targeted",
+          "sourceLocaleCoverage": "zh_cn",
+          "supports": [],
+          "tier": "C",
+          "upstreamModifiedAt": "unknown",
+          "useFor": [
+            "category",
+            "category_cross_check",
+            "requirements",
+            "requirements_cross_check",
+            "cost",
+            "cost_cross_check"
+          ],
+          "valueLocale": "zh_cn"
+        }
+      ],
+      "field": "cost",
+      "nameEn": "Snacktime!",
+      "nameZh": "点心时间到！"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceCatalogBinding": {
+    "catalogSha256": "9d94a438d67f26d7ec722d2b736c31535e3f93edc28252ad3fef378097e31382"
+  }
+}

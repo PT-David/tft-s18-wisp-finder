@@ -42,6 +42,9 @@ jobs:
       - run: npm run data:c4.2b-field-decision-report:18.1
       - run: npm run validate:c4.2b3-required-fields
       - run: npm run data:c4.2b3-required-field-report:18.1
+      - run: npm run data:c4.2b4-final-field-evidence:18.1
+      - run: npm run validate:c4.2b4-final-fields
+      - run: npm run data:c4.2b4-final-field-report:18.1
       - run: npm test
       - run: npm run build
       - run: npx playwright install --with-deps chromium
