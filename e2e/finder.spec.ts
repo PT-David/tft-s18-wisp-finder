@@ -3,6 +3,8 @@ import { readFileSync } from 'node:fs';
 
 const productionConcepts = JSON.parse(readFileSync('public/data/search-concepts.json', 'utf8'));
 const productionSynonyms = JSON.parse(readFileSync('public/data/search-synonyms.json', 'utf8'));
+const productionDataset = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: unknown[] };
+const productionRecordCount = productionDataset.records.length;
 const runtimeUrls = ['**/data/wisps.json', '**/data/search-concepts.json', '**/data/search-synonyms.json'] as const;
 
 async function routeRuntimeFixture(page: Page, dataset: { patch: string; records: Array<{ id: string; searchConcepts: string[]; synonyms: string[] }> }): Promise<void> {
@@ -71,7 +73,7 @@ test('刷新规律显示 data-driven sections、中文可信度与 production �
   await expect(rulesPage.getByText('高置信观察').first()).toBeVisible();
   await expect(rulesPage.getByText('未确认').first()).toBeVisible();
   await expect(rulesPage.getByText('PATCH 18.1 · RULES')).toBeVisible();
-  await expect(rulesPage.locator('.wisp-rule-index > summary')).toContainText('逐仙灵规则索引 · 169');
+  await expect(rulesPage.locator('.wisp-rule-index > summary')).toContainText(`逐仙灵规则索引 · ${productionRecordCount}`);
 });
 
 test('逐仙灵规则行保留多阶段、Requirements 与 confirmed once-per-game', async ({ page }) => {
@@ -334,9 +336,9 @@ test('reviewed runtime synonyms, concepts, AND, and probability denominator work
   await expect(multiReasons.nth(0)).toHaveText('同义·普通：刷新');
   await expect(multiReasons.nth(1)).toContainText('金币');
   await page.locator('#probabilityMode').check();
-  await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText(String(productionRecordCount));
   await search.fill('弈子星级');
-  await expect(page.locator('[data-stat="n"]').first()).toHaveText('169');
+  await expect(page.locator('[data-stat="n"]').first()).toHaveText(String(productionRecordCount));
   await expect(page.locator('[data-stat="k"]').first()).toHaveText('19');
 });
 
@@ -482,7 +484,7 @@ test('规则索引原生 disclosure、名称定位、组合筛选、空态与清
   await page.getByRole('button', { name: '刷新规律' }).click();
   const details = page.locator('.wisp-rule-index');
   const summary = details.locator('> summary');
-  await expect(summary).toHaveText(/逐仙灵规则索引 · 169/);
+  await expect(summary).toContainText(`逐仙灵规则索引 · ${productionRecordCount}`);
   await expect(details).not.toHaveAttribute('role');
   await summary.focus();
   await summary.press('Enter');
@@ -493,7 +495,7 @@ test('规则索引原生 disclosure、名称定位、组合筛选、空态与清
   await expect(query).toBeFocused();
   await expect(page.locator('.wisp-rule-row')).toHaveCount(1);
   await expect(page.locator('[data-wisp-rule-id="da_petrifyshields18"]')).toBeVisible();
-  await expect(page.locator('.rule-index-status')).toHaveText('显示 1 / 169');
+  await expect(page.locator('.rule-index-status')).toHaveText(`显示 1 / ${productionRecordCount}`);
 
   const production = JSON.parse(readFileSync('public/data/wisps.json', 'utf8')) as { records: Array<{ id: string; category: string; nameEn: string; requirements: unknown[]; oncePerGame?: unknown; reofferCooldownShops?: unknown; minimumAffordableGold?: number }> };
   const prophecy = production.records.find(record => record.id === 'da_heroofprophecy18')!;
